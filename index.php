@@ -37,13 +37,20 @@
       </div>
     </div>
 
-    <div class="container main">container main</div>
-
-		<!--div id="hpit">
-			<div class="main-header">header</div>
-			<div class="main-content">main-content</div>
-			<div class="main-footer">footer</div>
-		</div-->
+    <div class="container main">
+    	<div class="hero" id="hero">hero</div>
+    	<div class="insight" id="insight-1" data-insight="1">insight-1</div>
+    	<div class="insight" id="insight-2" data-insight="2">insight-2</div>
+    	<div class="insight" id="insight-3" data-insight="3">insight-3</div>
+    	<div class="insight" id="insight-4" data-insight="4">insight-4</div>
+    	<div class="insight" id="insight-5" data-insight="5">insight-5</div>
+    	<div class="insight" id="insight-6" data-insight="6">insight-6</div>
+    	<div class="insight" id="insight-7" data-insight="7">insight-7</div>
+    	<div class="insight" id="insight-8" data-insight="8">insight-8</div>
+    	<div class="insight" id="insight-9" data-insight="9">insight-9</div>
+    	<div class="insight" id="insight-10" data-insight="10">insight-10</div>
+    	<div>
+    </div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://code.jquery.com/jquery.js"></script>
