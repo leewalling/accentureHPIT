@@ -10,7 +10,7 @@ html, body {
 
 
 .container {
-	1280px;
+	width:1280px;
 }
 .navbar-default{
 	background: transparent;
