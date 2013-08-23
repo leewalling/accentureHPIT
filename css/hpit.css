@@ -17,6 +17,7 @@ html, body {
 	padding-top:62px;
 }
 .navbar-default{
+	background: transparent;
 	border: none;
 	margin:0;
 }
