@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html, body {
+  background-color: #000 !important;
+}
+
+
+/******************************  Sharepoint overrides  **********************************/
+
+.banner {
+	display:none;
+}
+.page {
+	display:inline-block;
+	width:85%;
+	max-width:1280px;
+	overflow: visible;
+	height:3000px;
+
+}
+.page .main-contents {
+	display:inline-block;
+	margin:0;
+	background:#fff;
+	/*float: left;*/
+}
+.page .main-contents .acn {
+	margin: 0 !important;
+	width: 100% !important;
+}
+.opentemplate-content {
+	padding:0;
+}
+#skiptargetholder {
+	margin:0;
+}
+.stay-connected-master {
+	display:none;
+}
+
+/******************************  end Sharepoint overrides  ******************************/
