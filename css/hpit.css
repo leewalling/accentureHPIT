@@ -16,6 +16,16 @@ html, body {
 .container.main {
 	padding-top:62px;
 }
+
+/******************************  navbar overrides  **********************************/
+.navbar {
+	background: #000;
+}
+.navbar > .container .navbar-brand {
+	height:28px;
+	padding:14px 0 10px 22px;
+	margin:0;
+}
 .navbar-default{
 	background: transparent;
 	border: none;
@@ -24,6 +34,7 @@ html, body {
 .navbar-default > .container{
 	background: #000;
 }
+/******************************  end navbar overrides  ******************************/
 
 
 
