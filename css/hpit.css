@@ -12,9 +12,13 @@ html, body {
 .container {
 	max-width:1280px;
 }
+.container.main {
+	padding:62px 0 0 0;
+}
 .navbar-default{
-	background: transparent;
+	background: #000;
 	border: none;
+	margin:0;
 }
 
 
