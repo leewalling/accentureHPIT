@@ -11,14 +11,17 @@ html, body {
 
 .container {
 	max-width:1280px;
+	padding:0;
 }
 .container.main {
-	padding:62px 0 0 0;
+	padding-top:62px;
 }
 .navbar-default{
-	background: #000;
 	border: none;
 	margin:0;
+}
+.navbar-default > .container{
+	background: #000;
 }
 
 
