@@ -28,6 +28,9 @@ html, body {
 	overflow: hidden;
 	padding:14px 0 10px 22px;
 	margin:0;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
 }
 .navbar > .container .navbar-brand img {
 	height:28px;
