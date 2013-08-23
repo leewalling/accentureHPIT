@@ -23,8 +23,17 @@ html, body {
 }
 .navbar > .container .navbar-brand {
 	height:28px;
+	width:100px;
+	display: inline-block;
+	overflow: hidden;
 	padding:14px 0 10px 22px;
 	margin:0;
+}
+.navbar > .container .navbar-brand img {
+	height:28px;
+	width:100px;
+	display: inline-block;
+	float: left;
 }
 .navbar-default{
 	background: transparent;
