@@ -18,12 +18,39 @@ html, body {
 }
 .insight {
 	width:100%;
-	min-height:658px;
+	min-height:1500px;
 	background-size:100% auto;
 	background-repeat:no-repeat;
 }
 #insight-1 {
-	background:url("../images/bg-sidewalk.png");
+	background-image:url("../images/bg-sidewalk.png");
+}
+#insight-2 {
+	background-image:url("../images/bg-hero-mountain.jpg");
+}
+#insight-3 {
+	background-image:url("../images/bg-skydivers.jpg");
+}
+#insight-4 {
+	background-image:url("../images/bg-hero-man.png");
+}
+#insight-5 {
+	background-image:url("../images/bg-sidewalk.png");
+}
+#insight-6 {
+	background-image:url("../images/bg-hero-mountain.jpg");
+}
+#insight-7 {
+	background-image:url("../images/bg-skydivers.jpg");
+}
+#insight-8 {
+	background-image:url("../images/bg-hero-man.png");
+}
+#insight-9 {
+	background-image:url("../images/bg-sidewalk.png");
+}
+#insight-10 {
+	background-image:url("../images/bg-hero-mountain.jpg");
 }
 
 
