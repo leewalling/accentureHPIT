@@ -16,6 +16,11 @@ html, body {
 .container.main {
 	padding-top:62px;
 }
+.insight {
+	width:100%;
+	min-height:658px;
+}
+
 
 /******************************  navbar overrides  **********************************/
 .navbar {

@@ -38,7 +38,7 @@
     </div>
 
     <div class="container main">
-    	<div class="hero" id="hero">hero</div>
+    	<!--div class="hero" id="hero">hero</div-->
     	<div class="insight" id="insight-1" data-insight="1">insight-1</div>
     	<div class="insight" id="insight-2" data-insight="2">insight-2</div>
     	<div class="insight" id="insight-3" data-insight="3">insight-3</div>
