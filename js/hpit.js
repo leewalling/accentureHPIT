@@ -159,3 +159,8 @@ $.fn.extend({
 		});
 	}
 });
+
+$(document).ready(function(){
+	// Initialize
+	hpit.core.init();
+}); 
