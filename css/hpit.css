@@ -18,6 +18,15 @@ html, body {
 .container.main {
 	/*padding-top:62px;*/
 }
+#footer {
+	position: fixed;
+	width: 77px;
+	height: 181px;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	display: inline-block;
+}
 .hero {
 	background-color:#ccc;
 	color:#000;
@@ -130,10 +139,10 @@ html, body {
 #insight-8 .marker {background-color:grey;}
 #insight-9 .marker {background-color:pink;}
 #insight-10 .marker {background-color:blue;}
-
 #footer {
 	color:#fff;
 	padding:15px;
+	background-color:#000;
 }
 
 

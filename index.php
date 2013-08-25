@@ -38,6 +38,7 @@
     </div>
 
     <div class="container main">
+    	<div id="controls"><img src="images/menu-controls.png" width="77" height="181" /></div>
     	<div class="hero" id="hero">hero area...</div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
