@@ -39,7 +39,7 @@
 
     <div class="container main">
     	<!--div class="hero" id="hero">hero</div-->
-    	<div class="insight current" id="insight-1" data-insight="1">
+    	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
     		</div>

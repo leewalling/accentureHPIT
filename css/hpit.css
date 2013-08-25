@@ -72,9 +72,8 @@ html, body {
 	-ms-transform:skew(0deg,-22deg); /* IE 9 */
 	-webkit-transform:skew(0deg,-22deg); /* Safari and Chrome */
 }
-.insight.current .marker {
+.fixed {
 	position:fixed;
-	top:-18px;
 }
 .insight .marker > div {
 	text-transform: uppercase;

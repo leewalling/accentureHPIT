@@ -24,7 +24,7 @@ hpit.configuration = {
 
 // Attach functionality to the native scroll function
 $(window).scroll(function(event){
-	console.log('scrolling...');	
+	//console.log('scrolling...');	
 });
 
 
@@ -81,7 +81,7 @@ hpit.core = (function(){
 	            var startpoint = 0;
 
 	            //Viewport points
-	            var viewportBegin = selectedModule.offset().top - 65
+	            var viewportBegin = selectedModule.offset().top - 62
 	            var viewportEnd = viewportBegin + selectedModule.height();
 
 	            //Stop point will always be the height difference between the static column and it's parent.
@@ -120,7 +120,7 @@ hpit.core = (function(){
 
 	                    selectedCol.addClass('fixed')
 	                        .css({
-	                            'top': 65,
+	                            'top': -18,
 	                            'bottom': '',
 	                            'left': parOffset
 	                        });
