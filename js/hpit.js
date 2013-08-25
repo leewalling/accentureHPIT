@@ -98,18 +98,14 @@ hpit.core = (function(){
 	                if ((winY - viewportBegin) >= stopPoint) {
 	                    selectedCol.removeClass('fixed')
 	                        .css({
-	                            'bottom': '',
-	                            'top': stopPoint,
-	                            'left': 0
+	                            'top': 'auto'
 	                        });
 	                }
 	                //fix our static column to the top of the module if we've scrolled above our viewport
 	                else if ((winY - viewportBegin) <= 0) {
 	                    selectedCol.removeClass('fixed')
 	                        .css({
-	                            'top': 0,
-	                            'bottom': '',
-	                            'left': 0
+	                            'top': 'auto'
 	                        });
 	                }
 	                //Animate the margin while scrolling within the viewport
@@ -120,9 +116,7 @@ hpit.core = (function(){
 
 	                    selectedCol.addClass('fixed')
 	                        .css({
-	                            'top': -18,
-	                            'bottom': '',
-	                            'left': parOffset
+	                            'top': -18
 	                        });
 	                }
 

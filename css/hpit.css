@@ -73,7 +73,7 @@ html, body {
 	-webkit-transform:skew(0deg,-22deg); /* Safari and Chrome */
 }
 .fixed {
-	position:fixed;
+	position:fixed !important;
 }
 .insight .marker > div {
 	text-transform: uppercase;
