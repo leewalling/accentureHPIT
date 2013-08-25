@@ -19,8 +19,9 @@ html, body {
 .insight {
 	width:100%;
 	min-height:1500px;
-	background-size:100% auto;
+	background-size:auto 100%;
 	background-repeat:no-repeat;
+	background-position: 40% 0;
 }
 #insight-1 {
 	background-image:url("../images/bg-sidewalk.png");
