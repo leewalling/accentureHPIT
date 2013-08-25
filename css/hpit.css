@@ -83,12 +83,10 @@ html, body {
 }
 .insight .content {
 	position:relative;
-	float:right;
 	display: inline-block;
 	margin-top:170px;
-	margin-right:140px;
+	margin-left:650px;
 	width:490px;
-	height:140px;
 	background-color:#fff;
 	color:#000;
 }
