@@ -62,29 +62,26 @@ hpit.core = (function(){
 
 	    $(window)
 	        .bind('scroll', function () {
-				console.log('ele: ', element);
+				//console.log('ele: ', element);
 	            
-	            /*
 	            //The module we're currently working with
 	            var selectedModule = element;
 
 	            //The static column we're currently working with
-	            var selectedCol = element.find('.static_col');
+	            var selectedCol = element.find('.marker');
 
 	            if (selectedCol.length <= 0) {
 	                return false;
 	            }
 
-	            var parOffset = selectedCol.parent()
-	                .offset();
+	            var parOffset = selectedCol.parent().offset();
 	            parOffset = parOffset.left;
 
 	            //Lowest value the margin can be is zero.
 	            var startpoint = 0;
 
 	            //Viewport points
-	            var viewportBegin = selectedModule.offset()
-	                .top - 65
+	            var viewportBegin = selectedModule.offset().top - 65
 	            var viewportEnd = viewportBegin + selectedModule.height();
 
 	            //Stop point will always be the height difference between the static column and it's parent.
@@ -92,9 +89,10 @@ hpit.core = (function(){
 	            var stopPoint = (selectedModule.height() - selectedCol.height());
 
 	            //How much of the page have we scrolled?
-	            var winY = $(window)
-	                .scrollTop();
+	            var winY = $(window).scrollTop();
+	            console.log('winY:',winY);
 
+	            /*
 	            //Do some adjustments if our module is within the viewport
 	            if (winY >= viewportBegin && winY < viewportEnd) {
 	                //fix our static column to the bottom of the module if we've scroll below our viewport
