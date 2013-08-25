@@ -29,9 +29,9 @@ html, body {
 	min-height:1500px;
 	overflow:hidden;
 	position: relative;
-	background-size:auto 100%;
-	background-repeat:no-repeat;
-	background-position: 40% 0;
+	background-size:100% 100% !important;
+	background-repeat:no-repeat !important;
+	background-position: 40% 0 !important;
 	background-attachment: scroll;
 }
 #insight-1 {
@@ -67,6 +67,7 @@ html, body {
 .insight .marker {
 	position:relative;
 	margin-top:30px;
+	top:0;
 	width:150px;
 	height:140px;
 	background-color:#000;
