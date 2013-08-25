@@ -131,7 +131,10 @@ html, body {
 #insight-9 .marker {background-color:pink;}
 #insight-10 .marker {background-color:blue;}
 
-/*aa1133*/
+#footer {
+	color:#fff;
+	padding:15px;
+}
 
 
 /******************************  navbar overrides  **********************************/
