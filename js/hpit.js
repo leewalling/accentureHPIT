@@ -81,12 +81,13 @@ hpit.core = (function(){
 	            var startpoint = 0;
 
 	            //Viewport points
-	            var viewportBegin = selectedModule.offset().top - 62
+	            var viewportBegin = selectedModule.offset().top; // - 62
 	            var viewportEnd = viewportBegin + selectedModule.height();
 
 	            //Stop point will always be the height difference between the static column and it's parent.
 	            //Essentially, that's the maximum value the margin can be
-	            var stopPoint = (selectedModule.height() - selectedCol.height());
+	            //var stopPoint = (selectedModule.height() - selectedCol.height());
+	            var stopPoint = selectedModule.height();
 
 	            //How much of the page have we scrolled?
 	            var winY = $(window).scrollTop();
