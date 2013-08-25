@@ -22,6 +22,7 @@ html, body {
 	width:100%;
 	min-height:1500px;
 	overflow:hidden;
+	position: relative;
 	background-size:auto 100%;
 	background-repeat:no-repeat;
 	background-position: 40% 0;
@@ -57,6 +58,8 @@ html, body {
 	background-image:url("../images/bg-hero-mountain.jpg");
 }
 .insight .marker {
+	position:fixed;
+	top:0;
 	margin-top:50px;
 	width:150px;
 	height:140px;
