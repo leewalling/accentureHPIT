@@ -34,7 +34,7 @@ html, body {
 	background-size:100% 100% !important;
 	background-repeat:no-repeat !important;
 	background-position: 40% 0 !important;
-	background-attachment: scroll;
+	background-attachment: fixed;
 }
 #insight-1 {
 	background-image:url("../images/bg-sidewalk.png");
