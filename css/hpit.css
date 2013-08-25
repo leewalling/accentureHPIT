@@ -32,6 +32,7 @@ html, body {
 	background-size:auto 100%;
 	background-repeat:no-repeat;
 	background-position: 40% 0;
+	background-attachment: scroll;
 }
 #insight-1 {
 	background-image:url("../images/bg-sidewalk.png");
@@ -65,7 +66,6 @@ html, body {
 }
 .insight .marker {
 	position:relative;
-	top:0;
 	margin-top:30px;
 	width:150px;
 	height:140px;
@@ -78,7 +78,10 @@ html, body {
 	-ms-transform:skew(0deg,-22deg); /* IE 9 */
 	-webkit-transform:skew(0deg,-22deg); /* Safari and Chrome */
 }
-.fixed {
+.insight.current  {
+	background-attachment:fixed;
+}
+.insight.current .marker {
 	position:fixed !important;
 }
 .insight .marker > div {

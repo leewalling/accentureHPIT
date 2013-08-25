@@ -96,17 +96,19 @@ hpit.core = (function(){
 	            if (winY >= viewportBegin && winY < viewportEnd) {
 	                //fix our static column to the bottom of the module if we've scroll below our viewport
 	                if ((winY - viewportBegin) >= stopPoint) {
-	                    selectedCol.removeClass('fixed')
+	                    selectedModule.removeClass('current');
+	                    /*selectedCol.removeClass('fixed')
 	                        .css({
 	                            'top': 'auto'
-	                        });
+	                        });*/
 	                }
 	                //fix our static column to the top of the module if we've scrolled above our viewport
 	                else if ((winY - viewportBegin) <= 0) {
-	                    selectedCol.removeClass('fixed')
+	                    selectedModule.removeClass('current');
+	                    /*selectedCol.removeClass('fixed')
 	                        .css({
 	                            'top': 'auto'
-	                        });
+	                        });*/
 	                }
 	                //Animate the margin while scrolling within the viewport
 	                else {
@@ -114,24 +116,24 @@ hpit.core = (function(){
 
 	                    //console.log("winY: " + winY + ", viewportBegin: " + viewportBegin + ", viewportEnd: " + viewportEnd + ", stopPoint: " + stopPoint + ", startPoint: " + startpoint + ', offset: ' + offset);
 
-	                    selectedCol.addClass('fixed')
+	                    selectedModule.addClass('current');
+	                    /*selectedCol.addClass('fixed')
 	                        .css({
 	                            'top': 0
-	                        });
+	                        });*/
 	                }
 
 	            }
 	            //We're out of the viewport so lock the column back to it's start point
 	            else {
-	                selectedCol.removeClass('fixed')
+	                selectedModule.removeClass('current');
+	                /*selectedCol.removeClass('fixed')
 	                    .css({
 	                        'top': 0,
 	                        'bottom': '',
 	                        'left': 0
-	                    });
+	                    });*/
 	            }
-
-	            /**/
 
 	        }); //End Scroll Event
 
