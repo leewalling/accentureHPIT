@@ -68,8 +68,9 @@ html, body {
 }
 .insight .marker {
 	position:relative;
-	/*margin-top:30px;
-	top:0;*/
+	/*margin-top:30px;*/
+	top:22px;
+	left:0;
 	width:150px;
 	height:140px;
 	background-color:#000;
@@ -85,10 +86,12 @@ html, body {
 }
 .insight .content {
 	position:relative;
-	display: none;
+	display: inline-block;
 	margin-top:170px;
 	margin-left:650px;
 	width:490px;
+	height:500px;
+	overflow:hidden;
 	background-color:#fff;
 	color:#000;
 }
@@ -97,8 +100,6 @@ html, body {
 }
 .insight.current .marker {
 	position:fixed !important;
-	top:22px;
-	left:0;
 }
 .insight .marker > div {
 	text-transform: uppercase;
