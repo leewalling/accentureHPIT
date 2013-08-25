@@ -26,8 +26,9 @@ html, body {
 }
 .insight {
 	width:100%;
+	position:relative;
 	padding-bottom:75px;
-	/*min-height:1500px;*/
+	min-height:500px;
 	overflow:hidden;
 	position: relative;
 	background-size:100% 100% !important;
