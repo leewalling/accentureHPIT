@@ -26,11 +26,12 @@ html, body {
 	right: 0;
 	overflow: hidden;
 	display: inline-block;
+	z-index: 100;
 }
 .hero {
 	background-color:#ccc;
 	color:#000;
-	min-height:500px;
+	min-height:400px;
 	padding-top:62px;
 }
 .insight {
