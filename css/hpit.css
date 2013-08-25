@@ -89,10 +89,10 @@ html, body {
 	text-align: center;
 	font-weight:bold;
 	overflow:hidden;
-	/*
 	transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
 	-webkit-transform:skew(0deg,-22deg);
+	/*
 	*/
 }
 .insight .content {
@@ -118,10 +118,10 @@ html, body {
 .insight .marker > div {
 	text-transform: uppercase;
 	padding:45px 15px 0 15px;
-	/*
 	transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg);
 	-webkit-transform:skew(0deg,22deg);
+	/*
 	*/
 }
 .insight .marker > div > span {
