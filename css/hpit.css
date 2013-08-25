@@ -88,12 +88,16 @@ html, body {
   	line-height: 1.025em;
   	width: 100%;
 }
-#insight-1 .marker {
-	background-color:#aa1133;
-}
-#insight-2 .marker {
-	background-color:#0096d6;
-}
+#insight-1 .marker {background-color:#aa1133;}
+#insight-2 .marker {background-color:#0096d6;}
+#insight-3 .marker {background-color:green;}
+#insight-4 .marker {background-color:yellow;}
+#insight-5 .marker {background-color:orange;}
+#insight-6 .marker {background-color:magenta;}
+#insight-7 .marker {background-color:brown;}
+#insight-8 .marker {background-color:grey;}
+#insight-9 .marker {background-color:pink;}
+#insight-10 .marker {background-color:blue;}
 
 /*aa1133*/
 
