@@ -18,7 +18,7 @@ html, body {
 .container.main {
 	/*padding-top:62px;*/
 }
-#footer {
+#controls {
 	position: fixed;
 	width: 77px;
 	height: 181px;
@@ -30,7 +30,7 @@ html, body {
 .hero {
 	background-color:#ccc;
 	color:#000;
-	min-height:400px;
+	min-height:500px;
 	padding-top:62px;
 }
 .insight {
