@@ -90,9 +90,8 @@ hpit.core = (function(){
 
 	            //How much of the page have we scrolled?
 	            var winY = $(window).scrollTop();
-	            console.log('winY:',winY);
+	            //console.log('winY:',winY);
 
-	            /*
 	            //Do some adjustments if our module is within the viewport
 	            if (winY >= viewportBegin && winY < viewportEnd) {
 	                //fix our static column to the bottom of the module if we've scroll below our viewport
@@ -138,7 +137,7 @@ hpit.core = (function(){
 	                    });
 	            }
 
-	            */
+	            /**/
 
 	        }); //End Scroll Event
 
