@@ -52,6 +52,32 @@ html, body {
 #insight-10 {
 	background-image:url("../images/bg-hero-mountain.jpg");
 }
+.insight .marker {
+	margin-top:50px;
+	width:150px;
+	height:140px;
+	background-color:#0096d6;
+	color:white;
+	font-weight:bold;
+	overflow:hidden;
+	transform:skew(0deg,-22deg);
+	-ms-transform:skew(0deg,-22deg); /* IE 9 */
+	-webkit-transform:skew(0deg,-22deg); /* Safari and Chrome */
+}
+.insight .marker > div {
+	padding:50px 12px 0 12px;
+	transform:skew(0deg,22deg);
+	-ms-transform:skew(0deg,22deg); /* IE 9 */
+	-webkit-transform:skew(0deg,22deg); /* Safari and Chrome */
+}
+#insight-1 .marker {
+	background-color:#aa1133;
+}
+#insight-2 .marker {
+	background-color:#0096d6;
+}
+
+/*aa1133*/
 
 
 /******************************  navbar overrides  **********************************/
