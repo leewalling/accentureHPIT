@@ -58,7 +58,7 @@ html, body {
 	background-image:url("../images/bg-hero-mountain.jpg");
 }
 .insight .marker {
-	position:fixed;
+	position:relative;
 	top:0;
 	margin-top:50px;
 	width:150px;
@@ -71,6 +71,10 @@ html, body {
 	transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg); /* IE 9 */
 	-webkit-transform:skew(0deg,-22deg); /* Safari and Chrome */
+}
+.insight.current .marker {
+	position:fixed;
+	top:-18px;
 }
 .insight .marker > div {
 	text-transform: uppercase;
