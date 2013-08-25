@@ -68,7 +68,7 @@ html, body {
 }
 .insight .marker {
 	position:relative;
-	margin-top:30px;
+	/*margin-top:30px;*/
 	top:0;
 	width:150px;
 	height:140px;
@@ -77,9 +77,11 @@ html, body {
 	text-align: center;
 	font-weight:bold;
 	overflow:hidden;
+	/*
 	transform:skew(0deg,-22deg);
-	-ms-transform:skew(0deg,-22deg); /* IE 9 */
-	-webkit-transform:skew(0deg,-22deg); /* Safari and Chrome */
+	-ms-transform:skew(0deg,-22deg);
+	-webkit-transform:skew(0deg,-22deg);
+	*/
 }
 .insight .content {
 	position:relative;
@@ -99,9 +101,11 @@ html, body {
 .insight .marker > div {
 	text-transform: uppercase;
 	padding:45px 15px 0 15px;
+	/*
 	transform:skew(0deg,22deg);
-	-ms-transform:skew(0deg,22deg); /* IE 9 */
-	-webkit-transform:skew(0deg,22deg); /* Safari and Chrome */
+	-ms-transform:skew(0deg,22deg);
+	-webkit-transform:skew(0deg,22deg);
+	*/
 }
 .insight .marker > div > span {
   	display: block;
