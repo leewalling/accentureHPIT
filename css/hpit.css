@@ -1,7 +1,8 @@
 html, body {
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 14px;
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.1em;
 }
 
 html, body {
@@ -78,7 +79,7 @@ html, body {
 .insight .marker > div > span {
   	display: block;
   	font-size: 7em;
-  	line-height: 1.1em;
+  	line-height: 1.025em;
   	width: 100%;
 }
 #insight-1 .marker {
