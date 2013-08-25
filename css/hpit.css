@@ -16,6 +16,12 @@ html, body {
 	padding:0;
 }
 .container.main {
+	/*padding-top:62px;*/
+}
+.hero {
+	background-color:#ccc;
+	color:#000;
+	min-height:400px;
 	padding-top:62px;
 }
 .insight {
