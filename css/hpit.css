@@ -70,15 +70,16 @@ html, body {
 }
 .insight .marker > div {
 	text-transform: uppercase;
-	padding:50px 15px 0 15px;
+	padding:45px 15px 0 15px;
 	transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg); /* IE 9 */
 	-webkit-transform:skew(0deg,22deg); /* Safari and Chrome */
 }
 .insight .marker > div > span {
-	display:block;
-	width:100%;
-	font-size: 3em;
+  	display: block;
+  	font-size: 7em;
+  	line-height: 1.1em;
+  	width: 100%;
 }
 #insight-1 .marker {
 	background-color:#aa1133;
