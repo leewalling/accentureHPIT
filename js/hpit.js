@@ -116,7 +116,7 @@ hpit.core = (function(){
 
 	                    selectedCol.addClass('fixed')
 	                        .css({
-	                            'top': -18
+	                            'top': 0
 	                        });
 	                }
 
