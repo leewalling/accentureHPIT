@@ -38,7 +38,7 @@
     </div>
 
     <div class="container main">
-    	<!--div class="hero" id="hero">hero</div-->
+    	<div class="hero" id="hero">hero area...</div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
