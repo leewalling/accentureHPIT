@@ -19,6 +19,7 @@ html, body {
 .insight {
 	width:100%;
 	min-height:1500px;
+	overflow:hidden;
 	background-size:auto 100%;
 	background-repeat:no-repeat;
 	background-position: 40% 0;
@@ -57,7 +58,7 @@ html, body {
 	margin-top:50px;
 	width:150px;
 	height:140px;
-	background-color:#0096d6;
+	background-color:#000;
 	color:white;
 	font-weight:bold;
 	overflow:hidden;
@@ -66,10 +67,16 @@ html, body {
 	-webkit-transform:skew(0deg,-22deg); /* Safari and Chrome */
 }
 .insight .marker > div {
-	padding:50px 12px 0 12px;
+	text-transform: uppercase;
+	padding:50px 15px 0 15px;
 	transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg); /* IE 9 */
 	-webkit-transform:skew(0deg,22deg); /* Safari and Chrome */
+}
+.insight .marker > div > span {
+	display:block;
+	width:100%;
+
 }
 #insight-1 .marker {
 	background-color:#aa1133;
