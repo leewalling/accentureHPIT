@@ -31,7 +31,7 @@ html, body {
 	min-height:1000px;
 	overflow:hidden;
 	position: relative;
-	background-size:100% 100% !important;
+	background-size:100% !important;
 	background-repeat:no-repeat !important;
 	background-position: 0 0 !important;
 	background-attachment: scroll;
@@ -97,6 +97,9 @@ html, body {
 }
 .insight.current  {
 	background-attachment:fixed;
+	background-size:100% !important;
+	background-repeat:no-repeat !important;
+	background-position: 0 0 !important;
 }
 .insight.current .marker {
 	position:fixed !important;
