@@ -115,8 +115,12 @@ html, body {
 	background-repeat: no-repeat;
 	background-position: top right;
 }
+#sideMenu ul li a.btt:hover {
+	background-color:#2a2a2a;
+	color: #fff;
+}
 #sideMenu ul li a.btt:hover em {
-	background-image:url("../images/caret-hover.png");
+	/*background-image:url("../images/caret-hover.png");*/
 }
 #sideMenu ul li a > span {
 	font-size: 24px;
