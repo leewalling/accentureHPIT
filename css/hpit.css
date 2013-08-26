@@ -28,6 +28,21 @@ html, body {
 	display: inline-block;
 	z-index: 100;
 }
+#sideMenu {
+	position: fixed;
+	color:#fff;
+	width: 275px;
+	height: 275px;
+	top: 62px;
+	right: 0;
+	overflow: hidden;
+	display: inline-block;
+	z-index: 200;
+	background-color: #000;
+}
+#sideMenu ul {
+	background-color:#2a2a2a;
+}
 .hero {
 	background-color:#ccc;
 	color:#000;

@@ -39,6 +39,11 @@
 
     <div class="container main">
     	<div id="controls"><img src="images/menu-controls.png" width="77" height="181" /></div>
+    	<div id="sideMenu">
+    		<ul>
+    			<li>sideMenu</li>
+    		</ul>
+    	</div>
     	<div class="hero" id="hero">hero area...<br /><br /><br /><br /><a href="#insight-7">scrollTo insight-7</a></div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
