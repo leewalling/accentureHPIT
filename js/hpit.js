@@ -142,6 +142,7 @@ hpit.core = (function(){
 				}
 			} else {
 				console.log('cur: ', $cur);
+				console.log('#total: ', $('.insight').length);
 				if($cur < $('.insight').length){
 					newNum = ($cur + 1);
 					console.log('newNum: ' + newNum);
