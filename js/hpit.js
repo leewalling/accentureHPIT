@@ -114,14 +114,9 @@ hpit.core = (function(){
 		var scrH = parseInt(hpit.configuration.screenHeight);
 		var availH = scrH - 62;
 		var menuH = $('#sideMenu > ul').outerHeight();
-		//console.log('scrH: ' + scrH);
-		//console.log('availH: ' + availH);
-		//console.log('menuH: ' + menuH);
 
 		var $diff = menuH - availH;
 		if($diff > 0){
-			//var $diffPerItem = $diff / $('#sideMenu > ul > li').length;
-			//console.log('diff:' + $diff + ' - diffPerItem:' + $diffPerItem);
 			if($diff > 300){
 				$('#sideMenu').addClass('height-xxs');
 			} else if($diff > 200){
@@ -139,7 +134,7 @@ hpit.core = (function(){
 		var $target = $('#sideMenu');
 		$target.css({"height" : hpit.configuration.screenHeight - 62});
 
-		$('#toggleMenu').on('click',function(e){
+		$('#toggleMenu,#sideMenu .close').on('click',function(e){
 			e.preventDefault();
 
 			if($target.hasClass("open")){
