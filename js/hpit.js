@@ -108,7 +108,7 @@ hpit.core = (function(){
 	
 	// sidemenu toggle method
 	function toggleMenuInit(){
-		console.log('available height: ' + parseInt(hpit.configuration.screenHeight) - 62);
+		console.log('screen height: ' + hpit.configuration.screenHeight);
 		console.log('menu height: ' + $('#sideMenu > ul').outerHeight());
 		
 		var $target = $('#sideMenu');
