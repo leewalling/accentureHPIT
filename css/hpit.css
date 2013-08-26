@@ -54,15 +54,22 @@ html, body {
 	color: #fff;
 	width: 45px;
 }
-#controls .arrow {	
+#controls .arrow {
 	height: 45px;
+	background-image:url("../images/arrows.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+#controls .arrow:hover {
+	background-position: 0 -45px;
 }
 #controls .txt {
 	line-height: 22px;
 	margin:19px 0;
 	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 #sideMenu {
 	position: fixed;
