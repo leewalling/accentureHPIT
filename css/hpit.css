@@ -34,13 +34,24 @@ html, body {
 }
 #controls {
 	position: fixed;
-	width: 77px;
-	height: 181px;
+	padding:15px;
+	width: 45px;
+	height: 150px;
 	bottom: 0;
 	right: 0;
 	overflow: hidden;
 	display: inline-block;
 	z-index: 100;
+	text-align: center;
+}
+#controls a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+#controls .arrow {
+	width: 45px;
+	height: 45px;
 }
 #sideMenu {
 	position: fixed;

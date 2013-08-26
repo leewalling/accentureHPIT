@@ -38,7 +38,12 @@
     </div>
 
     <div class="container main">
-    	<div id="controls"><img src="images/menu-controls.png" width="77" height="181" /></div>
+    	<div id="controls">
+    		<!--<img src="images/menu-controls.png" width="77" height="181" />-->
+    		<a href="#" class="arrow"><</a>
+    		<a href="#">Menu</a>
+    		<a href="#" class="arrow">></a>
+    	</div>
     	<div id="sideMenu">
     		<ul>
     			<li><a href="#top">Back To Top</a></li>
