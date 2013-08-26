@@ -10,6 +10,7 @@ var hpit = window.hpit || {};
 
 // initial configuration
 hpit.configuration = {
+	currentInsight: 1,
 	debugLogging: false,
 	screenWidth: null,
 	screenHeight: null,
@@ -81,6 +82,7 @@ hpit.core = (function(){
 	    $(window)
 	        .bind('scroll', function () {
 	            
+	            var $arr = $('.insight');
 	            var currEle = element;
 	            var currFixedEle = element.find('.marker');
 
@@ -99,7 +101,8 @@ hpit.core = (function(){
 	            // is the element in the viewport?
 	            if (winOffset >= vpStart && winOffset < vpEnd) {
 	                currEle.addClass('current');
-	                console.log('current: ', currEle);
+	                //console.log('current: ', currEle);
+	                console.log('inArray: ', $.inArray(currEle, $arr));
 	            }
 	            // out of the viewport
 	            else {
