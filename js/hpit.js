@@ -40,6 +40,9 @@ hpit.core = (function(){
 			duration: hpit.configuration.timings[hpit.configuration.touchOrDesktop],
 			easing: hpit.configuration.easing,
 			hash: true,
+			onBefore: function(anchor,settings){
+				$('#toggleMenu').trigger("click");
+			},
 			onAfter: function(anchor,settings){
 				if(hpit.configuration.touchOrDesktop == 'desktop'){
 					console.log('done scrolling');

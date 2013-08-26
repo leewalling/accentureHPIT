@@ -41,7 +41,7 @@
     	<div id="controls">
     		<!--<img src="images/menu-controls.png" width="77" height="181" />-->
     		<a href="#" class="arrow prev"></a>
-    		<a href="#" class="txt">Menu</a>
+    		<a href="#" class="txt" id="toggleMenu">Menu</a>
     		<a href="#" class="arrow nxt"></a>
     	</div>
     	<div id="sideMenu">
@@ -59,7 +59,7 @@
     			<li><a href="#insight-10"><span>10</span> insight-10</a></li>
     		</ul>
     	</div>
-    	<div class="hero" id="hero">hero area...<br /><br /><a href="/" id="toggleMenu">toggle menu</a></div>
+    	<div class="hero" id="hero">hero area...</div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
