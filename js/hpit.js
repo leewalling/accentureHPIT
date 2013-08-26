@@ -130,11 +130,13 @@ hpit.core = (function(){
 			var $th = $(this);
 			
 			if($th.hasClass("prev")){
-				//alert('prev');
-				alert('cur: ' + $cur + ' - ' + 'goTo: ' + $cur - 1);
+				console.log('cur: ', $cur);
+				console.log('typeof: ', typeof($cur));
+				//console.log('cur: ' + $cur + ' - ' + 'goTo: ' + $cur - 1);
 			} else {
-				//alert('next');
-				alert('cur: ' + $cur + ' - ' + 'goTo: ' + $cur + 1);
+				console.log('cur: ', $cur);
+				console.log('typeof: ', typeof($cur));			
+				//console.log('cur: ' + $cur + ' - ' + 'goTo: ' + $cur + 1);
 			}
 		});
 		
