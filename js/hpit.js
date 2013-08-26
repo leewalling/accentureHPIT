@@ -134,7 +134,7 @@ hpit.core = (function(){
 		var $target = $('#sideMenu');
 		$target.css({"height" : hpit.configuration.screenHeight - 62});
 
-		$('#toggleMenu,#sideMenu .close').on('click',function(e){
+		$('#toggleMenu,#sideMenu .closeX').on('click',function(e){
 			e.preventDefault();
 
 			if($target.hasClass("opened")){
