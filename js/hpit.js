@@ -128,19 +128,24 @@ hpit.core = (function(){
 			e.preventDefault();
 			var $cur = parseInt(hpit.configuration.currentInsight);
 			var $th = $(this);
+			var newNum;
 			
 			if($th.hasClass("prev")){
 				console.log('cur: ', $cur);
 				if($cur > 1){
-					console.log('goTo: ' + ($cur - 1));
+					newNum = ($cur - 1);
+					console.log('newNum: ' + newNum);
+					$(window).scrollTo('#insight-' + newNum, hpit.configuration.timings[hpit.configuration.touchOrDesktop], {easing:hpit.configuration.easing} );
 				} else {
 					console.log('nothing there');
 					return false;
 				}
 			} else {
 				console.log('cur: ', $cur);
-				if($cur < $('.insight').length - 1){
-					console.log('goTo: ' + ($cur + 1));
+				if($cur < $('.insight').length - 2){
+					newNum = ($cur + 1);
+					console.log('newNum: ' + newNum);
+					$(window).scrollTo('#insight-' + newNum, hpit.configuration.timings[hpit.configuration.touchOrDesktop], {easing:hpit.configuration.easing} );
 				} else {
 					console.log('nothing there');
 					return false;
