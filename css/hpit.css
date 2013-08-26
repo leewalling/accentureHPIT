@@ -54,13 +54,13 @@ html, body {
 	color: #fff;
 	width: 45px;
 }
-#controls .arrow {
+#controls .arrows {
 	height: 45px;
 	background-image:url("../images/arrows.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-#controls .arrow:hover {
+#controls .arrows:hover {
 	background-position: 0 -45px;
 }
 #controls .nxt {

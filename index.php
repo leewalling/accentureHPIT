@@ -40,9 +40,9 @@
     <div class="container main">
     	<div id="controls">
     		<!--<img src="images/menu-controls.png" width="77" height="181" />-->
-    		<a href="#" class="arrow prev"></a>
+    		<a href="#" class="arrows prev"></a>
     		<a href="#" class="txt" id="toggleMenu">Menu</a>
-    		<a href="#" class="arrow nxt"></a>
+    		<a href="#" class="arrows nxt"></a>
     	</div>
     	<div id="sideMenu">
     		<ul>
