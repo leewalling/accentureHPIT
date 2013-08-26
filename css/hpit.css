@@ -97,7 +97,7 @@ html, body {
 	overflow: hidden;
 }
 #sideMenu ul li a {
-	padding:15px 10px 15px 8px;
+	padding:15px 15px 15px 11px;
 	display:inline-block;
 	float: left;
 	width: 100%;
@@ -114,6 +114,9 @@ html, body {
 	background-image:url("../images/caret.png");
 	background-repeat: no-repeat;
 	background-position: top right;
+}
+#sideMenu ul li a.btt:hover em {
+	background-image:url("../images/caret-hover.png");
 }
 #sideMenu ul li a > span {
 	font-size: 24px;
