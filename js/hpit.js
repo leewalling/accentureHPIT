@@ -82,8 +82,8 @@ hpit.core = (function(){
 	    $(window)
 	        .bind('scroll', function () {
 	            
-	            var $arr = $('.insight');
-	            console.log('$arr: ', $arr);
+	            //var $arr = $('.insight');
+	            //console.log('$arr: ', $arr);
 	            var currEle = element;
 	            var currFixedEle = element.find('.marker');
 
@@ -101,9 +101,10 @@ hpit.core = (function(){
 
 	            // is the element in the viewport?
 	            if (winOffset >= vpStart && winOffset < vpEnd) {
+	                $('.insight').removeClass('current');
 	                currEle.addClass('current');
 	                //console.log('current: ', currEle);
-	                //console.log('inArray: ', $.inArray(currEle, $arr));
+	                console.log('current: ', $('.insight.current').data('insight'));
 	            }
 	            // out of the viewport
 	            else {
