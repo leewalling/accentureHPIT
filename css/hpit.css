@@ -1,8 +1,8 @@
 html, body {
 	margin: 0;
-	font-family: sans-serif;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 14px;
-	line-height: 1.1em;
+	line-height: 18px;
 }
 
 html, body {
@@ -47,16 +47,16 @@ html, body {
 	background-attachment: scroll;
 }
 #insight-1 {
-	background-image:url("../images/bg-sidewalk.png");
+	background-image:url("../images/bg_bridge.jpg");
 }
 #insight-2 {
-	background-image:url("../images/bg-hero-mountain.jpg");
+	background-image:url("../images/bg_lake.jpg");
 }
 #insight-3 {
 	background-image:url("../images/bg-skydivers.jpg");
 }
 #insight-4 {
-	background-image:url("../images/bg-hero-man.png");
+	background-image:url("../images/bg_sea.jpg");
 }
 #insight-5 {
 	background-image:url("../images/bg-sidewalk.png");
@@ -65,16 +65,16 @@ html, body {
 	background-image:url("../images/bg-hero-mountain.jpg");
 }
 #insight-7 {
-	background-image:url("../images/bg-skydivers.jpg");
+	background-image:url("../images/bg_field.jpg");
 }
 #insight-8 {
-	background-image:url("../images/bg-hero-man.png");
+	background-image:url("../images/bg_lake.jpg");
 }
 #insight-9 {
-	background-image:url("../images/bg-sidewalk.png");
+	background-image:url("../images/bg_bridge.jpg");
 }
 #insight-10 {
-	background-image:url("../images/bg-hero-mountain.jpg");
+	background-image:url("../images/bg-skydivers.jpg");
 }
 .insight .marker {
 	position:relative;
