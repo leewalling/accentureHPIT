@@ -39,7 +39,7 @@
 
     <div class="container main">
     	<div id="controls"><img src="images/menu-controls.png" width="77" height="181" /></div>
-    	<div class="hero" id="hero">hero area...</div>
+    	<div class="hero" id="hero">hero area...<br /><br /><br /><br /><a href="#insight-7">scrollTo insight-7</a></div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
@@ -418,6 +418,7 @@
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.localscroll-1.2.7-min.js"></script>
 		<script src="js/hpit.js"></script>
 	</body>
 </html>

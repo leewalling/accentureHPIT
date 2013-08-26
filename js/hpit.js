@@ -34,6 +34,17 @@ hpit.core = (function(){
 	//	Initialize
 	function init(){
 		$.logEvent('[hpit.core.init]');
+
+		$('#hero').localScroll({
+			duration: hpit.configuration.timings[hpit.configuration.touchOrDesktop],
+			easing: hpit.configuration.easing,
+			hash: true,
+			onAfter: function(anchor,settings){
+				if(hpit.configuration.touchOrDesktop == 'desktop'){
+					console.log('done scrolling');
+				}
+			}
+		});
 		
 		// Dynamically switch on debug logging, if specified in the URL
 		if(top.location.href.indexOf('debug') != -1) {
