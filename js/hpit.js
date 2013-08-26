@@ -12,6 +12,7 @@ var hpit = window.hpit || {};
 hpit.configuration = {
 	debugLogging: false,
 	screenWidth: null,
+	screenHeight: null,
 	touchOrDesktop: 'desktop',
 	isIE7: false,
 	easing: 'easeInOutExpo',
@@ -57,7 +58,7 @@ hpit.core = (function(){
 		// Initialize event handler for 'Back to top' links
 		//backToTopInit();
 
-
+		// Initialize event handler for menu toggle
 		toggleMenuInit();
 		
 		// Work out whether IE7 is being used to view the site, due to the way absolute vs. fixed positioning works differently in that browser
@@ -105,9 +106,9 @@ hpit.core = (function(){
 
 	}; //End Function
 	
-
+	// sidemenu toggle method
 	function toggleMenuInit(){
-		$.logEvent('[hpit.core.toggleMenuInit]');
+		console.log('winH: ' + hpit.configuration.screenHeight);
 		$('#toggleMenu').on('click',function(e){
 			e.preventDefault();
 
@@ -130,6 +131,7 @@ hpit.core = (function(){
 		$.logEvent('[hpit.core.resetSite]');
 		
 		hpit.configuration.screenWidth = $(window).width();
+		hpit.configuration.screenHeight = $(window).height();
 	}
 		
 	/**
