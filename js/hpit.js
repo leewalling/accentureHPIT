@@ -54,89 +54,40 @@ hpit.core = (function(){
 		console.log('config: ', hpit.configuration);
 
 		$('.insight').each(function () {
-			lockscroll($(this));
+			paneLock($(this));
 		});
 	}
 
-	function lockscroll(element) {
+	function paneLock(element) {
 
 	    $(window)
 	        .bind('scroll', function () {
-				//console.log('ele: ', element);
 	            
-	            //The module we're currently working with
-	            var selectedModule = element;
+	            var currEle = element;
+	            var currFixedEle = element.find('.marker');
 
-	            //The static column we're currently working with
-	            var selectedCol = element.find('.marker');
+	            if (currFixedEle.length <= 0) {return false;}
 
-	            if (selectedCol.length <= 0) {
-	                return false;
+	            // Viewport
+	            var vpStart = currEle.offset().top; // - 62
+	            var vpEnd = vpStart + currEle.height();
+
+	            var currEleEnd = currEle.height();
+
+	            // scroll offset
+	            var winOffset = $(window).scrollTop();
+	            //console.log('winOffset:',winOffset);
+
+	            // is the element in the viewport?
+	            if (winOffset >= vpStart && winOffset < vpEnd) {
+	                currEle.addClass('current');
 	            }
-
-	            var parOffset = selectedCol.parent().offset();
-	            parOffset = parOffset.left;
-
-	            //Lowest value the margin can be is zero.
-	            var startpoint = 0;
-
-	            //Viewport points
-	            var viewportBegin = selectedModule.offset().top; // - 62
-	            var viewportEnd = viewportBegin + selectedModule.height();
-
-	            //Stop point will always be the height difference between the static column and it's parent.
-	            //Essentially, that's the maximum value the margin can be
-	            //var stopPoint = (selectedModule.height() - selectedCol.height());
-	            var stopPoint = selectedModule.height();
-
-	            //How much of the page have we scrolled?
-	            var winY = $(window).scrollTop();
-	            //console.log('winY:',winY);
-
-	            //Do some adjustments if our module is within the viewport
-	            if (winY >= viewportBegin && winY < viewportEnd) {
-	                //fix our static column to the bottom of the module if we've scroll below our viewport
-	                if ((winY - viewportBegin) >= stopPoint) {
-	                    selectedModule.removeClass('current');
-	                    /*selectedCol.removeClass('fixed')
-	                        .css({
-	                            'top': 'auto'
-	                        });*/
-	                }
-	                //fix our static column to the top of the module if we've scrolled above our viewport
-	                else if ((winY - viewportBegin) <= 0) {
-	                    selectedModule.removeClass('current');
-	                    /*selectedCol.removeClass('fixed')
-	                        .css({
-	                            'top': 'auto'
-	                        });*/
-	                }
-	                //Animate the margin while scrolling within the viewport
-	                else {
-	                    var offset = (winY - viewportBegin);
-
-	                    //console.log("winY: " + winY + ", viewportBegin: " + viewportBegin + ", viewportEnd: " + viewportEnd + ", stopPoint: " + stopPoint + ", startPoint: " + startpoint + ', offset: ' + offset);
-
-	                    selectedModule.addClass('current');
-	                    /*selectedCol.addClass('fixed')
-	                        .css({
-	                            'top': 0
-	                        });*/
-	                }
-
-	            }
-	            //We're out of the viewport so lock the column back to it's start point
+	            // out of the viewport
 	            else {
-	                selectedModule.removeClass('current');
-	                /*selectedCol.removeClass('fixed')
-	                    .css({
-	                        'top': 0,
-	                        'bottom': '',
-	                        'left': 0
-	                    });*/
+	                currEle.removeClass('current');
 	            }
 
-	        }); //End Scroll Event
+	        });
 
 	}; //End Function
 
