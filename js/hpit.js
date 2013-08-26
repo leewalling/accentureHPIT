@@ -137,12 +137,12 @@ hpit.core = (function(){
 		$('#toggleMenu,#sideMenu .close').on('click',function(e){
 			e.preventDefault();
 
-			if($target.hasClass("open")){
+			if($target.hasClass("opened")){
 				$target.animate({"right":"-275px"}, "normal");
-				$target.removeClass("open");
+				$target.removeClass("opened");
 			} else {
 				$target.animate({"right":"0px"}, "normal");
-				$target.addClass("open");
+				$target.addClass("opened");
 			}
 		});
 	}

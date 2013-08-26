@@ -46,7 +46,7 @@
     	</div>
     	<div id="sideMenu">
     		<ul>
-    			<li><a href="#top">Back To Top</a></li>
+    			<li><a href="#top" class="btt">Back To Top</a></li>
     			<li><a href="#insight-1"><span>01</span> insight-1</a></li>
     			<li><a href="#insight-2"><span>02</span> insight-2</a></li>
     			<li><a href="#insight-3"><span>03</span> insight-3</a></li>

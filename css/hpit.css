@@ -119,12 +119,16 @@ html, body {
 }
 .close{
 	display: inline-block;
+	overflow: hidden;
 	width: 13px;
 	height: 13px;
 	position: absolute;
 	top:20px;
 	right:15px;
 	z-index: 201;
+}
+.close > img{
+	float: left;
 }
 
 
