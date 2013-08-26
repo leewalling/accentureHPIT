@@ -418,6 +418,7 @@
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 		<script src="js/jquery.localscroll-1.2.7-min.js"></script>
 		<script src="js/hpit.js"></script>
