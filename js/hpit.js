@@ -114,8 +114,10 @@ hpit.core = (function(){
 			var $target = $('#sideMenu');
 			if($target.hasClass("open")){
 				$target.animate({"right":"-275px"}, "normal");
+				$target.removeClass("open");
 			} else {
 				$target.animate({"right":"0px"}, "normal");
+				$target.addClass("open");
 			}
 		});
 	}
