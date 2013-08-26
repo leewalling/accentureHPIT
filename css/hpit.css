@@ -34,6 +34,7 @@ html, body {
 }
 #controls {
 	position: fixed;
+	background-color:#000;
 	padding:15px;
 	width: 45px;
 	height: 150px;
@@ -43,15 +44,25 @@ html, body {
 	display: inline-block;
 	z-index: 100;
 	text-align: center;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
 }
 #controls a {
 	display: inline-block;
 	text-decoration: none;
 	color: #fff;
-}
-#controls .arrow {
 	width: 45px;
+}
+#controls .arrow {	
 	height: 45px;
+}
+#controls .txt {
+	line-height: 22px;
+	margin:19px 0;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
 }
 #sideMenu {
 	position: fixed;

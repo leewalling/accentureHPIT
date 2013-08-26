@@ -41,7 +41,7 @@
     	<div id="controls">
     		<!--<img src="images/menu-controls.png" width="77" height="181" />-->
     		<a href="#" class="arrow"><</a>
-    		<a href="#">Menu</a>
+    		<a href="#" class="txt">Menu</a>
     		<a href="#" class="arrow">></a>
     	</div>
     	<div id="sideMenu">
