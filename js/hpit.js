@@ -8,17 +8,17 @@ if (typeof console == "undefined") {
 
 var hpit = window.hpit || {};
 
-// initial configuration
-hpit.configuration = {
-	currentInsight: 1,
+// initial config
+hpit.config = {
+	currInsight: 1,
 	debugLogging: false,
-	screenWidth: null,
-	screenHeight: null,
-	touchOrDesktop: 'desktop',
+	scrW: null,
+	scrH: null,
+	desktopORtouch: 'desktop',
 	isIE7: false,
 	easing: 'easeInOutExpo',
-	timings: {
-		backToTop: 1000,
+	duration: {
+		backToTop: 1500,
 		desktop: 1000,
 		touch: 1
 	}
@@ -38,14 +38,14 @@ hpit.core = (function(){
 		$.logEvent('[hpit.core.init]');
 
 		$('#hero,#sideMenu').localScroll({
-			duration: hpit.configuration.timings[hpit.configuration.touchOrDesktop],
-			easing: hpit.configuration.easing,
+			duration: hpit.config.duration[hpit.config.desktopORtouch],
+			easing: hpit.config.easing,
 			hash: true,
 			onBefore: function(anchor,settings){
 				$('#toggleMenu').trigger("click");
 			},
 			onAfter: function(anchor,settings){
-				if(hpit.configuration.touchOrDesktop == 'desktop'){
+				if(hpit.config.desktopORtouch == 'desktop'){
 					console.log('done scrolling');
 				}
 			}
@@ -53,7 +53,7 @@ hpit.core = (function(){
 		
 		// Dynamically switch on debug logging, if specified in the URL
 		if(top.location.href.indexOf('debug') != -1) {
-			hpit.configuration.debugLogging = true;
+			hpit.config.debugLogging = true;
 		}
 		
 		// Calcaulate/re-calculate any dimensions which may be altered by an orientation change or browser resize
@@ -69,11 +69,11 @@ hpit.core = (function(){
 		toggleMenuInit();
 		
 		// Work out whether IE7 is being used to view the site, due to the way absolute vs. fixed positioning works differently in that browser
-		hpit.configuration.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
+		hpit.config.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
 		
 		var validHashValue = false;
 
-		console.log('config: ', hpit.configuration);
+		console.log('config: ', hpit.config);
 
 		$('.insight').each(function () {
 			paneLock($(this));
@@ -110,7 +110,7 @@ hpit.core = (function(){
 
 	                var menuItem = $('.insight.current').data('insight');
 	                $('#sideMenu ul li[data-insight-nav='+menuItem+']').addClass('hilited');
-	                hpit.configuration.currentInsight = menuItem;
+	                hpit.config.currInsight = menuItem;
 	            }
 	            // out of the viewport
 	            else {
@@ -121,12 +121,12 @@ hpit.core = (function(){
 
 	}; //End Function
 
-	//hpit.configuration.currentInsight
+	//hpit.config.currInsight
 	function arrowsInit(){
 		
 		$('.arrows').on('click',function(e){
 			e.preventDefault();
-			var $cur = parseInt(hpit.configuration.currentInsight);
+			var $cur = parseInt(hpit.config.currInsight);
 			var $th = $(this);
 			var newNum;
 			
@@ -135,17 +135,17 @@ hpit.core = (function(){
 				if($cur > 1){
 					newNum = ($cur - 1);
 					console.log('newNum: ' + newNum);
-					$(window).scrollTo('#insight-' + newNum, hpit.configuration.timings[hpit.configuration.touchOrDesktop], {easing:hpit.configuration.easing} );
+					$(window).scrollTo('#insight-' + newNum, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
 				} else {
 					console.log('nothing there');
 					return false;
 				}
 			} else {
 				console.log('cur: ', $cur);
-				if($cur < $('.insight').length - 1){
+				if($cur < $('.insight').length){
 					newNum = ($cur + 1);
 					console.log('newNum: ' + newNum);
-					$(window).scrollTo('#insight-' + newNum, hpit.configuration.timings[hpit.configuration.touchOrDesktop], {easing:hpit.configuration.easing} );
+					$(window).scrollTo('#insight-' + newNum, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
 				} else {
 					console.log('nothing there');
 					return false;
@@ -157,7 +157,7 @@ hpit.core = (function(){
 	
 	// sidemenu toggle method
 	function toggleMenuInit(){
-		var scrH = parseInt(hpit.configuration.screenHeight);
+		var scrH = parseInt(hpit.config.scrH);
 		var availH = scrH - 62;
 		var menuH = $('#sideMenu > ul').outerHeight();
 
@@ -178,7 +178,7 @@ hpit.core = (function(){
 		}
 		
 		var $target = $('#sideMenu');
-		$target.css({"height" : hpit.configuration.screenHeight - 62});
+		$target.css({"height" : hpit.config.scrH - 62});
 
 		$('#toggleMenu,#sideMenu .closeX').on('click',function(e){
 			e.preventDefault();
@@ -196,8 +196,8 @@ hpit.core = (function(){
 	function resetSite(){
 		$.logEvent('[hpit.core.resetSite]');
 		
-		hpit.configuration.screenWidth = $(window).width();
-		hpit.configuration.screenHeight = $(window).height();
+		hpit.config.scrW = $(window).width();
+		hpit.config.scrH = $(window).height();
 	}
 		
 	/**
@@ -208,8 +208,8 @@ hpit.core = (function(){
 		$.logEvent('[hpit.core.backToTopInit]');
 		
 		$('.back-to-top').localScroll({
-			duration: hpit.configuration.timings[hpit.configuration.touchOrDesktop],
-			easing: hpit.configuration.easing,
+			duration: hpit.config.duration[hpit.config.desktopORtouch],
+			easing: hpit.config.easing,
 			hash: false,
 			onBefore: function(e,anchor,$target){
 				//
@@ -236,7 +236,7 @@ hpit.core = (function(){
 	* @return {Boolean}
 	*/
 	function isTouchDevice(){
-		return hpit.configuration.touchOrDesktop == 'touch';
+		return hpit.config.desktopORtouch == 'touch';
 	}
 	
 	/**
@@ -266,7 +266,7 @@ $.extend({
 	* @param {String} event The event to log
 	*/
 	logEvent: function(event){
-		if(hpit.configuration.debugLogging){
+		if(hpit.config.debugLogging){
 			console.log(event);
 		}
 	},
