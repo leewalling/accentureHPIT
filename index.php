@@ -58,7 +58,7 @@
     			<li><a href="#insight-9"><span>09</span> insight-9</a></li>
     			<li><a href="#insight-10"><span>10</span> insight-10</a></li>
     		</ul>
-    		<a href="#" class="close"><img src="images/x.png" width="13" height="13" /></a>
+    		<a href="#" class="close"><img src="images/x.gif" width="13" height="13" /></a>
     	</div>
     	<div class="hero" id="hero">hero area...</div>
     	<div class="insight" id="insight-1" data-insight="1">
