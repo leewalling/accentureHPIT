@@ -62,6 +62,9 @@ hpit.core = (function(){
 		// Initialize event handler for 'Back to top' links
 		//backToTopInit();
 
+		// Initialize event handler for control arrows
+		arrowsInit();
+
 		// Initialize event handler for menu toggle
 		toggleMenuInit();
 		
@@ -107,6 +110,7 @@ hpit.core = (function(){
 
 	                var menuItem = $('.insight.current').data('insight');
 	                $('#sideMenu ul li[data-insight-nav='+menuItem+']').addClass('hilited');
+	                hpit.configuration.currentInsight = menuItem;
 	            }
 	            // out of the viewport
 	            else {
@@ -116,6 +120,23 @@ hpit.core = (function(){
 	        });
 
 	}; //End Function
+
+	//hpit.configuration.currentInsight
+	function arrowsInit(){
+		var $th = $(this);
+		var $cur = hpit.configuration.currentInsight;
+		$('.arrows').on('click',function(e){
+			e.preventDefault();
+
+			alert('cur: ' + $cur);
+			if($th.hasClass("prev")){
+				alert('prev');
+			} else {
+				alert('next');
+			}
+		});
+		
+	}
 	
 	// sidemenu toggle method
 	function toggleMenuInit(){
@@ -155,10 +176,6 @@ hpit.core = (function(){
 		});
 	}
 
-	/**
-	* Calcaulate/re-calculate any dimensions which may be altered by an orientation change or browser resize
-	* @method resetSite
-	*/	
 	function resetSite(){
 		$.logEvent('[hpit.core.resetSite]');
 		
