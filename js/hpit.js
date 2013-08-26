@@ -131,12 +131,20 @@ hpit.core = (function(){
 			
 			if($th.hasClass("prev")){
 				console.log('cur: ', $cur);
-				console.log('typeof: ', typeof($cur));
-				//console.log('cur: ' + $cur + ' - ' + 'goTo: ' + $cur - 1);
+				if($cur > 1){
+					console.log('goTo: ' + ($cur - 1));
+				} else {
+					console.log('nothing there');
+					return false;
+				}
 			} else {
 				console.log('cur: ', $cur);
-				console.log('typeof: ', typeof($cur));			
-				//console.log('cur: ' + $cur + ' - ' + 'goTo: ' + $cur + 1);
+				if($cur < $('.insight').length - 1){
+					console.log('goTo: ' + ($cur + 1));
+				} else {
+					console.log('nothing there');
+					return false;
+				}
 			}
 		});
 		
