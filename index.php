@@ -47,16 +47,16 @@
     	<div id="sideMenu">
     		<ul>
     			<li><a href="#top" class="btt"><em>Back To Top</em></a></li>
-    			<li><a href="#insight-1"><span>01</span> insight-1</a></li>
-    			<li><a href="#insight-2"><span>02</span> insight-2</a></li>
-    			<li><a href="#insight-3"><span>03</span> insight-3</a></li>
-    			<li><a href="#insight-4"><span>04</span> insight-4</a></li>
-    			<li><a href="#insight-5"><span>05</span> insight-5</a></li>
-    			<li><a href="#insight-6"><span>06</span> insight-6</a></li>
-    			<li><a href="#insight-7"><span>07</span> insight-7</a></li>
-    			<li><a href="#insight-8"><span>08</span> insight-8</a></li>
-    			<li><a href="#insight-9"><span>09</span> insight-9</a></li>
-    			<li><a href="#insight-10"><span>10</span> insight-10</a></li>
+    			<li data-insight-nav="1"><a href="#insight-1"><span>01</span> insight-1</a></li>
+    			<li data-insight-nav="2"><a href="#insight-2"><span>02</span> insight-2</a></li>
+    			<li data-insight-nav="3"><a href="#insight-3"><span>03</span> insight-3</a></li>
+    			<li data-insight-nav="4"><a href="#insight-4"><span>04</span> insight-4</a></li>
+    			<li data-insight-nav="5"><a href="#insight-5"><span>05</span> insight-5</a></li>
+    			<li data-insight-nav="6"><a href="#insight-6"><span>06</span> insight-6</a></li>
+    			<li data-insight-nav="7"><a href="#insight-7"><span>07</span> insight-7</a></li>
+    			<li data-insight-nav="8"><a href="#insight-8"><span>08</span> insight-8</a></li>
+    			<li data-insight-nav="9"><a href="#insight-9"><span>09</span> insight-9</a></li>
+    			<li data-insight-nav="10"><a href="#insight-10"><span>10</span> insight-10</a></li>
     		</ul>
     		<a href="#" class="closeX">&nbsp;</a>
     	</div>

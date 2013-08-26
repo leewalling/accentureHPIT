@@ -102,9 +102,11 @@ hpit.core = (function(){
 	            // is the element in the viewport?
 	            if (winOffset >= vpStart && winOffset < vpEnd) {
 	                $('.insight').removeClass('current');
+	                $('#sideMenu ul li').removeClass('hilited');
 	                currEle.addClass('current');
-	                //console.log('current: ', currEle);
-	                console.log('current: ', $('.insight.current').data('insight'));
+
+	                var menuItem = $('.insight.current').data('insight');
+	                $('#sideMenu ul li[data-insight-nav='+menuItem+']').addClass('hilited');
 	            }
 	            // out of the viewport
 	            else {

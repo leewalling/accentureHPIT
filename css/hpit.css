@@ -133,6 +133,7 @@ html, body {
 	float: left;
 	margin-right:13px;
 }
+#sideMenu ul li.hilited a,
 #sideMenu ul li a:hover,
 #sideMenu ul li a:focus {
 	background-color:#f5f5f5;
