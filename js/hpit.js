@@ -124,9 +124,9 @@ hpit.core = (function(){
 	//hpit.configuration.currentInsight
 	function arrowsInit(){
 		
-		var $cur = parseInt(hpit.configuration.currentInsight);
 		$('.arrows').on('click',function(e){
 			e.preventDefault();
+			var $cur = parseInt(hpit.configuration.currentInsight);
 			var $th = $(this);
 			
 			if($th.hasClass("prev")){
