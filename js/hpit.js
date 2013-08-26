@@ -99,6 +99,7 @@ hpit.core = (function(){
 	            // is the element in the viewport?
 	            if (winOffset >= vpStart && winOffset < vpEnd) {
 	                currEle.addClass('current');
+	                console.log('current: ', currEle);
 	            }
 	            // out of the viewport
 	            else {
