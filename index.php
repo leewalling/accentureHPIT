@@ -46,7 +46,7 @@
     	</div>
     	<div id="sideMenu">
     		<ul>
-    			<li><a href="#top" class="btt">Back To Top</a></li>
+    			<li><a href="#top" class="btt"><em>Back To Top</em></a></li>
     			<li><a href="#insight-1"><span>01</span> insight-1</a></li>
     			<li><a href="#insight-2"><span>02</span> insight-2</a></li>
     			<li><a href="#insight-3"><span>03</span> insight-3</a></li>
@@ -58,7 +58,7 @@
     			<li><a href="#insight-9"><span>09</span> insight-9</a></li>
     			<li><a href="#insight-10"><span>10</span> insight-10</a></li>
     		</ul>
-    		<a href="#" class="close"><img src="images/x.gif" width="13" height="13" /></a>
+    		<a href="#" class="close"><img src="images/x.png" width="13" height="13" /></a>
     	</div>
     	<div class="hero" id="hero">hero area...</div>
     	<div class="insight" id="insight-1" data-insight="1">
