@@ -59,10 +59,12 @@ html, body {
 }
 #sideMenu ul li {
 	border-bottom:1px solid #000;
+	overflow: hidden;
 }
 #sideMenu ul li a {
 	padding:15px 10px 15px 8px;
 	display:inline-block;
+	float: left;
 	width: 100%;
 	line-height: 26px;
 	color: #fff;

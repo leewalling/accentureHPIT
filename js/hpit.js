@@ -108,8 +108,17 @@ hpit.core = (function(){
 	
 	// sidemenu toggle method
 	function toggleMenuInit(){
-		console.log('screen height: ' + hpit.configuration.screenHeight);
-		console.log('menu height: ' + $('#sideMenu > ul').outerHeight());
+		var scrH = parseInt(hpit.configuration.screenHeight);
+		var menuH = $('#sideMenu > ul').outerHeight();
+		console.log('scrH: ' + scrH);
+		console.log('menuH: ' + menuH);
+
+		var $diff = menuH - (scrH - 62);
+		if($diff > 0){
+			alert('menu too big!');
+		} else {
+			alert('diff:' + $diff)
+		}
 		
 		var $target = $('#sideMenu');
 		$target.css({"height" : hpit.configuration.screenHeight - 62});
