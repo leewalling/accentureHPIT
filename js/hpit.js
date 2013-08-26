@@ -108,11 +108,13 @@ hpit.core = (function(){
 	
 	// sidemenu toggle method
 	function toggleMenuInit(){
-		console.log('winH: ' + hpit.configuration.screenHeight);
+		//console.log('winH: ' + hpit.configuration.screenHeight);
+		var $target = $('#sideMenu');
+		$target.css({"height":hpit.configuration.screenHeight});
+
 		$('#toggleMenu').on('click',function(e){
 			e.preventDefault();
 
-			var $target = $('#sideMenu');
 			if($target.hasClass("open")){
 				$target.animate({"right":"-275px"}, "normal");
 				$target.removeClass("open");
