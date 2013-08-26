@@ -111,15 +111,26 @@ hpit.core = (function(){
 		var scrH = parseInt(hpit.configuration.screenHeight);
 		var availH = scrH - 62;
 		var menuH = $('#sideMenu > ul').outerHeight();
-		console.log('scrH: ' + scrH);
-		console.log('availH: ' + availH);
-		console.log('menuH: ' + menuH);
+		//console.log('scrH: ' + scrH);
+		//console.log('availH: ' + availH);
+		//console.log('menuH: ' + menuH);
 
 		var $diff = menuH - availH;
 		if($diff > 0){
-			alert('menu too big! ' + '- diff:' + $diff);
-		} else {
-			alert('diff:' + $diff)
+			//var $diffPerItem = $diff / $('#sideMenu > ul > li').length;
+			//console.log('diff:' + $diff + ' - diffPerItem:' + $diffPerItem);
+			if($diff > 300){
+				$('#sideMenu').addClass('height-xxs');
+			} else if($diff > 200){
+				$('#sideMenu').addClass('height-xs');
+			} else if($diff > 100){
+				$('#sideMenu').addClass('height-sm');
+			} else if($diff > 50){
+				$('#sideMenu').addClass('height-md');
+			} else  {
+				$('#sideMenu').addClass('height-lg');
+			}
+			
 		}
 		
 		var $target = $('#sideMenu');

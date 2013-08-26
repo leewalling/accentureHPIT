@@ -75,6 +75,7 @@ html, body {
 	font-size: 24px;
 	font-weight: bold;
 	float: left;
+	margin-right:13px;
 }
 #sideMenu ul li a:hover,
 #sideMenu ul li a:focus {
