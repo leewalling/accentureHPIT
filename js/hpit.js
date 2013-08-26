@@ -56,6 +56,9 @@ hpit.core = (function(){
 				
 		// Initialize event handler for 'Back to top' links
 		//backToTopInit();
+
+
+		toggleMenuInit();
 		
 		// Work out whether IE7 is being used to view the site, due to the way absolute vs. fixed positioning works differently in that browser
 		hpit.configuration.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
@@ -101,6 +104,21 @@ hpit.core = (function(){
 	        });
 
 	}; //End Function
+	
+
+	function toggleMenuInit(){
+		$.logEvent('[hpit.core.toggleMenuInit]');
+		$('#toggleMenu').on('click',function(e){
+			e.preventDefault();
+
+			var $th = $(this);
+			if($th.hasClass("open")){
+				$th.animate({"right":"-275px"}, "normal");
+			} else {
+				$th.animate({"right":"0px"}, "normal");
+			}
+		});
+	}
 
 	/**
 	* Calcaulate/re-calculate any dimensions which may be altered by an orientation change or browser resize

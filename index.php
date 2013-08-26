@@ -44,7 +44,11 @@
     			<li>sideMenu</li>
     		</ul>
     	</div>
-    	<div class="hero" id="hero">hero area...<br /><br /><br /><br /><a href="#insight-7">scrollTo insight-7</a></div>
+    	<div class="hero" id="hero">hero area...
+    		<br /><br />
+    		<a href="/" id="toggleMenu">toggle menu</a>
+    		<br /><br />
+    		<a href="#insight-7">scrollTo insight-7</a></div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
