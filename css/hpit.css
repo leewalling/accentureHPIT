@@ -63,6 +63,12 @@ html, body {
 #controls .arrow:hover {
 	background-position: 0 -45px;
 }
+#controls .nxt {
+	background-position: -45px 0;	
+}
+#controls .nxt:hover {
+	background-position: -45px -45px;	
+}
 #controls .txt {
 	line-height: 22px;
 	margin:19px 0;
