@@ -36,7 +36,7 @@ hpit.core = (function(){
 	function init(){
 		$.logEvent('[hpit.core.init]');
 
-		$('#hero').localScroll({
+		$('#hero,#sideMenu').localScroll({
 			duration: hpit.configuration.timings[hpit.configuration.touchOrDesktop],
 			easing: hpit.configuration.easing,
 			hash: true,
@@ -110,7 +110,7 @@ hpit.core = (function(){
 	function toggleMenuInit(){
 		//console.log('winH: ' + hpit.configuration.screenHeight);
 		var $target = $('#sideMenu');
-		$target.css({"height":hpit.configuration.screenHeight});
+		$target.css({"height" : hpit.configuration.screenHeight - 62});
 
 		$('#toggleMenu').on('click',function(e){
 			e.preventDefault();

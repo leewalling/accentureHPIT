@@ -1,3 +1,19 @@
+/******************************  css reset  *************************************/
+body, ol, ul {
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;list-style: none;
+}
+ol, ul {
+	list-style: none;
+}
+/******************************  end css reset  **********************************/
+
+
 html, body {
 	margin: 0;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -8,8 +24,6 @@ html, body {
 html, body {
   background-color: #fff !important;
 }
-
-
 
 .container {
 	max-width:100%;
@@ -43,10 +57,35 @@ html, body {
 #sideMenu ul {
 	background-color:#2a2a2a;
 }
+#sideMenu ul li {
+	
+}
+#sideMenu ul li a {
+	padding:15px 10px 0 8px;
+	display:inline-block;
+	width: 100%;
+	line-height: 26px;
+	color: #fff;
+	text-decoration: none;
+}
+#sideMenu ul li a > span {
+	font-size: 24px;
+	font-weight: bold;
+}
 .hero {
 	background-color:#ccc;
 	color:#000;
-	min-height:400px;
+	min-he
+#sideMenu ul li a {
+	padding:19px 10px 0 8px;
+	display:inline-block;
+	width: 100%;
+}
+#sideMenu ul li a {
+	padding:19px 10px 0 8px;
+	display:inline-block;
+	width: 100%;
+}ight:400px;
 	padding-top:62px;
 }
 .insight {

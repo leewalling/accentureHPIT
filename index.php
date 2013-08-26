@@ -41,14 +41,19 @@
     	<div id="controls"><img src="images/menu-controls.png" width="77" height="181" /></div>
     	<div id="sideMenu">
     		<ul>
-    			<li>sideMenu</li>
+    			<li><a href="#insight-1"><span>01</span> insight-1</a></li>
+    			<li><a href="#insight-2"><span>02</span> insight-2</a></li>
+    			<li><a href="#insight-3"><span>03</span> insight-3</a></li>
+    			<li><a href="#insight-4"><span>04</span> insight-4</a></li>
+    			<li><a href="#insight-5"><span>05</span> insight-5</a></li>
+    			<li><a href="#insight-6"><span>06</span> insight-6</a></li>
+    			<li><a href="#insight-7"><span>07</span> insight-7</a></li>
+    			<li><a href="#insight-8"><span>08</span> insight-8</a></li>
+    			<li><a href="#insight-9"><span>09</span> insight-9</a></li>
+    			<li><a href="#insight-10"><span>10</span> insight-10</a></li>
     		</ul>
     	</div>
-    	<div class="hero" id="hero">hero area...
-    		<br /><br />
-    		<a href="/" id="toggleMenu">toggle menu</a>
-    		<br /><br />
-    		<a href="#insight-7">scrollTo insight-7</a></div>
+    	<div class="hero" id="hero">hero area...<br /><br /><a href="/" id="toggleMenu">toggle menu</a></div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
