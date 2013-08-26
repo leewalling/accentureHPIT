@@ -123,16 +123,18 @@ hpit.core = (function(){
 
 	//hpit.configuration.currentInsight
 	function arrowsInit(){
-		var $th = $(this);
-		var $cur = hpit.configuration.currentInsight;
+		
+		var $cur = parseInt(hpit.configuration.currentInsight);
 		$('.arrows').on('click',function(e){
 			e.preventDefault();
-
-			alert('cur: ' + $cur);
+			var $th = $(this);
+			
 			if($th.hasClass("prev")){
-				alert('prev');
+				//alert('prev');
+				alert('cur: ' + $cur + ' - ' + 'goTo: ' + $cur - 1);
 			} else {
-				alert('next');
+				//alert('next');
+				alert('cur: ' + $cur + ' - ' + 'goTo: ' + $cur + 1);
 			}
 		});
 		
