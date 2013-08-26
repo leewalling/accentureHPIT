@@ -142,7 +142,7 @@ hpit.core = (function(){
 				}
 			} else {
 				console.log('cur: ', $cur);
-				if($cur < $('.insight').length - 2){
+				if($cur < $('.insight').length - 1){
 					newNum = ($cur + 1);
 					console.log('newNum: ' + newNum);
 					$(window).scrollTo('#insight-' + newNum, hpit.configuration.timings[hpit.configuration.touchOrDesktop], {easing:hpit.configuration.easing} );
