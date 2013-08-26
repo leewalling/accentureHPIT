@@ -111,11 +111,11 @@ hpit.core = (function(){
 		$('#toggleMenu').on('click',function(e){
 			e.preventDefault();
 
-			var $th = $(this);
-			if($th.hasClass("open")){
-				$th.animate({"right":"-275px"}, "normal");
+			var $target = $('#sideMenu');
+			if($target.hasClass("open")){
+				$target.animate({"right":"-275px"}, "normal");
 			} else {
-				$th.animate({"right":"0px"}, "normal");
+				$target.animate({"right":"0px"}, "normal");
 			}
 		});
 	}
