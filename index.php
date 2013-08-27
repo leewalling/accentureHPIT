@@ -29,9 +29,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="contact"><a href="#"><span class="icn"><span>contact</a></li>
-            <li class="download"><a href="#"><span class="icn"><span>download</a></li>
-            <li class="share"><a href="#"><span class="icn"><span>share</a></li>
+            <li class="contact"><a href="#"><span class="icn"></span>contact</a></li>
+            <li class="download"><a href="#"><span class="icn"></span>download</a></li>
+            <li class="share"><a href="#"><span class="icn"></span>share</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
