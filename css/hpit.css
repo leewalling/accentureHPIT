@@ -347,7 +347,13 @@ html, body {
 .navbar-default .navbar-nav > li > a {
   	padding: 20px;
   	line-height: 22px;
+  	background: #000;
   	color: #fff;
+	-webkit-transition: background-color 300ms ease 0s;
+	-moz-transition: background-color 300ms ease 0s;
+	-o-transition: background-color 300ms ease 0s;
+	-ms-transition: background-color 300ms ease 0s;
+	transition: background-color 300ms ease 0s;
 }
 .navbar-default .navbar-nav > li > a:focus {
   	background: #363636;
@@ -356,11 +362,6 @@ html, body {
 .navbar-default .navbar-nav > li > a:hover {
   	color: #fff;
   	background-color: #363636;
-	-webkit-transition: background-color 1000ms linear;
-	-moz-transition: background-color 1000ms linear;
-	-o-transition: background-color 1000ms linear;
-	-ms-transition: background-color 1000ms linear;
-	transition: background-color 1000ms linear;
 }
 .navbar-nav > li {
   	border-left:1px solid #363636;
