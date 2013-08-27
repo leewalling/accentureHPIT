@@ -347,16 +347,10 @@ html, body {
 .navbar-default .navbar-nav > li > a {
   	padding: 20px;
   	line-height: 22px;
-  	background: #000;
   	color: #fff;
   	text-transform:uppercase;
   	font-weight: bold;
   	overflow: hidden;
-	-webkit-transition: background-color 300ms ease 0s;
-	-moz-transition: background-color 300ms ease 0s;
-	-o-transition: background-color 300ms ease 0s;
-	-ms-transition: background-color 300ms ease 0s;
-	transition: background-color 300ms ease 0s;
 }
 /*
 .navbar-default .navbar-nav > li > a:focus {
@@ -366,7 +360,7 @@ html, body {
 */
 .navbar-default .navbar-nav > li > a:hover {
   	color: #fff;
-  	background-color: #363636;
+  	/*background-color: #363636;*/
 }
 .navbar-default .navbar-nav > li > a > .icn {
   	display: inline-block;
@@ -393,6 +387,15 @@ html, body {
 .navbar-nav > li {
   	border-left:1px solid #363636;
   	float: right;
+  	background: #000;
+	-webkit-transition: background-color 300ms ease 0s;
+	-moz-transition: background-color 300ms ease 0s;
+	-o-transition: background-color 300ms ease 0s;
+	-ms-transition: background-color 300ms ease 0s;
+	transition: background-color 300ms ease 0s;
+}
+.navbar-nav > li:hover {
+  	background: #363636;
 }
 /******************************  end navbar overrides  ******************************/
 
