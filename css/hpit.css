@@ -377,7 +377,15 @@ html, body {
   	margin-right: 10px;
   	background-image:url("../images/icons.png");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+}
+.navbar-nav .share .icn {
+  	background-position: 0 0;
+}
+.navbar-nav .download .icn {
+  	background-position: 0 -22px;
+}
+.navbar-nav .contact .icn {
+  	background-position: 0 -44px;
 }
 .navbar-nav {
   	overflow: hidden;
