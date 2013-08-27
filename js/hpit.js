@@ -76,13 +76,14 @@ hpit.core = (function(){
 		console.log('config: ', hpit.config);
 
 		$('.insight').each(function () {
+			console.log($(this).outerHeight());
 			paneLock($(this));
 		});
 	}
 
 	function paneLock(element) {
 
-	    $(window)
+		$(window)
 	        .bind('scroll', function () {
 	            
 	            //var $arr = $('.insight');
