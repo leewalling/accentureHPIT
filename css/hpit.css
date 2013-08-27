@@ -487,12 +487,12 @@ html, body {
 #limelight-overlay {
 	-khtml-opacity: 0;
 	-moz-opacity: 0;
-	background: url(../images/transparencies/000000/percent-95.png) repeat left top;
+	background: rgba(0, 0, 0, 0.9);
 	filter: alpha(opacity=0);
 	left: 0 !important;
 	opacity: 0;
 	position: absolute;
-	z-index: 5;
+	z-index: 2000;
 }
 
 #limelight-overlay .inner {

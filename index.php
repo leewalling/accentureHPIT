@@ -16,8 +16,8 @@
 	</head>
 	<body>
 
-		<div id="limelight-overlay" style="height: 606px; left: 0px; top: 3516px; width: 1349px; opacity: 1;">
-			<div class="inner" style="left: 0px; top: -37px;">
+		<div id="limelight-overlay" style="height: 100%; left: 0px; top: 0px; width: 100%; opacity: 1;">
+			<div class="inner" style="left: 0px; top: 0px;">
 				<a class="close" href="#">Close overlay</a>
 				<div id="limelight-player">
 					<object width="100%" height="100%" class="LimelightEmbeddedPlayerFlash" data="https://assets.delvenetworks.com/player/loader.swf" id="limelight_player_239897" name="limelight_player_239897" type="application/x-shockwave-flash">
@@ -28,7 +28,6 @@
 						<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">
 					</object>
 				</div>
-				<p><a href="/Microsites/it-trends-innovations-2013/documents/scripts/2013-07-19-vertical-page/media/pdfs/video-transcripts/beyond-the-cloud.pdf" rel="external">Download video transcript (PDF, 129kb)</a></p>
 			</div>
 		</div>
 
