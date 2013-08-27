@@ -422,6 +422,7 @@ html, body {
   	display: inline-block;
   	float: right;
   	margin-right: 5px;
+  	margin-bottom: 1px;
 	overflow: hidden;
 	width: 25px;
 	height: 25px;
@@ -437,9 +438,9 @@ html, body {
 .extra .facebook {
   	background-position: -60px 0;
 }
-.extra .google {
+ .google {
   	background-position: -90px 0;
-  	margin-right: 0;
+  	margin-right: 0 !important;
 }
 /******************************  end navbar overrides  ******************************/
 
