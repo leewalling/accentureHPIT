@@ -91,6 +91,7 @@
 				</video>
     	</div>
     	<div class="insight" id="insight-1" data-insight="1">
+    		<div class="bgImg"><img src="images/bg_bridge.jpg" /></div>
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
     		</div>
