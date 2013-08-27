@@ -148,12 +148,12 @@ html, body {
 	font-size: 15px;
 }
 #sideMenu.height-xs ul li a {
-	padding: 6px 15px 6px 11px;
+	padding: 5px 15px 6px 11px;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 17px;
 }
 #sideMenu.height-xs ul li a > span {
-	font-size: 17px;
+	font-size: 16px;
 }
 #sideMenu.height-sm ul li a {
 	padding: 8px 15px 8px 11px;
