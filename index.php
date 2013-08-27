@@ -86,8 +86,8 @@
     	</div>
     	<div class="hero" id="hero">
     		<video width="100%" height="auto" autoplay loop>
-				  <source src="blue-loop.mp4" type="video/mp4">
-				  <source src="blue-loop.ogg" type="video/ogg">
+				  <source src="images/blue-loop.mp4" type="video/mp4">
+				  <source src="images/blue-loop.ogg" type="video/ogg">
 				  Your browser does not support the video tag.
 				</video>
     	</div>

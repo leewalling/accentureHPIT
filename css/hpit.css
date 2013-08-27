@@ -481,3 +481,64 @@ html, body {
 }
 
 /******************************  end Sharepoint overrides  ******************************/
+
+/* Limelight (video) overlay */
+
+#limelight-overlay {
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+	background: url(../images/transparencies/000000/percent-95.png) repeat left top;
+	filter: alpha(opacity=0);
+	left: 0 !important;
+	opacity: 0;
+	position: absolute;
+	z-index: 5;
+}
+
+#limelight-overlay .inner {
+	height: 505px;
+	margin: 0 auto;
+	position: relative;
+	width: 768px;
+}
+
+#limelight-overlay .close {
+	background: url(../images/close-video.png) no-repeat left top;
+	display: block;
+	height: 23px;
+	position: absolute;
+	right: 0;
+	text-indent: -9999px;
+	top: 30px;
+	width: 23px;
+}
+
+#limelight-overlay #limelight-player {
+	background: #a0a0a0;
+	height: 400px;
+	position: absolute;
+	top: 65px;
+	width: 768px;
+	left: 0px !important;
+}
+
+#limelight-overlay P {
+	background: #fff url(../images/video-transcript-download.gif) no-repeat 10px center;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	overflow-y: auto;
+	padding: 10px 10px 10px 30px;
+	position: absolute;
+	width: 728px;
+}
+
+#limelight-overlay P A {
+	color: #98090b;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+#limelight-overlay P A:hover {
+	text-decoration: underline;
+}
