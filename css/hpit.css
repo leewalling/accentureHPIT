@@ -386,6 +386,7 @@ html, body {
 }
 .navbar-nav > li {
   	position: relative;
+  	min-width:138px;
   	overflow: visible;
   	border-left:1px solid #363636;
   	float: right;
