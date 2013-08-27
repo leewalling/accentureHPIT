@@ -33,7 +33,12 @@
             <li class="download"><a href="#"><span class="icn"></span>download</a></li>
             <li class="share">
             	<a href="#"><span class="icn"></span>share</a>
-            	<div class="extra">extra</div>
+            	<div class="extra">
+            		<a href="#" class="linkedin"></a>
+            		<a href="#" class="twitter"></a>
+            		<a href="#" class="facebook"></a>
+            		<a href="#" class="google"></a>
+            	</div>
             </li>
           </ul>
         </div><!--/.nav-collapse -->

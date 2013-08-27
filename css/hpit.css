@@ -417,6 +417,26 @@ html, body {
 .navbar-nav > li:hover .extra {
   	display: inline-block;
 }
+.navbar-nav > li .extra > a {
+  	display: inline-block;
+	overflow: hidden;
+	width: 25px;
+	height: 25px;
+  	background-image:url("../images/icons-social.png");
+	background-repeat: no-repeat;
+}
+.extra .linkedin {
+  	background-position: 0 0;
+}
+.extra .twitter {
+  	background-position: -30px 0;
+}
+.extra .facebook {
+  	background-position: -60px 0;
+}
+.extra .google {
+  	background-position: -90px 0;
+}
 /******************************  end navbar overrides  ******************************/
 
 
