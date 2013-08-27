@@ -313,8 +313,8 @@ html, body {
 /******************************  navbar overrides  **********************************/
 .navbar {
 	background: #000;
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .75);
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .75);
 }
 .navbar > .container .navbar-brand {
 	height:28px;
@@ -349,10 +349,18 @@ html, body {
   	line-height: 22px;
   	color: #fff;
 }
-.navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   	background: #363636;
   	color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  	color: #fff;
+  	background-color: #363636;
+	-webkit-transition: background-color 1000ms linear;
+	-moz-transition: background-color 1000ms linear;
+	-o-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
 }
 .navbar-nav > li {
   	border-left:1px solid #363636;
