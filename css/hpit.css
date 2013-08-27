@@ -147,6 +147,22 @@ html, body {
 #sideMenu.height-xxs ul li a > span {
 	font-size: 15px;
 }
+#sideMenu.height-xs ul li a {
+	padding: 5px 15px 5px 11px;
+	font-size: 11px;
+	line-height: 16px;
+}
+#sideMenu.height-xs ul li a > span {
+	font-size: 15px;
+}
+#sideMenu.height-sm ul li a {
+	padding: 5px 15px 5px 11px;
+	font-size: 11px;
+	line-height: 16px;
+}
+#sideMenu.height-sm ul li a > span {
+	font-size: 15px;
+}
 #sideMenu.height-md ul li a {
 	padding:10px 15px 10px 11px;
 }
