@@ -226,7 +226,9 @@ html, body {
 }
 .insight .bgImg img {
 	/*width:100%;
-	height:100%;*/	
+	height:100%;*/
+	position: fixed;
+  	top: -323px;
 	transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
 	-webkit-transform:skew(0deg,-22deg);
