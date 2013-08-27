@@ -313,6 +313,8 @@ html, body {
 /******************************  navbar overrides  **********************************/
 .navbar {
 	background: #000;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
 }
 .navbar > .container .navbar-brand {
 	height:28px;
