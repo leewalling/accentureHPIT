@@ -16,6 +16,22 @@
 	</head>
 	<body>
 
+		<div id="limelight-overlay" style="height: 606px; left: 0px; top: 3516px; width: 1349px; opacity: 1;">
+			<div class="inner" style="left: 0px; top: -37px;">
+				<a class="close" href="#">Close overlay</a>
+				<div id="limelight-player">
+					<object width="100%" height="100%" class="LimelightEmbeddedPlayerFlash" data="https://assets.delvenetworks.com/player/loader.swf" id="limelight_player_239897" name="limelight_player_239897" type="application/x-shockwave-flash">
+						<param name="movie" value="https://assets.delvenetworks.com/player/loader.swf">
+						<param name="wmode" value="window">
+						<param name="allowScriptAccess" value="always">
+						<param name="allowFullScreen" value="true">
+						<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">
+					</object>
+				</div>
+				<p><a href="/Microsites/it-trends-innovations-2013/documents/scripts/2013-07-19-vertical-page/media/pdfs/video-transcripts/beyond-the-cloud.pdf" rel="external">Download video transcript (PDF, 129kb)</a></p>
+			</div>
+		</div>
+
 <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -68,7 +84,13 @@
     		</ul>
     		<a href="#" class="closeX">&nbsp;</a>
     	</div>
-    	<div class="hero" id="hero">hero area...</div>
+    	<div class="hero" id="hero">
+    		<video width="100%" height="auto" autoplay loop>
+				  <source src="blue-loop.mp4" type="video/mp4">
+				  <source src="blue-loop.ogg" type="video/ogg">
+				  Your browser does not support the video tag.
+				</video>
+    	</div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
