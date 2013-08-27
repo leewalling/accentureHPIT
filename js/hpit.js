@@ -76,12 +76,12 @@ hpit.core = (function(){
 		console.log('config: ', hpit.config);
 
 		$('.insight').each(function () {
-			console.log($(this).outerHeight());
 			paneLock($(this));
 		});
 	}
 
 	function paneLock(element) {
+		element.find('.bgImg').css({"min-height" : element.outerHeight()});
 
 		$(window)
 	        .bind('scroll', function () {
