@@ -90,6 +90,9 @@
 				  Your browser does not support the video tag.
 				</video>
     	</div>
+    	<div class="bgImages" id="bgImages">
+    		bgImages
+    	</div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<div class="bgImg"><img src="images/bg_bridge.jpg" /></div>
     		<div class="marker">
