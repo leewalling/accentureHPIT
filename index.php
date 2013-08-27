@@ -34,10 +34,10 @@
             <li class="share">
             	<a href="#"><span class="icn"></span>share</a>
             	<div class="extra">
-            		<a href="#" class="linkedin"></a>
-            		<a href="#" class="twitter"></a>
-            		<a href="#" class="facebook"></a>
             		<a href="#" class="google"></a>
+            		<a href="#" class="facebook"></a>
+            		<a href="#" class="twitter"></a>
+            		<a href="#" class="linkedin"></a>
             	</div>
             </li>
           </ul>
