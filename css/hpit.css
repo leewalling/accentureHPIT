@@ -238,14 +238,15 @@ html, body {
 .insight .marker {
 	position:relative;
 	float: left;
-	/*top:45px;*/
+	/*top:45px;
+	text-align: center;*/
 	top:22px;
 	left:1px;
 	width:154px;
 	height:143px;
 	background-color:#000;
 	color:white;
-	text-align: center;
+	font-size:13px;
 	font-weight:bold;
 	overflow:hidden;
 	transform:skew(0deg,-22deg);
@@ -288,6 +289,9 @@ html, body {
   	line-height: 1.025em;
   	width: 100%;
   	font-weight:normal;
+  	letter-spacing: -0.075em;
+	line-height: 1em;
+	margin-top: -5px;
 }
 #insight-1 .marker {background-color:#aa1133;}
 #insight-2 .marker {background-color:#ff0000;}
