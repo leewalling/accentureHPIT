@@ -129,6 +129,7 @@
 				</div>
     	</div>
     	<div class="insight" id="insight-2" data-insight="2">
+    		<div class="bgImg"><img src="images/bg_lake.jpg" /></div>
     		<div class="marker">
     			<div>CIO Action Item<span>02</span></div>
     		</div>
