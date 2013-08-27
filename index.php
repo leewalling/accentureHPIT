@@ -33,7 +33,7 @@
             <li class="download"><a href="#"><span class="icn"></span>download</a></li>
             <li class="share">
             	<a href="#"><span class="icn"></span>share</a>
-            	<div class="extra">
+            	<div class="social">
             		<a href="#" class="google"></a>
             		<a href="#" class="facebook"></a>
             		<a href="#" class="twitter"></a>

@@ -289,7 +289,7 @@ html, body {
   	line-height: 1.025em;
   	width: 100%;
   	font-weight:normal;
-  	letter-spacing: -0.075em;
+  	letter-spacing: -0.05em;
 	line-height: 1em;
 	margin-top: -5px;
 }
@@ -397,7 +397,7 @@ html, body {
 	-ms-transition: background-color 300ms ease 0s;
 	transition: background-color 300ms ease 0s;
 }
-.navbar-nav > li .extra {
+.navbar-nav > li .social {
   	display: none;
 	overflow: hidden;
   	background: #363636;
@@ -415,10 +415,10 @@ html, body {
 .navbar-nav > li:hover {
   	background: #363636;
 }
-.navbar-nav > li:hover .extra {
+.navbar-nav > li:hover .social {
   	display: inline-block;
 }
-.navbar-nav > li .extra > a {
+.navbar-nav > li .social > a {
   	display: inline-block;
   	float: right;
   	margin-right: 5px;
@@ -429,16 +429,16 @@ html, body {
   	background-image:url("../images/icons-social.png");
 	background-repeat: no-repeat;
 }
-.extra .linkedin {
+.social .linkedin {
   	background-position: 0 0;
 }
-.extra .twitter {
+.social .twitter {
   	background-position: -30px 0;
 }
-.extra .facebook {
+.social .facebook {
   	background-position: -60px 0;
 }
- .google {
+ .social .google {
   	background-position: -90px 0;
   	margin-right: 0 !important;
 }
