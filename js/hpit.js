@@ -194,12 +194,7 @@ hpit.core = (function(){
 		$('#hero .playVid').on('click',function(e){
 			e.preventDefault();
 
-			var targetVid = $("#hero video")[0];
-			if (targetVid.paused) {
-				targetVid.play();
-			} else {
-				targetVid.pause();
-			}
+			$("#hero video")[0].play();
 
 			$('#limelight-player').html('');
 			var contStr =  '<object width="100%" height="100%" class="LimelightEmbeddedPlayerFlash" data="https://assets.delvenetworks.com/player/loader.swf" id="limelight_player_239897" name="limelight_player_239897" type="application/x-shockwave-flash">';
@@ -210,8 +205,10 @@ hpit.core = (function(){
 				contStr += '<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">';
 				contStr += '</object>';
 
-			$('#limelight-player').html(contStr);
-			$('#limelight-overlay').fadeIn(500);
+			$('#limelight-overlay')
+				.find('#limelight-player').html(contStr)
+				.end()
+				.fadeIn(500);
 		});
 
 		// close button
@@ -221,7 +218,9 @@ hpit.core = (function(){
 			$('#limelight-overlay')
 				.find('#limelight-player').html('')
 				.end()
-				.fadeOut(500);
+				.fadeOut(500, function(){
+					$("#hero video")[0].play();
+				});
 		});
 	}
 	
