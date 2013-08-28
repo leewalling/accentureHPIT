@@ -193,7 +193,16 @@ html, body {
 	min-height:254px;
 	max-height:600px;
 	padding-top:62px;
+	display: inline-block;
 	overflow: hidden;
+	width: 100%;
+	float: left;
+}
+.hero video {
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 0;
 }
 .bgImages {
 	width:100%;

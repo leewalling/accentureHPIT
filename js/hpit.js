@@ -28,6 +28,7 @@ hpit.config = {
 $(window).scroll(function(event){
 	//console.log('scrolling...');
 
+	// determine if we need to lock the background images in place
 	if($(window).scrollTop() > $('#hero').outerHeight(true)){
 		$('.bgImages').addClass('fixed');
 	} else {
@@ -44,7 +45,7 @@ hpit.core = (function(){
 	function init(){
 		$.logEvent('[hpit.core.init]');
 
-		$('#hero,#sideMenu').localScroll({
+		$('#sideMenu').localScroll({
 			duration: hpit.config.duration[hpit.config.desktopORtouch],
 			easing: hpit.config.easing,
 			hash: true,
