@@ -205,11 +205,17 @@ html, body {
 	z-index: 100;
 	display: inline-block;
 	overflow: hidden;
+	transform:skew(0deg,22deg);
+	-ms-transform:skew(0deg,22deg);
+	-webkit-transform:skew(0deg,22deg);
 }
 .bgImages img {
 	position:absolute;
 	top:0px;
 	left: 0px;
+	transform:skew(0deg,-22deg);
+	-ms-transform:skew(0deg,-22deg);
+	-webkit-transform:skew(0deg,-22deg);
 }
 .insight {
 	width:100%;
