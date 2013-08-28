@@ -75,6 +75,9 @@ hpit.core = (function(){
 
 		// Initialize event handler for menu toggle
 		toggleMenuInit();
+
+		// Initialize event handler for video play button
+		playVideoInit();
 		
 		// Work out whether IE7 is being used to view the site, due to the way absolute vs. fixed positioning works differently in that browser
 		hpit.config.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
@@ -182,6 +185,15 @@ hpit.core = (function(){
 			}
 		});
 		
+	}
+	
+	// video player
+	function playVideoInit(){
+		$('#hero .playVid').on('click',function(e){
+			e.preventDefault();
+			console.log('playVid');
+			$("#hero video")[0].pause();
+		});		
 	}
 	
 	// sidemenu toggle method
