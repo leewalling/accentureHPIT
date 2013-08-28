@@ -208,7 +208,7 @@ html, body {
 .hero > div {
 	position: relative;
 	margin:0 auto;
-	padding:10% 0 0 0;
+	padding:7% 0 0 0;
 	width: 70%;
 	color:#fff;
 	text-align: center;
@@ -216,13 +216,16 @@ html, body {
 }
 .hero > div h1 {
 	font-size: 54px;
+	line-height: 1.4em;
 }
 .hero > div h3 {
 	font-size: 19px;
+	text-transform: uppercase;
 }
 .hero > div p {
 	line-height: 1.4em;
 	width: 55%;
+	margin: 0 auto;
 }
 .hero > div p strong {
 	white-space: nowrap;
