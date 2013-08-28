@@ -20,15 +20,7 @@
 		<div id="limelight-overlay" style="height: 100%; left: 0px; top: 0px; width: 100%; opacity: 1;">
 			<div class="inner" style="left: 0px; top: 0px;">
 				<a class="close" href="#">Close overlay</a>
-				<div id="limelight-player">
-					<object width="100%" height="100%" class="LimelightEmbeddedPlayerFlash" data="https://assets.delvenetworks.com/player/loader.swf" id="limelight_player_239897" name="limelight_player_239897" type="application/x-shockwave-flash">
-						<param name="movie" value="https://assets.delvenetworks.com/player/loader.swf">
-						<param name="wmode" value="window">
-						<param name="allowScriptAccess" value="always">
-						<param name="allowFullScreen" value="true">
-						<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">
-					</object>
-				</div>
+				<div id="limelight-player">limelight-player</div>
 			</div>
 		</div>
 
@@ -489,6 +481,7 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="http://assets.delvenetworks.com/player/embed.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
