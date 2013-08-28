@@ -197,11 +197,11 @@ html, body {
 }
 .bgImages {
 	width:100%;
-	height:100%;
+	height:1200px;
 	position:absolute;
 	top:640px;
 	left: 0px;
-	z-index: 100;
+	z-index: 0;
 	display: inline-block;
 	overflow: hidden;
 	transform:skew(0deg,22deg);
