@@ -634,13 +634,13 @@ html, body {
 	width: 768px;
 }
 
-#limelight-overlay .close {
-	background: url(../images/close-video.png) no-repeat left top;
+#limelight-overlay .closeVid {
+	background: transparent;
+	color:#fff;
 	display: block;
 	height: 23px;
 	position: absolute;
 	right: 0;
-	text-indent: -9999px;
 	top: 30px;
 	width: 23px;
 }
