@@ -110,7 +110,11 @@ hpit.core = (function(){
 	            var winOffset = $(window).scrollTop();
 	            //console.log('winOffset:',winOffset);
 	            if(index===1 && vpStart > winOffset){
-	            	var diff = vpStart - winOffset
+	            	var diff = vpStart - winOffset;
+	            	var scH = parseInt(hpit.config.scrH);
+	            	if(diff > 0 && diff < scH){
+	            		console.log('% - ' + diff/scH);
+	            	}
 	            	console.log('diff:',diff);
 	            	//console.log('winOffset:',winOffset);
 	            	//console.log('vpStart:',vpStart);
