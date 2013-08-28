@@ -110,14 +110,14 @@ hpit.core = (function(){
 	            var winOffset = $(window).scrollTop();
 	            // console.log('winOffset:',winOffset);
 
-	            if(vpStart > winOffset){ // index===1 && 
+	            if(index === parseInt(hpit.config.currInsight) && vpStart > winOffset){
 	            	var diff = vpStart - winOffset;
-	            	var scH = parseInt(hpit.config.scrH);
+	            	var scH = parseInt(hpit.config.scrH) + 1;
 	            	var $per = diff/scH; // console.log('$per: ' + $per);
-	            	if(diff >= 0 && diff < scH){
+	            	if(diff > -1 && diff < scH){
 	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
 	            	} else {
-	            		console.log('$per: ' + $per);
+	            		$('.bgImg[data-insight='+index+']').css({"opacity" : 0});
 	            	}
 	            }
 
