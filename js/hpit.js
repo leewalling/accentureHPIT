@@ -36,6 +36,7 @@ $(window).scroll(function(event){
 		$('.bgImages').removeClass('fixed');
 		$('.whiteAngle').removeClass('fixed');
 		$('#sideMenu ul li').removeClass('hilited');
+		$('.bgImg img').removeClass('activate');
 	}
 });
 
