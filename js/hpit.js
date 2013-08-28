@@ -191,8 +191,14 @@ hpit.core = (function(){
 	function playVideoInit(){
 		$('#hero .playVid').on('click',function(e){
 			e.preventDefault();
-			console.log('playVid');
-			$("#hero video")[0].pause();
+			
+			//$("#hero video")[0].pause();
+			var targetVid = $("#hero video");
+			if (targetVid.paused) {
+				targetVid.play();
+			} else {
+				targetVid.pause();
+			}
 		});		
 	}
 	
