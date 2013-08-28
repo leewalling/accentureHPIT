@@ -135,13 +135,13 @@ hpit.core = (function(){
 	            if (winOffset >= vpStart && winOffset < vpEnd) {
 	                $('.insight').removeClass('current');
 	                $('#sideMenu ul li').removeClass('hilited');
-	                $('.bgImg').removeClass('activate');
+	                $('.bgImg img').removeClass('activate');
 
 	                currEle.addClass('current');
 
 	                var menuItem = $('.insight.current').data('insight');
 	                $('#sideMenu ul li[data-insight-nav='+menuItem+']').addClass('hilited');
-	                $('.bgImg[data-insight='+menuItem+']').addClass('activate');
+	                $('.bgImg[data-insight='+menuItem+'] img').addClass('activate');
 
 	                hpit.config.currInsight = menuItem;
 	                var prevImgNum = parseInt(menuItem) - 1;
