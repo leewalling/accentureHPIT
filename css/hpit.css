@@ -200,7 +200,7 @@ html, body {
 	width:100%;
 	height:100%;
 	position:absolute;
-	top:300px;
+	top:640px;
 	left: 0px;
 	z-index: 100;
 	display: inline-block;
@@ -208,6 +208,11 @@ html, body {
 	transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg);
 	-webkit-transform:skew(0deg,22deg);
+}
+.bgImages.fixed {
+	position:fixed;
+	top:0px;
+	left: 0px;
 }
 .bgImages .bgImg {
 	position:absolute;

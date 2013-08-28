@@ -26,7 +26,12 @@ hpit.config = {
 
 // Attach functionality to the native scroll function
 $(window).scroll(function(event){
-	//console.log('scrolling...');	
+	//console.log('scrolling...');
+	if($('.insight.current').length){
+		$('.bgImages').addClass('fixed');
+	} else {
+		$('.bgImages').removeClass('fixed');
+	}
 });
 
 
