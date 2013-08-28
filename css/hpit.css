@@ -218,6 +218,7 @@ html, body {
 	color:#fff;
 	text-align: center;
 	line-height: 1.1em;
+	overflow: hidden;
 }
 .hero > div h1 {
 	font-size: 54px;
@@ -292,7 +293,12 @@ html, body {
 	transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
 	-webkit-transform:skew(0deg,-22deg);
+	transition: all 0.5s ease-in-out 0s;
 }
+.bgImages .bgImg.activate {
+    transform: scale(1.1);
+}
+
 .insight {
 	width:100%;
 	position:relative;

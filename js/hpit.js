@@ -135,10 +135,14 @@ hpit.core = (function(){
 	            if (winOffset >= vpStart && winOffset < vpEnd) {
 	                $('.insight').removeClass('current');
 	                $('#sideMenu ul li').removeClass('hilited');
+	                $('.bgImg').removeClass('activate');
+
 	                currEle.addClass('current');
 
 	                var menuItem = $('.insight.current').data('insight');
 	                $('#sideMenu ul li[data-insight-nav='+menuItem+']').addClass('hilited');
+	                $('.bgImg[data-insight='+menuItem+']').addClass('activate');
+
 	                hpit.config.currInsight = menuItem;
 	                var prevImgNum = parseInt(menuItem) - 1;
 	                var nextImgNum = parseInt(menuItem) + 1;

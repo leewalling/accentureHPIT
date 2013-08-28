@@ -17,12 +17,12 @@
 	</head>
 	<body>
 
-		<div id="ll-overlay">
-			<div class="inner">
-				<a class="closeVid" href="#">X</a>
-				<div id="ll-player">ll-player</div>
-			</div>
+	<div id="ll-overlay">
+		<div class="inner">
+			<a class="closeVid" href="#">X</a>
+			<div id="ll-player"></div>
 		</div>
+	</div>
 
 <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
