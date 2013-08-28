@@ -209,7 +209,7 @@ html, body {
 	-ms-transform:skew(0deg,22deg);
 	-webkit-transform:skew(0deg,22deg);
 }
-.bgImages img {
+.bgImages .bgImg {
 	position:absolute;
 	top:0px;
 	left: 0px;
