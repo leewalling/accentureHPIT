@@ -293,10 +293,9 @@ html, body {
 	transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
 	-webkit-transform:skew(0deg,-22deg);
-	transition: all 0.5s ease-in-out 0s;
 }
 .bgImages .bgImg img {
-	transition: all 1.0s ease-in-out 0s;
+	transition: all 0.75s ease-in-out 0.75s;
 	margin:0 0 0 0;
 }
 .bgImages .bgImg img.activate {
