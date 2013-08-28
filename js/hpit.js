@@ -108,20 +108,15 @@ hpit.core = (function(){
 
 	            // scroll offset
 	            var winOffset = $(window).scrollTop();
-	            //console.log('winOffset:',winOffset);
-	            if(index===1 && vpStart > winOffset){
+	            // console.log('winOffset:',winOffset);
+
+	            if(vpStart > winOffset){ // index===1 && 
 	            	var diff = vpStart - winOffset;
 	            	var scH = parseInt(hpit.config.scrH);
 	            	if(diff > 0 && diff < scH){
-	            		var $per = diff/scH;
-	            		console.log('$per: ' + $per);
+	            		var $per = diff/scH; // console.log('$per: ' + $per);
 	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
-	            		//opacity:0.4;
 	            	}
-	            	//console.log('diff:',diff);
-	            	//console.log('winOffset:',winOffset);
-	            	//console.log('vpStart:',vpStart);
-	            	//hpit.config.scrH
 	            }
 
 	            // is the element in the viewport?
