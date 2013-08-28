@@ -613,28 +613,32 @@ html, body {
 
 /******************************  end Sharepoint overrides  ******************************/
 
-/* Limelight (video) overlay */
-
-#limelight-overlay {
+/*********************************  Limelight overlay  **********************************/
+#ll-overlay {
+	position: fixed;
+	z-index: 2000;
+	display: none;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	width: 100%; 
 	-khtml-opacity: 0;
 	-moz-opacity: 0;
 	background: rgba(0, 0, 0, 0.9);
 	filter: alpha(opacity=0);
-	left: 0 !important;
-	opacity: 0;
-	position: absolute;
-	z-index: 2000;
-	display: none;
+	opacity: 1;
 }
 
-#limelight-overlay .inner {
+#ll-overlay .inner {
 	height: 505px;
 	margin: 0 auto;
 	position: relative;
 	width: 768px;
+	left: 0px;
+	top: 0px;
 }
 
-#limelight-overlay .closeVid {
+#ll-overlay .closeVid {
 	background: transparent;
 	color:#fff;
 	display: block;
@@ -645,7 +649,7 @@ html, body {
 	width: 23px;
 }
 
-#limelight-overlay #limelight-player {
+#ll-overlay #ll-player {
 	background: #a0a0a0;
 	height: 400px;
 	position: absolute;
@@ -653,24 +657,4 @@ html, body {
 	width: 768px;
 	left: 0px !important;
 }
-
-#limelight-overlay P {
-	background: #fff url(../images/video-transcript-download.gif) no-repeat 10px center;
-	bottom: 0;
-	left: 0;
-	margin: 0;
-	overflow-y: auto;
-	padding: 10px 10px 10px 30px;
-	position: absolute;
-	width: 728px;
-}
-
-#limelight-overlay P A {
-	color: #98090b;
-	font-size: 0.9em;
-	text-decoration: none;
-}
-
-#limelight-overlay P A:hover {
-	text-decoration: underline;
-}
+/*********************************  end Limelight overlay  *******************************/

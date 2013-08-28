@@ -17,10 +17,10 @@
 	</head>
 	<body>
 
-		<div id="limelight-overlay" style="height: 100%; left: 0px; top: 0px; width: 100%; opacity: 1;">
-			<div class="inner" style="left: 0px; top: 0px;">
+		<div id="ll-overlay">
+			<div class="inner">
 				<a class="closeVid" href="#">X</a>
-				<div id="limelight-player">limelight-player</div>
+				<div id="ll-player">ll-player</div>
 			</div>
 		</div>
 
