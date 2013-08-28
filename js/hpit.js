@@ -134,6 +134,8 @@ hpit.core = (function(){
 	                var menuItem = $('.insight.current').data('insight');
 	                $('#sideMenu ul li[data-insight-nav='+menuItem+']').addClass('hilited');
 	                hpit.config.currInsight = menuItem;
+	                var nextImgNum = parseInt(menuItem) + 1;
+	                $('.bgImg[data-insight='+nextImgNum+']').css({"opacity" : 1});
 	            }
 	            // out of the viewport
 	            else {
