@@ -28,7 +28,7 @@ hpit.config = {
 $(window).scroll(function(event){
 	//console.log('scrolling...');
 
-	if($(window).scrollTop() < $('.insight').eq(0).offset().top){
+	if($(window).scrollTop() > 62){
 		$('.bgImages').addClass('fixed');
 	} else {
 		$('.bgImages').removeClass('fixed');
