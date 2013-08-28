@@ -216,11 +216,12 @@ html, body {
 }
 .hero > div h1 {
 	font-size: 54px;
-	line-height: 1.4em;
+	margin: 10px 0;
 }
 .hero > div h3 {
 	font-size: 19px;
 	text-transform: uppercase;
+	margin: 0;
 }
 .hero > div p {
 	line-height: 1.4em;
@@ -229,6 +230,16 @@ html, body {
 }
 .hero > div p strong {
 	white-space: nowrap;
+}
+.hero > div .playVid {
+	display: inline-block;
+	overflow: hidden;
+	width: 57px;
+	height: 57px;
+	margin-top: 15px;
+	background-image:url("../images/play.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 .bgImages {
 	width:100%;
