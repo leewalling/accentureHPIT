@@ -109,9 +109,12 @@ hpit.core = (function(){
 	            // scroll offset
 	            var winOffset = $(window).scrollTop();
 	            //console.log('winOffset:',winOffset);
-	            if(index===1){
-	            	console.log('winOffset:',winOffset);
-	            	console.log('vpStart:',vpStart);
+	            if(index===1 && vpStart > winOffset){
+	            	var diff = vpStart - winOffset
+	            	console.log('diff:',diff);
+	            	//console.log('winOffset:',winOffset);
+	            	//console.log('vpStart:',vpStart);
+	            	//hpit.config.scrH
 	            }
 
 	            // is the element in the viewport?
