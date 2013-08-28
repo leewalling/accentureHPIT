@@ -100,7 +100,7 @@
     		<div class="bgImg" data-insight="4"><img src="images/bg_sea.jpg" /></div>
     		<div class="bgImg" data-insight="3"><img src="images/bg-skydivers.jpg" /></div>
     		<div class="bgImg" data-insight="2"><img src="images/bg_lake.jpg" /></div>
-    		<div class="bgImg" data-insight="1"><img src="images/TR-wp4.jpg" /></div>
+    		<div class="bgImg" data-insight="1"><img src="images/bg_bridge.jpg" /></div>
     	</div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<!--div class="bgImg"><img src="images/bg_bridge.jpg" /></div-->
