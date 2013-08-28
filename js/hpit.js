@@ -201,25 +201,27 @@ hpit.core = (function(){
 				targetVid.pause();
 			}
 
+			$('#limelight-player').html('');
+			var contStr =  '<object width="100%" height="100%" class="LimelightEmbeddedPlayerFlash" data="https://assets.delvenetworks.com/player/loader.swf" id="limelight_player_239897" name="limelight_player_239897" type="application/x-shockwave-flash">';
+				contStr += '<param name="movie" value="https://assets.delvenetworks.com/player/loader.swf">';
+				contStr += '<param name="wmode" value="window">';
+				contStr += '<param name="allowScriptAccess" value="always">';
+				contStr += '<param name="allowFullScreen" value="true">';
+				contStr += '<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">';
+				contStr += '</object>';
+
+			$('#limelight-player').html(contStr);
 			$('#limelight-overlay').fadeIn(500);
-			/*
-			<object width="100%" height="100%" class="LimelightEmbeddedPlayerFlash" data="https://assets.delvenetworks.com/player/loader.swf" id="limelight_player_239897" name="limelight_player_239897" type="application/x-shockwave-flash">
-						<param name="movie" value="https://assets.delvenetworks.com/player/loader.swf">
-						<param name="wmode" value="window">
-						<param name="allowScriptAccess" value="always">
-						<param name="allowFullScreen" value="true">
-						<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">
-					</object>
-			*/
 		});
 
 		// close button
 		$('.closeVid').on('click',function(e){
 			e.preventDefault();
 
-			$('#limelight-player').html('');
-			$('#limelight-overlay').fadeOut(2000);
-			//limelight-player
+			$('#limelight-overlay')
+				.find('#limelight-player').html('')
+				.end()
+				.fadeOut(500);
 		});
 	}
 	
