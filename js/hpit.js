@@ -211,7 +211,16 @@ hpit.core = (function(){
 						<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">
 					</object>
 			*/
-		});		
+		});
+
+		// close button
+		$('.closeVid').on('click',function(e){
+			e.preventDefault();
+
+			$('#limelight-player').html('');
+			$('#limelight-overlay').fadeOut(2000);
+			//limelight-player
+		});
 	}
 	
 	// sidemenu toggle method
