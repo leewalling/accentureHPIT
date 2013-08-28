@@ -222,6 +222,10 @@ html, body {
 }
 .hero > div p {
 	line-height: 1.4em;
+	width: 55%;
+}
+.hero > div p strong {
+	white-space: nowrap;
 }
 .bgImages {
 	width:100%;

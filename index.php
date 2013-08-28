@@ -92,7 +92,7 @@
             <div>
                 <h3>Accenture High Performance IT Survey 2013</h3>
                 <h1>The Rise of the Strategy Savvy CIO</h1>
-                <p>IT now means “in transition” as CIOs move from the server room to the board room and help set the strategic digital agenda. Accenture CTO Paul Daugherty shares his point of view on this year's key insights.</p>
+                <p>IT now means "in transition" as CIOs move from the server room to the board room and help set the strategic digital agenda. <strong>Accenture CTO Paul Daugherty</strong> shares his point of view on this year's key insights.</p>
             </div>
         </div>
     	<div class="bgImages" id="bgImages">
