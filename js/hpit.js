@@ -117,7 +117,7 @@ hpit.core = (function(){
 	            		var $per = diff/scH; // console.log('$per: ' + $per);
 	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
 	            	} else {
-	            		('.bgImg[data-insight='+index+']').css({"opacity" : 0});
+	            		$('.bgImg[data-insight='+index+']').css({"opacity" : 0});
 	            	}
 	            }
 
