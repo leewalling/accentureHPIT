@@ -95,7 +95,7 @@
     		<div class="bgImg" data-insight="1"><img src="images/bg_bridge.jpg" /></div>
     	</div>
     	<div class="insight" id="insight-1" data-insight="1">
-    		<div class="bgImg"><img src="images/bg_bridge.jpg" /></div>
+    		<!--div class="bgImg"><img src="images/bg_bridge.jpg" /></div-->
     		<div class="marker">
     			<div>CIO Action Item<span>01</span></div>
     		</div>
@@ -133,7 +133,7 @@
 				</div>
     	</div>
     	<div class="insight" id="insight-2" data-insight="2">
-    		<div class="bgImg"><img src="images/bg_lake.jpg" /></div>
+    		<!--div class="bgImg"><img src="images/bg_lake.jpg" /></div-->
     		<div class="marker">
     			<div>CIO Action Item<span>02</span></div>
     		</div>

@@ -196,7 +196,6 @@ html, body {
 	overflow: hidden;
 }
 .bgImages {
-	background-color:yellow;
 	width:100%;
 	height:100%;
 	position:absolute;
@@ -216,7 +215,7 @@ html, body {
 }
 .bgImages .bgImg {
 	position:absolute;
-	top:0px;
+	top:-324px;
 	left: 0px;
 	transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
