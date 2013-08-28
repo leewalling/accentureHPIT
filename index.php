@@ -91,6 +91,14 @@
 				</video>
     	</div>
     	<div class="bgImages" id="bgImages">
+    		<div class="bgImg" data-insight="10"><img src="images/bg-skydivers.jpg" /></div>
+    		<div class="bgImg" data-insight="9"><img src="images/bg_bridge.jpg" /></div>
+    		<div class="bgImg" data-insight="8"><img src="images/bg_lake.jpg" /></div>
+    		<div class="bgImg" data-insight="7"><img src="images/bg_field.jpg" /></div>
+    		<div class="bgImg" data-insight="6"><img src="images/bg-hero-mountain.jpg" /></div>
+    		<div class="bgImg" data-insight="5"><img src="images/bg-sidewalk.png" /></div>
+    		<div class="bgImg" data-insight="4"><img src="images/bg_sea.jpg" /></div>
+    		<div class="bgImg" data-insight="3"><img src="images/bg-skydivers.jpg" /></div>
     		<div class="bgImg" data-insight="2"><img src="images/bg_lake.jpg" /></div>
     		<div class="bgImg" data-insight="1"><img src="images/bg_bridge.jpg" /></div>
     	</div>

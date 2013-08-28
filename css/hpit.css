@@ -230,10 +230,12 @@ html, body {
 	min-height:1000px;
 	overflow:visible;
 	position: relative;
+	/*
 	background-size:100% !important;
 	background-repeat:no-repeat !important;
 	background-position: 0 0 !important;
 	background-attachment: scroll;
+	*/
 }
 .insight .bgImg {
 	width:100%;
@@ -260,11 +262,12 @@ html, body {
 	-ms-transform:skew(0deg,-22deg);
 	-webkit-transform:skew(0deg,-22deg);
 }
+/*
 #insight-1 {
-	/*background-image:url("../images/bg_bridge.jpg");*/
+	background-image:url("../images/bg_bridge.jpg");
 }
 #insight-2 {
-	/*background-image:url("../images/bg_lake.jpg");*/
+	background-image:url("../images/bg_lake.jpg");
 }
 #insight-3 {
 	background-image:url("../images/bg-skydivers.jpg");
@@ -290,6 +293,7 @@ html, body {
 #insight-10 {
 	background-image:url("../images/bg-skydivers.jpg");
 }
+*/
 .insight .marker {
 	position:relative;
 	float: left;

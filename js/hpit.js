@@ -32,6 +32,7 @@ $(window).scroll(function(event){
 		$('.bgImages').addClass('fixed');
 	} else {
 		$('.bgImages').removeClass('fixed');
+		$('#sideMenu ul li').removeClass('hilited');
 	}
 });
 
