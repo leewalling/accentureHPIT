@@ -194,12 +194,13 @@ html, body {
 .hero {
 	background-color:#fff;
 	color:#000;
-	height:544px;
+	height:618px;
 	padding-top:62px;
 	display: inline-block;
 	overflow: hidden;
 	width: 100%;
 	float: left;
+	position: relative;
 }
 .hero video {
 	top: 62px;
@@ -249,7 +250,7 @@ html, body {
 	width:100%;
 	height:1200px;
 	position:absolute;
-	top:640px;
+	top:714px;
 	left: 0px;
 	z-index: 0;
 	display: inline-block;
