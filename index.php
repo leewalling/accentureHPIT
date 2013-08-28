@@ -97,6 +97,7 @@
                 <a href="#" class="playVid"></a>
             </div>
         </div>
+        <div class="whiteAngle">whiteAngle</div>
     	<div class="bgImages" id="bgImages">
     		<div class="bgImg" data-insight="10"><img src="images/bg-skydivers.jpg" /></div>
     		<div class="bgImg" data-insight="9"><img src="images/bg_bridge.jpg" /></div>
