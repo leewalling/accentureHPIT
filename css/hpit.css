@@ -272,6 +272,8 @@ html, body {
 	transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg);
 	-webkit-transform:skew(0deg,22deg);
+	-webkit-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, .5);
+	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, .5);
 }
 .bgImages.fixed {
 	position:fixed;
