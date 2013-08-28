@@ -197,7 +197,7 @@ html, body {
 	height:618px;
 	padding-top:62px;
 	display: inline-block;
-	overflow: hidden;
+	overflow: visible;
 	width: 100%;
 	float: left;
 	position: relative;
@@ -277,7 +277,7 @@ html, body {
 }
 .whiteAngle.fixed {
 	position:fixed;
-	top:96px;
+	top:38px;
 	right: 0px;
 }
 .bgImages.fixed {

@@ -193,14 +193,15 @@ hpit.core = (function(){
 	function playVideoInit(){
 		$('#hero .playVid').on('click',function(e){
 			e.preventDefault();
-			
-			//$("#hero video")[0].pause();
+
 			var targetVid = $("#hero video")[0];
 			if (targetVid.paused) {
 				targetVid.play();
 			} else {
 				targetVid.pause();
 			}
+
+			$('#limelight-overlay').fadeIn(500);
 		});		
 	}
 	
