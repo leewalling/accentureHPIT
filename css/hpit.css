@@ -212,6 +212,16 @@ html, body {
 	width: 70%;
 	color:#fff;
 	text-align: center;
+	line-height: 1.1em;
+}
+.hero > div h1 {
+	font-size: 54px;
+}
+.hero > div h3 {
+	font-size: 19px;
+}
+.hero > div p {
+	line-height: 1.4em;
 }
 .bgImages {
 	width:100%;

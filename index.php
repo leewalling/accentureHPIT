@@ -89,7 +89,11 @@
                 <source src="images/blue-loop.ogg" type="video/ogg">
                 Your browser does not support the video tag.
             </video>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum neque vel tellus tincidunt tincidunt. Nunc in auctor nunc. Integer bibendum libero eget orci venenatis auctor. In tellus mi, blandit et ante ut, lobortis vehicula lorem. Nunc vel lacus lobortis, auctor metus ut, congue massa. Suspendisse ultricies euismod erat sit amet euismod. Praesent quis arcu magna. Vestibulum vulputate ornare augue, et ornare libero posuere ac. Quisque eget ullamcorper erat, in cursus sem. In hac habitasse platea dictumst. Aliquam id pulvinar metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce magna augue, rutrum ut mi vel, viverra lacinia nisi. Aenean scelerisque arcu vestibulum facilisis tincidunt. Pellentesque sapien lectus, venenatis at nulla a, porta fermentum nulla. Suspendisse potenti.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum neque vel tellus tincidunt tincidunt. Nunc in auctor nunc. Integer bibendum libero eget orci venenatis auctor. In tellus mi, blandit et ante ut, lobortis vehicula lorem. Nunc vel lacus lobortis, auctor metus ut, congue massa.</div>
+            <div>
+                <h3>Accenture High Performance IT Survey 2013</h3>
+                <h1>The Rise of the Strategy Savvy CIO</h1>
+                <p>IT now means “in transition” as CIOs move from the server room to the board room and help set the strategic digital agenda. Accenture CTO Paul Daugherty shares his point of view on this year's key insights.</p>
+            </div>
         </div>
     	<div class="bgImages" id="bgImages">
     		<div class="bgImg" data-insight="10"><img src="images/bg-skydivers.jpg" /></div>
