@@ -82,13 +82,13 @@ hpit.core = (function(){
 
 		console.log('config: ', hpit.config);
 
-		$('.insight').each(function () {
-			paneLock($(this));
+		$('.insight').each(function (index) {
+			paneLock($(this),index);
 		});
 	}
 
-	function paneLock(element) {
-		element.find('.bgImg').css({"min-height" : element.outerHeight()});
+	function paneLock(element,index) {
+		//element.find('.bgImg').css({"min-height" : element.outerHeight()});
 
 		$(window)
 	        .bind('scroll', function () {
@@ -109,6 +109,10 @@ hpit.core = (function(){
 	            // scroll offset
 	            var winOffset = $(window).scrollTop();
 	            //console.log('winOffset:',winOffset);
+	            if(index===1){
+	            	console.log('winOffset:',winOffset);
+	            	console.log('vpStart:',vpStart);
+	            }
 
 	            // is the element in the viewport?
 	            if (winOffset >= vpStart && winOffset < vpEnd) {
