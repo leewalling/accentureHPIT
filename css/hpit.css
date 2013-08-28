@@ -639,14 +639,20 @@ html, body {
 }
 
 #ll-overlay .closeVid {
-	background: transparent;
-	color:#fff;
+	background: #fff;
+	color:#000;
+	text-align: center;
+	text-decoration: none;
+	line-height: 23px;
+	font-weight: bold;
 	display: block;
 	height: 23px;
 	position: absolute;
 	right: 0;
 	top: 30px;
 	width: 23px;
+	-webkit-border-radius: 23px;
+	border-radius: 23px;
 }
 
 #ll-overlay #ll-player {
