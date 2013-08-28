@@ -116,6 +116,8 @@ hpit.core = (function(){
 	            	if(diff > 0 && diff < scH){
 	            		var $per = diff/scH; // console.log('$per: ' + $per);
 	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
+	            	} else {
+	            		('.bgImg[data-insight='+index+']').css({"opacity" : 0});
 	            	}
 	            }
 
