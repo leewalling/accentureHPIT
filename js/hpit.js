@@ -87,8 +87,8 @@ hpit.core = (function(){
 		});
 
 		$('.bgImg').css({"opacity" : 0});
-		$('.bgImg[data-insight='+parseInt(hpit.config.currInsight)+']').css({"opacity" : 1});
-		$('.bgImg[data-insight='+parseInt(hpit.config.currInsight) + 1 +']').css({"opacity" : 1});
+		$('.bgImg[data-insight=\'1\']').css({"opacity" : 1});
+		$('.bgImg[data-insight=\'2\']').css({"opacity" : 1});
 	}
 
 	function paneLock(element,index) {
