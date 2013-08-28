@@ -31,8 +31,10 @@ $(window).scroll(function(event){
 	// determine if we need to lock the background images in place
 	if($(window).scrollTop() > $('#hero').outerHeight(true)){
 		$('.bgImages').addClass('fixed');
+		$('.whiteAngle').addClass('fixed');
 	} else {
 		$('.bgImages').removeClass('fixed');
+		$('.whiteAngle').removeClass('fixed');
 		$('#sideMenu ul li').removeClass('hilited');
 	}
 });
