@@ -113,11 +113,9 @@ hpit.core = (function(){
 	            if(vpStart > winOffset){ // index===1 && 
 	            	var diff = vpStart - winOffset;
 	            	var scH = parseInt(hpit.config.scrH);
-	            	if(diff > 0 && diff < scH){
+	            	if(diff >= 0 && diff < scH){
 	            		var $per = diff/scH; // console.log('$per: ' + $per);
 	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
-	            	} else {
-	            		$('.bgImg[data-insight='+index+']').css({"opacity" : 0});
 	            	}
 	            }
 
