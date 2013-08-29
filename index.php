@@ -45,7 +45,8 @@
             		<a href="#" class="google"></a>
             		<a href="#" class="facebook"></a>
             		<a href="#" class="twitter"></a>
-            		<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php&title=TheTitleOfYourWebPageGoesHere&summary=TheSummaryOfYourWebPageGoesHere&source=TheNameOfYourSiteGoesHere" rel="nofollow" onclick="NewWindow(this.href,'template_window','550','400','yes','center');return false" onfocus="this.blur()" title="Share on LinkedIn" alt="Share on LinkedIn" class="linkedin"></a>
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php&title=Title&summary=Summary&source=Source" class="linkedin"></a>
+            		<!--a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php&title=TheTitleOfYourWebPageGoesHere&summary=TheSummaryOfYourWebPageGoesHere&source=TheNameOfYourSiteGoesHere" rel="nofollow" onclick="NewWindow(this.href,'template_window','550','400','yes','center');return false" title="Share on LinkedIn" alt="Share on LinkedIn" class="linkedin"></a-->
             	</div>
             </li>
           </ul>

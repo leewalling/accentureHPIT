@@ -81,6 +81,9 @@ hpit.core = (function(){
 
 		// Initialize event handler for video play button
 		playVideoInit();
+
+		// Initialize event handler for social links
+		socialLinksInit();
 		
 		// Work out whether IE7 is being used to view the site, due to the way absolute vs. fixed positioning works differently in that browser
 		hpit.config.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
@@ -193,7 +196,18 @@ hpit.core = (function(){
 		});
 		
 	}
-	
+
+	// social links
+	function socialLinksInit(){
+		
+		// linkedin
+		$('a').click(function(ev){
+			ev.preventDefault();
+			window.open('/plans/individual/continue-to-ap-pop.asp', 'Continue_to_Application','width=520,height=570');			
+			return false;
+		})
+	}
+
 	// video player
 	function playVideoInit(){
 		$('#hero .playVid').on('click',function(e){
