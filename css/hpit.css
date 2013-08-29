@@ -618,7 +618,7 @@ html, body {
 .navbar-nav > li:hover .social {
   	display: inline-block;
 }
-.navbar-nav > li .social > a {
+.social > a {
   	display: inline-block;
   	float: right;
   	margin-right: 5px;
