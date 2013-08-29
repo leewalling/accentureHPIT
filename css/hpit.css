@@ -385,7 +385,7 @@ html, body {
 	position:relative;
 	float: left;
 	text-align: center;
-	top:22px;
+	top:32px;
 	left:0px;
 	width:150px;
 	height:141px;
@@ -418,7 +418,7 @@ html, body {
 }
 .insight.current .marker {
 	position:fixed !important;
-	top:22px;
+	top:32px;
 }
 .insight .marker > div {
 	text-transform: uppercase;
