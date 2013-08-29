@@ -195,6 +195,7 @@ html, body {
 	left: 0;
 	position: absolute;
 	display: inline-block;
+	display: none;
 	overflow: hidden;
 	z-index: 1;
 	width: 532px;
@@ -225,7 +226,7 @@ html, body {
 .hero > div {
 	position: relative;
 	margin:0 auto;
-	padding:11% 0 0 0;
+	padding:10% 0 0 0;
 	width: 70%;
 	color:#fff;
 	text-align: center;
@@ -415,6 +416,10 @@ html, body {
 	overflow:hidden;
 	/*background-color:#fff;*/
 	color:#000;
+}
+.insight .content .left-col {
+	color:#fff;
+	position: fixed;
 }
 .insight .content .right-col {
 	background-color:#fff;
