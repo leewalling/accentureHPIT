@@ -218,7 +218,7 @@ hpit.core = (function(){
 		$('#hero .playVid').on('click',function(e){
 			e.preventDefault();
 
-			$("#hero video")[0].play();
+			$("#hero video")[0].pause();
 
 			$('#ll-player').html('');
 			var contStr =  '<object width="100%" height="100%" class="LimelightEmbeddedPlayerFlash" data="https://assets.delvenetworks.com/player/loader.swf" id="limelight_player_239897" name="limelight_player_239897" type="application/x-shockwave-flash">';

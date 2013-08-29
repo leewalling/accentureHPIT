@@ -286,7 +286,7 @@ html, body {
 }
 .bgImages.fixed {
 	position:fixed;
-	top:-18px;
+	top:-25px;
 	right: 0px;
 }
 .bgImages .bgImg {

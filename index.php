@@ -94,16 +94,16 @@
         </div>
         <div class="whiteAngle">whiteAngle</div>
     	<div class="bgImages" id="bgImages">
-    		<div class="bgImg" data-insight="10"><img src="images/bg-skydivers.jpg" /></div>
-    		<div class="bgImg" data-insight="9"><img src="images/bg_bridge.jpg" /></div>
-    		<div class="bgImg" data-insight="8"><img src="images/bg_lake.jpg" /></div>
-    		<div class="bgImg" data-insight="7"><img src="images/bg_field.jpg" /></div>
-    		<div class="bgImg" data-insight="6"><img src="images/bg-hero-mountain.jpg" /></div>
-    		<div class="bgImg" data-insight="5"><img src="images/bg-sidewalk.png" /></div>
-    		<div class="bgImg" data-insight="4"><img src="images/bg_sea.jpg" /></div>
-    		<div class="bgImg" data-insight="3"><img src="images/bg-skydivers.jpg" /></div>
-    		<div class="bgImg" data-insight="2"><img src="images/bg_lake.jpg" /></div>
-    		<div class="bgImg" data-insight="1"><img src="images/bg_bridge.jpg" /></div>
+    		<div class="bgImg" data-insight="10"><img src="images/bg-japanese.jpg" /></div>
+    		<div class="bgImg" data-insight="9"><img src="images/bg-beach.jpg" /></div>
+    		<div class="bgImg" data-insight="8"><img src="images/bg-sea.jpg" /></div>
+    		<div class="bgImg" data-insight="7"><img src="images/bg-sunflower.jpg" /></div>
+    		<div class="bgImg" data-insight="6"><img src="images/bg-lake.jpg" /></div>
+    		<div class="bgImg" data-insight="5"><img src="images/bg-field.jpg" /></div>
+    		<div class="bgImg" data-insight="4"><img src="images/bg-edinburgh.jpg" /></div>
+    		<div class="bgImg" data-insight="3"><img src="images/bg-boat.jpg" /></div>
+    		<div class="bgImg" data-insight="2"><img src="images/bg-ocean.jpg" /></div>
+    		<div class="bgImg" data-insight="1"><img src="images/bg-bridge.jpg" /></div>
     	</div>
     	<div class="insight" id="insight-1" data-insight="1">
     		<!--div class="bgImg"><img src="images/bg_bridge.jpg" /></div-->
