@@ -393,14 +393,18 @@ html, body {
 */
 .insight .insightTitle {
 	position:absolute;
-	text-align: center;
-	top:32px;
+	text-align: left;
+	top:65px;
 	left:200px;
 	width:25%;
 	color:#fff;
 	font-size:14px;
 	font-weight:bold;
 	background: rgba(255, 255, 255, 0.25);
+}
+.insight.current .insightTitle {
+	position:fixed !important;
+	top: 65px;
 }
 .insight .marker {
 	position:absolute;
@@ -434,7 +438,7 @@ html, body {
 	position: absolute;
 	top: 65px;
 	z-index: 1;
-	display: inline-block;
+	display: none;
 }
 .insight .content .right-col {
 	background-color:#fff;
