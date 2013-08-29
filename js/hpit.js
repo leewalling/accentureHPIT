@@ -206,7 +206,15 @@ hpit.core = (function(){
 			var $th = $(this);
 			window.open($th.attr('href'), 'linkedin-win','width=600,height=500');			
 			return false;
-		})
+		});
+
+		// facebook
+		$('.facebook').click(function(e){
+			e.preventDefault();
+			var $th = $(this);
+			window.open($th.attr('href'), 'facebook-win','toolbar=0,status=0,width=626,height=436');
+			return false;
+		});
 	}
 
 	// video player

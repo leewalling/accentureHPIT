@@ -43,7 +43,7 @@
             	<a href="#"><span class="icn"></span>share</a>
             	<div class="social">
             		<a href="#" class="google"></a>
-            		<a href="#" class="facebook"></a>
+            		<a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" class="facebook"></a>
             		<a href="#" class="twitter"></a>
                     <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" class="linkedin"></a>
             		<!--
