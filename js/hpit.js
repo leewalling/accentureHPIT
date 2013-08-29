@@ -37,6 +37,8 @@ $(window).scroll(function(event){
 		$('.whiteAngle').removeClass('fixed');
 		$('#sideMenu ul li').removeClass('hilited');
 		$('.bgImg img').removeClass('activate');
+		var $newT = $(window).scrollTop() / 1.5;
+		$('#hero').css({'top' : - $newT});
 	}
 });
 
