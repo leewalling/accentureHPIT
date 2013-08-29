@@ -400,11 +400,19 @@ html, body {
 	color:#fff;
 	font-size:14px;
 	font-weight:bold;
+	overflow: hidden;
 	/*background: rgba(255, 255, 255, 0.25);*/
 }
 .insight.current .insightTitle {
 	position:fixed !important;
 	top: 65px;
+}
+.insight .insightTitle h3,
+.insight .insightTitle h6 {
+	margin:0;
+	display: inline-block;
+	float: left;
+	width: 100%;
 }
 .insight .insightTitle h3 {
 	font-size: 48px;
@@ -413,6 +421,8 @@ html, body {
 .insight .insightTitle h6 {
 	font-size: 14px;
 	line-height: 1.1em;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .insight .marker {
