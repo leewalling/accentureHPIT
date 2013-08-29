@@ -199,28 +199,14 @@ hpit.core = (function(){
 
 	// social links
 	function socialLinksInit(){
-		
-		// twitter
-		$('.twitter').click(function(e){
-			e.preventDefault();
-			var $th = $(this);
-			window.open($th.attr('href'), 'twitter-win','width=600,height=500');			
-			return false;
-		});
-		
-		// linkedin
-		$('.linkedin').click(function(e){
-			e.preventDefault();
-			var $th = $(this);
-			window.open($th.attr('href'), 'linkedin-win','width=600,height=500');			
-			return false;
-		});
 
-		// facebook
-		$('.facebook').click(function(e){
+		$('.social > a').click(function(e){
 			e.preventDefault();
 			var $th = $(this);
-			window.open($th.attr('href'), 'facebook-win','toolbar=0,status=0,width=626,height=436');
+			var $link = $th.attr('href');
+			var $name = $th.attr('class') + '-win';
+			var $params = 'toolbar=0,status=0,width=626,height=436';
+			window.open($link, $name, $params);			
 			return false;
 		});
 	}
