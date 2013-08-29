@@ -26,7 +26,7 @@ hpit.config = {
 
 // Attach functionality to the native scroll function
 $(window).scroll(function(event){
-	//console.log('scrolling...');
+	console.log('scrolling...' + $('#hero').outerHeight(true));
 
 	// determine if we need to lock the background images in place
 	if($(window).scrollTop() > $('#hero').outerHeight(true)){
