@@ -546,6 +546,7 @@ html, body {
 .navbar-nav > li .social {
   	display: none;
 	overflow: hidden;
+  	background: transparent;
   	padding: 18px 11px;
 	width: 100%;
 	line-height: 26px;
@@ -556,19 +557,12 @@ html, body {
 	right:0;
 	z-index: 201;
 	text-align: right;
-	background: #000;
-	-webkit-transition: background-color 300ms ease 0s;
-	-moz-transition: background-color 300ms ease 0s;
-	-o-transition: background-color 300ms ease 0s;
-	-ms-transition: background-color 300ms ease 0s;
-	transition: background-color 300ms ease 0s;
 }
 .navbar-nav > li:hover {
   	background: #363636;
 }
 .navbar-nav > li:hover .social {
   	display: inline-block;
-  	background: #363636;
 }
 .navbar-nav > li .social > a {
   	display: inline-block;
