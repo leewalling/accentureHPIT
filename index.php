@@ -78,7 +78,7 @@
     		<a href="#" class="closeX">&nbsp;</a>
     	</div>
     	<div class="hero" id="hero">
-            <video width="100%" height="auto" autoplay loop>
+            <video width="auto" height="100%" autoplay loop>
                 <source src="images/blue-loop.mp4" type="video/mp4">
                 <source src="images/blue-loop.ogg" type="video/ogg">
                 Your browser does not support the video tag.

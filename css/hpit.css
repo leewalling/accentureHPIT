@@ -220,8 +220,8 @@ html, body {
 	left: 0;
 	position: absolute;
 	z-index: 0;
-	width: 100%;
-	height:auto;
+	width: auto;
+	height: 100%;
 }
 .hero > div {
 	position: relative;
