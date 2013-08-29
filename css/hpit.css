@@ -395,11 +395,12 @@ html, body {
 	position:absolute;
 	text-align: center;
 	top:32px;
-	left:210px;
-	width:360px;
+	left:200px;
+	width:25%;
 	color:#fff;
 	font-size:14px;
 	font-weight:bold;
+	background: rgba(255, 255, 255, 0.25);
 }
 .insight .marker {
 	position:absolute;
@@ -433,7 +434,7 @@ html, body {
 	position: absolute;
 	top: 65px;
 	z-index: 1;
-	display: none;
+	display: inline-block;
 }
 .insight .content .right-col {
 	background-color:#fff;
