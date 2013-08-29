@@ -204,7 +204,7 @@ html, body {
 .hero {
 	background-color:#fff;
 	color:#000;
-	height:618px;
+	height:798px;
 	padding-top:0px;
 	display: inline-block;
 	overflow: visible;
@@ -296,7 +296,7 @@ html, body {
 }
 .bgImages.fixed {
 	position:fixed;
-	top:-25px;
+	top:-210px;
 	right: 0px;
 }
 .bgImages .bgImg {
