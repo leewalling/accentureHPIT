@@ -38,7 +38,6 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="contact"><a href="#"><span class="icn"></span>contact</a></li>
-            <li class="download"><a href="#"><span class="icn"></span>download</a></li>
             <li class="share">
             	<a href="#"><span class="icn"></span>share</a>
             	<div class="social">
@@ -46,11 +45,10 @@
             		<a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
             		<a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
                     <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
-            		<!--
-                    &title=http://bit.ly/adaptxt-beta-android&summary=http://bit.ly/adaptxt-beta-android&source=http://bit.ly/adaptxt-beta-android
-                    -->
+            		<!-- &title=http://bit.ly/adaptxt-beta-android&summary=http://bit.ly/adaptxt-beta-android&source=http://bit.ly/adaptxt-beta-android -->
             	</div>
             </li>
+            <li class="download"><a href="#"><span class="icn"></span>get the study</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
