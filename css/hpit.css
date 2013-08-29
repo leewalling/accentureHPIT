@@ -404,8 +404,11 @@ html, body {
 	max-width:1000px;
 	width:75%;
 	overflow:hidden;
-	background-color:#fff;
+	/*background-color:#fff;*/
 	color:#000;
+}
+.insight .content .right-col {
+	background-color:#fff;
 }
 .insight.current  {
 	background-attachment:fixed;
