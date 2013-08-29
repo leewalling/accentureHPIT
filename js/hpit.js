@@ -200,6 +200,14 @@ hpit.core = (function(){
 	// social links
 	function socialLinksInit(){
 		
+		// twitter
+		$('.twitter').click(function(e){
+			e.preventDefault();
+			var $th = $(this);
+			window.open($th.attr('href'), 'twitter-win','width=600,height=500');			
+			return false;
+		});
+		
 		// linkedin
 		$('.linkedin').click(function(e){
 			e.preventDefault();

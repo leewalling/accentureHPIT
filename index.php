@@ -42,10 +42,10 @@
             <li class="share">
             	<a href="#"><span class="icn"></span>share</a>
             	<div class="social">
-            		<a href="#" class="google"></a>
-            		<a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" class="facebook"></a>
-            		<a href="#" class="twitter"></a>
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" class="linkedin"></a>
+            		<a href="#" target="_blank" class="google"></a>
+            		<a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+            		<a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
             		<!--
                     &title=http://bit.ly/adaptxt-beta-android&summary=http://bit.ly/adaptxt-beta-android&source=http://bit.ly/adaptxt-beta-android
                     -->
