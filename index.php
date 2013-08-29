@@ -109,7 +109,8 @@
     			<div><span>01</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #1</h6>
+                <h3>Your new boss? Your customer.</h3>
             </div>
     		<div class="container content">
     			<div class="row">
@@ -135,7 +136,8 @@
     			<div><span>02</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #2</h6>
+                <h3>Technology is inseparable from business strategy.</h3>
             </div>
     		<div class="container content">
                 <div class="row">
@@ -160,7 +162,8 @@
     			<div><span>03</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #3</h6>
+                <h3>Context is king.</h3>
             </div>
     		<div class="container content">
                 <div class="row">
@@ -185,7 +188,8 @@
     			<div><span>04</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #4</h6>
+                <h3>Flexibility first.</h3>
             </div>
     		<div class="container content">
                 <div class="row">
@@ -210,7 +214,8 @@
     			<div><span>05</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #5</h6>
+                <h3>Be fearlessly digital.</h3>
             </div>
     		<div class="container content">
                 <div class="row">
@@ -235,7 +240,8 @@
     			<div><span>06</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #6</h6>
+                <h3>Survival of the quickest</h3>
             </div>
     		<div class="container content">
                 <div class="row">
@@ -260,7 +266,8 @@
     			<div><span>07</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #7</h6>
+                <h3>All data is not created equal.</h3>
             </div>
     		<div class="container content">
                 <div class="row">
@@ -285,7 +292,8 @@
     			<div><span>08</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #8</h6>
+                <h3>Power to the people.</h3>
             </div>
     		<div class="container content">
                 <div class="row">
@@ -310,7 +318,8 @@
     			<div><span>09</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #9</h6>
+                <h3>Build your capabilities around talent, not technology.</h3>
             </div>
     		<div class="container content">
                 <div class="row">
@@ -335,7 +344,8 @@
     			<div><span>10</span></div>
     		</div>
             <div class="insightTitle">
-                title goes here...
+                <h6>CIO Action Item #10</h6>
+                <h3>Take a holistic stance on security and risk</h3>
             </div>
     		<div class="container content">
                 <div class="row">

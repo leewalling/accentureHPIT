@@ -395,17 +395,26 @@ html, body {
 	position:absolute;
 	text-align: left;
 	top:65px;
-	left:200px;
-	width:25%;
+	left:16%;
+	width:18%;
 	color:#fff;
 	font-size:14px;
 	font-weight:bold;
-	background: rgba(255, 255, 255, 0.25);
+	/*background: rgba(255, 255, 255, 0.25);*/
 }
 .insight.current .insightTitle {
 	position:fixed !important;
 	top: 65px;
 }
+.insight .insightTitle h3 {
+	font-size: 48px;
+	line-height: 56px;
+}
+.insight .insightTitle h6 {
+	font-size: 14px;
+	line-height: 1.1em;
+}
+
 .insight .marker {
 	position:absolute;
 	text-align: center;
