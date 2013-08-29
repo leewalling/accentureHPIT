@@ -33,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="images/logo.png" width="100" height="28" /></a>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" width="128" height="36" /></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -106,7 +106,7 @@
     	<div class="insight" id="insight-1" data-insight="1">
     		<!--div class="bgImg"><img src="images/bg_bridge.jpg" /></div-->
     		<div class="marker">
-    			<div>CIO Action Item<span>01</span></div>
+    			<div><span>01</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -144,7 +144,7 @@
     	<div class="insight" id="insight-2" data-insight="2">
     		<!--div class="bgImg"><img src="images/bg_lake.jpg" /></div-->
     		<div class="marker">
-    			<div>CIO Action Item<span>02</span></div>
+    			<div><span>02</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -181,7 +181,7 @@
     	</div>
     	<div class="insight" id="insight-3" data-insight="3">
     		<div class="marker">
-    			<div>CIO Action Item<span>03</span></div>
+    			<div><span>03</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -218,7 +218,7 @@
     	</div>
     	<div class="insight" id="insight-4" data-insight="4">
     		<div class="marker">
-    			<div>CIO Action Item<span>04</span></div>
+    			<div><span>04</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -255,7 +255,7 @@
     	</div>
     	<div class="insight" id="insight-5" data-insight="5">
     		<div class="marker">
-    			<div>CIO Action Item<span>05</span></div>
+    			<div><span>05</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -292,7 +292,7 @@
     	</div>
     	<div class="insight" id="insight-6" data-insight="6">
     		<div class="marker">
-    			<div>CIO Action Item<span>06</span></div>
+    			<div><span>06</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -329,7 +329,7 @@
     	</div>
     	<div class="insight" id="insight-7" data-insight="7">
     		<div class="marker">
-    			<div>CIO Action Item<span>07</span></div>
+    			<div><span>07</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -366,7 +366,7 @@
     	</div>
     	<div class="insight" id="insight-8" data-insight="8">
     		<div class="marker">
-    			<div>CIO Action Item<span>08</span></div>
+    			<div><span>08</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -403,7 +403,7 @@
     	</div>
     	<div class="insight" id="insight-9" data-insight="9">
     		<div class="marker">
-    			<div>CIO Action Item<span>09</span></div>
+    			<div><span>09</span></div>
     		</div>
     		<div class="content">
 					<p>
@@ -440,7 +440,7 @@
     	</div>
     	<div class="insight" id="insight-10" data-insight="10">
     		<div class="marker">
-    			<div>CIO Action Item<span>10</span></div>
+    			<div><span>10</span></div>
     		</div>
     		<div class="content">
 					<p>

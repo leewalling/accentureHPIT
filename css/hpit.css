@@ -384,12 +384,12 @@ html, body {
 .insight .marker {
 	position:relative;
 	float: left;
-	/*top:45px;
-	text-align: center;*/
+	text-align: center;
 	top:22px;
-	left:1px;
-	width:154px;
-	height:143px;
+	left:0px;
+	width:150px;
+	height:141px;
+	line-height:141px;
 	background-color:#000;
 	color:white;
 	font-size:13px;
@@ -398,8 +398,6 @@ html, body {
 	transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
 	-webkit-transform:skew(0deg,-22deg);
-	/*
-	*/
 }
 .insight .content {
 	position:relative;
@@ -424,20 +422,16 @@ html, body {
 }
 .insight .marker > div {
 	text-transform: uppercase;
-	padding:45px 15px 0 20px;
+	padding:0;
 	transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg);
 	-webkit-transform:skew(0deg,22deg);
 }
 .insight .marker > div > span {
-  	display: block;
-  	font-size: 75px;
-  	line-height: 1.025em;
-  	width: 100%;
-  	font-weight:normal;
-  	letter-spacing: -0.05em;
-	line-height: 1em;
-	margin-top: -5px;
+	display: block;
+	font-size: 85px;
+	font-weight: bold;
+	width: 100%;
 }
 #insight-1 .marker {background-color:#aa1133;}
 #insight-2 .marker {background-color:#ff0000;}
