@@ -110,21 +110,12 @@
     		</div>
     		<div class="container content">
     			<div class="row">
-                    <div class="col-lg-4">
-                      <h2>Heading</h2>
-                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                      <p><a href="#" class="btn btn-default">View details »</a></p>
+                    <div class="col-md-6">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.
                     </div>
-                    <div class="col-lg-4">
-                      <h2>Heading</h2>
-                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                      <p><a href="#" class="btn btn-default">View details »</a></p>
+                    <div class="col-md-6">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.
                    </div>
-                    <div class="col-lg-4">
-                      <h2>Heading</h2>
-                      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                      <p><a href="#" class="btn btn-default">View details »</a></p>
-                    </div>
                   </div>
 			</div>
     	</div>
