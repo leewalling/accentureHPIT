@@ -561,6 +561,9 @@ html, body {
 .navbar-nav > li:hover {
   	background: #363636;
 }
+.navbar-nav > li.share:hover > a {
+  	visibility: hidden;
+}
 .navbar-nav > li:hover .social {
   	display: inline-block;
 }
