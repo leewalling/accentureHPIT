@@ -401,6 +401,7 @@ html, body {
 	font-size:14px;
 	font-weight:bold;
 	overflow: hidden;
+	z-index: 1000;
 	/*background: rgba(255, 255, 255, 0.25);*/
 }
 .insight.current .insightTitle {
