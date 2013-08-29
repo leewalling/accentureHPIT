@@ -34,7 +34,7 @@ html, body {
 	padding:0;
 }
 .container.main {
-	/*padding-top:62px;*/
+	padding-top:680px;
 }
 #controls {
 	position: fixed;
@@ -195,15 +195,17 @@ html, body {
 	background-color:#fff;
 	color:#000;
 	height:618px;
-	padding-top:62px;
+	padding-top:0px;
 	display: inline-block;
 	overflow: visible;
 	width: 100%;
-	float: left;
-	position: relative;
+	/*float: left;*/
+	position: fixed;
+	top: 62px;
+	left: 0;
 }
 .hero video {
-	top: 62px;
+	top: 0px;
 	left: 0;
 	position: absolute;
 	z-index: 0;
@@ -299,7 +301,7 @@ html, body {
 	margin:0 0 0 0;
 }
 .bgImages .bgImg img.activate {
-    transform: scale(1.1);
+    transform: scale(1.05);
 	margin:50px 0 0 -50px;
 }
 
