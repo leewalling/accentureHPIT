@@ -34,7 +34,7 @@ html, body {
 	padding:0;
 }
 .container.main {
-	padding-top:618px;
+	padding-top:860px;
 }
 #controls {
 	position: fixed;
@@ -191,7 +191,7 @@ html, body {
 
 
 #accMark {
-	top: 350px;
+	top: 269px;
 	left: 0;
 	position: absolute;
 	display: inline-block;
