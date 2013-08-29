@@ -413,7 +413,7 @@ html, body {
 	margin:0 auto;
 	max-width:1000px;
 	width:75%;
-	overflow:hidden;
+	overflow:visible;
 	/*background-color:#fff;*/
 	color:#000;
 }
