@@ -46,7 +46,9 @@
             		<a href="#" class="facebook"></a>
             		<a href="#" class="twitter"></a>
                     <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" class="linkedin"></a>
-            		<!--a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php&title=TheTitleOfYourWebPageGoesHere&summary=TheSummaryOfYourWebPageGoesHere&source=TheNameOfYourSiteGoesHere" rel="nofollow" onclick="NewWindow(this.href,'template_window','550','400','yes','center');return false" title="Share on LinkedIn" alt="Share on LinkedIn" class="linkedin"></a-->
+            		<!--
+                    &title=http://bit.ly/adaptxt-beta-android&summary=http://bit.ly/adaptxt-beta-android&source=http://bit.ly/adaptxt-beta-android
+                    -->
             	</div>
             </li>
           </ul>

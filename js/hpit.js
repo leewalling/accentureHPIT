@@ -204,7 +204,7 @@ hpit.core = (function(){
 		$('.linkedin').click(function(e){
 			e.preventDefault();
 			var $th = $(this);
-			window.open($th.attr('href'), 'linkedin-win','width=520,height=570');			
+			window.open($th.attr('href'), 'linkedin-win','width=600,height=500');			
 			return false;
 		})
 	}
