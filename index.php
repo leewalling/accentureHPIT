@@ -105,7 +105,6 @@
     		<div class="bgImg" data-insight="1"><img src="images/bg-bridge.jpg" /></div>
     	</div>
     	<div class="insight" id="insight-1" data-insight="1">
-    		<!--div class="bgImg"><img src="images/bg_bridge.jpg" /></div-->
     		<div class="marker">
     			<div><span>01</span></div>
     		</div>
@@ -114,9 +113,7 @@
             </div>
     		<div class="container content">
     			<div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -137,11 +134,12 @@
     		<div class="marker">
     			<div><span>02</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -161,11 +159,12 @@
     		<div class="marker">
     			<div><span>03</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -185,11 +184,12 @@
     		<div class="marker">
     			<div><span>04</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -209,11 +209,12 @@
     		<div class="marker">
     			<div><span>05</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -233,11 +234,12 @@
     		<div class="marker">
     			<div><span>06</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -257,11 +259,12 @@
     		<div class="marker">
     			<div><span>07</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -281,11 +284,12 @@
     		<div class="marker">
     			<div><span>08</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -305,11 +309,12 @@
     		<div class="marker">
     			<div><span>09</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
@@ -329,11 +334,12 @@
     		<div class="marker">
     			<div><span>10</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
                 <div class="row">
-                    <div class="left-col">
-                        lorem title...
-                    </div>
+                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere risus nibh, quis lobortis lectus aliquet vitae. Nullam porttitor nisl sit amet est lacinia auctor. In eleifend quis ipsum sed suscipit. Vivamus mollis ornare ipsum fermentum luctus. Proin dapibus viverra libero in ultrices. Donec sed felis eleifend, varius neque accumsan, varius quam. Ut eleifend nisi quis velit aliquam, non porta nunc placerat. Sed sed quam lectus. Donec malesuada neque arcu, nec vestibulum magna pharetra nec. Cras sit amet viverra neque, vitae laoreet tellus. Sed ultrices ante eget arcu tincidunt tincidunt. Curabitur rutrum a elit a consequat. Aenean sed dui vitae sapien ornare lacinia. Donec nec rhoncus sem. Vivamus egestas lacinia orci eu elementum. Curabitur pharetra vulputate augue, sit amet gravida arcu posuere eu.</p>
