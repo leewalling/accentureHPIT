@@ -201,9 +201,10 @@ hpit.core = (function(){
 	function socialLinksInit(){
 		
 		// linkedin
-		$('a').click(function(ev){
-			ev.preventDefault();
-			window.open('/plans/individual/continue-to-ap-pop.asp', 'Continue_to_Application','width=520,height=570');			
+		$('.linkedin').click(function(e){
+			e.preventDefault();
+			var $th = $(this);
+			window.open($th.attr('href'), 'linkedin-win','width=520,height=570');			
 			return false;
 		})
 	}
