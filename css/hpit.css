@@ -419,7 +419,10 @@ html, body {
 }
 .insight .content .left-col {
 	color:#fff;
-	position: fixed;
+	margin-left: 15px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
 }
 .insight .content .right-col {
 	background-color:#fff;
@@ -433,6 +436,10 @@ html, body {
 .insight.current .marker {
 	position:fixed !important;
 	top:32px;
+}
+.insight.current .content .left-col {
+	position:fixed !important;
+	top:62px;
 }
 .insight .marker > div {
 	text-transform: uppercase;
