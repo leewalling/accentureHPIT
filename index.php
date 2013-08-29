@@ -90,6 +90,7 @@
                 <a href="#" class="playVid"></a>
             </div>
         </div>
+        <div id="accMark"><img src="images/accenture-mark.png" width="532" height="536" /></div>
         <div class="whiteAngle">whiteAngle</div>
     	<div class="bgImages" id="bgImages">
     		<div class="bgImg" data-insight="10"><img src="images/bg-japanese.jpg" /></div>

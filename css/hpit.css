@@ -190,7 +190,16 @@ html, body {
 }
 
 
-
+#accMark {
+	top: 350px;
+	left: 0;
+	position: absolute;
+	display: inline-block;
+	overflow: hidden;
+	z-index: 1;
+	width: 532px;
+	height: 536px;
+}
 .hero {
 	background-color:#fff;
 	color:#000;
