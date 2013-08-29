@@ -109,6 +109,9 @@
     		<div class="marker">
     			<div><span>01</span></div>
     		</div>
+            <div class="insightTitle">
+                title goes here...
+            </div>
     		<div class="container content">
     			<div class="row">
                     <div class="left-col">

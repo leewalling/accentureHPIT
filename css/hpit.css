@@ -391,6 +391,16 @@ html, body {
 	background-image:url("../images/bg-skydivers.jpg");
 }
 */
+.insight .insightTitle {
+	position:absolute;
+	text-align: center;
+	top:32px;
+	left:210px;
+	width:360px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+}
 .insight .marker {
 	position:absolute;
 	text-align: center;
@@ -423,6 +433,7 @@ html, body {
 	position: absolute;
 	top: 65px;
 	z-index: 1;
+	display: none;
 }
 .insight .content .right-col {
 	background-color:#fff;
