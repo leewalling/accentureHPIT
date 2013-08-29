@@ -400,7 +400,6 @@ html, body {
 }
 .insight .content {
 	position:relative;
-	display: inline-block;
 	margin:0 auto;
 	max-width:1000px;
 	width:75%;
