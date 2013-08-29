@@ -382,8 +382,7 @@ html, body {
 }
 */
 .insight .marker {
-	position:relative;
-	float: left;
+	position:absolute;
 	text-align: center;
 	top:32px;
 	left:0px;
@@ -402,10 +401,9 @@ html, body {
 .insight .content {
 	position:relative;
 	display: inline-block;
-	float: right;
-	margin-top:170px;
-	margin-right:140px;
-	width:490px;
+	margin:0 auto;
+	max-width:1000px;
+	width:75%;
 	overflow:hidden;
 	background-color:#fff;
 	color:#000;
