@@ -124,7 +124,7 @@
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p class="heading">
                         <span class="heading">Strategy straight talk:</span>
-                        <span class="quote">"You can't think like a database. You have to think like a customer."</span>
+                        <span class="quote">"You can't think like a database.<br />You have to think like a customer."</span>
                         </p>
                         <p>
                         <span class="heading">Why it's important:</span>
@@ -151,7 +151,6 @@
                         <span>Getting social. Social channels open up collaboration and create personal dialogue with key customers.</span>
                         <span>Building relationships. Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span>
                         </p>
-                        <p>lorem...</p>
                     </div>
                 </div>
 			</div>

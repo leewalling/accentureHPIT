@@ -466,6 +466,11 @@ html, body {
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
+.insight .content .right-col p .quote {
+	font-style: italic;
+	font-size: 24px;
+	line-height:29px;
+}
 .insight .content .right-col p.heading .heading {
 	color:#fff !important;
 	margin-bottom: 50px !important;
