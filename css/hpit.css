@@ -102,7 +102,7 @@ html, body {
 }
 #sideMenu ul li a {
 	padding:15px 15px 15px 11px;
-	display:inline-block;
+	display:table-row;
 	float: left;
 	width: 100%;
 	line-height: 26px;
@@ -130,6 +130,9 @@ html, body {
 }
 #sideMenu ul li a.btt:hover em {
 	background-image:url("../images/caret-hover.png");
+}
+#sideMenu ul li a > span {
+	display:table-cell;
 }
 #sideMenu ul li a > span:first-child {
 	font-size: 24px;
