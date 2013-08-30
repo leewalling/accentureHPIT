@@ -380,7 +380,7 @@ html, body {
 }
 .insight.current .insightTitle {
 	position:fixed !important;
-	top: 65px;
+	top: 70px;
 }
 .insight .insightTitle h3,
 .insight .insightTitle h6,
@@ -481,9 +481,17 @@ html, body {
 .insight[data-insight="9"] .marker {background-color:#ff3366;}
 .insight[data-insight="10"] .marker {background-color:#551155;}
 #footer {
-	color:#fff;
-	padding:15px;
-	background-color:#000;
+	background-color: #000000;
+    color: #FFFFFF;
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 100%;
+	transform:skew(0deg,22deg);
+	-ms-transform:skew(0deg,22deg);
+	-webkit-transform:skew(0deg,22deg);
+	height:800px;
 }
 
 
