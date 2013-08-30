@@ -198,7 +198,9 @@ hpit.core = (function(){
 					return false;
 				}
 			}
-			console.log('win: ',$(window));
+			
+			// set the new hash
+			window.location.hash = newHash;
 		});
 		
 	}
