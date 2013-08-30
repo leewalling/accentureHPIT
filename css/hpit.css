@@ -141,7 +141,7 @@ html, body {
 	padding-right:13px;
 }
 #sideMenu ul li a > span:last-child {
-	line-height:14px;
+	line-height: 1.25em;
 }
 #sideMenu ul li.hilited a,
 #sideMenu ul li a:hover,

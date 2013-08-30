@@ -64,16 +64,16 @@
     	<div id="sideMenu">
     		<ul>
     			<li><a href="#top" class="btt"><em>Back To Top</em></a></li>
-    			<li data-insight-nav="1"><a href="#insight-1"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
-    			<li data-insight-nav="2"><a href="#insight-2"><span>02</span> <span>Technology is inseparable from business strategy</span></a></li>
-    			<li data-insight-nav="3"><a href="#insight-3"><span>03</span> <span>Context is king.</span></a></li>
-    			<li data-insight-nav="4"><a href="#insight-4"><span>04</span> <span>Flexibility first.</span></a></li>
-    			<li data-insight-nav="5"><a href="#insight-5"><span>05</span> <span>Be fearlessly digital.</span></a></li>
-    			<li data-insight-nav="6"><a href="#insight-6"><span>06</span> <span>Survival of the quickest</span></a></li>
-    			<li data-insight-nav="7"><a href="#insight-7"><span>07</span> <span>All data is not created equal.</span></a></li>
-    			<li data-insight-nav="8"><a href="#insight-8"><span>08</span> <span>Power to the people.</span></a></li>
-    			<li data-insight-nav="9"><a href="#insight-9"><span>09</span> <span>Build your capabilities around talent, not technology.</span></a></li>
-    			<li data-insight-nav="10"><a href="#insight-10"><span>10</span> <span>Take a holistic stance on security and risk</span></a></li>
+    			<li data-insight-nav="1"><a href="#your-new-boss-your-customer"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
+    			<li data-insight-nav="2"><a href="#technology-is-inseparable-from-business-strategy"><span>02</span> <span>Technology is inseparable from business strategy</span></a></li>
+    			<li data-insight-nav="3"><a href="#context-is-king"><span>03</span> <span>Context is king.</span></a></li>
+    			<li data-insight-nav="4"><a href="#flexibility-first"><span>04</span> <span>Flexibility first.</span></a></li>
+    			<li data-insight-nav="5"><a href="#be-fearlessly-digital"><span>05</span> <span>Be fearlessly digital.</span></a></li>
+    			<li data-insight-nav="6"><a href="#survival-of-the-quickest"><span>06</span> <span>Survival of the quickest</span></a></li>
+    			<li data-insight-nav="7"><a href="#all-data-is-not-created-equal"><span>07</span> <span>All data is not created equal.</span></a></li>
+    			<li data-insight-nav="8"><a href="#power-to-the-people"><span>08</span> <span>Power to the people.</span></a></li>
+    			<li data-insight-nav="9"><a href="#build-your-capabilities-around-talent-not-technology"><span>09</span> <span>Build your capabilities around talent, not technology.</span></a></li>
+    			<li data-insight-nav="10"><a href="#take-a-holistic-stance-on-security-and-risk"><span>10</span> <span>Take a holistic stance on security and risk</span></a></li>
     		</ul>
     		<a href="#" class="closeX">&nbsp;</a>
     	</div>
@@ -104,7 +104,7 @@
     		<div class="bgImg" data-insight="2"><img src="images/bg-ocean.jpg" /></div>
     		<div class="bgImg" data-insight="1"><img src="images/bg-bridge.jpg" /></div>
     	</div>
-    	<div class="insight" id="insight-1" data-insight="1">
+    	<div class="insight" id="your-new-boss-your-customer" data-insight="1">
     		<div class="marker">
     			<div><span>01</span></div>
     		</div>
@@ -136,7 +136,7 @@
                 </div>
 			</div>
     	</div>
-    	<div class="insight" id="insight-2" data-insight="2">
+    	<div class="insight" id="technology-is-inseparable-from-business-strategy" data-insight="2">
     		<!--div class="bgImg"><img src="images/bg_lake.jpg" /></div-->
     		<div class="marker">
     			<div><span>02</span></div>
@@ -169,7 +169,7 @@
                 </div>
             </div>
     	</div>
-    	<div class="insight" id="insight-3" data-insight="3">
+    	<div class="insight" id="context-is-king" data-insight="3">
     		<div class="marker">
     			<div><span>03</span></div>
     		</div>
@@ -201,7 +201,7 @@
                 </div>
             </div>
     	</div>
-    	<div class="insight" id="insight-4" data-insight="4">
+    	<div class="insight" id="flexibility-first" data-insight="4">
     		<div class="marker">
     			<div><span>04</span></div>
     		</div>
@@ -233,7 +233,7 @@
                 </div>
             </div>
     	</div>
-    	<div class="insight" id="insight-5" data-insight="5">
+    	<div class="insight" id="be-fearlessly-digital" data-insight="5">
     		<div class="marker">
     			<div><span>05</span></div>
     		</div>
@@ -265,7 +265,7 @@
                 </div>
             </div>
     	</div>
-    	<div class="insight" id="insight-6" data-insight="6">
+    	<div class="insight" id="survival-of-the-quickest" data-insight="6">
     		<div class="marker">
     			<div><span>06</span></div>
     		</div>
@@ -297,7 +297,7 @@
                 </div>
             </div>
     	</div>
-    	<div class="insight" id="insight-7" data-insight="7">
+    	<div class="insight" id="all-data-is-not-created-equal" data-insight="7">
     		<div class="marker">
     			<div><span>07</span></div>
     		</div>
@@ -329,7 +329,7 @@
                 </div>
             </div>
     	</div>
-    	<div class="insight" id="insight-8" data-insight="8">
+    	<div class="insight" id="power-to-the-people" data-insight="8">
     		<div class="marker">
     			<div><span>08</span></div>
     		</div>
@@ -361,7 +361,7 @@
                 </div>
             </div>
     	</div>
-    	<div class="insight" id="insight-9" data-insight="9">
+    	<div class="insight" id="build-your-capabilities-around-talent-not-technology" data-insight="9">
     		<div class="marker">
     			<div><span>09</span></div>
     		</div>
@@ -393,7 +393,7 @@
                 </div>
             </div>
     	</div>
-    	<div class="insight" id="insight-10" data-insight="10">
+    	<div class="insight" id="take-a-holistic-stance-on-security-and-risk" data-insight="10">
     		<div class="marker">
     			<div><span>10</span></div>
     		</div>

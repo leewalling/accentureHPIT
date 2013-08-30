@@ -300,7 +300,7 @@ hpit.core = (function(){
 	function backToTopInit(){
 		$.logEvent('[hpit.core.backToTopInit]');
 		
-		$('.back-to-top').localScroll({
+		$('.btt').localScroll({
 			duration: hpit.config.duration[hpit.config.desktopORtouch],
 			easing: hpit.config.easing,
 			hash: false,
