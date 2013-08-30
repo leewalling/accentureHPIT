@@ -442,6 +442,7 @@ html, body {
 }
 .insight .content .right-col {
 	background-color:#fff;
+	padding: 0;
 }
 .insight .content .right-col p {
 	padding:25px 20px 20px 20px;
@@ -459,6 +460,7 @@ html, body {
 	border-bottom: none;
 	overflow: hidden;
 	color: #fff;
+	background-color:#aa1133;
 }
 .insight.current  {
 	background-attachment:fixed;

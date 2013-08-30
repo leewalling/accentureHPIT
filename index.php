@@ -122,7 +122,7 @@
     			<div class="row">
                     <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
-                        <p>
+                        <p class="heading">
                         <span>Strategy straight talk:</span>
                         <span>“You can’t think like a database. You have to think like a customer.”</span>
                         </p>
