@@ -365,38 +365,6 @@ html, body {
 	-ms-transform:skew(0deg,-22deg);
 	-webkit-transform:skew(0deg,-22deg);
 }
-/*
-#insight-1 {
-	background-image:url("../images/bg_bridge.jpg");
-}
-#insight-2 {
-	background-image:url("../images/bg_lake.jpg");
-}
-#insight-3 {
-	background-image:url("../images/bg-skydivers.jpg");
-}
-#insight-4 {
-	background-image:url("../images/bg_sea.jpg");
-}
-#insight-5 {
-	background-image:url("../images/bg-sidewalk.png");
-}
-#insight-6 {
-	background-image:url("../images/bg-hero-mountain.jpg");
-}
-#insight-7 {
-	background-image:url("../images/bg_field.jpg");
-}
-#insight-8 {
-	background-image:url("../images/bg_lake.jpg");
-}
-#insight-9 {
-	background-image:url("../images/bg_bridge.jpg");
-}
-#insight-10 {
-	background-image:url("../images/bg-skydivers.jpg");
-}
-*/
 .insight .insightTitle {
 	position:absolute;
 	text-align: left;
@@ -501,16 +469,16 @@ html, body {
 	font-weight: bold;
 	width: 100%;
 }
-#insight-1 .marker {background-color:#aa1133;}
-#insight-2 .marker {background-color:#ff0000;}
-#insight-3 .marker {background-color:#dd4411;}
-#insight-4 .marker {background-color:#ff9900;}
-#insight-5 .marker {background-color:#bbbb00;}
-#insight-6 .marker {background-color:#00aa99;}
-#insight-7 .marker {background-color:#00bbee;}
-#insight-8 .marker {background-color:#3399cc;}
-#insight-9 .marker {background-color:#ff3366;}
-#insight-10 .marker {background-color:#551155;}
+.insight[data-insight="1"] .marker {background-color:#aa1133;}
+.insight[data-insight="2"] .marker {background-color:#ff0000;}
+.insight[data-insight="3"] .marker {background-color:#dd4411;}
+.insight[data-insight="4"] .marker {background-color:#ff9900;}
+.insight[data-insight="5"] .marker {background-color:#bbbb00;}
+.insight[data-insight="6"] .marker {background-color:#00aa99;}
+.insight[data-insight="7"] .marker {background-color:#00bbee;}
+.insight[data-insight="8"] .marker {background-color:#3399cc;}
+.insight[data-insight="9"] .marker {background-color:#ff3366;}
+.insight[data-insight="10"] .marker {background-color:#551155;}
 #footer {
 	color:#fff;
 	padding:15px;
