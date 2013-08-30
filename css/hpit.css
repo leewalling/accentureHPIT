@@ -464,9 +464,11 @@ html, body {
 .insight .content .right-col p .heading {
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 .insight .content .right-col p.heading .heading {
-	color:#fff;
+	color:#fff !important;
+	margin-bottom: 50px !important;
 }
 #your-new-boss-your-customer .content .right-col p.heading {
 	background-color:#aa1133;
