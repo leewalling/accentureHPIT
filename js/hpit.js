@@ -10,7 +10,7 @@ var hpit = window.hpit || {};
 
 // initial config
 hpit.config = {
-	currInsight: 1,
+	currInsight: 0,
 	debugLogging: false,
 	scrW: null,
 	scrH: null,
@@ -172,13 +172,15 @@ hpit.core = (function(){
 			var $cur = parseInt(hpit.config.currInsight);
 			var $th = $(this);
 			var newNum;
+			var newHash;
 			
 			if($th.hasClass("prev")){
 				console.log('cur: ', $cur);
 				if($cur > 1){
 					newNum = ($cur - 1);
 					console.log('newNum: ' + newNum);
-					$(window).scrollTo('#insight-' + newNum, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
+					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
+					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
 				} else {
 					console.log('nothing there');
 					return false;
@@ -189,7 +191,8 @@ hpit.core = (function(){
 				if($cur < $('.insight').length){
 					newNum = ($cur + 1);
 					console.log('newNum: ' + newNum);
-					$(window).scrollTo('#insight-' + newNum, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
+					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
+					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
 				} else {
 					console.log('nothing there');
 					return false;
