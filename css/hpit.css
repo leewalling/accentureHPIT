@@ -131,7 +131,7 @@ html, body {
 #sideMenu ul li a.btt:hover em {
 	background-image:url("../images/caret-hover.png");
 }
-#sideMenu ul li a > span {
+#sideMenu ul li a > span:first-child {
 	font-size: 24px;
 	font-weight: bold;
 	float: left;
@@ -148,7 +148,7 @@ html, body {
 	font-size: 11px;
 	line-height: 16px;
 }
-#sideMenu.height-xxs ul li a > span {
+#sideMenu.height-xxs ul li a > span:first-child {
 	font-size: 15px;
 }
 #sideMenu.height-xs ul li a {
@@ -156,7 +156,7 @@ html, body {
 	font-size: 12px;
 	line-height: 17px;
 }
-#sideMenu.height-xs ul li a > span {
+#sideMenu.height-xs ul li a > span:first-child {
 	font-size: 16px;
 }
 #sideMenu.height-sm ul li a {
@@ -164,7 +164,7 @@ html, body {
 	font-size: 13px;
 	line-height: 21px;
 }
-#sideMenu.height-sm ul li a > span {
+#sideMenu.height-sm ul li a > span:first-child {
 	font-size: 19px;
 }
 #sideMenu.height-md ul li a {
