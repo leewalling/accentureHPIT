@@ -443,6 +443,23 @@ html, body {
 .insight .content .right-col {
 	background-color:#fff;
 }
+.insight .content .right-col p {
+	padding:25px 20px 20px 20px;
+	margin:0 0 0 0;
+	border-bottom: 1px solid #e2e2e2;
+	overflow: hidden;
+}
+.insight .content .right-col p > span {
+	display: inline-block;
+	width: 100%;
+	float: left;
+}
+.insight .content .right-col p.heading {
+	padding:10px 20px 30px 20px;
+	border-bottom: none;
+	overflow: hidden;
+	color: #fff;
+}
 .insight.current  {
 	background-attachment:fixed;
 	background-size:100% !important;
