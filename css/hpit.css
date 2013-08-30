@@ -425,11 +425,12 @@ html, body {
 .insight .content {
 	position:relative;
 	margin:0 auto;
+	margin-top:70px;
 	max-width:1000px;
 	width:75%;
 	overflow:visible;
-	/*background-color:#fff;*/
 	color:#000;
+	/*background-color:#fff;*/
 }
 .insight .content .left-col {
 	color:#fff;
