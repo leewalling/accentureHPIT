@@ -180,7 +180,7 @@ hpit.core = (function(){
 					newNum = ($cur - 1);
 					//console.log('newNum: ' + newNum);
 					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
-					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
+					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() {location.hash = newHash}} );
 				} else {
 					//console.log('nothing there');
 					return false;
@@ -192,7 +192,7 @@ hpit.core = (function(){
 					newNum = ($cur + 1);
 					//console.log('newNum: ' + newNum);
 					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
-					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() {alert('done scrolling')}} );
+					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() {location.hash = newHash}} );
 
 				} else {
 					//console.log('nothing there');
