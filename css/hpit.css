@@ -460,8 +460,21 @@ html, body {
 	border-bottom: none;
 	overflow: hidden;
 	color: #fff;
+}
+.insight .content .right-col p .heading {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.insight .content .right-col p.heading .heading {
+	color:#fff;
+}
+#your-new-boss-your-customer .content .right-col p.heading {
 	background-color:#aa1133;
 }
+#your-new-boss-your-customer .content .right-col p .heading {
+	color:#aa1133;
+}
+
 .insight.current  {
 	background-attachment:fixed;
 	background-size:100% !important;
