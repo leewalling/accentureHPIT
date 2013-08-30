@@ -26,7 +26,7 @@ hpit.config = {
 
 // Attach functionality to the native scroll function
 $(window).scroll(function(event){
-	console.log('scrolling...' + $('#hero').outerHeight(true));
+	//console.log('scrolling...' + $('#hero').outerHeight(true));
 
 	// determine if we need to lock the background images in place
 	if($(window).scrollTop() > $('#hero').outerHeight(true)){
@@ -59,7 +59,7 @@ hpit.core = (function(){
 			},
 			onAfter: function(anchor,settings){
 				if(hpit.config.desktopORtouch == 'desktop'){
-					console.log('done scrolling');
+					//console.log('done scrolling');
 				}
 			}
 		});
@@ -175,29 +175,30 @@ hpit.core = (function(){
 			var newHash;
 			
 			if($th.hasClass("prev")){
-				console.log('cur: ', $cur);
+				//console.log('cur: ', $cur);
 				if($cur > 1){
 					newNum = ($cur - 1);
-					console.log('newNum: ' + newNum);
+					//console.log('newNum: ' + newNum);
 					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
 					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
 				} else {
-					console.log('nothing there');
+					//console.log('nothing there');
 					return false;
 				}
 			} else {
-				console.log('cur: ', $cur);
-				console.log('#total: ', $('.insight').length);
+				//console.log('cur: ', $cur);
+				//console.log('#total: ', $('.insight').length);
 				if($cur < $('.insight').length){
 					newNum = ($cur + 1);
-					console.log('newNum: ' + newNum);
+					//console.log('newNum: ' + newNum);
 					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
 					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing} );
 				} else {
-					console.log('nothing there');
+					//console.log('nothing there');
 					return false;
 				}
 			}
+			console.log('win: ',$(window));
 		});
 		
 	}
