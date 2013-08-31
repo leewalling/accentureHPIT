@@ -461,14 +461,14 @@ html, body {
 	display:table-cell;
 	vertical-align: middle;
 }
-.insight .content .right-col > div .tr > span .num {
+.insight .content .right-col > div .tr > span.num {
 	padding-right: 15px;
 }
-.insight .content .right-col > div .tr > span .txt {
+.insight .content .right-col > div .tr > span.txt {
 	overflow: hidden;
 	line-height: 20px;
 }
-.insight .content .right-col > div .tr > span .txt strong {
+.insight .content .right-col > div .tr > span.txt strong {
 	display: inline-block;
 	width: 100%;
 	float: left;
