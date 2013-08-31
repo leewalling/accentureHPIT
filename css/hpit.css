@@ -478,7 +478,7 @@ html, body {
 	overflow: hidden;
 	line-height: 20px;
 	padding-left: 15px;
-	padding-top: 10px;
+	padding-top: 7px;
 }
 .insight .content .right-col > div .tr > span.txt strong {
 	display: inline-block;
@@ -518,16 +518,6 @@ html, body {
 	color:#fff !important;
 	margin-bottom: 50px !important;
 }
-#your-new-boss-your-customer .content .right-col > div.heading {
-	background-color:#aa1133;
-}
-#your-new-boss-your-customer .content .right-col > div .heading {
-	color:#aa1133;
-}
-#your-new-boss-your-customer .content .right-col > div .tr > span.num {
-	background-color:#aa1133;
-}
-
 .insight.current  {
 	background-attachment:fixed;
 	background-size:100% !important;
@@ -555,16 +545,48 @@ html, body {
 	font-weight: bold;
 	width: 100%;
 }
-.insight[data-insight="1"] .marker {background-color:#aa1133;}
-.insight[data-insight="2"] .marker {background-color:#ff0000;}
-.insight[data-insight="3"] .marker {background-color:#dd4411;}
-.insight[data-insight="4"] .marker {background-color:#ff9900;}
-.insight[data-insight="5"] .marker {background-color:#bbbb00;}
-.insight[data-insight="6"] .marker {background-color:#00aa99;}
-.insight[data-insight="7"] .marker {background-color:#00bbee;}
-.insight[data-insight="8"] .marker {background-color:#3399cc;}
-.insight[data-insight="9"] .marker {background-color:#ff3366;}
-.insight[data-insight="10"] .marker {background-color:#551155;}
+.insight[data-insight="1"] .marker,
+.insight[data-insight="1"] .content .right-col > div.heading,
+.insight[data-insight="1"] .content .right-col > div .tr > span.num {background-color:#aa1133;}
+.insight[data-insight="2"] .marker,
+.insight[data-insight="2"] .content .right-col > div.heading,
+.insight[data-insight="2"] .content .right-col > div .tr > span.num {background-color:#ff0000;}
+.insight[data-insight="3"] .marker,
+.insight[data-insight="3"] .content .right-col > div.heading,
+.insight[data-insight="3"] .content .right-col > div .tr > span.num {background-color:#dd4411;}
+.insight[data-insight="4"] .marker,
+.insight[data-insight="4"] .content .right-col > div.heading,
+.insight[data-insight="4"] .content .right-col > div .tr > span.num {background-color:#ff9900;}
+.insight[data-insight="5"] .marker,
+.insight[data-insight="5"] .content .right-col > div.heading,
+.insight[data-insight="5"] .content .right-col > div .tr > span.num {background-color:#bbbb00;}
+.insight[data-insight="6"] .marker,
+.insight[data-insight="6"] .content .right-col > div.heading,
+.insight[data-insight="6"] .content .right-col > div .tr > span.num {background-color:#00aa99;}
+.insight[data-insight="7"] .marker,
+.insight[data-insight="7"] .content .right-col > div.heading,
+.insight[data-insight="7"] .content .right-col > div .tr > span.num {background-color:#00bbee;}
+.insight[data-insight="8"] .marker,
+.insight[data-insight="8"] .content .right-col > div.heading,
+.insight[data-insight="8"] .content .right-col > div .tr > span.num {background-color:#3399cc;}
+.insight[data-insight="9"] .marker,
+.insight[data-insight="9"] .content .right-col > div.heading,
+.insight[data-insight="9"] .content .right-col > div .tr > span.num {background-color:#ff3366;}
+.insight[data-insight="10"] .marker,
+.insight[data-insight="10"] .content .right-col > div.heading,
+.insight[data-insight="10"] .content .right-col > div .tr > span.num {background-color:#551155;}
+
+.insight[data-insight="1"] .content .right-col > div .heading {color:#aa1133;}
+.insight[data-insight="2"] .content .right-col > div .heading {color:#ff0000;}
+.insight[data-insight="3"] .content .right-col > div .heading {color:#dd4411;}
+.insight[data-insight="4"] .content .right-col > div .heading {color:#ff9900;}
+.insight[data-insight="5"] .content .right-col > div .heading {color:#bbbb00;}
+.insight[data-insight="6"] .content .right-col > div .heading {color:#00aa99;}
+.insight[data-insight="7"] .content .right-col > div .heading {color:#00bbee;}
+.insight[data-insight="8"] .content .right-col > div .heading {color:#3399cc;}
+.insight[data-insight="9"] .content .right-col > div .heading {color:#ff3366;}
+.insight[data-insight="10"] .content .right-col > div .heading {color:#551155;}
+
 #footer {
 	background-color: #000000;
     color: #FFFFFF;
