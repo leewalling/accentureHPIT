@@ -444,45 +444,46 @@ html, body {
 	background-color:#fff;
 	padding: 0;
 }
-.insight .content .right-col p {
+.insight .content .right-col > div {
 	padding:25px 20px 20px 20px;
 	margin:0 0 0 0;
 	border-bottom: 1px solid #e2e2e2;
 	overflow: hidden;
 }
-.insight .content .right-col p > span {
+.insight .content .right-col > div > span {
 	display: inline-block;
 	width: 100%;
 	float: left;
 }
-.insight .content .right-col p.heading {
+.insight .content .right-col > div.heading {
 	padding:10px 20px 30px 20px;
 	border-bottom: none;
 	overflow: hidden;
 	color: #fff;
 }
-.insight .content .right-col p .heading {
+.insight .content .right-col > div .heading {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
-.insight .content .right-col p .fpo {
+.insight .content .right-col > div .fpo {
 	text-align: center;
 	margin-top: 25px;
+	margin-bottom: 15px;
 }
-.insight .content .right-col p .quote {
+.insight .content .right-col > div .quote {
 	font-style: italic;
 	font-size: 24px;
 	line-height:29px;
 }
-.insight .content .right-col p.heading .heading {
+.insight .content .right-col > div.heading .heading {
 	color:#fff !important;
 	margin-bottom: 50px !important;
 }
-#your-new-boss-your-customer .content .right-col p.heading {
+#your-new-boss-your-customer .content .right-col > div.heading {
 	background-color:#aa1133;
 }
-#your-new-boss-your-customer .content .right-col p .heading {
+#your-new-boss-your-customer .content .right-col > div .heading {
 	color:#aa1133;
 }
 

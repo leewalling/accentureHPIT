@@ -122,36 +122,36 @@
     			<div class="row">
                     <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
-                        <p class="heading">
+                        <div class="heading">
                         <span class="heading">Strategy straight talk</span>
                         <span class="quote">"You can't think like a database.<br />You have to think like a customer."</span>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                         <span class="heading">Why it's important</span>
-                        <span>High performers have moved beyond internally focused objectives like cost and productivity. The new bulls-eye is the customer experience. </span>
-                        </p>
-                        <p>
+                        <span>High performers have moved beyond internally focused objectives like cost and productivity. <strong>The new bulls-eye is the customer experience.</strong> </span>
+                        </div>
+                        <div>
                         <span class="heading">What you should know</span>
-                        <span>High performers' top 3 business objectives all point to improving the customer experience.</span>
+                        <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
                         <span class="fpo"><img src="images/fpo-info.png" /></span>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                         <span class="heading">High performers</span>
                         <span>1.  Providing the right information to the right person at the right time</span>
                         <span>2.  Finding better ways to interact with customers</span>
                         <span>3.  Delivering new services or products to customers</span>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                         <span class="heading">Others</span>
                         <span>1.  Cutting business operational costs</span>
                         <span>2.  Increasing workforce productivity</span>
                         <span>3.  Automating core business processes</span>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                         <span class="heading">High performers are also...</span>
-                        <span>Getting social. Social channels open up collaboration and create personal dialogue with key customers.</span>
-                        <span>Building relationships. Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span>
-                        </p>
+                        <span><span class="num"></span><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogue with key customers.</span>
+                        <span><span class="num"></span><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span>
+                        </div>
                     </div>
                 </div>
 			</div>
