@@ -456,14 +456,13 @@ html, body {
 	vertical-align: middle;
 	float: left;
 	width: 100%;
+	margin-bottom: 35px;
 }
 .insight .content .right-col > div .tr > span {
 	display:table-cell;
 	vertical-align: middle;
 }
 .insight .content .right-col > div .tr > span.num {
-	padding-right: 15px;
-	display: inline-block;
 	overflow: hidden;
 	width: 46px;
 	height:46px;
@@ -471,10 +470,15 @@ html, body {
 	font-size: 24px;
 	text-align: center;
 	color: #fff;
+	float:left;
+	-webkit-border-radius: 23px;
+	border-radius: 23px;
 }
 .insight .content .right-col > div .tr > span.txt {
 	overflow: hidden;
 	line-height: 20px;
+	padding-left: 15px;
+	padding-top: 10px;
 }
 .insight .content .right-col > div .tr > span.txt strong {
 	display: inline-block;
