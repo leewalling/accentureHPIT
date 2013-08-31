@@ -103,6 +103,7 @@ html, body {
 #sideMenu ul li a {
 	padding:15px 15px 15px 11px;
 	display:table-row;
+	vertical-align: middle;
 	float: left;
 	width: 100%;
 	line-height: 26px;
@@ -449,6 +450,16 @@ html, body {
 	margin:0 0 0 0;
 	border-bottom: 1px solid #e2e2e2;
 	overflow: hidden;
+}
+.insight .content .right-col > div .tr {
+	display:table-row;
+	vertical-align: middle;
+	float: left;
+	width: 100%;
+}
+.insight .content .right-col > div .tr > span {
+	display:table-cell;
+	vertical-align: middle;
 }
 .insight .content .right-col > div > span {
 	display: inline-block;

@@ -149,8 +149,8 @@
                         </div>
                         <div>
                         <span class="heading">High performers are also...</span>
-                        <span><span class="num"></span><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogue with key customers.</span>
-                        <span><span class="num"></span><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span>
+                        <span class="tr"><span class="num">1</span><span class="txt"><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogue with key customers.</span></span>
+                        <span class="tr"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                     </div>
                 </div>
