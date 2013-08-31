@@ -463,6 +463,14 @@ html, body {
 }
 .insight .content .right-col > div .tr > span.num {
 	padding-right: 15px;
+	display: inline-block;
+	overflow: hidden;
+	width: 46px;
+	height:46px;
+	line-height: 46px;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
 }
 .insight .content .right-col > div .tr > span.txt {
 	overflow: hidden;
@@ -511,6 +519,9 @@ html, body {
 }
 #your-new-boss-your-customer .content .right-col > div .heading {
 	color:#aa1133;
+}
+#your-new-boss-your-customer .content .right-col > div .tr > span.num {
+	background-color:#aa1133;
 }
 
 .insight.current  {
