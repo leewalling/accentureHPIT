@@ -132,7 +132,7 @@ hpit.core = (function(){
 	            	var $per = diff/scH; // console.log('$per: ' + $per);
 	            	if(diff >= -1 && diff < scH + 1){
 	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
-	            		$('.insight[data-insight='1'] .insightTitle').css({"opacity" : $per});
+	            		$('.insight[data-insight='+index+'] .insightTitle').css({"opacity" : $per});
 	            	} else {
 	            		console.log('$per: ' + $per);
 	            	}
