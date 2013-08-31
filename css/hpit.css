@@ -595,10 +595,12 @@ html, body {
     display: inline-block;
     float: left;
     width: 100%;
+    /*
 	transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg);
 	-webkit-transform:skew(0deg,22deg);
 	height:800px;
+	*/
 }
 
 
