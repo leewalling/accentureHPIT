@@ -53,7 +53,7 @@ hpit.core = (function(){
 		$('#sideMenu').localScroll({
 			duration: hpit.config.duration[hpit.config.desktopORtouch],
 			easing: hpit.config.easing,
-			hash: true,
+			hash: false,
 			onBefore: function(anchor,settings){
 				$('#toggleMenu').trigger("click");
 			},
@@ -132,6 +132,7 @@ hpit.core = (function(){
 	            	var $per = diff/scH; // console.log('$per: ' + $per);
 	            	if(diff >= -1 && diff < scH + 1){
 	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
+	            		$('.insight[data-insight='1'] .insightTitle').css({"opacity" : $per});
 	            	} else {
 	            		console.log('$per: ' + $per);
 	            	}
@@ -298,38 +299,6 @@ hpit.core = (function(){
 		
 		hpit.config.scrW = $(window).width();
 		hpit.config.scrH = $(window).height();
-	}
-		
-	/**
-	* Initialize event handler for 'Back to top' links
-	* @method backToTopInit
-	*/
-	function backToTopInit(){
-		$.logEvent('[hpit.core.backToTopInit]');
-		
-		/*
-		$('.btt').localScroll({
-			duration: hpit.config.duration[hpit.config.desktopORtouch],
-			easing: hpit.config.easing,
-			hash: false,
-			onBefore: function(e,anchor,$target){
-				//
-			},
-			onAfter: function(anchor,settings){
-				//
-			}
-		});
-		*/
-	}
-	
-	/**
-	* Scroll the page to the selected trend
-	* @method animateToTrend
-	*/
-	function animateToTrend(){
-		$.logEvent('[hpit.core.animateToTrend]');
-		
-		//
 	}
 	
 	/**
