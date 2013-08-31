@@ -307,6 +307,7 @@ hpit.core = (function(){
 	function backToTopInit(){
 		$.logEvent('[hpit.core.backToTopInit]');
 		
+		/*
 		$('.btt').localScroll({
 			duration: hpit.config.duration[hpit.config.desktopORtouch],
 			easing: hpit.config.easing,
@@ -318,6 +319,7 @@ hpit.core = (function(){
 				//
 			}
 		});
+		*/
 	}
 	
 	/**

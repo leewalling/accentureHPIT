@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div class="container main">
+    <div class="container main" id="theTop">
     	<div id="controls">
     		<!--<img src="images/menu-controls.png" width="77" height="181" />-->
     		<a href="#" class="arrows prev"></a>
@@ -63,7 +63,7 @@
     	</div>
     	<div id="sideMenu">
     		<ul>
-    			<li><a href="#top" class="btt"><em>Back To Top</em></a></li>
+    			<li><a href="#theTop" class="btt"><em>Back To Top</em></a></li>
     			<li data-insight-nav="1"><a href="#your-new-boss-your-customer"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
     			<li data-insight-nav="2"><a href="#technology-is-inseparable-from-business-strategy"><span>02</span> <span>Technology is inseparable from business strategy</span></a></li>
     			<li data-insight-nav="3"><a href="#context-is-king"><span>03</span> <span>Context is king.</span></a></li>
