@@ -123,16 +123,17 @@
                     <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <p class="heading">
-                        <span class="heading">Strategy straight talk:</span>
+                        <span class="heading">Strategy straight talk</span>
                         <span class="quote">"You can't think like a database.<br />You have to think like a customer."</span>
                         </p>
                         <p>
-                        <span class="heading">Why it's important:</span>
+                        <span class="heading">Why it's important</span>
                         <span>High performers have moved beyond internally focused objectives like cost and productivity. The new bulls-eye is the customer experience. </span>
                         </p>
                         <p>
-                        <span class="heading">What you should know: (infographic)</span>
+                        <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to improving the customer experience.</span>
+                        <span class="fpo"><img src="images/fpo-info.png" /></span>
                         </p>
                         <p>
                         <span class="heading">High performers</span>
