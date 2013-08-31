@@ -134,7 +134,8 @@ hpit.core = (function(){
 	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
 	            		$('.insight[data-insight='+index+'] .insightTitle').css({"opacity" : $per});
 	            	} else {
-	            		console.log('$per: ' + $per);
+	            		$('.insight .insightTitle').css({"opacity" : 1});
+	            		//console.log('$per: ' + $per);
 	            	}
 	            }
 
