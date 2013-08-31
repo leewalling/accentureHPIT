@@ -461,6 +461,21 @@ html, body {
 	display:table-cell;
 	vertical-align: middle;
 }
+.insight .content .right-col > div .tr > span .num {
+	padding-right: 15px;
+}
+.insight .content .right-col > div .tr > span .txt {
+	overflow: hidden;
+	line-height: 20px;
+}
+.insight .content .right-col > div .tr > span .txt strong {
+	display: inline-block;
+	width: 100%;
+	float: left;
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: normal;
+}
 .insight .content .right-col > div > span {
 	display: inline-block;
 	width: 100%;
