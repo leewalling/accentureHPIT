@@ -882,8 +882,7 @@ and (min-width : 1224px) {
 }
  
 /* larger screens */
-@media only screen
-and (min-width : 1824px) {
+@media only screen and (min-width : 1824px) {
 
 }
  
@@ -894,8 +893,14 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 }
 
+/* iphone 5 */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+
+}
+
 /* less than ipad */
-@media only screen and (max-width : 767px) {
+@media 
+only screen and (max-width : 767px) {
 	.hero > div {
 		margin:118px auto 0 auto;
 		padding:188px 0 0 0;
@@ -907,6 +912,14 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		width: 95px;
 		height: 95px;
 		margin-left: -47.5px;
+	}
+	.hero > div h3 {
+		font-size: 22px;
+	}
+	.hero > div h1 {
+		font-size: 52px;
+		margin-top: 20px;
+		width: 90%;
 	}
 }
 /*********************************  end responsive  **************************************/
