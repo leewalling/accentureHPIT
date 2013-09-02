@@ -28,7 +28,7 @@ hpit.config = {
 $(window).scroll(function(event){
 
 	// determine if we need to lock the background images in place
-	if(!isMobile() && $(window).scrollTop() > $('#hero').outerHeight(true)){
+	if(!onMobile() && $(window).scrollTop() > $('#hero').outerHeight(true)){
 		$('.bgImages').addClass('fixed');
 		$('.whiteAngle').addClass('fixed');
 	} else {
@@ -94,6 +94,12 @@ hpit.core = (function(){
 
 		console.log('config: ', hpit.config);
 
+		$('.insight').each(function (index) {
+			if(!onMobile()){
+				paneLock($(this),index);
+			}			
+		});
+
 		$('.bgImg').css({"opacity" : 0});
 		$('.bgImg[data-insight=\'1\']').css({"opacity" : 1});
 		$('.bgImg[data-insight=\'2\']').css({"opacity" : 1});
@@ -102,20 +108,14 @@ hpit.core = (function(){
         	updateDimensions();
         	if(onMobile()){
 	        	$('html').addClass('onMobile');
-	        	console.log('onMobile');
+	        	//console.log('onMobile');
 	        } else {
 	        	$('html').removeClass('onMobile');
-	        	console.log('NOT - onMobile');
+	        	//console.log('NOT - onMobile');
 	        }
         });
 
         $(window).resize();
-
-		$('.insight').each(function (index) {
-			if(!isMobile()){
-				paneLock($(this),index);
-			}			
-		});
 	}
 
 	function onMobile() {
