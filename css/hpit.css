@@ -233,7 +233,7 @@ html, body {
 .hero > div {
 	position: relative;
 	margin:0 auto;
-	padding:10% 0 0 0;
+	padding:10% 0 72px 0;
 	width: 70%;
 	color:#fff;
 	text-align: center;
@@ -262,10 +262,14 @@ html, body {
 	overflow: hidden;
 	width: 57px;
 	height: 57px;
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 	background-image:url("../images/play.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -28.5px;
+	position: absolute;
 }
 .whiteAngle {
 	width:100%;
@@ -887,5 +891,18 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 
+}
+
+/* less than ipad */
+@media only screen and (max-width : 767px) {
+	.hero > div {
+		margin:118px auto 0 auto;
+		padding:188px 0 0 0;
+		width: 88%;
+	}
+	.hero > div .playVid {
+	  top: 0;
+	  bottom: auto;
+	}
 }
 /*********************************  end responsive  **************************************/
