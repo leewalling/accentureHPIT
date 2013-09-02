@@ -974,6 +974,11 @@ only screen and (max-width : 767px) {
 		z-index: 1;
 		width: 640px;
 		height: 650px;
+		pointer-events:none;
+	}
+
+	.insight {
+		border-top: 2px solid #dbdbdb;
 	}
 }
 /*********************************  end responsive  **************************************/
