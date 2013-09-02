@@ -24,24 +24,6 @@ hpit.config = {
 	}
 };
 
-// Attach functionality to the native scroll function
-$(window).scroll(function(event){
-
-	// determine if we need to lock the background images in place
-	if(!onMobile() && $(window).scrollTop() > $('#hero').outerHeight(true)){
-		$('.bgImages').addClass('fixed');
-		$('.whiteAngle').addClass('fixed');
-	} else {
-		$('.bgImages').removeClass('fixed');
-		$('.whiteAngle').removeClass('fixed');
-		$('#sideMenu ul li').removeClass('hilited');
-		$('.bgImg img').removeClass('activate');
-		var $newT = $(window).scrollTop() / 3.5;
-		$('#hero').css({'top' : - $newT});
-	}
-});
-
-
 /*		HPIT core class		*/
 hpit.core = (function(){	
 	
@@ -103,6 +85,23 @@ hpit.core = (function(){
 		$('.bgImg').css({"opacity" : 0});
 		$('.bgImg[data-insight=\'1\']').css({"opacity" : 1});
 		$('.bgImg[data-insight=\'2\']').css({"opacity" : 1});
+
+		// Attach functionality to the native scroll function
+		$(window).scroll(function(event){
+
+			// determine if we need to lock the background images in place
+			if(!onMobile() && $(window).scrollTop() > $('#hero').outerHeight(true)){
+				$('.bgImages').addClass('fixed');
+				$('.whiteAngle').addClass('fixed');
+			} else {
+				$('.bgImages').removeClass('fixed');
+				$('.whiteAngle').removeClass('fixed');
+				$('#sideMenu ul li').removeClass('hilited');
+				$('.bgImg img').removeClass('activate');
+				var $newT = $(window).scrollTop() / 3.5;
+				$('#hero').css({'top' : - $newT});
+			}
+		});
 
 		$(window).resize(function(){
         	updateDimensions();
