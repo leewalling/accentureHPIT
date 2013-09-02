@@ -290,18 +290,17 @@ html, body {
 	display: inline-block;
 	overflow: hidden;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 25px;
 	background-color: #000;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 .hero .CTA > span {
-	padding:0 22px;
+	padding:0 20px;
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	background-color: pink;
 }
 .whiteAngle {
 	width:100%;
