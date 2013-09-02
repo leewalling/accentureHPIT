@@ -78,7 +78,6 @@
     		<a href="#" class="closeX">&nbsp;</a>
     	</div>
     	<div class="hero" id="hero">
-            <div class="theMark"><img src="images/accenture-mark-mobile.png" width="640" height="650" /></div>
             <video width="auto" height="100%" autoplay loop>
                 <source src="images/blue-loop.mp4" type="video/mp4">
                 <source src="images/blue-loop.ogg" type="video/ogg">
@@ -92,6 +91,7 @@
             </div>
         </div>
         <div id="accMark"><img src="images/accenture-mark.png" width="532" height="536" /></div>
+        <div id="accMarkMob" class="visible-xs"><img src="images/accenture-mark-mobile.png" width="640" height="650" /></div>
         <div class="whiteAngle hidden-xs"></div>
     	<div class="bgImages hidden-xs" id="bgImages">
     		<div class="bgImg" data-insight="10"><img src="images/bg-japanese.jpg" /></div>
