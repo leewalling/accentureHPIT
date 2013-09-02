@@ -78,6 +78,7 @@
     		<a href="#" class="closeX">&nbsp;</a>
     	</div>
     	<div class="hero" id="hero">
+            <div class="theMark"><img src="images/accenture-mark-mobile.png" width="640" height="650" /></div>
             <video width="auto" height="100%" autoplay loop>
                 <source src="images/blue-loop.mp4" type="video/mp4">
                 <source src="images/blue-loop.ogg" type="video/ogg">
