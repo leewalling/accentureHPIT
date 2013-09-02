@@ -95,7 +95,9 @@ hpit.core = (function(){
 		console.log('config: ', hpit.config);
 
 		$('.insight').each(function (index) {
-			paneLock($(this),index);
+			if(!isMobile()){
+				paneLock($(this),index);
+			}			
 		});
 
 		$('.bgImg').css({"opacity" : 0});
