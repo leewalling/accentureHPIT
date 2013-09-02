@@ -74,7 +74,7 @@ hpit.core = (function(){
 		}
 		
 		// Calcaulate/re-calculate any dimensions which may be altered by an orientation change or browser resize
-		resetSite();
+		updateDimensions();
 
 		// Initialize event handler for control arrows
 		arrowsInit();
@@ -103,11 +103,18 @@ hpit.core = (function(){
 		$('.bgImg[data-insight=\'1\']').css({"opacity" : 1});
 		$('.bgImg[data-insight=\'2\']').css({"opacity" : 1});
 
-		if(onMobile()){
-        	$('html').addClass('onMobile');
-        } else {
-        	alert('not mobile');
-        }
+		$(window).resize(function(){
+        	updateDimensions();
+        	if(onMobile()){
+	        	$('html').addClass('onMobile');
+	        	console.log('onMobile');
+	        } else {
+	        	$('html').removeClass('onMobile');
+	        	console.log('NOT - onMobile');
+	        }
+        });
+
+        $(window).resize();
 	}
 
 	function onMobile() {
@@ -306,8 +313,8 @@ hpit.core = (function(){
 		});
 	}
 
-	function resetSite(){
-		$.logEvent('[hpit.core.resetSite]');
+	function updateDimensions(){
+		$.logEvent('[hpit.core.updateDimensions]');
 		
 		hpit.config.scrW = $(window).width();
 		hpit.config.scrH = $(window).height();
