@@ -36,6 +36,12 @@ html, body {
 .container.main {
 	padding-top:860px;
 }
+.onMobile .container.main {
+	padding-top:0;
+}
+.onMobile .hero {
+	position: relative;
+}
 #controls {
 	position: fixed;
 	background-color:#000;
