@@ -55,7 +55,7 @@
     </div>
 
     <div class="container main" id="theTop">
-    	<div id="controls">
+    	<div id="controls" class="visible-sm hidden-md hidden-lg">
     		<!--<img src="images/menu-controls.png" width="77" height="181" />-->
     		<a href="#" class="arrows prev"></a>
     		<a href="#" class="txt" id="toggleMenu">Menu</a>
