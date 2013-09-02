@@ -906,6 +906,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		bottom: auto;
 		width: 95px;
 		height: 95px;
+		margin-left: -47.5px;
 	}
 }
 /*********************************  end responsive  **************************************/
