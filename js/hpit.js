@@ -88,7 +88,8 @@ hpit.core = (function(){
 
 		// Attach functionality to the native scroll function
 		$(window).scroll(function(event){
-
+			console.log('onMobile: ', onMobile());
+			
 			// determine if we need to lock the background images in place
 			if(!onMobile() && $(window).scrollTop() > $('#hero').outerHeight(true)){
 				$('.bgImages').addClass('fixed');
@@ -122,7 +123,7 @@ hpit.core = (function(){
 	}
 
 	function paneLock(element,index) {
-		//element.find('.bgImg').css({"min-height" : element.outerHeight()});
+		console.log('paneLock: ', element);
 
 		$(window)
 	        .bind('scroll', function () {
