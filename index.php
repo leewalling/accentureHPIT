@@ -89,6 +89,7 @@
                 <p>IT now means "in transition" as CIOs move from the server room to the board room and help set the strategic digital agenda. <strong>Accenture CTO Paul Daugherty</strong> shares his point of view on this year's key insights.</p>
                 <a href="#" class="playVid"></a>
             </div>
+            <a href="#" class="CTA"><span>get the study</span></a>
         </div>
         <div id="accMark"><img src="images/accenture-mark.png" width="532" height="536" /></div>
         <div id="accMarkMob" class="visible-xs"><img src="images/accenture-mark-mobile.png" width="640" height="650" /></div>
