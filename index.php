@@ -55,13 +55,13 @@
     </div>
 
     <div class="container main" id="theTop">
-    	<div id="controls" class="hidden-sm">
+    	<div id="controls" class="hidden-xs">
     		<!--<img src="images/menu-controls.png" width="77" height="181" />-->
     		<a href="#" class="arrows prev"></a>
     		<a href="#" class="txt" id="toggleMenu">Menu</a>
     		<a href="#" class="arrows nxt"></a>
     	</div>
-    	<div id="sideMenu" class="hidden-sm">
+    	<div id="sideMenu" class="hidden-xs">
     		<ul>
     			<li><a href="#theTop" class="btt"><em>Back To Top</em></a></li>
     			<li data-insight-nav="1"><a href="#your-new-boss-your-customer"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
