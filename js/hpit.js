@@ -46,6 +46,10 @@ $(window).scroll(function(event){
 /*		HPIT core class		*/
 hpit.core = (function(){	
 	
+	var $userAgent = navigator.userAgent.toLowerCase();
+    var $Android = /android/i.test( $userAgent );
+    var $iOS = /ipad|iphone|ipod|ios/i.test( $userAgent );
+
 	//	Initialize
 	function init(){
 		$.logEvent('[hpit.core.init]');
@@ -71,9 +75,6 @@ hpit.core = (function(){
 		
 		// Calcaulate/re-calculate any dimensions which may be altered by an orientation change or browser resize
 		resetSite();
-				
-		// Initialize event handler for 'Back to top' links
-		//backToTopInit();
 
 		// Initialize event handler for control arrows
 		arrowsInit();
@@ -101,6 +102,16 @@ hpit.core = (function(){
 		$('.bgImg').css({"opacity" : 0});
 		$('.bgImg[data-insight=\'1\']').css({"opacity" : 1});
 		$('.bgImg[data-insight=\'2\']').css({"opacity" : 1});
+
+		if(onMobile()){
+        	$('html').addClass('onMobile');
+        } else {
+        	alert('not mobile');
+        }
+	}
+
+	function onMobile() {
+		return ( ( hpit.config.scrW < 768 ) || $Android || $iOS );
 	}
 
 	function paneLock(element,index) {
@@ -301,12 +312,7 @@ hpit.core = (function(){
 		hpit.config.scrW = $(window).width();
 		hpit.config.scrH = $(window).height();
 	}
-	
-	/**
-	* Check to see if the site is being run from a desktop or a touch device
-	* @method isTouchDevice
-	* @return {Boolean}
-	*/
+
 	function isTouchDevice(){
 		return hpit.config.desktopORtouch == 'touch';
 	}
@@ -320,8 +326,7 @@ hpit.core = (function(){
 	}
 	
 	return {
-		init: init,
-		touchOrientationChange: touchOrientationChange
+		init: init
 	}
 }());
 

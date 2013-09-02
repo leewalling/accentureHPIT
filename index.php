@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
 	<head>
 		<title>accenture hpit</title>
 		<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
@@ -629,7 +629,8 @@
     	<div>
     </div>
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/modernizr-latest.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="http://assets.delvenetworks.com/player/embed.js"></script>
