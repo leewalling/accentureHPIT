@@ -26,10 +26,9 @@ hpit.config = {
 
 // Attach functionality to the native scroll function
 $(window).scroll(function(event){
-	//console.log('scrolling...' + $('#hero').outerHeight(true));
 
 	// determine if we need to lock the background images in place
-	if($(window).scrollTop() > $('#hero').outerHeight(true)){
+	if(!isMobile() && $(window).scrollTop() > $('#hero').outerHeight(true)){
 		$('.bgImages').addClass('fixed');
 		$('.whiteAngle').addClass('fixed');
 	} else {

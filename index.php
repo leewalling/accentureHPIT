@@ -91,7 +91,7 @@
             </div>
         </div>
         <div id="accMark"><img src="images/accenture-mark.png" width="532" height="536" /></div>
-        <div class="whiteAngle hidden-xs">whiteAngle</div>
+        <div class="whiteAngle hidden-xs"></div>
     	<div class="bgImages hidden-xs" id="bgImages">
     		<div class="bgImg" data-insight="10"><img src="images/bg-japanese.jpg" /></div>
     		<div class="bgImg" data-insight="9"><img src="images/bg-beach.jpg" /></div>
