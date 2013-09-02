@@ -94,12 +94,6 @@ hpit.core = (function(){
 
 		console.log('config: ', hpit.config);
 
-		$('.insight').each(function (index) {
-			if(!isMobile()){
-				paneLock($(this),index);
-			}			
-		});
-
 		$('.bgImg').css({"opacity" : 0});
 		$('.bgImg[data-insight=\'1\']').css({"opacity" : 1});
 		$('.bgImg[data-insight=\'2\']').css({"opacity" : 1});
@@ -116,6 +110,12 @@ hpit.core = (function(){
         });
 
         $(window).resize();
+
+		$('.insight').each(function (index) {
+			if(!isMobile()){
+				paneLock($(this),index);
+			}			
+		});
 	}
 
 	function onMobile() {
