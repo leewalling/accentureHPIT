@@ -90,17 +90,19 @@ hpit.core = (function(){
 		$(window).scroll(function(event){
 			console.log('onMobile: ', onMobile());
 
-			// determine if we need to lock the background images in place
-			if(!onMobile() && $(window).scrollTop() > $('#hero').outerHeight(true)){
-				$('.bgImages').addClass('fixed');
-				$('.whiteAngle').addClass('fixed');
-			} else {
-				$('.bgImages').removeClass('fixed');
-				$('.whiteAngle').removeClass('fixed');
-				$('#sideMenu ul li').removeClass('hilited');
-				$('.bgImg img').removeClass('activate');
-				var $newT = $(window).scrollTop() / 3.5;
-				$('#hero').css({'top' : - $newT});
+			if(!onMobile()){
+				// determine if we need to lock the background images in place
+				if($(window).scrollTop() > $('#hero').outerHeight(true)){
+					$('.bgImages').addClass('fixed');
+					$('.whiteAngle').addClass('fixed');
+				} else {
+					$('.bgImages').removeClass('fixed');
+					$('.whiteAngle').removeClass('fixed');
+					$('#sideMenu ul li').removeClass('hilited');
+					$('.bgImg img').removeClass('activate');
+					var $newT = $(window).scrollTop() / 3.5;
+					$('#hero').css({'top' : - $newT});
+				}
 			}
 		});
 
