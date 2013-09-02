@@ -263,9 +263,10 @@ html, body {
 	width: 57px;
 	height: 57px;
 	/*margin-top: 15px;*/
-	background-image:url("../images/play.png");
+	background-image:url("../images/play-lg.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	background-size: 100%;
 	bottom: 0;
 	left: 50%;
 	margin-left: -28.5px;
@@ -901,8 +902,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		width: 88%;
 	}
 	.hero > div .playVid {
-	  top: 0;
-	  bottom: auto;
+		top: 0;
+		bottom: auto;
+		width: 95px;
+		height: 95px;
 	}
 }
 /*********************************  end responsive  **************************************/
