@@ -88,7 +88,7 @@ hpit.core = (function(){
 
 		// Attach functionality to the native scroll function
 		$(window).scroll(function(event){
-			//console.log('onMobile: ', onMobile());
+			console.log('onMobile: ', onMobile());
 
 			// determine if we need to lock the background images in place
 			if(!onMobile() && $(window).scrollTop() > $('#hero').outerHeight(true)){

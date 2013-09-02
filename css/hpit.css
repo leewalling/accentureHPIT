@@ -245,6 +245,7 @@ html, body {
 	text-align: center;
 	line-height: 1.1em;
 	overflow: hidden;
+	z-index: 5;
 }
 .hero > div h1 {
 	font-size: 54px;
@@ -907,6 +908,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
 /* less than ipad */
 @media 
 only screen and (max-width : 767px) {
+	.hero {
+		height:970px;
+	}
+	.hero video {
+		height:500px;
+	}
 	.hero > div {
 		margin:118px auto 0 auto;
 		padding:188px 0 0 0;
