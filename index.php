@@ -112,8 +112,8 @@
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #1</h6>
-                <h3>Your new boss? Your customer.</h3>
-                <div class="social">
+                <h3>Your new boss? <br />Your customer.</h3>
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
