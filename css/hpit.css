@@ -991,6 +991,7 @@ only screen and (max-width : 767px) {
 		top: auto;
 		width: 100%;
 		z-index: auto;
+		display: inline-block;
 	}
 	.insight .insightTitle h3 {
 		font-size: 42px;
@@ -998,7 +999,7 @@ only screen and (max-width : 767px) {
 		max-width: 83%;
 	}
 	.insight .insightTitle h6 {
-		
+		font-size: 20px;
 	}
 	.insight[data-insight="1"] .insightTitle h6 {color:#aa1133;}
 	.insight[data-insight="2"] .insightTitle h6 {color:#ff0000;}
