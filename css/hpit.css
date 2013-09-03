@@ -1120,6 +1120,7 @@ img {
 		position: absolute;	
 		left: 0;
 		display: inline-block;
+		display: none !important;
 		overflow: hidden;
 		z-index: 1;
 		pointer-events:none;	
