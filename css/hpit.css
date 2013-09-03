@@ -24,15 +24,16 @@ html, body {
 	font-size: 14px;
 	line-height: 18px;
 }
-
 html, body {
   background-color: #fff !important;
 }
-
+ol.normal {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
 .no-border {
 	border:none !important;
 }
-
 .container {
 	max-width:100%;
 	padding:0;
@@ -408,7 +409,7 @@ html, body {
 .insight .insightTitle {
 	position:absolute;
 	text-align: left;
-	top:65px;
+	top:70px;
 	left:16%;
 	width:28%;
 	color:#fff;
@@ -962,7 +963,7 @@ only screen and (max-width : 767px) {
 	}
 	.hero > div h1 {
 		font-size: 52px;
-		margin: 20px 0 15px 0;
+		margin: 20px 0 25px 0;
 		width: 90%;
 	}
 	.hero > div p {
@@ -1025,7 +1026,7 @@ only screen and (max-width : 767px) {
 
 	.insight .content {
 		position:relative;
-		margin:0;
+		margin:-3px 0 0 0;
 		width:100%;
 		max-width:100%;
 		overflow:visible;

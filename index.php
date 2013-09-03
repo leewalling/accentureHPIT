@@ -139,15 +139,24 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -198,15 +207,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -256,15 +269,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -314,15 +331,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -372,15 +393,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -430,15 +455,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -488,15 +517,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -546,15 +579,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -604,15 +641,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
@@ -662,15 +703,19 @@
                         </div>
                         <div>
                         <span class="heading">High performers</span>
-                        <span>1.  Providing the right information to the right person at the right time</span>
-                        <span>2.  Finding better ways to interact with customers</span>
-                        <span>3.  Delivering new services or products to customers</span>
+                        <ol class="normal">
+                            <li>Providing the right information to the right person at the right time</li>
+                            <li>Finding better ways to interact with customers</li>
+                            <li>Delivering new services or products to customers</li>
+                        </ol>
                         </div>
                         <div>
                         <span class="heading">Others</span>
-                        <span>1.  Cutting business operational costs</span>
-                        <span>2.  Increasing workforce productivity</span>
-                        <span>3.  Automating core business processes</span>
+                        <ol class="normal">
+                            <li>Cutting business operational costs</li>
+                            <li>Increasing workforce productivity</li>
+                            <li>Automating core business processes</li>
+                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>
