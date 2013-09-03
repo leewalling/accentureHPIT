@@ -556,7 +556,7 @@ img {
 	display: none;
 }
 .insight .content .right-col {
-	background-color:#fff;
+	/*background-color:#fff;*/
 	padding: 0;
 }
 .insight .content .right-col > div {
