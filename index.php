@@ -91,7 +91,7 @@
             </div>
             <a href="#" class="CTA"><span>get the study</span></a>
         </div>
-        <div id="accMark"><img src="images/accenture-mark.png" width="532" height="536" /></div>
+        <div id="accMark" class="hidden-xs"><img src="images/accenture-mark.png" width="532" height="536" /></div>
         <div id="accMarkMob" class="visible-xs"><img src="images/accenture-mark-mobile.png" width="640" height="650" /></div>
         <div class="whiteAngle hidden-xs"></div>
     	<div class="bgImages hidden-xs" id="bgImages">
@@ -107,7 +107,7 @@
     		<div class="bgImg" data-insight="1"><img src="images/bg-bridge.jpg" /></div>
     	</div>
     	<div class="insight" id="your-new-boss-your-customer" data-insight="1">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>01</span></div>
     		</div>
             <div class="insightTitle">
