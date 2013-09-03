@@ -121,6 +121,7 @@
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
                     <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                 </div>
+                <a href="#" class="toggler">tog</a>
             </div>
     		<div class="container content">
     			<div class="row">
