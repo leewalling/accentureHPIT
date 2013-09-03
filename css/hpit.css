@@ -979,6 +979,8 @@ only screen and (max-width : 767px) {
 
 	.insight {
 		border-top: 2px solid #dbdbdb;
+		padding: 0 0 0 0;
+		overflow: visible;
 	}
 	.insight .insightTitle {
 		color: #000000;
@@ -992,6 +994,7 @@ only screen and (max-width : 767px) {
 		width: 100%;
 		z-index: auto;
 		display: inline-block;
+		padding: 50px 25px;
 	}
 	.insight .insightTitle h3 {
 		font-size: 42px;
@@ -1011,5 +1014,21 @@ only screen and (max-width : 767px) {
 	.insight[data-insight="8"] .insightTitle h6 {color:#3399cc;}
 	.insight[data-insight="9"] .insightTitle h6 {color:#ff3366;}
 	.insight[data-insight="10"] .insightTitle h6 {color:#551155;}
+
+	.insight .content {
+		position:relative;
+		margin:0;
+		width:100%;
+		max-width:100%;
+		overflow:visible;
+	}
+
+	.insight .content > row {
+		margin: 0;
+	}
+	.insight .content .right-col > div.heading {
+		padding: 30px 50px 25px 25px;
+		margin: 0 25px;
+	}
 }
 /*********************************  end responsive  **************************************/

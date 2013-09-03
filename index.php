@@ -106,7 +106,7 @@
     		<div class="bgImg" data-insight="2"><img src="images/bg-ocean.jpg" /></div>
     		<div class="bgImg" data-insight="1"><img src="images/bg-bridge.jpg" /></div>
     	</div>
-    	<div class="insight" id="your-new-boss-your-customer" data-insight="1">
+        <div class="insight" id="your-new-boss-your-customer" data-insight="1">
     		<div class="marker hidden-xs">
     			<div><span>01</span></div>
     		</div>
