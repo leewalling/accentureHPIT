@@ -1057,17 +1057,28 @@ img {
  
 /* phones (portrait) */
 @media only screen and (max-width : 320px) {
+	.hero {
+		height: 464px;
+	}
+	.hero .CTA {
+		bottom: 30px;
+		margin-left: -71px;
+		width: 142px;
+		height: 32px;
+		line-height: 32px;
+		font-size: 13px;
+	}
 	.hero .video-wrapper {
-		height: 250px !important;
+		height: 250px;
 	}	
 	.hero > div {
-		margin:59px auto 0 auto !important;
-		padding:97px 0 0 0 !important;
+		margin: 50px auto 0 auto;
+		padding: 85px 0 0 0;
 	}
 	.hero > div .playVid {
-		width: 50px !important;
-		height: 50px !important;
-		margin-left: -25px !important;
+		width: 50px;
+		height: 50px;
+		margin-left: -25px;
 	}
 	.hero > div h3 {
 		font-size: 11px;
@@ -1082,10 +1093,10 @@ img {
 		width: 97%;
 	}
 	#accMarkMob {
-		top: 150px !important;
-		width: 320px !important;
-		height: 325px !important;
-		background-image:url("../images/accenture-mark-mobile-sm.png") !important;
+		top: 150px;
+		width: 320px;
+		height: 325px;
+		background-image:url("../images/accenture-mark-mobile-sm.png");
 		background-repeat: no-repeat;
 	}  
 }
