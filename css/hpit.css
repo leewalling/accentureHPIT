@@ -916,7 +916,6 @@ img {
 	}
 	.hero .video-wrapper {
 		height: 500px;
-		background-color: yellow;
 	}
 	.hero video {
 		/*height:500px;*/
@@ -1058,6 +1057,9 @@ img {
  
 /* phones (portrait) */
 @media only screen and (max-width : 320px) {
+	.container.main {
+		width: 320px;
+	}
 	.hero {
 		height: 464px;
 	}
