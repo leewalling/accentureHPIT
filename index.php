@@ -79,11 +79,7 @@
     	</div>
     	<div class="hero" id="hero">
             <span class="video-wrapper">
-                <video width="auto" height="100%" autoplay loop>
-                    <source src="images/blue-loop.mp4" type="video/mp4">
-                    <source src="images/blue-loop.ogg" type="video/ogg">
-                    <img src="images/video-1280.jpg" />
-                </video>
+                <img src="images/video-1280.jpg" width="100%" height="auto" />
             </span>
             <div>
                 <h3>Accenture High Performance IT Survey 2013</h3>
