@@ -1028,10 +1028,20 @@ only screen and (max-width : 767px) {
 	}
 	.insight .content .right-col > div {
 		padding:25px;
+		font-size: 22px;
+		line-height: 26px;
 	}
 	.insight .content .right-col > div.heading {
 		padding: 30px 50px 25px 25px;
 		margin: 0 25px;
+	}
+	.insight .content .right-col > div.heading .heading {
+		font-size: 22px;
+		margin-bottom: 40px !important;
+	}
+	.insight .content .right-col > div .quote {
+		font-size: 32px;
+		line-height:38px;
 	}
 }
 /*********************************  end responsive  **************************************/
