@@ -26,6 +26,7 @@ html, body {
 }
 html, body {
   background-color: #fff !important;
+  overflow-x: hidden;
 }
 ol.normal {
 	list-style-type: decimal;
