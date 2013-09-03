@@ -160,13 +160,13 @@
     	</div>
     	<div class="insight" id="technology-is-inseparable-from-business-strategy" data-insight="2">
     		<!--div class="bgImg"><img src="images/bg_lake.jpg" /></div-->
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>02</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #2</h6>
                 <h3>Technology is inseparable from business strategy.</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
@@ -212,13 +212,13 @@
             </div>
     	</div>
     	<div class="insight" id="context-is-king" data-insight="3">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>03</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #3</h6>
                 <h3>Context is king.</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
@@ -264,13 +264,13 @@
             </div>
     	</div>
     	<div class="insight" id="flexibility-first" data-insight="4">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>04</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #4</h6>
                 <h3>Flexibility first.</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
@@ -316,13 +316,13 @@
             </div>
     	</div>
     	<div class="insight" id="be-fearlessly-digital" data-insight="5">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>05</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #5</h6>
                 <h3>Be fearlessly digital.</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
@@ -368,13 +368,13 @@
             </div>
     	</div>
     	<div class="insight" id="survival-of-the-quickest" data-insight="6">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>06</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #6</h6>
                 <h3>Survival of the quickest</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
@@ -420,13 +420,13 @@
             </div>
     	</div>
     	<div class="insight" id="all-data-is-not-created-equal" data-insight="7">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>07</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #7</h6>
                 <h3>All data is not created equal.</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
@@ -472,13 +472,13 @@
             </div>
     	</div>
     	<div class="insight" id="power-to-the-people" data-insight="8">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>08</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #8</h6>
                 <h3>Power to the people.</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
@@ -524,13 +524,13 @@
             </div>
     	</div>
     	<div class="insight" id="build-your-capabilities-around-talent-not-technology" data-insight="9">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>09</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #9</h6>
                 <h3>Build your capabilities around talent, not technology.</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
@@ -576,13 +576,13 @@
             </div>
     	</div>
     	<div class="insight" id="take-a-holistic-stance-on-security-and-risk" data-insight="10">
-    		<div class="marker">
+    		<div class="marker hidden-xs">
     			<div><span>10</span></div>
     		</div>
             <div class="insightTitle">
                 <h6>CIO Action Item #10</h6>
                 <h3>Take a holistic stance on security and risk</h3>
-                <div class="social">
+                <div class="social hidden-xs">
                     <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
                     <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
                     <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
