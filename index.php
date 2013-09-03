@@ -152,11 +152,6 @@
                             <li>Increasing workforce productivity</li>
                             <li>Automating core business processes</li>
                         </ol>
-                        <ol class="normal">
-                            <li>Cutting business operational costs</li>
-                            <li>Increasing workforce productivity</li>
-                            <li>Automating core business processes</li>
-                        </ol>
                         </div>
                         <div class="no-border">
                         <span class="heading">High performers are also...</span>

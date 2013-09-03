@@ -29,7 +29,8 @@ html, body {
 }
 ol.normal {
 	list-style-type: decimal;
-	list-style-position: inside;
+	list-style-position: outside;
+	margin-left: 25px;
 }
 .no-border {
 	border:none !important;
