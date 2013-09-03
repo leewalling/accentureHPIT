@@ -94,7 +94,7 @@
             <a href="#" class="CTA"><span>get the study</span></a>
         </div>
         <div id="accMark" class="hidden-xs"><img src="images/accenture-mark.png" width="532" height="536" /></div>
-        <div id="accMarkMob" class="visible-xs"></div>
+        <!--div id="accMarkMob" class="visible-xs"></div-->
         <div class="whiteAngle hidden-xs"></div>
     	<div class="bgImages hidden-xs" id="bgImages">
     		<div class="bgImg" data-insight="10"><img src="images/bg-japanese.jpg" /></div>
