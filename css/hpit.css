@@ -245,7 +245,7 @@ html, body {
 	text-align: center;
 	line-height: 1.1em;
 	overflow: hidden;
-	z-index: 5;
+	z-index: 0;
 }
 .hero > div h1 {
 	font-size: 54px;
@@ -944,6 +944,7 @@ only screen and (max-width : 767px) {
 		margin:118px auto 0 auto;
 		padding:195px 0 0 0;
 		width: 88%;
+		z-index: 5;
 	}
 	.hero > div .playVid {
 		top: 0;
