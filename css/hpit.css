@@ -1043,5 +1043,10 @@ only screen and (max-width : 767px) {
 		font-size: 32px;
 		line-height:38px;
 	}
+	.insight .content .right-col > div .tr > span.txt strong {
+		line-height: 36px;
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
 }
 /*********************************  end responsive  **************************************/
