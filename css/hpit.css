@@ -489,22 +489,28 @@ img {
 }
 .insight .insightTitle .toggler {
 	position: absolute;
+	display: inline-block;
+	overflow: hidden;
 	top: 75px;
 	right: 25px;
 	background-color: #000;
 	color: #fff;
 	padding:23px;
-	width: 26px;
-	height: 26px;
-	line-height: 26px;
 	text-align: center;
 	-webkit-border-radius: 36px;
 	border-radius: 36px;
+}
+.insight .insightTitle .toggler span {
+	display: inline-block;
+	overflow: hidden;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
 	background-image:url("../images/bg-toggler.png");
 	background-repeat: no-repeat;
   	background-position: 0 0;
 }
-.insight.open .insightTitle .toggler {	
+.insight.open .insightTitle .toggler span {	
   	background-position: 0 -26px;
 }
 
