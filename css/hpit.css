@@ -234,6 +234,10 @@ ol.normal {
 	top: 0;
 	margin-top: 62px;
 	left: 0;
+	background-image:url("../images/video-1280.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% auto;
 }
 .hero video {
 	top: 0px;
@@ -242,6 +246,9 @@ ol.normal {
 	z-index: 0;
 	width: auto;
 	height: 100%;
+}
+.onMobile .hero video {
+	display: none;
 }
 .hero > div {
 	position: relative;
@@ -887,10 +894,9 @@ ol.normal {
 @media only screen and (max-width : 320px) {
 	#accMarkMob {
 		top: 300px;
-		left: 0;
-		width: 320px;
-		height: 325px;
-		background-image:url("../images/accenture-mark-mobile-sm.png");
+		width: 320px !important;
+		height: 325px !important;
+		background-image:url("../images/accenture-mark-mobile-sm.png") !important;
 		background-repeat: no-repeat;
 	}  
 }
