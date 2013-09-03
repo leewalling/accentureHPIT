@@ -874,44 +874,39 @@ ol.normal {
 /*********************************  responsive  ******************************************/
 
 /* phones (portrait and landscape) */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 }
  
 /* phones (landscape) */
-@media only screen
-and (min-width : 321px) {
+@media only screen and (min-width : 321px) {
 
 }
  
 /* phones (portrait) */
-@media only screen
-and (max-width : 320px) {
-  
+@media only screen and (max-width : 320px) {
+	#accMarkMob {
+		top: 300px;
+		left: 0;
+		width: 320px;
+		height: 325px;
+		background-image:url("../images/accenture-mark-mobile-sm.png");
+		background-repeat: no-repeat;
+	}  
 }
  
 /* ipad (portrait and landscape) */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
 }
  
 /* ipad (landscape) */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
 }
  
 /* ipad (portrait) */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
 }
  
@@ -938,8 +933,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 /* less than ipad */
-@media 
-only screen and (max-width : 767px) {
+@media only screen and (max-width : 767px) {
 	.hero {
 		height:970px;
 	}
@@ -985,6 +979,9 @@ only screen and (max-width : 767px) {
 		width: 640px;
 		height: 650px;
 		pointer-events:none;
+		background-image:url("../images/accenture-mark-mobile.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
 	}
 
 	.insight {
