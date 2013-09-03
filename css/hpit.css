@@ -952,17 +952,9 @@ img {
 	}
 	#accMarkMob {
 		top: 300px;
-		left: 0;
-		position: absolute;
-		display: inline-block;
-		overflow: hidden;
-		z-index: 1;
 		width: 640px;
 		height: 650px;
-		pointer-events:none;
 		background-image:url("../images/accenture-mark-mobile.png");
-		background-repeat: no-repeat;
-		background-position: 0 0;
 	}
 
 	.insight {
@@ -1097,12 +1089,18 @@ img {
 		width: 97%;
 	}
 	#accMarkMob {
+		position: absolute;
 		top: 150px;
+		left: 0;
+		display: inline-block;
+		overflow: hidden;
+		z-index: 1;
 		width: 320px;
 		height: 325px;
+		pointer-events:none;
 		background-image:url("../images/accenture-mark-mobile-sm.png");
 		background-repeat: no-repeat;
-		display: none !important;
+		background-position: 0 0;
 	}  
 }
  
