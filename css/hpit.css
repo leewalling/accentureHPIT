@@ -412,12 +412,17 @@ img {
 	min-height:1000px;
 	overflow:visible;
 	position: relative;
+	background-color: #fff;
 	/*
 	background-size:100% !important;
 	background-repeat:no-repeat !important;
 	background-position: 0 0 !important;
 	background-attachment: scroll;
 	*/
+}
+
+.insight.open {
+	background-color: #e5e5e5;
 }
 
 .onMobile .insight {
@@ -502,6 +507,7 @@ img {
 }
 .insight .insightTitle .toggler span {
 	display: inline-block;
+	float: left;
 	overflow: hidden;
 	width: 26px;
 	height: 26px;
