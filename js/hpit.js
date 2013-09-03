@@ -68,6 +68,9 @@ hpit.core = (function(){
 
 		// Initialize event handler for social links
 		socialLinksInit();
+
+		// Initialize event handler for insight togglers
+		togglerInit();
 		
 		// Work out whether IE7 is being used to view the site, due to the way absolute vs. fixed positioning works differently in that browser
 		hpit.config.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
@@ -229,10 +232,31 @@ hpit.core = (function(){
 		
 	}
 
+	// insight toggler
+	function togglerInit(){
+
+		$('.toggler').on('click',function(e){
+			e.preventDefault();
+			var $th = $(this);
+			var $trgt = $th.parent().parent();
+			var $cont = $trgt.find('.container.content');
+			if($trgt.hasClass('open')){
+				$cont.slideUp(1000, function() {
+					$trgt.removeClass('open');
+				});
+			} else {
+				//$trgt.addClass('open');
+				$cont.slideDown(1000, function() {
+					$trgt.addClass('open');
+				});
+			}
+		});
+	}
+
 	// social links
 	function socialLinksInit(){
 
-		$('.social > a').click(function(e){
+		$('.social > a').on('click',function(e){
 			e.preventDefault();
 			var $th = $(this);
 			var $link = $th.attr('href');

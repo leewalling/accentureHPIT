@@ -57,6 +57,9 @@ img {
 .onMobile .hero {
 	position: relative;
 }
+.onMobile .insight .container.content {
+	display: none;
+}
 #controls {
 	position: fixed;
 	background-color:#000;
@@ -482,8 +485,8 @@ img {
 }
 .insight .insightTitle .toggler {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 75px;
+	right: 25px;
 	background-color: #000;
 	color: #fff;
 	width: 72px;
