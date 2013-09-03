@@ -263,6 +263,7 @@ img {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100% 100%;
+	overflow: hidden;
 }
 .hero video {
 	top: 0px;
@@ -1101,6 +1102,7 @@ img {
 		height: 325px;
 		background-image:url("../images/accenture-mark-mobile-sm.png");
 		background-repeat: no-repeat;
+		display: none !important;
 	}  
 }
  
