@@ -1045,11 +1045,12 @@ only screen and (max-width : 767px) {
 	}
 	.insight .content .right-col > div .tr > span.txt {
 		line-height: 26px;
+		padding-top: 5px;
 	}
 	.insight .content .right-col > div .tr > span.txt strong {
 		line-height: 36px;
 		font-size: 32px;
-		margin-bottom: 10px;
+		margin-bottom: 7px;
 	}
 }
 /*********************************  end responsive  **************************************/
