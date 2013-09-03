@@ -35,6 +35,14 @@ ol.normal {
 .no-border {
 	border:none !important;
 }
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
 .container {
 	max-width:100%;
 	padding:0;
@@ -237,7 +245,15 @@ ol.normal {
 	background-image:url("../images/video-1280.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	background-size: 100% auto;
+	background-size: 100% 100%;
+}
+.hero .video-wrapper {
+	position: relative;
+	width: 100%;
+	height: 650px;
+	display: inline-block;
+	float: left;
+	background-color: magenta;
 }
 .hero video {
 	top: 0px;
@@ -892,6 +908,10 @@ ol.normal {
  
 /* phones (portrait) */
 @media only screen and (max-width : 320px) {
+	.hero .video-wrapper {
+		height: 250px;
+		background-color: red;
+	}
 	#accMarkMob {
 		top: 300px;
 		width: 320px !important;
@@ -943,8 +963,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	.hero {
 		height:970px;
 	}
+	.hero .video-wrapper {
+		height: 500px;
+		background-color: yellow;
+	}
 	.hero video {
-		height:500px;
+		/*height:500px;*/
 	}
 	.hero > div {
 		margin:118px auto 0 auto;

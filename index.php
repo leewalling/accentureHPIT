@@ -78,11 +78,13 @@
     		<a href="#" class="closeX">&nbsp;</a>
     	</div>
     	<div class="hero" id="hero">
-            <video width="auto" height="100%" autoplay loop>
-                <source src="images/blue-loop.mp4" type="video/mp4">
-                <source src="images/blue-loop.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
+            <span class="video-wrapper">
+                <video width="auto" height="100%" autoplay loop>
+                    <source src="images/blue-loop.mp4" type="video/mp4">
+                    <source src="images/blue-loop.ogg" type="video/ogg">
+                    <img src="images/video-1280.jpg" />
+                </video>
+            </span>
             <div>
                 <h3>Accenture High Performance IT Survey 2013</h3>
                 <h1>The Rise of the Strategy Savvy CIO</h1>
