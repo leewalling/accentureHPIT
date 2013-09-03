@@ -1023,8 +1023,11 @@ only screen and (max-width : 767px) {
 		overflow:visible;
 	}
 
-	.insight .content > row {
+	.insight .content > .row {
 		margin: 0;
+	}
+	.insight .content .right-col > div {
+		padding:25px;
 	}
 	.insight .content .right-col > div.heading {
 		padding: 30px 50px 25px 25px;
