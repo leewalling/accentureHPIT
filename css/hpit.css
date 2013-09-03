@@ -229,6 +229,16 @@ img {
 	width: 532px;
 	height: 536px;
 }
+#accMarkMob {
+	position: absolute;	
+	left: 0;
+	display: inline-block;
+	overflow: hidden;
+	z-index: 1;
+	pointer-events:none;	
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 .hero {
 	background-color:#fff;
 	color:#000;
@@ -1089,19 +1099,11 @@ img {
 		width: 97%;
 	}
 	#accMarkMob {
-		position: absolute;
 		top: 150px;
-		left: 0;
-		display: inline-block;
-		overflow: hidden;
-		z-index: 1;
 		width: 320px;
 		height: 325px;
-		pointer-events:none;
 		background-image:url("../images/accenture-mark-mobile-sm.png");
-		background-repeat: no-repeat;
-		background-position: 0 0;
-	}  
+	}
 }
  
 /* ipad (portrait and landscape) */
