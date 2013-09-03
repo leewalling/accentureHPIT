@@ -155,7 +155,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +214,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -266,7 +272,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -321,7 +330,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -376,7 +388,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -431,7 +446,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -486,7 +504,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -541,7 +562,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -596,7 +620,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -651,7 +678,10 @@
                         <span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
                         </div>
                         <div class="social visible-xs">
-                            social
+                            <a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
+                            <a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
+                            <a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
                         </div>
                     </div>
                 </div>
