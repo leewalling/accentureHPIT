@@ -229,16 +229,6 @@ img {
 	width: 532px;
 	height: 536px;
 }
-#accMarkMob {
-	position: absolute;	
-	left: 0;
-	display: inline-block;
-	overflow: hidden;
-	z-index: 1;
-	pointer-events:none;	
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
 .hero {
 	background-color:#fff;
 	color:#000;
@@ -961,6 +951,14 @@ img {
 		white-space: normal;
 	}
 	#accMarkMob {
+		position: absolute;	
+		left: 0;
+		display: inline-block;
+		overflow: hidden;
+		z-index: 1;
+		pointer-events:none;	
+		background-repeat: no-repeat;
+		background-position: 0 0;
 		top: 300px;
 		width: 640px;
 		height: 650px;
@@ -1099,6 +1097,14 @@ img {
 		width: 97%;
 	}
 	#accMarkMob {
+		position: absolute;	
+		left: 0;
+		display: inline-block;
+		overflow: hidden;
+		z-index: 1;
+		pointer-events:none;	
+		background-repeat: no-repeat;
+		background-position: 0 0;
 		top: 150px;
 		width: 320px;
 		height: 325px;
