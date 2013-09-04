@@ -113,10 +113,8 @@ hpit.core = (function(){
         	updateDimensions();
         	if(onMobile()){
 	        	$('html').addClass('onMobile');
-	        	//console.log('onMobile');
 	        } else {
 	        	$('html').removeClass('onMobile');
-	        	//console.log('NOT - onMobile');
 	        }
         });
 
@@ -241,11 +239,15 @@ hpit.core = (function(){
 			var $trgt = $th.parent().parent();
 			var $cont = $trgt.find('.container.content');
 			if($trgt.hasClass('open')){
-				$cont.slideUp(500);
-				$trgt.removeClass('open');
+				$cont.slideUp(500, function(){
+					$trgt.removeClass('open');
+				});
+				//$trgt.removeClass('open');
 			} else {
-				$trgt.addClass('open');
-				$cont.slideDown(500);
+				//$trgt.addClass('open');
+				$cont.slideDown(500, function(){
+					$trgt.addClass('open');
+				});
 			}
 		});
 	}

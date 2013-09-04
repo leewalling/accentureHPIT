@@ -60,6 +60,9 @@ img {
 .onMobile .insight .container.content {
 	display: none;
 }
+.onMobile .insight.open .container.content {
+	display: block;
+}
 #controls {
 	position: fixed;
 	background-color:#000;
@@ -262,10 +265,6 @@ img {
 	left: 0;
 	position: absolute;
 	/*float: left;*/
-	background-image:url("../images/video-1280.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: 100% 100%;
 	overflow: hidden;
 }
 .hero video {
@@ -273,11 +272,17 @@ img {
 	left: 0;
 	position: absolute;
 	z-index: 0;
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 }
 .onMobile .hero video {
 	display: none;
+}
+.onMobile .hero .video-wrapper {
+	background-image:url("../images/video-1280.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
 }
 .hero > div {
 	position: relative;

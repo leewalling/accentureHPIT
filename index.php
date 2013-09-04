@@ -75,7 +75,7 @@
     	</div>
     	<div class="hero" id="hero">
             <span class="video-wrapper">
-                <video width="auto" height="100%" autoplay loop>
+                <video width="100%" height="auto" autoplay loop>
                     <source src="images/blue-loop.mp4" type="video/mp4">
                     <source src="images/blue-loop.ogg" type="video/ogg">
                     <img src="images/video-1280.jpg" />
@@ -104,7 +104,7 @@
     		<div class="bgImg" data-insight="2"><img src="images/bg-ocean.jpg" /></div>
     		<div class="bgImg" data-insight="1"><img src="images/bg-bridge.jpg" /></div>
     	</div>
-        <div class="insight" id="your-new-boss-your-customer" data-insight="1">
+        <div class="insight open" id="your-new-boss-your-customer" data-insight="1">
     		<div class="marker hidden-xs">
     			<div><span>01</span></div>
     		</div>
