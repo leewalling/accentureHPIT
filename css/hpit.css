@@ -991,10 +991,10 @@ img {
 	.navbar-nav > li {
 		display: table-cell;
 		min-width: 0;
-		width: 30%;
+		width: 33%;
 	}
 	.navbar-nav > li.download {
-		width: 40%;
+		/*width: 40%;*/
 		border: 0;
 	}
 	/*
