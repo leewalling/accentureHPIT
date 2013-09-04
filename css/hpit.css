@@ -1054,7 +1054,8 @@ img {
 	*/
 
 	.hero {
-		height:970px;
+		height: auto;
+		min-height: 970px;
 	}
 	.hero .video-wrapper {
 		height: 500px;
@@ -1199,9 +1200,9 @@ img {
 @media only screen and (min-width : 321px) {
 
 }
- 
-/* phones (portrait) */
-@media only screen and (max-width : 320px) {
+
+/* max-width = 360px */
+@media only screen and (max-width : 360px) {
 	.navbar-nav > li {
 		display: table-cell;
 		min-width: 0;
@@ -1258,10 +1259,11 @@ img {
 	}
 	*/
 	.container.main {
-		width: 320px;
+		width: 100%;
 	}
 	.hero {
-		height: 464px;
+		height: auto;
+		min-height: 520px;
 	}
 	.hero .CTA {
 		bottom: 30px;
@@ -1309,7 +1311,7 @@ img {
 		top: 150px;
 		width: 100%;
 		height: auto;
-		min-height: 325px;
+		min-height: 366px;
 		background-image:url("../images/accenture-mark-mobile-sm.png");
 		background-size: 100% auto;
 	}
@@ -1367,6 +1369,17 @@ img {
 	.insight .content .right-col > div .tr > span.txt strong {
 		font-size: 24px;
 		line-height: 28px;
+	}
+}
+ 
+/* phones (portrait) */
+@media only screen and (max-width : 320px) {
+	#accMarkMob {
+		min-height: 325px;
+	}	
+	.hero {
+		height: auto;
+		min-height: 464px;
 	}
 }
  
