@@ -1161,6 +1161,21 @@ img {
 		height: 325px;
 		background-image:url("../images/accenture-mark-mobile-sm.png");
 	}
+	.insight .insightTitle .toggler {
+		top: 50px;
+		padding:13px;
+	}
+	.insight .insightTitle .toggler span {
+		width: 15px;
+		height: 15px;
+		line-height: 15px;
+		background-image:url("../images/bg-toggler.png");
+		background-repeat: no-repeat;
+	  	background-position: 0 0;
+	}
+	.insight.open .insightTitle .toggler span {	
+	  	background-position: 0 -26px;
+	}
 }
  
 /* ipad (portrait and landscape) */
