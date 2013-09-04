@@ -426,7 +426,7 @@ img {
 	*/
 }
 
-.insight.open {
+.onMobile .insight.open {
 	background-color: #e5e5e5 !important;
 }
 .onMobile .insight {
@@ -1101,9 +1101,11 @@ img {
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		top: 300px;
-		width: 640px;
-		height: 650px;
+		width: 100%;
+		height: auto;
+		min-height: 650px;
 		background-image:url("../images/accenture-mark-mobile.png");
+		background-size: 100% auto;
 	}
 
 	.insight {
@@ -1305,9 +1307,11 @@ img {
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		top: 150px;
-		width: 320px;
-		height: 325px;
+		width: 100%;
+		height: auto;
+		min-height: 325px;
 		background-image:url("../images/accenture-mark-mobile-sm.png");
+		background-size: 100% auto;
 	}
 	.insight .insightTitle {
 		padding-top: 25px;
@@ -1414,10 +1418,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		pointer-events:none;	
 		background-repeat: no-repeat;
 		background-position: 0 0;
-		top: 150px;
-		width: 320px;
-		height: 325px;
+		width: 100%;
+		height: auto;
+		min-height: 325px;
 		background-image:url("../images/accenture-mark-mobile-sm.png");
+		background-size: 100% auto;
 	}
 }
 /*********************************  end responsive  **************************************/
