@@ -412,8 +412,8 @@ img {
 	min-height:1000px;
 	overflow:visible;
 	position: relative;
-	background-color: #fff;
 	/*
+	background-color: #fff;
 	background-size:100% !important;
 	background-repeat:no-repeat !important;
 	background-position: 0 0 !important;
@@ -427,6 +427,7 @@ img {
 
 .onMobile .insight {
 	min-height: 0;
+	background-color: #fff;
 }
 .insight .bgImg {
 	width:100%;
