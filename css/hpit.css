@@ -1184,6 +1184,56 @@ img {
  
 /* phones (portrait) */
 @media only screen and (max-width : 320px) {
+	.navbar-nav > li {
+		display: table-cell;
+		min-width: 0;
+		width: 30%;
+	}
+	.navbar-nav > li.download {
+		width: 40%;
+		border: 0;
+	}
+	.navbar-default .navbar-nav > li > a {
+		font-size: 11px;
+		line-height: 16px;
+		padding: 15px 10px;
+	}
+	.navbar-default .navbar-nav > li > a > .icn {
+		background-size: 100% auto;
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		margin-right: 7px;
+	}
+	.navbar-nav .contact .icn {
+		background-position: 0 -35px;
+	}
+	.navbar-nav .share .icn {
+  		background-position: 0 -1px;
+	}
+	.navbar-nav .download .icn {
+		background-position: 0 -19px;
+	}
+	.navbar-nav > li .social {
+		line-height: 26px;
+		padding: 15px 9px;
+	}
+	.navbar-nav > li .social > a {
+	  background-size: auto 100%;
+	  height: 16px;
+	  margin-right: 4px;
+	  width: 16px;
+	}
+	.social .twitter {
+	  	background-position: -19px 0;
+	}
+	.social .facebook {
+	  	background-position: -39px 0;
+	}
+	 .social .google {
+	  	background-position: -58px 0;
+	  	margin-right: 0 !important;
+	}
 	.container.main {
 		width: 320px;
 	}
