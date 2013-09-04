@@ -852,6 +852,11 @@ img {
   	background-image:url("../images/menu.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.onMobile .navbar-toggle:hover {
+	background-color: transparent;
 }
 .social > a {
   	display: inline-block;
