@@ -297,7 +297,7 @@ img {
 }
 .hero > div h1 {
 	font-size: 54px;
-	margin: 10px 0;
+	margin: 10px auto;
 }
 .hero > div h3 {
 	font-size: 19px;
@@ -1081,7 +1081,7 @@ img {
 	}
 	.hero > div h1 {
 		font-size: 52px;
-		margin: 20px 0 25px 0;
+		margin: 20px auto 25px auto;
 		width: 90%;
 	}
 	.hero > div p {
@@ -1380,6 +1380,26 @@ img {
 	.hero {
 		height: auto;
 		min-height: 464px;
+	}
+}
+ 
+/* max-width : 540px */
+@media only screen and (max-width : 540px) {
+	#accMarkMob {
+		min-height: 550px;
+	}	
+	.hero {
+		height: auto;
+		min-height: 880px;
+	}
+	.hero > div h3 {
+		font-size: 18px;
+	}
+	.hero > div h1 {
+		font-size: 44px;
+	}
+	.hero > div p {
+		font-size: 18px;
 	}
 }
  
