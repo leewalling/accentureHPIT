@@ -79,6 +79,8 @@ hpit.core = (function(){
 
 		console.log('config: ', hpit.config);
 
+		footerLock($('#footer'));
+
 		$('.insight').each(function (index) {
 			if(!onMobile()){
 				paneLock($(this),index);
@@ -98,9 +100,11 @@ hpit.core = (function(){
 				if($(window).scrollTop() > $('#hero').outerHeight(true)){
 					$('.bgImages').addClass('fixed');
 					$('.whiteAngle').addClass('fixed');
+					$('#footer').addClass('fixed');
 				} else {
 					$('.bgImages').removeClass('fixed');
 					$('.whiteAngle').removeClass('fixed');
+					$('#footer').removeClass('fixed');
 					$('#sideMenu ul li').removeClass('hilited');
 					$('.bgImg img').removeClass('activate');
 					var $newT = $(window).scrollTop() / 3.5;
@@ -123,6 +127,39 @@ hpit.core = (function(){
 
 	function onMobile() {
 		return ( ( hpit.config.scrW < 768 ) || $Android || $iOS );
+	}
+
+	function footerLock(element) {
+		$(window)
+	        .bind('scroll', function () {
+	        	var currEle = element;
+	        	var footerH = currEle.height();
+
+	        	// Viewport
+	            var vpStart = currEle.offset().top; // - 62
+	            var vpEnd = vpStart + currEle.height();
+	            var scH = parseInt(hpit.config.scrH);
+
+	            // scroll offset
+	            var winOffset = $(window).scrollTop();
+
+	            // is the element in the viewport?
+	            if (winOffset >= (vpStart-scH)) {
+	            	var diff = vpEnd - scH;
+	            	var scrollDiff = -(winOffset - diff);
+	            	var margOffset = scrollDiff - footerH;
+	            	$('.bgImages .bgImg img.activate').css({"margin-top" : margOffset/2});
+	            	//console.log('diff: ', diff);
+	            	//console.log('winOffset:', winOffset);
+	            	//console.log('scrollDiff:', scrollDiff);
+	            	//console.log('footerH:', footerH);
+	            	//console.log('margOffset:', margOffset);
+	            }/* else {
+	            	console.log('winOffset:', winOffset);
+	            	console.log('vpStart:', vpStart);
+	            	console.log('footer H:', currEle.height());
+	            }*/
+	        });
 	}
 
 	function paneLock(element,index) {

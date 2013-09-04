@@ -735,8 +735,9 @@
                 </div>
             </div>
     	</div>
-    	<div id="footer">footer...<div>
-    	<div>
+    	<div id="footer">
+            <div>footer...</div>
+        </div>
     </div>
 
 		<script src="js/modernizr-latest.js"></script>

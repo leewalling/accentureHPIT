@@ -378,6 +378,7 @@ img {
 	-webkit-transform:skew(0deg,22deg);
 	-webkit-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, .75);
 	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, .75);
+	background-color: #000;
 }
 .whiteAngle.fixed {
 	position:fixed;
@@ -398,8 +399,9 @@ img {
 	-webkit-transform:skew(0deg,-22deg);
 }
 .bgImages .bgImg img {
-	transition: all 0.5s ease-in-out 0s;
+	/*transition: all 0.5s ease-in-out 0s;*/
 	margin:0 0 0 0;
+	height: 1200px;
 }
 .bgImages .bgImg img.activate {
     /*
@@ -413,7 +415,7 @@ img {
 	position:relative;
 	display: inline-block;
 	float: left;
-	padding-bottom:75px;
+	padding-bottom: 25px;
 	min-height:1000px;
 	overflow:visible;
 	position: relative;
@@ -465,7 +467,7 @@ img {
 	position:absolute;
 	text-align: left;
 	top:70px;
-	left:16%;
+	left: 200px;
 	width:28%;
 	color:#fff;
 	font-size:14px;
@@ -722,20 +724,27 @@ img {
 .insight[data-insight="9"] .content .right-col > div .heading {color:#ff3366;}
 .insight[data-insight="10"] .content .right-col > div .heading {color:#551155;}
 
-#footer {
-	background-color: #000000;
-    color: #FFFFFF;
-    padding: 15px;
+#footer {	
+  	background-image:url("../images/bg-footer.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+    color: #FFFFFF;    
     position: relative;
     display: inline-block;
     float: left;
     width: 100%;
-    /*
-	transform:skew(0deg,22deg);
-	-ms-transform:skew(0deg,22deg);
-	-webkit-transform:skew(0deg,22deg);
-	height:800px;
-	*/
+    z-index: 1001;
+    pointer-events: none;
+}
+#footer.fixed {
+	/*position: fixed;*/
+}
+#footer > div {
+	display: inline-block;
+	width: 280px;
+	min-height: 160px;
+	margin: 180px 0 100px 140px;
+    pointer-events: normal;
 }
 
 
