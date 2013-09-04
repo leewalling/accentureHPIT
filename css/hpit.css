@@ -855,7 +855,8 @@ img {
 	-webkit-border-radius: 0;
 	border-radius: 0;
 }
-.onMobile .navbar-toggle:hover {
+.onMobile .navbar-toggle:hover,
+.onMobile .navbar-toggle:focus {
 	background-color: transparent;
 }
 .social > a {
@@ -974,6 +975,10 @@ img {
 @media only screen and (max-width : 767px) {
 	.container > .navbar-header,
 	.container > .navbar-collapse {
+		margin: 0;
+		padding: 0;
+	}
+	.container > .navbar-collapse .navbar-nav {
 		margin: 0;
 	}
 	.hero {
