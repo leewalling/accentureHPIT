@@ -287,7 +287,7 @@ img {
 	color:#fff;
 	text-align: center;
 	line-height: 1.1em;
-	overflow: hidden;
+	overflow: visible;
 	z-index: 0;
 }
 .hero > div h1 {
@@ -1134,11 +1134,13 @@ img {
 		margin-left: -25px;
 	}
 	.hero > div h3 {
-		font-size: 11px;
+		font-size: 12px;
+		width: 106%;
+		margin-left: -3%;
 	}
 	.hero > div h1 {
 		font-size: 24px;
-		margin: 10px 0 10px 0;
+		margin: 10px auto;
 	}
 	.hero > div p {
 		font-size: 12px;
