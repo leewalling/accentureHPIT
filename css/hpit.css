@@ -843,6 +843,16 @@ img {
 .navbar-nav > li:hover .social {
   	display: inline-block;
 }
+.onMobile .navbar-toggle {
+	border: 0;
+	height: 29px;
+	margin: 17px 20px 0 0;
+	padding: 0;
+	width: 29px;
+  	background-image:url("../images/menu.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 .social > a {
   	display: inline-block;
   	float: right;
