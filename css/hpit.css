@@ -1014,11 +1014,11 @@ img {
 	.navbar-default .navbar-nav > li > a {
 		font-size: 21px;
 		line-height: 26px;
-		padding: 10px 10px;
+		padding: 20px 10px;
 		display: inline-block;
 	}
 	.navbar-nav > li .social {
-		padding: 12px 0;
+		padding: 20px 0;
 		right: 23%;
 		width: auto;
 	}
@@ -1245,6 +1245,18 @@ img {
 	  height: 16px;
 	  margin-right: 4px;
 	  width: 16px;
+	}
+	.navbar-nav > li .social .linkedin {
+	  	background-position: 0 0;
+	}
+	.navbar-nav > li .social .twitter {
+	  	background-position: -19px 0;
+	}
+	.navbar-nav > li .social .facebook {
+	  	background-position: -38px 0;
+	}
+	.navbar-nav > li .social .google {
+	  	background-position: -58px 0;
 	}
 	/*
 	.social .twitter {
