@@ -1201,6 +1201,20 @@ img {
 		font-size: 24px;
 		line-height: 28px;
 	}
+	.insight .content .right-col > div .tr > span.num {
+		font-size: 18px;
+		height: 36px;
+		line-height: 36px;
+		width: 36px;
+	}
+	.insight .content .right-col > div .tr > span.txt {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.insight .content .right-col > div .tr > span.txt strong {
+		font-size: 24px;
+		line-height: 28px;
+	}
 }
  
 /* ipad (portrait and landscape) */
