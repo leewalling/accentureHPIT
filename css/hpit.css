@@ -1161,8 +1161,18 @@ img {
 		height: 325px;
 		background-image:url("../images/accenture-mark-mobile-sm.png");
 	}
+	.insight .insightTitle {
+		padding-top:25px;
+	}
+	.insight .insightTitle h6 {
+		font-size: 16px;
+	}
+	.insight .insightTitle h3 {
+		font-size: 26px;
+		line-height: 30px;
+	}
 	.insight .insightTitle .toggler {
-		top: 50px;
+		top: 35px;
 		padding:13px;
 	}
 	.insight .insightTitle .toggler span {
@@ -1172,9 +1182,24 @@ img {
 		background-image:url("../images/bg-toggler.png");
 		background-repeat: no-repeat;
 	  	background-position: 0 0;
+	  	background-size: 100% auto;
 	}
 	.insight.open .insightTitle .toggler span {	
-	  	background-position: 0 -26px;
+	  	background-position: 0 -15px;
+	}
+	.insight .content .right-col > div {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.insight .content .right-col > div.heading {
+		padding: 25px;
+	}
+	.insight .content .right-col > div.heading .heading {
+		font-size: 15px;
+	}
+	.insight .content .right-col > div .quote {
+		font-size: 24px;
+		line-height: 28px;
 	}
 }
  
