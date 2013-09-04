@@ -1383,26 +1383,6 @@ img {
 	}
 }
  
-/* max-width : 540px */
-@media only screen and (max-width : 540px) {
-	#accMarkMob {
-		min-height: 550px;
-	}	
-	.hero {
-		height: auto;
-		min-height: 880px;
-	}
-	.hero > div h3 {
-		font-size: 18px;
-	}
-	.hero > div h1 {
-		font-size: 44px;
-	}
-	.hero > div p {
-		font-size: 18px;
-	}
-}
- 
 /* ipad (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
@@ -1459,11 +1439,23 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	}
 }
  
-/* test */
+/* test - galaxy s3??? */
 @media only screen and (min-device-width : 360px) and (max-device-width : 720px) {
 	#accMarkMob {
 		min-height: 550px;
-		background-color: yellow;
+	}		
+	.hero {
+		height: auto;
+		min-height: 880px;
+	}
+	.hero > div h3 {
+		font-size: 18px;
+	}
+	.hero > div h1 {
+		font-size: 44px;
+	}
+	.hero > div p {
+		font-size: 18px;
 	}
 }
 /*********************************  end responsive  **************************************/
