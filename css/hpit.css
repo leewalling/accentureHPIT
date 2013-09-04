@@ -1458,4 +1458,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		background-size: 100% auto;
 	}
 }
+ 
+/* test */
+@media only screen and (min-device-width : 360px) and (max-device-width : 720px) {
+	#accMarkMob {
+		min-height: 550px;
+		background-color: yellow;
+	}
+}
 /*********************************  end responsive  **************************************/
