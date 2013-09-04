@@ -996,6 +996,7 @@ img {
 		width: 40%;
 		border: 0;
 	}
+	/*
 	.navbar-default .navbar-nav > li > a {
 		font-size: 11px;
 		line-height: 16px;
@@ -1009,7 +1010,7 @@ img {
 		margin-right: 7px;
 	}
 	.navbar-nav .contact .icn {
-		background-position: 0 -35px;
+		background-position: 0 -36px;
 	}
 	.navbar-nav .share .icn {
   		background-position: 0 -1px;
@@ -1037,6 +1038,7 @@ img {
 	  	background-position: -58px 0;
 	  	margin-right: 0 !important;
 	}
+	*/
 
 	.hero {
 		height:970px;
@@ -1206,7 +1208,7 @@ img {
 		margin-right: 7px;
 	}
 	.navbar-nav .contact .icn {
-		background-position: 0 -35px;
+		background-position: 0 -36px;
 	}
 	.navbar-nav .share .icn {
   		background-position: 0 -1px;
