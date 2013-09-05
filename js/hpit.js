@@ -6,6 +6,22 @@ if (typeof console == "undefined") {
     };
 }
 
+function getCookie(c_name) {
+    var i, x, y, ARRcookies = document.cookie.split(";");
+    for (i = 0; i < ARRcookies.length; i++) {
+        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+        x = x.replace(/^\s+|\s+$/g, "");
+        if (x == c_name) {
+            return unescape(y);
+        }
+    }
+}
+
+function setCookie(cname, cvalue) {
+    document.cookie = cname + '=' + escape(cvalue);
+}
+
 var hpit = window.hpit || {};
 
 // initial config
@@ -15,11 +31,12 @@ hpit.config = {
 	scrW: null,
 	scrH: null,
 	desktopORtouch: 'desktop',
+	footerInView: false,
 	isIE7: false,
 	easing: 'easeInOutExpo',
 	duration: {
-		backToTop: 1500,
-		desktop: 1000,
+		backToTop: 2000,
+		desktop: 1500,
 		touch: 1
 	}
 };
@@ -57,6 +74,9 @@ hpit.core = (function(){
 		// Calcaulate/re-calculate any dimensions which may be altered by an orientation change or browser resize
 		updateDimensions();
 
+		// Initialize controls message
+		cntrlMessInit();
+
 		// Initialize event handler for control arrows
 		arrowsInit();
 
@@ -77,7 +97,7 @@ hpit.core = (function(){
 		
 		var validHashValue = false;
 
-		console.log('config: ', hpit.config);
+		//console.log('config: ', hpit.config);
 
 		footerLock($('#footer'));
 
@@ -145,16 +165,19 @@ hpit.core = (function(){
 
 	            // is the element in the viewport?
 	            if (winOffset >= (vpStart-scH)) {
+	            	hpit.config.footerInView = true;
 	            	var diff = vpEnd - scH;
 	            	var scrollDiff = -(winOffset - diff);
 	            	var margOffset = scrollDiff - footerH;
-	            	$('.bgImages .bgImg img.activate').css({"margin-top" : margOffset/2.5});
+	            	$('.bgImages .bgImg img.activate').css({"margin-top" : margOffset/2});
+	            } else {
+	            	hpit.config.footerInView = false;
 	            }
 	        });
 	}
 
 	function paneLock(element,index) {
-		console.log('paneLock: ', element);
+		//console.log('paneLock: ', element);
 
 		$(window)
 	        .bind('scroll', function () {
@@ -163,6 +186,7 @@ hpit.core = (function(){
 	            //console.log('$arr: ', $arr);
 	            var currEle = element;
 	            var currFixedEle = element.find('.marker');
+	            var bgPxToMove = 25;
 
 	            if (currFixedEle.length <= 0) {return false;}
 
@@ -171,6 +195,7 @@ hpit.core = (function(){
 	            var vpEnd = vpStart + currEle.height();
 
 	            var currEleEnd = currEle.height();
+	            var currEleHgt = currEle.height();
 
 	            // scroll offset
 	            var winOffset = $(window).scrollTop();
@@ -194,6 +219,7 @@ hpit.core = (function(){
 	                $('.insight').removeClass('current');
 	                $('#sideMenu ul li').removeClass('hilited');
 	                $('.bgImg img').removeClass('activate');
+	                //$('.bgImages img').css({"margin-top" : 0});
 
 	                currEle.addClass('current');
 
@@ -206,6 +232,11 @@ hpit.core = (function(){
 	                var nextImgNum = parseInt(menuItem) + 1;
 	                $('.bgImg[data-insight='+prevImgNum+']').css({"opacity" : 0});
 	                $('.bgImg[data-insight='+nextImgNum+']').css({"opacity" : 1});
+
+	                var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
+	                if(!hpit.config.footerInView){
+						$('.bgImages .bgImg img.activate').css({"margin-top" : -diffToMove});
+	                }
 	            }
 	            // out of the viewport
 	            else {
@@ -215,6 +246,15 @@ hpit.core = (function(){
 	        });
 
 	}; //End Function
+
+	// show/hide controls message
+	function cntrlMessInit(){
+		var cntrlMess = getCookie('hasUsedControls');
+		console.log('cntrlMess: ', cntrlMess);
+		if(cntrlMess == undefined || cntrlMess == null || cntrlMess == ''){
+			$('#controls .control-info').fadeIn();
+		}
+	}
 
 	//hpit.config.currInsight
 	function arrowsInit(){
@@ -232,7 +272,7 @@ hpit.core = (function(){
 					newNum = ($cur - 1);
 					//console.log('newNum: ' + newNum);
 					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
-					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() {location.hash = newHash}} );
+					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() { /*location.hash = newHash*/ }} );
 				} else {
 					//console.log('nothing there');
 					return false;
@@ -244,16 +284,13 @@ hpit.core = (function(){
 					newNum = ($cur + 1);
 					//console.log('newNum: ' + newNum);
 					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
-					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() {location.hash = newHash}} );
+					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() { /*location.hash = newHash*/ }} );
 
 				} else {
 					//console.log('nothing there');
 					return false;
 				}
 			}
-			
-			// set the new hash
-			//window.location.hash = newHash;
 		});
 		
 	}
@@ -353,6 +390,43 @@ hpit.core = (function(){
 		
 		var $target = $('#sideMenu');
 		$target.css({"height" : hpit.config.scrH - 62});
+
+		/*
+			usage:
+			//write cookie
+			setCookie("id","1",3600);
+			setCookie("name","my name",3600);
+
+			//read cookie alert(getCookie("name"));	
+
+			function setCookie(cname, cvalue, cexpire) {
+			    document.cookie = cname + '=' + escape(cvalue) +
+			    (typeof cexpire == 'date' ? 'expires=' + cexpire.toGMTString() : '') +
+			    ',path=/;domain=about.com';
+			}
+
+			function getCookie(c_name){
+		      var i,x,y,ARRcookies=document.cookie.split(";");
+		      for (i=0;i<ARRcookies.length;i++)
+		      {
+		             x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+		             y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+		             x=x.replace(/^\s+|\s+$/g,"");
+		             if (x==c_name)
+		       {
+		          return unescape(y);
+		          }
+		        }
+		    }
+		*/
+
+		$('#controls a').on('click',function(e){
+			e.preventDefault();
+			if ( $('#controls .control-info').is(':visible') ) {
+				$('#controls .control-info').fadeOut();
+				setCookie('hasUsedControls', true);
+			}
+		});
 
 		$('#toggleMenu,#sideMenu .closeX').on('click',function(e){
 			e.preventDefault();

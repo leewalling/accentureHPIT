@@ -19,7 +19,7 @@
 
 	<div id="ll-overlay">
 		<div class="inner">
-			<a class="closeVid" href="#">X</a>
+			<a class="closeVid" href="#"></a>
 			<div id="ll-player"></div>
 		</div>
 	</div>
@@ -29,7 +29,7 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
-          <a class="navbar-brand" href="#"><img src="images/logo.png" width="128" height="36" /></a>
+          <a class="navbar-brand" href="#"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/logo.png" width="128" height="36" /></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -40,22 +40,22 @@
             		<a href="https://plus.google.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="google"></a>
             		<a href="http://www.facebook.com/share.php?u=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="facebook"></a>
             		<a href="http://twitter.com/share?url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="twitter"></a>
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
-            		<!-- &title=http://bit.ly/adaptxt-beta-android&summary=http://bit.ly/adaptxt-beta-android&source=http://bit.ly/adaptxt-beta-android -->
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://accenture-hpit.herokuapp.com/index.php" target="_blank" class="linkedin"></a>
             	</div>
             </li>
             <li class="download"><a href="#"><span class="icn"></span>get the study</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
+<!-- end Fixed navbar -->
 
     <div class="container main" id="theTop">
     	<div id="controls" class="hidden-xs">
-    		<!--<img src="images/menu-controls.png" width="77" height="181" />-->
     		<a href="#" class="arrows prev"></a>
     		<a href="#" class="txt" id="toggleMenu">Menu</a>
     		<a href="#" class="arrows nxt"></a>
+            <span class="control-info">Get the TOP #10 CIO Action Items</span>
     	</div>
     	<div id="sideMenu" class="hidden-xs">
     		<ul>
@@ -76,9 +76,9 @@
     	<div class="hero" id="hero">
             <span class="video-wrapper">
                 <video width="100%" height="auto" autoplay loop>
-                    <source src="images/blue-loop.mp4" type="video/mp4">
-                    <source src="images/blue-loop.ogg" type="video/ogg">
-                    <img src="images/video-1280.jpg" />
+                    <source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/blue-loop.mp4" type="video/mp4">
+                    <source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/blue-loop.ogg" type="video/ogg">
+                    <img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-1280.jpg" />
                 </video>
             </span>
             <div>
@@ -89,20 +89,20 @@
             </div>
             <a href="#" class="CTA"><span>get the study</span></a>
         </div>
-        <div id="accMark" class="hidden-xs"><img src="images/accenture-mark.png" width="532" height="536" /></div>
+        <div id="accMark" class="hidden-xs"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/accenture-mark.png" width="532" height="536" /></div>
         <div id="accMarkMob" class="visible-xs"></div>
         <div class="whiteAngle hidden-xs"></div>
     	<div class="bgImages hidden-xs" id="bgImages">
-    		<div class="bgImg" data-insight="10"><img src="images/bg-japanese.jpg" /></div>
-    		<div class="bgImg" data-insight="9"><img src="images/bg-beach.jpg" /></div>
-    		<div class="bgImg" data-insight="8"><img src="images/bg-sea.jpg" /></div>
-    		<div class="bgImg" data-insight="7"><img src="images/bg-sunflower.jpg" /></div>
-    		<div class="bgImg" data-insight="6"><img src="images/bg-lake.jpg" /></div>
-    		<div class="bgImg" data-insight="5"><img src="images/bg-field.jpg" /></div>
-    		<div class="bgImg" data-insight="4"><img src="images/bg-edinburgh.jpg" /></div>
-    		<div class="bgImg" data-insight="3"><img src="images/bg-boat.jpg" /></div>
-    		<div class="bgImg" data-insight="2"><img src="images/bg-ocean.jpg" /></div>
-    		<div class="bgImg" data-insight="1"><img src="images/bg-bridge.jpg" /></div>
+    		<div class="bgImg" data-insight="10"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-japanese.jpg" /></div>
+    		<div class="bgImg" data-insight="9"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-beach.jpg" /></div>
+    		<div class="bgImg" data-insight="8"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-sea.jpg" /></div>
+    		<div class="bgImg" data-insight="7"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-sunflower.jpg" /></div>
+    		<div class="bgImg" data-insight="6"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-lake.jpg" /></div>
+    		<div class="bgImg" data-insight="5"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-field.jpg" /></div>
+    		<div class="bgImg" data-insight="4"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-edinburgh.jpg" /></div>
+    		<div class="bgImg" data-insight="3"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-boat.jpg" /></div>
+    		<div class="bgImg" data-insight="2"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-ocean.jpg" /></div>
+    		<div class="bgImg" data-insight="1"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-bridge.jpg" /></div>
     	</div>
         <div class="insight open" id="your-new-boss-your-customer" data-insight="1">
     		<div class="marker hidden-xs">
@@ -121,7 +121,6 @@
             </div>
     		<div class="container content">
     			<div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -134,7 +133,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -168,7 +167,6 @@
 			</div>
     	</div>
     	<div class="insight" id="technology-is-inseparable-from-business-strategy" data-insight="2">
-    		<!--div class="bgImg"><img src="images/bg_lake.jpg" /></div-->
     		<div class="marker hidden-xs">
     			<div><span>02</span></div>
     		</div>
@@ -185,7 +183,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -198,7 +195,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -248,7 +245,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -261,7 +257,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -311,7 +307,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -324,7 +319,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -374,7 +369,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -387,7 +381,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -437,7 +431,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -450,7 +443,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -500,7 +493,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -513,7 +505,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -563,7 +555,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -576,7 +567,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -626,7 +617,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -639,7 +629,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -689,7 +679,6 @@
             </div>
     		<div class="container content">
                 <div class="row">
-                    <!--div class="left-col">lorem ipsum...</div-->
                     <div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
                         <div class="heading">
                         <span class="heading">Strategy straight talk</span>
@@ -702,7 +691,7 @@
                         <div>
                         <span class="heading">What you should know</span>
                         <span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-                        <span class="fpo"><img src="images/fpo-info.png" /></span>
+                        <span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
                         </div>
                         <div>
                         <span class="heading">High performers</span>
@@ -753,7 +742,7 @@
         </div>
     </div>
 
-		<script src="js/modernizr-latest.js"></script>
+		<!--script src="js/modernizr-latest.js"></script-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->

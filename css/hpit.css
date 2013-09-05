@@ -71,7 +71,7 @@ img {
 	height: 150px;
 	bottom: 0;
 	right: 0;
-	overflow: hidden;
+	overflow: visible;
 	display: inline-block;
 	z-index: 1002;
 	text-align: center;
@@ -108,6 +108,25 @@ img {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+#controls .control-info {
+	background-color: rgba(255, 255, 255, 0.4);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #000000;
+	display: inline-block;
+	display: none;
+	font-size: 18px;
+	font-weight: bold;
+	height: auto;
+	left: -185px;
+	line-height: 21px;
+	margin-top: -21px;
+	padding: 10px;
+	position: absolute;
+	text-align: left;
+	top: 50%;
+	width: 170px;
+}
 #sideMenu {
 	position: fixed;
 	color:#fff;
@@ -117,7 +136,7 @@ img {
 	right: -275px;
 	overflow: hidden;
 	display: inline-block;
-	z-index: 200;
+	z-index: 1003;
 	background-color: #000;
 }
 #sideMenu ul {
@@ -318,7 +337,7 @@ img {
 	width: 57px;
 	height: 57px;
 	/*margin-top: 15px;*/
-	background-image:url("../images/play-lg.png");
+	background-image:url("../images/play.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100%;
@@ -326,6 +345,9 @@ img {
 	left: 50%;
 	margin-left: -28.5px;
 	position: absolute;
+}
+.hero > div .playVid:hover {
+	background-position: 0 -57px;
 }
 .hero .CTA {
 	bottom: 58px;
@@ -466,7 +488,7 @@ img {
 .insight .insightTitle {
 	position:absolute;
 	text-align: left;
-	top:70px;
+	top:170px;
 	left: 200px;
 	width:28%;
 	color:#fff;
@@ -478,7 +500,7 @@ img {
 }
 .insight.current .insightTitle {
 	position:fixed !important;
-	top: 70px;
+	/*top: 170px;*/
 }
 .insight .insightTitle h3,
 .insight .insightTitle h6,
@@ -550,7 +572,7 @@ img {
 .insight .content {
 	position:relative;
 	margin:0 auto;
-	margin-top:70px;
+	margin-top: 170px;
 	max-width:1000px;
 	width:75%;
 	overflow:visible;
@@ -957,6 +979,12 @@ img {
 /******************************  end navbar overrides  **********************************/
 /******************************  Sharepoint overrides  **********************************/
 
+#skiptargetholder {
+	margin: 0;
+}
+#skiplinkholder {
+	display:none;
+}
 .banner {
 	display:none;
 }
@@ -981,8 +1009,9 @@ img {
 .opentemplate-content {
 	padding:0;
 }
-#skiptargetholder {
-	margin:0;
+.opentemplate-content .max-content-center {
+	float: none;
+	max-width: 100%;
 }
 .stay-connected-master {
 	display:none;
@@ -1015,20 +1044,19 @@ img {
 }
 
 #ll-overlay .closeVid {
-	background: #fff;
-	color:#000;
-	text-align: center;
-	text-decoration: none;
-	line-height: 23px;
-	font-weight: bold;
-	display: block;
-	height: 23px;
+	line-height: 30px;
+	display: inline-block;
+	height: 30px;
 	position: absolute;
-	right: 0;
-	top: 30px;
-	width: 23px;
-	-webkit-border-radius: 23px;
-	border-radius: 23px;
+	right: -15px;
+	top: 35px;
+	width: 30px;
+	background-image:url("../images/bg-close-video.png");
+	background-size: 100% auto;
+	background-position: 0 0;
+}
+#ll-overlay .closeVid:hover {
+	background-position: 0 -30px;
 }
 
 #ll-overlay #ll-player {
@@ -1135,9 +1163,13 @@ img {
 	.hero > div .playVid {
 		top: 0;
 		bottom: auto;
-		width: 95px;
+		/*width: 95px;
 		height: 95px;
 		margin-left: -47.5px;
+		background-image:url("../images/play.png");*/
+	}
+	.hero > div .playVid:hover {
+		/*background-position: 0 -95px;*/
 	}
 	.hero > div h3 {
 		font-size: 22px;
@@ -1252,6 +1284,14 @@ img {
 		font-size: 32px;
 		margin-bottom: 7px;
 	}
+	#footer {
+		background-color: #000;
+		background-image: none;
+		padding: 25px;
+	}
+	#footer > div {
+		margin: 0;
+	}
 }
 
 /* phones (portrait and landscape) */
@@ -1359,6 +1399,9 @@ img {
 		width: 50px;
 		height: 50px;
 		margin-left: -25px;
+	}
+	.hero > div .playVid:hover {
+		background-position: 0 -50px;
 	}
 	.hero > div h3 {
 		font-size: 12px;
