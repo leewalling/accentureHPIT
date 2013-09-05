@@ -736,7 +736,20 @@
             </div>
     	</div>
     	<div id="footer">
-            <div>footer...</div>
+            <div>
+                <div class="about">
+                    <h6>LEARN MORE ABOUT:</h6>
+                    <a href="#">accenture technology practice</a>
+                    <a href="#">accenture HPIT</a>
+                    <a href="#">accenture tech vision</a>
+                </div>
+                <div class="legal">
+                    <a href="#">Legal Mentions</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#" class="last">Privacy Policy</a>
+                    <span class="copyright">&copy; 2013 Accenture All Rights Reserved</span>
+                </div>
+            </div>
         </div>
     </div>
 

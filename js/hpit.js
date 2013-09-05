@@ -148,17 +148,8 @@ hpit.core = (function(){
 	            	var diff = vpEnd - scH;
 	            	var scrollDiff = -(winOffset - diff);
 	            	var margOffset = scrollDiff - footerH;
-	            	$('.bgImages .bgImg img.activate').css({"margin-top" : margOffset/2});
-	            	//console.log('diff: ', diff);
-	            	//console.log('winOffset:', winOffset);
-	            	//console.log('scrollDiff:', scrollDiff);
-	            	//console.log('footerH:', footerH);
-	            	//console.log('margOffset:', margOffset);
-	            }/* else {
-	            	console.log('winOffset:', winOffset);
-	            	console.log('vpStart:', vpStart);
-	            	console.log('footer H:', currEle.height());
-	            }*/
+	            	$('.bgImages .bgImg img.activate').css({"margin-top" : margOffset/2.5});
+	            }
 	        });
 	}
 

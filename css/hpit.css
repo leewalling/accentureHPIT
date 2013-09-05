@@ -73,7 +73,7 @@ img {
 	right: 0;
 	overflow: hidden;
 	display: inline-block;
-	z-index: 100;
+	z-index: 1002;
 	text-align: center;
 	-webkit-box-sizing:content-box;
 	-moz-box-sizing:content-box;
@@ -734,7 +734,7 @@ img {
     float: left;
     width: 100%;
     z-index: 1001;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 #footer.fixed {
 	/*position: fixed;*/
@@ -742,9 +742,63 @@ img {
 #footer > div {
 	display: inline-block;
 	width: 280px;
-	min-height: 160px;
-	margin: 180px 0 100px 140px;
-    pointer-events: normal;
+	min-height: 150px;
+	margin: 150px 0 50px 120px;
+    /*pointer-events: normal;*/
+}
+#footer .about {
+	font-size: 10px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0 0 40px 0;
+}
+#footer .about h6 {
+	font-size: 10px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #868383;
+	margin: 0 0 0 0;
+}
+#footer .about a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	
+}
+#footer .about a:hover,
+#footer .about a:focus {
+	color: #868383;
+	
+}
+#footer .legal {
+	font-size: 13px;
+	line-height: 20px;
+	color: #fff;
+	margin: 0 0 0 0;
+	overflow: hidden;
+	display: inline-block;
+}
+#footer .legal a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+#footer .legal a.last {
+	margin-right: 0;
+}
+#footer .legal a:hover,
+#footer .legal a:focus {
+	color: rgba(255, 255, 255, .31);
+	
+}
+#footer .legal .copyright {
+	color: rgba(255, 255, 255, .31);
+	display: inline-block;
+	width: 100%;
 }
 
 
@@ -908,8 +962,8 @@ img {
 }
 .page {
 	display:inline-block;
-	width:85%;
-	max-width:1280px;
+	width:100%;
+	/*max-width:1280px;*/
 	overflow: visible;
 	height:3000px;
 
