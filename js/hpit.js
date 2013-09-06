@@ -45,7 +45,7 @@ hpit.config = {
 hpit.core = (function(){	
 	
 	var $userAgent = navigator.userAgent.toLowerCase();
-	alert('navigator: ', navigator);
+	alert('navigatorrrr: ' + navigator);
     var $Android = /android/i.test( $userAgent );
     var $iOS = /ipad|iphone|ipod|ios/i.test( $userAgent );
 
