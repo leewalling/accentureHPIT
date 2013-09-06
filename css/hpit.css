@@ -1292,6 +1292,14 @@ img {
 	#footer > div {
 		margin: 0;
 	}
+	#ll-overlay .inner {
+		height: 100%;
+		width: 90%;
+	}
+	#ll-overlay #ll-player {
+		height: 50%;
+		width: 100%;
+	}
 }
 
 /* phones (portrait and landscape) */

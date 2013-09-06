@@ -135,6 +135,7 @@ hpit.core = (function(){
 
 		$(window).resize(function(){
         	updateDimensions();
+        	alert('onMobile: ', onMobile());
         	if(onMobile()){
 	        	$('html').addClass('onMobile');
 	        } else {
