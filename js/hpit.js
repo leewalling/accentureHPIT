@@ -135,11 +135,12 @@ hpit.core = (function(){
 
 		$(window).resize(function(){
         	updateDimensions();
-        	alert('onMobile: ', onMobile());
         	if(onMobile()){
 	        	$('html').addClass('onMobile');
+	        	alert('onMobile');
 	        } else {
 	        	$('html').removeClass('onMobile');
+	        	alert('desktop');
 	        }
         });
 
