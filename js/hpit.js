@@ -45,16 +45,15 @@ hpit.config = {
 hpit.core = (function(){	
 	
 	var $userAgent = navigator.userAgent.toLowerCase();
-	//alert('navigatorrrr: ' + navigator);
     var $Android = /android/i.test( $userAgent );
-    //var $iOS = /ipad|iphone|ipod|ios/i.test( $userAgent );
-    var $iOS = /iphone|ipod|ios/i.test( $userAgent );
+    var $iOS = /ipad|iphone|ipod|ios/i.test( $userAgent );
+    var $iPad = /ipad/i.test( $userAgent );
 
 	//	Initialize
 	function init(){
 		$.logEvent('[hpit.core.init]');
 
-		$('#diagnostics').html($userAgent);
+		//$('#diagnostics').html($userAgent);
 
 		$('#sideMenu').localScroll({
 			duration: hpit.config.duration[hpit.config.desktopORtouch],
