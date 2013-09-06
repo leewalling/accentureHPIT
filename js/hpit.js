@@ -45,6 +45,7 @@ hpit.config = {
 hpit.core = (function(){	
 	
 	var $userAgent = navigator.userAgent.toLowerCase();
+	alert('$userAgent: ', $userAgent);
     var $Android = /android/i.test( $userAgent );
     var $iOS = /ipad|iphone|ipod|ios/i.test( $userAgent );
 
@@ -137,10 +138,10 @@ hpit.core = (function(){
         	updateDimensions();
         	if(onMobile()){
 	        	$('html').addClass('onMobile');
-	        	alert('IS mobile');
+	        	//console.log('IS mobile');
 	        } else {
 	        	$('html').removeClass('onMobile');
-	        	alert('NOT mobile');
+	        	//console.log('NOT mobile');
 	        }
         });
 
