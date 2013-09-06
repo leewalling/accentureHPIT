@@ -17,7 +17,7 @@
 	</head>
 	<body>
 
-	<div id="diagnostics" style="padding:10px;background:red;color:white;position:fixed;top:0;left:0;"></div>
+	<div id="diagnostics" style="padding:10px;background:red;color:white;position:fixed;top:0;left:0;z-index:9999;"></div>
 
 	<div id="ll-overlay">
 		<div class="inner">
