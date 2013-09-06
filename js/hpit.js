@@ -137,10 +137,10 @@ hpit.core = (function(){
         	updateDimensions();
         	if(onMobile()){
 	        	$('html').addClass('onMobile');
-	        	alert('onMobile');
+	        	alert('IS mobile');
 	        } else {
 	        	$('html').removeClass('onMobile');
-	        	alert('desktop');
+	        	alert('NOT mobile');
 	        }
         });
 
