@@ -47,7 +47,8 @@ hpit.core = (function(){
 	var $userAgent = navigator.userAgent.toLowerCase();
 	//alert('navigatorrrr: ' + navigator);
     var $Android = /android/i.test( $userAgent );
-    var $iOS = /ipad|iphone|ipod|ios/i.test( $userAgent );
+    //var $iOS = /ipad|iphone|ipod|ios/i.test( $userAgent );
+    var $iOS = /iphone|ipod|ios/i.test( $userAgent );
 
 	//	Initialize
 	function init(){
