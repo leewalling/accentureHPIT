@@ -204,13 +204,13 @@ hpit.core = (function(){
 	}
 
 	function paneLock(element,index) {
-		//console.log('paneLock: ', element);
+		console.log('paneLock: ', element);
 
 		$(window)
 			.bind('scroll', function () {
 				
 				//var $arr = $('.insight');
-				//console.log('$arr: ', $arr);
+				//console.log('currInsight: ', hpit.config.currInsight);
 				var currEle = element;
 				var currFixedEle = element.find('.marker');
 				var bgPxToMove = 25;
@@ -250,7 +250,8 @@ hpit.core = (function(){
 
 					currEle.addClass('current');
 
-					var menuItem = $('.insight.current').attr('rel');
+					var menuItem = $('.insight.current').find('.insightTitle h6').text().toLowerCase().replace('cio action item #','');				
+					menuItem = parseInt(menuItem);
 					$('#sideMenu ul li.data-insight-nav-'+menuItem).addClass('hilited');
 					$('.bgImg.data-insight-'+menuItem+' img').addClass('activate');
 
@@ -289,6 +290,7 @@ hpit.core = (function(){
 		$('.arrows').on('click',function(e){
 			e.preventDefault();
 			var $cur = parseInt(hpit.config.currInsight);
+			console.log('cur: ', $cur);
 			var $th = $(this);
 			var newNum;
 			var newHash;
@@ -297,9 +299,10 @@ hpit.core = (function(){
 				//console.log('cur: ', $cur);
 				if($cur > 1){
 					newNum = ($cur - 1);
-					//console.log('newNum: ' + newNum);
+					console.log('newNum: ' + newNum);
 					newHash = $('#sideMenu ul li.data-insight-nav-'+newNum+' > a').attr('href');
-					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() { /*location.hash = newHash*/ }} );
+					
+					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() { hpit.config.currInsight = newNum; /*location.hash = newHash*/ }} );
 				} else {
 					//console.log('nothing there');
 					return false;
@@ -309,9 +312,10 @@ hpit.core = (function(){
 				//console.log('#total: ', $('.insight').length);
 				if($cur < $('.insight').length){
 					newNum = ($cur + 1);
-					//console.log('newNum: ' + newNum);
+					console.log('newNum: ' + newNum);
 					newHash = $('#sideMenu ul li.data-insight-nav-'+newNum+' > a').attr('href');
-					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() { /*location.hash = newHash*/ }} );
+					
+					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() { hpit.config.currInsight = newNum; /*location.hash = newHash*/ }} );
 
 				} else {
 					//console.log('nothing there');

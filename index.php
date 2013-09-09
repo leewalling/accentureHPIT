@@ -19,12 +19,14 @@
 
 	<!--div id="diagnostics" style="display:none;padding:10px;background:red;color:white;position:fixed;top:0;left:0;z-index:9999;"></div-->
 
+<!-- video overlay -->
 	<div id="ll-overlay">
 		<div class="inner">
 			<a class="closeVid" href="#"></a>
 			<div id="ll-player"></div>
 		</div>
 	</div>
+<!-- end video overlay -->
 
 <!-- Fixed navbar -->
 	<div class="navbar navbar-default navbar-fixed-top">
@@ -53,13 +55,17 @@
 	</div>
 <!-- end Fixed navbar -->
 
+<!-- main content container -->
 	<div class="container main" id="theTop">
+<!-- controls -->
 		<div id="controls" class="hidden-xs">
 			<a href="#" class="arrows prev"></a>
 			<a href="#" class="txt" id="toggleMenu">Menu</a>
 			<a href="#" class="arrows nxt"></a>
 			<span class="control-info">Get the TOP #10 CIO Action Items</span>
 		</div>
+<!-- end controls -->
+<!-- sidemenu -->
 		<div id="sideMenu" class="hidden-xs">
 			<ul>
 				<li><a href="#theTop" class="btt"><em>Back To Top</em></a></li>
@@ -76,6 +82,8 @@
 			</ul>
 			<a href="#" class="closeX">&nbsp;</a>
 		</div>
+<!-- end sidemenu -->
+<!-- hero area -->
 		<div class="hero" id="hero">
 			<span class="video-wrapper"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-1280.jpg" /></span>
 			<div>
@@ -86,21 +94,25 @@
 			</div>
 			<!--a href="#" class="CTA visible-xs"><span>get the study</span></a-->
 		</div>
+<!-- end hero area -->
 		<div id="accMark" class="hidden-xs"></div>
 		<div id="accMarkMob" class="visible-xs"></div>
 		<div class="whiteAngle hidden-xs"></div>
+<!-- background images -->
 		<div class="bgImages hidden-xs" id="bgImages">
-			<div class="bgImg data-insight-10"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-japanese.jpg" /></div>
-			<div class="bgImg data-insight-9"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-beach.jpg" /></div>
-			<div class="bgImg data-insight-8"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-sea.jpg" /></div>
-			<div class="bgImg data-insight-7"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-sunflower.jpg" /></div>
-			<div class="bgImg data-insight-6"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-lake.jpg" /></div>
-			<div class="bgImg data-insight-5"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-field.jpg" /></div>
-			<div class="bgImg data-insight-4"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-edinburgh.jpg" /></div>
-			<div class="bgImg data-insight-3"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-boat.jpg" /></div>
-			<div class="bgImg data-insight-2"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-ocean.jpg" /></div>
 			<div class="bgImg data-insight-1"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-bridge.jpg" /></div>
+			<div class="bgImg data-insight-2"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-ocean.jpg" /></div>
+			<div class="bgImg data-insight-3"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-boat.jpg" /></div>
+			<div class="bgImg data-insight-4"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-edinburgh.jpg" /></div>
+			<div class="bgImg data-insight-5"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-field.jpg" /></div>
+			<div class="bgImg data-insight-6"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-lake.jpg" /></div>
+			<div class="bgImg data-insight-7"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-sunflower.jpg" /></div>
+			<div class="bgImg data-insight-8"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-sea.jpg" /></div>
+			<div class="bgImg data-insight-9"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-beach.jpg" /></div>
+			<div class="bgImg data-insight-10"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-japanese.jpg" /></div>
 		</div>
+<!-- end background images -->
+<!-- insight #1 -->
 		<div class="insight data-insight-1" rel="1" id="your-new-boss-your-customer">
 			<div class="marker hidden-xs">
 				<div><span>01</span></div>
@@ -163,6 +175,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #1 -->
+<!-- insight #2 -->
 		<div class="insight data-insight-2" rel="2" id="technology-is-inseparable-from-business-strategy">
 			<div class="marker hidden-xs">
 				<div><span>02</span></div>
@@ -210,6 +224,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #2 -->
+<!-- insight #3 -->
 		<div class="insight data-insight-3" rel="3" id="context-is-king">
 			<div class="marker hidden-xs">
 				<div><span>03</span></div>
@@ -257,6 +273,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #3 -->
+<!-- insight #4 -->
 		<div class="insight data-insight-4" rel="4" id="flexibility-first">
 			<div class="marker hidden-xs">
 				<div><span>04</span></div>
@@ -304,6 +322,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #4 -->
+<!-- insight #5 -->
 		<div class="insight data-insight-5" rel="5" id="be-fearlessly-digital">
 			<div class="marker hidden-xs">
 				<div><span>05</span></div>
@@ -351,6 +371,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #5 -->
+<!-- insight #6 -->
 		<div class="insight data-insight-6" rel="6" id="survival-of-the-quickest">
 			<div class="marker hidden-xs">
 				<div><span>06</span></div>
@@ -398,6 +420,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #6 -->
+<!-- insight #7 -->
 		<div class="insight data-insight-7" rel="7" id="all-data-is-not-created-equal">
 			<div class="marker hidden-xs">
 				<div><span>07</span></div>
@@ -445,6 +469,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #7 -->
+<!-- insight #8 -->
 		<div class="insight data-insight-8" rel="8" id="power-to-the-people">
 			<div class="marker hidden-xs">
 				<div><span>08</span></div>
@@ -494,6 +520,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #8 -->
+<!-- insight #9 -->
 		<div class="insight data-insight-9" rel="9" id="build-your-capabilities-around-talent-not-technology">
 			<div class="marker hidden-xs">
 				<div><span>09</span></div>
@@ -541,6 +569,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #9 -->
+<!-- insight #10 -->
 		<div class="insight data-insight-10" rel="10" id="take-a-holistic-stance-on-security-and-risk">
 			<div class="marker hidden-xs">
 				<div><span>10</span></div>
@@ -588,6 +618,8 @@
 				</div>
 			</div>
 		</div>
+<!-- end insight #10 -->
+<!-- footer -->
 		<div id="footer">
 			<div>
 				<div class="about">
@@ -604,7 +636,9 @@
 				</div>
 			</div>
 		</div>
+<!-- end footer -->
 	</div>
+<!-- end main content container -->
 
 		<!--script src="js/modernizr-latest.js"></script-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
