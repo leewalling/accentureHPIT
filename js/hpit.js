@@ -1,25 +1,25 @@
 /*		Accenture High Performance IT		*/
 
 if (typeof console == "undefined") {
-    window.console = {
-        log: function () {}
-    };
+	window.console = {
+		log: function () {}
+	};
 }
 
 function getCookie(c_name) {
-    var i, x, y, ARRcookies = document.cookie.split(";");
-    for (i = 0; i < ARRcookies.length; i++) {
-        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-        x = x.replace(/^\s+|\s+$/g, "");
-        if (x == c_name) {
-            return unescape(y);
-        }
-    }
+	var i, x, y, ARRcookies = document.cookie.split(";");
+	for (i = 0; i < ARRcookies.length; i++) {
+		x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+		y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+		x = x.replace(/^\s+|\s+$/g, "");
+		if (x == c_name) {
+			return unescape(y);
+		}
+	}
 }
 
 function setCookie(cname, cvalue) {
-    document.cookie = cname + '=' + escape(cvalue);
+	document.cookie = cname + '=' + escape(cvalue);
 }
 
 var hpit = window.hpit || {};
@@ -45,15 +45,24 @@ hpit.config = {
 hpit.core = (function(){	
 	
 	var $userAgent = navigator.userAgent.toLowerCase();
-    var $Android = /android/i.test( $userAgent );
-    var $iOS = /ipad|iphone|ipod|ios/i.test( $userAgent );
-    var $iPad = /ipad/i.test( $userAgent );
+	var $Android = /android/i.test( $userAgent );
+	var $iOS = /iphone|ipod|ios/i.test( $userAgent );
+	var $iPad = /ipad/i.test( $userAgent );
+	//var $iPad = true;
 
 	//	Initialize
 	function init(){
 		$.logEvent('[hpit.core.init]');
 
 		//$('#diagnostics').html($userAgent);
+
+		//$('html').addClass('no-js');
+
+		//var viewPortTag=document.createElement('meta');
+		//viewPortTag.id="viewport";
+		//viewPortTag.name = "viewport";
+		//viewPortTag.content = "width=device-width, target-densityDpi=high-dpi, initial-scale=0.666667, minimum-scale=0.666667, maximum-scale=0.666667";
+		//document.getElementsByTagName('head')[0].appendChild(viewPortTag);
 
 		$('#sideMenu').localScroll({
 			duration: hpit.config.duration[hpit.config.desktopORtouch],
@@ -76,6 +85,9 @@ hpit.core = (function(){
 		
 		// Calcaulate/re-calculate any dimensions which may be altered by an orientation change or browser resize
 		updateDimensions();
+		
+		// inject "data-" and the video object
+		injectStuff();
 
 		// Initialize controls message
 		cntrlMessInit();
@@ -105,20 +117,19 @@ hpit.core = (function(){
 		footerLock($('#footer'));
 
 		$('.insight').each(function (index) {
-			if(!onMobile()){
+			if(!onMobile()){ // && !onIpad()
 				paneLock($(this),index);
 			}			
 		});
 
 		$('.bgImg').css({"opacity" : 0});
-		$('.bgImg[data-insight=\'1\']').css({"opacity" : 1});
-		$('.bgImg[data-insight=\'2\']').css({"opacity" : 1});
+		$('.bgImg.data-insight-1,.bgImg.data-insight-2').css({"opacity" : 1});
 
 		// Attach functionality to the native scroll function
 		$(window).scroll(function(event){
 			//console.log('onMobile: ', onMobile());
 
-			if(!onMobile()){
+			if(!onMobile() && !onIpad()){
 				// determine if we need to lock the background images in place
 				if($(window).scrollTop() > $('#hero').outerHeight(true)){
 					$('.bgImages').addClass('fixed');
@@ -131,124 +142,135 @@ hpit.core = (function(){
 					$('#sideMenu ul li').removeClass('hilited');
 					$('.bgImg img').removeClass('activate');
 					var $newT = $(window).scrollTop() / 3.5;
-					$('#hero').css({'top' : - $newT});
+					if(!onIpad()) {
+						$('#hero').css({'top' : - $newT});
+					}
 				}
 			}
 		});
 
 		$(window).resize(function(){
-        	updateDimensions();
-        	if(onMobile()){
-	        	$('html').addClass('onMobile');
-	        	//console.log('IS mobile');
-	        } else {
-	        	$('html').removeClass('onMobile');
-	        	//console.log('NOT mobile');
-	        }
-        });
+			updateDimensions();
+			updateSidemenu();
 
-        $(window).resize();
+			if(onMobile()){
+				$('html').addClass('onMobile');
+				if(onIpad()){
+					$('html').addClass('onIpad');
+				} else{
+					$('html').removeClass('onIpad');
+				}
+			} else {
+				$('html').removeClass('onMobile');
+			}
+		});
+
+		$(window).resize();
 	}
 
 	function onMobile() {
-		return ( ( hpit.config.scrW < 768 ) || $Android || $iOS );
+		return ( ( hpit.config.scrW < 768 ) || $Android || $iOS ); // || $iPad
+	}
+
+	function onIpad() {
+		return ( $iPad );
 	}
 
 	function footerLock(element) {
 		$(window)
-	        .bind('scroll', function () {
-	        	var currEle = element;
-	        	var footerH = currEle.height();
+			.bind('scroll', function () {
+				var currEle = element;
+				var footerH = currEle.height();
 
-	        	// Viewport
-	            var vpStart = currEle.offset().top; // - 62
-	            var vpEnd = vpStart + currEle.height();
-	            var scH = parseInt(hpit.config.scrH);
+				// Viewport
+				var vpStart = currEle.offset().top; // - 62
+				var vpEnd = vpStart + currEle.height();
+				var scH = parseInt(hpit.config.scrH);
 
-	            // scroll offset
-	            var winOffset = $(window).scrollTop();
+				// scroll offset
+				var winOffset = $(window).scrollTop();
 
-	            // is the element in the viewport?
-	            if (winOffset >= (vpStart-scH)) {
-	            	hpit.config.footerInView = true;
-	            	var diff = vpEnd - scH;
-	            	var scrollDiff = -(winOffset - diff);
-	            	var margOffset = scrollDiff - footerH;
-	            	$('.bgImages .bgImg img.activate').css({"margin-top" : margOffset/2});
-	            } else {
-	            	hpit.config.footerInView = false;
-	            }
-	        });
+				// is the element in the viewport?
+				if (winOffset >= (vpStart-scH)) {
+					hpit.config.footerInView = true;
+					var diff = vpEnd - scH;
+					var scrollDiff = -(winOffset - diff);
+					var margOffset = scrollDiff - footerH;
+					$('.bgImages .bgImg img.activate').css({"margin-top" : margOffset/2});
+				} else {
+					hpit.config.footerInView = false;
+				}
+			});
 	}
 
 	function paneLock(element,index) {
 		//console.log('paneLock: ', element);
 
 		$(window)
-	        .bind('scroll', function () {
-	            
-	            //var $arr = $('.insight');
-	            //console.log('$arr: ', $arr);
-	            var currEle = element;
-	            var currFixedEle = element.find('.marker');
-	            var bgPxToMove = 25;
+			.bind('scroll', function () {
+				
+				//var $arr = $('.insight');
+				//console.log('$arr: ', $arr);
+				var currEle = element;
+				var currFixedEle = element.find('.marker');
+				var bgPxToMove = 25;
 
-	            if (currFixedEle.length <= 0) {return false;}
+				if (currFixedEle.length <= 0) {return false;}
 
-	            // Viewport
-	            var vpStart = currEle.offset().top; // - 62
-	            var vpEnd = vpStart + currEle.height();
+				// Viewport
+				var vpStart = currEle.offset().top; // - 62
+				var vpEnd = vpStart + currEle.height();
 
-	            var currEleEnd = currEle.height();
-	            var currEleHgt = currEle.height();
+				var currEleEnd = currEle.height();
+				var currEleHgt = currEle.height();
 
-	            // scroll offset
-	            var winOffset = $(window).scrollTop();
-	            // console.log('winOffset:',winOffset);
+				// scroll offset
+				var winOffset = $(window).scrollTop();
+				// console.log('winOffset:',winOffset);
 
-	            if(index === parseInt(hpit.config.currInsight)){ // && vpStart > winOffset
-	            	var diff = vpStart - winOffset;
-	            	var scH = parseInt(hpit.config.scrH);
-	            	var $per = diff/scH; // console.log('$per: ' + $per);
-	            	if(diff >= -1 && diff < scH + 1){
-	            		$('.bgImg[data-insight='+index+']').css({"opacity" : $per});
-	            		$('.insight[data-insight='+index+'] .insightTitle').css({"opacity" : $per});
-	            	} else {
-	            		$('.insight .insightTitle').css({"opacity" : 1});
-	            		//console.log('$per: ' + $per);
-	            	}
-	            }
+				if(index === parseInt(hpit.config.currInsight)){ // && vpStart > winOffset
+					var diff = vpStart - winOffset;
+					var scH = parseInt(hpit.config.scrH);
+					var $per = diff/scH; // console.log('$per: ' + $per);
+					if(diff >= -1 && diff < scH + 1){
+						$('.bgImg.data-insight-'+index).css({"opacity" : $per});
+						$('.insight.data-insight-'+index+' .insightTitle').css({"opacity" : $per});
+					} else {
+						$('.insight .insightTitle').css({"opacity" : 1});
+						//console.log('$per: ' + $per);
+					}
+				}
 
-	            // is the element in the viewport?
-	            if (winOffset >= vpStart && winOffset < vpEnd) {
-	                $('.insight').removeClass('current');
-	                $('#sideMenu ul li').removeClass('hilited');
-	                $('.bgImg img').removeClass('activate');
-	                //$('.bgImages img').css({"margin-top" : 0});
+				// is the element in the viewport?
+				if (winOffset >= vpStart && winOffset < vpEnd) {
+					$('.insight').removeClass('current');
+					$('#sideMenu ul li').removeClass('hilited');
+					$('.bgImg img').removeClass('activate');
+					//$('.bgImages img').css({"margin-top" : 0});
 
-	                currEle.addClass('current');
+					currEle.addClass('current');
 
-	                var menuItem = $('.insight.current').data('insight');
-	                $('#sideMenu ul li[data-insight-nav='+menuItem+']').addClass('hilited');
-	                $('.bgImg[data-insight='+menuItem+'] img').addClass('activate');
+					var menuItem = $('.insight.current').attr('rel');
+					$('#sideMenu ul li.data-insight-nav-'+menuItem).addClass('hilited');
+					$('.bgImg.data-insight-'+menuItem+' img').addClass('activate');
 
-	                hpit.config.currInsight = menuItem;
-	                var prevImgNum = parseInt(menuItem) - 1;
-	                var nextImgNum = parseInt(menuItem) + 1;
-	                $('.bgImg[data-insight='+prevImgNum+']').css({"opacity" : 0});
-	                $('.bgImg[data-insight='+nextImgNum+']').css({"opacity" : 1});
+					hpit.config.currInsight = menuItem;
+					var prevImgNum = parseInt(menuItem) - 1;
+					var nextImgNum = parseInt(menuItem) + 1;
+					$('.bgImg.data-insight-'+prevImgNum).css({"opacity" : 0});
+					$('.bgImg.data-insight-'+nextImgNum).css({"opacity" : 1});
 
-	                var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
-	                if(!hpit.config.footerInView){
+					var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
+					if(!hpit.config.footerInView){
 						$('.bgImages .bgImg img.activate').css({"margin-top" : -diffToMove});
-	                }
-	            }
-	            // out of the viewport
-	            else {
-	                currEle.removeClass('current');
-	            }
+					}
+				}
+				// out of the viewport
+				else {
+					currEle.removeClass('current');
+				}
 
-	        });
+			});
 
 	}; //End Function
 
@@ -276,7 +298,7 @@ hpit.core = (function(){
 				if($cur > 1){
 					newNum = ($cur - 1);
 					//console.log('newNum: ' + newNum);
-					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
+					newHash = $('#sideMenu ul li.data-insight-nav-'+newNum+' > a').attr('href');
 					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() { /*location.hash = newHash*/ }} );
 				} else {
 					//console.log('nothing there');
@@ -288,7 +310,7 @@ hpit.core = (function(){
 				if($cur < $('.insight').length){
 					newNum = ($cur + 1);
 					//console.log('newNum: ' + newNum);
-					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
+					newHash = $('#sideMenu ul li.data-insight-nav-'+newNum+' > a').attr('href');
 					$(window).scrollTo(newHash, hpit.config.duration[hpit.config.desktopORtouch], {easing:hpit.config.easing, onAfter: function() { /*location.hash = newHash*/ }} );
 
 				} else {
@@ -328,12 +350,60 @@ hpit.core = (function(){
 		$('.social > a').on('click',function(e){
 			e.preventDefault();
 			var $th = $(this);
+			var $cl = $th.attr('class');
+			var $link = $th.attr('href');
+			var $title = $th.attr('title');
+			var $shareTitle = encodeURIComponent($title);
+			var $winName = $cl + '-win';
+
+			switch($cl){
+				case 'google':
+					var $linkUrl = $link.split('?')[1].replace("url=","");
+					var $shareUrl = encodeURIComponent($linkUrl);
+					var $goto = 'https://plus.google.com/share?url=' + $shareUrl;
+					var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+					break;
+				case 'facebook':
+					var $linkUrl = $link.split('?')[1].replace("u=","");
+					var $shareUrl = encodeURIComponent($linkUrl);
+					var $goto = 'http://www.facebook.com/share.php?u=' + $shareUrl;
+					var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+					//http://www.facebook.com/sharer.php?s=100&p[title]=titleheresexily&p[url]=http://www.mysexyurl.com&p[summary]=mysexysummaryhere&p[images][0]=http://www.urltoyoursexyimage.com
+					break;
+				case 'twitter':
+					var $linkUrl = $link.split('?')[1].replace("url=","");
+					var $shareUrl = encodeURIComponent($linkUrl);
+					var $goto = 'http://twitter.com/share?url=' + $shareUrl +
+						'&text=Descriptive text goes here...';
+					var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+					break;
+				case 'linkedin':
+					var $linkUrl = $link.split('?')[1].replace("mini=true&url=","");
+					var $shareUrl = encodeURIComponent($linkUrl);
+					var $shareSummary = 'test summary - linkedin';
+					var $shareSource = 'test source - linkedin';
+					var $goto = 'http://www.linkedin.com/shareArticle?mini=true' +
+						'&url=' + $shareUrl +
+						'&title=' + $shareTitle;// +
+						//'&summary=' + $shareSummary +
+						//'&source=' + $shareSource;
+					$params = 'width=660,height=400,scrollbars=no;resizable=no';
+					break;
+			}
+
+			window.open($goto, $winName, $params);
+		});
+		/*
+		$('.social > a').on('click',function(e){
+			e.preventDefault();
+			var $th = $(this);
 			var $link = $th.attr('href');
 			var $name = $th.attr('class') + '-win';
 			var $params = 'toolbar=0,status=0,width=626,height=436';
-			window.open($link, $name, $params);			
+			window.open($link, $name, $params);
 			return false;
 		});
+		*/
 	}
 
 	// video player
@@ -370,14 +440,23 @@ hpit.core = (function(){
 				});
 		});
 	}
-	
-	// sidemenu toggle method
-	function toggleMenuInit(){
+
+	function updateSidemenu(){
+		console.log('scrH:', hpit.config.scrH);
+
 		var scrH = parseInt(hpit.config.scrH);
 		var availH = scrH - 62;
 		var menuH = $('#sideMenu > ul').outerHeight();
+		
+		var $target = $('#sideMenu');
+		$target.css({"height" : hpit.config.scrH - 62});
+
+		
 
 		var $diff = menuH - availH;
+		//console.log('$diff:', $diff);
+		$target.removeClass('height-xxs height-xs height-sm height-md height-lg');
+		
 		if($diff > 0){
 			if($diff > 300){
 				$('#sideMenu').addClass('height-xxs');
@@ -390,40 +469,13 @@ hpit.core = (function(){
 			} else  {
 				$('#sideMenu').addClass('height-lg');
 			}
-			
 		}
-		
+	}
+	
+	// sidemenu toggle method
+	function toggleMenuInit(){
+		//updateSidemenu();
 		var $target = $('#sideMenu');
-		$target.css({"height" : hpit.config.scrH - 62});
-
-		/*
-			usage:
-			//write cookie
-			setCookie("id","1",3600);
-			setCookie("name","my name",3600);
-
-			//read cookie alert(getCookie("name"));	
-
-			function setCookie(cname, cvalue, cexpire) {
-			    document.cookie = cname + '=' + escape(cvalue) +
-			    (typeof cexpire == 'date' ? 'expires=' + cexpire.toGMTString() : '') +
-			    ',path=/;domain=about.com';
-			}
-
-			function getCookie(c_name){
-		      var i,x,y,ARRcookies=document.cookie.split(";");
-		      for (i=0;i<ARRcookies.length;i++)
-		      {
-		             x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
-		             y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
-		             x=x.replace(/^\s+|\s+$/g,"");
-		             if (x==c_name)
-		       {
-		          return unescape(y);
-		          }
-		        }
-		    }
-		*/
 
 		$('#controls a').on('click',function(e){
 			e.preventDefault();
@@ -446,11 +498,23 @@ hpit.core = (function(){
 		});
 	}
 
+	function injectStuff() {
+		$('.navbar-toggle').on('click',function(e){
+			e.preventDefault();
+		});
+		$('.navbar-toggle')
+			.attr('data-toggle','collapse')
+			.attr('data-target','.navbar-collapse');
+		$('.video-wrapper').html('<video width="100%" height="auto" autoplay loop><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/blue-loop.mp4" type="video/mp4"><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/blue-loop.ogg" type="video/ogg"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-1280.jpg" /></video>');
+	}
+
 	function updateDimensions(){
 		$.logEvent('[hpit.core.updateDimensions]');
 		
 		hpit.config.scrW = $(window).width();
 		hpit.config.scrH = $(window).height();
+		//console.log('scrW:', hpit.config.scrW);
+		//console.log('scrH:', hpit.config.scrH);
 	}
 
 	function isTouchDevice(){

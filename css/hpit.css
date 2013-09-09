@@ -50,6 +50,7 @@ img {
 }
 .container.main {
 	padding-top:860px;
+	position: relative;
 }
 .onMobile .container.main {
 	padding-top:0;
@@ -231,7 +232,7 @@ img {
 	width: 13px;
 	height: 13px;
 	position: absolute;
-	top:20px;
+	top:21px;
 	right:15px;
 	z-index: 201;
 	background-image:url("../images/x.png");
@@ -241,7 +242,21 @@ img {
 .closeX:hover {
 	background-position: 0 -13px;
 }
-
+.height-xxs .closeX {
+	top: 11px;
+}
+.height-xs .closeX {
+	top: 13px;
+}
+.height-sm .closeX {
+	top: 15px;
+}
+.height-md .closeX {
+	top: 17px;
+}
+.height-lg .closeX {
+	top: 22px;
+}
 
 #accMark {
 	top: 269px;
@@ -253,6 +268,10 @@ img {
 	z-index: 1;
 	width: 532px;
 	height: 536px;
+	background-image:url("../images/accenture-mark.png");
+	background-size: 100% auto;	
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 .hero {
 	background-color:#fff;
@@ -263,7 +282,7 @@ img {
 	overflow: visible;
 	overflow-x: hidden;
 	width: 100%;
-	/*float: left;*/
+	float: left;
 	position: fixed;
 	top: 0;
 	margin-top: 62px;
@@ -313,6 +332,7 @@ img {
 	line-height: 1.1em;
 	overflow: visible;
 	z-index: 0;
+	/*z-index: 5;*/
 }
 .hero > div h1 {
 	font-size: 54px;
@@ -329,7 +349,7 @@ img {
 	margin: 0 auto;
 }
 .hero > div p strong {
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 }
 .hero > div .playVid {
 	display: inline-block;
@@ -449,7 +469,6 @@ img {
 	background-attachment: scroll;
 	*/
 }
-
 .onMobile .insight.open {
 	background-color: #e5e5e5 !important;
 }
@@ -472,9 +491,6 @@ img {
 	transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg);
 	-webkit-transform:skew(0deg,22deg);
-}
-.insight.current .bgImg {
-	position:fixed;
 }
 .insight .bgImg img {
 	/*width:100%;
@@ -694,57 +710,57 @@ img {
 	font-weight: bold;
 	width: 100%;
 }
-.insight[data-insight="1"] .marker,
-.insight[data-insight="1"] .content .right-col > div.heading,
-.insight[data-insight="1"] .content .right-col > div .tr > span.num,
-.insight[data-insight="1"] .insightTitle .toggler {background-color:#aa1133;}
-.insight[data-insight="2"] .marker,
-.insight[data-insight="2"] .content .right-col > div.heading,
-.insight[data-insight="2"] .content .right-col > div .tr > span.num,
-.insight[data-insight="2"] .insightTitle .toggler {background-color:#ff0000;}
-.insight[data-insight="3"] .marker,
-.insight[data-insight="3"] .content .right-col > div.heading,
-.insight[data-insight="3"] .content .right-col > div .tr > span.num,
-.insight[data-insight="3"] .insightTitle .toggler {background-color:#dd4411;}
-.insight[data-insight="4"] .marker,
-.insight[data-insight="4"] .content .right-col > div.heading,
-.insight[data-insight="4"] .content .right-col > div .tr > span.num,
-.insight[data-insight="4"] .insightTitle .toggler {background-color:#ff9900;}
-.insight[data-insight="5"] .marker,
-.insight[data-insight="5"] .content .right-col > div.heading,
-.insight[data-insight="5"] .content .right-col > div .tr > span.num,
-.insight[data-insight="5"] .insightTitle .toggler {background-color:#bbbb00;}
-.insight[data-insight="6"] .marker,
-.insight[data-insight="6"] .content .right-col > div.heading,
-.insight[data-insight="6"] .content .right-col > div .tr > span.num,
-.insight[data-insight="6"] .insightTitle .toggler {background-color:#00aa99;}
-.insight[data-insight="7"] .marker,
-.insight[data-insight="7"] .content .right-col > div.heading,
-.insight[data-insight="7"] .content .right-col > div .tr > span.num,
-.insight[data-insight="7"] .insightTitle .toggler {background-color:#00bbee;}
-.insight[data-insight="8"] .marker,
-.insight[data-insight="8"] .content .right-col > div.heading,
-.insight[data-insight="8"] .content .right-col > div .tr > span.num,
-.insight[data-insight="8"] .insightTitle .toggler {background-color:#3399cc;}
-.insight[data-insight="9"] .marker,
-.insight[data-insight="9"] .content .right-col > div.heading,
-.insight[data-insight="9"] .content .right-col > div .tr > span.num,
-.insight[data-insight="9"] .insightTitle .toggler {background-color:#ff3366;}
-.insight[data-insight="10"] .marker,
-.insight[data-insight="10"] .content .right-col > div.heading,
-.insight[data-insight="10"] .content .right-col > div .tr > span.num,
-.insight[data-insight="10"] .insightTitle .toggler {background-color:#551155;}
+.insight.data-insight-1 .marker,
+.insight.data-insight-1 .content .right-col > div.heading,
+.insight.data-insight-1 .content .right-col > div .tr > span.num,
+.insight.data-insight-1 .insightTitle .toggler {background-color:#aa1133;}
+.insight.data-insight-2 .marker,
+.insight.data-insight-2 .content .right-col > div.heading,
+.insight.data-insight-2 .content .right-col > div .tr > span.num,
+.insight.data-insight-2 .insightTitle .toggler {background-color:#ff0000;}
+.insight.data-insight-3 .marker,
+.insight.data-insight-3 .content .right-col > div.heading,
+.insight.data-insight-3 .content .right-col > div .tr > span.num,
+.insight.data-insight-3 .insightTitle .toggler {background-color:#dd4411;}
+.insight.data-insight-4 .marker,
+.insight.data-insight-4 .content .right-col > div.heading,
+.insight.data-insight-4 .content .right-col > div .tr > span.num,
+.insight.data-insight-4 .insightTitle .toggler {background-color:#ff9900;}
+.insight.data-insight-5 .marker,
+.insight.data-insight-5 .content .right-col > div.heading,
+.insight.data-insight-5 .content .right-col > div .tr > span.num,
+.insight.data-insight-5 .insightTitle .toggler {background-color:#bbbb00;}
+.insight.data-insight-6 .marker,
+.insight.data-insight-6 .content .right-col > div.heading,
+.insight.data-insight-6 .content .right-col > div .tr > span.num,
+.insight.data-insight-6 .insightTitle .toggler {background-color:#00aa99;}
+.insight.data-insight-7 .marker,
+.insight.data-insight-7 .content .right-col > div.heading,
+.insight.data-insight-7 .content .right-col > div .tr > span.num,
+.insight.data-insight-7 .insightTitle .toggler {background-color:#00bbee;}
+.insight.data-insight-8 .marker,
+.insight.data-insight-8 .content .right-col > div.heading,
+.insight.data-insight-8 .content .right-col > div .tr > span.num,
+.insight.data-insight-8 .insightTitle .toggler {background-color:#3399cc;}
+.insight.data-insight-9 .marker,
+.insight.data-insight-9 .content .right-col > div.heading,
+.insight.data-insight-9 .content .right-col > div .tr > span.num,
+.insight.data-insight-9 .insightTitle .toggler {background-color:#ff3366;}
+.insight.data-insight-10 .marker,
+.insight.data-insight-10 .content .right-col > div.heading,
+.insight.data-insight-10 .content .right-col > div .tr > span.num,
+.insight.data-insight-10 .insightTitle .toggler {background-color:#551155;}
 
-.insight[data-insight="1"] .content .right-col > div .heading {color:#aa1133;}
-.insight[data-insight="2"] .content .right-col > div .heading {color:#ff0000;}
-.insight[data-insight="3"] .content .right-col > div .heading {color:#dd4411;}
-.insight[data-insight="4"] .content .right-col > div .heading {color:#ff9900;}
-.insight[data-insight="5"] .content .right-col > div .heading {color:#bbbb00;}
-.insight[data-insight="6"] .content .right-col > div .heading {color:#00aa99;}
-.insight[data-insight="7"] .content .right-col > div .heading {color:#00bbee;}
-.insight[data-insight="8"] .content .right-col > div .heading {color:#3399cc;}
-.insight[data-insight="9"] .content .right-col > div .heading {color:#ff3366;}
-.insight[data-insight="10"] .content .right-col > div .heading {color:#551155;}
+.insight.data-insight-1 .content .right-col > div .heading {color:#aa1133;}
+.insight.data-insight-2 .content .right-col > div .heading {color:#ff0000;}
+.insight.data-insight-3 .content .right-col > div .heading {color:#dd4411;}
+.insight.data-insight-4 .content .right-col > div .heading {color:#ff9900;}
+.insight.data-insight-5 .content .right-col > div .heading {color:#bbbb00;}
+.insight.data-insight-6 .content .right-col > div .heading {color:#00aa99;}
+.insight.data-insight-7 .content .right-col > div .heading {color:#00bbee;}
+.insight.data-insight-8 .content .right-col > div .heading {color:#3399cc;}
+.insight.data-insight-9 .content .right-col > div .heading {color:#ff3366;}
+.insight.data-insight-10 .content .right-col > div .heading {color:#551155;}
 
 #footer {	
   	background-image:url("../images/bg-footer.png");
@@ -937,7 +953,8 @@ img {
   	display: inline-block;
 }
 .onMobile .navbar-toggle {
-	border: 0;
+	border: 1px solid transparent !important;
+	border-color: transparent !important;
 	height: 29px;
 	margin: 17px 20px 0 0;
 	padding: 0;
@@ -1146,7 +1163,7 @@ img {
 
 	.hero {
 		height: auto;
-		min-height: 970px;
+		min-height: 888px;
 	}
 	.hero .video-wrapper {
 		height: 500px;
@@ -1231,16 +1248,16 @@ img {
 	.insight .insightTitle h6 {
 		font-size: 20px;
 	}
-	.insight[data-insight="1"] .insightTitle h6 {color:#aa1133;}
-	.insight[data-insight="2"] .insightTitle h6 {color:#ff0000;}
-	.insight[data-insight="3"] .insightTitle h6 {color:#dd4411;}
-	.insight[data-insight="4"] .insightTitle h6 {color:#ff9900;}
-	.insight[data-insight="5"] .insightTitle h6 {color:#bbbb00;}
-	.insight[data-insight="6"] .insightTitle h6 {color:#00aa99;}
-	.insight[data-insight="7"] .insightTitle h6 {color:#00bbee;}
-	.insight[data-insight="8"] .insightTitle h6 {color:#3399cc;}
-	.insight[data-insight="9"] .insightTitle h6 {color:#ff3366;}
-	.insight[data-insight="10"] .insightTitle h6 {color:#551155;}
+	.insight.data-insight-1 .insightTitle h6 {color:#aa1133;}
+	.insight.data-insight-2 .insightTitle h6 {color:#ff0000;}
+	.insight.data-insight-3 .insightTitle h6 {color:#dd4411;}
+	.insight.data-insight-4 .insightTitle h6 {color:#ff9900;}
+	.insight.data-insight-5 .insightTitle h6 {color:#bbbb00;}
+	.insight.data-insight-6 .insightTitle h6 {color:#00aa99;}
+	.insight.data-insight-7 .insightTitle h6 {color:#00bbee;}
+	.insight.data-insight-8 .insightTitle h6 {color:#3399cc;}
+	.insight.data-insight-9 .insightTitle h6 {color:#ff3366;}
+	.insight.data-insight-10 .insightTitle h6 {color:#551155;}
 
 	.insight .content {
 		position:relative;
@@ -1386,7 +1403,7 @@ img {
 	}
 	.hero {
 		height: auto;
-		min-height: 520px;
+		min-height: 455px;
 	}
 	.hero .CTA {
 		bottom: 30px;
@@ -1412,16 +1429,16 @@ img {
 		background-position: 0 -50px;
 	}
 	.hero > div h3 {
-		font-size: 12px;
+		font-size: 13px;
 		width: 106%;
 		margin-left: -3%;
 	}
 	.hero > div h1 {
-		font-size: 24px;
+		font-size: 28px;
 		margin: 10px auto;
 	}
 	.hero > div p {
-		font-size: 12px;
+		font-size: 13px;
 		line-height: 1.25em;
 		width: 97%;
 	}
@@ -1510,8 +1527,143 @@ img {
 }
  
 /* ipad (portrait and landscape) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.whiteAngle,
+	.bgImages {
+		display: none !important;
+	}
+	.container.main {
+		padding-top: 0 !important;
+		padding-bottom: 200px;
+		background-color: #000;
+	}
+	.hero {
+		position: relative !important;
+		height: 450px;
+		background-color: #000;
+	}
+	.hero .video-wrapper {
+		height: 450px;
+	}
+	.hero > div {
+		z-index: 5;
+		padding: 7% 0 125px;
+	}
+	.hero > div h1 {
+		font-size: 48px;
+		width: 90%;
+	}
+	.hero > div h3 {
+		font-size: 21px;
+	}
+	.hero > div p {
+		width: 70%;
+	}
+	.hero > div .playVid {
+		width: 95px;
+		height: 95px;
+		margin-left: -47.5px;
+		background-image:url("../images/play-lg.png");
+	}
+	.hero > div .playVid:hover {
+		background-position: 0 -95px;
+	}
+	#accMark {
+		top: 94px;
+	}
+	.insight.data-insight-10 {
+		background-image:url("../images/bg-japanese.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-9 {
+		background-image:url("../images/bg-beach.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-8 {
+		background-image:url("../images/bg-sea.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-7 {
+		background-image:url("../images/bg-sunflower.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-6 {
+		background-image:url("../images/bg-lake.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-5 {
+		background-image:url("../images/bg-field.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-4 {
+		background-image:url("../images/bg-edinburgh.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-3 {
+		background-image:url("../images/bg-boat.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-2 {
+		background-image:url("../images/bg-ocean.jpg");
+		background-repeat: no-repeat;
+	  	background-position: top center;
+	  	background-size: auto 100%;
+	}
+	.insight.data-insight-1 {
+		background-image:url("../images/bg-bridge.jpg");
+		background-repeat: no-repeat !important;
+	  	background-position: top center !important;
+	  	background-size: auto 100% !important;
+	}
+	.insight .insightTitle {
+		top: 100px;
+	}
+	.insight .marker {
+		top: 135px;
+	}
+	.insight .content {
+		margin-top: 100px;
+	}
+	.insight .insightTitle {
+		left: 190px;
+		width: 29%;
+	}
+	.insight.current .insightTitle {
+		position: absolute !important;
+		top: 100px !important;
+	}
+	.insight.current  {
+		background-attachment: scroll !important;
+		background-repeat: no-repeat !important;
+	  	background-position: top center !important;
+	  	background-size: auto 100% !important;
+	}
+	.insight.current .marker {
+		position: absolute !important;
+		top: 135px !important;
+	}
+	#footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
 }
  
 /* ipad (landscape) */
@@ -1520,8 +1672,23 @@ img {
 }
  
 /* ipad (portrait) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+	.insight .insightTitle {
+		left: 180px;
+		width: 25%;
+	}
+	.insight .insightTitle h3 {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	.hero video {
+		height: 100%;
+		width: auto;
+	}
+	.hero > div p {
+		width: 90%;
+	}
 }
  
 /* medium screens */
