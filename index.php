@@ -22,8 +22,33 @@
 <!-- video overlay -->
 	<div id="ll-overlay">
 		<div class="inner">
+			<div id="ll-player">
+				<!--
+					limelight_player_239897
+					<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">
+				-->
+				<script src="http://assets.delvenetworks.com/player/embed.js"></script>
+				<object type="application/x-shockwave-flash" id="limelight_player_239897" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="http://assets.delvenetworks.com/player/loader.swf">
+					<param name="movie" value="http://assets.delvenetworks.com/player/loader.swf"/>
+					<param name="wmode" value="transparent"/>
+					<param name="allowScriptAccess" value="always"/>
+					<param name="allowFullScreen" value="true"/>
+					<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c"/>
+				</object>
+				<script>LimelightPlayerUtil.initEmbed('limelight_player_239897');</script>
+			</div>
 			<a class="closeVid" href="#"></a>
-			<div id="ll-player"></div>
+			<div class="chapters">
+				<a href="10">Chapter 1</a>
+				<span> | </span>
+				<a href="40">Chapter 2</a>
+				<span> | </span>
+				<a href="70">Chapter 3</a>
+				<span> | </span>
+				<a href="100">Chapter 4</a>
+				<span> | </span>
+				<a href="130">Chapter 5</a>
+			</div>
 		</div>
 	</div>
 <!-- end video overlay -->
@@ -34,7 +59,7 @@
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
 		  <!--button type="button" class="navbar-toggle"></button-->
-		  <a class="navbar-brand" href="#"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/logo.png" width="128" height="36" /></a>
+		  <a class="navbar-brand" href="#"><img src="images/logo.png" width="128" height="36" /></a>
 		</div>
 		<div class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-right">
@@ -59,7 +84,7 @@
 	<div class="container main" id="theTop">
 <!-- controls -->
 		<div id="controls" class="hidden-xs">
-			<a href="#" class="arrows prev"></a>
+			<a href="#" class="arrows prev noClick"></a>
 			<a href="#" class="txt" id="toggleMenu">Menu</a>
 			<a href="#" class="arrows nxt"></a>
 			<span class="control-info">Get the TOP #10 CIO Action Items</span>
@@ -69,23 +94,23 @@
 		<div id="sideMenu" class="hidden-xs">
 			<ul>
 				<li><a href="#theTop" class="btt"><em>Back To Top</em></a></li>
-				<li class="data-insight-nav-1"><a href="#your-new-boss-your-customer"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
-				<li class="data-insight-nav-2"><a href="#technology-is-inseparable-from-business-strategy"><span>02</span> <span>Technology is inseparable from business strategy</span></a></li>
-				<li class="data-insight-nav-3"><a href="#context-is-king"><span>03</span> <span>Context is king.</span></a></li>
-				<li class="data-insight-nav-4"><a href="#flexibility-first"><span>04</span> <span>Flexibility first.</span></a></li>
-				<li class="data-insight-nav-5"><a href="#be-fearlessly-digital"><span>05</span> <span>Be fearlessly digital.</span></a></li>
-				<li class="data-insight-nav-6"><a href="#survival-of-the-quickest"><span>06</span> <span>Survival of the quickest</span></a></li>
-				<li class="data-insight-nav-7"><a href="#all-data-is-not-created-equal"><span>07</span> <span>All data is not created equal.</span></a></li>
-				<li class="data-insight-nav-8"><a href="#power-to-the-people"><span>08</span> <span>Power to the people.</span></a></li>
-				<li class="data-insight-nav-9"><a href="#build-your-capabilities-around-talent-not-technology"><span>09</span> <span>Build your capabilities around talent, not technology.</span></a></li>
-				<li class="data-insight-nav-10"><a href="#take-a-holistic-stance-on-security-and-risk"><span>10</span> <span>Take a holistic stance on security and risk</span></a></li>
+				<li class="state"><a href="#your-new-boss-your-customer"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
+				<li class="state"><a href="#technology-is-inseparable-from-business-strategy"><span>02</span> <span>Technology is inseparable from business strategy</span></a></li>
+				<li class="state"><a href="#context-is-king"><span>03</span> <span>Context is king.</span></a></li>
+				<li class="state"><a href="#flexibility-first"><span>04</span> <span>Flexibility first.</span></a></li>
+				<li class="state"><a href="#be-fearlessly-digital"><span>05</span> <span>Be fearlessly digital.</span></a></li>
+				<li class="state"><a href="#survival-of-the-quickest"><span>06</span> <span>Survival of the quickest</span></a></li>
+				<li class="state"><a href="#all-data-is-not-created-equal"><span>07</span> <span>All data is not created equal.</span></a></li>
+				<li class="state"><a href="#power-to-the-people"><span>08</span> <span>Power to the people.</span></a></li>
+				<li class="state"><a href="#build-your-capabilities-around-talent-not-technology"><span>09</span> <span>Build your capabilities around talent, not technology.</span></a></li>
+				<li class="state"><a href="#take-a-holistic-stance-on-security-and-risk"><span>10</span> <span>Take a holistic stance on security and risk</span></a></li>
 			</ul>
 			<a href="#" class="closeX">&nbsp;</a>
 		</div>
 <!-- end sidemenu -->
 <!-- hero area -->
 		<div class="hero" id="hero">
-			<span class="video-wrapper"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-1280.jpg" /></span>
+			<span class="video-wrapper"><img src="images/video-1280.jpg" /></span>
 			<div>
 				<h3>Accenture High Performance IT Survey 2013</h3>
 				<h1>The Rise of the Strategy Savvy CIO</h1>
@@ -100,20 +125,20 @@
 		<div class="whiteAngle hidden-xs"></div>
 <!-- background images -->
 		<div class="bgImages hidden-xs" id="bgImages">
-			<div class="bgImg data-insight-1"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-bridge.jpg" /></div>
-			<div class="bgImg data-insight-2"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-ocean.jpg" /></div>
-			<div class="bgImg data-insight-3"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-boat.jpg" /></div>
-			<div class="bgImg data-insight-4"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-edinburgh.jpg" /></div>
-			<div class="bgImg data-insight-5"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-field.jpg" /></div>
-			<div class="bgImg data-insight-6"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-lake.jpg" /></div>
-			<div class="bgImg data-insight-7"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-sunflower.jpg" /></div>
-			<div class="bgImg data-insight-8"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-sea.jpg" /></div>
-			<div class="bgImg data-insight-9"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-beach.jpg" /></div>
-			<div class="bgImg data-insight-10"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/bg-japanese.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-bridge.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-ocean.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-boat.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-edinburgh.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-field.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-lake.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-sunflower.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-sea.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-beach.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-japanese.jpg" /></div>
 		</div>
 <!-- end background images -->
 <!-- insight #1 -->
-		<div class="insight data-insight-1" rel="1" id="your-new-boss-your-customer">
+		<div class="insight" id="your-new-boss-your-customer">
 			<div class="marker hidden-xs">
 				<div><span>01</span></div>
 			</div>
@@ -142,7 +167,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						</div>
 						<div>
 						<span class="heading">High performers</span>
@@ -177,7 +202,7 @@
 		</div>
 <!-- end insight #1 -->
 <!-- insight #2 -->
-		<div class="insight data-insight-2" rel="2" id="technology-is-inseparable-from-business-strategy">
+		<div class="insight" id="technology-is-inseparable-from-business-strategy">
 			<div class="marker hidden-xs">
 				<div><span>02</span></div>
 			</div>
@@ -206,7 +231,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers' allocate significantly more of their budget to delivering strategic capabilities.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span>High performers&ndash;55%<br />Others&ndash;</span>
 						</div>
 						<div class="no-border">
@@ -226,7 +251,7 @@
 		</div>
 <!-- end insight #2 -->
 <!-- insight #3 -->
-		<div class="insight data-insight-3" rel="3" id="context-is-king">
+		<div class="insight" id="context-is-king">
 			<div class="marker hidden-xs">
 				<div><span>03</span></div>
 			</div>
@@ -255,7 +280,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers consistently outpace other organizations in looking to the horizon for potential issues that will impact their business.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span>High performers&ndash;50%<br />Others&ndash;10%</span>
 						</div>
 						<div class="no-border">
@@ -275,7 +300,7 @@
 		</div>
 <!-- end insight #3 -->
 <!-- insight #4 -->
-		<div class="insight data-insight-4" rel="4" id="flexibility-first">
+		<div class="insight" id="flexibility-first">
 			<div class="marker hidden-xs">
 				<div><span>04</span></div>
 			</div>
@@ -304,7 +329,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are freeing up data and empowering users by moving to the cloud.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span>High performers&ndash;33%<br />Others&ndash;4%</span>
 						</div>
 						<div class="no-border">
@@ -324,7 +349,7 @@
 		</div>
 <!-- end insight #4 -->
 <!-- insight #5 -->
-		<div class="insight data-insight-5" rel="5" id="be-fearlessly-digital">
+		<div class="insight" id="be-fearlessly-digital">
 			<div class="marker hidden-xs">
 				<div><span>05</span></div>
 			</div>
@@ -353,7 +378,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers have been experimenting and learning from early deployment of technologies such as social, mobile, analytics and cloud, plus virtualization, security and data management.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span>High Performers&ndash;54%<br />Others&ndash;31%</span>
 						</div>
 						<div class="no-border">
@@ -373,7 +398,7 @@
 		</div>
 <!-- end insight #5 -->
 <!-- insight #6 -->
-		<div class="insight data-insight-6" rel="6" id="survival-of-the-quickest">
+		<div class="insight" id="survival-of-the-quickest">
 			<div class="marker hidden-xs">
 				<div><span>06</span></div>
 			</div>
@@ -402,7 +427,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are leading the way in leveraging agile and iterative methodologies, enabling them to adapt to new technologies and embed them in their business.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span>High Performers&ndash;18%<br />Others&ndash;3%</span>
 						</div>
 						<div class="no-border">
@@ -422,7 +447,7 @@
 		</div>
 <!-- end insight #6 -->
 <!-- insight #7 -->
-		<div class="insight data-insight-7" rel="7" id="all-data-is-not-created-equal">
+		<div class="insight" id="all-data-is-not-created-equal">
 			<div class="marker hidden-xs">
 				<div><span>07</span></div>
 			</div>
@@ -451,7 +476,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are far in front of other organizations in embedding real-time analytics-based decision-making tools into business processes.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span>High Performers&ndash;46%<br />Others&ndash;2%</span>
 						</div>
 						<div class="no-border">
@@ -471,7 +496,7 @@
 		</div>
 <!-- end insight #7 -->
 <!-- insight #8 -->
-		<div class="insight data-insight-8" rel="8" id="power-to-the-people">
+		<div class="insight" id="power-to-the-people">
 			<div class="marker hidden-xs">
 				<div><span>08</span></div>
 			</div>
@@ -500,7 +525,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers customer, supplier and employee interactions are increasingly self-service&ndash;but have room to grow.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span><strong>Customer interactions</strong><br />Are now: 29%<br />Could be: 56%<br /><br />
 						<strong>Supplier interactions</strong><br />Are now: 31%<br />Could be: 68%<br /><br />
 						<strong>Employee interactions</strong><br />Are now: 71%<br />Could be: 84%</span>
@@ -522,7 +547,7 @@
 		</div>
 <!-- end insight #8 -->
 <!-- insight #9 -->
-		<div class="insight data-insight-9" rel="9" id="build-your-capabilities-around-talent-not-technology">
+		<div class="insight" id="build-your-capabilities-around-talent-not-technology">
 			<div class="marker hidden-xs">
 				<div><span>09</span></div>
 			</div>
@@ -551,7 +576,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers source their IT partners strategically, aligning them with their business requirements and priorities.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span>High Performers&ndash;18%<br />Others&ndash;7%</span>
 						</div>
 						<div class="no-border">
@@ -571,7 +596,7 @@
 		</div>
 <!-- end insight #9 -->
 <!-- insight #10 -->
-		<div class="insight data-insight-10" rel="10" id="take-a-holistic-stance-on-security-and-risk">
+		<div class="insight" id="take-a-holistic-stance-on-security-and-risk">
 			<div class="marker hidden-xs">
 				<div><span>10</span></div>
 			</div>
@@ -600,7 +625,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers have expanded the scope of their security and risk management functions.</span>
-						<span class="fpo"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
+						<span class="fpo"><img src="images/fpo-info.png" /></span>
 						<span>High Performers&ndash;27%<br />Others&ndash;5%</span>
 						</div>
 						<div class="no-border">
@@ -639,12 +664,13 @@
 <!-- end footer -->
 	</div>
 <!-- end main content container -->
+		
 
 		<!--script src="js/modernizr-latest.js"></script-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/jquery-1.10.2.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="http://assets.delvenetworks.com/player/embed.js"></script>
+		<!--script src="http://assets.delvenetworks.com/player/embed.js"></script-->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
