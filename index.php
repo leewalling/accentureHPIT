@@ -23,13 +23,9 @@
 	<div id="ll-overlay">
 		<div class="inner">
 			<div id="ll-player">
-				<!--
-					limelight_player_239897
-					<param name="flashVars" value="playerForm=LVPPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c">
-				-->
-				<script src="http://assets.delvenetworks.com/player/embed.js"></script>
-				<object type="application/x-shockwave-flash" id="limelight_player_239897" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="http://assets.delvenetworks.com/player/loader.swf">
-					<param name="movie" value="http://assets.delvenetworks.com/player/loader.swf"/>
+				<script src="https://assets.delvenetworks.com/player/embed.js"></script>
+				<object type="application/x-shockwave-flash" id="limelight_player_239897" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="https://assets.delvenetworks.com/player/loader.swf">
+					<param name="movie" value="https://assets.delvenetworks.com/player/loader.swf"/>
 					<param name="wmode" value="transparent"/>
 					<param name="allowScriptAccess" value="always"/>
 					<param name="allowFullScreen" value="true"/>
@@ -39,15 +35,20 @@
 			</div>
 			<a class="closeVid" href="#"></a>
 			<div class="chapters">
-				<a href="10">Chapter 1</a>
-				<span> | </span>
-				<a href="40">Chapter 2</a>
-				<span> | </span>
-				<a href="70">Chapter 3</a>
-				<span> | </span>
-				<a href="100">Chapter 4</a>
-				<span> | </span>
-				<a href="130">Chapter 5</a>
+				<div class="topRow">
+					<h5>Chapters</h5>
+					<a href="#0">1</a>
+					<a href="#18">2</a>
+					<a href="#37">3</a>
+					<a href="#56">4</a>
+					<a href="#75">5</a>
+					<a href="#94">6</a>
+					<a href="#112">7</a>
+					<a href="#131">8</a>
+					<a href="#150">9</a>
+					<a href="#168">10</a>
+				</div>
+				<div class="contentRow"></div>
 			</div>
 		</div>
 	</div>
@@ -115,17 +116,27 @@
 				<h3>Accenture High Performance IT Survey 2013</h3>
 				<h1>The Rise of the Strategy Savvy CIO</h1>
 				<p>IT now means "in transition" as CIOs move from the server room to the board room and help set the strategic digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p>
-				<a href="#" class="playVid"></a>
+				<a href="#hero-video" class="playVid"></a>
 			</div>
 			<!--a href="#" class="CTA visible-xs"><span>get the study</span></a-->
 		</div>
 <!-- end hero area -->
 		<div id="accMark" class="hidden-xs"></div>
 		<div id="accMarkMob" class="visible-xs"></div>
-		<div class="whiteAngle hidden-xs"></div>
+		<div class="whiteAngle hidden-xs"><img src="images/bg-white-angle.png" /></div>
 <!-- background images -->
 		<div class="bgImages hidden-xs" id="bgImages">
-			<div class="bgImg"><img src="images/bg-bridge.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-bridge.png" /></div>
+			<div class="bgImg"><img src="images/bg-ocean.png" /></div>
+			<div class="bgImg"><img src="images/bg-boat.png" /></div>
+			<div class="bgImg"><img src="images/bg-edinburgh.png" /></div>
+			<div class="bgImg"><img src="images/bg-field.png" /></div>
+			<div class="bgImg"><img src="images/bg-lake.png" /></div>
+			<div class="bgImg"><img src="images/bg-sunflower.png" /></div>
+			<div class="bgImg"><img src="images/bg-sea.png" /></div>
+			<div class="bgImg"><img src="images/bg-beach.png" /></div>
+			<div class="bgImg"><img src="images/bg-japanese.png" /></div>
+			<!--div class="bgImg"><img src="images/bg-bridge.jpg" /></div>
 			<div class="bgImg"><img src="images/bg-ocean.jpg" /></div>
 			<div class="bgImg"><img src="images/bg-boat.jpg" /></div>
 			<div class="bgImg"><img src="images/bg-edinburgh.jpg" /></div>
@@ -134,7 +145,7 @@
 			<div class="bgImg"><img src="images/bg-sunflower.jpg" /></div>
 			<div class="bgImg"><img src="images/bg-sea.jpg" /></div>
 			<div class="bgImg"><img src="images/bg-beach.jpg" /></div>
-			<div class="bgImg"><img src="images/bg-japanese.jpg" /></div>
+			<div class="bgImg"><img src="images/bg-japanese.jpg" /></div-->
 		</div>
 <!-- end background images -->
 <!-- insight #1 -->

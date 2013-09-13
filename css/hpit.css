@@ -23,7 +23,7 @@ a:focus {
 html, body {
 	margin: 0;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 14px !important;
 	line-height: 18px;
 }
 html, body {
@@ -55,7 +55,7 @@ img {
 	padding:0;
 }
 .container.main {
-	padding-top:860px;
+	padding-top: 780px;
 	position: relative;
 }
 .onMobile .container.main {
@@ -271,7 +271,7 @@ img {
 }
 
 #accMark {
-	top: 269px;
+	top: 240px;
 	left: 0;
 	position: absolute;
 	display: inline-block;
@@ -280,6 +280,11 @@ img {
 	z-index: 1;
 	width: 532px;
 	height: 536px;
+	pointer-events: none;
+	/*width: 40%;
+	height: 100%;
+	max-width: 532px;
+	max-height: 536px;*/
 	background-image:url("../images/accenture-mark.png");
 	background-size: 100% auto;	
 	background-repeat: no-repeat;
@@ -405,52 +410,61 @@ img {
 	overflow: hidden;
 }
 .whiteAngle {
-	width:100%;
-	height:800px;
+	width: 100%;
+	height: 800px;
 	position:absolute;
-	background-color: #fff;
-	top:650px;
+	background-color: transparent;
+	top: 365px;
 	right: 0px;
 	z-index: 0;
 	display: inline-block;
-	overflow: hidden;
-	transform:skew(0deg,-22deg);
+	overflow: visible;
+	pointer-events: none;
+	/*transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
-	-webkit-transform:skew(0deg,-22deg);
+	-webkit-transform:skew(0deg,-22deg);*/
+}
+.whiteAngle img {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.whiteAngle.fixed {
+	position:fixed;
+	top: -490px;
 }
 .bgImages {
 	width:100%;
-	height:1200px;
+	min-height: 1800px;
 	position:absolute;
-	top:650px;
+	top: 359px;
 	left: 0px;
 	z-index: 0;
 	display: inline-block;
 	overflow: hidden;
-	transform:skew(0deg,22deg);
+	background-color: transparent;
+	pointer-events: none;
+	/*transform:skew(0deg,22deg);
 	-ms-transform:skew(0deg,22deg);
 	-webkit-transform:skew(0deg,22deg);
 	-webkit-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, .75);
 	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, .75);
-	background-color: #000;
-}
-.whiteAngle.fixed {
-	position:fixed;
-	top:38px;
-	right: 0px;
+	background-color: #000;*/
 }
 .bgImages.fixed {
 	position:fixed;
-	top:-210px;
+	top: -490px;
 	right: 0px;
 }
 .bgImages .bgImg {
 	position:absolute;
-	top:-324px;
+	top: 0px;
 	left: 0px;
-	transform:skew(0deg,-22deg);
+	width: 100%;
+	height: 100%;
+	/*transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
-	-webkit-transform:skew(0deg,-22deg);
+	-webkit-transform:skew(0deg,-22deg);*/
 }
 .bgImages .bgImg[data-insight="1"] {z-index: 9;}
 .bgImages .bgImg[data-insight="2"] {z-index: 8;}
@@ -465,7 +479,8 @@ img {
 .bgImages .bgImg img {
 	/*transition: all 0.5s ease-in-out 0s;*/
 	margin:0 0 0 0;
-	height: 1200px;
+	width: 100%;
+	height: auto;
 }
 .bgImages .bgImg img.activate {
     /*
@@ -526,7 +541,7 @@ img {
 .insight .insightTitle {
 	position:absolute;
 	text-align: left;
-	top:170px;
+	top: 100px;
 	left: 200px;
 	width:28%;
 	color:#fff;
@@ -610,7 +625,7 @@ img {
 .insight .content {
 	position:relative;
 	margin:0 auto;
-	margin-top: 170px;
+	margin-top: 100px;
 	max-width:1000px;
 	width:75%;
 	overflow:visible;
@@ -1114,687 +1129,112 @@ img {
 	position: absolute;
 	left: 0px;
 	top: 400px;
-	color: #fff;
+	color: #fff !important;
 	background-color: #000;
-	padding: 15px 0;
+	padding: 0px 0px 0px 0px;
 }
 
-#ll-overlay .chapters > * {
-	color: #666;
+#ll-overlay .chapters > div {
 	display: inline-block;
 	float: left;
+	clear: both;
+	width: 100%;
+	height: 47px;
+	overflow: hidden;
 }
 
-#ll-overlay .chapters a {
-	color: #fff;
-	padding: 0 15px;
+#ll-overlay .chapters .topRow > * {
+	display: inline-block;
+	float: left;
+	/*height: 18px;*/
+	line-height: 17px;
+	padding: 15px;
+	margin: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+#ll-overlay .chapters .topRow h5 {
+	font-weight: bold;
+	color: #ba2542;
+	line-height: 17px;
+}
+
+#ll-overlay .chapters .topRow a {
+	color: #fff !important;
+	padding: 15px;
+	font-weight: bold;
+	line-height: 17px;
+}
+
+#ll-overlay .chapters .topRow a:hover,
+#ll-overlay .chapters .topRow a:focus {
+	text-decoration: none;
+}
+
+#ll-overlay .chapters .topRow a:hover {
+	background-color: #ba2542;
+}
+
+#ll-overlay .chapters .contentRow {
+	height: auto;
+	padding: 15px;
+	color: #fff !important;
+	font-weight: bold;
+	background-color: #ba2542;
+	display: none;
+	line-height: 17px;
 }
 /*********************************  end Limelight overlay  *******************************/
 /*********************************  responsive  ******************************************/
-
 /* less than ipad */
 @media only screen and (max-width : 767px) {
-	.container > .navbar-header,
-	.container > .navbar-collapse {
-		margin: 0;
-		padding: 0;
-	}
-	.container > .navbar-header {
-		border-bottom: 2px solid #363636;
-	}
-	.container > .navbar-collapse {
-		border: 0;
-	}
-	.container > .navbar-collapse .navbar-nav {
-		margin: 0;
-	}
-	.container > .navbar-collapse .navbar-nav {
-		display: table;
-		margin: 0;
-		overflow: hidden;
-		width: 100%;
-	}
-	.navbar-nav > li {
-		display: table-cell;
-		min-width: 0;
-		width: 31%;
-		text-align: center;
-	}
-	.navbar-nav > li.download {
-		width: 38%;
-		border: 0;
-	}
-	.navbar-default .navbar-nav > li > a {
-		font-size: 21px;
-		line-height: 26px;
-		padding: 20px 10px;
-		display: inline-block;
-	}
-	.navbar-nav > li .social {
-		padding: 20px 0;
-		right: 23%;
-		width: auto;
-	}
-	.navbar-default .navbar-nav > li > a > .icn {
-		margin-top: 3px;
-	}
-	/*
-	.navbar-nav .contact .icn {
-		background-position: 0 -36px;
-	}
-	.navbar-nav .share .icn {
-  		background-position: 0 -1px;
-	}
-	.navbar-nav .download .icn {
-		background-position: 0 -19px;
-	}
-	.navbar-nav > li .social > a {
-	  background-size: auto 100%;
-	  height: 16px;
-	  margin-right: 4px;
-	  width: 16px;
-	}
-	.social .twitter {
-	  	background-position: -19px 0;
-	}
-	.social .facebook {
-	  	background-position: -39px 0;
-	}
-	 .social .google {
-	  	background-position: -58px 0;
-	  	margin-right: 0 !important;
-	}
-	*/
-
-	.hero {
-		height: auto;
-		min-height: 888px;
-	}
-	.hero .video-wrapper {
-		height: 500px;
-	}
-	.hero video {
-		/*height:500px;*/
-	}
-	.hero > div {
-		margin:118px auto 0 auto;
-		padding:195px 0 0 0;
-		width: 88%;
-		z-index: 5;
-	}
-	.hero > div .playVid {
-		top: 0;
-		bottom: auto;
-		/*width: 95px;
-		height: 95px;
-		margin-left: -47.5px;
-		background-image:url("../images/play.png");*/
-	}
-	.hero > div .playVid:hover {
-		/*background-position: 0 -95px;*/
-	}
-	.hero > div h3 {
-		font-size: 22px;
-	}
-	.hero > div h1 {
-		font-size: 52px;
-		margin: 20px auto 25px auto;
-		width: 90%;
-	}
-	.hero > div p {
-		font-size: 24px;
-		line-height: 1.25em;
-		width: 97%;
-	}
-	.hero > div p strong {
-		white-space: normal;
-	}
-	#accMarkMob {
-		position: absolute;	
-		left: 0;
-		display: inline-block;
-		overflow: hidden;
-		z-index: 1;
-		pointer-events:none;	
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		top: 300px;
-		width: 100%;
-		height: auto;
-		min-height: 650px;
-		background-image:url("../images/accenture-mark-mobile.png");
-		background-size: 100% auto;
-	}
-
-	.insight {
-		border-top: 2px solid #dbdbdb;
-		padding: 0 0 0 0;
-		overflow: visible;
-	}
-	.insight .insightTitle {
-		color: #000000;
-		font-size: 20px;
-		font-weight: bold;
-		left: auto;
-		overflow: visible;
-		position: relative;
-		text-align: left;
-		top: auto;
-		width: 100%;
-		z-index: auto;
-		display: inline-block;
-		padding: 50px 25px;
-	}
-	.insight .insightTitle h3 {
-		font-size: 42px;
-		line-height: 48px;
-		max-width: 83%;
-	}
-	.insight .insightTitle h6 {
-		font-size: 20px;
-	}
-	.insight[data-insight="1"] .insightTitle h6 {color:#aa1133;}
-	.insight[data-insight="2"] .insightTitle h6 {color:#ff0000;}
-	.insight[data-insight="3"] .insightTitle h6 {color:#dd4411;}
-	.insight[data-insight="4"] .insightTitle h6 {color:#ff9900;}
-	.insight[data-insight="5"] .insightTitle h6 {color:#bbbb00;}
-	.insight[data-insight="6"] .insightTitle h6 {color:#00aa99;}
-	.insight[data-insight="7"] .insightTitle h6 {color:#00bbee;}
-	.insight[data-insight="8"] .insightTitle h6 {color:#3399cc;}
-	.insight[data-insight="9"] .insightTitle h6 {color:#ff3366;}
-	.insight[data-insight="10"] .insightTitle h6 {color:#551155;}
-
-	.insight .content {
-		position:relative;
-		margin:-3px 0 0 0;
-		width:100%;
-		max-width:100%;
-		overflow:visible;
-	}
-
-	.insight .content > .row {
-		margin: 0;
-	}
-	.insight .content .right-col > div {
-		padding:25px;
-		font-size: 22px;
-		line-height: 26px;
-		border-bottom: 1px solid #ccc;
-	}
-	.insight .content .right-col > div.social {
-		padding: 5px 9px 8px 25px;
-		text-align: right;
-	}
-	.insight .content .right-col > div.heading {
-		padding: 30px 50px 25px 25px;
-		margin: -3px 25px 0 25px;
-	}
-	.insight .content .right-col > div.heading .heading {
-		font-size: 22px;
-		margin-bottom: 40px !important;
-	}
-	.insight .content .right-col > div .quote {
-		font-size: 32px;
-		line-height:38px;
-	}
-	.insight .content .right-col > div .tr > span.txt {
-		line-height: 26px;
-		padding-top: 5px;
-	}
-	.insight .content .right-col > div .tr > span.txt strong {
-		line-height: 36px;
-		font-size: 32px;
-		margin-bottom: 7px;
-	}
-	#footer {
-		background-color: #000;
-		background-image: none;
-		padding: 25px;
-	}
-	#footer > div {
-		margin: 0;
-	}
-	#ll-overlay .inner {
-		height: 100%;
-		width: 90%;
-	}
-	#ll-overlay #ll-player {
-		height: 50%;
-		width: 100%;
-	}
-}
-
-/* phones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-}
- 
-/* phones (landscape) */
-@media only screen and (min-width : 321px) {
 
 }
 
-/* max-width = 360px */
-@media only screen and (max-width : 360px) {
-	.navbar-nav > li {
-		display: table-cell;
-		min-width: 0;
-		width: 30%;
-	}
-	.navbar-nav > li.download {
-		width: 40%;
-		border: 0;
-	}
-	.navbar-default .navbar-nav > li > a {
-		font-size: 11px;
-		line-height: 16px;
-		padding:  10px 10px;
-	}
-	.navbar-default .navbar-nav > li > a > .icn {
-		background-size: 100% auto;
-		width: 16px;
-		height: 16px;
-		line-height: 16px;
-		margin-right: 7px;
-		margin-top: 0;
-	}
-	.navbar-nav .contact .icn {
-		background-position: 0 -36px;
-	}
-	.navbar-nav .share .icn {
-  		background-position: 0 -1px;
-	}
-	.navbar-nav .download .icn {
-		background-position: 0 -19px;
-	}
-	.navbar-nav > li .social {
-		line-height: 26px;
-		padding: 11px 9px;
-		right: 0;
-		width: 100%;
-	}
-	.navbar-nav > li .social > a {
-	  background-size: auto 100%;
-	  height: 16px;
-	  margin-right: 4px;
-	  width: 16px;
-	}
-	.navbar-nav > li .social .linkedin {
-	  	background-position: 0 0;
-	}
-	.navbar-nav > li .social .twitter {
-	  	background-position: -19px 0;
-	}
-	.navbar-nav > li .social .facebook {
-	  	background-position: -38px 0;
-	}
-	.navbar-nav > li .social .google {
-	  	background-position: -58px 0;
-	}
-	/*
-	.social .twitter {
-	  	background-position: -19px 0;
-	}
-	.social .facebook {
-	  	background-position: -39px 0;
-	}
-	 .social .google {
-	  	background-position: -58px 0;
-	  	margin-right: 0 !important;
-	}
-	*/
-	.container.main {
-		width: 100%;
-	}
-	.hero {
-		height: auto;
-		min-height: 455px;
-	}
-	.hero .CTA {
-		bottom: 30px;
-		margin-left: -71px;
-		width: 142px;
-		height: 32px;
-		line-height: 32px;
-		font-size: 13px;
-	}
-	.hero .video-wrapper {
-		height: 250px;
-	}	
-	.hero > div {
-		margin: 50px auto 0 auto;
-		padding: 85px 0 0 0;
-	}
-	.hero > div .playVid {
-		width: 50px;
-		height: 50px;
-		margin-left: -25px;
-	}
-	.hero > div .playVid:hover {
-		background-position: 0 -50px;
-	}
-	.hero > div h3 {
-		font-size: 13px;
-		width: 106%;
-		margin-left: -3%;
-	}
-	.hero > div h1 {
-		font-size: 28px;
-		margin: 10px auto;
-	}
-	.hero > div p {
-		font-size: 13px;
-		line-height: 1.25em;
-		width: 97%;
-	}
-	#accMarkMob {
-		position: absolute;	
-		left: 0;
-		display: inline-block;
-		overflow: hidden;
-		z-index: 1;
-		pointer-events:none;	
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		top: 150px;
-		width: 100%;
-		height: auto;
-		min-height: 366px;
-		background-image:url("../images/accenture-mark-mobile.png");
-		background-size: 100% auto;
-	}
-	.insight .insightTitle {
-		padding-top: 25px;
-		padding-bottom: 25px;
-	}
-	.insight .insightTitle h6 {
-		font-size: 16px;
-	}
-	.insight .insightTitle h3 {
-		font-size: 26px;
-		line-height: 30px;
-	}
-	.insight .insightTitle .toggler {
-		top: 35px;
-		padding:13px;
-	}
-	.insight .insightTitle .toggler span {
-		width: 15px;
-		height: 15px;
-		line-height: 15px;
-		background-image:url("../images/bg-toggler.png");
-		background-repeat: no-repeat;
-	  	background-position: 0 0;
-	  	background-size: 100% auto;
-	}
-	.insight.open .insightTitle .toggler span {	
-	  	background-position: 0 -15px;
-	}
-	.insight .content .right-col > div {
-		font-size: 16px;
-		line-height: 20px;
-	}
-	.insight .content .right-col > div.heading {
-		padding: 25px;
-	}
-	.insight .content .right-col > div.heading .heading {
-		font-size: 15px;
-	}
-	.insight .content .right-col > div .quote {
-		font-size: 24px;
-		line-height: 28px;
-	}
-	.insight .content .right-col > div .tr > span.num {
-		font-size: 18px;
-		height: 36px;
-		line-height: 36px;
-		width: 36px;
-	}
-	.insight .content .right-col > div .tr > span.txt {
-		font-size: 14px;
-		line-height: 18px;
-	}
-	.insight .content .right-col > div .tr > span.txt strong {
-		font-size: 24px;
-		line-height: 28px;
-	}
-}
- 
-/* phones (portrait) */
-@media only screen and (max-width : 320px) {
-	#accMarkMob {
-		min-height: 325px;
-	}	
-	.hero {
-		height: auto;
-		min-height: 464px;
-	}
-}
- 
-/* ipad (portrait and landscape) */
-/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) */
+/* 1024 x 768 */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-	.whiteAngle,
-	.bgImages {
-		display: none !important;
-	}
-	.container.main {
-		padding-top: 0 !important;
-		padding-bottom: 200px;
-		background-color: #000;
-	}
-	.hero {
-		position: relative !important;
-		height: 450px;
-		background-color: #000;
-	}
-	.hero .video-wrapper {
-		height: 450px;
-	}
 	.hero > div {
-		z-index: 5;
-		padding: 7% 0 125px;
-	}
-	.hero > div h1 {
-		font-size: 48px;
-		width: 90%;
-	}
-	.hero > div h3 {
-		font-size: 21px;
-	}
-	.hero > div p {
-		width: 70%;
-	}
-	.hero > div .playVid {
-		width: 95px;
-		height: 95px;
-		margin-left: -47.5px;
-		background-image:url("../images/play-lg.png");
-	}
-	.hero > div .playVid:hover {
-		background-position: 0 -95px;
+	  padding: 7% 0 72px;
 	}
 	#accMark {
-		top: 94px;
+	  width: 426px;
+	  height: 429px;
+	  top: 269px;
 	}
-
-	.insight[data-insight="10"] {
-		background-image:url("../images/bg-japanese.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="9"] {
-		background-image:url("../images/bg-beach.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="8"] {
-		background-image:url("../images/bg-sea.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="7"] {
-		background-image:url("../images/bg-sunflower.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="6"] {
-		background-image:url("../images/bg-lake.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="5"] {
-		background-image:url("../images/bg-field.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="4"] {
-		background-image:url("../images/bg-edinburgh.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="3"] {
-		background-image:url("../images/bg-boat.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="2"] {
-		background-image:url("../images/bg-ocean.jpg");
-		background-repeat: no-repeat;
-	  	background-position: top center;
-	  	background-size: auto 100%;
-	}
-	.insight[data-insight="1"] {
-		background-image:url("../images/bg-bridge.jpg");
-		background-repeat: no-repeat !important;
-	  	background-position: top center !important;
-	  	background-size: auto 100% !important;
-	}
-	.insight .insightTitle {
-		top: 100px;
-	}
-	.insight .marker {
-		top: 135px;
-	}
-	.insight .content {
-		margin-top: 100px;
-	}
-	.insight .insightTitle {
-		left: 190px;
-		width: 29%;
-	}
-	.insight.current .insightTitle {
-		position: absolute !important;
-		top: 100px !important;
-	}
-	.insight.current  {
-		background-attachment: scroll !important;
-		background-repeat: no-repeat !important;
-	  	background-position: top center !important;
-	  	background-size: auto 100% !important;
-	}
-	.insight.current .marker {
-		position: absolute !important;
-		top: 135px !important;
-	}
-	#footer {
-		position: absolute;
-		bottom: 0;
-		left: 0;
+	.bgImages,.whiteAngle {
+	  top: 364px;
 	}
 }
- 
-/* ipad (landscape) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
-}
- 
-/* ipad (portrait) */
-/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) */
-@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
-	.insight .insightTitle {
-		left: 180px;
-		width: 25%;
-	}
-	.insight .insightTitle h3 {
-		font-size: 36px;
-		line-height: 42px;
-	}
-	.hero video {
-		height: 100%;
-		width: auto;
-	}
-	.hero > div p {
-		width: 90%;
-	}
-}
- 
-/* medium screens */
-@media only screen and (min-width : 1224px) {
-
-}
- 
-/* larger screens */
-@media only screen and (min-width : 1824px) {
-
-}
- 
-/* iphone 4 */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-
-}
-
-/* iphone 5 */
-@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
-
-}
-
-/* Samsung S3 */
-@media only screen and (-webkit-device-pixel-ratio: 2) {
-	#accMarkMob {
-		position: absolute;	
-		left: 0;
-		display: inline-block;
-		overflow: hidden;
-		z-index: 1;
-		pointer-events:none;	
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		width: 100%;
-		height: auto;
-		min-height: 325px;
-		background-image:url("../images/accenture-mark-mobile.png");
-		background-size: 100% auto;
-	}
-}
- 
-/* test - galaxy s3??? */
-@media only screen and (min-device-width : 360px) and (max-device-width : 720px) {
-	#accMarkMob {
-		min-height: 550px;
-	}		
-	.hero {
-		height: auto;
-		min-height: 880px;
+/*  */
+@media only screen and (max-width : 1023px) {
+	.hero > div {
+	  width: 55%;
 	}
 	.hero > div h3 {
-		font-size: 18px;
+	  font-size: 16px;
 	}
 	.hero > div h1 {
-		font-size: 44px;
+	  font-size: 42px;
 	}
 	.hero > div p {
-		font-size: 18px;
+	  font-size: 13px;
+	  width: 75%;
+	}
+	#accMark {
+	  width: 320px;
+	  height: 322px;
+	}
+	.bgImages,.whiteAngle {
+	  top: 340px;
+	}
+	/*
+	.bgImages {
+		min-height: 2135px;
+	}
+	*/
+	.container.main {
+	  padding-top: 592px;
 	}
 }
 /*********************************  end responsive  **************************************/

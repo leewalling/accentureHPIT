@@ -40,6 +40,18 @@ hpit.config = {
 		backToTop: 2000,
 		desktop: 1500,
 		touch: 1
+	},
+	chapterDescriptions: {
+		'1': 'Chapter 1 description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi nisl, elementum a nulla sit amet.',
+		'2': 'Chapter 2 description Nulla euismod est ante, a aliquet arcu lobortis mattis. Curabitur eget turpis lectus.',
+		'3': 'Chapter 3 description Pellentesque ac enim pulvinar, cursus ipsum ac, fringilla orci. Pellentesque fringilla est...',
+		'4': 'Chapter 4 description Ut odio est, consequat eu nisi vitae, euismod sagittis quam. Quisque eget ipsum pulvinar purus.',
+		'5': 'Chapter 5 description Cras pulvinar, erat ac tincidunt posuere, erat quam cursus leo, ac commodo dolor quam commodo tortor.',
+		'6': 'Chapter 6 description Vivamus eros diam, ultricies id nulla sed, euismod porttitor mi. Cras sed ornare arcu.',
+		'7': 'Chapter 7 description Sed ultricies aliquam arcu, eu fermentum lacus hendrerit id. Duis gravida dignissim purus...',
+		'8': 'Chapter 8 description Maecenas egestas nisi in convallis pellentesque. Cum sociis natoque penatibus et magnis dis.',
+		'9': 'Chapter 9 description Phasellus ac leo lorem. Sed rutrum cursus leo, eu facilisis diam adipiscing et. Etiam imperdiet.',
+		'10': 'Chapter 10 description In non augue dolor. Curabitur hendrerit felis nisl, id dignissim nisi gravida in.'
 	}
 };
 
@@ -508,6 +520,13 @@ hpit.core = (function(){
 			e.preventDefault();
 			$("#hero video")[0].pause();
 			$('#ll-overlay').fadeIn(500);
+
+			/*
+			omniTrack({
+				eventName: $(this).attr('href').replace('#',''),
+				eventType: 'video-button-click'
+			});
+			*/
 		});
 
 		// close button
@@ -522,11 +541,27 @@ hpit.core = (function(){
 				});
 		});
 
-		// chapters
-		$('.chapters a').on('click',function(e){
+		// video chapters
+		$('.chapters a')
+		.on('click',function(e){
 			e.preventDefault();
-			var secs = $(this).attr('href');
-			DelvePlayer.doSeekToSecond(secs);
+			var skipTo = parseInt($(this).attr('href').replace('#',''));
+			//console.log('DelvePlayer: ', DelvePlayer);
+			console.log('DelvePlayer: ', DelvePlayer);
+			try {
+				DelvePlayer.doSeekToSecond(skipTo);
+			} catch(err) {
+				console.log('DelvePlayer error: ', err);
+			}			
+		})
+		.on('mouseenter',function(e){			
+			var thisNum = $(this).text();
+			console.log('thisNum: ', thisNum);
+			$('#ll-overlay .chapters .contentRow').text(hpit.config.chapterDescriptions[thisNum]).show();
+		})
+		.on('mouseleave',function(e){
+			$('#ll-overlay .chapters .contentRow').hide().text('');
+			console.log('clear description');
 		});
 	}
 
@@ -628,6 +663,16 @@ hpit.core = (function(){
 		}
 	}
 
+	function omniTrack(objct){
+		console.log('Object passed: ', objct);
+		
+		try {
+			FlashLinkAnalysis( top.location.href, objct.eventName, objct.eventType );
+		} catch(err) {
+			console.log('Tracking error: ', err);
+		}
+	}
+
 	function isTouchDevice(){
 		return hpit.config.desktopORtouch == 'touch';
 	}
@@ -691,10 +736,56 @@ $.fn.extend({
 });
 
 function delvePlayerCallback(playerId, eventName, data) {		
-  var id = "limelight_player_156792";
-  if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
-    DelvePlayer.registerPlayer(id);
-  }
+	var id = "limelight_player_239897";
+	if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
+		DelvePlayer.registerPlayer(id);
+	}
+	    
+	switch (eventName) {
+		case 'onPlayerLoad':
+			doOnPlayerLoad();
+			break;
+		case 'onError':
+			doOnError(data);
+			break;
+		
+		case 'onPlayStateChanged':
+			doOnPlayStateChanged(data);
+			break;
+		
+		case 'onPlayheadUpdate':
+			doonPlayheadUpdate(data);
+			break;
+		
+		/*case 'onChannelLoad':
+			doOnChannelLoad(data);
+			break;
+		
+		case 'onMediaLoad':
+			doOnMediaLoad(data);
+			break;
+		
+		case 'onPlayheadUpdate':
+			doOnPlayheadUpdate(data);
+			break;
+		*/
+	}
+}
+
+function doOnPlayerLoad(){
+	console.log('player loaded');
+}
+
+function doOnError(data){
+	console.log('player error: ', data);
+}
+
+function doOnPlayStateChanged(data){
+	console.log('player state: ', data);
+}
+
+function doonPlayheadUpdate(data){
+	console.log('Playhead update: ', data);
 }
 
 $(document).ready(function(){
