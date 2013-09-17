@@ -654,9 +654,9 @@ hpit.core = (function(){
 		$('.chapters a')
 			.on('click',function(e){
 				e.preventDefault();
-				var skipTo = parseInt($(this).attr('href').replace('#',''));
-				//console.log('DelvePlayer: ', DelvePlayer);
-				//console.log('DelvePlayer: ', DelvePlayer);
+				//var skipTo = parseInt($(this).attr('href').replace('#',''));
+				var skipTo = hpit.config.chapters[$(this).text()].position / 1000;
+				//console.log('skipTo: ', skipTo);
 				try {
 					DelvePlayer.doSeekToSecond(skipTo);
 				} catch(err) {

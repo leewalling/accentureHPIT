@@ -37,16 +37,16 @@
 			<div class="chapters">
 				<div class="topRow">
 					<h5>Chapters</h5>
-					<a href="#0">1</a>
-					<a href="#18">2</a>
-					<a href="#37">3</a>
-					<a href="#56">4</a>
-					<a href="#75">5</a>
-					<a href="#94">6</a>
-					<a href="#112">7</a>
-					<a href="#131">8</a>
-					<a href="#150">9</a>
-					<a href="#168">10</a>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
 				</div>
 				<div class="contentRow"></div>
 			</div>
