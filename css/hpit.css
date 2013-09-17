@@ -1035,12 +1035,14 @@ img {
 /******************************  end navbar overrides  **********************************/
 /******************************  Sharepoint overrides  **********************************/
 
-#skiptargetholder {
+#skiptargetholder,
+#skipfootertargetholder {
 	margin: 0;
 }
 #skiplinkholder {
 	display:none;
 }
+
 .banner {
 	display:none;
 }

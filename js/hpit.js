@@ -35,6 +35,7 @@ hpit.config = {
 	currPageView: 0,
 	currInsight: 0,
 	state: 0,
+	justClicked: false,
 	locked: false,
 	debugLogging: false,
 	scrW: null,
@@ -134,21 +135,32 @@ hpit.core = (function(){
 	var $iOS = /iphone|ipod|ios/i.test( $userAgent );
 	var $iPad = /ipad/i.test( $userAgent );
 	//var $iPad = true;
+	var chapterClicked;
 
 	//	Initialize
 	function init(){
-		preload([
-			'images/bg-bridge.png',
-			'images/bg-ocean.png',
-			'images/bg-boat.png',
-			'images/bg-edinburgh.png',
-			'images/bg-field.png',
-			'images/bg-lake.png',
-			'images/bg-sunflower.png',
-			'images/bg-sea.png',
-			'images/bg-beach.png',
-			'images/bg-japanese.png'
-		]);
+
+		//console.log('hpit.config.scrW: ', $(window).width());
+		//console.log('$Android: ', $Android);
+		//console.log('$iOS: ', $iOS);
+		
+		if(!onMobile() && !onIpad()){
+			//console.log('preloading!');
+			preload([
+				'images/bg-bridge.png',
+				'images/bg-ocean.png',
+				'images/bg-boat.png',
+				'images/bg-edinburgh.png',
+				'images/bg-field.png',
+				'images/bg-lake.png',
+				'images/bg-sunflower.png',
+				'images/bg-sea.png',
+				'images/bg-beach.png',
+				'images/bg-japanese.png'
+			]);
+		} else {
+			//console.log('NO preload');
+		}
 		
 		//$('#diagnostics').html($userAgent);
 		
@@ -250,7 +262,7 @@ hpit.core = (function(){
 	}
 
 	function onMobile() {
-		return ( ( hpit.config.scrW < 768 ) || $Android || $iOS ); // || $iPad
+		return ( ( $(window).width() < 768 ) || $Android || $iOS ); // || $iPad
 	}
 
 	function onIpad() {
@@ -654,14 +666,21 @@ hpit.core = (function(){
 		$('.chapters a')
 			.on('click',function(e){
 				e.preventDefault();
-				//var skipTo = parseInt($(this).attr('href').replace('#',''));
+				clearTimeout(chapterClicked);
+				hpit.config.justClicked = true;
+
 				var skipTo = hpit.config.chapters[$(this).text()].position / 1000;
-				//console.log('skipTo: ', skipTo);
+				
 				try {
 					DelvePlayer.doSeekToSecond(skipTo);
 				} catch(err) {
-					//console.log('DelvePlayer error: ', err);
-				}			
+					console.log('DelvePlayer error: ', err);
+				}
+
+				chapterClicked = setTimeout(function(){
+					hpit.config.justClicked = false;
+					console.log('justClicked cleared');
+				}, 4000);
 			})
 			.on('mouseenter',function(e){			
 				var thisNum = $(this).text();
@@ -918,7 +937,12 @@ function doonPlayheadUpdate(data){
 
 	if(hpit.config.currChap != hpit.config.activeChap){
 		hpit.config.activeChap = hpit.config.currChap;
+		//console.log('justClicked: ', hpit.config.justClicked);
 		//console.log('Switching to chapter: ', hpit.config.activeChap);
+
+		if(!hpit.config.justClicked){
+			console.log('track chapter rollover here!');
+		}
 
 		$('#ll-overlay .chapters .topRow a')
 			.removeClass('active')
