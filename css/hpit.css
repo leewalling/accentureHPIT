@@ -33,6 +33,16 @@ html, body {
 #aspnetForm {
 	overflow: hidden;
 }
+#diagnostics {
+	display:block;
+	padding:10px;
+	background:red;
+	color:white;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+}
 ol.normal {
 	list-style-type: decimal;
 	list-style-position: outside;

@@ -17,7 +17,7 @@
 	</head>
 	<body>
 
-	<!--div id="diagnostics" style="display:none;padding:10px;background:red;color:white;position:fixed;top:0;left:0;z-index:9999;"></div-->
+	<div id="diagnostics"></div>
 
 <!-- video overlay -->
 	<div id="ll-overlay">
@@ -669,7 +669,7 @@
 
 		<!--script src="js/modernizr-latest.js"></script-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.1.7.2-min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<!--script src="http://assets.delvenetworks.com/player/embed.js"></script-->
 		<script src="js/bootstrap.min.js"></script>
