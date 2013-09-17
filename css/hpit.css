@@ -271,7 +271,7 @@ img {
 }
 
 #accMark {
-	top: 240px;
+	top: 241px;
 	left: 0;
 	position: absolute;
 	display: inline-block;
@@ -413,16 +413,17 @@ img {
 	width: 100%;
 	height: 800px;
 	position:absolute;
-	background-color: transparent;
-	top: 365px;
+	background-color: #fff;
+	top: 616px;
 	right: 0px;
 	z-index: 0;
 	display: inline-block;
 	overflow: visible;
 	pointer-events: none;
-	/*transform:skew(0deg,-22deg);
+	transform:skew(0deg,-22deg);
 	-ms-transform:skew(0deg,-22deg);
-	-webkit-transform:skew(0deg,-22deg);*/
+	-webkit-transform:skew(0deg,-22deg);
+	/**/
 }
 .whiteAngle img {
 	position: absolute;
@@ -431,7 +432,7 @@ img {
 }
 .whiteAngle.fixed {
 	position:fixed;
-	top: -490px;
+	top: 0px;
 }
 .bgImages {
 	width:100%;
@@ -453,7 +454,7 @@ img {
 }
 .bgImages.fixed {
 	position:fixed;
-	top: -490px;
+	top: -429px;
 	right: 0px;
 }
 .bgImages .bgImg {
@@ -479,8 +480,9 @@ img {
 .bgImages .bgImg img {
 	/*transition: all 0.5s ease-in-out 0s;*/
 	margin:0 0 0 0;
-	width: 100%;
-	height: auto;
+	width: auto;
+	max-width: 5000px;
+	height: 100%;
 }
 .bgImages .bgImg img.activate {
     /*
@@ -1171,6 +1173,7 @@ img {
 	text-decoration: none;
 }
 
+#ll-overlay .chapters .topRow a.active,
 #ll-overlay .chapters .topRow a:hover {
 	background-color: #ba2542;
 }
@@ -1225,14 +1228,12 @@ img {
 	  width: 320px;
 	  height: 322px;
 	}
-	.bgImages,.whiteAngle {
+	.whiteAngle {
+	  top: 504px;
+	}
+	.bgImages {
 	  top: 340px;
 	}
-	/*
-	.bgImages {
-		min-height: 2135px;
-	}
-	*/
 	.container.main {
 	  padding-top: 592px;
 	}

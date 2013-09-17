@@ -22,10 +22,17 @@ function setCookie(cname, cvalue) {
 	document.cookie = cname + '=' + escape(cvalue);
 }
 
+function preload(arrayOfImages) {
+	$(arrayOfImages).each(function(){
+		$('<img/>')[0].src = this;
+	});
+}
+
 var hpit = window.hpit || {};
 
 // initial config
 hpit.config = {
+	currPageView: 0,
 	currInsight: 0,
 	state: 0,
 	locked: false,
@@ -38,20 +45,84 @@ hpit.config = {
 	easing: 'easeInOutExpo',
 	duration: {
 		backToTop: 2000,
-		desktop: 1500,
+		desktop: 2000,
 		touch: 1
 	},
-	chapterDescriptions: {
-		'1': 'Chapter 1 description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi nisl, elementum a nulla sit amet.',
-		'2': 'Chapter 2 description Nulla euismod est ante, a aliquet arcu lobortis mattis. Curabitur eget turpis lectus.',
-		'3': 'Chapter 3 description Pellentesque ac enim pulvinar, cursus ipsum ac, fringilla orci. Pellentesque fringilla est...',
-		'4': 'Chapter 4 description Ut odio est, consequat eu nisi vitae, euismod sagittis quam. Quisque eget ipsum pulvinar purus.',
-		'5': 'Chapter 5 description Cras pulvinar, erat ac tincidunt posuere, erat quam cursus leo, ac commodo dolor quam commodo tortor.',
-		'6': 'Chapter 6 description Vivamus eros diam, ultricies id nulla sed, euismod porttitor mi. Cras sed ornare arcu.',
-		'7': 'Chapter 7 description Sed ultricies aliquam arcu, eu fermentum lacus hendrerit id. Duis gravida dignissim purus...',
-		'8': 'Chapter 8 description Maecenas egestas nisi in convallis pellentesque. Cum sociis natoque penatibus et magnis dis.',
-		'9': 'Chapter 9 description Phasellus ac leo lorem. Sed rutrum cursus leo, eu facilisis diam adipiscing et. Etiam imperdiet.',
-		'10': 'Chapter 10 description In non augue dolor. Curabitur hendrerit felis nisl, id dignissim nisi gravida in.'
+	groups: {
+		'insight1': {
+			newHash: '#your-new-boss-your-customer'
+		},
+		'insight2': {
+			newHash: '#technology-is-inseparable-from-business-strategy'
+		},
+		'insight3': {
+			newHash: '#context-is-king'
+		},
+		'insight4': {
+			newHash: '#flexibility-first'
+		},
+		'insight5': {
+			newHash: '#be-fearlessly-digital'
+		},
+		'insight6': {
+			newHash: '#survival-of-the-quickest'
+		},
+		'insight7': {
+			newHash: '#all-data-is-not-created-equal'
+		},
+		'insight8': {
+			newHash: '#power-to-the-people'
+		},
+		'insight9': {
+			newHash: '#build-your-capabilities-around-talent-not-technology'
+		},
+		'insight10': {
+			newHash: '#take-a-holistic-stance-on-security-and-risk'
+		}
+	},
+	activeChap: 0,
+	currChap: 0,
+	chapters: {
+		'1': {
+			title: 'Chapter 1 description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi nisl, elementum a nulla sit amet.',
+			position: 0
+		},
+		'2': {
+			title: 'Chapter 2 description Nulla euismod est ante, a aliquet arcu lobortis mattis. Curabitur eget turpis lectus.',
+			position: 18000
+		},
+		'3': {
+			title: 'Chapter 3 description Pellentesque ac enim pulvinar, cursus ipsum ac, fringilla orci. Pellentesque fringilla est...',
+			position: 37000
+		},
+		'4': {
+			title: 'Chapter 4 description Ut odio est, consequat eu nisi vitae, euismod sagittis quam. Quisque eget ipsum pulvinar purus.',
+			position: 56000
+		},
+		'5': {
+			title: 'Chapter 5 description Cras pulvinar, erat ac tincidunt posuere, erat quam cursus leo, ac commodo dolor quam commodo tortor.',
+			position: 75000
+		},
+		'6': {
+			title: 'Chapter 6 description Vivamus eros diam, ultricies id nulla sed, euismod porttitor mi. Cras sed ornare arcu.',
+			position: 94000
+		},
+		'7': {
+			title: 'Chapter 7 description Sed ultricies aliquam arcu, eu fermentum lacus hendrerit id. Duis gravida dignissim purus...',
+			position: 112000
+		},
+		'8': {
+			title: 'Chapter 8 description Maecenas egestas nisi in convallis pellentesque. Cum sociis natoque penatibus et magnis dis.',
+			position: 131000
+		},
+		'9': {
+			title: 'Chapter 9 description Phasellus ac leo lorem. Sed rutrum cursus leo, eu facilisis diam adipiscing et. Etiam imperdiet.',
+			position: 150000
+		},
+		'10': {
+			title: 'Chapter 10 description In non augue dolor. Curabitur hendrerit felis nisl, id dignissim nisi gravida in',
+			position: 168000
+		}
 	}
 };
 
@@ -66,29 +137,24 @@ hpit.core = (function(){
 
 	//	Initialize
 	function init(){
-		$.logEvent('[hpit.core.init]');
-
+		preload([
+			'images/bg-bridge.png',
+			'images/bg-ocean.png',
+			'images/bg-boat.png',
+			'images/bg-edinburgh.png',
+			'images/bg-field.png',
+			'images/bg-lake.png',
+			'images/bg-sunflower.png',
+			'images/bg-sea.png',
+			'images/bg-beach.png',
+			'images/bg-japanese.png'
+		]);
+		
 		//$('#diagnostics').html($userAgent);
-		//$('html').addClass('no-js');
-
-		//var viewPortTag=document.createElement('meta');
-		//viewPortTag.id="viewport";
-		//viewPortTag.name = "viewport";
-		//viewPortTag.content = "width=device-width, target-densityDpi=high-dpi, initial-scale=0.666667, minimum-scale=0.666667, maximum-scale=0.666667";
-		//document.getElementsByTagName('head')[0].appendChild(viewPortTag);
-
-		/*
-		$('.btt').on('click',function(e){
-			hpit.config.currInsight = 0;
-			hpit.config.state = 0;
-		});
-		*/
 		
-		// Dynamically switch on debug logging, if specified in the URL
-		if(top.location.href.indexOf('debug') != -1) {
-			hpit.config.debugLogging = true;
-		}
-		
+		// Initialize event handler for deeplinks
+		deeplinkInit();
+
 		// Initialize event handler for sideMenu links
 		sideMenuInit();
 
@@ -121,8 +187,6 @@ hpit.core = (function(){
 		
 		var validHashValue = false;
 
-		//console.log('config: ', hpit.config);
-
 		footerLock($('#footer'));
 
 		$('.insight').each(function (index) {
@@ -137,11 +201,11 @@ hpit.core = (function(){
 
 		// Attach functionality to the native scroll function
 		$(window).scroll(function(event){
-			//console.log('onMobile: ', onMobile());
+			//console.log('insight 1 top: ', $('.insight').eq(0).offset().top);
 
 			if(!onMobile() && !onIpad()){
 				// determine if we need to lock the background images in place
-				if($(window).scrollTop() > $('#hero').outerHeight(true)){
+				if($(window).scrollTop() > $('.insight').eq(0).offset().top){ //$('#hero').outerHeight(true)
 					if(!$('.bgImages').hasClass('fixed')){
 						$('.bgImages').addClass('fixed');
 					}
@@ -243,7 +307,7 @@ hpit.core = (function(){
 
 				// scroll offset
 				var winOffset = $(window).scrollTop();
-				// //console.log('winOffset:',winOffset);
+				//console.log('winOffset:',winOffset);
 
 				if(index === parseInt(hpit.config.currInsight)){ // && vpStart > winOffset
 					var diff = vpStart - winOffset;
@@ -268,11 +332,28 @@ hpit.core = (function(){
 
 					var menuItem = $('.insight.current').find('.insightTitle h6').text().toLowerCase().replace('cio action item #','');				
 					menuItem = parseInt(menuItem);
+					
 					$('#sideMenu ul li[data-insight-nav="'+menuItem+'"]').addClass('hilited');
 					$('.bgImg[data-insight="'+menuItem+'"] img').addClass('activate');
 
+					if(!hpit.config.locked && (hpit.config.currPageView != menuItem)){
+						omniTrack({
+							eventName: $('#sideMenu ul li[data-insight-nav="'+menuItem+'"] a').attr('href'),
+							eventType: 'page-view'
+						});
+						/*
+						setTimeout(function(){
+							console.log('**************************************************');
+							console.log('currPageView: ', hpit.config.currPageView);
+							console.log('menuItem: ', menuItem);
+							console.log('**************************************************');
+						}, 100);
+						*/
+					}
+
 					hpit.config.currInsight = menuItem;
 					hpit.config.state = menuItem;
+					hpit.config.currPageView = menuItem;
 					if(!hpit.config.locked){
 						updateArrows(1);
 					}
@@ -286,6 +367,7 @@ hpit.core = (function(){
 
 					var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
 					if(!hpit.config.footerInView){
+						$('.bgImages .bgImg img').css({"margin-top" : 0});
 						$('.bgImages .bgImg img.activate').css({"margin-top" : -diffToMove});
 					}
 				}
@@ -306,7 +388,53 @@ hpit.core = (function(){
 		}
 	}
 
-	//hpit.config.currInsight
+	// deeplinking
+	function deeplinkInit(){
+		var groupParam = $.getUrlVar('group');
+		var delay = 500;
+		
+		if(groupParam && groupParam.indexOf('insight') != -1){
+			//console.log('deeplink: ', groupParam);
+			var deeplink = groupParam.replace('insight','');
+			deeplink = parseInt(deeplink);
+			if(isNaN(deeplink)){
+				//console.log('deeplink - NAN');
+			} else if(deeplink > 0 && deeplink < $('.insight').length+1) {
+				/*if(deeplink > 5){
+					delay = 1200;
+				}*/
+				//console.log('valid deeplink: ', groupParam);
+				var newHash = hpit.config.groups[groupParam].newHash;
+				//console.log('newHash: ', newHash);
+				hpit.config.locked = true;
+
+				setTimeout(function(){
+					$(window).scrollTo(
+						newHash,
+						{
+							duration: 1, //hpit.config.duration[hpit.config.desktopORtouch],
+							easing:hpit.config.easing,
+							onAfter: function() {
+								hpit.config.locked = false;
+								console.log('deeplinking DONE!');
+								//setTimeout(function(){
+									//updateArrows(4);
+									//hpit.config.locked = false;
+								//}, 100);
+							}
+						}							
+					);
+				}, delay);
+					
+			} else {
+				//console.log('NOT IN RANGE!!!!');
+			}
+			
+		} else {
+			//console.log('invalid group: ', groupParam);
+		}
+	}
+	// sidemenu init
 	function sideMenuInit(){
 		$('#sideMenu ul li a').on('click',function(e){
 			e.preventDefault();
@@ -326,41 +454,20 @@ hpit.core = (function(){
 						hpit.config.locked = false;
 						if(hpit.config.desktopORtouch == 'desktop'){
 							if(!$(window).scrollTop() > $('#hero').outerHeight(true)){
-								console.log('NOT TOP');
+								//console.log('NOT TOP');
 							} else {
 								//console.log('scroll top: ', $(window).scrollTop());
 								hpit.config.currInsight = 0;
 								hpit.config.state = 0;
-								updateArrows(2);
+								hpit.config.currPageView = 0;
+								setTimeout(function(){updateArrows(3)}, 100);
 							}							
 						}
 					}
 				}							
 			);
-
-			/*
-			$(window).localScroll(
-				{
-					duration: hpit.config.duration[hpit.config.desktopORtouch],
-					easing: hpit.config.easing,
-					hash: false,
-					onAfter: function(anchor,settings){
-						if(hpit.config.desktopORtouch == 'desktop'){
-							if(!$(window).scrollTop() > $('#hero').outerHeight(true)){
-								console.log('NOT TOP');
-							} else {
-								hpit.config.currInsight = 0;
-								hpit.config.state = 0;
-							}
-							updateArrows();
-						}
-					}
-				}
-			);
-			*/
 		});
 
-		//$('#sideMenu').localScroll();
 	}
 
 	//hpit.config.currInsight
@@ -398,6 +505,7 @@ hpit.core = (function(){
 							onAfter: function() {
 								hpit.config.currInsight = newNum;
 								hpit.config.state = newNum;
+								hpit.config.currPageView = newNum;
 								$('.bgImg[data-insight="'+newNum+'"]').css({"opacity" : 1});
 								//console.log('config onAfter: ', hpit.config);
 								if(newNum < 1){
@@ -423,6 +531,7 @@ hpit.core = (function(){
 							onAfter: function() {
 								hpit.config.currInsight = newNum;
 								hpit.config.state = newNum;
+								hpit.config.currPageView = newNum;
 								$('.bgImg[data-insight="'+newNum+'"]').css({"opacity" : 1});
 								//console.log('config onAfter: ', hpit.config);
 								if(newNum > $('.insight').length - 1 ){
@@ -521,17 +630,17 @@ hpit.core = (function(){
 			$("#hero video")[0].pause();
 			$('#ll-overlay').fadeIn(500);
 
-			/*
 			omniTrack({
 				eventName: $(this).attr('href').replace('#',''),
 				eventType: 'video-button-click'
 			});
-			*/
 		});
 
 		// close button
 		$('.closeVid').on('click',function(e){
 			e.preventDefault();
+
+			resetVideoStates();
 
 			$('#ll-overlay')
 				//.find('#ll-player').html('')
@@ -543,26 +652,26 @@ hpit.core = (function(){
 
 		// video chapters
 		$('.chapters a')
-		.on('click',function(e){
-			e.preventDefault();
-			var skipTo = parseInt($(this).attr('href').replace('#',''));
-			//console.log('DelvePlayer: ', DelvePlayer);
-			console.log('DelvePlayer: ', DelvePlayer);
-			try {
-				DelvePlayer.doSeekToSecond(skipTo);
-			} catch(err) {
-				console.log('DelvePlayer error: ', err);
-			}			
-		})
-		.on('mouseenter',function(e){			
-			var thisNum = $(this).text();
-			console.log('thisNum: ', thisNum);
-			$('#ll-overlay .chapters .contentRow').text(hpit.config.chapterDescriptions[thisNum]).show();
-		})
-		.on('mouseleave',function(e){
-			$('#ll-overlay .chapters .contentRow').hide().text('');
-			console.log('clear description');
-		});
+			.on('click',function(e){
+				e.preventDefault();
+				var skipTo = parseInt($(this).attr('href').replace('#',''));
+				//console.log('DelvePlayer: ', DelvePlayer);
+				//console.log('DelvePlayer: ', DelvePlayer);
+				try {
+					DelvePlayer.doSeekToSecond(skipTo);
+				} catch(err) {
+					//console.log('DelvePlayer error: ', err);
+				}			
+			})
+			.on('mouseenter',function(e){			
+				var thisNum = $(this).text();
+				//console.log('thisNum: ', thisNum);
+				$('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
+			})
+			.on('mouseleave',function(e){
+				$('#ll-overlay .chapters .contentRow').hide().text('');
+				//console.log('clear description');
+			});
 	}
 
 	function updateSidemenu(){
@@ -645,44 +754,47 @@ hpit.core = (function(){
 	}
 
 	function updateDimensions(){
-		$.logEvent('[hpit.core.updateDimensions]');
-		
 		hpit.config.scrW = $(window).width();
 		hpit.config.scrH = $(window).height();
 	}
 
 	function updateArrows(from){
-		console.log('from: ', from);
-		console.log('hpit.config: ', hpit.config);
+		$('.arrows').removeClass('noClick');
+		//console.log('from: ', from);
+		//console.log('hpit.config: ', hpit.config);
 		if(hpit.config.state > 0 && hpit.config.state < $('.insight').length){
-			$('.arrows').removeClass('noClick');
+			//$('.arrows').removeClass('noClick');
+			//console.log('updateArrows - IF');
 		} else if(hpit.config.state === $('.insight').length) {
 			$('.nxt').addClass('noClick');
+			//console.log('updateArrows - ELSE IF');
 		} else {
 			$('.prev').addClass('noClick');
+			//console.log('updateArrows - ELSE');
 		}
 	}
 
-	function omniTrack(objct){
-		console.log('Object passed: ', objct);
+	function omniTrack(obj){
+		//console.log('Object: ', obj);
 		
 		try {
-			FlashLinkAnalysis( top.location.href, objct.eventName, objct.eventType );
+			console.log('******************* TRACK *******************');
+			console.log('URL: ', top.location.href);
+			console.log('Name: ', obj.eventName);
+			console.log('Type: ', obj.eventType);
+			console.log('******************* TRACK *******************');
+			//FlashLinkAnalysis( top.location.href, obj.eventName, obj.eventType );
 		} catch(err) {
-			console.log('Tracking error: ', err);
+			//console.log('Tracking error: ', err);
 		}
 	}
 
 	function isTouchDevice(){
 		return hpit.config.desktopORtouch == 'touch';
 	}
-	
-	/**
-	* Functionality to execute upon an orientation change (touch devices only)
-	* @method touchOrientationChange
-	*/
+
 	function touchOrientationChange(){
-		$.logEvent('[hpit.core.touchOrientationChange]');
+		//
 	}
 	
 	return {
@@ -697,50 +809,30 @@ $(window).on('orientationchange',function(){
 
 // jQuery extensions
 $.extend({
-	/**
-	* Logging, based on whether it has been configured to log or not
-	* @method logEvent
-	* @param {String} event The event to log
-	*/
-	logEvent: function(event){
-		if(hpit.config.debugLogging){
-			//console.log(event);
+	getUrlVars: function(){
+		var vars = [], hash;
+		var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+		for(var i = 0; i < hashes.length; i++)
+		{
+			hash = hashes[i].split('=');
+			vars.push(hash[0]);
+			vars[hash[0]] = hash[1];
 		}
+		return vars;
 	},
-	
-	/**
-	* Loop through an object
-	* @method logJSONObj
-	* @param {Object} obj A variable JSON object to output to the console
-	*/
-	logJSONObj: function(obj){
-		var debugJSON = '';
-		var i;
-		
-		for(i in obj){
-			if(obj.hasOwnProperty(i)){
-				debugJSON += i + '=' + obj[i] + ', ';	
-			}
-		}
-		return debugJSON.length > 0 ? debugJSON.substr(0,debugJSON.length-2) : '[empty parameter object]';
+	getUrlVar: function(name){
+		return $.getUrlVars()[name];
 	}
 });
 
-$.fn.extend({	
-	// Conditional switching
-	hasParent: function(obj){
-		return this.filter(function(){
-			return $(obj).find(this).length;
-		});
-	}
-});
+//var activeChap = 0;
 
 function delvePlayerCallback(playerId, eventName, data) {		
 	var id = "limelight_player_239897";
 	if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
 		DelvePlayer.registerPlayer(id);
 	}
-	    
+	
 	switch (eventName) {
 		case 'onPlayerLoad':
 			doOnPlayerLoad();
@@ -757,11 +849,11 @@ function delvePlayerCallback(playerId, eventName, data) {
 			doonPlayheadUpdate(data);
 			break;
 		
-		/*case 'onChannelLoad':
-			doOnChannelLoad(data);
+		case 'onMediaComplete':
+			doOnMediaComplete(data);
 			break;
 		
-		case 'onMediaLoad':
+		/*case 'onMediaLoad':
 			doOnMediaLoad(data);
 			break;
 		
@@ -773,19 +865,83 @@ function delvePlayerCallback(playerId, eventName, data) {
 }
 
 function doOnPlayerLoad(){
-	console.log('player loaded');
+	//console.log('player loaded');
 }
 
 function doOnError(data){
-	console.log('player error: ', data);
+	//console.log('player error: ', data);
 }
 
 function doOnPlayStateChanged(data){
-	console.log('player state: ', data);
+	//console.log('player state: ', data);
 }
 
-function doonPlayheadUpdate(data){
-	console.log('Playhead update: ', data);
+function doonPlayheadUpdate(data){	
+	//var currChap = 0;
+	var currPos = data.positionInMilliseconds;
+	//console.log('Playhead update: ', data.positionInMilliseconds +'/'+ data.durationInMilliseconds);
+
+	switch (true) {
+		case (currPos > 0 && currPos < hpit.config.chapters[2].position):
+			hpit.config.currChap = 1;
+			break;
+		case (currPos > hpit.config.chapters[2].position && currPos < hpit.config.chapters[3].position):
+			hpit.config.currChap = 2;
+			break;
+		case (currPos > hpit.config.chapters[3].position && currPos < hpit.config.chapters[4].position):
+			hpit.config.currChap = 3;
+			break;
+		case (currPos > hpit.config.chapters[4].position && currPos < hpit.config.chapters[5].position):
+			hpit.config.currChap = 4;
+			break;
+		case (currPos > hpit.config.chapters[5].position && currPos < hpit.config.chapters[6].position):
+			hpit.config.currChap = 5;
+			break;
+		case (currPos > hpit.config.chapters[6].position && currPos < hpit.config.chapters[7].position):
+			hpit.config.currChap = 6;
+			break;
+		case (currPos > hpit.config.chapters[7].position && currPos < hpit.config.chapters[8].position):
+			hpit.config.currChap = 7;
+			break;
+		case (currPos > hpit.config.chapters[8].position && currPos < hpit.config.chapters[9].position):
+			hpit.config.currChap = 8;
+			break;
+		case (currPos > hpit.config.chapters[9].position && currPos < hpit.config.chapters[10].position):
+			hpit.config.currChap = 9;
+			break;
+		case (currPos > hpit.config.chapters[10].position):
+			hpit.config.currChap = 10;
+			break;
+	}
+	//console.log('active: '+ hpit.config.activeChap +' | curr: ' + hpit.config.currChap);
+	//hpit.config.activeChap
+
+	if(hpit.config.currChap != hpit.config.activeChap){
+		hpit.config.activeChap = hpit.config.currChap;
+		//console.log('Switching to chapter: ', hpit.config.activeChap);
+
+		$('#ll-overlay .chapters .topRow a')
+			.removeClass('active')
+			.eq(hpit.config.activeChap-1)
+			.addClass('active');
+
+		$('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[hpit.config.activeChap].title).fadeIn(500).delay(4000).fadeOut(500);
+	} else {
+		//console.log('currChap: ', hpit.config.currChap);
+	}
+}
+
+function doOnMediaComplete(){
+	//console.log('video end');
+	resetVideoStates();
+	//hpit.config.activeChap = 0;
+}
+
+function resetVideoStates(){
+	//console.log('resetVideoStates');
+	$('#ll-overlay .chapters .topRow a').removeClass('active');
+	hpit.config.activeChap = 0;
+	hpit.config.currChap = 0;
 }
 
 $(document).ready(function(){
