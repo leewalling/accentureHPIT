@@ -161,8 +161,8 @@ hpit.core = (function(){
 		} else {
 			//console.log('NO preload');
 		}
-		
-		$('#diagnostics').html($userAgent);
+
+		$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>');
 		
 		// Initialize event handler for deeplinks
 		deeplinkInit();
