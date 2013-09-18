@@ -65,7 +65,7 @@ img {
 	padding:0;
 }
 .container.main {
-	padding-top: 780px;
+	padding-top: 880px;
 	position: relative;
 }
 .onMobile .container.main {
@@ -74,7 +74,7 @@ img {
 .onMobile .hero {
 	position: relative;
 	min-height: 0px !important;
-	background-color: #000;
+	/*background-color: #000;*/
 }
 .onMobile .insight .container.content {
 	display: none;
@@ -82,13 +82,17 @@ img {
 .onMobile .insight.open .container.content {
 	display: block;
 }
+.onMobile .bgImages {
+	display: none !important;
+}
 #controls {
 	position: fixed;
 	background-color:#000;
 	padding:15px;
 	width: 45px;
 	height: 150px;
-	bottom: 0;
+	margin-top: -75px;
+	top: 50%;
 	right: 0;
 	overflow: visible;
 	display: inline-block;
@@ -181,6 +185,15 @@ img {
 	color: #fff !important;
 	text-decoration: none;
 	overflow: hidden;
+	background-color: #2a2a2a;
+	-webkit-transition: background-color 300ms ease 0s;
+	-moz-transition: background-color 300ms ease 0s;
+	-o-transition: background-color 300ms ease 0s;
+	-ms-transition: background-color 300ms ease 0s;
+	transition: background-color 300ms ease 0s;
+}
+#sideMenu ul li a:hover {
+	background-color: #363636;
 }
 #sideMenu ul li a.btt {
 	color:rgba(255,255,255,0.7);
@@ -216,7 +229,7 @@ img {
 	line-height: 1.25em;
 }
 #sideMenu ul li.hilited a,
-#sideMenu ul li a:hover,
+/*#sideMenu ul li a:hover,*/
 #sideMenu ul li a:focus {
 	background-color:#f5f5f5;
 	color: #000 !important;
@@ -283,7 +296,7 @@ img {
 }
 
 #accMark {
-	top: 241px;
+	top: 341px;
 	left: 0;
 	position: absolute;
 	display: inline-block;
@@ -355,7 +368,7 @@ img {
 	position: relative;
 	margin:0 auto;
 	padding:10% 0 72px 0;
-	width: 70%;
+	width: 50%;
 	color:#fff;
 	text-align: center;
 	line-height: 1.1em;
@@ -366,15 +379,16 @@ img {
 .hero > div.inner h1 {
 	font-size: 54px;
 	margin: 10px auto;
+	width: 80%;
 }
 .hero > div.inner h3 {
-	font-size: 19px;
+	font-size: 24px;
 	text-transform: uppercase;
 	margin: 0;
 }
 .hero > div.inner p {
 	line-height: 1.4em;
-	width: 55%;
+	width: 80%;
 	margin: 0 auto;
 }
 .hero > div.inner p strong {
@@ -426,7 +440,7 @@ img {
 	height: 800px;
 	position:absolute;
 	background-color: #fff;
-	top: 616px;
+	top: 720px;
 	right: 0px;
 	z-index: 0;
 	display: inline-block;
@@ -446,11 +460,29 @@ img {
 	position:fixed;
 	top: 0px;
 }
+.blackAngle {
+	width: 100%;
+	height: 225px;
+	position: fixed;
+	bottom: -225px;
+	left: 0px;
+	z-index: 101;
+	display: inline-block;
+	overflow: hidden;
+	pointer-events: none;
+	background: transparent;
+	background-image:url("../images/bg-footer.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.blackAngle.fixed {
+	bottom: 0px !important;
+}
 .bgImages {
 	width:100%;
 	min-height: 1800px;
 	position:absolute;
-	top: 359px;
+	top: 459px;
 	left: 0px;
 	z-index: 0;
 	display: inline-block;
@@ -508,7 +540,7 @@ img {
 	position:relative;
 	display: inline-block;
 	float: left;
-	padding-bottom: 25px;
+	padding-bottom: 75px;
 	min-height:1000px;
 	overflow:visible;
 	position: relative;
@@ -555,14 +587,14 @@ img {
 .insight .insightTitle {
 	position:absolute;
 	text-align: left;
-	top: 100px;
+	top: 125px;
 	left: 200px;
 	width:28%;
 	color:#fff;
 	font-size:14px;
 	font-weight:bold;
 	overflow: hidden;
-	z-index: 1000;
+	z-index: 100;
 	/*background: rgba(255, 255, 255, 0.25);*/
 }
 .insight.current .insightTitle {
@@ -595,7 +627,8 @@ img {
 	position: absolute;
 	display: inline-block;
 	overflow: hidden;
-	top: 75px;
+	top: 50%;
+	margin-top: -36px;
 	right: 25px;
 	background-color: #000;
 	color: #fff;
@@ -619,6 +652,12 @@ img {
   	background-position: 0 -26px;
 }
 
+.insight .insightTitle.lockedBottom {
+	bottom: 75px !important;
+	position: absolute !important;
+	top: auto !important;
+}
+
 .insight .marker {
 	position:absolute;
 	text-align: center;
@@ -639,7 +678,7 @@ img {
 .insight .content {
 	position:relative;
 	margin:0 auto;
-	margin-top: 100px;
+	margin-top: 125px;
 	max-width:1000px;
 	width:75%;
 	overflow:visible;
@@ -832,7 +871,7 @@ img {
 	display: inline-block;
 	width: 280px;
 	min-height: 150px;
-	margin: 150px 0 50px 120px;
+	margin: 125px 0 25px 120px;
     /*pointer-events: normal;*/
 }
 #footer .about {
@@ -840,7 +879,7 @@ img {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #fff;
-	margin: 0 0 40px 0;
+	margin: 0 0 25px 0;
 }
 #footer .about h6 {
 	font-size: 10px;
@@ -1003,18 +1042,26 @@ img {
 .navbar-nav > li:hover .social {
   	display: inline-block;
 }
+.container > .navbar-header,
+.container > .navbar-collapse {
+	margin: 0;
+	padding: 0;
+}
 .onMobile .navbar-toggle {
 	border: 1px solid transparent !important;
 	border-color: transparent !important;
-	height: 29px;
-	margin: 17px 20px 0 0;
-	padding: 0;
+	height: 25px;
+	margin: 0;
+	padding: 17px 20px 18px 20px;
 	width: 29px;
   	background-image:url("../images/menu.png");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: center;
 	-webkit-border-radius: 0;
 	border-radius: 0;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
 }
 .onMobile .navbar-toggle:hover,
 .onMobile .navbar-toggle:focus {
@@ -1237,6 +1284,7 @@ img {
 	}
 	.navbar-default .navbar-nav > li > a {
 		font-size: 21px;
+		font-weight: bold;
 		line-height: 26px;
 		padding: 20px 10px;
 		display: inline-block;
@@ -1563,16 +1611,30 @@ img {
 		line-height: 17px;
 		font-size: 12px;
 	}
+	.insight .insightTitle h3 {
+		font-size: 32px;
+		line-height: 37px;
+		max-width: 83%;
+	}
 }
 
 /* less than 360px wide */
 @media only screen and (max-width : 360px) {
 	.navbar-default .navbar-nav > li > a {
-		font-size: 11px;
+		font-size: 14px;
+		padding: 15px 12px;
+	}
+	.navbar-default .navbar-nav > li > a > .icn {
+		display:none;
 	}
 	.navbar-nav > li .social {
 		right: 2%;
-		padding: 24px 0;
+		padding: 17px 0;
+	}
+	.social > a {
+		width: 18px;
+		height: 18px;
+		margin-right:5px;
 	}
 	.social > a {
 	  	margin-right: 2px;
@@ -1651,11 +1713,11 @@ img {
 		font-size: 16px;
 	}
 	.insight .insightTitle h3 {
-		font-size: 26px;
-		line-height: 30px;
+		font-size: 21px;
+		line-height: 25px;
 	}
 	.insight .insightTitle .toggler {
-		top: 35px;
+		margin-top: -20.5px;
 		padding:13px;
 	}
 	.insight .insightTitle .toggler span {
@@ -1681,8 +1743,8 @@ img {
 		font-size: 15px;
 	}
 	.insight .content .right-col > div .quote {
-		font-size: 24px;
-		line-height: 28px;
+		font-size: 21px;
+		line-height: 25px;
 	}
 	.insight .content .right-col > div .tr > span.num {
 		font-size: 18px;
@@ -1879,6 +1941,7 @@ img {
 /* phones (portrait) */
 @media only screen and (max-width : 320px) {
 	.navbar-default .navbar-nav > li > a {
+		font-size: 13px;
 		padding:15px 5px;
 	}
 	.navbar-nav > li .social {
@@ -2077,13 +2140,13 @@ img {
 	  	background-size: auto 100% !important;
 	}
 	.insight .insightTitle {
-		top: 100px;
+		top: 125px;
 	}
 	.insight .marker {
 		top: 135px;
 	}
 	.insight .content {
-		margin-top: 100px;
+		margin-top: 125px;
 	}
 	.insight .insightTitle {
 		left: 190px;
@@ -2091,7 +2154,7 @@ img {
 	}
 	.insight.current .insightTitle {
 		position: absolute !important;
-		top: 100px !important;
+		top: 125px !important;
 	}
 	.insight.current  {
 		background-attachment: scroll !important;

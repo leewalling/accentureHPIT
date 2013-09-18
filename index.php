@@ -19,7 +19,7 @@
 
 	<div id="diagnostics"></div>
 
-<!-- video overlay -->
+	<!-- video overlay -->
 	<div id="ll-overlay">
 		<div class="inner">
 			<div id="ll-player">
@@ -52,9 +52,9 @@
 			</div>
 		</div>
 	</div>
-<!-- end video overlay -->
+	<!-- end video overlay -->
 
-<!-- Fixed navbar -->
+	<!-- Fixed navbar -->
 	<div class="navbar navbar-default navbar-fixed-top">
 	  <div class="container">
 		<div class="navbar-header">
@@ -79,19 +79,19 @@
 		</div>
 	  </div>
 	</div>
-<!-- end Fixed navbar -->
+	<!-- end Fixed navbar -->
 
-<!-- main content container -->
+	<!-- main content container -->
 	<div class="container main" id="theTop">
-<!-- controls -->
+		<!-- controls -->
 		<div id="controls" class="hidden-xs">
 			<a href="#" class="arrows prev noClick"></a>
 			<a href="#" class="txt" id="toggleMenu">Menu</a>
 			<a href="#" class="arrows nxt"></a>
 			<span class="control-info">Get the TOP #10 CIO Action Items</span>
 		</div>
-<!-- end controls -->
-<!-- sidemenu -->
+		<!-- end controls -->
+		<!-- sidemenu -->
 		<div id="sideMenu" class="hidden-xs">
 			<ul>
 				<li><a href="#theTop" class="btt"><em>Back To Top</em></a></li>
@@ -108,8 +108,8 @@
 			</ul>
 			<a href="#" class="closeX">&nbsp;</a>
 		</div>
-<!-- end sidemenu -->
-<!-- hero area -->
+		<!-- end sidemenu -->
+		<!-- hero area -->
 		<div class="hero" id="hero">
 			<span class="video-wrapper"><img src="images/video-1280.jpg" /></span>
 			<div class="inner">
@@ -120,11 +120,12 @@
 			</div>
 			<div id="accMarkMob" class="visible-xs"><img src="images/accenture-mark-mobile.png" width="100%" height="auto" /></div>
 		</div>
-<!-- end hero area -->
+		<!-- end hero area -->
 		<div id="accMark" class="hidden-xs"></div>
 		<!--div id="accMarkMob" class="visible-xs"></div-->
 		<div class="whiteAngle hidden-xs"><!--img src="images/bg-white-angle.png" /--></div>
-<!-- background images -->
+		<div class="blackAngle hidden-xs"></div>
+		<!-- background images -->
 		<div class="bgImages hidden-xs" id="bgImages">
 			<div class="bgImg"><img src="images/bg-bridge.png" /></div>
 			<div class="bgImg"><img src="images/bg-ocean.png" /></div>
@@ -137,14 +138,14 @@
 			<div class="bgImg"><img src="images/bg-beach.png" /></div>
 			<div class="bgImg"><img src="images/bg-japanese.png" /></div>
 		</div>
-<!-- end background images -->
-<!-- insight #1 -->
+		<!-- end background images -->
+		<!-- insight #1 -->
 		<div class="insight" id="your-new-boss-your-customer">
 			<div class="marker hidden-xs">
 				<div><span>01</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #1</h6>
+				<!--<h6>CIO Action Item #1</h6>-->
 				<h3>Your new boss? <br />Your customer.</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23your-new-boss-your-customer" title="Your new boss? Your customer." target="_blank" class="google"></a>
@@ -201,14 +202,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #1 -->
-<!-- insight #2 -->
+		<!-- end insight #1 -->
+		<!-- insight #2 -->
 		<div class="insight" id="technology-is-inseparable-from-business-strategy">
 			<div class="marker hidden-xs">
 				<div><span>02</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #2</h6>
+				<!--<h6>CIO Action Item #2</h6>-->
 				<h3>Technology is inseparable from business strategy.</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23technology-is-inseparable-from-business-strategy" title="Technology is inseparable from business strategy." target="_blank" class="google"></a>
@@ -250,14 +251,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #2 -->
-<!-- insight #3 -->
+		<!-- end insight #2 -->
+		<!-- insight #3 -->
 		<div class="insight" id="context-is-king">
 			<div class="marker hidden-xs">
 				<div><span>03</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #3</h6>
+				<!--<h6>CIO Action Item #3</h6>-->
 				<h3>Context is king.</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23context-is-king" title="Context is king." target="_blank" class="google"></a>
@@ -299,14 +300,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #3 -->
-<!-- insight #4 -->
+		<!-- end insight #3 -->
+		<!-- insight #4 -->
 		<div class="insight" id="flexibility-first">
 			<div class="marker hidden-xs">
 				<div><span>04</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #4</h6>
+				<!--<h6>CIO Action Item #4</h6>-->
 				<h3>Flexibility first.</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23flexibility-first" title="Flexibility first." target="_blank" class="google"></a>
@@ -348,14 +349,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #4 -->
-<!-- insight #5 -->
+		<!-- end insight #4 -->
+		<!-- insight #5 -->
 		<div class="insight" id="be-fearlessly-digital">
 			<div class="marker hidden-xs">
 				<div><span>05</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #5</h6>
+				<!--<h6>CIO Action Item #5</h6>-->
 				<h3>Be fearlessly digital.</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23be-fearlessly-digital" title="Be fearlessly digital." target="_blank" class="google"></a>
@@ -397,14 +398,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #5 -->
-<!-- insight #6 -->
+		<!-- end insight #5 -->
+		<!-- insight #6 -->
 		<div class="insight" id="survival-of-the-quickest">
 			<div class="marker hidden-xs">
 				<div><span>06</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #6</h6>
+				<!--<h6>CIO Action Item #6</h6>-->
 				<h3>Survival of the quickest</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23survival-of-the-quickest" title="Survival of the quickest" target="_blank" class="google"></a>
@@ -446,14 +447,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #6 -->
-<!-- insight #7 -->
+		<!-- end insight #6 -->
+		<!-- insight #7 -->
 		<div class="insight" id="all-data-is-not-created-equal">
 			<div class="marker hidden-xs">
 				<div><span>07</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #7</h6>
+				<!--<h6>CIO Action Item #7</h6>-->
 				<h3>All data is not created equal.</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23all-data-is-not-created-equal" title="All data is not created equal." target="_blank" class="google"></a>
@@ -495,14 +496,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #7 -->
-<!-- insight #8 -->
+		<!-- end insight #7 -->
+		<!-- insight #8 -->
 		<div class="insight" id="power-to-the-people">
 			<div class="marker hidden-xs">
 				<div><span>08</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #8</h6>
+				<!--<h6>CIO Action Item #8</h6>-->
 				<h3>Power to the people.</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23power-to-the-people" title="Power to the people." target="_blank" class="google"></a>
@@ -546,14 +547,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #8 -->
-<!-- insight #9 -->
+		<!-- end insight #8 -->
+		<!-- insight #9 -->
 		<div class="insight" id="build-your-capabilities-around-talent-not-technology">
 			<div class="marker hidden-xs">
 				<div><span>09</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #9</h6>
+				<!--<h6>CIO Action Item #9</h6>-->
 				<h3>Build your capabilities around talent, not technology.</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23build-your-capabilities-around-talent-not-technology" title="Build your capabilities around talent, not technology." target="_blank" class="google"></a>
@@ -595,14 +596,14 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #9 -->
-<!-- insight #10 -->
+		<!-- end insight #9 -->
+		<!-- insight #10 -->
 		<div class="insight" id="take-a-holistic-stance-on-security-and-risk">
 			<div class="marker hidden-xs">
 				<div><span>10</span></div>
 			</div>
 			<div class="insightTitle">
-				<h6>CIO Action Item #10</h6>
+				<!--<h6>CIO Action Item #10</h6>-->
 				<h3>Take a holistic stance on security and risk</h3>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23take-a-holistic-stance-on-security-and-risk" title="Take a holistic stance on security and risk" target="_blank" class="google"></a>
@@ -644,8 +645,8 @@
 				</div>
 			</div>
 		</div>
-<!-- end insight #10 -->
-<!-- footer -->
+		<!-- end insight #10 -->
+		<!-- footer -->
 		<div id="footer">
 			<div>
 				<div class="about">
@@ -662,9 +663,9 @@
 				</div>
 			</div>
 		</div>
-<!-- end footer -->
+		<!-- end footer -->
 	</div>
-<!-- end main content container -->
+	<!-- end main content container -->
 		
 
 		<!--script src="js/modernizr-latest.js"></script-->
