@@ -2156,6 +2156,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 }
 
 /* Samsung S3 */
+/*
 @media only screen and (-webkit-device-pixel-ratio: 2) {
 	#accMarkMob {
 		position: absolute;	
@@ -2173,8 +2174,10 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		background-size: 100% auto;
 	}
 }
+*/
  
 /* test - galaxy s3??? */
+/*
 @media only screen and (min-device-width : 360px) and (max-device-width : 720px) {
 	#accMarkMob {
 		min-height: 0px;
@@ -2182,7 +2185,6 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	}		
 	.hero {
 		height: auto;
-		/*min-height: 880px;*/
 	}
 	.hero > div.inner h3 {
 		font-size: 18px;
@@ -2194,4 +2196,5 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		font-size: 18px;
 	}
 }
+*/
 /*********************************  end responsive  **************************************/

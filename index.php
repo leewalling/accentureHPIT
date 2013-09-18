@@ -60,7 +60,7 @@
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
 		  <!--button type="button" class="navbar-toggle"></button-->
-		  <a class="navbar-brand" href="#"><img src="images/logo.png" width="128" height="36" /></a>
+		  <a class="navbar-brand" href="#"><img src="/Microsites/high-performance-it/PublishingImages/logo.png" width="128" height="36" /></a>
 		</div>
 		<div class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-right">
@@ -111,31 +111,31 @@
 <!-- end sidemenu -->
 <!-- hero area -->
 		<div class="hero" id="hero">
-			<span class="video-wrapper"><img src="images/video-1280.jpg" /></span>
+			<span class="video-wrapper"><img src="/Microsites/high-performance-it/PublishingImages/video-1280.jpg" /></span>
 			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
 				<h1>The Rise of the Strategy Savvy CIO</h1>
 				<p>IT now means "in transition" as CIOs move from the server room to the board room and help set the strategic digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p>
 				<a href="#hero-video" class="playVid"></a>
 			</div>
-			<div id="accMarkMob" class="visible-xs"><img src="images/accenture-mark-mobile.png" width="100%" height="auto" /></div>
+			<div id="accMarkMob" class="visible-xs"><img src="/Microsites/high-performance-it/PublishingImages/accenture-mark-mobile.png" width="100%" height="auto" /></div>
 		</div>
 <!-- end hero area -->
 		<div id="accMark" class="hidden-xs"></div>
 		<!--div id="accMarkMob" class="visible-xs"></div-->
-		<div class="whiteAngle hidden-xs"><!--img src="images/bg-white-angle.png" /--></div>
+		<div class="whiteAngle hidden-xs"><!--img src="/Microsites/high-performance-it/PublishingImages/bg-white-angle.png" /--></div>
 <!-- background images -->
 		<div class="bgImages hidden-xs" id="bgImages">
-			<div class="bgImg"><img src="images/bg-bridge.png" /></div>
-			<div class="bgImg"><img src="images/bg-ocean.png" /></div>
-			<div class="bgImg"><img src="images/bg-boat.png" /></div>
-			<div class="bgImg"><img src="images/bg-edinburgh.png" /></div>
-			<div class="bgImg"><img src="images/bg-field.png" /></div>
-			<div class="bgImg"><img src="images/bg-lake.png" /></div>
-			<div class="bgImg"><img src="images/bg-sunflower.png" /></div>
-			<div class="bgImg"><img src="images/bg-sea.png" /></div>
-			<div class="bgImg"><img src="images/bg-beach.png" /></div>
-			<div class="bgImg"><img src="images/bg-japanese.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-bridge.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-ocean.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-boat.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-edinburgh.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-field.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-lake.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-sunflower.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-sea.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-beach.png" /></div>
+			<div class="bgImg"><img src="/Microsites/high-performance-it/PublishingImages/bg-japanese.png" /></div>
 		</div>
 <!-- end background images -->
 <!-- insight #1 -->
@@ -168,7 +168,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						</div>
 						<div>
 						<span class="heading">High performers</span>
@@ -232,7 +232,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers' allocate significantly more of their budget to delivering strategic capabilities.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span>High performers&ndash;55%<br />Others&ndash;</span>
 						</div>
 						<div class="no-border">
@@ -281,7 +281,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers consistently outpace other organizations in looking to the horizon for potential issues that will impact their business.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span>High performers&ndash;50%<br />Others&ndash;10%</span>
 						</div>
 						<div class="no-border">
@@ -330,7 +330,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are freeing up data and empowering users by moving to the cloud.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span>High performers&ndash;33%<br />Others&ndash;4%</span>
 						</div>
 						<div class="no-border">
@@ -379,7 +379,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers have been experimenting and learning from early deployment of technologies such as social, mobile, analytics and cloud, plus virtualization, security and data management.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span>High Performers&ndash;54%<br />Others&ndash;31%</span>
 						</div>
 						<div class="no-border">
@@ -428,7 +428,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are leading the way in leveraging agile and iterative methodologies, enabling them to adapt to new technologies and embed them in their business.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span>High Performers&ndash;18%<br />Others&ndash;3%</span>
 						</div>
 						<div class="no-border">
@@ -477,7 +477,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are far in front of other organizations in embedding real-time analytics-based decision-making tools into business processes.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span>High Performers&ndash;46%<br />Others&ndash;2%</span>
 						</div>
 						<div class="no-border">
@@ -526,7 +526,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers customer, supplier and employee interactions are increasingly self-service&ndash;but have room to grow.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span><strong>Customer interactions</strong><br />Are now: 29%<br />Could be: 56%<br /><br />
 						<strong>Supplier interactions</strong><br />Are now: 31%<br />Could be: 68%<br /><br />
 						<strong>Employee interactions</strong><br />Are now: 71%<br />Could be: 84%</span>
@@ -577,7 +577,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers source their IT partners strategically, aligning them with their business requirements and priorities.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span>High Performers&ndash;18%<br />Others&ndash;7%</span>
 						</div>
 						<div class="no-border">
@@ -626,7 +626,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers have expanded the scope of their security and risk management functions.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
+						<span class="fpo"><img src="/Microsites/high-performance-it/PublishingImages/fpo-info.png" /></span>
 						<span>High Performers&ndash;27%<br />Others&ndash;5%</span>
 						</div>
 						<div class="no-border">
