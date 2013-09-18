@@ -140,6 +140,11 @@ hpit.core = (function(){
 	//	Initialize
 	function init(){
 
+		var debug = $.getUrlVar('debug');
+		if(debug){
+			$('#diagnostics').show();
+		}
+
 		//console.log('hpit.config.scrW: ', $(window).width());
 		//console.log('$Android: ', $Android);
 		//console.log('$iOS: ', $iOS);

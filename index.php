@@ -112,17 +112,17 @@
 <!-- hero area -->
 		<div class="hero" id="hero">
 			<span class="video-wrapper"><img src="images/video-1280.jpg" /></span>
-			<div>
+			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
 				<h1>The Rise of the Strategy Savvy CIO</h1>
 				<p>IT now means "in transition" as CIOs move from the server room to the board room and help set the strategic digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p>
 				<a href="#hero-video" class="playVid"></a>
 			</div>
-			<!--a href="#" class="CTA visible-xs"><span>get the study</span></a-->
+			<div id="accMarkMob" class="visible-xs"><img src="images/accenture-mark-mobile.png" width="100%" height="auto" /></div>
 		</div>
 <!-- end hero area -->
 		<div id="accMark" class="hidden-xs"></div>
-		<div id="accMarkMob" class="visible-xs"></div>
+		<!--div id="accMarkMob" class="visible-xs"></div-->
 		<div class="whiteAngle hidden-xs"><!--img src="images/bg-white-angle.png" /--></div>
 <!-- background images -->
 		<div class="bgImages hidden-xs" id="bgImages">

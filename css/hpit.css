@@ -34,7 +34,7 @@ html, body {
 	overflow: hidden;
 }
 #diagnostics {
-	display:block;
+	display:none;
 	padding:10px;
 	background:red;
 	color:white;
@@ -73,6 +73,8 @@ img {
 }
 .onMobile .hero {
 	position: relative;
+	min-height: 0px !important;
+	background-color: #000;
 }
 .onMobile .insight .container.content {
 	display: none;
@@ -349,7 +351,7 @@ img {
 	background-position: 0 0;
 	background-size: 100% 100%;
 }
-.hero > div {
+.hero > div.inner {
 	position: relative;
 	margin:0 auto;
 	padding:10% 0 72px 0;
@@ -361,24 +363,24 @@ img {
 	z-index: 0;
 	/*z-index: 5;*/
 }
-.hero > div h1 {
+.hero > div.inner h1 {
 	font-size: 54px;
 	margin: 10px auto;
 }
-.hero > div h3 {
+.hero > div.inner h3 {
 	font-size: 19px;
 	text-transform: uppercase;
 	margin: 0;
 }
-.hero > div p {
+.hero > div.inner p {
 	line-height: 1.4em;
 	width: 55%;
 	margin: 0 auto;
 }
-.hero > div p strong {
+.hero > div.inner p strong {
 	/*white-space: nowrap;*/
 }
-.hero > div .playVid {
+.hero > div.inner .playVid {
 	display: inline-block;
 	overflow: hidden;
 	width: 57px;
@@ -393,7 +395,7 @@ img {
 	margin-left: -28.5px;
 	position: absolute;
 }
-.hero > div .playVid:hover {
+.hero > div.inner .playVid:hover {
 	background-position: 0 -57px;
 }
 .hero .CTA {
@@ -1249,7 +1251,7 @@ img {
 	}
 	.hero {
 		height: auto;
-		min-height: 925px;
+		/*min-height: 925px;*/
 	}
 	.hero .video-wrapper {
 		height: 500px;
@@ -1257,13 +1259,29 @@ img {
 	.hero video {
 		/*height:500px;*/
 	}
-	.hero > div {
+	.hero > div.inner {
 		margin: 110px auto 0 auto;
 		padding: 180px 0 0 0;
 		width: 88%;
 		z-index: 5;
 	}
-	.hero > div .playVid {
+	.hero > div.inner h3 {
+		font-size: 24px;
+	}
+	.hero > div.inner h1 {
+		font-size: 54px;
+		margin: 20px auto 25px auto;
+		width: 80%;
+	}
+	.hero > div.inner p {
+		font-size: 24px;
+		line-height: 1.25em;
+		width: 85%;
+	}
+	.hero > div.inner p strong {
+		white-space: normal;
+	}
+	.hero > div.inner .playVid {
 		top: 0;
 		bottom: auto;
 		width: 95px;
@@ -1271,26 +1289,29 @@ img {
 		margin-left: -47.5px;
 		background-image:url("../images/play-lg.png");
 	}
-	.hero > div .playVid:hover {
+	.hero > div.inner .playVid:hover {
 		background-position: 0 -95px;
 	}
-	.hero > div h3 {
-		font-size: 22px;
-	}
-	.hero > div h1 {
-		font-size: 52px;
-		margin: 20px auto 25px auto;
-		width: 80%;
-	}
-	.hero > div p {
-		font-size: 24px;
-		line-height: 1.25em;
-		width: 85%;
-	}
-	.hero > div p strong {
-		white-space: normal;
-	}
 	#accMarkMob {
+		position: relative;	
+		display: inline-block;
+		overflow: hidden;
+		z-index: 1;
+		pointer-events:none;
+		width: 100%;
+		height: auto;
+		min-height: 0px;
+		margin-top: -475px;
+	}
+	#accMarkMob img {
+		position: relative;	
+		display: inline-block;
+		float: left;
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+	}
+	/*#accMarkMob {
 		position: absolute;	
 		left: 0;
 		display: inline-block;
@@ -1305,8 +1326,7 @@ img {
 		min-height: 780px;
 		background-image:url("../images/accenture-mark-mobile.png");
 		background-size: 100% auto;
-	}
-
+	}*/
 	.insight {
 		border-top: 2px solid #dbdbdb;
 		padding: 0 0 0 0;
@@ -1408,13 +1428,24 @@ img {
 /* less than 640px wide */
 @media only screen and (max-width : 640px) {
 	.hero {
-		min-height: 797px;
+		/*min-height: 797px;*/
 	}
-	.hero > div {
+	.hero > div.inner {
 		margin: 90px auto 0 auto;
 		padding: 145px 0 0 0;
 	}
-	.hero > div .playVid {
+	.hero > div.inner h3 {
+		font-size: 22px;
+	}
+	.hero > div.inner h1 {
+		font-size: 52px;
+		width: 95%;
+	}
+	.hero > div.inner p {
+		font-size: 22px;
+		width: 88%;
+	}
+	.hero > div.inner .playVid {
 		top: 0;
 		bottom: auto;
 		width: 57px;
@@ -1422,17 +1453,47 @@ img {
 		margin-left: -28.5px;
 		background-image:url("../images/play.png");
 	}
-	.hero > div .playVid:hover {
+	.hero > div.inner .playVid:hover {
 		background-position: 0 -57px;
 	}
-	.hero > div h1 {
-		width: 95%;
+	#accMarkMob {
+		min-height: 0px;
+		margin-top: -410px;
 	}
-	.hero > div p {
+}
+
+/* less than 540px wide */
+@media only screen and (max-width : 540px) {
+	.navbar-default .navbar-nav > li > a {
+		font-size: 18px;
+	}
+	.navbar-nav > li .social {
+		right: 15%;
+		padding: 22px 0;
+	}
+	.hero {
+		/*min-height: 797px;*/
+	}
+	.hero .video-wrapper {
+		height: 400px;
+	}
+	.hero > div.inner {
+		margin: 90px auto 0 auto;
+		padding: 130px 0 0 0;
+	}
+	.hero > div.inner h3 {
+		font-size: 18px;
+	}
+	.hero > div.inner h1 {
+		font-size: 48px;
 		width: 100%;
 	}
+	.hero > div.inner p {
+		font-size: 18px;
+	}
 	#accMarkMob {
-		min-height: 650px;
+		min-height: 0px;
+		margin-top: -350px;
 	}
 }
 
@@ -1445,16 +1506,16 @@ img {
 		right: 11%;
 	}
 	.hero {
-		min-height: 636px;
+		/*min-height: 636px;*/
 	}
-	.hero > div {
+	.hero > div.inner {
 		margin: 75px auto 0 auto;
 		padding: 135px 0 0 0;
 	}
-	.hero > div h3 {
+	.hero > div.inner h3 {
 		font-size: 16px;
 	}
-	.hero > div .playVid {
+	.hero > div.inner .playVid {
 		top: 0;
 		bottom: auto;
 		width: 57px;
@@ -1462,15 +1523,15 @@ img {
 		margin-left: -28.5px;
 		background-image:url("../images/play.png");
 	}
-	.hero > div .playVid:hover {
+	.hero > div.inner .playVid:hover {
 		background-position: 0 -57px;
 	}
-	.hero > div h1 {
+	.hero > div.inner h1 {
 		width: 100%;
 		font-size: 42px;
 		margin-top: 10px;
 	}
-	.hero > div p {
+	.hero > div.inner p {
 		width: 100%;
 		font-size: 18px;
 	}
@@ -1478,7 +1539,8 @@ img {
 		height: 400px;
 	}
 	#accMarkMob {
-		min-height: 490px;
+		min-height: 0px;
+		margin-top:-325px;
 	}
 	#ll-overlay .chapters > div {
 		height: 41px;
@@ -1529,23 +1591,23 @@ img {
 	  	margin-right: 0 !important;
 	}
 	.hero {
-		min-height: 494px;
+		/*min-height: 494px;*/
 	}
-	.hero > div {
+	.hero > div.inner {
 		margin: 60px auto 0 auto;
 		padding: 105px 0 0 0;
 		width: 90%;
 	}
-	.hero > div h3 {
+	.hero > div.inner h3 {
 		font-size: 13px;
 	}
-	.hero > div h1 {
+	.hero > div.inner h1 {
 		width: 100%;
 		font-size: 34px;
 		margin-top: 10px;
 		margin-bottom: 12px;
 	}
-	.hero > div p {
+	.hero > div.inner p {
 		width: 100%;
 		font-size: 14px;
 	}
@@ -1553,8 +1615,8 @@ img {
 		height: 310px;
 	}
 	#accMarkMob {
-		top: 190px;
-		min-height: 366px;
+		margin-top: -235px;
+		min-height: 0px;
 	}
 	#ll-overlay #ll-player {
 		height: 240px;
@@ -1714,28 +1776,28 @@ img {
 	.hero .video-wrapper {
 		height: 250px;
 	}	
-	.hero > div {
+	.hero > div.inner {
 		margin: 50px auto 0 auto;
 		padding: 85px 0 0 0;
 	}
-	.hero > div .playVid {
+	.hero > div.inner .playVid {
 		width: 50px;
 		height: 50px;
 		margin-left: -25px;
 	}
-	.hero > div .playVid:hover {
+	.hero > div.inner .playVid:hover {
 		background-position: 0 -50px;
 	}
-	.hero > div h3 {
+	.hero > div.inner h3 {
 		font-size: 13px;
 		width: 106%;
 		margin-left: -3%;
 	}
-	.hero > div h1 {
+	.hero > div.inner h1 {
 		font-size: 28px;
 		margin: 10px auto;
 	}
-	.hero > div p {
+	.hero > div.inner p {
 		font-size: 13px;
 		line-height: 1.25em;
 		width: 97%;
@@ -1816,12 +1878,38 @@ img {
 
 /* phones (portrait) */
 @media only screen and (max-width : 320px) {
+	.navbar-default .navbar-nav > li > a {
+		padding:15px 5px;
+	}
+	.navbar-nav > li .social {
+		right: 4%;
+		padding: 20px 0;
+	}
+	.social > a {
+		width: 18px;
+		height: 18px;
+		margin-right:5px;
+	}
 	#accMarkMob {
-		min-height: 325px;
+		min-height: 0px;
+		margin-top: -210px;
 	}	
 	.hero {
 		height: auto;
-		min-height: 464px;
+		/*min-height: 464px;*/
+	}
+	.hero > div.inner {
+		width: 95%;
+	}
+	.hero > div.inner h3 {
+		font-size: 12px;
+	}
+	.hero > div.inner h1 {
+		font-size: 32px;
+	}
+	.hero > div.inner p {
+		width: 88%;
+		font-size: 12px;
 	}
 }
 
@@ -1834,7 +1922,7 @@ img {
 
 /* 1024 x 768 */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-	.hero > div {
+	.hero > div.inner {
 	  padding: 7% 0 72px;
 	}
 	#accMark {
@@ -1853,16 +1941,16 @@ img {
 /* max-width 1023px */
 /*
 @media only screen and (max-width : 1023px) {
-	.hero > div {
+	.hero > div.inner {
 	  width: 55%;
 	}
-	.hero > div h3 {
+	.hero > div.inner h3 {
 	  font-size: 16px;
 	}
-	.hero > div h1 {
+	.hero > div.inner h1 {
 	  font-size: 42px;
 	}
-	.hero > div p {
+	.hero > div.inner p {
 	  font-size: 13px;
 	  width: 75%;
 	}
@@ -1901,27 +1989,27 @@ img {
 	.hero .video-wrapper {
 		height: 450px;
 	}
-	.hero > div {
+	.hero > div.inner {
 		z-index: 5;
 		padding: 7% 0 125px;
 	}
-	.hero > div h1 {
+	.hero > div.inner h1 {
 		font-size: 48px;
 		width: 90%;
 	}
-	.hero > div h3 {
+	.hero > div.inner h3 {
 		font-size: 21px;
 	}
-	.hero > div p {
+	.hero > div.inner p {
 		width: 70%;
 	}
-	.hero > div .playVid {
+	.hero > div.inner .playVid {
 		width: 95px;
 		height: 95px;
 		margin-left: -47.5px;
 		background-image:url("../images/play-lg.png");
 	}
-	.hero > div .playVid:hover {
+	.hero > div.inner .playVid:hover {
 		background-position: 0 -95px;
 	}
 	#accMark {
@@ -2041,7 +2129,7 @@ img {
 		height: 100%;
 		width: auto;
 	}
-	.hero > div p {
+	.hero > div.inner p {
 		width: 90%;
 	}
 }
@@ -2080,7 +2168,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		background-position: 0 0;
 		width: 100%;
 		height: auto;
-		min-height: 325px;
+		min-height: 0px;
 		background-image:url("../images/accenture-mark-mobile.png");
 		background-size: 100% auto;
 	}
@@ -2089,19 +2177,20 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 /* test - galaxy s3??? */
 @media only screen and (min-device-width : 360px) and (max-device-width : 720px) {
 	#accMarkMob {
-		min-height: 550px;
+		min-height: 0px;
+		margin-top: -425px;
 	}		
 	.hero {
 		height: auto;
-		min-height: 880px;
+		/*min-height: 880px;*/
 	}
-	.hero > div h3 {
+	.hero > div.inner h3 {
 		font-size: 18px;
 	}
-	.hero > div h1 {
+	.hero > div.inner h1 {
 		font-size: 44px;
 	}
-	.hero > div p {
+	.hero > div.inner p {
 		font-size: 18px;
 	}
 }
