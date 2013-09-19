@@ -82,8 +82,14 @@ img {
 .onMobile .insight.open .container.content {
 	display: block;
 }
+.onMobile #controls,
+.onMobile #sideMenu,
+.onMobile #accMark,
 .onMobile .bgImages,
-.onMobile #controls {
+.onMobile .whiteAngle,
+.onMobile .blackAngle,
+.onMobile .marker,
+.onMobile .insightTitle .social {
 	display: none !important;
 }
 #controls {
