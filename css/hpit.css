@@ -574,9 +574,12 @@ img {
 	background-color: #fff;
 }
 .onMobile .insight .content .right-col {
-	background-color: yellow;
+	background-color: magenta;
 	float: left;
 	width: 100% !important;
+}
+.onMobile .col-lg-offset-6 {
+	margin-left: 0 !important;
 }
 .insight .bgImg {
 	width:100%;
@@ -699,6 +702,7 @@ img {
 	width:75%;
 	overflow:visible;
 	color:#000;
+	background-color: blue;
 	/*background-color:#fff;*/
 }
 .insight .content .left-col {
