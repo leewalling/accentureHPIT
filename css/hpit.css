@@ -82,7 +82,8 @@ img {
 .onMobile .insight.open .container.content {
 	display: block;
 }
-.onMobile .bgImages {
+.onMobile .bgImages,
+.onMobile #controls {
 	display: none !important;
 }
 #controls {
@@ -1251,7 +1252,7 @@ img {
 /*********************************  end Limelight overlay  *******************************/
 /*********************************  responsive  ******************************************/
 /* less than 767px wide */
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 767px), only screen and (-webkit-device-pixel-ratio: 2) {
 	.container > .navbar-header,
 	.container > .navbar-collapse {
 		margin: 0;
@@ -2208,7 +2209,7 @@ img {
 }
  
 /* iphone 4 */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
 
 }
