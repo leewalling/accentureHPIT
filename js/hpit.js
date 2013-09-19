@@ -25,7 +25,13 @@ function setCookie(cname, cvalue) {
 function preload(arrayOfImages) {
 	$(arrayOfImages).each(function(){
 		$('<img/>')[0].src = this;
-		$('.bgImages').append('<div class="bgImg"><img src="'+this+'" /></div>');
+		if(!onIpad()){
+			$('.bgImages').append('<div class="bgImg"><img src="'+this+'" /></div>');
+		} else {
+			var foo = $('<img/>')[0];
+			foo.src = this;
+			alert('foo: ', foo);
+		}
 	});
 }
 
