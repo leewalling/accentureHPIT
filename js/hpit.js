@@ -134,8 +134,8 @@ hpit.core = (function(){
 	var $userAgent = navigator.userAgent.toLowerCase();
 	var $Android = /android/i.test( $userAgent );
 	var $iOS = /iphone|ipod|ios/i.test( $userAgent );
-	var $iPad = /ipad/i.test( $userAgent );
-	//var $iPad = true;
+	//var $iPad = /ipad/i.test( $userAgent );
+	var $iPad = true;
 	var chapterClicked;
 
 	//	Initialize
