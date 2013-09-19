@@ -92,6 +92,11 @@ img {
 .onMobile .insightTitle .social {
 	display: none !important;
 }
+.onMobile #accMarkMob,
+.onMobile .insight .insightTitle .toggler,
+.onMobile .insight .content .right-col .social {
+	display: block;
+}
 #controls {
 	position: fixed;
 	background-color:#000;
