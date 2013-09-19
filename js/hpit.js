@@ -146,10 +146,6 @@ hpit.core = (function(){
 			$('#diagnostics').show();
 		}
 
-		//console.log('hpit.config.scrW: ', $(window).width());
-		//console.log('$Android: ', $Android);
-		//console.log('$iOS: ', $iOS);
-
 		$('head').append('<meta name="viewport" content="width=device-width, target-densityDpi=high-dpi, initial-scale=0.666667, minimum-scale=0.666667, maximum-scale=0.666667">');
 		
 		if(!onMobile() && !onIpad()){
@@ -210,7 +206,7 @@ hpit.core = (function(){
 		footerLock($('#footer'));
 
 		$('.insight').each(function (index) {
-			if(!onMobile()){ // && !onIpad()
+			if(!onMobile() && !onIpad()){
 				paneLock($(this),index);
 			}			
 		});

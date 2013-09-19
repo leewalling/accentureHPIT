@@ -355,7 +355,7 @@ img {
 	padding-top:0px;
 	display: inline-block;
 	overflow: visible;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	width: 100%;
 	float: left;
 	position: fixed;
@@ -600,6 +600,7 @@ img {
 	/*background-color: magenta;*/
 	float: left;
 	width: 100% !important;
+	background: transparent;
 }
 .onMobile .col-lg-offset-6 {
 	margin-left: 0 !important;
@@ -1132,6 +1133,13 @@ img {
 	/*width: 100% !important;*/
 	float: none;
 	border-bottom: 2px solid #363636 !important;
+}
+.onIpad .container > .navbar-header {
+	float: left;
+	border-bottom: 2px solid #363636 !important;
+}
+.onIpad .container > .navbar-collapse {
+	float: right;
 }
 .onMobile .navbar-toggle {
 	border: 1px solid transparent !important;
@@ -2130,6 +2138,7 @@ img {
 /* ipad (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	.whiteAngle,
+	.blackAngle,
 	.bgImages {
 		display: none !important;
 	}

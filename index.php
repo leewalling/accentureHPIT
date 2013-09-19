@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
+<html class="" lang="en" xmlns="http://www.w3.org/1999/html">
 	<head>
 		<title>accenture hpit</title>
 		<!--meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=yes" /-->
