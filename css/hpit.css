@@ -630,8 +630,8 @@ img {
 	position:absolute;
 	text-align: left;
 	top: 125px;
-	left: 200px;
-	width:28%;
+	left: 185px;
+	width:32%;
 	color:#fff;
 	font-size:14px;
 	font-weight:bold;
@@ -654,15 +654,18 @@ img {
 .insight .insightTitle h3 {
 	font-size: 48px;
 	line-height: 56px;
+	letter-spacing: -.5px;
 }
 .insight .insightTitle h6 {
-	font-size: 14px;
-	line-height: 1.1em;
-	text-transform: uppercase;
-	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.2em;
+	text-transform: none;
+	font-weight: normal;
+	margin-top: 10px;
+	width: 80%;
 }
 .insight .insightTitle .social {
-	margin-top: 10px;
+	margin-top: 12px;
 	width: 115px;
 }
 .insight .insightTitle .toggler {
@@ -745,6 +748,28 @@ img {
 	margin:0 0 0 0;
 	border-bottom: 1px solid #e2e2e2;
 	overflow: hidden;
+}
+.insight .content .right-col > div.with-video {
+	text-align: right;
+}
+.insight .content .right-col > div.with-video > span {
+	float: left;
+	max-width: 45%;
+	clear: both;
+	text-align: left;
+}
+.insight .content .right-col > div.with-video .the-video {
+	display: inline-block;
+	float: none;
+	width: 220px;
+	overflow: hidden;
+}
+.insight .content .right-col > div.with-video .the-video > div {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	text-align: right;
+	margin-top: 5px;
 }
 .insight .content .right-col > div .tr {
 	display:table-row;
@@ -1214,12 +1239,15 @@ img {
 }
 
 #ll-overlay .inner {
-	height: 100%;
+	/*height: 100%;*/
+	height: 511px;
 	margin: 0 auto;
 	position: relative;
 	width: 768px;
 	left: 0px;
-	top: 16px;
+	/*top: 16px;*/
+	top: 50%;
+	margin-top: -225px;
 }
 
 #ll-overlay .closeVid {
@@ -1741,6 +1769,10 @@ img {
 	#accMarkMob {
 		margin-top: -235px;
 		min-height: 0px;
+	}
+	#ll-overlay .inner {
+		height: 351px;
+		margin-top: -145px;
 	}
 	#ll-overlay #ll-player {
 		height: 240px;

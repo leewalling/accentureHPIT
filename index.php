@@ -147,6 +147,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #1</h6>-->
 				<h3>Your new boss? <br />Your customer.</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23your-new-boss-your-customer" title="Your new boss? Your customer." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23your-new-boss-your-customer" title="Your new boss? Your customer." target="_blank" class="facebook"></a>
@@ -162,9 +163,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"You can't think like a database.<br />You have to think like a customer."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>High performers have moved beyond internally focused objectives like cost and productivity. <strong>The new bulls-eye is the customer experience.</strong> </span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -211,6 +216,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #2</h6>-->
 				<h3>Technology is inseparable from business strategy.</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23technology-is-inseparable-from-business-strategy" title="Technology is inseparable from business strategy." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23technology-is-inseparable-from-business-strategy" title="Technology is inseparable from business strategy." target="_blank" class="facebook"></a>
@@ -226,9 +232,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"Our strategy is our technology. Period."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>Many CIOs are still caught up troubleshooting and fixing problems instead of creating value. High performers invest in new ways IT can deliver on business strategy and create new opportunities.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -260,6 +270,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #3</h6>-->
 				<h3>Context is king.</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23context-is-king" title="Context is king." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23context-is-king" title="Context is king." target="_blank" class="facebook"></a>
@@ -275,9 +286,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"IT doesn't exist in a vacuum. If something impacts the business, it impacts IT."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>Global competition means exploring business scenarios&ndash;economic, geopolitical, social and more&ndash;is also crucial to the IT planning process.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -309,6 +324,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #4</h6>-->
 				<h3>Flexibility first.</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23flexibility-first" title="Flexibility first." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23flexibility-first" title="Flexibility first." target="_blank" class="facebook"></a>
@@ -324,9 +340,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"The right way has to give you the most options&ndash;now and down the road."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>Legacy systems drag down performance and tie up valuable resources. Streamlined, simplified application portfolios allow high performers to zig when markets zag.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -358,6 +378,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #5</h6>-->
 				<h3>Be fearlessly digital.</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23be-fearlessly-digital" title="Be fearlessly digital." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23be-fearlessly-digital" title="Be fearlessly digital." target="_blank" class="facebook"></a>
@@ -373,9 +394,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"Digital is transformative. It is also definitive. Every business is now a digital business."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>Digital is about more than devices. It's driving how products are designed and produced, how transactions are created and managed, and even how collaboration is accomplished and relationships are formed.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -407,6 +432,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #6</h6>-->
 				<h3>Survival of the quickest</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23survival-of-the-quickest" title="Survival of the quickest" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23survival-of-the-quickest" title="Survival of the quickest" target="_blank" class="facebook"></a>
@@ -422,9 +448,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"True agility means you have to purge complexity."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>Volatility in markets, partner engagements and even business models can create new opportunities&ndash;if your organization is nimble enough to turn the situation to your advantage.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -456,6 +486,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #7</h6>-->
 				<h3>All data is not created equal.</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23all-data-is-not-created-equal" title="All data is not created equal." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23all-data-is-not-created-equal" title="All data is not created equal." target="_blank" class="facebook"></a>
@@ -471,9 +502,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"Data will tell you what you need to know&ndash;if you know how to listen."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that spur actionable outcomes&ndash;and competitive advantage.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -505,6 +540,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #8</h6>-->
 				<h3>Power to the people.</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23power-to-the-people" title="Power to the people." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23power-to-the-people" title="Power to the people." target="_blank" class="facebook"></a>
@@ -520,9 +556,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"Being truly digital means you have to unleash users' power&ndash;at the expense of your own."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>Breaking down barriers to self-service for individuals across your business&ndash;employees, suppliers, even customers&ndash;turns them from mere IT "service tickets" to powerful agents of change, helping drive innovation, generate insights and probe new markets.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -556,6 +596,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #9</h6>-->
 				<h3>Build your capabilities around talent, not technology.</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23build-your-capabilities-around-talent-not-technology" title="Build your capabilities around talent, not technology." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23build-your-capabilities-around-talent-not-technology" title="Build your capabilities around talent, not technology." target="_blank" class="facebook"></a>
@@ -571,9 +612,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"Hardware doesn't understand what really drives your business."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>Experimentation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look both inside and outside of their companies to fill needs and plug knowledge gaps.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
@@ -605,6 +650,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #10</h6>-->
 				<h3>Take a holistic stance on security and risk</h3>
+				<h6>Self service. Something for every CIO to chew on.</h6>
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23take-a-holistic-stance-on-security-and-risk" title="Take a holistic stance on security and risk" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/index.aspx%23take-a-holistic-stance-on-security-and-risk" title="Take a holistic stance on security and risk" target="_blank" class="facebook"></a>
@@ -620,9 +666,13 @@
 						<span class="heading">Strategy straight talk</span>
 						<span class="quote">"Digital opens up a lot of new opportunities&ndash;and potential vulnerabilities."</span>
 						</div>
-						<div>
+						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
 						<span>Company's risk profiles are increasingly defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities with heavy digital components that all need protecting.</span>
+						<div class="the-video">
+							<a href="#"><img src="images/video-small.jpg" /></a>
+							<div>Paul's POV</div>
+						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
