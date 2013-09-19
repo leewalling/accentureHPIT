@@ -163,7 +163,20 @@ hpit.core = (function(){
 				'images/bg-japanese.png'
 			]);
 		} else {
-			//console.log('NO preload');
+			if(onIpad()){
+				preload([
+					'images/bg-bridge.jpg',
+					'images/bg-ocean.jpg',
+					'images/bg-boat.jpg',
+					'images/bg-edinburgh.jpg',
+					'images/bg-field.jpg',
+					'images/bg-lake.jpg',
+					'images/bg-sunflower.jpg',
+					'images/bg-sea.jpg',
+					'images/bg-beach.jpg',
+					'images/bg-japanese.jpg'
+				]);
+			}
 		}
 
 		$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile:' + onMobile() + '</div>' + '<div>onIpad:' + onIpad() + '</div>');
