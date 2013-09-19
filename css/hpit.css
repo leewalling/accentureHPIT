@@ -2156,7 +2156,7 @@ img {
 		background-color: #000;
 	}
 	.hero .video-wrapper {
-		height: 450px;
+		height: 600px;
 	}
 	.hero > div.inner {
 		z-index: 5;
@@ -2183,7 +2183,7 @@ img {
 		background-position: 0 -95px;
 	}
 	#accMark {
-		top: 180px;
+		top: 260px;
 	}
 
 	.insight[data-insight="10"] {
