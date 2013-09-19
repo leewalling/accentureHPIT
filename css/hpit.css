@@ -93,9 +93,11 @@ img {
 	display: none !important;
 }
 .onMobile #accMarkMob,
-.onMobile .insight .insightTitle .toggler,
 .onMobile .insight .content .right-col .social {
-	display: inline-block;
+	display: block;
+}
+.onMobile .insight .insightTitle .toggler {
+	display: inline-block !important;
 }
 #controls {
 	position: fixed;
