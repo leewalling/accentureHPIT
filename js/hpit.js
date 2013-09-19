@@ -28,9 +28,9 @@ function preload(arrayOfImages) {
 		if(!onIpad()){
 			$('.bgImages').append('<div class="bgImg"><img src="'+this+'" /></div>');
 		} else {
-			var foo = $('<img/>')[0];
-			foo.src = this;
-			alert('foo: ', foo);
+			//var foo = $('<img/>')[0];
+			//foo.src = this;
+			alert('this: ', this);
 		}
 	});
 }
