@@ -94,7 +94,26 @@ img {
 }
 .onMobile #accMarkMob,
 .onMobile .insight .content .right-col .social {
-	display: block;
+	display: block !important;
+}
+.onMobile #accMarkMob {
+	position: relative;	
+	display: inline-block;
+	overflow: hidden;
+	z-index: 1;
+	pointer-events:none;
+	width: 100%;
+	height: auto;
+	min-height: 0px;
+	margin-top: -475px;
+}
+.onMobile #accMarkMob img {
+	position: relative;	
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
 }
 .onMobile .insight .insightTitle .toggler {
 	display: inline-block !important;
@@ -377,6 +396,10 @@ img {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100% 100%;
+	max-height: 500px;
+}
+.onMobile .hero > div.inner {
+	z-index: 5;
 }
 .hero > div.inner {
 	position: relative;
