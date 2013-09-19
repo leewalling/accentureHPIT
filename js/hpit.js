@@ -25,6 +25,7 @@ function setCookie(cname, cvalue) {
 function preload(arrayOfImages) {
 	$(arrayOfImages).each(function(){
 		$('<img/>')[0].src = this;
+		$('.bgImages').append('<div class="bgImg"><img src="'+this+'" /></div>');
 	});
 }
 
@@ -169,7 +170,7 @@ hpit.core = (function(){
 			//console.log('NO preload');
 		}
 
-		$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile:' + onMobile() + '</div>');
+		$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile:' + onMobile() + '</div>' + '<div>onIpad:' + onIpad() + '</div>');
 		
 		// Initialize event handler for deeplinks
 		deeplinkInit();
@@ -273,13 +274,14 @@ hpit.core = (function(){
 
 			if(onMobile()){
 				$('html').addClass('onMobile');
-				if(onIpad()){
-					$('html').addClass('onIpad');
-				} else{
-					$('html').removeClass('onIpad');
-				}
 			} else {
 				$('html').removeClass('onMobile');
+			}
+
+			if(onIpad()){
+				$('html').addClass('onIpad');
+			} else {
+				$('html').removeClass('onIpad');
 			}
 		});
 
@@ -287,8 +289,7 @@ hpit.core = (function(){
 	}
 
 	function onMobile() {
-		return ( ( $(window).width() < 768 ) || $Android || $iOS ); // || $iPad
-		//return true;
+		return ( ( $(window).width() < 768 ) || $Android || $iOS );
 	}
 
 	function onIpad() {

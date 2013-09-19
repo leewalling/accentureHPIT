@@ -127,7 +127,7 @@
 		<div class="blackAngle hidden-xs"></div>
 		<!-- background images -->
 		<div class="bgImages hidden-xs" id="bgImages">
-			<div class="bgImg"><img src="images/bg-bridge.png" /></div>
+			<!--<div class="bgImg"><img src="images/bg-bridge.png" /></div>
 			<div class="bgImg"><img src="images/bg-ocean.png" /></div>
 			<div class="bgImg"><img src="images/bg-boat.png" /></div>
 			<div class="bgImg"><img src="images/bg-edinburgh.png" /></div>
@@ -136,7 +136,7 @@
 			<div class="bgImg"><img src="images/bg-sunflower.png" /></div>
 			<div class="bgImg"><img src="images/bg-sea.png" /></div>
 			<div class="bgImg"><img src="images/bg-beach.png" /></div>
-			<div class="bgImg"><img src="images/bg-japanese.png" /></div>
+			<div class="bgImg"><img src="images/bg-japanese.png" /></div>-->
 		</div>
 		<!-- end background images -->
 		<!-- insight #1 -->
