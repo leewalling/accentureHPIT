@@ -105,7 +105,7 @@ img {
 	width: 100%;
 	height: auto;
 	min-height: 0px;
-	margin-top: -475px;
+	/*margin-top: -475px;*/
 }
 .onMobile #accMarkMob img {
 	position: relative;	
