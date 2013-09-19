@@ -1134,13 +1134,6 @@ img {
 	float: none;
 	border-bottom: 2px solid #363636 !important;
 }
-.onIpad .container > .navbar-header {
-	float: left;
-	border-bottom: 2px solid #363636 !important;
-}
-.onIpad .container > .navbar-collapse {
-	float: right;
-}
 .onMobile .navbar-toggle {
 	border: 1px solid transparent !important;
 	border-color: transparent !important;
@@ -2136,7 +2129,17 @@ img {
 */
 
 /* ipad (portrait and landscape) */
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.navbar > .container {
+		border-bottom: 2px solid #363636 !important;
+	}
+	.container > .navbar-header {
+		float: left;
+	}
+	.container > .navbar-collapse {
+		float: right;
+	}
+	#controls,
 	.whiteAngle,
 	.blackAngle,
 	.bgImages {
@@ -2158,6 +2161,7 @@ img {
 	.hero > div.inner {
 		z-index: 5;
 		padding: 7% 0 125px;
+		width: 70%;
 	}
 	.hero > div.inner h1 {
 		font-size: 48px;
@@ -2179,7 +2183,7 @@ img {
 		background-position: 0 -95px;
 	}
 	#accMark {
-		top: 94px;
+		top: 180px;
 	}
 
 	.insight[data-insight="10"] {
@@ -2282,7 +2286,7 @@ img {
 }
  
 /* ipad (portrait) */
-@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 	.insight .insightTitle {
 		left: 180px;
 		width: 25%;
