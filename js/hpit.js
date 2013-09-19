@@ -25,13 +25,7 @@ function setCookie(cname, cvalue) {
 function preload(arrayOfImages) {
 	$(arrayOfImages).each(function(){
 		$('<img/>')[0].src = this;
-		if(!onIpad()){
-			$('.bgImages').append('<div class="bgImg"><img src="'+this+'" /></div>');
-		} else {
-			//var foo = $('<img/>')[0];
-			//foo.src = this;
-			alert('this: ', this);
-		}
+		$('.bgImages').append('<div class="bgImg"><img src="'+this+'" /></div>');
 	});
 }
 
@@ -169,20 +163,7 @@ hpit.core = (function(){
 				'images/bg-japanese.png'
 			]);
 		} else {
-			if(onIpad()){
-				preload([
-					'images/bg-bridge.jpg',
-					'images/bg-ocean.jpg',
-					'images/bg-boat.jpg',
-					'images/bg-edinburgh.jpg',
-					'images/bg-field.jpg',
-					'images/bg-lake.jpg',
-					'images/bg-sunflower.jpg',
-					'images/bg-sea.jpg',
-					'images/bg-beach.jpg',
-					'images/bg-japanese.jpg'
-				]);
-			}
+			//console.log('NO preload');
 		}
 
 		$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile:' + onMobile() + '</div>' + '<div>onIpad:' + onIpad() + '</div>');
