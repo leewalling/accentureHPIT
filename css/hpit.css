@@ -380,6 +380,10 @@ img {
 	/*float: left;*/
 	overflow: hidden;
 }
+.hero .video-wrapper > img {
+	width: 100%;
+	height: auto;
+}
 .hero video {
 	top: 0px;
 	left: 0;
