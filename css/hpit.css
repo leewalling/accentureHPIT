@@ -574,7 +574,7 @@ img {
 	background-color: #fff;
 }
 .onMobile .insight .content .right-col {
-	background-color: magenta;
+	/*background-color: magenta;*/
 	float: left;
 	width: 100% !important;
 }
@@ -1057,15 +1057,33 @@ img {
   	background: #363636;
 }
 .navbar-nav > li.share:hover > a {
-  	visibility: hidden;
+	visibility: hidden;
 }
 .navbar-nav > li:hover .social {
-  	display: inline-block;
+	display: inline-block;
 }
 .container > .navbar-header,
 .container > .navbar-collapse {
 	margin: 0;
 	padding: 0;
+}
+.onMobile .container > .navbar-collapse {
+	display: none !important;
+}
+.onMobile .navbar-collapse.in {
+	display: block !important;
+}
+.onMobile .collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.35s ease;
+			transition: height 0.35s ease;
+}
+.onMobile .container > .navbar-header {
+	/*width: 100% !important;*/
+	float: none;
+	border-bottom: 2px solid #363636 !important;
 }
 .onMobile .navbar-toggle {
 	border: 1px solid transparent !important;
@@ -1082,6 +1100,7 @@ img {
 	-webkit-box-sizing:content-box;
 	-moz-box-sizing:content-box;
 	box-sizing:content-box;
+	display: inline-block !important;
 }
 .onMobile .navbar-toggle:hover,
 .onMobile .navbar-toggle:focus {
@@ -1418,7 +1437,7 @@ img {
 		font-size: 42px;
 		line-height: 48px;
 		max-width: 83% !important;
-		background-color: pink;
+		/*background-color: pink;*/
 	}
 	.insight .insightTitle h6 {
 		font-size: 20px;
