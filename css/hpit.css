@@ -574,7 +574,9 @@ img {
 	background-color: #fff;
 }
 .onMobile .insight .content .right-col {
-	background-color:transparent;
+	background-color: yellow;
+	float: left;
+	width: 100% !important;
 }
 .insight .bgImg {
 	width:100%;
