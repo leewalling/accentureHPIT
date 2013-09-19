@@ -810,7 +810,10 @@ hpit.core = (function(){
 		$('.navbar-toggle')
 			.attr('data-toggle','collapse')
 			.attr('data-target','.navbar-collapse');
-		$('.video-wrapper').html('<video width="100%" height="auto" autoplay loop><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/blue-loop.mp4" type="video/mp4"><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/blue-loop.ogg" type="video/ogg"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-1280.jpg" /></video>');
+		
+		if(!onMobile() && !onIpad()){
+			$('.video-wrapper').html('<video width="100%" height="auto" autoplay loop><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/blue-loop.mp4" type="video/mp4"><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/blue-loop.ogg" type="video/ogg"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-1280.jpg" /></video>');
+		}
 	}
 
 	function updateDimensions(){
