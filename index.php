@@ -123,21 +123,10 @@
 		<!-- end hero area -->
 		<div id="accMark" class="hidden-xs"></div>
 		<!--div id="accMarkMob" class="visible-xs"></div-->
-		<div class="whiteAngle hidden-xs"><!--img src="images/bg-white-angle.png" /--></div>
+		<div class="whiteAngle hidden-xs"></div>
 		<div class="blackAngle hidden-xs"></div>
 		<!-- background images -->
-		<div class="bgImages hidden-xs" id="bgImages">
-			<!--<div class="bgImg"><img src="images/bg-bridge.png" /></div>
-			<div class="bgImg"><img src="images/bg-ocean.png" /></div>
-			<div class="bgImg"><img src="images/bg-boat.png" /></div>
-			<div class="bgImg"><img src="images/bg-edinburgh.png" /></div>
-			<div class="bgImg"><img src="images/bg-field.png" /></div>
-			<div class="bgImg"><img src="images/bg-lake.png" /></div>
-			<div class="bgImg"><img src="images/bg-sunflower.png" /></div>
-			<div class="bgImg"><img src="images/bg-sea.png" /></div>
-			<div class="bgImg"><img src="images/bg-beach.png" /></div>
-			<div class="bgImg"><img src="images/bg-japanese.png" /></div>-->
-		</div>
+		<div class="bgImages hidden-xs" id="bgImages"></div>
 		<!-- end background images -->
 		<!-- insight #1 -->
 		<div class="insight" id="your-new-boss-your-customer">

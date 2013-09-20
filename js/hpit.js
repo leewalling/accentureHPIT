@@ -161,16 +161,6 @@ hpit.core = (function(){
 				'images/08.png',
 				'images/09.png',
 				'images/10.png'
-				/*'images/bg-bridge.png',
-				'images/bg-ocean.png',
-				'images/bg-boat.png',
-				'images/bg-edinburgh.png',
-				'images/bg-field.png',
-				'images/bg-lake.png',
-				'images/bg-sunflower.png',
-				'images/bg-sea.png',
-				'images/bg-beach.png',
-				'images/bg-japanese.png'*/
 			]);
 		} else {
 			//console.log('NO preload');

@@ -1191,10 +1191,16 @@ img {
 /******************************  Sharepoint overrides  **********************************/
 
 #skiptargetholder,
-#skipfootertargetholder {
-	margin: 0;
-}
+#skipfootertargetholder,
+#skipfooterlinkholder,
 #skiplinkholder {
+	margin: 0;
+	padding: 0;
+	display:none;
+}
+.page .footer .breadcrumbs {
+	margin: 0;
+	padding: 0;
 	display:none;
 }
 
