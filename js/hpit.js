@@ -680,7 +680,7 @@ hpit.core = (function(){
 	function playVideoInit(){
 		$('#hero .playVid').on('click',function(e){
 			e.preventDefault();
-			alert($("#hero .video-wrapper").html());
+			
 			if(!onMobile() && !onIpad()){
 				$("#hero video")[0].pause();
 			}
