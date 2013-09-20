@@ -111,7 +111,7 @@
 		<!-- end sidemenu -->
 		<!-- hero area -->
 		<div class="hero" id="hero">
-			<span class="video-wrapper"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-1280.jpg" /></span>
+			<span class="video-wrapper"></span>
 			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
 				<h1>The Rise of the Strategy Savvy CIO</h1>
