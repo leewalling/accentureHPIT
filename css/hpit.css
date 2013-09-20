@@ -398,8 +398,8 @@ img {
 .onMobile .hero .video-wrapper {
 	background-image:url("../images/video-1280.jpg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: 100% 100%;
+	background-position: top center;
+	background-size: 100% auto;
 	max-height: 500px;
 }
 .onMobile .hero > div.inner {
