@@ -151,8 +151,17 @@ hpit.core = (function(){
 		if(!onMobile() && !onIpad()){
 			//console.log('preloading!');
 			preload([
-				/*'images/video-still.jpg',*/
-				'images/bg-bridge.png',
+				'images/01.png',
+				'images/02.png',
+				'images/03.png',
+				'images/04.png',
+				'images/05.png',
+				'images/06.png',
+				'images/07.png',
+				'images/08.png',
+				'images/09.png',
+				'images/10.png'
+				/*'images/bg-bridge.png',
 				'images/bg-ocean.png',
 				'images/bg-boat.png',
 				'images/bg-edinburgh.png',
@@ -161,7 +170,7 @@ hpit.core = (function(){
 				'images/bg-sunflower.png',
 				'images/bg-sea.png',
 				'images/bg-beach.png',
-				'images/bg-japanese.png'
+				'images/bg-japanese.png'*/
 			]);
 		} else {
 			//console.log('NO preload');
@@ -818,7 +827,8 @@ hpit.core = (function(){
 			.attr('data-target','.navbar-collapse');
 		
 		if(!onMobile() && !onIpad()){
-			$('.video-wrapper').html('<video width="100%" height="auto" poster="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-still.jpg" preload="auto" autoplay loop><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture%20HPIT_gf002_Loop.mp4" type="video/mp4" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture%20HPIT_gf002_Loop.ogg" type="video/ogg" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture%20HPIT_gf002_Loop.webm" type="video/webm" /><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
+			//poster="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-still.jpg"
+			$('.video-wrapper').html('<video width="100%" height="auto" preload="auto" autoplay loop><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture%20HPIT_gf002_Loop.mp4" type="video/mp4" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture%20HPIT_gf002_Loop.ogg" type="video/ogg" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture%20HPIT_gf002_Loop.webm" type="video/webm" /><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
 		}
 	}
 
