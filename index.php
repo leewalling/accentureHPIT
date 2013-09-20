@@ -20,6 +20,10 @@
 
 	<div id="diagnostics"></div>
 
+	<!--
+
+	-->
+
 	<!-- video overlay -->
 	<div id="ll-overlay">
 		<div class="inner">
