@@ -151,7 +151,7 @@ hpit.core = (function(){
 		if(!onMobile() && !onIpad()){
 			//console.log('preloading!');
 			preload([
-				'images/video-still.jpg',
+				/*'images/video-still.jpg',*/
 				'images/bg-bridge.png',
 				'images/bg-ocean.png',
 				'images/bg-boat.png',
