@@ -2330,25 +2330,17 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 }
 
 /* Samsung S3 */
-/*
-@media only screen and (-webkit-device-pixel-ratio: 2) {
-	#accMarkMob {
-		position: absolute;	
-		left: 0;
-		display: inline-block;
-		overflow: hidden;
-		z-index: 1;
-		pointer-events:none;	
-		background-repeat: no-repeat;
-		background-position: 0 0;
+@media only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px) {
+	#ll-overlay .inner {
+		height: 100%;
+		width: 90%;
+	}
+	#ll-overlay #ll-player {
+		/*height: 50%;*/
 		width: 100%;
-		height: auto;
-		min-height: 0px;
-		background-image:url("../images/accenture-mark-mobile.png");
-		background-size: 100% auto;
 	}
 }
-*/
+
  
 /* test - galaxy s3??? */
 /*
