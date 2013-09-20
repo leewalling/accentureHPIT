@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="" lang="en" xmlns="http://www.w3.org/1999/html">
 	<head>
+		<meta charset="UTF-8">
 		<title>accenture hpit</title>
 		<!--meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=yes" /-->
 		<!--meta name="viewport" content="width=device-width, target-densityDpi=high-dpi, initial-scale=0.666667, minimum-scale=0.666667, maximum-scale=0.666667"-->
