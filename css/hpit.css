@@ -349,7 +349,7 @@ img {
 	background-position: 0 0;
 }
 .hero {
-	background-color: blue; /*#fff*/
+	background-color:#fff;
 	color:#000;
 	height:798px;
 	padding-top:0px;
@@ -379,7 +379,6 @@ img {
 	position: absolute;
 	/*float: left;*/
 	overflow: hidden;
-	background-color: red;
 }
 .hero .video-wrapper > img {
 	width: 100%;
