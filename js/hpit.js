@@ -680,8 +680,10 @@ hpit.core = (function(){
 	function playVideoInit(){
 		$('#hero .playVid').on('click',function(e){
 			e.preventDefault();
-			alert($('#ll-overlay').html());
-			$("#hero video")[0].pause();
+			alert($("#hero .video-wrapper").html());
+			if(!onMobile() && !onIpad()){
+				$("#hero video")[0].pause();
+			}
 			$('#ll-overlay').fadeIn(500);
 
 			omniTrack({
@@ -700,7 +702,9 @@ hpit.core = (function(){
 				//.find('#ll-player').html('')
 				//.end()
 				.fadeOut(500, function(){
-					$("#hero video")[0].play();
+					if(!onMobile() && !onIpad()){
+						$("#hero video")[0].play();
+					}
 				});
 		});
 
