@@ -680,7 +680,7 @@ hpit.core = (function(){
 	function playVideoInit(){
 		$('#hero .playVid').on('click',function(e){
 			e.preventDefault();
-			alert('playVid click');
+			alert($('#ll-overlay').html());
 			$("#hero video")[0].pause();
 			$('#ll-overlay').fadeIn(500);
 
