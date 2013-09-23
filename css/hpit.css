@@ -2336,7 +2336,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* iphone 5 */
 @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
-
+	.hero .video-wrapper {
+		height: 600px;
+	}
 }
 
 /* Samsung S3 */
