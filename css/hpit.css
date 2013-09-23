@@ -403,7 +403,7 @@ img {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 100% auto;
-	max-height: 500px;
+	max-height: 600px;
 }
 .onMobile .hero > div.inner {
 	z-index: 5;
