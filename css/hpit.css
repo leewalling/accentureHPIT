@@ -380,6 +380,7 @@ img {
 	/*float: left;*/
 	overflow: hidden;
 	background-image: url("../images/video-still.jpg");
+	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100% auto;
 }
@@ -2201,61 +2202,61 @@ img {
 	}
 
 	.insight[data-insight="10"] {
-		background-image:url("../images/bg-japanese.jpg");
+		background-image:url("../images/bg-ipad-10.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="9"] {
-		background-image:url("../images/bg-beach.jpg");
+		background-image:url("../images/bg-ipad-09.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="8"] {
-		background-image:url("../images/bg-sea.jpg");
+		background-image:url("../images/bg-ipad-08.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="7"] {
-		background-image:url("../images/bg-sunflower.jpg");
+		background-image:url("../images/bg-ipad-07.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="6"] {
-		background-image:url("../images/bg-lake.jpg");
+		background-image:url("../images/bg-ipad-06.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="5"] {
-		background-image:url("../images/bg-field.jpg");
+		background-image:url("../images/bg-ipad-05.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="4"] {
-		background-image:url("../images/bg-edinburgh.jpg");
+		background-image:url("../images/bg-ipad-04.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="3"] {
-		background-image:url("../images/bg-boat.jpg");
+		background-image:url("../images/bg-ipad-03.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="2"] {
-		background-image:url("../images/bg-ocean.jpg");
+		background-image:url("../images/bg-ipad-02.jpg");
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="1"] {
-		background-image:url("../images/bg-bridge.jpg");
+		background-image:url("../images/bg-ipad-01.jpg");
 		background-repeat: no-repeat !important;
 	  	background-position: top center !important;
 	  	background-size: auto 100% !important;
