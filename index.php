@@ -156,7 +156,7 @@
 						<span class="heading">Why it's important</span>
 						<span>High performers have moved beyond internally focused objectives like cost and productivity. <strong>The new bulls-eye is the customer experience.</strong> </span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -225,7 +225,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Many CIOs are still caught up troubleshooting and fixing problems instead of creating value. High performers invest in new ways IT can deliver on business strategy and create new opportunities.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -279,7 +279,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Global competition means exploring business scenarios&ndash;economic, geopolitical, social and more&ndash;is also crucial to the IT planning process.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -333,7 +333,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Legacy systems drag down performance and tie up valuable resources. Streamlined, simplified application portfolios allow high performers to zig when markets zag.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -387,7 +387,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Digital is about more than devices. It's driving how products are designed and produced, how transactions are created and managed, and even how collaboration is accomplished and relationships are formed.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -441,7 +441,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Volatility in markets, partner engagements and even business models can create new opportunities&ndash;if your organization is nimble enough to turn the situation to your advantage.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -495,7 +495,7 @@
 						<span class="heading">Why it's important</span>
 						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that spur actionable outcomes&ndash;and competitive advantage.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -549,7 +549,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Breaking down barriers to self-service for individuals across your business&ndash;employees, suppliers, even customers&ndash;turns them from mere IT "service tickets" to powerful agents of change, helping drive innovation, generate insights and probe new markets.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -605,7 +605,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Experimentation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look both inside and outside of their companies to fill needs and plug knowledge gaps.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>
@@ -659,7 +659,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Company's risk profiles are increasingly defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities with heavy digital components that all need protecting.</span>
 						<div class="the-video">
-							<a href="#"><img src="images/video-small.jpg" /></a>
+							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
 						</div>
 						</div>

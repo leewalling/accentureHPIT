@@ -774,6 +774,32 @@ img {
 	width: 220px;
 	overflow: hidden;
 }
+.insight .content .right-col > div.with-video .the-video > a {
+	display: inline-block;
+	position: relative;
+	float: none;
+	width: 220px;
+	height: 124px;
+	overflow: hidden;
+	background-image:url("../images/video-small.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.insight .content .right-col > div.with-video .the-video > a > span {
+	display: inline-block;
+	position: absolute;
+	left: 13px;
+	bottom: 15px;
+	width: 34px;
+	height: 34px;
+	background-color: #000;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+	overflow: hidden;
+	background-image:url("../images/bg-arrow.png");
+	background-repeat: no-repeat;
+	background-position: 12px 10px;
+}
 .insight .content .right-col > div.with-video .the-video > div {
 	display: block;
 	overflow: hidden;
@@ -881,42 +907,52 @@ img {
 .insight[data-insight="1"] .marker,
 .insight[data-insight="1"] .content .right-col > div.heading,
 .insight[data-insight="1"] .content .right-col > div .tr > span.num,
+.insight[data-insight="1"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="1"] .insightTitle .toggler {background-color:#aa1133;}
 .insight[data-insight="2"] .marker,
 .insight[data-insight="2"] .content .right-col > div.heading,
 .insight[data-insight="2"] .content .right-col > div .tr > span.num,
+.insight[data-insight="2"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="2"] .insightTitle .toggler {background-color:#ff0000;}
 .insight[data-insight="3"] .marker,
 .insight[data-insight="3"] .content .right-col > div.heading,
 .insight[data-insight="3"] .content .right-col > div .tr > span.num,
+.insight[data-insight="3"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="3"] .insightTitle .toggler {background-color:#dd4411;}
 .insight[data-insight="4"] .marker,
 .insight[data-insight="4"] .content .right-col > div.heading,
 .insight[data-insight="4"] .content .right-col > div .tr > span.num,
+.insight[data-insight="4"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="4"] .insightTitle .toggler {background-color:#ff9900;}
 .insight[data-insight="5"] .marker,
 .insight[data-insight="5"] .content .right-col > div.heading,
 .insight[data-insight="5"] .content .right-col > div .tr > span.num,
+.insight[data-insight="5"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="5"] .insightTitle .toggler {background-color:#bbbb00;}
 .insight[data-insight="6"] .marker,
 .insight[data-insight="6"] .content .right-col > div.heading,
 .insight[data-insight="6"] .content .right-col > div .tr > span.num,
+.insight[data-insight="6"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="6"] .insightTitle .toggler {background-color:#00aa99;}
 .insight[data-insight="7"] .marker,
 .insight[data-insight="7"] .content .right-col > div.heading,
 .insight[data-insight="7"] .content .right-col > div .tr > span.num,
+.insight[data-insight="7"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="7"] .insightTitle .toggler {background-color:#00bbee;}
 .insight[data-insight="8"] .marker,
 .insight[data-insight="8"] .content .right-col > div.heading,
 .insight[data-insight="8"] .content .right-col > div .tr > span.num,
+.insight[data-insight="8"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="8"] .insightTitle .toggler {background-color:#3399cc;}
 .insight[data-insight="9"] .marker,
 .insight[data-insight="9"] .content .right-col > div.heading,
 .insight[data-insight="9"] .content .right-col > div .tr > span.num,
+.insight[data-insight="9"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="9"] .insightTitle .toggler {background-color:#ff3366;}
 .insight[data-insight="10"] .marker,
 .insight[data-insight="10"] .content .right-col > div.heading,
 .insight[data-insight="10"] .content .right-col > div .tr > span.num,
+.insight[data-insight="10"] .content .right-col > div.with-video .the-video > a > span,
 .insight[data-insight="10"] .insightTitle .toggler {background-color:#551155;}
 
 .insight[data-insight="1"] .content .right-col > div .heading {color:#aa1133;}
