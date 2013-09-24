@@ -114,8 +114,11 @@
 			<span class="video-wrapper"></span>
 			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
+				<h1>High Performers in IT Are Defined by Digital</h1>
+				<p>IT now means "innovation team" and "insight tracker" as much as "information technology." <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p>
+				<!--h3>Accenture High Performance IT Survey 2013</h3>
 				<h1>The Rise of the Strategy Savvy CIO</h1>
-				<p>IT now means "in transition" as CIOs move from the server room to the board room and help set the strategic digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p>
+				<p>IT now means "in transition" as CIOs move from the server room to the board room and help set the strategic digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p-->
 				<a href="#hero-video" class="playVid"></a>
 			</div>
 			<div id="accMarkMob" class="visible-xs"><img src="images/accenture-mark-mobile.png" width="100%" height="auto" /></div>
