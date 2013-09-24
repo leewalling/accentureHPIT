@@ -817,8 +817,8 @@ hpit.core = (function(){
 			.attr('data-target','.navbar-collapse');
 		
 		if(!onMobile() && !onIpad()){
-			//poster="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-still.jpg"
-			$('.video-wrapper').html('<video width="100%" height="auto" preload="auto" autoplay loop><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_0923_ES_Loop_v2.mp4" type="video/mp4" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_0923_ES_Loop_v2.ogg" type="video/ogg" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_0923_ES_Loop_v2.webm" type="video/webm" /><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
+			//poster="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_AccentureCameraB.jpg"
+			$('.video-wrapper').html('<video width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_0923_ES_Loop_v2.mp4" type="video/mp4" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_0923_ES_Loop_v2.ogg" type="video/ogg" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_0923_ES_Loop_v2.webm" type="video/webm" /><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_AccentureCameraB.jpg" /></video>');
 		}
 	}
 

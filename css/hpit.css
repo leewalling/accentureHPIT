@@ -363,7 +363,7 @@ img {
 	margin-top: 62px;
 	left: 0;
 	/*
-	background-image:url("../images/video-still.jpg");
+	background-image:url("../images/0471_AccentureCameraB.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100% 100%;
@@ -379,7 +379,7 @@ img {
 	position: absolute;
 	/*float: left;*/
 	overflow: hidden;
-	background-image: url("../images/video-still.jpg");
+	background-image: url("../images/0471_AccentureCameraB.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100% auto;
@@ -400,7 +400,7 @@ img {
 	display: none;
 }
 .onMobile .hero .video-wrapper {
-	background-image:url("../images/video-still.jpg");
+	background-image:url("../images/0471_AccentureCameraB.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: auto 100%;
