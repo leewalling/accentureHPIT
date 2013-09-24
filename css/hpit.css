@@ -421,10 +421,22 @@ img {
 	z-index: 1;
 	/*z-index: 5;*/
 }
+.hero.left > div.inner {
+	width: 72%;
+	text-align: left;
+}
 .hero > div.inner h1 {
 	font-size: 54px;
 	margin: 10px auto;
 	width: 80%;
+}
+.hero.left > div.inner h1 {
+	margin: 10px 0;
+	width: 100%;
+}
+.hero.left > div.inner h3 {
+	margin: 0;
+	width: 100%;
 }
 .hero > div.inner h3 {
 	font-size: 26px;
@@ -437,6 +449,11 @@ img {
 	width: 75%;
 	margin: 0 auto;
 	font-size: 18px;
+}
+.hero.left > div.inner p {
+	width: 75%;
+	margin: 0;
+	font-size: 22px;
 }
 .hero > div.inner p strong {
 	/*white-space: nowrap;*/
