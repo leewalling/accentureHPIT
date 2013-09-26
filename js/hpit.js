@@ -151,16 +151,16 @@ hpit.core = (function(){
 		if(!onMobile() && !onIpad()){
 			//console.log('preloading!');
 			preload([
-				'images/01.png',
-				'images/02.png',
-				'images/03.png',
-				'images/04.png',
-				'images/05.png',
-				'images/06.png',
-				'images/07.png',
-				'images/08.png',
-				'images/09.png',
-				'images/10.png'
+				'images/01.png?x=1.00',
+				'images/02.png?x=1.00',
+				'images/03.png?x=1.00',
+				'images/04.png?x=1.00',
+				'images/05.png?x=1.00',
+				'images/06.png?x=1.00',
+				'images/07.png?x=1.00',
+				'images/08.png?x=1.00',
+				'images/09.png?x=1.00',
+				'images/10.png?x=1.00'
 			]);
 		} else {
 			//console.log('NO preload');
@@ -390,10 +390,13 @@ hpit.core = (function(){
 					$('.bgImg[data-insight="'+menuItem+'"] img').addClass('activate');
 
 					if(!hpit.config.locked && (hpit.config.currPageView != menuItem)){
+						omniTrackPageView(menuItem);
+						/*
 						omniTrack({
 							eventName: $('#sideMenu ul li[data-insight-nav="'+menuItem+'"] a').attr('href'),
 							eventType: 'page-view'
 						});
+						*/
 						/*
 						setTimeout(function(){
 							console.log('**************************************************');
@@ -843,6 +846,29 @@ hpit.core = (function(){
 		}
 	}
 
+	function omniTrackPageView(num){
+		console.log('function omniTrackPageView: ', num);
+		/*
+		var s_account='accactaccprod,accactglobprod';
+		//console.log('s_account: ', s_account);
+		var shortenURL = 'acn:microsites:high-performance-it:home:insight' + num;
+		//console.log('shortenURL: ', shortenURL);
+		var domainPrefix = 'an';
+		//console.log('domainPrefix: ', domainPrefix);
+		var countryLang = 'us-en';
+		//console.log('countryLang: ', countryLang);
+		var trackevents = 'event20,event29,event69';
+		//console.log('trackevents: ', trackevents);
+		//console.log('contentHier: ', contentHier);
+		s.pageName = GetPageName(shortenURL,domainPrefix,contentHier);
+		//console.log('s.pageName: ', s.pageName);
+		var s_code=s.t();
+		//console.log('s_code: ', s_code);
+		if(s_code)document.write(s_code);
+		*/
+	}
+
+	/* omniture tracking function */
 	function omniTrack(obj){
 		//console.log('Object: ', obj);
 		
