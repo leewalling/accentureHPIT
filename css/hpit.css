@@ -74,7 +74,7 @@ img {
 .onMobile .hero {
 	position: relative;
 	min-height: 0px !important;
-	/*background-color: #000;*/
+	background-color: #000;
 }
 .onMobile .insight .container.content {
 	display: none;
@@ -370,7 +370,6 @@ img {
 	*/
 }
 .hero .video-wrapper {
-	/*position: relative;*/
 	width: 100%;
 	height: 700px;
 	display: inline-block;
@@ -400,14 +399,19 @@ img {
 	display: none;
 }
 .onMobile .hero .video-wrapper {
-	background-image:url("../images/0471_AccentureCameraB.jpg");
+	position: relative;
+	background-image:url("../images/0471_AccentureCameraA.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: auto 100%;
-	max-height: 500px;
+	max-height: auto;
+	/*max-height: 500px;*/
 }
 .onMobile .hero > div.inner {
 	z-index: 5;
+	margin: 0;
+	padding: 5%;
+	width: 100%;
 }
 .hero > div.inner {
 	position: relative;
@@ -1465,16 +1469,16 @@ img {
 		/*min-height: 925px;*/
 	}
 	.hero .video-wrapper {
-		height: 500px;
+		height: 560px;
 	}
 	.hero video {
 		/*height:500px;*/
 	}
 	.hero > div.inner {
-		margin: 110px auto 0 auto;
+		/*margin: 110px auto 0 auto;
 		padding: 180px 0 0 0;
 		width: 88%;
-		z-index: 5;
+		z-index: 5;*/
 	}
 	.hero > div.inner h3 {
 		font-size: 24px;
@@ -1512,7 +1516,7 @@ img {
 		width: 100%;
 		height: auto;
 		min-height: 0px;
-		margin-top: -475px;
+		/*margin-top: -475px;*/
 	}
 	#accMarkMob img {
 		position: relative;	
@@ -1643,34 +1647,35 @@ img {
 		/*min-height: 797px;*/
 	}
 	.hero > div.inner {
-		margin: 90px auto 0 auto;
-		padding: 145px 0 0 0;
+		/*margin: 90px auto 0 auto;
+		padding: 145px 0 0 0;*/
 	}
 	.hero > div.inner h3 {
-		font-size: 22px;
+		font-size: 28px;
+		width: 88%;
 	}
 	.hero > div.inner h1 {
 		font-size: 52px;
 		width: 95%;
 	}
 	.hero > div.inner p {
-		font-size: 22px;
+		font-size: 28px;
 		width: 88%;
 	}
 	.hero > div.inner .playVid {
-		top: 0;
-		bottom: auto;
-		width: 57px;
-		height: 57px;
-		margin-left: -28.5px;
-		background-image:url("../images/play.png");
+		top: auto;
+		bottom: -200px;
+		width: 95px;
+		height: 95px;
+		margin-left: -47.5px;
+		background-image:url("../images/play-lg.png");
 	}
 	.hero > div.inner .playVid:hover {
-		background-position: 0 -57px;
+		background-position: 0 -95px;
 	}
 	#accMarkMob {
 		min-height: 0px;
-		margin-top: -410px;
+		margin-top: -400px;
 	}
 }
 
@@ -1687,25 +1692,29 @@ img {
 		/*min-height: 797px;*/
 	}
 	.hero .video-wrapper {
-		height: 400px;
+		height: 475px;
 	}
 	.hero > div.inner {
-		margin: 90px auto 0 auto;
-		padding: 130px 0 0 0;
+		/*margin: 90px auto 0 auto;
+		padding: 130px 0 0 0;*/
 	}
 	.hero > div.inner h3 {
-		font-size: 18px;
+		font-size: 22px;
 	}
 	.hero > div.inner h1 {
-		font-size: 48px;
+		font-size: 44px;
 		width: 100%;
 	}
 	.hero > div.inner p {
-		font-size: 18px;
+		font-size: 22px;
+	}
+	.hero > div.inner .playVid {
+		top: auto;
+		bottom: -180px;
 	}
 	#accMarkMob {
 		min-height: 0px;
-		margin-top: -350px;
+		margin-top: -340px;
 	}
 }
 
@@ -1720,16 +1729,20 @@ img {
 	.hero {
 		/*min-height: 636px;*/
 	}
+	.hero .video-wrapper {
+		height: 420px;
+	}
 	.hero > div.inner {
-		margin: 75px auto 0 auto;
-		padding: 135px 0 0 0;
+		/*margin: 75px auto 0 auto;
+		padding: 135px 0 0 0;*/
+		padding: 6% !important;
 	}
 	.hero > div.inner h3 {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.hero > div.inner .playVid {
-		top: 0;
-		bottom: auto;
+		top: auto;
+		bottom: -150px;
 		width: 57px;
 		height: 57px;
 		margin-left: -28.5px;
@@ -1740,19 +1753,16 @@ img {
 	}
 	.hero > div.inner h1 {
 		width: 100%;
-		font-size: 42px;
+		font-size: 40px;
 		margin-top: 10px;
 	}
 	.hero > div.inner p {
 		width: 100%;
 		font-size: 18px;
 	}
-	.hero .video-wrapper {
-		height: 400px;
-	}
 	#accMarkMob {
 		min-height: 0px;
-		margin-top:-325px;
+		margin-top: -325px;
 	}
 	#ll-overlay .chapters > div {
 		height: 41px;
@@ -1819,16 +1829,21 @@ img {
 		/*min-height: 494px;*/
 	}
 	.hero > div.inner {
-		margin: 60px auto 0 auto;
+		/*margin: 60px auto 0 auto;
 		padding: 105px 0 0 0;
-		width: 90%;
+		width: 90%;*/
+		padding: 7% !important;
 	}
 	.hero > div.inner h3 {
-		font-size: 13px;
+		font-size: 14px;
+		width: 78%;
+	}
+	.hero > div.inner .playVid {
+		bottom: -135px;
 	}
 	.hero > div.inner h1 {
 		width: 100%;
-		font-size: 34px;
+		font-size: 30px;
 		margin-top: 10px;
 		margin-bottom: 12px;
 	}
@@ -1837,11 +1852,11 @@ img {
 		font-size: 14px;
 	}
 	.hero .video-wrapper {
-		height: 310px;
+		height: 400px;
 	}
 	#accMarkMob {
-		margin-top: -235px;
 		min-height: 0px;
+		margin-top: -285px;
 	}
 	#ll-overlay .inner {
 		height: 351px;
@@ -2122,24 +2137,29 @@ img {
 	}
 	#accMarkMob {
 		min-height: 0px;
-		margin-top: -210px;
+		/*margin-top: -210px;*/
 	}	
 	.hero {
 		height: auto;
 		/*min-height: 464px;*/
 	}
 	.hero > div.inner {
-		width: 95%;
+		/*width: 95%;*/
+		padding: 7% 5% !important;
 	}
 	.hero > div.inner h3 {
-		font-size: 12px;
+		font-size: 14px;
+		width: 84%;
+	}
+	.hero > div.inner .playVid {
+		bottom: -125px;
 	}
 	.hero > div.inner h1 {
-		font-size: 32px;
+		font-size: 28px;
 	}
 	.hero > div.inner p {
 		width: 88%;
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 

@@ -221,7 +221,7 @@ hpit.core = (function(){
 
 			if(!onMobile() && !onIpad()){
 				// determine if we need to lock the background images in place
-				if($(window).scrollTop() > $('.insight').eq(0).offset().top){ //$('#hero').outerHeight(true)
+				if($(window).scrollTop() > $('.insight').eq(0).offset().top){ //$('.hero').outerHeight(true)
 					if(!$('.bgImages').hasClass('fixed')){
 						$('.bgImages').addClass('fixed');
 					}
@@ -258,7 +258,7 @@ hpit.core = (function(){
 					$('.bgImg img').removeClass('activate');
 					var $newT = $(window).scrollTop() / 3.5;
 					if(!onIpad()) {
-						$('#hero').css({'top' : - $newT});
+						$('.hero').css({'top' : - $newT});
 					}
 				}
 			}
@@ -506,7 +506,7 @@ hpit.core = (function(){
 					onAfter: function() {
 						hpit.config.locked = false;
 						if(hpit.config.desktopORtouch == 'desktop'){
-							if(!$(window).scrollTop() > $('#hero').outerHeight(true)){
+							if(!$(window).scrollTop() > $('.hero').outerHeight(true)){
 								//console.log('NOT TOP');
 							} else {
 								//console.log('scroll top: ', $(window).scrollTop());
@@ -678,11 +678,11 @@ hpit.core = (function(){
 
 	// video player
 	function playVideoInit(){
-		$('#hero .playVid').on('click',function(e){
+		$('.hero .playVid').on('click',function(e){
 			e.preventDefault();
 			
 			if(!onMobile() && !onIpad()){
-				$("#hero video")[0].pause();
+				$(".hero video")[0].pause();
 			}
 			$('#ll-overlay').fadeIn(500);
 
@@ -703,7 +703,7 @@ hpit.core = (function(){
 				//.end()
 				.fadeOut(500, function(){
 					if(!onMobile() && !onIpad()){
-						$("#hero video")[0].play();
+						$(".hero video")[0].play();
 					}
 				});
 		});
