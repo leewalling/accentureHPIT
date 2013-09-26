@@ -1188,6 +1188,7 @@ img {
 }
 .onMobile .container > .navbar-collapse {
 	display: none !important;
+	border-bottom: 2px solid #363636 !important;
 }
 .onMobile .navbar-collapse.in {
 	display: block !important;
