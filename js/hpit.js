@@ -159,16 +159,16 @@ hpit.core = (function(){
 		if(!onMobile() && !onIpad()){
 			//console.log('preloading!');
 			preload([
-				'images/01.png?x=1.00',
-				'images/02.png?x=1.00',
-				'images/03.png?x=1.00',
-				'images/04.png?x=1.00',
-				'images/05.png?x=1.00',
-				'images/06.png?x=1.00',
-				'images/07.png?x=1.00',
-				'images/08.png?x=1.00',
-				'images/09.png?x=1.00',
-				'images/10.png?x=1.00'
+				'images/01.png',
+				'images/02.png',
+				'images/03.png',
+				'images/04.png',
+				'images/05.png',
+				'images/06.png',
+				'images/07.png',
+				'images/08.png',
+				'images/09.png',
+				'images/10.png'
 			]);
 		} else {
 			//console.log('NO preload');
