@@ -52,34 +52,34 @@ hpit.config = {
 	},
 	groups: {
 		'insight1': {
-			newHash: '#your-new-boss-your-customer'
+			newHash: '#insight1'
 		},
 		'insight2': {
-			newHash: '#technology-is-inseparable-from-business-strategy'
+			newHash: '#insight2'
 		},
 		'insight3': {
-			newHash: '#context-is-king'
+			newHash: '#insight3'
 		},
 		'insight4': {
-			newHash: '#flexibility-first'
+			newHash: '#insight4'
 		},
 		'insight5': {
-			newHash: '#be-fearlessly-digital'
+			newHash: '#insight5'
 		},
 		'insight6': {
-			newHash: '#survival-of-the-quickest'
+			newHash: '#insight6'
 		},
 		'insight7': {
-			newHash: '#all-data-is-not-created-equal'
+			newHash: '#insight7'
 		},
 		'insight8': {
-			newHash: '#power-to-the-people'
+			newHash: '#insight8'
 		},
 		'insight9': {
-			newHash: '#build-your-capabilities-around-talent-not-technology'
+			newHash: '#insight9'
 		},
 		'insight10': {
-			newHash: '#take-a-holistic-stance-on-security-and-risk'
+			newHash: '#insight10'
 		}
 	},
 	activeChap: 0,
@@ -147,7 +147,15 @@ hpit.core = (function(){
 		}
 
 		$('head').append('<meta name="viewport" content="width=device-width, target-densityDpi=high-dpi, initial-scale=0.666667, minimum-scale=0.666667, maximum-scale=0.666667">');
-		
+		/*
+		$('head').append('<meta property="og:title" content="High Performance IT - Accenture" />');
+		$('head').append('<meta property="og:url" content="http://www.accenture.com/microsites/high-performance-it/pages/home.aspx" />');
+		$('head').append('<meta property="og:description" content="Accenture High Performance IT description ..." />');
+		$('head').append('<meta property="og:type" content="company" />');
+		$('head').append('<meta property="og:site_name" content="Accenture" />');
+		$('head').append('<meta property="og:image" content="http://www.accenture.com/microsites/high-performance-it/PublishingImages/logo.png" />');
+		*/
+
 		if(!onMobile() && !onIpad()){
 			//console.log('preloading!');
 			preload([
@@ -168,6 +176,9 @@ hpit.core = (function(){
 
 		$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile:' + onMobile() + '</div>' + '<div>onIpad:' + onIpad() + '</div>');
 		
+		// add favicon
+		addFavicon();
+
 		// Initialize event handler for deeplinks
 		deeplinkInit();
 
@@ -198,7 +209,7 @@ hpit.core = (function(){
 		// Initialize event handler for insight togglers
 		togglerInit();
 		
-		// Work out whether IE7 is being used to view the site, due to the way absolute vs. fixed positioning works differently in that browser
+		// check if the user is on IE7
 		hpit.config.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
 		
 		var validHashValue = false;
@@ -209,6 +220,29 @@ hpit.core = (function(){
 			if(!onMobile() && !onIpad()){
 				paneLock($(this),index);
 			}			
+		});
+
+		// track download link click
+		$('.download a').on('click',function(e){
+			FlashDownload($(this).attr('href'), 'Download – Get the Study', 'Download Link');
+		});
+
+		// track contact link click
+		$('.contact a').on('click',function(e){
+			omniTrack({
+				eventLink: $(this).attr('href'),
+				eventName: 'Contact US – Top Nav',
+				eventType: 'Internal Lead Gen'
+			});
+		});
+
+		// track footer - "learn more" section link clicks
+		$('#footer .about a').on('click',function(e){
+			omniTrack({
+				eventLink: $(this).attr('href'),
+				eventName: 'Learn More - ' + $(this).text(),
+				eventType: 'Internal Text Link'
+			});
 		});
 
 		$('.bgImg').css({"opacity" : 0});
@@ -234,7 +268,7 @@ hpit.core = (function(){
 				} else {
 					var toGo = $('.insight').eq(0).offset().top - $(window).scrollTop();					
 					if(toGo > -1 && toGo < 226){						
-						//console.log('toGo: ', toGo);
+						console.log('toGo: ', toGo);
 						if($('.blackAngle').hasClass('fixed')){
 							$('.blackAngle').removeClass('fixed');
 						}
@@ -391,20 +425,6 @@ hpit.core = (function(){
 
 					if(!hpit.config.locked && (hpit.config.currPageView != menuItem)){
 						omniTrackPageView(menuItem);
-						/*
-						omniTrack({
-							eventName: $('#sideMenu ul li[data-insight-nav="'+menuItem+'"] a').attr('href'),
-							eventType: 'page-view'
-						});
-						*/
-						/*
-						setTimeout(function(){
-							console.log('**************************************************');
-							console.log('currPageView: ', hpit.config.currPageView);
-							console.log('menuItem: ', menuItem);
-							console.log('**************************************************');
-						}, 100);
-						*/
 					}
 
 					hpit.config.currInsight = menuItem;
@@ -442,6 +462,15 @@ hpit.core = (function(){
 		if(cntrlMess == undefined || cntrlMess == null || cntrlMess == ''){
 			$('#controls .control-info').fadeIn();
 		}
+	}
+
+	// Favicon
+	function addFavicon(){
+		var link = document.createElement('link');
+    	link.type = 'image/x-icon';
+    	link.rel = 'shortcut icon';
+    	link.href = 'http://www.accenture.com/Microsites/high-performance-it/PublishingImages/favicon.ico';
+    	document.getElementsByTagName('head')[0].appendChild(link);
 	}
 
 	// deeplinking
@@ -634,36 +663,50 @@ hpit.core = (function(){
 		$('.social > a').on('click',function(e){
 			e.preventDefault();
 			var $th = $(this);
+
+			var inTopNav = false;
+			if($th.parent().parent().hasClass('share')){
+				inTopNav = true;
+			}
+			
 			var $cl = $th.attr('class');
 			var $link = $th.attr('href');
+			var $linkUrl = $link.split('?')[1];
 			var $title = $th.attr('title');
+			var $shareUrl = '';
 			var $shareTitle = encodeURIComponent($title);
 			var $winName = $cl + '-win';
+			var $toTrack;
+			var $trackName;
 
 			switch($cl){
 				case 'google':
-					var $linkUrl = $link.split('?')[1].replace("url=","");
-					var $shareUrl = encodeURIComponent($linkUrl);
+					$trackName = 'Google+';
+					$linkUrl = $linkUrl.replace("url=","");
+					$shareUrl = encodeURIComponent($linkUrl);
 					var $goto = 'https://plus.google.com/share?url=' + $shareUrl;
 					var $params = 'width=660,height=400,scrollbars=no;resizable=no';
 					break;
 				case 'facebook':
-					var $linkUrl = $link.split('?')[1].replace("u=","");
-					var $shareUrl = encodeURIComponent($linkUrl);
+					// http://www.facebook.com/sharer.php?s=100&p[title]=titleheresexily&p[url]=http://www.mysexyurl.com&p[summary]=mysexysummaryhere&p[images][0]=http://www.urltoyoursexyimage.com
+					$trackName = 'Facebook';
+					$linkUrl = $linkUrl.replace("u=","");
+					$shareUrl = encodeURIComponent($linkUrl);
 					var $goto = 'http://www.facebook.com/share.php?u=' + $shareUrl;
 					var $params = 'width=660,height=400,scrollbars=no;resizable=no';
-					//http://www.facebook.com/sharer.php?s=100&p[title]=titleheresexily&p[url]=http://www.mysexyurl.com&p[summary]=mysexysummaryhere&p[images][0]=http://www.urltoyoursexyimage.com
 					break;
 				case 'twitter':
-					var $linkUrl = $link.split('?')[1].replace("url=","");
-					var $shareUrl = encodeURIComponent($linkUrl);
+					$trackName = 'Twitter';
+					$linkUrl = $linkUrl.replace("url=","");
+					$shareUrl = encodeURIComponent($linkUrl);
 					var $goto = 'http://twitter.com/share?url=' + $shareUrl +
 						'&text=Descriptive text goes here...';
 					var $params = 'width=660,height=400,scrollbars=no;resizable=no';
 					break;
 				case 'linkedin':
-					var $linkUrl = $link.split('?')[1].replace("mini=true&url=","");
-					var $shareUrl = encodeURIComponent($linkUrl);
+					$trackName = 'LinkedIn';
+					$linkUrl = $linkUrl.replace("mini=true&url=","");
+					$shareUrl = encodeURIComponent($linkUrl);
 					var $shareSummary = 'test summary - linkedin';
 					var $shareSource = 'test source - linkedin';
 					var $goto = 'http://www.linkedin.com/shareArticle?mini=true' +
@@ -676,6 +719,25 @@ hpit.core = (function(){
 			}
 
 			window.open($goto, $winName, $params);
+			
+			// tracking social clicks
+			if(inTopNav){
+				$toTrack = $linkUrl;
+				omniTrack({
+					eventLink: $toTrack,
+					eventName: 'Share - Top Nav',
+					eventType: 'Social'
+				});
+			} else {
+				$toTrack = $linkUrl + '?' + $link.split('?')[2];
+				omniTrack({
+					eventLink: $toTrack,
+					eventName: 'Share - ' + $trackName,
+					eventType: 'Social'
+				});
+			}
+
+			console.log('$toTrack: ', $toTrack);
 		});
 	}
 
@@ -689,9 +751,12 @@ hpit.core = (function(){
 			}
 			$('#ll-overlay').fadeIn(500);
 
+			//FlashVideoAudio(“URL of the video”, “1”);
+
 			omniTrack({
+				eventLink: $(this).attr('href'),
 				eventName: $(this).attr('href').replace('#',''),
-				eventType: 'video-button-click'
+				eventType: 'hero video play'
 			});
 		});
 
@@ -826,8 +891,8 @@ hpit.core = (function(){
 
 	function initVideo(){
 		//console.log('video initialized');
-		//poster="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-still.jpg"
-		$('.video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.mp4" type="video/mp4" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.ogg" type="video/ogg" /><source src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.webm" type="video/webm" /><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
+		//poster="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg"
+		$('.video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.mp4" type="video/mp4" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.ogg" type="video/ogg" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.webm" type="video/webm" /><img src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
 		var video = document.getElementById('theVideo');
 		video.addEventListener('ended', function(){
         	console.log('video ended');
@@ -857,38 +922,24 @@ hpit.core = (function(){
 	}
 
 	function omniTrackPageView(num){
-		console.log('function omniTrackPageView: ', num);
-		/*
-		var s_account='accactaccprod,accactglobprod';
-		//console.log('s_account: ', s_account);
-		var shortenURL = 'acn:microsites:high-performance-it:home:insight' + num;
-		//console.log('shortenURL: ', shortenURL);
-		var domainPrefix = 'an';
-		//console.log('domainPrefix: ', domainPrefix);
-		var countryLang = 'us-en';
-		//console.log('countryLang: ', countryLang);
-		var trackevents = 'event20,event29,event69';
-		//console.log('trackevents: ', trackevents);
-		//console.log('contentHier: ', contentHier);
-		s.pageName = GetPageName(shortenURL,domainPrefix,contentHier);
-		//console.log('s.pageName: ', s.pageName);
-		var s_code=s.t();
-		//console.log('s_code: ', s_code);
-		if(s_code)document.write(s_code);
-		*/
+		//console.log('function omniTrackPageView: ', num);
+		var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
+		console.log('newPageName: ', newPageName);
+		//triggerOmniturePageView(newPageName);
 	}
 
 	/* omniture tracking function */
 	function omniTrack(obj){
-		//console.log('Object: ', obj);
+		console.log('Object: ', obj);
 		
 		try {
-			console.log('******************* TRACK *******************');
-			console.log('URL: ', top.location.href);
+			FlashLinkAnalysis( obj.eventLink, obj.eventName, obj.eventType );
+			/*
+			console.log('******************* CLICK TRACK *******************');
+			console.log('URL: ', obj.eventLink);
 			console.log('Name: ', obj.eventName);
 			console.log('Type: ', obj.eventType);
-			console.log('******************* TRACK *******************');
-			//FlashLinkAnalysis( top.location.href, obj.eventName, obj.eventType );
+			*/
 		} catch(err) {
 			//console.log('Tracking error: ', err);
 		}

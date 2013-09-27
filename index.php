@@ -120,7 +120,7 @@
 			<span class="video-wrapper"></span>
 			<div id="accMarkMob"><img src="images/accenture-mark-mobile2.png" width="100%" height="auto" /></div>
 		</div>
-		<div class="hero hidden-xs" id="hero">
+		<div class="hero left hidden-xs" id="hero">
 			<span class="video-wrapper"></span>
 			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
@@ -702,14 +702,14 @@
 			<div>
 				<div class="about">
 					<h6>LEARN MORE ABOUT:</h6>
-					<a href="#">accenture technology practice</a>
-					<a href="#">accenture HPIT</a>
-					<a href="#">accenture tech vision</a>
+					<a href="#" target="_blank">Accenture Technology Practice</a>
+					<a href="#" target="_blank">Accenture HPIT</a>
+					<a href="http://www.accenture.com/microsites/it-trends-innovations-2013/Pages/home.aspx" target="_blank">Accenture Tech Vision</a>
 				</div>
 				<div class="legal">
-					<a href="#">Legal Mentions</a>
-					<a href="#">Terms of Use</a>
-					<a href="#" class="last">Privacy Policy</a>
+					<a href="http://www.accenture.com/us-en/Pages/privacy-policy.aspx" target="_blank">Privacy policy</a>
+					<a href="http://www.accenture.com/us-en/Pages/terms-of-use.aspx" target="_blank">Terms of use</a>
+					<a href="http://www.accenture.com/us-en/Pages/accessibility-statement.aspx" class="last" target="_blank">Accessibility statement</a>
 					<span class="copyright">&copy; 2013 Accenture All Rights Reserved</span>
 				</div>
 			</div>

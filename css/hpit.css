@@ -9,6 +9,9 @@ body, ol, ul {
 	vertical-align: baseline;
 	list-style: none;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal !important;
+}
 ol, ul {
 	list-style: none;
 	margin: 0 !important;
@@ -425,16 +428,29 @@ img {
 	z-index: 1;
 	/*z-index: 5;*/
 }
+.hero > div.inner h1 {
+	font-size: 44px;
+	margin: 10px auto;
+	width: 80%;
+}
+.hero > div.inner h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0 auto;
+	width: 85%;
+	font-weight: bold !important;
+}
+.hero > div.inner p {
+	line-height: 1.4em;
+	width: 75%;
+	margin: 0 auto;
+	font-size: 20px;
+}
 .hero.left > div.inner {
 	margin: 0;
 	padding: 40px 200px 72px 185px;
 	text-align: left;
 	width: 100%;
-}
-.hero > div.inner h1 {
-	font-size: 54px;
-	margin: 10px auto;
-	width: 80%;
 }
 .hero.left > div.inner h1 {
 	margin: 10px 0;
@@ -444,22 +460,10 @@ img {
 	margin: 0;
 	width: 100%;
 }
-.hero > div.inner h3 {
-	font-size: 26px;
-	text-transform: uppercase;
-	margin: 0 auto;
-	width: 85%
-}
-.hero > div.inner p {
-	line-height: 1.4em;
-	width: 75%;
-	margin: 0 auto;
-	font-size: 18px;
-}
 .hero.left > div.inner p {
 	width: 56%;
 	margin: 0;
-	font-size: 22px;
+	font-size: 20px;
 }
 .hero > div.inner p strong {
 	/*white-space: nowrap;*/
