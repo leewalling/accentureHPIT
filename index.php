@@ -96,15 +96,15 @@
 			<ul>
 				<li><a href="#theTop" class="btt"><em>Back To Top</em></a></li>
 				<li class="state"><a href="#insight1"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
-				<li class="state"><a href="#insight2"><span>02</span> <span>Technology is inseparable from business strategy</span></a></li>
-				<li class="state"><a href="#insight3"><span>03</span> <span>Context is king.</span></a></li>
-				<li class="state"><a href="#insight4"><span>04</span> <span>Flexibility first.</span></a></li>
-				<li class="state"><a href="#insight5"><span>05</span> <span>Be fearlessly digital.</span></a></li>
-				<li class="state"><a href="#insight6"><span>06</span> <span>Survival of the quickest</span></a></li>
-				<li class="state"><a href="#insight7"><span>07</span> <span>All data is not created equal.</span></a></li>
-				<li class="state"><a href="#insight8"><span>08</span> <span>Power to the people.</span></a></li>
-				<li class="state"><a href="#insight9"><span>09</span> <span>Build your capabilities around talent, not technology.</span></a></li>
-				<li class="state"><a href="#insight10"><span>10</span> <span>Take a holistic stance on security and risk</span></a></li>
+				<li class="state"><a href="#insight2"><span>02</span> <span>Context is king</span></a></li>
+				<li class="state"><a href="#insight3"><span>03</span> <span>Synchronizing business strategy and IT</span></a></li>
+				<li class="state"><a href="#insight4"><span>04</span> <span>Bringing harmony to hybrid IT</span></a></li>
+				<li class="state"><a href="#insight5"><span>05</span> <span>Fearlessly digital</span></a></li>
+				<li class="state"><a href="#insight6"><span>06</span> <span>The power of self-service</span></a></li>
+				<li class="state"><a href="#insight7"><span>07</span> <span>Smart data, smarter decisions.</span></a></li>
+				<li class="state"><a href="#insight8"><span>08</span> <span>Survival of the quickest</span></a></li>
+				<li class="state"><a href="#insight9"><span>09</span> <span>Plug-and-play talent</span></a></li>
+				<li class="state"><a href="#insight10"><span>10</span> <span>Uniting business risk and IT security for active defense</span></a></li>
 			</ul>
 			<a href="#" class="closeX">&nbsp;</a>
 		</div>
@@ -113,8 +113,8 @@
 		<div class="hero visible-xs" id="hero-xs">
 			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
-				<h1>High Performers in IT Are Defined by Digital</h1>
-				<p>IT now means "innovation team" and "insight tracker" as much as "information technology." <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p>
+				<h1>High Performers in IT: Defined by Digital</h1>
+				<p>Sitting at the intersection of business and technology, high performance CIOs are now a force in the boardroom&mdash;and driving the digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view.</p>
 				<a href="#hero-video" class="playVid"></a>
 			</div>
 			<span class="video-wrapper"></span>
@@ -124,11 +124,8 @@
 			<span class="video-wrapper"></span>
 			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
-				<h1>High Performers in IT Are Defined by Digital</h1>
-				<p>IT now means "innovation team" and "insight tracker" as much as "information technology." <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p>
-				<!--h3>Accenture High Performance IT Survey 2013</h3>
-				<h1>The Rise of the Strategy Savvy CIO</h1>
-				<p>IT now means "in transition" as CIOs move from the server room to the board room and help set the strategic digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view on this year's key insights.</p-->
+				<h1>High Performers in IT: Defined by Digital</h1>
+				<p>Sitting at the intersection of business and technology, high performance CIOs are now a force in the boardroom&mdash;and driving the digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view.</p>
 				<a href="#hero-video" class="playVid"></a>
 			</div>
 		</div>
@@ -148,7 +145,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #1</h6>-->
 				<h3>Your new boss? <br />Your customer.</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="facebook"></a>
@@ -162,11 +159,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"You can't think like a database.<br />You have to think like a customer."</span>
+						<span class="quote">You can't think like a database. You have to think like a customer.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>High performers have moved beyond internally focused objectives like cost and productivity. <strong>The new bulls-eye is the customer experience.</strong> </span>
+						<span>High performers have moved beyond internally focused objectives like cost and productivity. The new bulls-eye is the customer experience.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -174,29 +171,20 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers' top 3 business objectives all point to <strong>improving the customer experience.</strong></span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						</div>
-						<div>
-						<span class="heading">High performers</span>
-						<ol class="normal">
-							<li>Providing the right information to the right person at the right time</li>
-							<li>Finding better ways to interact with customers</li>
-							<li>Delivering new services or products to customers</li>
-						</ol>
-						</div>
-						<div>
-						<span class="heading">Others</span>
-						<ol class="normal">
-							<li>Cutting business operational costs</li>
-							<li>Increasing workforce productivity</li>
-							<li>Automating core business processes</li>
-						</ol>
+						<span>There's a considerable gap between high performers and others in the need to make self-service a greater part of customer interactions.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="How IT can improve the customer experience" /></span>
+						<span><strong>Customer interactions</strong><br />
+						Are now:<br />
+						High Performers: 29%<br />
+						Others: 21%<br /><br />
+						Could be:<br />
+						High Performers: 56%<br />
+						Others: 43%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogue with key customers.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both acquisition and sales get a boost by giving potential customers what they want, and listening to what current customers have to say.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogues with key customers.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Building relationships. </strong>Both marketing and sales get a boost by giving potential customers what they want and listening to what current customers have to say.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
@@ -216,8 +204,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #2</h6>-->
-				<h3>Technology is inseparable from business strategy.</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>Context is king</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="facebook"></a>
@@ -231,11 +219,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"Our strategy is our technology. Period."</span>
+						<span class="quote">IT doesn't exist in a vacuum. If something impacts the business, it impacts IT, and vice versa.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Many CIOs are still caught up troubleshooting and fixing problems instead of creating value. High performers invest in new ways IT can deliver on business strategy and create new opportunities.</span>
+						<span>Global competition means that exploring business scenarios&mdash;economic, geopolitical, social and more&mdash;is absolutely crucial to IT planning.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -243,14 +231,14 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers' allocate significantly more of their budget to delivering strategic capabilities.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span>High performers&ndash;55%<br />Others&ndash;</span>
+						<span>High performers are consistently better than other organizations at scanning the horizon to look for potential challenges.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="CIOs investment strategy for delivering strategic capabilities" /></span>
+						<span>High performers&mdash;55%<br />Others&mdash;10%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Tackling new projects. </strong>In fact, they allocate 7% more of their IT budgets to new projects than other organizations.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Adopting early. </strong>They're not waiting for technologies to mature before they act.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Measuring their investment using business metrics. </strong>They expect to see those measures improving in the next year.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Enhancing their reputations. </strong>High-performing IT leaders who regularly apply business metrics tend to stay in their positions longer, which means they demonstrate success&mdash;and raise their profiles among their peers&mdash;over the long term.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="google"></a>
@@ -270,8 +258,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #3</h6>-->
-				<h3>Context is king.</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>Synchronizing business strategy and IT</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="facebook"></a>
@@ -285,11 +273,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"IT doesn't exist in a vacuum. If something impacts the business, it impacts IT."</span>
+						<span class="quote">Your strategy is your technology. End of story.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Global competition means exploring business scenarios&ndash;economic, geopolitical, social and more&ndash;is also crucial to the IT planning process.</span>
+						<span>Many CIOs are still troubleshooting and fixing problems instead of finding and acting on ways to create value. High performers seek out and invest in new ways that IT can deliver on business strategy and create new opportunities.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -297,14 +285,14 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers consistently outpace other organizations in looking to the horizon for potential issues that will impact their business.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span>High performers&ndash;50%<br />Others&ndash;10%</span>
+						<span>High performers' allocate far more of their budgets to delivering strategic capabilities.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="Investigating global competition should inform the IT planning process" /></span>
+						<span>High performers&mdash;55% of budget<br />Others&mdash;37% of budget</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Measuring their investment through business metrics. </strong>They're also expecting moderate to significant improvement in those measures in the next year.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Enhancing their reputations. </strong>High performers who measure against business metrics tend to stay in their positions longer, which then allows them to demonstrate success&ndash;and raise their profiles amongst their peers&ndash;over a greater period of time.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Tackling new projects. </strong>They allocate 7% more of their IT budgets to new projects than other organizations do.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Adopting early. </strong>They're not waiting for technologies to mature before they act.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="google"></a>
@@ -324,8 +312,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #4</h6>-->
-				<h3>Flexibility first.</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>Bringing harmony to hybrid IT</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="facebook"></a>
@@ -339,11 +327,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"The right way has to give you the most options&ndash;now and down the road."</span>
+						<span class="quote">If you're not already in the cloud, you're probably not able to handle the volatility of today's global economy.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Legacy systems drag down performance and tie up valuable resources. Streamlined, simplified application portfolios allow high performers to zig when markets zag.</span>
+						<span>Legacy systems drag down performance and tie up valuable resources. Simpler, streamlined application portfolios are weightless by comparison, and let companies move fast and flex easily.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -351,14 +339,14 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers are freeing up data and empowering users by moving to the cloud.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span>High performers&ndash;33%<br />Others&ndash;4%</span>
+						<span>High performers are freeing up data and putting the power in users' hands by moving to the cloud.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="Moving data to the cloud can improve performance" /></span>
+						<span>High performers&mdash;33%<br />Others&mdash;4%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Getting the outcomes they want. </strong>Almost half are seeing measureable improvements in agility, and 69% say their architecture transformation has lead to cost reductions.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Weaving together cloud capabilities. </strong>The next trend pulls public and private cloud elements together in a way that always keeps business value top of mind.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Getting the outcomes they want. </strong>Almost half are seeing measurable improvements in agility, and 69% say their architecture transformations has led to cost reductions.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Weaving together cloud capabilities. </strong>They're blending public and private cloud elements together in ways that always keep business value top of mind.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="google"></a>
@@ -378,8 +366,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #5</h6>-->
-				<h3>Be fearlessly digital.</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>Fearlessly digital</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="facebook"></a>
@@ -393,11 +381,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"Digital is transformative. It is also definitive. Every business is now a digital business."</span>
+						<span class="quote">Digital is transforming IT and leading innovation. Every business is now a digital business.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Digital is about more than devices. It's driving how products are designed and produced, how transactions are created and managed, and even how collaboration is accomplished and relationships are formed.</span>
+						<span>Digital is about much more than smart devices. It's driving how products are designed and produced, how transactions are created and managed,  how collaboration happens, and how relationships are formed.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -405,14 +393,14 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers have been experimenting and learning from early deployment of technologies such as social, mobile, analytics and cloud, plus virtualization, security and data management.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span>High Performers&ndash;54%<br />Others&ndash;31%</span>
+						<span>High performers have been experimenting with social, mobile, analytics and cloud. Also on their lists of what to learn from: virtualization, security and data management.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="Experimenting and learning digital is important to high performing CIOs" /></span>
+						<span>High Performers&mdash;54%<br />Others&mdash;31%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Rolling out digital across their business. </strong>The knowledge they've gathered from real-world results provides them with critical insights into how digital technologies will work to support other parts of their business.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies to boldly go where they haven't gone before helps them identify which technologies will truly revolutionize their business.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Rolling out digital across their business. </strong>The knowledge they've gleaned from real-world results gives them critical insights into how digital technologies can support other parts of their business.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will really revolutionize their business.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="google"></a>
@@ -432,8 +420,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #6</h6>-->
-				<h3>Survival of the quickest</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>The power of self-service</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="facebook"></a>
@@ -447,11 +435,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"True agility means you have to purge complexity."</span>
+						<span class="quote">Being truly digital means that many more customers, suppliers and employees can answer their own questions&mdash;so you don't have to.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Volatility in markets, partner engagements and even business models can create new opportunities&ndash;if your organization is nimble enough to turn the situation to your advantage.</span>
+						<span>Breaking down barriers to self-service means that employees, suppliers, and even customers can help drive innovation, generate insights and probe new markets. They're no longer just "service tickets."</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -459,14 +447,20 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers are leading the way in leveraging agile and iterative methodologies, enabling them to adapt to new technologies and embed them in their business.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span>High Performers&ndash;18%<br />Others&ndash;3%</span>
+						<span>High performers' interactions with customers, suppliers and employees are increasingly self-service&mdash;but they still have room to grow.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="High performers are leading the way in leveraging agile and iterative methodologies" /></span>
+						<span><strong>Employee interactions</strong><br />
+						Are now:<br />
+						High Performers: 71%<br />
+						Others: 36%<br /><br />
+						Could be:<br />
+						High Performers: 84%<br />
+						Others: 61%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Reducing applications. </strong>Streamlining applications means more staff are freed up to work on strategic imperatives.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Moving beyond the monolith. </strong>They're working incrementally and making changes in flight rather than committing time and resources to large-scale rollouts.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Embracing B.Y.O.D. </strong>"Bring Your Own Device" is a creed that adds creativity as well as productivity.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Today's fickle customers can often service their own needs better than if they wait for responses to their service requests.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="google"></a>
@@ -486,8 +480,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #7</h6>-->
-				<h3>All data is not created equal.</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>Smart data, smarter decisions.</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="facebook"></a>
@@ -501,11 +495,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"Data will tell you what you need to know&ndash;if you know how to listen."</span>
+						<span class="quote">It's not about ‘Big Data' or new ways to capture data. It's about getting actionable insights out of the data&mdash;wherever it comes from.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that spur actionable outcomes&ndash;and competitive advantage.</span>
+						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that generate actionable outcomes&mdash;and competitive advantage.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -513,14 +507,14 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers are far in front of other organizations in embedding real-time analytics-based decision-making tools into business processes.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span>High Performers&ndash;46%<br />Others&ndash;2%</span>
+						<span>High performers are far ahead of other organizations in embedding real-time analytics-based decision-making tools in their business processes.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="Organizations who embed real-time analytics-based decision-making tools into business processes have the competitive advantage" /></span>
+						<span>High Performers&mdash;46%<br />Others&mdash;2%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Becoming sophisticated data sources. </strong>They're increasing building data capture with built-in analytics.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Finding their focus. </strong>They're working to locate insight gaps that can create blind spots and hinder their business strategy.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Becoming sophisticated data sources. </strong>They're investing in analytics to get better at capturing data and extracting valuable insights from it.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Finding their focus. </strong>They're working to locate "insight gaps"&mdash;that is, blind spots that can obscure their business strategies.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="google"></a>
@@ -540,8 +534,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #8</h6>-->
-				<h3>Power to the people.</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>Survival of the quickest</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="facebook"></a>
@@ -555,11 +549,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"Being truly digital means you have to unleash users' power&ndash;at the expense of your own."</span>
+						<span class="quote">If you're not making change happen on the run, then you can't yet call yourself "agile".</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Breaking down barriers to self-service for individuals across your business&ndash;employees, suppliers, even customers&ndash;turns them from mere IT "service tickets" to powerful agents of change, helping drive innovation, generate insights and probe new markets.</span>
+						<span>Volatility in markets, partner engagements and even business models can create new opportunities&mdash;as long as your organization is nimble enough to turn the situation to your advantage.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -567,16 +561,14 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers customer, supplier and employee interactions are increasingly self-service&ndash;but have room to grow.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span><strong>Customer interactions</strong><br />Are now: 29%<br />Could be: 56%<br /><br />
-						<strong>Supplier interactions</strong><br />Are now: 31%<br />Could be: 68%<br /><br />
-						<strong>Employee interactions</strong><br />Are now: 71%<br />Could be: 84%</span>
+						<span>High performers are leading the way in leveraging agile and iterative methodologies, enabling them to adapt to new technologies and embed them in their businesses.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="Customer, supplier and employee interactions are increasingly self-service for high performers" /></span>
+						<span>High Performers&mdash;18%<br />Others&mdash;3%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Embracing B.Y.O.D. </strong>"Bring Your Own Device" practices multiply the productivity of their workforce.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Today's fickle customers are often able to service themselves better than any other way.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Trimming their application portfolios. </strong>Streamlining applications means many more staff are freed up to work on strategic imperatives.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Moving beyond the monolith. </strong>They're working incrementally and making changes "in flight" rather than committing time and resources to large-scale rollouts that can put operations on hold.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="google"></a>
@@ -596,8 +588,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #9</h6>-->
-				<h3>Build your capabilities around talent, not technology.</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>Plug-and-play talent</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="facebook"></a>
@@ -611,11 +603,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"Hardware doesn't understand what really drives your business."</span>
+						<span class="quote">Whoever said the best assets walk out of the door at night was absolutely right&mdash;and still is.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Experimentation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look both inside and outside of their companies to fill needs and plug knowledge gaps.</span>
+						<span>Innovation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look both inside and outside of their companies to fill needs and plug knowledge gaps.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -624,12 +616,12 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers source their IT partners strategically, aligning them with their business requirements and priorities.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span>High Performers&ndash;18%<br />Others&ndash;7%</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="High performance CIOs invest in new skills and talents through hiring innovative partners" /></span>
+						<span>High Performers&mdash;18%<br />Others&mdash;7%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Emphasizing communication skills. </strong>Today's collaborative workforce requires team members who can understand business needs, relate with colleagues across departments and adapt to changing technologies.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Emphasizing communication skills. </strong>Today's collaborative workforce requires team members who can understand business needs, relate to colleagues regardless of department, and adapt to changing technologies.</span></span>
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Becoming comfortable with fluidity. </strong>Full-time staffers are not the only answer, especially since much of today's talent not only accepts but expects constant change.</span></span>
 						</div>
 						<div class="social visible-xs">
@@ -650,8 +642,8 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #10</h6>-->
-				<h3>Take a holistic stance on security and risk</h3>
-				<h6>Self service. Something for every CIO to chew on.</h6>
+				<h3>Uniting business risk and IT security for active defense</h3>
+				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="facebook"></a>
@@ -665,11 +657,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">"Digital opens up a lot of new opportunities&ndash;and potential vulnerabilities."</span>
+						<span class="quote">You can't have one team looking at risk management and another at IT security. They have to be in the same room, on the same page.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Company's risk profiles are increasingly defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities with heavy digital components that all need protecting.</span>
+						<span>More and more organizations are finding their risk profiles defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities. It's essential to protect the digital assets within.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
 							<div>Video title goes here</div>
@@ -677,14 +669,14 @@
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
-						<span>High performers have expanded the scope of their security and risk management functions.</span>
-						<span class="fpo"><img src="images/fpo-info.png" /></span>
-						<span>High Performers&ndash;27%<br />Others&ndash;5%</span>
+						<span>High performers are growing their security and risk management functions.</span>
+						<span class="fpo"><img src="images/fpo-info.png" alt="High performers have expanded the scope of their security and risk management functions" /></span>
+						<span>High Performers&mdash;27%<br />Others&mdash;5%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num">1</span><span class="txt"><strong>Attributing business value to security. </strong>They're actively tracking specific outcomes of incidents and breaches and measuring the impact on the overall business.</span></span>
-						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Moving to active defense. </strong>It's not yet happening on a broad scale, but high performers are making moves to stay one step ahead of attackers.</span></span>
+						<span class="tr"><span class="num">1</span><span class="txt"><strong>Moving to active defense.  </strong>It's not yet happening on a broad scale, but high performers are making the right moves to stay a step or three ahead of attackers.</span></span>
+						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Attributing business value to security. </strong>They're actively tracking actual outcomes of incidents and breaches and measuring the impact on the overall business.</span></span>
 						</div>
 						<div class="social visible-xs">
 							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="google"></a>
