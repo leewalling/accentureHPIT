@@ -97,14 +97,14 @@
 				<li><a href="#theTop" class="btt"><em>Back To Top</em></a></li>
 				<li class="state"><a href="#insight1"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
 				<li class="state"><a href="#insight2"><span>02</span> <span>Context is king</span></a></li>
-				<li class="state"><a href="#insight3"><span>03</span> <span>Synchronizing business strategy and IT</span></a></li>
+				<li class="state"><a href="#insight3"><span>03</span> <span>Business strategy and IT now work as one</span></a></li>
 				<li class="state"><a href="#insight4"><span>04</span> <span>Bringing harmony to hybrid IT</span></a></li>
 				<li class="state"><a href="#insight5"><span>05</span> <span>Fearlessly digital</span></a></li>
 				<li class="state"><a href="#insight6"><span>06</span> <span>The power of self-service</span></a></li>
-				<li class="state"><a href="#insight7"><span>07</span> <span>Smart data, smarter decisions.</span></a></li>
-				<li class="state"><a href="#insight8"><span>08</span> <span>Survival of the quickest</span></a></li>
+				<li class="state"><a href="#insight7"><span>07</span> <span>Unearthing data gems</span></a></li>
+				<li class="state"><a href="#insight8"><span>08</span> <span>Speed plus agility equals adaptability</span></a></li>
 				<li class="state"><a href="#insight9"><span>09</span> <span>Plug-and-play talent</span></a></li>
-				<li class="state"><a href="#insight10"><span>10</span> <span>Uniting business risk and IT security for active defense</span></a></li>
+				<li class="state"><a href="#insight10"><span>10</span> <span>Uniting business risk and IT security</span></a></li>
 			</ul>
 			<a href="#" class="closeX">&nbsp;</a>
 		</div>
@@ -252,7 +252,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #3</h6>-->
-				<h3>Synchronizing business strategy and IT</h3>
+				<h3>Business strategy and IT now work as one</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="google"></a>
@@ -267,7 +267,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">Your strategy is your technology. End of story.</span>
+						<span class="quote">The consolidation is complete. Your strategy IS your technology. End of story.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -321,7 +321,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">If you're not already in the cloud, you're probably not able to handle the volatility of today's global economy.</span>
+						<span class="quote">If you're not already in the cloud, you probably can't orchestrate truly effective responses to all the noise from today's global economy.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -375,7 +375,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">Digital is transforming IT and leading innovation. Every business is now a digital business.</span>
+						<span class="quote">If you haven't yet made the digital leap, the time has come. Every business is now a digital business.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -468,7 +468,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #7</h6>-->
-				<h3>Smart data, smarter decisions.</h3>
+				<h3>Unearthing data gems</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="google"></a>
@@ -522,7 +522,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #8</h6>-->
-				<h3>Survival of the quickest</h3>
+				<h3>Speed plus agility equals adaptability</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="google"></a>
@@ -537,7 +537,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">If you're not making change happen on the run, then you can't yet call yourself "agile".</span>
+						<span class="quote">If you're not making change happen on the run, then instead of being truly agile, you're just increasingly vulnerable.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -591,7 +591,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">Whoever said the best assets walk out of the door at night was absolutely right&mdash;and still is.</span>
+						<span class="quote">Talent is going to drive your future success. You need to figure out where your opportunities are&mdash;and find the right people to capitalize on them.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -630,7 +630,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #10</h6>-->
-				<h3>Uniting business risk and IT security for active defense</h3>
+				<h3>Uniting business risk and IT security</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="google"></a>
