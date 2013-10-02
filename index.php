@@ -113,7 +113,7 @@
 		<div class="hero visible-xs" id="hero-xs">
 			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
-				<h1>High Performers in IT: Defined by Digital</h1>
+				<h1>High Performers in IT:<br />Defined by Digital</h1>
 				<p>Sitting at the intersection of business and technology, high performance CIOs are now a force in the boardroom&mdash;and driving the digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view.</p>
 				<a href="#hero-video" class="playVid"></a>
 			</div>
@@ -495,7 +495,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">It's not about ‘Big Data' or new ways to capture data. It's about getting actionable insights out of the data&mdash;wherever it comes from.</span>
+						<span class="quote">It's not about 'Big Data' or new ways to capture data. It's about getting actionable insights out of the data&mdash;wherever it comes from.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>

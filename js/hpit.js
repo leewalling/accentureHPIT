@@ -44,10 +44,10 @@ hpit.config = {
 	desktopORtouch: 'desktop',
 	footerInView: false,
 	isIE7: false,
-	easing: 'easeInOutExpo',
+	easing: 'easeOutExpo',
 	duration: {
 		backToTop: 2000,
-		desktop: 2000,
+		desktop: 1500,
 		touch: 1
 	},
 	groups: {
@@ -255,7 +255,7 @@ hpit.core = (function(){
 
 			if(!onMobile() && !onIpad()){
 				// determine if we need to lock the background images in place
-				if($(window).scrollTop() > $('.insight').eq(0).offset().top){ //$('.hero').outerHeight(true)
+				if($(window).scrollTop() > $('.insight').eq(0).offset().top-1){ //$('.hero').outerHeight(true)
 					if(!$('.bgImages').hasClass('fixed')){
 						$('.bgImages').addClass('fixed');
 					}
@@ -268,7 +268,7 @@ hpit.core = (function(){
 				} else {
 					var toGo = $('.insight').eq(0).offset().top - $(window).scrollTop();					
 					if(toGo > -1 && toGo < 226){						
-						console.log('toGo: ', toGo);
+						//console.log('toGo: ', toGo);
 						if($('.blackAngle').hasClass('fixed')){
 							$('.blackAngle').removeClass('fixed');
 						}
@@ -419,6 +419,7 @@ hpit.core = (function(){
 
 					var menuItem = parseInt($('.insight.current').find('.marker > div > span').text());
 					menuItem = parseInt(menuItem);
+					console.log('menuItem: ', menuItem);
 					
 					$('#sideMenu ul li[data-insight-nav="'+menuItem+'"]').addClass('hilited');
 					$('.bgImg[data-insight="'+menuItem+'"] img').addClass('activate');
@@ -539,7 +540,7 @@ hpit.core = (function(){
 						hpit.config.locked = false;
 						if(hpit.config.desktopORtouch == 'desktop'){
 							if(!$(window).scrollTop() > $('.hero').outerHeight(true)){
-								//console.log('NOT TOP');
+								console.log('NOT TOP');
 							} else {
 								//console.log('scroll top: ', $(window).scrollTop());
 								hpit.config.currInsight = 0;
