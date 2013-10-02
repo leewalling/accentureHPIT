@@ -744,6 +744,12 @@ img {
 	top: auto !important;
 }
 
+/*.insight .leftSide {
+	display: block;
+	position: relative;
+	float: left;
+}*/
+
 .insight .marker {
 	position:absolute;
 	text-align: center;
@@ -913,10 +919,10 @@ img {
 	margin-bottom: 15px !important;
 }
 .insight.current  {
-	background-attachment:fixed;
+	/*background-attachment:fixed;
 	background-size:100% !important;
 	background-repeat:no-repeat !important;
-	background-position: 0 0 !important;
+	background-position: 0 0 !important;*/
 }
 .insight.current .marker {
 	position:fixed !important;
@@ -1050,7 +1056,7 @@ img {
 	
 }
 #footer .legal {
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 20px;
 	color: #fff;
 	margin: 0 0 0 0;
@@ -2291,60 +2297,70 @@ img {
 
 	.insight[data-insight="10"] {
 		background-image:url("../images/bg-ipad-10.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="9"] {
 		background-image:url("../images/bg-ipad-09.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="8"] {
 		background-image:url("../images/bg-ipad-08.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="7"] {
 		background-image:url("../images/bg-ipad-07.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="6"] {
 		background-image:url("../images/bg-ipad-06.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="5"] {
 		background-image:url("../images/bg-ipad-05.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="4"] {
 		background-image:url("../images/bg-ipad-04.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="3"] {
 		background-image:url("../images/bg-ipad-03.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="2"] {
 		background-image:url("../images/bg-ipad-02.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	background-position: top center;
 	  	background-size: auto 100%;
 	}
 	.insight[data-insight="1"] {
 		background-image:url("../images/bg-ipad-01.jpg");
+		background-attachment: scroll !important;
 		background-repeat: no-repeat !important;
 	  	background-position: top center !important;
 	  	background-size: auto 100% !important;
@@ -2367,10 +2383,10 @@ img {
 		top: 125px !important;
 	}
 	.insight.current  {
-		background-attachment: scroll !important;
+		/*background-attachment: scroll !important;
 		background-repeat: no-repeat !important;
 	  	background-position: top center !important;
-	  	background-size: auto 100% !important;
+	  	background-size: auto 100% !important;*/
 	}
 	.insight.current .marker {
 		position: absolute !important;

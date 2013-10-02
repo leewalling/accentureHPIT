@@ -201,10 +201,10 @@
 				<h3>Context is king</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -235,10 +235,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Enhancing their reputations. </strong>High-performing IT leaders who regularly apply business metrics tend to stay in their positions longer, which means they demonstrate success&mdash;and raise their profiles among their peers&mdash;over the long term.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Technology is inseparable from business strategy." target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
@@ -255,10 +255,10 @@
 				<h3>Business strategy and IT now work as one</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -289,10 +289,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Adopting early. </strong>They're not waiting for technologies to mature before they act.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Context is king." target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
@@ -309,10 +309,10 @@
 				<h3>Bringing harmony to hybrid IT</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -343,10 +343,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Weaving together cloud capabilities. </strong>They're blending public and private cloud elements together in ways that always keep business value top of mind.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Flexibility first." target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
@@ -363,10 +363,10 @@
 				<h3>Fearlessly digital</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -397,10 +397,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will really revolutionize their business.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Be fearlessly digital." target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
@@ -417,10 +417,10 @@
 				<h3>The power of self-service</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -451,10 +451,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Today's fickle customers can often service their own needs better than if they wait for responses to their service requests.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="Survival of the quickest" target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
@@ -471,10 +471,10 @@
 				<h3>Unearthing data gems</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -505,10 +505,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Finding their focus. </strong>They're working to locate "insight gaps"&mdash;that is, blind spots that can obscure their business strategies.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="All data is not created equal." target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
@@ -525,10 +525,10 @@
 				<h3>Speed plus agility equals adaptability</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -559,10 +559,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Moving beyond the monolith. </strong>They're working incrementally and making changes "in flight" rather than committing time and resources to large-scale rollouts that can put operations on hold.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Power to the people." target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
@@ -579,10 +579,10 @@
 				<h3>Plug-and-play talent</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -613,10 +613,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Becoming comfortable with fluidity. </strong>Full-time staffers are not the only answer, especially since much of today's talent not only accepts but expects constant change.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Build your capabilities around talent, not technology." target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
@@ -633,10 +633,10 @@
 				<h3>Uniting business risk and IT security</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="linkedin"></a>
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="linkedin"></a>
 				</div>
 				<a href="#" class="toggler visible-xs"><span></span></a>
 			</div>
@@ -667,10 +667,10 @@
 						<span class="tr last"><span class="num">2</span><span class="txt"><strong>Attributing business value to security. </strong>They're actively tracking actual outcomes of incidents and breaches and measuring the impact on the overall business.</span></span>
 						</div>
 						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Take a holistic stance on security and risk" target="_blank" class="linkedin"></a>
+							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="google"></a>
+							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="facebook"></a>
+							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="twitter"></a>
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="linkedin"></a>
 						</div>
 					</div>
 				</div>
