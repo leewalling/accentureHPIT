@@ -139,21 +139,23 @@
 		<!-- end background images -->
 		<!-- insight #1 -->
 		<div class="insight" id="insight1">
-			<div class="marker hidden-xs">
-				<div><span>01</span></div>
-			</div>
-			<div class="insightTitle">
-				<!--<h6>CIO Action Item #1</h6>-->
-				<h3>Your new boss? <br />Your customer.</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
-				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="linkedin"></a>
+			<!--div class="leftSide"-->
+				<div class="marker hidden-xs">
+					<div><span>01</span></div>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
-			</div>
+				<div class="insightTitle">
+					<!--<h6>CIO Action Item #1</h6>-->
+					<h3>Your new boss? <br />Your customer.</h3>
+					<!--h6>Self service. Something for every CIO to chew on.</h6-->
+					<div class="social hidden-xs">
+						<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
+						<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="facebook"></a>
+						<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="twitter"></a>
+						<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="linkedin"></a>
+					</div>
+					<a href="#" class="toggler visible-xs"><span></span></a>
+				</div>
+			<!--/div-->
 			<div class="container content">
 				<div class="row">
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">

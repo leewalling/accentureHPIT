@@ -764,6 +764,7 @@ hpit.core = (function(){
 			if(!onMobile() && !onIpad()){
 				$(".hero video")[0].pause();
 			}
+			$('html').addClass('noScroll');
 			$('#ll-overlay').fadeIn(500);
 
 			//FlashVideoAudio(“URL of the video”, “1”);
@@ -779,16 +780,17 @@ hpit.core = (function(){
 		$('.closeVid').on('click',function(e){
 			e.preventDefault();
 
+			DelvePlayer.doPause();
 			resetVideoStates();
 
+			$('html').removeClass('noScroll');
 			$('#ll-overlay')
-				//.find('#ll-player').html('')
-				//.end()
-				.fadeOut(500, function(){
-					if(!onMobile() && !onIpad()){
-						$(".hero video")[0].play();
-					}
-				});
+			//.find('#ll-player').html('').end()
+			.fadeOut(500, function(){
+				if(!onMobile() && !onIpad()){
+					$(".hero video")[0].play();
+				}
+			});
 		});
 
 		// video chapters
@@ -907,7 +909,7 @@ hpit.core = (function(){
 	function initVideo(){
 		//console.log('video initialized');
 		//poster="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg"
-		$('.video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.mp4" type="video/mp4" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.ogg" type="video/ogg" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.webm" type="video/webm" /><img src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
+		$('#hero .video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.mp4" type="video/mp4" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.ogg" type="video/ogg" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.webm" type="video/webm" /><img src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
 		var video = document.getElementById('theVideo');
 		video.addEventListener('ended', function(){
         	//console.log('video ended');

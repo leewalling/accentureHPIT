@@ -33,6 +33,10 @@ html, body {
   background-color: #fff !important;
   overflow-x: hidden;
 }
+.noScroll,
+.noScroll body {
+	overflow: hidden !important;
+}
 #aspnetForm {
 	overflow: hidden;
 }
@@ -1276,6 +1280,12 @@ img {
 	margin: 0;
 	padding: 0;
 	display:none;
+}
+.page .noindex:first-child > .default-sharepoint > .float-right {
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10000;
 }
 .page .footer .breadcrumbs {
 	margin: 0;
