@@ -172,7 +172,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>There's a considerable gap between high performers and others in the need to make self-service a greater part of customer interactions.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="How IT can improve the customer experience" /></span>
+						<span class="fpo"><img src="images/info_graphics_insight_1.png" alt="How IT can improve the customer experience" /></span>
 						<span><strong>Customer interactions</strong><br />
 						Are now:<br />
 						High Performers: 29%<br />
@@ -232,8 +232,8 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are consistently better than other organizations at scanning the horizon to look for potential challenges.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="CIOs investment strategy for delivering strategic capabilities" /></span>
-						<span>High performers&mdash;55%<br />Others&mdash;10%</span>
+						<span class="fpo"><img src="images/info_graphics_insight_2.png" alt="CIOs investment strategy for delivering strategic capabilities" /></span>
+						<span>High performers&mdash;50%<br />Others&mdash;10%</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -286,8 +286,8 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers' allocate far more of their budgets to delivering strategic capabilities.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="Investigating global competition should inform the IT planning process" /></span>
-						<span>High performers&mdash;55% of budget<br />Others&mdash;37% of budget</span>
+						<span class="fpo"><img src="images/info_graphics_insight_3.png" alt="Investigating global competition should inform the IT planning process" /></span>
+						<span>High performers&mdash;54% of budget<br />Others&mdash;31% of budget</span>
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -340,7 +340,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are freeing up data and putting the power in users' hands by moving to the cloud.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="Moving data to the cloud can improve performance" /></span>
+						<span class="fpo"><img src="images/info_graphics_insight_4.png" alt="Moving data to the cloud can improve performance" /></span>
 						<span>High performers&mdash;33%<br />Others&mdash;4%</span>
 						</div>
 						<div class="no-border">
@@ -394,7 +394,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers have been experimenting with social, mobile, analytics and cloud. Also on their lists of what to learn from: virtualization, security and data management.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="Experimenting and learning digital is important to high performing CIOs" /></span>
+						<span class="fpo"><img src="images/info_graphics_insight_5.png" alt="Experimenting and learning digital is important to high performing CIOs" /></span>
 						<span>High Performers&mdash;54%<br />Others&mdash;31%</span>
 						</div>
 						<div class="no-border">
@@ -448,7 +448,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers' interactions with customers, suppliers and employees are increasingly self-service&mdash;but they still have room to grow.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="High performers are leading the way in leveraging agile and iterative methodologies" /></span>
+						<span class="fpo"><img src="images/info_graphics_insight_6.png" alt="High performers are leading the way in leveraging agile and iterative methodologies" /></span>
 						<span><strong>Employee interactions</strong><br />
 						Are now:<br />
 						High Performers: 71%<br />
@@ -508,7 +508,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are far ahead of other organizations in embedding real-time analytics-based decision-making tools in their business processes.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="Organizations who embed real-time analytics-based decision-making tools into business processes have the competitive advantage" /></span>
+						<span class="fpo"><img src="images/info_graphics_insight_7.png" alt="Organizations who embed real-time analytics-based decision-making tools into business processes have the competitive advantage" /></span>
 						<span>High Performers&mdash;46%<br />Others&mdash;2%</span>
 						</div>
 						<div class="no-border">
@@ -562,7 +562,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are leading the way in leveraging agile and iterative methodologies, enabling them to adapt to new technologies and embed them in their businesses.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="Customer, supplier and employee interactions are increasingly self-service for high performers" /></span>
+						<span class="fpo"><img src="images/info_graphics_insight_8.png" alt="Customer, supplier and employee interactions are increasingly self-service for high performers" /></span>
 						<span>High Performers&mdash;18%<br />Others&mdash;3%</span>
 						</div>
 						<div class="no-border">
@@ -616,7 +616,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers source their IT partners strategically, aligning them with their business requirements and priorities.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="High performance CIOs invest in new skills and talents through hiring innovative partners" /></span>
+						<span class="fpo"><img src="images/info_graphics_insight_9.png" alt="High performance CIOs invest in new skills and talents through hiring innovative partners" /></span>
 						<span>High Performers&mdash;18%<br />Others&mdash;7%</span>
 						</div>
 						<div class="no-border">
@@ -670,7 +670,7 @@
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are growing their security and risk management functions.</span>
-						<span class="fpo"><img src="images/fpo-info.png" alt="High performers have expanded the scope of their security and risk management functions" /></span>
+						<span class="fpo"><img src="images/info_graphics_insight_10.png" alt="High performers have expanded the scope of their security and risk management functions" /></span>
 						<span>High Performers&mdash;27%<br />Others&mdash;5%</span>
 						</div>
 						<div class="no-border">
