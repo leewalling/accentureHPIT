@@ -417,11 +417,12 @@ hpit.core = (function(){
 
 					currEle.addClass('current');
 
-					console.log('marker: ', $('.insight.current').find('.marker > div > span'));
+					//console.log('data: ', $('.insight.current').data('insight'));
 
-					var menuItem = parseInt($('.insight.current').find('.marker > div > span').text());
+					var menuItem = parseInt($('.insight.current').data('insight'));
+					//$('.insight.current').find('.marker > div > span').text()
 					menuItem = parseInt(menuItem);
-					console.log('menuItem: ', menuItem);
+					console.log('data: ', menuItem);
 					
 					$('#sideMenu ul li[data-insight-nav="'+menuItem+'"]').addClass('hilited');
 					$('.bgImg[data-insight="'+menuItem+'"] img').addClass('activate');
