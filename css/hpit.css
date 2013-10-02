@@ -264,9 +264,9 @@ img {
 #sideMenu ul li a > span:last-child {
 	line-height: 1.25em;
 }
-#sideMenu ul li.hilited a,
-/*#sideMenu ul li a:hover,*/
-#sideMenu ul li a:focus {
+#sideMenu ul li.hilited a/*,
+#sideMenu ul li a:hover,
+#sideMenu ul li a:focus*/ {
 	background-color:#f5f5f5;
 	color: #000 !important;
 }

@@ -265,6 +265,10 @@ hpit.core = (function(){
 					if(!$('.blackAngle').hasClass('fixed')){
 						$('.blackAngle').addClass('fixed');
 					}
+					if ( $('#controls .control-info').is(':visible') ) {
+						$('#controls .control-info').fadeOut();
+						setCookie('hasUsedControls', true);
+					}
 				} else {
 					var toGo = $('.insight').eq(0).offset().top - $(window).scrollTop();					
 					if(toGo > -1 && toGo < 226){						
@@ -368,7 +372,7 @@ hpit.core = (function(){
 				if (currFixedEle.length <= 0) {return false;}
 
 				// Viewport
-				var vpStart = currEle.offset().top; // - 62
+				var vpStart = currEle.offset().top - 1; // - 62
 				var vpEnd = vpStart + currEle.height();
 
 				var currEleEnd = currEle.height();
@@ -422,7 +426,7 @@ hpit.core = (function(){
 					var menuItem = parseInt($('.insight.current').data('insight'));
 					//$('.insight.current').find('.marker > div > span').text()
 					menuItem = parseInt(menuItem);
-					console.log('data: ', menuItem);
+					//console.log('data: ', menuItem);
 					
 					$('#sideMenu ul li[data-insight-nav="'+menuItem+'"]').addClass('hilited');
 					$('.bgImg[data-insight="'+menuItem+'"] img').addClass('activate');
@@ -432,6 +436,8 @@ hpit.core = (function(){
 					}
 
 					hpit.config.currInsight = menuItem;
+					//console.log('currInsight change 1');
+					//console.log('currInsight: ', hpit.config.currInsight);
 					hpit.config.state = menuItem;
 					hpit.config.currPageView = menuItem;
 					if(!hpit.config.locked){
@@ -505,7 +511,7 @@ hpit.core = (function(){
 							easing:hpit.config.easing,
 							onAfter: function() {
 								hpit.config.locked = false;
-								console.log('deeplinking DONE!');
+								//console.log('deeplinking DONE!');
 								//setTimeout(function(){
 									//updateArrows(4);
 									//hpit.config.locked = false;
@@ -542,14 +548,17 @@ hpit.core = (function(){
 					onAfter: function() {
 						hpit.config.locked = false;
 						if(hpit.config.desktopORtouch == 'desktop'){
-							if(!$(window).scrollTop() > $('.hero').outerHeight(true)){
-								console.log('NOT TOP');
-							} else {
-								//console.log('scroll top: ', $(window).scrollTop());
+							if($(window).scrollTop() < $('.insight').eq(0).offset().top){
+								//console.log('win scroll: ', $(window).scrollTop());
+								//console.log('insight 1 top: ', $('.insight').eq(0).offset().top);
 								hpit.config.currInsight = 0;
+								//console.log('currInsight change 2');
 								hpit.config.state = 0;
 								hpit.config.currPageView = 0;
 								setTimeout(function(){updateArrows(3)}, 100);
+							} else {
+								//console.log('NOT TOP');
+								//console.log('currInsight: ', hpit.config.currInsight);
 							}							
 						}
 					}
@@ -593,6 +602,7 @@ hpit.core = (function(){
 							easing:hpit.config.easing,
 							onAfter: function() {
 								hpit.config.currInsight = newNum;
+								//console.log('currInsight change 3');
 								hpit.config.state = newNum;
 								hpit.config.currPageView = newNum;
 								$('.bgImg[data-insight="'+newNum+'"]').css({"opacity" : 1});
@@ -619,6 +629,7 @@ hpit.core = (function(){
 							easing:hpit.config.easing,
 							onAfter: function() {
 								hpit.config.currInsight = newNum;
+								//console.log('currInsight change 4');
 								hpit.config.state = newNum;
 								hpit.config.currPageView = newNum;
 								$('.bgImg[data-insight="'+newNum+'"]').css({"opacity" : 1});
@@ -741,7 +752,7 @@ hpit.core = (function(){
 				});
 			}
 
-			console.log('$toTrack: ', $toTrack);
+			//console.log('$toTrack: ', $toTrack);
 		});
 	}
 
@@ -792,12 +803,12 @@ hpit.core = (function(){
 				try {
 					DelvePlayer.doSeekToSecond(skipTo);
 				} catch(err) {
-					console.log('DelvePlayer error: ', err);
+					//console.log('DelvePlayer error: ', err);
 				}
 
 				chapterClicked = setTimeout(function(){
 					hpit.config.justClicked = false;
-					console.log('justClicked cleared');
+					//console.log('justClicked cleared');
 				}, 4000);
 			})
 			.on('mouseenter',function(e){			
@@ -899,7 +910,7 @@ hpit.core = (function(){
 		$('.video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.mp4" type="video/mp4" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.ogg" type="video/ogg" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.webm" type="video/webm" /><img src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
 		var video = document.getElementById('theVideo');
 		video.addEventListener('ended', function(){
-        	console.log('video ended');
+        	//console.log('video ended');
         	//$('.video-wrapper').html('');
     	});
 	}
@@ -928,21 +939,21 @@ hpit.core = (function(){
 	function omniTrackPageView(num){
 		//console.log('function omniTrackPageView: ', num);
 		var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
-		console.log('newPageName: ', newPageName);
+		//console.log('newPageName: ', newPageName);
 		//triggerOmniturePageView(newPageName);
 	}
 
 	/* omniture tracking function */
 	function omniTrack(obj){
-		console.log('Object: ', obj);
+		//console.log('Object: ', obj);
 		
 		try {
 			FlashLinkAnalysis( obj.eventLink, obj.eventName, obj.eventType );
 			/*
-			console.log('******************* CLICK TRACK *******************');
-			console.log('URL: ', obj.eventLink);
-			console.log('Name: ', obj.eventName);
-			console.log('Type: ', obj.eventType);
+			//console.log('******************* CLICK TRACK *******************');
+			//console.log('URL: ', obj.eventLink);
+			//console.log('Name: ', obj.eventName);
+			//console.log('Type: ', obj.eventType);
 			*/
 		} catch(err) {
 			//console.log('Tracking error: ', err);
@@ -1082,7 +1093,7 @@ function doonPlayheadUpdate(data){
 		//console.log('Switching to chapter: ', hpit.config.activeChap);
 
 		if(!hpit.config.justClicked){
-			console.log('track chapter rollover here!');
+			//console.log('track chapter rollover here!');
 		}
 
 		$('#ll-overlay .chapters .topRow a')

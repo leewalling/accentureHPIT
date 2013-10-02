@@ -166,20 +166,14 @@
 						<span>High performers have moved beyond internally focused objectives like cost and productivity. The new bulls-eye is the customer experience.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>There's a considerable gap between high performers and others in the need to make self-service a greater part of customer interactions.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_1.png" alt="How IT can improve the customer experience" /></span>
-						<span><strong>Customer interactions</strong><br />
-						Are now:<br />
-						High Performers: 29%<br />
-						Others: 21%<br /><br />
-						Could be:<br />
-						High Performers: 56%<br />
-						Others: 43%</span>
+						<!--span><strong>Customer interactions</strong><br />Are now:<br />High Performers: 29%<br />Others: 21%<br /><br />Could be:<br />High Performers: 56%<br />Others: 43%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -226,14 +220,14 @@
 						<span>Global competition means that exploring business scenarios&mdash;economic, geopolitical, social and more&mdash;is absolutely crucial to IT planning.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are consistently better than other organizations at scanning the horizon to look for potential challenges.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_2.png" alt="CIOs investment strategy for delivering strategic capabilities" /></span>
-						<span>High performers&mdash;50%<br />Others&mdash;10%</span>
+						<!--span>High performers&mdash;50%<br />Others&mdash;10%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -280,14 +274,14 @@
 						<span>Many CIOs are still troubleshooting and fixing problems instead of finding and acting on ways to create value. High performers seek out and invest in new ways that IT can deliver on business strategy and create new opportunities.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers' allocate far more of their budgets to delivering strategic capabilities.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_3.png" alt="Investigating global competition should inform the IT planning process" /></span>
-						<span>High performers&mdash;54% of budget<br />Others&mdash;31% of budget</span>
+						<!--span>High performers&mdash;54% of budget<br />Others&mdash;31% of budget</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -334,14 +328,14 @@
 						<span>Legacy systems drag down performance and tie up valuable resources. Simpler, streamlined application portfolios are weightless by comparison, and let companies move fast and flex easily.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are freeing up data and putting the power in users' hands by moving to the cloud.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_4.png" alt="Moving data to the cloud can improve performance" /></span>
-						<span>High performers&mdash;33%<br />Others&mdash;4%</span>
+						<!--span>High performers&mdash;33%<br />Others&mdash;4%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -388,14 +382,14 @@
 						<span>Digital is about much more than smart devices. It's driving how products are designed and produced, how transactions are created and managed,  how collaboration happens, and how relationships are formed.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers have been experimenting with social, mobile, analytics and cloud. Also on their lists of what to learn from: virtualization, security and data management.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_5.png" alt="Experimenting and learning digital is important to high performing CIOs" /></span>
-						<span>High Performers&mdash;54%<br />Others&mdash;31%</span>
+						<!--span>High Performers&mdash;54%<br />Others&mdash;31%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -442,20 +436,14 @@
 						<span>Breaking down barriers to self-service means that employees, suppliers, and even customers can help drive innovation, generate insights and probe new markets. They're no longer just "service tickets."</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers' interactions with customers, suppliers and employees are increasingly self-service&mdash;but they still have room to grow.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_6.png" alt="High performers are leading the way in leveraging agile and iterative methodologies" /></span>
-						<span><strong>Employee interactions</strong><br />
-						Are now:<br />
-						High Performers: 71%<br />
-						Others: 36%<br /><br />
-						Could be:<br />
-						High Performers: 84%<br />
-						Others: 61%</span>
+						<!--span><strong>Employee interactions</strong><br />Are now:<br />High Performers: 71%<br />Others: 36%<br /><br />Could be:<br />High Performers: 84%<br />Others: 61%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -502,14 +490,14 @@
 						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that generate actionable outcomes&mdash;and competitive advantage.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are far ahead of other organizations in embedding real-time analytics-based decision-making tools in their business processes.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_7.png" alt="Organizations who embed real-time analytics-based decision-making tools into business processes have the competitive advantage" /></span>
-						<span>High Performers&mdash;46%<br />Others&mdash;2%</span>
+						<!--span>High Performers&mdash;46%<br />Others&mdash;2%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -556,14 +544,14 @@
 						<span>Volatility in markets, partner engagements and even business models can create new opportunities&mdash;as long as your organization is nimble enough to turn the situation to your advantage.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are leading the way in leveraging agile and iterative methodologies, enabling them to adapt to new technologies and embed them in their businesses.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_8.png" alt="Customer, supplier and employee interactions are increasingly self-service for high performers" /></span>
-						<span>High Performers&mdash;18%<br />Others&mdash;3%</span>
+						<!--span>High Performers&mdash;18%<br />Others&mdash;3%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -610,14 +598,14 @@
 						<span>Innovation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look both inside and outside of their companies to fill needs and plug knowledge gaps.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers source their IT partners strategically, aligning them with their business requirements and priorities.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_9.png" alt="High performance CIOs invest in new skills and talents through hiring innovative partners" /></span>
-						<span>High Performers&mdash;18%<br />Others&mdash;7%</span>
+						<!--span>High Performers&mdash;18%<br />Others&mdash;7%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
@@ -664,14 +652,14 @@
 						<span>More and more organizations are finding their risk profiles defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities. It's essential to protect the digital assets within.</span>
 						<div class="the-video">
 							<a href="#"><span></span></a>
-							<div>Video title goes here</div>
+							<!--div>Video title goes here</div-->
 						</div>
 						</div>
 						<div>
 						<span class="heading">What you should know</span>
 						<span>High performers are growing their security and risk management functions.</span>
 						<span class="fpo"><img src="images/info_graphics_insight_10.png" alt="High performers have expanded the scope of their security and risk management functions" /></span>
-						<span>High Performers&mdash;27%<br />Others&mdash;5%</span>
+						<!--span>High Performers&mdash;27%<br />Others&mdash;5%</span-->
 						</div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
