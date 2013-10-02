@@ -124,7 +124,7 @@
 			<span class="video-wrapper"></span>
 			<div class="inner">
 				<h3>Accenture High Performance IT Survey 2013</h3>
-				<h1>High Performers in IT: Defined by Digital</h1>
+				<h1>High Performers in IT:<br />Defined by Digital</h1>
 				<p>Sitting at the intersection of business and technology, high performance CIOs are now a force in the boardroom&mdash;and driving the digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view.</p>
 				<a href="#hero-video" class="playVid"></a>
 			</div>
