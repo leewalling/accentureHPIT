@@ -417,6 +417,8 @@ hpit.core = (function(){
 
 					currEle.addClass('current');
 
+					console.log('marker: ', $('.insight.current').find('.marker > div > span'));
+
 					var menuItem = parseInt($('.insight.current').find('.marker > div > span').text());
 					menuItem = parseInt(menuItem);
 					console.log('menuItem: ', menuItem);
