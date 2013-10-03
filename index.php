@@ -145,6 +145,7 @@
 				</div>
 				<div class="insightTitle">
 					<!--<h6>CIO Action Item #1</h6>-->
+					<h4 class="visible-xs">01</h4>
 					<h3>Your new boss? <br />Your customer.</h3>
 					<!--h6>Self service. Something for every CIO to chew on.</h6-->
 					<div class="social hidden-xs">
@@ -167,7 +168,7 @@
 						<span class="heading">Why it's important</span>
 						<span>High performers have moved beyond internally focused objectives like cost and productivity. The new bulls-eye is the customer experience.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -200,6 +201,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #2</h6>-->
+				<h4 class="visible-xs">02</h4>
 				<h3>Context is king</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -221,7 +223,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Global competition means that exploring business scenarios&mdash;economic, geopolitical, social and more&mdash;is absolutely crucial to IT planning.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -254,6 +256,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #3</h6>-->
+				<h4 class="visible-xs">03</h4>
 				<h3>Business strategy and IT now work as one</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -275,7 +278,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Many CIOs are still troubleshooting and fixing problems instead of finding and acting on ways to create value. High performers seek out and invest in new ways that IT can deliver on business strategy and create new opportunities.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -308,6 +311,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #4</h6>-->
+				<h4 class="visible-xs">04</h4>
 				<h3>Bringing harmony to hybrid IT</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -329,7 +333,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Legacy systems drag down performance and tie up valuable resources. Simpler, streamlined application portfolios are weightless by comparison, and let companies move fast and flex easily.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -362,6 +366,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #5</h6>-->
+				<h4 class="visible-xs">05</h4>
 				<h3>Fearlessly digital</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -383,7 +388,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Digital is about much more than smart devices. It's driving how products are designed and produced, how transactions are created and managed,  how collaboration happens, and how relationships are formed.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -416,6 +421,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #6</h6>-->
+				<h4 class="visible-xs">06</h4>
 				<h3>The power of self-service</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -437,7 +443,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Breaking down barriers to self-service means that employees, suppliers, and even customers can help drive innovation, generate insights and probe new markets. They're no longer just "service tickets."</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -470,6 +476,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #7</h6>-->
+				<h4 class="visible-xs">07</h4>
 				<h3>Unearthing data gems</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -491,7 +498,7 @@
 						<span class="heading">Why it's important</span>
 						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that generate actionable outcomes&mdash;and competitive advantage.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -524,6 +531,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #8</h6>-->
+				<h4 class="visible-xs">08</h4>
 				<h3>Speed plus agility equals adaptability</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -545,7 +553,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Volatility in markets, partner engagements and even business models can create new opportunities&mdash;as long as your organization is nimble enough to turn the situation to your advantage.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -578,6 +586,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #9</h6>-->
+				<h4 class="visible-xs">09</h4>
 				<h3>Plug-and-play talent</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -599,7 +608,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Innovation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look both inside and outside of their companies to fill needs and plug knowledge gaps.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>
@@ -632,6 +641,7 @@
 			</div>
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #10</h6>-->
+				<h4 class="visible-xs">10</h4>
 				<h3>Uniting business risk and IT security</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
@@ -653,7 +663,7 @@
 						<span class="heading">Why it's important</span>
 						<span>More and more organizations are finding their risk profiles defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities. It's essential to protect the digital assets within.</span>
 						<div class="the-video">
-							<a href="#"><span></span></a>
+							<a href="#"><img src="images/video-medium.jpg" /><span></span></a>
 							<!--div>Video title goes here</div-->
 						</div>
 						</div>

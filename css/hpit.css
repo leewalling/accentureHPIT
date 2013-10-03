@@ -826,6 +826,10 @@ img {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+.insight .content .right-col > div.with-video .the-video > a > img {
+	width: 100%;
+	height: auto;
+}
 .insight .content .right-col > div.with-video .the-video > a > span {
 	display: inline-block;
 	position: absolute;
@@ -1588,6 +1592,13 @@ img {
 		display: inline-block;
 		padding: 50px 25px;
 	}
+	.insight .insightTitle h4 {
+		font-size: 36px;
+		font-weight: bold !important;
+		line-height: 36px;
+		max-width: 83% !important;
+		margin: 0 0 8px 0;
+	}
 	.insight .insightTitle h3 {
 		font-size: 42px;
 		line-height: 48px;
@@ -1597,16 +1608,26 @@ img {
 	.insight .insightTitle h6 {
 		font-size: 20px;
 	}
-	.insight[data-insight="1"] .insightTitle h6 {color:#aa1133;}
-	.insight[data-insight="2"] .insightTitle h6 {color:#ff0000;}
-	.insight[data-insight="3"] .insightTitle h6 {color:#dd4411;}
-	.insight[data-insight="4"] .insightTitle h6 {color:#ff9900;}
-	.insight[data-insight="5"] .insightTitle h6 {color:#bbbb00;}
-	.insight[data-insight="6"] .insightTitle h6 {color:#00aa99;}
-	.insight[data-insight="7"] .insightTitle h6 {color:#00bbee;}
-	.insight[data-insight="8"] .insightTitle h6 {color:#3399cc;}
-	.insight[data-insight="9"] .insightTitle h6 {color:#ff3366;}
-	.insight[data-insight="10"] .insightTitle h6 {color:#551155;}
+	.insight[data-insight="1"] .insightTitle h6,
+	.insight[data-insight="1"] .insightTitle h4 {color:#aa1133;}
+	.insight[data-insight="2"] .insightTitle h6,
+	.insight[data-insight="2"] .insightTitle h4 {color:#ff0000;}
+	.insight[data-insight="3"] .insightTitle h6,
+	.insight[data-insight="3"] .insightTitle h4 {color:#dd4411;}
+	.insight[data-insight="4"] .insightTitle h6,
+	.insight[data-insight="4"] .insightTitle h4 {color:#ff9900;}
+	.insight[data-insight="5"] .insightTitle h6,
+	.insight[data-insight="5"] .insightTitle h4 {color:#bbbb00;}
+	.insight[data-insight="6"] .insightTitle h6,
+	.insight[data-insight="6"] .insightTitle h4 {color:#00aa99;}
+	.insight[data-insight="7"] .insightTitle h6,
+	.insight[data-insight="7"] .insightTitle h4 {color:#00bbee;}
+	.insight[data-insight="8"] .insightTitle h6,
+	.insight[data-insight="8"] .insightTitle h4 {color:#3399cc;}
+	.insight[data-insight="9"] .insightTitle h6,
+	.insight[data-insight="9"] .insightTitle h4 {color:#ff3366;}
+	.insight[data-insight="10"] .insightTitle h6,
+	.insight[data-insight="10"] .insightTitle h4 {color:#551155;}
 
 	.insight .content {
 		position:relative;
@@ -1624,6 +1645,50 @@ img {
 		font-size: 22px;
 		line-height: 26px;
 		border-bottom: 1px solid #ccc;
+	}
+	.insight .content .right-col > div.with-video {
+		text-align: left;
+	}
+	.insight .content .right-col > div.with-video > span {
+		float: left;
+		width: 100%;
+		max-width: 100%;
+		clear: both;
+		text-align: left;
+	}
+	.insight .content .right-col > div.with-video .the-video {
+		display: inline-block;
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		margin: 20px 0 0 0;
+	}
+	.insight .content .right-col > div.with-video .the-video > a {
+		display: inline-block;
+		position: relative;
+		float: left;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		/*background-image:url("../images/video-small.jpg");
+		background-repeat: no-repeat;
+		background-position: 0 0;*/
+	}
+	.insight .content .right-col > div.with-video .the-video > a > span {
+		display: inline-block;
+		position: absolute;
+		left: 5.5%;
+		bottom: 9.5%;
+		width: 13.5%;
+		height: 24.4%;
+		background-color: #000;
+		-webkit-border-radius: 50% 50% 50% 50%;
+		border-radius: 50% 50% 50% 50%;
+		overflow: hidden;
+		background-image:url("../images/bg-arrow-med-full.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 100% auto;
 	}
 	.insight .content .right-col > div.social {
 		padding: 5px 9px 8px 25px;
@@ -1812,6 +1877,10 @@ img {
 		line-height: 17px;
 		font-size: 12px;
 	}
+	.insight .insightTitle h4 {
+		font-size: 30px;
+		line-height: 30px;
+	}
 	.insight .insightTitle h3 {
 		font-size: 32px;
 		line-height: 37px;
@@ -1920,6 +1989,10 @@ img {
 	}
 	.insight .insightTitle h6 {
 		font-size: 16px;
+	}
+	.insight .insightTitle h4 {
+		font-size: 21px;
+		line-height: 21px;
 	}
 	.insight .insightTitle h3 {
 		font-size: 21px;
