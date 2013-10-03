@@ -50,6 +50,48 @@ hpit.config = {
 		desktop: 1500,
 		touch: 1
 	},
+	limelightVideos: {
+		'insight1': {
+			channelId: '80574bedd9c34436b975e88f19788d22',
+			uid: '844383'
+		},
+		'insight2': {
+			channelId: '9be1af8417fc4382a97ea5606b4837a1',
+			uid: '601565'
+		},
+		'insight3': {
+			channelId: 'f460441b09b04a99bca91665b7a0eb96',
+			uid: '770163'
+		},
+		'insight4': {
+			channelId: '80574bedd9c34436b975e88f19788d22',
+			uid: '844383'
+		},
+		'insight5': {
+			channelId: '9be1af8417fc4382a97ea5606b4837a1',
+			uid: '601565'
+		},
+		'insight6': {
+			channelId: '3102790151934bfc8be0769f24961371',
+			uid: '332531'
+		},
+		'insight7': {
+			channelId: '4592bc4cc7714f34a95c8b986f399e8f',
+			uid: '958505'
+		},
+		'insight8': {
+			channelId: '275beae04caf4807be2cbc8fcd3ddd14',
+			uid: '10315'
+		},
+		'insight9': {
+			channelId: '0ccc3dc43d584e968eb6273cc9e844b4',
+			uid: '752755'
+		},
+		'insight10': {
+			channelId: '6d4c65019ddc4989a727df2bee85cd7c',
+			uid: '239897'
+		}
+	},
 	groups: {
 		'insight1': {
 			newHash: '#insight1'
@@ -223,7 +265,7 @@ hpit.core = (function(){
 		});
 
 		// track download link click
-		$('.download a').on('click',function(e){
+		$('.download a,.download-link a').on('click',function(e){
 			FlashDownload($(this).attr('href'), 'Download – Get the Study', 'Download Link');
 		});
 
@@ -795,33 +837,60 @@ hpit.core = (function(){
 
 		// video chapters
 		$('.chapters a')
-			.on('click',function(e){
-				e.preventDefault();
-				clearTimeout(chapterClicked);
-				hpit.config.justClicked = true;
+		.on('click',function(e){
+			e.preventDefault();
+			clearTimeout(chapterClicked);
+			hpit.config.justClicked = true;
+			var skipTo = hpit.config.chapters[$(this).text()].position / 1000;
+			
+			try {
+				DelvePlayer.doSeekToSecond(skipTo);
+			} catch(err) {
+				//console.log('DelvePlayer error: ', err);
+			}
 
-				var skipTo = hpit.config.chapters[$(this).text()].position / 1000;
-				
-				try {
-					DelvePlayer.doSeekToSecond(skipTo);
-				} catch(err) {
-					//console.log('DelvePlayer error: ', err);
-				}
+			chapterClicked = setTimeout(function(){
+				hpit.config.justClicked = false;
+				//console.log('justClicked cleared');
+			}, 4000);
+		})
+		.on('mouseenter',function(e){			
+			var thisNum = $(this).text();
+			//console.log('thisNum: ', thisNum);
+			$('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
+		})
+		.on('mouseleave',function(e){
+			$('#ll-overlay .chapters .contentRow').hide().text('');
+			//console.log('clear description');
+		});
 
-				chapterClicked = setTimeout(function(){
-					hpit.config.justClicked = false;
-					//console.log('justClicked cleared');
-				}, 4000);
-			})
-			.on('mouseenter',function(e){			
-				var thisNum = $(this).text();
-				//console.log('thisNum: ', thisNum);
-				$('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
-			})
-			.on('mouseleave',function(e){
-				$('#ll-overlay .chapters .contentRow').hide().text('');
-				//console.log('clear description');
+		$('.the-video a').on('click',function(e){
+			e.preventDefault();
+
+			$('.the-video.active').each(function (index) {
+				$(this).find('.vidWrapper').remove().end().removeClass('active');
 			});
+
+			var target = $(this).parent();
+			target.addClass('active');
+			//var origContent = target.html();
+
+			var insightID = $(this).attr('href').replace('#','');
+			var vidID = 'limelight_player_' + hpit.config.limelightVideos[insightID].uid;
+			var chID = hpit.config.limelightVideos[insightID].channelId
+
+			var vidContent =  '<div class="vidWrapper"><script src="//assets.delvenetworks.com/player/embed.js"></script>';
+				vidContent += '<object type="application/x-shockwave-flash" id="'+vidID+'" name="'+vidID+'" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
+				vidContent += '<param name="movie" value="//assets.delvenetworks.com/player/loader.swf"/>';
+				vidContent += '<param name="wmode" value="transparent"/>';
+				vidContent += '<param name="allowScriptAccess" value="always"/>';
+				vidContent += '<param name="allowFullScreen" value="true"/>';
+				vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId='+chID+'&amp;autoplay=true"/>';
+				vidContent += '</object></div>';
+
+			target.append(vidContent);
+			LimelightPlayerUtil.initEmbed(vidID);
+		});
 	}
 
 	function updateSidemenu(){
@@ -1000,11 +1069,61 @@ $.extend({
 
 //var activeChap = 0;
 
-function delvePlayerCallback(playerId, eventName, data) {		
-	var id = "limelight_player_239897";
+function delvePlayerCallback2(playerId, eventName, data) {
+	console.log('**********************************************');
+	console.log('playerId: ', playerId);
+	console.log('eventName: ', eventName);
+	//console.log('data: ', data);
+	console.log('**********************************************');
+
 	if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
+		console.log('eventName: ', eventName);
+		DelvePlayer.registerPlayer(playerId);
+	}
+	
+	switch (eventName) {
+		case 'onPlayerLoad':
+			doOnPlayerLoad2();
+			break;
+		case 'onError':
+			doOnError(data);
+			break;
+		
+		case 'onPlayStateChanged':
+			doOnPlayStateChanged2(data);
+			break;
+		
+		/*case 'onPlayheadUpdate':
+			doonPlayheadUpdate(data);
+			break;
+		
+		case 'onMediaComplete':
+			doOnMediaComplete(data);
+			break;
+		
+		case 'onMediaLoad':
+			doOnMediaLoad(data);
+			break;
+		
+		case 'onPlayheadUpdate':
+			doOnPlayheadUpdate(data);
+			break;
+		*/
+	}
+}
+
+function delvePlayerCallback(playerId, eventName, data) {
+	if(playerId){
+		var id = playerId;
+	} else {
+		var id = "limelight_player_239897";
+	}
+	if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
+		console.log('eventName: ', eventName);
 		DelvePlayer.registerPlayer(id);
 	}
+
+	console.log('curr id: ', id);
 	
 	switch (eventName) {
 		case 'onPlayerLoad':
@@ -1038,7 +1157,11 @@ function delvePlayerCallback(playerId, eventName, data) {
 }
 
 function doOnPlayerLoad(){
-	//console.log('player loaded');
+	console.log('player loaded - delvePlayerCallback #1:');
+}
+
+function doOnPlayerLoad2(){
+	console.log('player loaded - delvePlayerCallback #2:');
 }
 
 function doOnError(data){
@@ -1046,7 +1169,11 @@ function doOnError(data){
 }
 
 function doOnPlayStateChanged(data){
-	//console.log('player state: ', data);
+	console.log('player state: ', data);
+}
+
+function doOnPlayStateChanged2(data){
+	console.log('player state 2: ', data);
 }
 
 function doonPlayheadUpdate(data){	
