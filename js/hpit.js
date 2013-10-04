@@ -183,6 +183,13 @@ hpit.core = (function(){
 	//	Initialize
 	function init(){
 
+		if(isIE8){
+			//console.log('IS ie8');
+			$('html').addClass('ie8');
+		} else {
+			//console.log('NOT ie8');
+		}
+
 		var debug = $.getUrlVar('debug');
 		if(debug == 'true'){
 			$('#diagnostics').show();
@@ -803,7 +810,7 @@ hpit.core = (function(){
 		$('.hero .playVid').on('click',function(e){
 			e.preventDefault();
 			
-			if(!onMobile() && !onIpad()){
+			if(!onMobile() && !onIpad() && !isIE8){
 				$(".hero video")[0].pause();
 			}
 			$('html').addClass('noScroll');
@@ -829,7 +836,7 @@ hpit.core = (function(){
 			$('#ll-overlay')
 			//.find('#ll-player').html('').end()
 			.fadeOut(500, function(){
-				if(!onMobile() && !onIpad()){
+				if(!onMobile() && !onIpad() && !isIE8){
 					$(".hero video")[0].play();
 				}
 			});
@@ -970,7 +977,7 @@ hpit.core = (function(){
 			.attr('data-toggle','collapse')
 			.attr('data-target','.navbar-collapse');
 		
-		if(!onMobile() && !onIpad()){
+		if(!onMobile() && !onIpad() && !isIE8){
 			initVideo();
 		}
 	}

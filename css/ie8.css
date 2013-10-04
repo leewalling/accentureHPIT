@@ -1,0 +1,70 @@
+/******************************  IE8 styles  *************************************/
+.ie8 * {
+	
+}
+
+.ie8 .col-xs-12 {
+	width: 50% !important;
+	margin-left: 50% !important;
+}
+
+.ie8 .hero .video-wrapper {
+	background-position: top center;
+}
+.ie8 .whiteAngle {
+	width: 50%;
+	height: 800px;
+	position:absolute;
+	background-color: transparent;
+	top: 480px;
+	right: 0px;
+	z-index: 1;
+	display: inline-block;
+	overflow: visible;
+	pointer-events: none;
+	background-image:url("../images/bg-white-angle.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+.ie8 .hero > div.inner .playVid {
+	z-index: 100;
+}
+.ie8 .insight .marker {
+	top: 0px !important;
+	width:139px;
+	height:199px;
+	line-height:199px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+.ie8 .insight[data-insight="1"] .marker {
+	background-image:url("../images/ie8-bg-marker1.png");
+}
+.ie8 .insight[data-insight="2"] .marker {
+	background-image:url("../images/ie8-bg-marker2.png");
+}
+.ie8 .insight[data-insight="3"] .marker {
+	background-image:url("../images/ie8-bg-marker3.png");
+}
+.ie8 .insight[data-insight="4"] .marker {
+	background-image:url("../images/ie8-bg-marker4.png");
+}
+.ie8 .insight[data-insight="5"] .marker {
+	background-image:url("../images/ie8-bg-marker5.png");
+}
+.ie8 .insight[data-insight="6"] .marker {
+	background-image:url("../images/ie8-bg-marker6.png");
+}
+.ie8 .insight[data-insight="7"] .marker {
+	background-image:url("../images/ie8-bg-marker7.png");
+}
+.ie8 .insight[data-insight="8"] .marker {
+	background-image:url("../images/ie8-bg-marker8.png");
+}
+.ie8 .insight[data-insight="9"] .marker {
+	background-image:url("../images/ie8-bg-marker9.png");
+}
+.ie8 .insight[data-insight="10"] .marker {
+	background-image:url("../images/ie8-bg-marker10.png");
+}
