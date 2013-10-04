@@ -1,13 +1,32 @@
 /******************************  IE8 styles  *************************************/
-.ie8 * {
-	
+.ie8 #ll-overlay .closeVid {
+	background: none;
+	background-color: transparent;
 }
-
+.ie8 #ll-overlay .closeVid img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+}
+.ie8 #ll-overlay .closeVid:hover img {
+	margin-top: -32px;
+}
+.ie8 .navbar-collapse.collapse {
+	display: block !important;
+	float: right !important;
+	border: none !important; 
+}
+.ie8 .navbar-toggle {
+	display: none !important;
+}
+.ie8 .navbar-header {
+	float: left !important;
+}
 .ie8 .col-xs-12 {
 	width: 50% !important;
 	margin-left: 50% !important;
 }
-
 .ie8 .hero .video-wrapper {
 	background-position: top center;
 }
@@ -67,4 +86,43 @@
 }
 .ie8 .insight[data-insight="10"] .marker {
 	background-image:url("../images/ie8-bg-marker10.png");
+}
+.ie8 .insight .content .right-col > div.with-video .the-video > a > span {
+	background-color: transparent;
+	background-image: none;
+}
+.ie8 .insight .content .right-col > div.with-video .the-video > a > span img {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.ie8 .insight .content .right-col > div .tr > span.num .txt {
+	position: absolute;
+	z-index: 2;
+	width: 46px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+}
+.ie8 .insight .content .right-col > div .tr > span.num img {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.insight[data-insight="1"] .content .right-col > div .tr > span.num,
+.insight[data-insight="2"] .content .right-col > div .tr > span.num,
+.insight[data-insight="3"] .content .right-col > div .tr > span.num,
+.insight[data-insight="4"] .content .right-col > div .tr > span.num,
+.insight[data-insight="5"] .content .right-col > div .tr > span.num,
+.insight[data-insight="6"] .content .right-col > div .tr > span.num,
+.insight[data-insight="7"] .content .right-col > div .tr > span.num,
+.insight[data-insight="8"] .content .right-col > div .tr > span.num,
+.insight[data-insight="9"] .content .right-col > div .tr > span.num,
+.insight[data-insight="10"] .content .right-col > div .tr > span.num {
+	background-color :transparent;
 }
