@@ -1,4 +1,8 @@
 /******************************  IE8 styles  *************************************/
+.ie8 #ll-overlay {
+	background-color: #000 !important;
+	filter: alpha(opacity=100) !important;
+}
 .ie8 #ll-overlay .closeVid {
 	background: none;
 	background-color: transparent;
