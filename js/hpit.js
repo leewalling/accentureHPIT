@@ -356,9 +356,9 @@ hpit.core = (function(){
 			updateSidemenu();
 
 			if(onMobile()){
-				$('html').addClass('onMobile');
+				$('html').removeClass('desktop').addClass('onMobile');
 			} else {
-				$('html').removeClass('onMobile');
+				$('html').removeClass('onMobile').addClass('desktop');
 			}
 
 			if(onIpad()){
