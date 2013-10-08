@@ -543,7 +543,7 @@
 			<div class="insightTitle">
 				<!--<h6>CIO Action Item #8</h6>-->
 				<h4 class="visible-xs">08</h4>
-				<h3 class="h3-black">Agility and speed. The new normal</h3>
+				<h3 class="h3-black">Agility and speed.<br/>The new normal</h3>
 				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="google"></a>
