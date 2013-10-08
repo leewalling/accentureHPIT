@@ -5,6 +5,7 @@
 		<!--meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=yes" /-->
 		<!--meta name="viewport" content="width=device-width, target-densityDpi=high-dpi, initial-scale=0.666667, minimum-scale=0.666667, maximum-scale=0.666667"-->
 		<!-- Bootstrap -->
+      <!-- test -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!--link href="css/reset.css" rel="stylesheet" media="screen"-->
 		<link href="css/hpit.css" rel="stylesheet" media="screen" />
