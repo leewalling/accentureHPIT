@@ -52,44 +52,44 @@ hpit.config = {
 	},
 	limelightVideos: {
 		'insight1': {
-			channelId: '80574bedd9c34436b975e88f19788d22',
-			uid: '844383'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '210739'
 		},
 		'insight2': {
-			channelId: '9be1af8417fc4382a97ea5606b4837a1',
-			uid: '601565'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '252420'
 		},
 		'insight3': {
-			channelId: 'f460441b09b04a99bca91665b7a0eb96',
-			uid: '770163'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '333203'
 		},
 		'insight4': {
-			channelId: '80574bedd9c34436b975e88f19788d22',
-			uid: '844383'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '296968'
 		},
 		'insight5': {
-			channelId: '9be1af8417fc4382a97ea5606b4837a1',
-			uid: '601565'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '221927'
 		},
 		'insight6': {
-			channelId: '3102790151934bfc8be0769f24961371',
-			uid: '332531'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '245658'
 		},
 		'insight7': {
-			channelId: '4592bc4cc7714f34a95c8b986f399e8f',
-			uid: '958505'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '378140'
 		},
 		'insight8': {
-			channelId: '275beae04caf4807be2cbc8fcd3ddd14',
-			uid: '10315'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '178191'
 		},
 		'insight9': {
-			channelId: '0ccc3dc43d584e968eb6273cc9e844b4',
-			uid: '752755'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '513608'
 		},
 		'insight10': {
-			channelId: '6d4c65019ddc4989a727df2bee85cd7c',
-			uid: '239897'
+			channelId: 'c315bfc4a8c345af807b2887698549f6',
+			uid: '569512'
 		}
 	},
 	groups: {
