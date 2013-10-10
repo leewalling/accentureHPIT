@@ -1498,7 +1498,7 @@ img {
 /*********************************  end Limelight overlay  *******************************/
 /*********************************  responsive  ******************************************/
 /* less than 767px wide */          /* only screen and (-webkit-device-pixel-ratio: 2) */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 1024px) {
 	.container > .navbar-header,
 	.container > .navbar-collapse {
 		margin: 0;
