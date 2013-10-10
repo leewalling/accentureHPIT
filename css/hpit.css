@@ -2383,6 +2383,7 @@ img {
 */
 
 /* ipad (portrait and landscape) */
+/* XXX TEST
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	.navbar > .container {
 		border-bottom: 2px solid #363636 !important;
@@ -2532,7 +2533,8 @@ img {
 		background-repeat: no-repeat !important;
 	  	background-position: top center !important;
 	  	background-size: auto 100% !important;*/
-	}
+/*	
+   }
 	.insight.current .marker {
 		position: absolute !important;
 		top: 135px !important;
@@ -2543,13 +2545,16 @@ img {
 		left: 0;
 	}
 }
- 
+*/ 
+
 /* ipad (landscape) */
+/*
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
 }
- 
+*/ 
 /* ipad (portrait) */
+/*
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 	.insight .insightTitle {
 		left: 180px;
@@ -2567,7 +2572,7 @@ img {
 		width: 90%;
 	}
 }
-
+*/
 /* medium screens */
 @media only screen and (min-width : 1224px) {
 
