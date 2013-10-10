@@ -226,7 +226,7 @@ hpit.core = (function(){
 		$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile:' + onMobile() + '</div>' + '<div>onIpad:' + onIpad() + '</div>');
 		
 		// add favicon
-		addFavicon();
+		//addFavicon();
 
 		// Initialize event handler for deeplinks
 		deeplinkInit();
