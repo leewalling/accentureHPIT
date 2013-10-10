@@ -41,7 +41,7 @@ html, body {
 	overflow: hidden;
 }
 #diagnostics {
-	//display:none;
+	display:none;
 	padding:10px;
 	background:red;
 	color:white;
