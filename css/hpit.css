@@ -2223,7 +2223,7 @@ img {
 	}
 
 	.insight {
-		background-size: 100% auto;
+		background-size: auto 100%;
 	}
 
 	.insight[data-insight="10"] {
