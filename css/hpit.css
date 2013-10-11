@@ -83,6 +83,10 @@ img {
 .onMobile.exception .hidden-xs {
  	display: none !important;
 }
+.onMobile.exception #accMarkMob {
+	min-height: 0px;
+	margin-top: -340px;
+}
 .onMobile .container.main {
 	padding-top:0;
 }
