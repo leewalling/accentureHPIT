@@ -2335,6 +2335,21 @@ img {
 	.hero > div.inner .playVid {
 		bottom: 0 !important;
 	}
+	.insight .content .right-col > div.with-video > span {
+		float: left;
+		width: 100%;
+		max-width: 100%;
+		clear: both;
+		text-align: left;
+	}
+	.insight .content .right-col > div.with-video .the-video {
+		display: inline-block;
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		margin: 20px 0 0 0;
+		min-height: 332px;
+	}
 }
  
 /* ipad (landscape) */
