@@ -463,14 +463,14 @@ img {
 }
 .hero.left > div.inner h1 {
 	margin: 10px 0;
-	width: 60%;
+	width: 70%;
 }
 .hero.left > div.inner h3 {
 	margin: 0;
 	width: 100%;
 }
 .hero.left > div.inner p {
-	width: 56%;
+	width: 60%;
 	margin: 0;
 	font-size: 20px;
 }
@@ -2337,7 +2337,21 @@ img {
  
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-
+	.hero.left {
+		background-color: red;
+	}
+	.hero.left > div.inner p {
+		background-color: orange;
+		width: 100%;
+	}
+	.hero.left > div.inner h1 {
+		background-color: yellow;
+		width: 70%;
+	}
+	.hero.left > div.inner h3 {
+		background-color: pink;
+		width: 100%;
+	}
 }
  
 /* ipad (portrait) */
@@ -2354,8 +2368,22 @@ img {
 		height: 100%;
 		width: auto;
 	}
-	.hero > div.inner p {
-		width: 90%;
+	.hero.left {
+		background-color: red;
+	}
+	.hero.left > div.inner p {
+		background-color: orange;
+		width: 100%;
+	}
+	.hero.left > div.inner h1 {
+		background-color: yellow;
+		margin: 10px 0;
+		width: 70%;
+	}
+	.hero.left > div.inner h3 {
+		background-color: pink;
+		margin: 0;
+		width: 100%;
 	}
 }
 
