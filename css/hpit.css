@@ -1577,8 +1577,8 @@ img {
 		white-space: normal;
 	}
 	.hero > div.inner .playVid {
-		top: 0;
-		bottom: auto;
+		top: auto;
+		bottom: -200px;
 		width: 95px;
 		height: 95px;
 		margin-left: -47.5px;
@@ -1804,17 +1804,7 @@ img {
 		font-size: 28px;
 		width: 88%;
 	}
-	.hero > div.inner .playVid {
-		top: auto;
-		bottom: -200px;
-		width: 95px;
-		height: 95px;
-		margin-left: -47.5px;
-		background-image:url("../images/play-lg.png");
-	}
-	.hero > div.inner .playVid:hover {
-		background-position: 0 -95px;
-	}
+	
 	#accMarkMob {
 		min-height: 0px;
 		margin-top: -400px;
