@@ -2343,11 +2343,11 @@ img {
 	}
 	.hero.left > div.inner p {
 		/*background-color: orange;*/
-		width: 75%;
+		width: 60%;
 	}
 	.hero.left > div.inner h1 {
 		/*background-color: yellow;*/
-		width: 75%;
+		width: 72%;
 	}
 	.hero.left > div.inner h3 {
 		/*background-color: pink;*/
@@ -2379,7 +2379,7 @@ img {
 	.hero.left > div.inner h1 {
 		/*background-color: yellow;*/
 		margin: 10px 0;
-		width: 70%;
+		width: 100%;
 	}
 	.hero.left > div.inner h3 {
 		/*background-color: pink;*/
