@@ -2339,7 +2339,6 @@ img {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.hero.left > div.inner {
 		/*background-color: red;*/
-		padding-right: 0;
 	}
 	.hero.left > div.inner p {
 		/*background-color: orange;*/
@@ -2371,6 +2370,7 @@ img {
 	}
 	.hero.left > div.inner {
 		/*background-color: red;*/
+		padding-right: 100px;
 	}
 	.hero.left > div.inner p {
 		/*background-color: orange;*/
