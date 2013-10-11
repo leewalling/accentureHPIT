@@ -1501,7 +1501,7 @@ img {
 /*********************************  end Limelight overlay  *******************************/
 /*********************************  responsive  ******************************************/
 /* less than 767px wide */
-@media only screen and (max-width : 767px), only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px) {
+@media only screen and (max-width : 767px), only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 1280px) {
 	.container > .navbar-header,
 	.container > .navbar-collapse {
 		margin: 0;
@@ -2440,8 +2440,8 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	}
 }
 
-/* Samsung S3 */
-@media only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px) {
+/* Samsung S3 - landscape */
+@media only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px) and (orientation : landscape) {
 	
 }
 /*********************************  end responsive  **************************************/

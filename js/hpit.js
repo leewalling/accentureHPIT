@@ -377,7 +377,8 @@ hpit.core = (function(){
 	}
 
 	function onMobile() {
-		return ( ( $(window).width() < 768 ) || $Android || $iOS && !$iPad );
+		//return ( ( $(window).width() < 768 ) || $Android || $iOS && !$iPad );
+		return true;
 	}
 
 	function onIpad() {
