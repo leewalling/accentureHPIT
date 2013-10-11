@@ -1497,7 +1497,7 @@ img {
 }
 /*********************************  end Limelight overlay  *******************************/
 /*********************************  responsive  ******************************************/
-/* less than 767px wide */          /* only screen and (-webkit-device-pixel-ratio: 2) */
+/* less than 767px wide */
 @media only screen and (max-width : 767px), only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px) {
 	.container > .navbar-header,
 	.container > .navbar-collapse {
@@ -2222,6 +2222,11 @@ img {
 		top: 250px;
 	}
 
+	.insight {
+		background-color: pink !important;
+		min-height: 1000px !important;
+	}
+
 	.insight[data-insight="10"] {
 		background-image:url("../images/bg-ipad-10.jpg");
 		background-attachment: scroll !important;
@@ -2376,40 +2381,6 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung S3 */
 @media only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px) {
-	#ll-overlay .inner {
-		height: 100%;
-		width: 90%;
-	}
-	#ll-overlay #ll-player {
-		/*height: 50%;*/
-		width: 100%;
-	}
-	.hero .video-wrapper {
-		/*height: 400px;*/
-		background-size: auto 100% !important;
-	}
+	
 }
-
- 
-/* test - galaxy s3??? */
-/*
-@media only screen and (min-device-width : 360px) and (max-device-width : 720px) {
-	#accMarkMob {
-		min-height: 0px;
-		margin-top: -425px;
-	}		
-	.hero {
-		height: auto;
-	}
-	.hero > div.inner h3 {
-		font-size: 18px;
-	}
-	.hero > div.inner h1 {
-		font-size: 44px;
-	}
-	.hero > div.inner p {
-		font-size: 18px;
-	}
-}
-*/
 /*********************************  end responsive  **************************************/
