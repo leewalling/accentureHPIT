@@ -2335,7 +2335,7 @@ img {
 	}
 	.hero.left > div.inner {
 		background-color: rgba(255, 255, 255, 0.4) !important;
-		padding-bottom: 100px;
+		padding-bottom: 200px;
 	}
 	.hero > div.inner .playVid {
 		bottom: 0 !important;
@@ -2345,18 +2345,18 @@ img {
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.hero.left > div.inner {
-		/*background-color: red;*/
+		background-color: red;
 	}
 	.hero.left > div.inner p {
-		/*background-color: orange;*/
+		background-color: orange;
 		width: 60%;
 	}
 	.hero.left > div.inner h1 {
-		/*background-color: yellow;*/
+		background-color: yellow;
 		width: 72%;
 	}
 	.hero.left > div.inner h3 {
-		/*background-color: pink;*/
+		background-color: pink;
 		width: 100%;
 	}
 }
@@ -2376,23 +2376,23 @@ img {
 		width: auto;
 	}
 	.hero.left > div.inner {
-		/*background-color: red;*/
+		background-color: red;
 		padding-right: 100px;
 	}
 	.hero.left > div.inner p {
-		/*background-color: orange;*/
-		width: 100%;
+		background-color: orange;
+		width: 80%;
 	}
 	.hero.left > div.inner h1 {
-		/*background-color: yellow;*/
+		background-color: yellow;
 		margin: 10px 0;
 		width: 100%;
 		font-size: 40px;
 	}
 	.hero.left > div.inner h3 {
-		/*background-color: pink;*/
+		background-color: pink;
 		margin: 0;
-		width: 100%;
+		width: 90%;
 	}
 }
 
