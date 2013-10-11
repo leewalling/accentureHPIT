@@ -2333,6 +2333,12 @@ img {
 		bottom: 0;
 		left: 0;
 	}
+	.hero.left > div.inner {
+		background-color: rgba(0, 0, 0, 0.4) !important;
+	}
+	.hero > div.inner .playVid {
+		bottom: 0 !important;
+	}
 }
  
 /* ipad (landscape) */
