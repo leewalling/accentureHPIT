@@ -2334,8 +2334,7 @@ img {
 		left: 0;
 	}
 	.hero.left > div.inner {
-		background-color: rgba(255, 255, 255, 0.4) !important;
-		padding-bottom: 200px;
+		padding-bottom: 160px;
 	}
 	.hero > div.inner .playVid {
 		bottom: 0 !important;
@@ -2345,19 +2344,16 @@ img {
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.hero.left > div.inner {
-		background-color: red;
+		
 	}
 	.hero.left > div.inner p {
-		background-color: orange;
 		width: 60%;
 	}
 	.hero.left > div.inner h1 {
-		background-color: yellow;
-		width: 72%;
+		width: 75%;
 	}
 	.hero.left > div.inner h3 {
-		background-color: pink;
-		width: 100%;
+		width: 72%;
 	}
 }
  
@@ -2376,23 +2372,19 @@ img {
 		width: auto;
 	}
 	.hero.left > div.inner {
-		background-color: red;
 		padding-right: 100px;
 	}
 	.hero.left > div.inner p {
-		background-color: orange;
 		width: 80%;
 	}
 	.hero.left > div.inner h1 {
-		background-color: yellow;
 		margin: 10px 0;
-		width: 100%;
+		width: 85%;
 		font-size: 40px;
 	}
 	.hero.left > div.inner h3 {
-		background-color: pink;
 		margin: 0;
-		width: 90%;
+		width: 85%;
 	}
 }
 
