@@ -2235,6 +2235,7 @@ img {
 		/*background-color: blue !important;*/
 		min-height: 1600px !important;
 		background-size: auto 100%;
+		border: none;
 	}
 
 	.insight[data-insight="10"] {
