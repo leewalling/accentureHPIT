@@ -2348,7 +2348,14 @@ img {
 		width: 100%;
 		overflow: hidden;
 		margin: 20px 0 0 0;
-		min-height: 332px;
+		min-height: auto;
+	}
+	.insight .content .right-col > div.with-video .the-video > a {
+		width: 100%;
+		height: auto;
+	}
+	#accMark {
+		z-index: 3;
 	}
 }
  
@@ -2382,10 +2389,11 @@ img {
 		line-height: 42px;
 	}
 	.hero {
-		height: 425px;
+		height: 500px;
 	}
 	.hero .video-wrapper {
-		height: 425px;
+		height: 500px;
+		background-size: auto 100%;
 	}
 	.hero video {
 		height: 100%;
