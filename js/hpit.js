@@ -353,6 +353,9 @@ hpit.core = (function(){
 			updateSidemenu();
 
 			if(onMobile()){
+				if($(window).width() > 767){
+					alert('exception!');
+				};
 				$('html').removeClass('desktop').addClass('onMobile');
 			} else {
 				$('html').removeClass('onMobile').addClass('desktop');
@@ -377,7 +380,8 @@ hpit.core = (function(){
 	}
 
 	function onMobile() {
-		return ( ( $(window).width() < 768 ) || $Android || $iOS && !$iPad );
+		//return ( ( $(window).width() < 768 ) || $Android || $iOS && !$iPad );
+		return true;
 	}
 
 	function onIpad() {
