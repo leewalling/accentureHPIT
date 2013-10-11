@@ -2340,10 +2340,10 @@ img {
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.hero {
-		height: 580px;
+		height: 570px;
 	}
 	.hero .video-wrapper {
-		height: 580px;
+		height: 570px;
 	}
 	.hero.left > div.inner p {
 		width: 60%;
@@ -2367,10 +2367,10 @@ img {
 		line-height: 42px;
 	}
 	.hero {
-		height: 580px;
+		height: 425px;
 	}
 	.hero .video-wrapper {
-		height: 580px;
+		height: 425px;
 	}
 	.hero video {
 		height: 100%;
