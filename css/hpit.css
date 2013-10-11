@@ -2380,6 +2380,7 @@ img {
 		/*background-color: yellow;*/
 		margin: 10px 0;
 		width: 100%;
+		font-size: 40px;
 	}
 	.hero.left > div.inner h3 {
 		/*background-color: pink;*/
