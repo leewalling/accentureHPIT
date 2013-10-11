@@ -254,9 +254,6 @@ hpit.core = (function(){
 
 		// Initialize event handler for social links
 		socialLinksInit();
-
-		// Initialize event handler for insight togglers
-		togglerInit();
 		
 		// check if the user is on IE7
 		hpit.config.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
@@ -369,6 +366,9 @@ hpit.core = (function(){
 		});
 
 		$(window).resize();
+
+		// Initialize event handler for insight togglers
+		togglerInit();
 	}
 
 	function onMobile() {
@@ -702,10 +702,11 @@ hpit.core = (function(){
 	// insight toggler
 	function togglerInit(){
 
-		$('.toggler').on('click',function(e){
+		$('.onMobile .insight .insightTitle').on('click',function(e){
 			e.preventDefault();
 			var $th = $(this);
-			var $trgt = $th.parent().parent();
+			//console.log('$th: ', $th);
+			var $trgt = $th.parent();
 			var $cont = $trgt.find('.container.content');
 			if($trgt.hasClass('open')){
 				$cont.slideUp(500, function(){

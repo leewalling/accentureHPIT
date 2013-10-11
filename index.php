@@ -34,7 +34,7 @@
 					<param name="wmode" value="transparent"/>
 					<param name="allowScriptAccess" value="always"/>
 					<param name="allowFullScreen" value="true"/>
-					<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c&amp;autoplay=true"/>
+					<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c"/>
 				</object>
 				<script>LimelightPlayerUtil.initEmbed('limelight_player_239897');</script>
 			</div>
@@ -144,24 +144,20 @@
 		<!-- end background images -->
 		<!-- insight #1 -->
 		<div class="insight" id="insight1">
-			<!--div class="leftSide"-->
-				<div class="marker hidden-xs">
-					<div><span>01</span></div>
+			<div class="marker hidden-xs">
+				<div><span>01</span></div>
+			</div>
+			<div class="insightTitle">
+				<h4 class="visible-xs">01</h4>
+				<h3>Your new boss? <br />Your customer.</h3>
+				<div class="social hidden-xs">
+					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
+					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="twitter"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="linkedin"></a>
 				</div>
-				<div class="insightTitle">
-					<!--<h6>CIO Action Item #1</h6>-->
-					<h4 class="visible-xs">01</h4>
-					<h3>Your new boss? <br />Your customer.</h3>
-					<!--h6>Self service. Something for every CIO to chew on.</h6-->
-					<div class="social hidden-xs">
-						<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
-						<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="facebook"></a>
-						<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="twitter"></a>
-						<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="linkedin"></a>
-					</div>
-					<a href="#" class="toggler visible-xs"><span></span></a>
-				</div>
-			<!--/div-->
+				<div class="toggler visible-xs"><span></span></div>
+			</div>
 			<div class="container content">
 				<div class="row">
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
@@ -206,17 +202,15 @@
 				<div><span>02</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #2</h6>-->
 				<h4 class="visible-xs">02</h4>
 				<h3>Context is king</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -262,17 +256,15 @@
 				<div><span>03</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #3</h6>-->
 				<h4 class="visible-xs">03</h4>
 				<h3>Business strategy and IT now work as one</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -318,17 +310,15 @@
 				<div><span>04</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #4</h6>-->
 				<h4 class="visible-xs">04</h4>
 				<h3>Bringing harmony to hybrid IT</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -374,17 +364,15 @@
 				<div><span>05</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #5</h6>-->
 				<h4 class="visible-xs">05</h4>
 				<h3>Fearlessly digital</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -430,17 +418,15 @@
 				<div><span>06</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #6</h6>-->
 				<h4 class="visible-xs">06</h4>
 				<h3>The power of self-service</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -486,17 +472,15 @@
 				<div><span>07</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #7</h6>-->
 				<h4 class="visible-xs">07</h4>
 				<h3>Unearthing data gems</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -542,17 +526,15 @@
 				<div><span>08</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #8</h6>-->
 				<h4 class="visible-xs">08</h4>
 				<h3>Agility and speed.<br/>The new normal</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -598,17 +580,15 @@
 				<div><span>09</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #9</h6>-->
 				<h4 class="visible-xs">09</h4>
 				<h3>Plug-and-play talent</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -654,17 +634,15 @@
 				<div><span>10</span></div>
 			</div>
 			<div class="insightTitle">
-				<!--<h6>CIO Action Item #10</h6>-->
 				<h4 class="visible-xs">10</h4>
 				<h3>Uniting business risk and IT security</h3>
-				<!--h6>Self service. Something for every CIO to chew on.</h6-->
 				<div class="social hidden-xs">
 					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="twitter"></a>
 					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="linkedin"></a>
 				</div>
-				<a href="#" class="toggler visible-xs"><span></span></a>
+				<div class="toggler visible-xs"><span></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">

@@ -85,6 +85,9 @@ img {
 	min-height: 0px !important;
 	background-color: #000;
 }
+.onMobile .insight .insightTitle {
+	cursor: pointer;
+}
 .onMobile .insight .container.content {
 	display: none;
 }
