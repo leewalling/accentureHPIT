@@ -2223,9 +2223,8 @@ img {
 	}
 
 	.insight {
-		background-color: green !important;
-		height: 1024px !important;
-		min-height: 1024px !important;
+		background-color: blue !important;
+		min-height: 1600px !important;
 		background-size: auto 100%;
 	}
 
