@@ -2223,6 +2223,7 @@ img {
 	}
 
 	.insight {
+		background-color: magenta !important;
 		min-height: 1024px !important;
 		background-size: auto 100%;
 	}
