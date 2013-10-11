@@ -365,6 +365,11 @@ hpit.core = (function(){
 			}
 		});
 
+		$(window).on('orientationchange', function(event) {
+			alert('orientationchange');
+			//location.reload();
+		});
+
 		$(window).resize();
 
 		// Initialize event handler for insight togglers
