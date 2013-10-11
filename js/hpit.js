@@ -829,7 +829,10 @@ hpit.core = (function(){
 				}
 			}
 			$('html').addClass('noScroll');
-			$('#ll-overlay').fadeIn(500);
+			$('#ll-overlay').fadeIn(500, function(){
+				//LimelightPlayerUtil.initEmbed('limelight_player_239897');
+				//console.log('LimelightPlayerUtil.initEmbed');
+			});
 
 			//FlashVideoAudio(“URL of the video”, “1”);
 

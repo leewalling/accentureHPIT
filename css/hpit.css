@@ -554,7 +554,7 @@ img {
 	top: 0px;
 }
 .blackAngle {
-	width: 45%;
+	width: 48%;
 	height: 225px;
 	position: fixed;
 	bottom: -225px;
@@ -844,14 +844,14 @@ img {
 }
 .insight .content .right-col > div.with-video > span {
 	float: left;
-	max-width: 45%;
+	max-width: 47.5%;
 	clear: both;
 	text-align: left;
 }
 .insight .content .right-col > div.with-video .the-video {
 	display: inline-block;
 	float: none;
-	width: 220px;
+	width: 47.5%;
 	overflow: hidden;
 	min-height: 124px;
 	position: relative;
@@ -869,8 +869,8 @@ img {
 	display: inline-block;
 	position: relative;
 	float: left;
-	width: 220px;
-	height: 124px;
+	width: 100%;
+	height: auto;
 	overflow: hidden;
 	/*background-image:url("../images/video-small.jpg");
 	background-repeat: no-repeat;
