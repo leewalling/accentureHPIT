@@ -2338,18 +2338,19 @@ img {
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.hero.left > div.inner {
-		background-color: red;
+		/*background-color: red;*/
+		padding-right: 0;
 	}
 	.hero.left > div.inner p {
-		background-color: orange;
-		width: 100%;
+		/*background-color: orange;*/
+		width: 75%;
 	}
 	.hero.left > div.inner h1 {
-		background-color: yellow;
-		width: 70%;
+		/*background-color: yellow;*/
+		width: 75%;
 	}
 	.hero.left > div.inner h3 {
-		background-color: pink;
+		/*background-color: pink;*/
 		width: 100%;
 	}
 }
@@ -2369,19 +2370,19 @@ img {
 		width: auto;
 	}
 	.hero.left > div.inner {
-		background-color: red;
+		/*background-color: red;*/
 	}
 	.hero.left > div.inner p {
-		background-color: orange;
+		/*background-color: orange;*/
 		width: 100%;
 	}
 	.hero.left > div.inner h1 {
-		background-color: yellow;
+		/*background-color: yellow;*/
 		margin: 10px 0;
 		width: 70%;
 	}
 	.hero.left > div.inner h3 {
-		background-color: pink;
+		/*background-color: pink;*/
 		margin: 0;
 		width: 100%;
 	}
