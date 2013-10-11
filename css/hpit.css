@@ -2337,7 +2337,7 @@ img {
  
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-	.hero.left {
+	.hero.left > div.inner {
 		background-color: red;
 	}
 	.hero.left > div.inner p {
@@ -2368,7 +2368,7 @@ img {
 		height: 100%;
 		width: auto;
 	}
-	.hero.left {
+	.hero.left > div.inner {
 		background-color: red;
 	}
 	.hero.left > div.inner p {
