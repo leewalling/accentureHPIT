@@ -366,7 +366,8 @@ hpit.core = (function(){
 		});
 
 		$(window).on('orientationchange', function(event) {
-			location.reload();
+			alert('orientation - changed');
+			//location.reload();
 		});
 
 		$(window).resize();
