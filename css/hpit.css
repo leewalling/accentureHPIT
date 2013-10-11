@@ -2191,11 +2191,7 @@ img {
 	}
 	.hero {
 		position: relative !important;
-		height: 600px;
 		background-color: #000;
-	}
-	.hero .video-wrapper {
-		height: 600px;
 	}
 	.hero > div.inner {
 		z-index: 5;
@@ -2343,8 +2339,11 @@ img {
  
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-	.hero.left > div.inner {
-		
+	.hero {
+		height: 625px;
+	}
+	.hero .video-wrapper {
+		height: 625px;
 	}
 	.hero.left > div.inner p {
 		width: 60%;
@@ -2366,6 +2365,12 @@ img {
 	.insight .insightTitle h3 {
 		font-size: 36px;
 		line-height: 42px;
+	}
+	.hero {
+		height: 825px;
+	}
+	.hero .video-wrapper {
+		height: 825px;
 	}
 	.hero video {
 		height: 100%;
