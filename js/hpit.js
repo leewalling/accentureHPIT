@@ -353,12 +353,13 @@ hpit.core = (function(){
 			updateSidemenu();
 
 			if(onMobile()){
-				if($(window).width() > 767){
-					alert('exception!');
+				if(!onIpad() && $(window).width() > 767){
+					//alert('exception!');
+					$('html').addClass('exception');
 				};
 				$('html').removeClass('desktop').addClass('onMobile');
 			} else {
-				$('html').removeClass('onMobile').addClass('desktop');
+				$('html').removeClass('onMobile exception').addClass('desktop');
 			}
 
 			if(onIpad()){

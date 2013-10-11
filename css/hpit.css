@@ -77,6 +77,12 @@ img {
 	padding-top: 880px;
 	position: relative;
 }
+.onMobile.exception .visible-xs {
+ 	display: block !important;
+}
+.onMobile.exception .hidden-xs {
+ 	display: none !important;
+}
 .onMobile .container.main {
 	padding-top:0;
 }
