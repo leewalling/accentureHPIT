@@ -679,9 +679,9 @@
 					<a href="http://www.accenture.com/microsites/it-trends-innovations-2013/Pages/home.aspx" target="_blank">Accenture Tech Vision</a>
 				</div>
 				<div class="legal">
-					<a href="http://www.accenture.com/us-en/Pages/privacy-policy.aspx" target="_blank">Privacy policy</a>
-					<a href="http://www.accenture.com/us-en/Pages/terms-of-use.aspx" target="_blank">Terms of use</a>
-					<a href="http://www.accenture.com/us-en/Pages/accessibility-statement.aspx" class="last" target="_blank">Accessibility statement</a>
+					<a href="http://www.accenture.com/us-en/Pages/privacy-policy.aspx">Privacy Statement</a>
+					<a href="http://www.accenture.com/us-en/Pages/terms-of-use.aspx">Terms of Use</a>
+					<a href="http://www.accenture.com/us-en/Pages/accessibility-statement.aspx" class="last">Accessibility Statement</a>
 					<span class="copyright">&copy; 2013 Accenture All Rights Reserved</span>
 				</div>
 			</div>
