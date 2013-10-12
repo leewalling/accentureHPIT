@@ -996,9 +996,12 @@ hpit.core = (function(){
 	}
 
 	function injectStuff() {
-		$('.insight').each(function (index) {
-			$(this).attr('data-insight', index+1);			
-		});
+		setTimeout(function(){
+			$('.insight').each(function (index) {
+				$(this).attr('data-insight', index+1);			
+			});
+		}, 5000);
+			
 		$('li.state').each(function (index) {
 			$(this).attr('data-insight-nav', index+1);
 			$(this).on('click',function(e){
