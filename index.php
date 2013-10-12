@@ -132,7 +132,6 @@
 		</div>
 		<!-- end hero area -->
 		<div id="accMark" class="hidden-xs"></div>
-		<!--div id="accMarkMob" class="visible-xs"></div-->
 		<div class="whiteAngle hidden-xs"></div>
 		<div class="blackAngle hidden-xs"></div>
 		<!-- background images -->

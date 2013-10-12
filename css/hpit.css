@@ -1374,8 +1374,14 @@ img {
 .opentemplate-content {
 	padding:0;
 }
+.opentemplate-content .content-left,
+.opentemplate-content .content-right {
+	display: none;
+}
+.opentemplate-content .content-center,
 .opentemplate-content .max-content-center {
 	float: none;
+	margin: 0;
 	width: 100%;
 	max-width: 100%;
 }
