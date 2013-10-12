@@ -61,7 +61,7 @@
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
 		  <!--button type="button" class="navbar-toggle"></button-->
-		  <a class="navbar-brand" href="#"><img src="images/logo.png" width="128" height="36" /></a>
+		  <a class="navbar-brand" href="http://www.accenture.com/"><img src="images/logo.png" width="128" height="36" /></a>
 		</div>
 		<div class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-right">
