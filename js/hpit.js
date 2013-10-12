@@ -820,6 +820,10 @@ hpit.core = (function(){
 	function playVideoInit(){
 		$('.hero .playVid').on('click',function(e){
 			e.preventDefault();
+
+			$('.the-video.active').each(function (index) {
+				$(this).find('.vidWrapper').remove().end().removeClass('active');
+			});
 			
 			if(!onMobile() && !onIpad() && !isIE8){
 				if($('#hero video').length){
@@ -830,11 +834,17 @@ hpit.core = (function(){
 			}
 			$('html').addClass('noScroll');
 			$('#ll-overlay').fadeIn(500, function(){
-				//LimelightPlayerUtil.initEmbed('limelight_player_239897');
-				//console.log('LimelightPlayerUtil.initEmbed');
-			});
+				var vidContent =  '<object type="application/x-shockwave-flash" id="limelight_player_239897" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
+					vidContent += '<param name="movie" value="//assets.delvenetworks.com/player/loader.swf"/>';
+					vidContent += '<param name="wmode" value="transparent"/>';
+					vidContent += '<param name="allowScriptAccess" value="always"/>';
+					vidContent += '<param name="allowFullScreen" value="true"/>';
+					vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c"/>';
+					vidContent += '</object>';
 
-			//FlashVideoAudio(“URL of the video”, “1”);
+				$('#ll-overlay #ll-player').html(vidContent);
+				LimelightPlayerUtil.initEmbed('limelight_player_239897');
+			});
 
 			omniTrack({
 				eventLink: $(this).attr('href'),
@@ -847,21 +857,27 @@ hpit.core = (function(){
 		$('.closeVid').on('click',function(e){
 			e.preventDefault();
 
-			DelvePlayer.doPause();
+			try {
+				DelvePlayer.doPause();
+			} catch(err) {
+				console.log('DelvePlayer error: ', err);
+			}
+			
 			resetVideoStates();
-
 			$('html').removeClass('noScroll');
+
 			$('#ll-overlay')
-			//.find('#ll-player').html('').end()
-			.fadeOut(500, function(){
-				if(!onMobile() && !onIpad() && !isIE8){
-					if($('#hero video').length){
-						$(".hero video")[0].play();
-					} else {
-						//console.log('NO VIDEO');
+				.find('#ll-player').html('')
+				.end()
+				.fadeOut(500, function(){
+					if(!onMobile() && !onIpad() && !isIE8){
+						if($('#hero video').length){
+							$(".hero video")[0].play();
+						} else {
+							//console.log('NO VIDEO');
+						}
 					}
-				}
-			});
+				});
 		});
 
 		// video chapters
@@ -914,7 +930,7 @@ hpit.core = (function(){
 				vidContent += '<param name="wmode" value="transparent"/>';
 				vidContent += '<param name="allowScriptAccess" value="always"/>';
 				vidContent += '<param name="allowFullScreen" value="true"/>';
-				vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId='+chID+'&amp;autoplay=true"/>';
+				vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId='+chID+'"/>';
 				vidContent += '</object></div>';
 
 			target.append(vidContent);
@@ -1005,12 +1021,11 @@ hpit.core = (function(){
 	}
 
 	function initVideo(){
-		//console.log('video initialized');
 		//poster="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg"
 		$('#hero .video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.mp4" type="video/mp4" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.ogg" type="video/ogg" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_092613_Med.webm" type="video/webm" /><img src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
+		
 		var video = document.getElementById('theVideo');
 		video.addEventListener('ended', function(){
-        	//console.log('video ended');
         	$('.video-wrapper').html('');
     	});
 	}
@@ -1098,49 +1113,6 @@ $.extend({
 
 //var activeChap = 0;
 
-function delvePlayerCallback2(playerId, eventName, data) {
-	console.log('**********************************************');
-	console.log('playerId: ', playerId);
-	console.log('eventName: ', eventName);
-	//console.log('data: ', data);
-	console.log('**********************************************');
-
-	if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
-		console.log('eventName: ', eventName);
-		DelvePlayer.registerPlayer(playerId);
-	}
-	
-	switch (eventName) {
-		case 'onPlayerLoad':
-			doOnPlayerLoad2();
-			break;
-		case 'onError':
-			doOnError(data);
-			break;
-		
-		case 'onPlayStateChanged':
-			doOnPlayStateChanged2(data);
-			break;
-		
-		/*case 'onPlayheadUpdate':
-			doonPlayheadUpdate(data);
-			break;
-		
-		case 'onMediaComplete':
-			doOnMediaComplete(data);
-			break;
-		
-		case 'onMediaLoad':
-			doOnMediaLoad(data);
-			break;
-		
-		case 'onPlayheadUpdate':
-			doOnPlayheadUpdate(data);
-			break;
-		*/
-	}
-}
-
 function delvePlayerCallback(playerId, eventName, data) {
 	if(playerId){
 		var id = playerId;
@@ -1156,7 +1128,7 @@ function delvePlayerCallback(playerId, eventName, data) {
 	
 	switch (eventName) {
 		case 'onPlayerLoad':
-			doOnPlayerLoad();
+			doOnPlayerLoad(data);
 			break;
 		case 'onError':
 			doOnError(data);
@@ -1177,32 +1149,25 @@ function delvePlayerCallback(playerId, eventName, data) {
 		/*case 'onMediaLoad':
 			doOnMediaLoad(data);
 			break;
-		
-		case 'onPlayheadUpdate':
-			doOnPlayheadUpdate(data);
-			break;
 		*/
 	}
 }
 
-function doOnPlayerLoad(){
-	console.log('player loaded - delvePlayerCallback #1:');
-}
-
-function doOnPlayerLoad2(){
-	console.log('player loaded - delvePlayerCallback #2:');
+function doOnPlayerLoad(data){
+	console.log('player loaded (doOnPlayerLoad)', data);
+	setTimeout(function(){DelvePlayer.doPlay()}, 1000);
 }
 
 function doOnError(data){
 	//console.log('player error: ', data);
 }
 
-function doOnPlayStateChanged(data){
-	console.log('player state: ', data);
+function doOnMediaLoad(data){
+	console.log('Media Loaded: ', data);
 }
 
-function doOnPlayStateChanged2(data){
-	console.log('player state 2: ', data);
+function doOnPlayStateChanged(data){
+	console.log('player state: ', data);
 }
 
 function doonPlayheadUpdate(data){	

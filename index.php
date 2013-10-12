@@ -25,15 +25,7 @@
 	<!-- video overlay -->
 	<div id="ll-overlay">
 		<div class="inner">
-			<div id="ll-player">
-				<object type="application/x-shockwave-flash" id="limelight_player_239897" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">
-					<param name="movie" value="//assets.delvenetworks.com/player/loader.swf"/>
-					<param name="wmode" value="transparent"/>
-					<param name="allowScriptAccess" value="always"/>
-					<param name="allowFullScreen" value="true"/>
-					<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c"/>
-				</object>
-			</div>
+			<div id="ll-player"></div>
 			<a class="closeVid" href="#"><img src="images/bg-close-video.png" /></a>
 			<div class="chapters">
 				<div class="topRow">

@@ -1440,7 +1440,8 @@ img {
 }
 
 #ll-overlay #ll-player {
-	background: #a0a0a0;
+	background: #000;
+	color: #fff;
 	height: 400px;
 	position: absolute;
 	top: 0px;
