@@ -2189,6 +2189,14 @@ img {
 	html, body {
 		font-size: 18px !important;
 	}
+	.insight .content .right-col > div.download-link a,
+	.navbar-default .navbar-nav > li > a {
+		font-size: 16px !important;
+	}
+	#footer .about,
+	#footer .legal {
+		font-size: 16px !important;
+	}
 	.navbar > .container {
 		border-bottom: 2px solid #363636 !important;
 	}
