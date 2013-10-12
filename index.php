@@ -674,8 +674,8 @@
 			<div>
 				<div class="about">
 					<h6>LEARN MORE ABOUT:</h6>
-					<a href="#" target="_blank">Accenture Technology Practice</a>
-					<a href="#" target="_blank">Accenture HPIT</a>
+					<a href="http://www.accenture.com/us-en/technology/Pages/index.aspx" target="_blank">Accenture Technology Practice</a>
+					<a href="http://www.accenture.com/us-en/technology/high-performance-information-technology/Pages/index.aspx" target="_blank">Accenture HPIT</a>
 					<a href="http://www.accenture.com/microsites/it-trends-innovations-2013/Pages/home.aspx" target="_blank">Accenture Tech Vision</a>
 				</div>
 				<div class="legal">
