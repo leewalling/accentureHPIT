@@ -843,7 +843,7 @@ hpit.core = (function(){
 					vidContent += '</object>';
 
 				$('#ll-overlay #ll-player').html(vidContent);
-				LimelightPlayerUtil.initEmbed('limelight_player_239897');
+				//LimelightPlayerUtil.initEmbed('limelight_player_239897');
 			});
 
 			omniTrack({
@@ -860,7 +860,7 @@ hpit.core = (function(){
 			try {
 				DelvePlayer.doPause();
 			} catch(err) {
-				console.log('DelvePlayer error: ', err);
+				//console.log('DelvePlayer error: ', err);
 			}
 			
 			resetVideoStates();
@@ -924,7 +924,7 @@ hpit.core = (function(){
 			var vidID = 'limelight_player_' + hpit.config.limelightVideos[insightID].uid;
 			var chID = hpit.config.limelightVideos[insightID].channelId
 
-			var vidContent =  '<div class="vidWrapper"><script src="//assets.delvenetworks.com/player/embed.js"></script>';
+			var vidContent =  '<div class="vidWrapper">'; //<script src="//assets.delvenetworks.com/player/embed.js"></script>
 				vidContent += '<object type="application/x-shockwave-flash" id="'+vidID+'" name="'+vidID+'" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
 				vidContent += '<param name="movie" value="//assets.delvenetworks.com/player/loader.swf"/>';
 				vidContent += '<param name="wmode" value="transparent"/>';
@@ -934,7 +934,7 @@ hpit.core = (function(){
 				vidContent += '</object></div>';
 
 			target.append(vidContent);
-			LimelightPlayerUtil.initEmbed(vidID);
+			//LimelightPlayerUtil.initEmbed(vidID);
 		});
 	}
 
@@ -1120,11 +1120,11 @@ function delvePlayerCallback(playerId, eventName, data) {
 		var id = "limelight_player_239897";
 	}
 	if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
-		console.log('eventName: ', eventName);
+		//console.log('eventName: ', eventName);
 		DelvePlayer.registerPlayer(id);
 	}
 
-	console.log('curr id: ', id);
+	//console.log('curr id: ', id);
 	
 	switch (eventName) {
 		case 'onPlayerLoad':
@@ -1154,7 +1154,7 @@ function delvePlayerCallback(playerId, eventName, data) {
 }
 
 function doOnPlayerLoad(data){
-	console.log('player loaded (doOnPlayerLoad)', data);
+	//console.log('player loaded (doOnPlayerLoad)', data);
 	setTimeout(function(){DelvePlayer.doPlay()}, 1000);
 }
 
@@ -1163,11 +1163,11 @@ function doOnError(data){
 }
 
 function doOnMediaLoad(data){
-	console.log('Media Loaded: ', data);
+	//console.log('Media Loaded: ', data);
 }
 
 function doOnPlayStateChanged(data){
-	console.log('player state: ', data);
+	//console.log('player state: ', data);
 }
 
 function doonPlayheadUpdate(data){	
