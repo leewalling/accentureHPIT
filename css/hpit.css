@@ -1824,6 +1824,13 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		background-color: purple;
 	}
 	*/
+	.hero {
+		height: 1000px;
+		background-color: purple;
+	}
+	#accMarkMob {
+		margin: 0;
+	}
 }
 /* galaxy s4 */
 @media screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) {
