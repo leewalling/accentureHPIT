@@ -2230,8 +2230,11 @@ img {
 	}
 	.navbar-default .navbar-nav > li > a {
 		white-space: nowrap;
-		line-height: 28px;
+		line-height: 26px;
 		padding: 16px 20px;
+	}
+	.container > .navbar-header {
+		border-bottom: none;
 	}
 	#controls,
 	.whiteAngle,
