@@ -1812,10 +1812,10 @@ img {
 }
 
 /* galaxy nexus */
-@media only screen and (-webkit-device-pixel-ratio: 1.5) and (max-device-width : 533px) {
+@media only screen and (-webkit-device-pixel-ratio: 1.5) and (max-device-width : 640px) {
 	.navbar-default,
 	.navbar-default * {
-		background-color: magenta;
+		background-color: yellow;
 	}
 }
 /* galaxy s4 */
