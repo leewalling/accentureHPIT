@@ -1524,15 +1524,9 @@ img {
 }
 /*********************************  end Limelight overlay  *******************************/
 /*********************************  responsive  ******************************************/
-/* galaxy s4 */
-@media only screen and (-webkit-device-pixel-ratio: 3) {
-	.navbar-default,
-	.navbar-default * {
-		background-color: red;
-	}
-}
+
 /* less than 767px wide */
-@media only screen and (max-width : 767px), only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) and (orientation : portrait), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape) {
+@media only screen and (max-width : 767px), only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) and (orientation : portrait), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape), only screen and (-webkit-device-pixel-ratio: 3) {
 	.container > .navbar-header,
 	.container > .navbar-collapse {
 		margin: 0;
