@@ -292,6 +292,11 @@ hpit.core = (function(){
 		$(window).scroll(function(event){
 			//console.log('insight 1 top: ', $('.insight').eq(0).offset().top);
 
+			// if the hero video exists remove it upon initial window scroll
+			if($('#theVideo').length){
+				$('.video-wrapper').html('');
+			}
+
 			if(!onMobile() && !onIpad()){
 				// determine if we need to lock the background images in place
 				if($(window).scrollTop() > $('.insight').eq(0).offset().top-1){ //$('.hero').outerHeight(true)
@@ -1018,7 +1023,7 @@ hpit.core = (function(){
 		
 		if(!onMobile() && !onIpad() && !isIE8){
 			// commenting out the video load for now
-			//initVideo();
+			initVideo();
 		}
 	}
 
