@@ -2221,7 +2221,7 @@ img {
 		float: right;
 	}
 	.navbar-nav {
-		width: 50% !important;
+		width: 100% !important;
 	}
 	.navbar-nav > li {
 		width: auto;
