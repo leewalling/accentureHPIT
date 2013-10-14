@@ -1812,17 +1812,17 @@ img {
 }
 
 /* galaxy nexus */
-@media only screen and (max-device-width : 640px) and (-webkit-device-pixel-ratio: 1.5) {
+@media only screen and (max-device-width : 720px) and (-webkit-device-pixel-ratio: 1.5) {
 	.navbar-default,
 	.navbar-default * {
-		background-color: orange;
+		background-color: green;
 	}
 }
 /* galaxy s4 */
-@media screen and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) {
+@media screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) {
 	.navbar-default,
 	.navbar-default * {
-		background-color: magenta;
+		background-color: red;
 	}
 }
 
