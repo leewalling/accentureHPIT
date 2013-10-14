@@ -2223,7 +2223,8 @@ img {
 		background-color: red;
 	}
 	.navbar-nav {
-		width: 100% !important;
+		float: right;
+		width: 50% !important;
 		background-color: pink;
 	}
 	.navbar-nav > li {
