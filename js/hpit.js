@@ -1169,6 +1169,10 @@ function doOnMediaLoad(data){
 
 function doOnPlayStateChanged(data){
 	//console.log('player state: ', data);
+	if (data.isPlaying) {
+      var videoTitle = DelvePlayer.doGetCurrentMedia().title;
+      FlashVideoAudio(videoTitle);
+   }
 }
 
 function doonPlayheadUpdate(data){	
