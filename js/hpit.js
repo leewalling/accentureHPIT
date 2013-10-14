@@ -133,41 +133,33 @@ hpit.config = {
 		},
 		'2': {
 			title: 'Chapter 2 description Nulla euismod est ante, a aliquet arcu lobortis mattis. Curabitur eget turpis lectus.',
-			position: 18000
+			position: 31000
 		},
 		'3': {
 			title: 'Chapter 3 description Pellentesque ac enim pulvinar, cursus ipsum ac, fringilla orci. Pellentesque fringilla est...',
-			position: 37000
+			position: 81000
 		},
 		'4': {
 			title: 'Chapter 4 description Ut odio est, consequat eu nisi vitae, euismod sagittis quam. Quisque eget ipsum pulvinar purus.',
-			position: 56000
+			position: 137000
 		},
 		'5': {
 			title: 'Chapter 5 description Cras pulvinar, erat ac tincidunt posuere, erat quam cursus leo, ac commodo dolor quam commodo tortor.',
-			position: 75000
+			position: 182000
 		},
 		'6': {
 			title: 'Chapter 6 description Vivamus eros diam, ultricies id nulla sed, euismod porttitor mi. Cras sed ornare arcu.',
-			position: 94000
+			position: 220000
 		},
 		'7': {
 			title: 'Chapter 7 description Sed ultricies aliquam arcu, eu fermentum lacus hendrerit id. Duis gravida dignissim purus...',
-			position: 112000
+			position: 256000
 		},
 		'8': {
 			title: 'Chapter 8 description Maecenas egestas nisi in convallis pellentesque. Cum sociis natoque penatibus et magnis dis.',
-			position: 131000
-		},
-		'9': {
-			title: 'Chapter 9 description Phasellus ac leo lorem. Sed rutrum cursus leo, eu facilisis diam adipiscing et. Etiam imperdiet.',
-			position: 150000
-		},
-		'10': {
-			title: 'Chapter 10 description In non augue dolor. Curabitur hendrerit felis nisl, id dignissim nisi gravida in',
-			position: 168000
-		}
-	}
+			position: 305000
+		}	
+   }
 };
 
 /*		HPIT core class		*/
@@ -848,7 +840,7 @@ hpit.core = (function(){
 					vidContent += '<param name="wmode" value="transparent"/>';
 					vidContent += '<param name="allowScriptAccess" value="always"/>';
 					vidContent += '<param name="allowFullScreen" value="true"/>';
-					vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=6d4c65019ddc4989a727df2bee85cd7c"/>';
+					vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=c315bfc4a8c345af807b2887698549f6"/>';
 					vidContent += '</object>';
 
 				$('#ll-overlay #ll-player').html(vidContent);
