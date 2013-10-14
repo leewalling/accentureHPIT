@@ -1016,7 +1016,7 @@ hpit.core = (function(){
 			.attr('data-target','.navbar-collapse');
 		
 		if(!onMobile() && !onIpad() && !isIE8){
-			// commenting out the video for now
+			// commenting out the video load for now
 			//initVideo();
 		}
 	}

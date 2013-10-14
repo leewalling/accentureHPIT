@@ -2422,14 +2422,20 @@ img {
 	}
 	.container > .navbar-collapse {
 		float: right;
-		width: 70% !important;
+		width: 50% !important;
 	}
 	.navbar-nav {
 		float: right;
 		width: 100% !important;
+		display: inline-block;
+		overflow: hidden;
 	}
 	.navbar-nav > li {
 		width: auto;
+		margin:0;
+	}
+	.navbar-nav > li.share {
+		width: 33%;
 	}
 	.navbar-default .navbar-nav > li > a {
 		white-space: nowrap;
