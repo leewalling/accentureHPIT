@@ -1233,7 +1233,6 @@ img {
   	border-left:1px solid #363636;
   	float: right;
   	background: #000;
-  	background-color: green;
 	-webkit-transition: background-color 300ms ease 0s;
 	-moz-transition: background-color 300ms ease 0s;
 	-o-transition: background-color 300ms ease 0s;
@@ -1552,7 +1551,6 @@ img {
 		min-width: 0;
 		width: 31%;
 		text-align: center;
-		background-color: pink;
 	}
 	.navbar-nav > li.download {
 		width: 38%;
@@ -2222,9 +2220,11 @@ img {
 	.container > .navbar-collapse {
 		float: right;
 	}
+	.navbar-nav {
+		width: 50% !important;
+	}
 	.navbar-nav > li {
 		width: auto;
-		background-color: orange;
 	}
 	.navbar-default .navbar-nav > li > a {
 		white-space: nowrap;
