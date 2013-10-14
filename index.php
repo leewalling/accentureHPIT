@@ -55,7 +55,7 @@
 		</div>
 		<div class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-right">
-			<li class="contact"><a href="/Microsites/high-performance-it/Pages/contact-us.aspx"><span class="icn"></span>contact</a></li>
+			<li class="contact"><a href="http://www.accenture.com/Microsites/high-performance-it/registration/Pages/contact-us.aspx"><span class="icn"></span>contact</a></li>
 			<li class="share">
 				<a href="#"><span class="icn"></span>share</a>
 				<div class="social">
