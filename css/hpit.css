@@ -1817,7 +1817,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 }
 
 /* galaxy nexus */
-@media only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) {
+@media only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape) {
 	/*
 	.navbar-default,
 	.navbar-default * {
@@ -1826,7 +1826,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	*/
 	.hero {
 		height: 1000px;
-		background-color: purple;
+		background-color: blue;
 	}
 	#accMarkMob {
 		margin: 0;
