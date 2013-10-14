@@ -1826,15 +1826,15 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	*/
 	.onMobile .hero {
 		height: 1000px !important;
-		background-color: blue !important;
+		background-color: orange !important;
 		min-height: 1000px !important;
 	}
 	.onMobile .hero .video-wrapper {
-		height: 1000px !important;
-		background-color: green !important;
-		min-height: 1000px !important;
+		height: 700px !important;
+		min-height: 700px !important;
 	}
 	.onMobile #accMarkMob {
+		display: block !important;
 		margin: 0 !important;
 	}
 }
