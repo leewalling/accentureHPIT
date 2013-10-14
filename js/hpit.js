@@ -717,17 +717,22 @@ hpit.core = (function(){
 			var $th = $(this);
 			//console.log('$th: ', $th);
 			var $trgt = $th.parent();
+			alert('$trgt: ', $trgt);
 			var $cont = $trgt.find('.container.content');
 			if($trgt.hasClass('open')){
-				$cont.slideUp(500, function(){
+				$cont.show(0, function(){
 					$trgt.removeClass('open');
 				});
-				//$trgt.removeClass('open');
+				/*$cont.slideUp(500, function(){
+					$trgt.removeClass('open');
+				});*/
 			} else {
-				//$trgt.addClass('open');
-				$cont.slideDown(500, function(){
+				$cont.hide(0, function(){
 					$trgt.addClass('open');
 				});
+				/*$cont.slideDown(500, function(){
+					$trgt.addClass('open');
+				});*/
 			}
 		});
 	}
