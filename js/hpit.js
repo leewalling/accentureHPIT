@@ -843,7 +843,7 @@ hpit.core = (function(){
 					vidContent += '</object>';
 
 				$('#ll-overlay #ll-player').html(vidContent);
-				//LimelightPlayerUtil.initEmbed('limelight_player_239897');
+				LimelightPlayerUtil.initEmbed('limelight_player_239897');
 			});
 
 			omniTrack({
@@ -934,7 +934,7 @@ hpit.core = (function(){
 				vidContent += '</object></div>';
 
 			target.append(vidContent);
-			//LimelightPlayerUtil.initEmbed(vidID);
+			LimelightPlayerUtil.initEmbed(vidID);
 		});
 	}
 
