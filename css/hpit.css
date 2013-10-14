@@ -2219,12 +2219,12 @@ img {
 	}
 	.container > .navbar-collapse {
 		float: right;
-		width: 100% !important;
+		width: 50% !important;
 		background-color: red;
 	}
 	.navbar-nav {
 		float: right;
-		width: 50% !important;
+		width: 100% !important;
 		background-color: pink;
 	}
 	.navbar-nav > li {
@@ -2232,6 +2232,7 @@ img {
 	}
 	.navbar-default .navbar-nav > li > a {
 		white-space: nowrap;
+		line-height: 28px;
 	}
 	#controls,
 	.whiteAngle,
