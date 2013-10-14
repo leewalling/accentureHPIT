@@ -717,7 +717,7 @@ hpit.core = (function(){
 			var $th = $(this);
 			//console.log('$th: ', $th);
 			var $trgt = $th.parent();
-			alert('$trgt: ', $trgt);
+			//alert('$trgt: ', $trgt);
 			var $cont = $trgt.find('.container.content');
 			if($trgt.hasClass('open')){
 				$cont.show(0, function(){
