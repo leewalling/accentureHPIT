@@ -695,7 +695,7 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery.1.7.2-min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<!--script src="//assets.delvenetworks.com/player/embed.js"></script-->
+		<script src="//assets.delvenetworks.com/player/embed.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
