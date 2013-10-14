@@ -1525,7 +1525,12 @@ img {
 /*********************************  end Limelight overlay  *******************************/
 /*********************************  responsive  ******************************************/
 /* less than 767px wide */
-@media only screen and (max-width : 767px), only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) and (orientation : portrait), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape), only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width : 767px), 
+only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px), 
+only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) and (orientation : portrait), 
+only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape), 
+only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3), 
+only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) {
 	.container > .navbar-header,
 	.container > .navbar-collapse {
 		margin: 0;
@@ -1813,10 +1818,12 @@ img {
 
 /* galaxy nexus */
 @media only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) {
+	/*
 	.navbar-default,
 	.navbar-default * {
 		background-color: purple;
 	}
+	*/
 }
 /* galaxy s4 */
 @media screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) {
