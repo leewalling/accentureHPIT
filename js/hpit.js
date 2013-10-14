@@ -52,44 +52,44 @@ hpit.config = {
 	},
 	limelightVideos: {
 		'insight1': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '210739'
+			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			uid: '388912'
 		},
 		'insight2': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '252420'
+			mediaId: '533c3bba782f4c8fb90ab67c1e343f2a',
+			uid: '204902'
 		},
 		'insight3': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '333203'
+			mediaId: '93ad7ada761541949557fe9677d2872d',
+			uid: '905416'
 		},
 		'insight4': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '296968'
+			mediaId: '80e9c5e088bc4f718d9e496e35d026ae',
+			uid: '289104'
 		},
 		'insight5': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '221927'
+			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			uid: '388912'
 		},
 		'insight6': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '245658'
+			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			uid: '388912'
 		},
 		'insight7': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '378140'
+			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			uid: '388912'
 		},
 		'insight8': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '178191'
+			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			uid: '388912'
 		},
 		'insight9': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '513608'
+			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			uid: '388912'
 		},
 		'insight10': {
-			channelId: 'c315bfc4a8c345af807b2887698549f6',
-			uid: '569512'
+			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			uid: '388912'
 		}
 	},
 	groups: {
@@ -928,7 +928,8 @@ hpit.core = (function(){
 
 			var insightID = $(this).attr('href').replace('#','');
 			var vidID = 'limelight_player_' + hpit.config.limelightVideos[insightID].uid;
-			var chID = hpit.config.limelightVideos[insightID].channelId
+			//var chID = hpit.config.limelightVideos[insightID].channelId
+         var mediaId = hpit.config.limelightVideos[insightID].mediaId;       
 
 			var vidContent =  '<div class="vidWrapper">'; //<script src="//assets.delvenetworks.com/player/embed.js"></script>
 				vidContent += '<object type="application/x-shockwave-flash" id="'+vidID+'" name="'+vidID+'" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
@@ -936,7 +937,8 @@ hpit.core = (function(){
 				vidContent += '<param name="wmode" value="transparent"/>';
 				vidContent += '<param name="allowScriptAccess" value="always"/>';
 				vidContent += '<param name="allowFullScreen" value="true"/>';
-				vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId='+chID+'"/>';
+				vidContent += '<param name="flashVars" value="mediaId=' + mediaId + '&amp;playerForm=Player"/>';
+            //vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId='+chID+'"/>';
 				vidContent += '</object></div>';
 
 			target.append(vidContent);
