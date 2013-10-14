@@ -128,35 +128,35 @@ hpit.config = {
 	currChap: 0,
 	chapters: {
 		'1': {
-			title: 'Chapter 1 description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi nisl, elementum a nulla sit amet.',
+			title: 'Chapter 1: Accenture High Performance IT Survey 2013',
 			position: 0
 		},
 		'2': {
-			title: 'Chapter 2 description Nulla euismod est ante, a aliquet arcu lobortis mattis. Curabitur eget turpis lectus.',
+			title: 'Chapter 2: What’s on Paul’s mind',
 			position: 31000
 		},
 		'3': {
-			title: 'Chapter 3 description Pellentesque ac enim pulvinar, cursus ipsum ac, fringilla orci. Pellentesque fringilla est...',
+			title: 'Chapter 3: Distinguishing high performing CIOs',
 			position: 81000
 		},
 		'4': {
-			title: 'Chapter 4 description Ut odio est, consequat eu nisi vitae, euismod sagittis quam. Quisque eget ipsum pulvinar purus.',
+			title: 'Chapter 4: The role of the CIOs',
 			position: 137000
 		},
 		'5': {
-			title: 'Chapter 5 description Cras pulvinar, erat ac tincidunt posuere, erat quam cursus leo, ac commodo dolor quam commodo tortor.',
+			title: 'Chapter 5: Rethinking your business',
 			position: 182000
 		},
 		'6': {
-			title: 'Chapter 6 description Vivamus eros diam, ultricies id nulla sed, euismod porttitor mi. Cras sed ornare arcu.',
+			title: 'Chapter 6: Putting data to work',
 			position: 220000
 		},
 		'7': {
-			title: 'Chapter 7 description Sed ultricies aliquam arcu, eu fermentum lacus hendrerit id. Duis gravida dignissim purus...',
+			title: 'Chapter 7: Dealing with complexity',
 			position: 256000
 		},
 		'8': {
-			title: 'Chapter 8 description Maecenas egestas nisi in convallis pellentesque. Cum sociis natoque penatibus et magnis dis.',
+			title: 'Chapter 8: Evaluating the findings',
 			position: 305000
 		}	
    }
