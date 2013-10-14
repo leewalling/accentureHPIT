@@ -179,6 +179,7 @@ hpit.core = (function(){
 	var $iPad = /ipad/i.test( $userAgent );
 	//var $iPad = true;
 	var chapterClicked;
+   var trackPageViewDelay;
 
 	//	Initialize
 	function init(){
@@ -489,10 +490,13 @@ hpit.core = (function(){
 					
 					$('#sideMenu ul li[data-insight-nav="'+menuItem+'"]').addClass('hilited');
 					$('.bgImg[data-insight="'+menuItem+'"] img').addClass('activate');
-
+ 
 					if(!hpit.config.locked && (hpit.config.currPageView != menuItem)){
-						omniTrackPageView(menuItem);
-					}
+                  clearInterval(trackPageViewDelay);
+                  trackPageViewDelay = setTimeout(function() {
+                     //omniTrackPageView(menuItem);
+                  }, 4000);
+               }
 
 					hpit.config.currInsight = menuItem;
 					//console.log('currInsight change 1');
