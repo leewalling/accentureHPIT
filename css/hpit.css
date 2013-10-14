@@ -1524,7 +1524,7 @@ img {
 }
 /*********************************  end Limelight overlay  *******************************/
 /*********************************  responsive  ******************************************/
-
+}
 /* less than 767px wide */
 @media only screen and (max-width : 767px), only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) and (orientation : portrait), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape), only screen and (-webkit-device-pixel-ratio: 3) {
 	.container > .navbar-header,
@@ -1811,6 +1811,20 @@ img {
 		width: 100%;
 	}
 }
+
+/* galaxy nexus - and (max-device-width : 533px) */
+@media only screen and (-webkit-device-pixel-ratio: 1.5) {
+	.navbar-default,
+	.navbar-default * {
+		background-color: blue;
+	}
+}
+/* galaxy s4 - and (device-width : 320px) and (device-height : 640px) */
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+	.navbar-default,
+	.navbar-default * {
+		background-color: orange;
+	}
 
 /* less than 640px wide */
 @media only screen and (max-width : 640px) {
