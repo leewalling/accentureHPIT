@@ -1824,12 +1824,18 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		background-color: purple;
 	}
 	*/
-	.hero {
-		height: 1000px;
-		background-color: blue;
+	.onMobile .hero {
+		height: 1000px !important;
+		background-color: blue !important;
+		min-height: 1000px !important;
 	}
-	#accMarkMob {
-		margin: 0;
+	.onMobile .hero .video-wrapper {
+		height: 1000px !important;
+		background-color: green !important;
+		min-height: 1000px !important;
+	}
+	.onMobile #accMarkMob {
+		margin: 0 !important;
 	}
 }
 /* galaxy s4 */
