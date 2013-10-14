@@ -2433,7 +2433,8 @@ img {
 	}
 	.navbar-default .navbar-nav > li > a {
 		white-space: nowrap;
-		line-height: 26px;
+		line-height: 28px;
+		font-weight: normal;
 	}
 	.container > .navbar-header {
 		border-bottom: none;
