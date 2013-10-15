@@ -72,9 +72,9 @@
 	<div class="container main" id="theTop">
 		<!-- controls -->
 		<div id="controls" class="hidden-xs">
-			<a href="#" class="arrows prev noClick"></a>
+			<a href="#" class="arrows prev noClick" rel="home-scroll"></a>
 			<a href="#" class="txt" id="toggleMenu">Menu</a>
-			<a href="#" class="arrows nxt"></a>
+			<a href="#" class="arrows nxt" rel="home-scroll"></a>
 			<span class="control-info">Get the TOP #10 CIO Action Items</span>
 		</div>
 		<!-- end controls -->
