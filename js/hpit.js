@@ -757,7 +757,7 @@ hpit.core = (function(){
 			var $title = $th.attr('title');
 			var $shareUrl = '';
 			var $shareTitle = encodeURIComponent($title);
-			var $winName = $cl + '-win';
+			var $winName = $cl + 'Window';
 			var $toTrack;
 			var $trackName;
 
@@ -800,10 +800,12 @@ hpit.core = (function(){
 					break;
 			}
 
+			console.log('$goto: ', $goto);
+			console.log('$winName: ', $winName);
+			console.log('$params: ', $params);
+			console.log('window: ', window);
+
 			try {
-				console.log('$goto: ', $goto);
-				console.log('$winName: ', $winName);
-				console.log('$params: ', $params);
 				window.open($goto, $winName, $params);
 			} catch(err) {
 				console.log('error: ', err);
