@@ -8,7 +8,8 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!--link href="css/reset.css" rel="stylesheet" media="screen"-->
 		<link href="css/hpit.css" rel="stylesheet" media="screen" />
-		<!--[if IE]>
+		<link href="css/ie8.css" rel="stylesheet" media="screen" />
+		<!--[if IE 8]>
 			<link href="css/ie8.css" rel="stylesheet" media="screen" />
 		<![endif]-->
 
