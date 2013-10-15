@@ -176,8 +176,6 @@ hpit.core = (function(){
 	//	Initialize
 	function init(){
 
-		try{ JSON } catch (e){ alert("Compatibility Mode Detected")  }
-
 		if(isIE8){
 			//console.log('IS ie8');
 			$('html').addClass('ie8');
@@ -1046,6 +1044,7 @@ hpit.core = (function(){
 	        	$('.video-wrapper').html('');
 	    	});
 	    	$('html').addClass('ie8');
+	    	$('head').append('<link href="/Microsites/high-performance-it/Documents/css/ie8.css" rel="stylesheet" media="screen" />');
 	    	//console.log('addEventListener - ELSE IF');
 		} else {
 			video.addEventListener('ended', function(){
