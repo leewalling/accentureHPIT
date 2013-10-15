@@ -493,8 +493,9 @@ hpit.core = (function(){
 					if(!hpit.config.locked && (hpit.config.currPageView != menuItem)){
                   clearInterval(trackPageViewDelay);
                   trackPageViewDelay = setTimeout(function() {
-                     //omniTrackPageView(menuItem);
-                  }, 4000);
+                     console.log("Page View: " + menuItem);
+                     //omniTrackPageView("Insight #" + menuItem);
+                  }, 2000);
                }
 
 					hpit.config.currInsight = menuItem;
