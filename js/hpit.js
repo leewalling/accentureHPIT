@@ -800,7 +800,16 @@ hpit.core = (function(){
 					break;
 			}
 
-			window.open($goto, $winName, $params);
+			try {
+				console.log('$goto: ', $goto);
+				console.log('$winName: ', $winName);
+				console.log('$params: ', $params);
+				window.open($goto, $winName, $params);
+			} catch(err) {
+				console.log('error: ', err);
+			}
+
+			
 			
 			// tracking social clicks
 			if(inTopNav){
@@ -1025,7 +1034,6 @@ hpit.core = (function(){
 			.attr('data-target','.navbar-collapse');
 		
 		if(!onMobile() && !onIpad() && !isIE8){
-			// commenting out the video load for now
 			initVideo();
 		}
 	}
