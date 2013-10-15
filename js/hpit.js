@@ -176,6 +176,8 @@ hpit.core = (function(){
 	//	Initialize
 	function init(){
 
+		try{ JSON } catch (e){ alert("Compatibility Mode Detected")  }
+
 		if(isIE8){
 			//console.log('IS ie8');
 			$('html').addClass('ie8');
@@ -1034,9 +1036,22 @@ hpit.core = (function(){
 		$('#hero .video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.mp4" type="video/mp4" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.ogg" type="video/ogg" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.webm" type="video/webm" /><img src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
 		
 		var video = document.getElementById('theVideo');
-		video.addEventListener('ended', function(){
-        	$('.video-wrapper').html('');
-    	});
+		if (video.addEventListener){
+			video.addEventListener('ended', function(){
+	        	$('.video-wrapper').html('');
+	    	});
+	    	console.log('addEventListener - IF');
+		} else if (video.attachEvent){
+			video.attachEvent('ended', function(){
+	        	$('.video-wrapper').html('');
+	    	});
+	    	console.log('addEventListener - ELSE IF');
+		} else {
+			video.addEventListener('ended', function(){
+	        	$('.video-wrapper').html('');
+	    	});
+	    	console.log('addEventListener - ELSE');
+		}			
 	}
 
 	function updateDimensions(){

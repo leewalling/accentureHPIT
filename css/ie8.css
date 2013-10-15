@@ -102,7 +102,10 @@
 	height: 100%;
 }
 .ie8 .insight .content .right-col > div .tr > span.num .txt {
+	display: inline-block;
 	position: absolute;
+	top: 0;
+	left: 0;
 	z-index: 2;
 	width: 46px;
 	height: 46px;
