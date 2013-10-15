@@ -1040,17 +1040,18 @@ hpit.core = (function(){
 			video.addEventListener('ended', function(){
 	        	$('.video-wrapper').html('');
 	    	});
-	    	console.log('addEventListener - IF');
+	    	//console.log('addEventListener - IF');
 		} else if (video.attachEvent){
 			video.attachEvent('ended', function(){
 	        	$('.video-wrapper').html('');
 	    	});
-	    	console.log('addEventListener - ELSE IF');
+	    	$('html').addClass('ie8');
+	    	//console.log('addEventListener - ELSE IF');
 		} else {
 			video.addEventListener('ended', function(){
 	        	$('.video-wrapper').html('');
 	    	});
-	    	console.log('addEventListener - ELSE');
+	    	//console.log('addEventListener - ELSE');
 		}			
 	}
 
