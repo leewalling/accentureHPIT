@@ -24,14 +24,14 @@
 			<div class="chapters">
 				<div class="topRow">
 					<h5>Chapters</h5>
-					<a href="#" ref="chapter1">1</a>
-					<a href="#" ref="chapter2">2</a>
-					<a href="#" ref="chapter3">3</a>
-					<a href="#" ref="chapter4">4</a>
-					<a href="#" ref="chapter5">5</a>
-					<a href="#" ref="chapter6">6</a>
-					<a href="#" ref="chapter7">7</a>
-					<a href="#" ref="chapter8">8</a>
+					<a href="#" rel="chapter1">1</a>
+					<a href="#" rel="chapter2">2</a>
+					<a href="#" rel="chapter3">3</a>
+					<a href="#" rel="chapter4">4</a>
+					<a href="#" rel="chapter5">5</a>
+					<a href="#" rel="chapter6">6</a>
+					<a href="#" rel="chapter7">7</a>
+					<a href="#" rel="chapter8">8</a>
 				</div>
 				<div class="contentRow"></div>
 			</div>
