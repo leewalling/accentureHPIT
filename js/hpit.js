@@ -262,7 +262,7 @@ hpit.core = (function(){
 			omniTrack({
 				eventLink: $(this).attr('href'),
 				eventName: 'Contact US – Top Nav',
-				eventType: 'Internal Lead Gen'
+				eventType: 'linkanalysis'
 			});
 		});
 
@@ -271,7 +271,7 @@ hpit.core = (function(){
 			omniTrack({
 				eventLink: $(this).attr('href'),
 				eventName: 'Learn More - ' + $(this).text(),
-				eventType: 'Internal Text Link'
+				eventType: 'linkanalysis'
 			});
 		});
 
