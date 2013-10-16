@@ -263,7 +263,7 @@ hpit.core = (function(){
 
 		// track download link click
 		$('.download a,.download-link a').on('click',function(e){
-			FlashDownload($(this).attr('href'), 'Download – Get the Study', 'Download Link');
+         FlashLinkAnalysis($(this).attr('href'), "download study - insight " + hpit.config.currInsight, "linkanalysis")
 		});
 
 		// track contact link click
@@ -491,8 +491,8 @@ hpit.core = (function(){
 					if(!hpit.config.locked && (hpit.config.currPageView != menuItem)){
                   clearInterval(trackPageViewDelay);
                   trackPageViewDelay = setTimeout(function() {
-                     console.log("Page View: " + menuItem);
-                     //omniTrackPageView("Insight #" + menuItem);
+                     //console.log("Page View: " + menuItem);
+                     //omniTrackPageView(menuItem);
                   }, 2000);
                }
 
@@ -655,8 +655,10 @@ hpit.core = (function(){
 						newHash = '#theTop';
 						//return false;
 					}
-					//console.log('newHash: ', newHash);
-					$(window).scrollTo(
+               omniTrackPageView(newNum);
+               //console.log('newHash: ', newHash);
+               
+                  $(window).scrollTo(
 						newHash, 
 						hpit.config.duration[hpit.config.desktopORtouch], 
 						{
@@ -680,8 +682,9 @@ hpit.core = (function(){
 				//console.log('#total: ', $('.insight').length);
 				if($cur < $('.insight').length){
 					newNum = ($cur + 1);
-					//console.log('newNum: ' + newNum);
-					newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
+               //console.log('newNum: ' + newNum);
+				   omniTrackPageView(newNum);
+               newHash = $('#sideMenu ul li[data-insight-nav="'+newNum+'"] > a').attr('href');
 					
 					$(window).scrollTo(
 						newHash, 
@@ -902,8 +905,9 @@ hpit.core = (function(){
 			e.preventDefault();
 			clearTimeout(chapterClicked);
 			hpit.config.justClicked = true;
-			var skipTo = hpit.config.chapters[$(this).text()].position / 1000;
-			
+         var cNum = $(this).text();
+			var skipTo = hpit.config.chapters[cNum].position / 1000;
+         FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
 			try {
 				DelvePlayer.doSeekToSecond(skipTo);
 			} catch(err) {
@@ -947,8 +951,7 @@ hpit.core = (function(){
 				vidContent += '<param name="wmode" value="transparent"/>';
 				vidContent += '<param name="allowScriptAccess" value="always"/>';
 				vidContent += '<param name="allowFullScreen" value="true"/>';
-				vidContent += '<param name="flashVars" value="mediaId=' + mediaId + '&amp;playerForm=Player"/>';
-            //vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId='+chID+'"/>';
+				vidContent += '<param name="flashVars" value="mediaId=' + mediaId + '&amp;playerForm=Player&amp;autoplay=true"/>';
 				vidContent += '</object></div>';
 
 			target.append(vidContent);
@@ -1006,9 +1009,11 @@ hpit.core = (function(){
 			if($target.hasClass("opened")){
 				$target.animate({"right":"-275px"}, "normal");
 				$target.removeClass("opened");
+            FlashLinkAnalysis($(this).attr('href'), "menu-closed", "linkanalysis");
 			} else {
 				$target.animate({"right":"0px"}, "normal");
 				$target.addClass("opened");
+            FlashLinkAnalysis($(this).attr('href'), "menu-opened", "linkanalysis");
 			}
 		});
 	}
