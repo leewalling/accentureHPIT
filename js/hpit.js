@@ -56,39 +56,39 @@ hpit.config = {
 			uid: '388912'
 		},
 		'insight2': {
-			mediaId: '533c3bba782f4c8fb90ab67c1e343f2a',
+			mediaId: 'ab42f5241ae7470f8442092bd2ac41cc',
 			uid: '204902'
 		},
 		'insight3': {
-			mediaId: '93ad7ada761541949557fe9677d2872d',
+			mediaId: '1c15c6e812734acea5813e516cb08d11',
 			uid: '905416'
 		},
 		'insight4': {
-			mediaId: '80e9c5e088bc4f718d9e496e35d026ae',
+			mediaId: '0c0035212ec54df89d0f08a5a8f96199',
 			uid: '289104'
 		},
 		'insight5': {
-			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			mediaId: '80e9c5e088bc4f718d9e496e35d026ae',
 			uid: '388912'
 		},
 		'insight6': {
-			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			mediaId: '6375f519b40046708057d8d3204bd9d9',
 			uid: '388912'
 		},
 		'insight7': {
-			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			mediaId: 'd1ba2d30a0064af091c4d71cbc9aa1a5',
 			uid: '388912'
 		},
 		'insight8': {
-			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			mediaId: '90ecaba9c3e947d99d9f9cd8f6374040',
 			uid: '388912'
 		},
 		'insight9': {
-			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			mediaId: '533c3bba782f4c8fb90ab67c1e343f2a',
 			uid: '388912'
 		},
 		'insight10': {
-			mediaId: 'c8403ed273d34709ba9d33a222d54877',
+			mediaId: '93ad7ada761541949557fe9677d2872d',
 			uid: '388912'
 		}
 	},
