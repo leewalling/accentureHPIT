@@ -1208,7 +1208,7 @@ function doOnPlayStateChanged(data){
 	//console.log('player state: ', data);
 	if (data.isPlaying) {
       var videoTitle = DelvePlayer.doGetCurrentMedia().title;
-      FlashVideoAudio(videoTitle);
+      FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis")
    }
 }
 
@@ -1220,33 +1220,43 @@ function doonPlayheadUpdate(data){
 	switch (true) {
 		case (currPos > 0 && currPos < hpit.config.chapters[2].position):
 			hpit.config.currChap = 1;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[2].position && currPos < hpit.config.chapters[3].position):
 			hpit.config.currChap = 2;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[3].position && currPos < hpit.config.chapters[4].position):
 			hpit.config.currChap = 3;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[4].position && currPos < hpit.config.chapters[5].position):
 			hpit.config.currChap = 4;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[5].position && currPos < hpit.config.chapters[6].position):
 			hpit.config.currChap = 5;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[6].position && currPos < hpit.config.chapters[7].position):
 			hpit.config.currChap = 6;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[7].position && currPos < hpit.config.chapters[8].position):
 			hpit.config.currChap = 7;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[8].position && currPos < hpit.config.chapters[9].position):
 			hpit.config.currChap = 8;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[9].position && currPos < hpit.config.chapters[10].position):
 			hpit.config.currChap = 9;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 		case (currPos > hpit.config.chapters[10].position):
 			hpit.config.currChap = 10;
+         trackDelvePlayer("start", "limelight_player_239897", currPos); 
 			break;
 	}
 	//console.log('active: '+ hpit.config.activeChap +' | curr: ' + hpit.config.currChap);
