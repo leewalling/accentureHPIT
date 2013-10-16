@@ -484,7 +484,7 @@ hpit.core = (function(){
                   trackPageViewDelay = setTimeout(function() {
                      //console.log("Page View: " + menuItem);
                      omniTrackPageView(menuItem);
-                  }, 2000);
+                  }, 4000);
                }
 
 					hpit.config.currInsight = menuItem;
@@ -1084,7 +1084,7 @@ hpit.core = (function(){
 		//console.log('function omniTrackPageView: ', num);
 		var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
 		//console.log('newPageName: ', newPageName);
-		//triggerOmniturePageView(newPageName);
+		triggerOmniturePageView(newPageName, "event29,event20,event55");
 	}
 
 	/* omniture tracking function */
