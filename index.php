@@ -8,7 +8,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!--link href="css/reset.css" rel="stylesheet" media="screen"-->
 		<link href="css/hpit.css" rel="stylesheet" media="screen" />
-		<!--[if IE 8]>
+		<!--[if lt IE 9]>
 			<link href="css/ie8.css" rel="stylesheet" media="screen" />
 		<![endif]-->
 	</head>
@@ -80,16 +80,16 @@
 		<div id="sideMenu" class="hidden-xs">
 			<ul>
 				<li><a href="#theTop" class="btt" ref="backtotop-click"><em>Back To Top</em></a></li>
-				<li class="state"><a href="#insight1"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
-				<li class="state"><a href="#insight2"><span>02</span> <span>Context is king</span></a></li>
-				<li class="state"><a href="#insight3"><span>03</span> <span>Business strategy and IT now work as one</span></a></li>
-				<li class="state"><a href="#insight4"><span>04</span> <span>Bringing harmony to hybrid IT</span></a></li>
-				<li class="state"><a href="#insight5"><span>05</span> <span>Fearlessly digital</span></a></li>
-				<li class="state"><a href="#insight6"><span>06</span> <span>The power of self-service</span></a></li>
-				<li class="state"><a href="#insight7"><span>07</span> <span>Unearthing data gems</span></a></li>
-				<li class="state"><a href="#insight8"><span>08</span> <span>Speed plus agility equals adaptability</span></a></li>
-				<li class="state"><a href="#insight9"><span>09</span> <span>Plug-and-play talent</span></a></li>
-				<li class="state"><a href="#insight10"><span>10</span> <span>Uniting business risk and IT security</span></a></li>
+				<li class="state" data-insight-nav="1"><a href="#insight1"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
+				<li class="state" data-insight-nav="2"><a href="#insight2"><span>02</span> <span>Context is king</span></a></li>
+				<li class="state" data-insight-nav="3"><a href="#insight3"><span>03</span> <span>Business strategy and IT now work as one</span></a></li>
+				<li class="state" data-insight-nav="4"><a href="#insight4"><span>04</span> <span>Bringing harmony to hybrid IT</span></a></li>
+				<li class="state" data-insight-nav="5"><a href="#insight5"><span>05</span> <span>Fearlessly digital</span></a></li>
+				<li class="state" data-insight-nav="6"><a href="#insight6"><span>06</span> <span>The power of self-service</span></a></li>
+				<li class="state" data-insight-nav="7"><a href="#insight7"><span>07</span> <span>Unearthing data gems</span></a></li>
+				<li class="state" data-insight-nav="8"><a href="#insight8"><span>08</span> <span>Speed plus agility equals adaptability</span></a></li>
+				<li class="state" data-insight-nav="9"><a href="#insight9"><span>09</span> <span>Plug-and-play talent</span></a></li>
+				<li class="state" data-insight-nav="10"><a href="#insight10"><span>10</span> <span>Uniting business risk and IT security</span></a></li>
 			</ul>
 			<a href="#" class="closeX">&nbsp;</a>
 		</div>
@@ -122,7 +122,7 @@
 		<div class="bgImages hidden-xs" id="bgImages"></div>
 		<!-- end background images -->
 		<!-- insight #1 -->
-		<div class="insight" id="insight1">
+		<div class="insight" data-insight="1" id="insight1">
 			<div class="marker hidden-xs">
 				<div><span>01</span></div>
 			</div>
@@ -176,7 +176,7 @@
 		</div>
 		<!-- end insight #1 -->
 		<!-- insight #2 -->
-		<div class="insight" id="insight2">
+		<div class="insight" data-insight="2" id="insight2">
 			<div class="marker hidden-xs">
 				<div><span>02</span></div>
 			</div>
@@ -230,7 +230,7 @@
 		</div>
 		<!-- end insight #2 -->
 		<!-- insight #3 -->
-		<div class="insight" id="insight3">
+		<div class="insight" data-insight="3" id="insight3">
 			<div class="marker hidden-xs">
 				<div><span>03</span></div>
 			</div>
@@ -284,7 +284,7 @@
 		</div>
 		<!-- end insight #3 -->
 		<!-- insight #4 -->
-		<div class="insight" id="insight4">
+		<div class="insight" data-insight="4" id="insight4">
 			<div class="marker hidden-xs">
 				<div><span>04</span></div>
 			</div>
@@ -338,7 +338,7 @@
 		</div>
 		<!-- end insight #4 -->
 		<!-- insight #5 -->
-		<div class="insight" id="insight5">
+		<div class="insight" data-insight="5" id="insight5">
 			<div class="marker hidden-xs">
 				<div><span>05</span></div>
 			</div>
@@ -392,7 +392,7 @@
 		</div>
 		<!-- end insight #5 -->
 		<!-- insight #6 -->
-		<div class="insight" id="insight6">
+		<div class="insight" data-insight="6" id="insight6">
 			<div class="marker hidden-xs">
 				<div><span>06</span></div>
 			</div>
@@ -446,7 +446,7 @@
 		</div>
 		<!-- end insight #6 -->
 		<!-- insight #7 -->
-		<div class="insight" id="insight7">
+		<div class="insight" data-insight="7" id="insight7">
 			<div class="marker hidden-xs">
 				<div><span>07</span></div>
 			</div>
@@ -500,7 +500,7 @@
 		</div>
 		<!-- end insight #7 -->
 		<!-- insight #8 -->
-		<div class="insight" id="insight8">
+		<div class="insight" data-insight="8" id="insight8">
 			<div class="marker hidden-xs">
 				<div><span>08</span></div>
 			</div>
@@ -554,7 +554,7 @@
 		</div>
 		<!-- end insight #8 -->
 		<!-- insight #9 -->
-		<div class="insight" id="insight9">
+		<div class="insight" data-insight="9" id="insight9">
 			<div class="marker hidden-xs">
 				<div><span>09</span></div>
 			</div>
@@ -608,7 +608,7 @@
 		</div>
 		<!-- end insight #9 -->
 		<!-- insight #10 -->
-		<div class="insight" id="insight10">
+		<div class="insight" data-insight="10" id="insight10">
 			<div class="marker hidden-xs">
 				<div><span>10</span></div>
 			</div>
@@ -693,7 +693,7 @@
 		<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 		<script src="js/jquery.localscroll-1.2.7-min.js"></script>
 		<script type="text/javascript">var isIE8 = false;</script>
-		<!--[if IE 8]>
+		<!--[if lt IE 9]>
 		<script type="text/javascript">isIE8 = true;</script>
 		<![endif]-->
 		<script src="js/hpit.js"></script>

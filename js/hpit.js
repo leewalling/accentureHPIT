@@ -23,9 +23,10 @@ function setCookie(cname, cvalue) {
 }
 
 function preload(arrayOfImages) {
-	$(arrayOfImages).each(function(){
+	$(arrayOfImages).each(function(index){
+		var num = parseInt(index) + 1;
 		$('<img/>')[0].src = this;
-		$('.bgImages').append('<div class="bgImg"><img src="'+this+'" /></div>');
+		$('.bgImages').append('<div class="bgImg" data-insight="'+num+'"><img src="'+this+'" /></div>');
 	});
 }
 
@@ -492,7 +493,7 @@ hpit.core = (function(){
                   clearInterval(trackPageViewDelay);
                   trackPageViewDelay = setTimeout(function() {
                      //console.log("Page View: " + menuItem);
-                     //omniTrackPageView(menuItem);
+                     omniTrackPageView(menuItem);
                   }, 2000);
                }
 
@@ -905,9 +906,9 @@ hpit.core = (function(){
 			e.preventDefault();
 			clearTimeout(chapterClicked);
 			hpit.config.justClicked = true;
-         var cNum = $(this).text();
+         	var cNum = $(this).text();
 			var skipTo = hpit.config.chapters[cNum].position / 1000;
-         FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
+         	FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
 			try {
 				DelvePlayer.doSeekToSecond(skipTo);
 			} catch(err) {
@@ -1009,34 +1010,34 @@ hpit.core = (function(){
 			if($target.hasClass("opened")){
 				$target.animate({"right":"-275px"}, "normal");
 				$target.removeClass("opened");
-            FlashLinkAnalysis($(this).attr('href'), "menu-closed", "linkanalysis");
+            	FlashLinkAnalysis($(this).attr('href'), "menu-closed", "linkanalysis");
 			} else {
 				$target.animate({"right":"0px"}, "normal");
 				$target.addClass("opened");
-            FlashLinkAnalysis($(this).attr('href'), "menu-opened", "linkanalysis");
+            	FlashLinkAnalysis($(this).attr('href'), "menu-opened", "linkanalysis");
 			}
 		});
 	}
 
 	function injectStuff() {
-		$('.insight').each(function (index) {
-			$(this).attr('data-insight', index+1);			
-		});
+		//$('.insight').each(function (index) {
+			//$(this).attr('data-insight', index+1);			
+		//});
 		$('li.state').each(function (index) {
-			$(this).attr('data-insight-nav', index+1);
+			//$(this).attr('data-insight-nav', index+1);
 			$(this).on('click',function(e){
 				hpit.config.state = parseInt($(this).attr('data-insight-nav'));
 			})
 		});
-		$('.bgImg').each(function (index) {
-			$(this).attr('data-insight', index+1);			
-		});
+		//$('.bgImg').each(function (index) {
+			//$(this).attr('data-insight', index+1);			
+		//});
 		$('.navbar-toggle').on('click',function(e){
 			e.preventDefault();
 		});
-		$('.navbar-toggle')
-			.attr('data-toggle','collapse')
-			.attr('data-target','.navbar-collapse');
+		//$('.navbar-toggle')
+			//.attr('data-toggle','collapse')
+			//.attr('data-target','.navbar-collapse');
 		
 		if(!onMobile() && !onIpad() && !isIE8){
 			initVideo();
