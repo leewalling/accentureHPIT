@@ -947,6 +947,8 @@ hpit.core = (function(){
 
 			target.append(vidContent);
 			LimelightPlayerUtil.initEmbed(vidID);
+
+         FlashLinkAnalysis($(this).attr('href'), "Insight" + insightID + " Video Play", "linkanalysis");
 		});
 	}
 
