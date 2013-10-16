@@ -667,6 +667,7 @@ hpit.core = (function(){
 							}
 						}							
 					);
+               FlashLinkAnalysis($(this).attr('href'), "Menu Up", "linkanalysis");
 				}
 			} else {
 				//console.log('cur: ', $cur);
@@ -695,7 +696,7 @@ hpit.core = (function(){
 							}
 						}							
 					);
-
+               FlashLinkAnalysis($(this).attr('href'), "Menu Down", "linkanalysis");
 				} else {
 					//console.log('nothing there');
 					return false;
@@ -1086,8 +1087,13 @@ hpit.core = (function(){
 		//console.log('function omniTrackPageView: ', num);
 		var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
 		//console.log('newPageName: ', newPageName);
-		triggerOmniturePageView(newPageName, "event29,event20,event55");
-	}
+		if (location.hostname.indexOf("accenture.com") > -1) {
+         triggerOmniturePageView(newPageName, "event29,event20,event55");
+	   }
+      else {
+         console.log("Omniture Page View: " + newPageName);
+      }
+   }
 
 	/* omniture tracking function */
 	function omniTrack(obj){
