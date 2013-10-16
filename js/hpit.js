@@ -803,10 +803,10 @@ hpit.core = (function(){
 					break;
 			}
 
-			console.log('$goto: ', $goto);
+			/*console.log('$goto: ', $goto);
 			console.log('$winName: ', $winName);
 			console.log('$params: ', $params);
-			console.log('window: ', window);
+			console.log('window: ', window);*/
 
 			try {
 				window.open($goto, $winName, $params);
@@ -814,8 +814,6 @@ hpit.core = (function(){
 				console.log('error: ', err);
 			}
 
-			
-			
 			// tracking social clicks
 			if(inTopNav){
 				$toTrack = $linkUrl;
