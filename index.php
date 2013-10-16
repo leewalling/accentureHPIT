@@ -11,6 +11,12 @@
 		<!--[if IE 8]>
 			<link href="css/ie8.css" rel="stylesheet" media="screen" />
 		<![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="../../assets/js/html5shiv.js"></script>
+			<script src="../../assets/js/respond.min.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 
@@ -51,7 +57,7 @@
 		</div>
 		<div class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-right">
-			<li class="contact"><a href="http://www.accenture.com/Microsites/high-performance-it/registration/Pages/contact-us.aspx"><span class="icn"></span>contact</a></li>
+			<li class="contact"><a href="/Microsites/high-performance-it/registration/Pages/contact-us.aspx"><span class="icn"></span>contact</a></li>
 			<li class="share">
 				<a href="#"><span class="icn"></span>share</a>
 				<div class="social">
@@ -72,9 +78,9 @@
 	<div class="container main" id="theTop">
 		<!-- controls -->
 		<div id="controls" class="hidden-xs">
-			<a href="#" class="arrows prev noClick" rel="home-scroll"></a>
+			<a href="#" class="arrows prev noClick"></a>
 			<a href="#" class="txt" id="toggleMenu">Menu</a>
-			<a href="#" class="arrows nxt" rel="home-scroll"></a>
+			<a href="#" class="arrows nxt"></a>
 			<span class="control-info">Get the TOP #10 CIO Action Items</span>
 		</div>
 		<!-- end controls -->
