@@ -5,7 +5,7 @@
 }
 .ie8 #ll-overlay .closeVid {
 	background: none;
-	background-color: transparent;
+	background-color: transparent !important;
 }
 .ie8 #ll-overlay .closeVid img {
 	display: inline-block;
@@ -38,7 +38,7 @@
 	width: 50%;
 	height: 800px;
 	position:absolute;
-	background-color: transparent;
+	background-color: transparent !important;
 	top: 480px;
 	right: 0px;
 	z-index: 1;
@@ -49,15 +49,28 @@
 	background-repeat: no-repeat;
 	background-position: top right;
 }
+.ie8 .hero > div.inner {
+	padding-right:0;
+	padding-left:0;
+	margin-left: 185px;
+	width: 50%;
+}
 .ie8 .hero > div.inner .playVid {
 	z-index: 100;
+	left: 75%;
+}
+.ie8 .insight {
+	padding-top: 125px;
+}
+.ie8 .insight .content {
+	margin-top: 0px;
 }
 .ie8 .insight .marker {
 	top: 0px !important;
 	width:150px;
 	height:202px;
 	line-height:202px;
-	background-color: transparent;
+	background-color: transparent !important;
 	background-repeat: no-repeat;
 	background-position: top right;
 }
@@ -92,7 +105,7 @@
 	background-image:url("../images/ie8-bg-marker10.png");
 }
 .ie8 .insight .content .right-col > div.with-video .the-video > a > span {
-	background-color: transparent;
+	background-color: transparent !important;
 	background-image: none;
 }
 .ie8 .insight .content .right-col > div.with-video .the-video > a > span img {
@@ -131,5 +144,5 @@
 .insight[data-insight="8"] .content .right-col > div .tr > span.num,
 .insight[data-insight="9"] .content .right-col > div .tr > span.num,
 .insight[data-insight="10"] .content .right-col > div .tr > span.num {
-	background-color :transparent;
+	background-color :transparent !important;
 }

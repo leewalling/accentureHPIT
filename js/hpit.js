@@ -189,16 +189,6 @@ hpit.core = (function(){
 			$('#diagnostics').show();
 		}
 
-		/*
-		$('head').append('<meta name="viewport" content="width=device-width, target-densityDpi=high-dpi, initial-scale=0.666667, minimum-scale=0.666667, maximum-scale=0.666667">');
-		$('head').append('<meta property="og:title" content="High Performance IT - Accenture" />');
-		$('head').append('<meta property="og:url" content="http://www.accenture.com/microsites/high-performance-it/pages/home.aspx" />');
-		$('head').append('<meta property="og:description" content="Accenture High Performance IT description ..." />');
-		$('head').append('<meta property="og:type" content="company" />');
-		$('head').append('<meta property="og:site_name" content="Accenture" />');
-		$('head').append('<meta property="og:image" content="http://www.accenture.com/microsites/high-performance-it/PublishingImages/logo.png" />');
-		*/
-
 		if(!onMobile() && !onIpad()){
 			//console.log('preloading!');
 			preload([
