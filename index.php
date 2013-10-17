@@ -98,7 +98,7 @@
 			<div class="inner">
 				<h3>Accenture High Performance IT Research 2013</h3>
 				<h1>High Performers in IT:<br />Defined by Digital</h1>
-				<p>Sitting at the intersection of business and technology, high performance CIOs are now a force in the boardroom&mdash;and driving the digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view.</p>
+				<p>Sitting at the intersection of business and technology, high performing CIOs are now a force in the boardroom&mdash;and driving the digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view.</p>
 				<a href="#hero-video" class="playVid" rel="articles"></a>
 			</div>
 			<span class="video-wrapper"></span>
@@ -147,11 +147,11 @@
 						</div>
 						<div class="no-border">
 						<span class="heading">What you should know</span>
-						<span>There's a considerable gap between high performers and others in the need to make self-service a greater part of customer interactions.</span>
+						<span>High performers’ top three business objectives relate to improving the customer’s experience.</span>
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_1.png" alt="How IT can improve the customer experience" /></span></div>
 						<div class="no-border">
-						<span class="heading">High performers are also...</span>
+						<span class="heading">High performers business objectives</span>
 						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-1.png" /></span><span class="txt"><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogues with key customers.</span></span>
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-1.png" /></span><span class="txt"><strong>Building relationships. </strong>Both marketing and sales get a boost by giving potential customers what they want and listening to what current customers have to say.</span></span>
 						</div>

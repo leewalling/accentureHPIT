@@ -700,13 +700,11 @@ hpit.core = (function() {
                 $('.bgImg[data-insight="' + menuItem + '"] img').addClass('activate');
                 
                 if (!hpit.config.locked && (hpit.config.currPageView != menuItem)) {
-                    //SGS: 
-					/*clearInterval(trackPageViewDelay);
-                    trackPageViewDelay = setTimeout(function() {
+					      clearInterval(trackPageViewDelay);
+                     trackPageViewDelay = setTimeout(function() {
                         //console.log("Page View: " + menuItem);
                         omniTrackPageView(menuItem);
-                    }, 4000);*/
-					omniTrackPageView(menuItem);
+                     }, 4000);
                 }
                 
                 hpit.config.currInsight = menuItem;
@@ -879,10 +877,6 @@ hpit.core = (function() {
                     //return false;
                     }
 					
-                    //SGS: omniTrackPageView(newNum);				
-					//FlashLinkAnalysis('home:insight' + $cur, "scroll" + newNum, "linkanalysis");
-                    //console.log('newHash: ', newHash);
-                    
                     $(window).scrollTo(
                     newHash, 
                     hpit.config.duration[hpit.config.desktopORtouch], 
@@ -901,7 +895,7 @@ hpit.core = (function() {
                         }
                     }
                     );
-                    //SGS: FlashLinkAnalysis($(this).attr('href'), "Menu Up", "linkanalysis");
+					      FlashLinkAnalysis('home:insight' + $cur, "scroll" + newNum, "linkanalysis");
                 }
             } else {
                 //console.log('cur: ', $cur);
@@ -930,7 +924,7 @@ hpit.core = (function() {
                         }
                     }
                     );
-                    //SGS: FlashLinkAnalysis($(this).attr('href'), "Menu Down", "linkanalysis");
+                    FlashLinkAnalysis($(this).attr('href'), "Menu Down", "linkanalysis");
                 } else {
                     //console.log('nothing there');
                     return false;
