@@ -95,34 +95,204 @@ hpit.config = {
 	},
 	groups: {
 		'insight1': {
-			newHash: '#insight1'
+			newHash: '#insight1',
+			linkedIn: {
+				title: 'TITLE - #1 - linkedIn',
+				desc: 'DESC- #1 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #1 - twitter',
+				desc: 'DESC- #1 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #1 - facebook',
+				desc: 'DESC- #1 - facebook'
+			},
+			google: {
+				title: 'TITLE - #1 - google',
+				desc: 'DESC- #1 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight2': {
-			newHash: '#insight2'
+			newHash: '#insight2',
+			linkedIn: {
+				title: 'TITLE - #2 - linkedIn',
+				desc: 'DESC- #2 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #2 - twitter',
+				desc: 'DESC- #2 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #2 - facebook',
+				desc: 'DESC- #2 - facebook'
+			},
+			google: {
+				title: 'TITLE - #2 - google',
+				desc: 'DESC- #2 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight3': {
-			newHash: '#insight3'
+			newHash: '#insight3',
+			linkedIn: {
+				title: 'TITLE - #3 - linkedIn',
+				desc: 'DESC- #3 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #3 - twitter',
+				desc: 'DESC- #3 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #3 - facebook',
+				desc: 'DESC- #3 - facebook'
+			},
+			google: {
+				title: 'TITLE - #3 - google',
+				desc: 'DESC- #3 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight4': {
-			newHash: '#insight4'
+			newHash: '#insight4',
+			linkedIn: {
+				title: 'TITLE - #4 - linkedIn',
+				desc: 'DESC- #4 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #4 - twitter',
+				desc: 'DESC- #4 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #4 - facebook',
+				desc: 'DESC- #4 - facebook'
+			},
+			google: {
+				title: 'TITLE - #4 - google',
+				desc: 'DESC- #4 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight5': {
-			newHash: '#insight5'
+			newHash: '#insight5',
+			linkedIn: {
+				title: 'TITLE - #5 - linkedIn',
+				desc: 'DESC- #5 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #5 - twitter',
+				desc: 'DESC- #5 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #5 - facebook',
+				desc: 'DESC- #5 - facebook'
+			},
+			google: {
+				title: 'TITLE - #5 - google',
+				desc: 'DESC- #5 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight6': {
-			newHash: '#insight6'
+			newHash: '#insight6',
+			linkedIn: {
+				title: 'TITLE - #6 - linkedIn',
+				desc: 'DESC- #6 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #6 - twitter',
+				desc: 'DESC- #6 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #6 - facebook',
+				desc: 'DESC- #6 - facebook'
+			},
+			google: {
+				title: 'TITLE - #6 - google',
+				desc: 'DESC- #6 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight7': {
-			newHash: '#insight7'
+			newHash: '#insight7',
+			linkedIn: {
+				title: 'TITLE - #7 - linkedIn',
+				desc: 'DESC- #7 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #7 - twitter',
+				desc: 'DESC- #7 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #7 - facebook',
+				desc: 'DESC- #7 - facebook'
+			},
+			google: {
+				title: 'TITLE - #7 - google',
+				desc: 'DESC- #7 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight8': {
-			newHash: '#insight8'
+			newHash: '#insight8',
+			linkedIn: {
+				title: 'TITLE - #8 - linkedIn',
+				desc: 'DESC- #8 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #8 - twitter',
+				desc: 'DESC- #8 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #8 - facebook',
+				desc: 'DESC- #8 - facebook'
+			},
+			google: {
+				title: 'TITLE - #8 - google',
+				desc: 'DESC- #8 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight9': {
-			newHash: '#insight9'
+			newHash: '#insight9',
+			linkedIn: {
+				title: 'TITLE - #9 - linkedIn',
+				desc: 'DESC- #9 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #9 - twitter',
+				desc: 'DESC- #9 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #9 - facebook',
+				desc: 'DESC- #9 - facebook'
+			},
+			google: {
+				title: 'TITLE - #9 - google',
+				desc: 'DESC- #9 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		},
 		'insight10': {
-			newHash: '#insight10'
+			newHash: '#insight10',
+			linkedIn: {
+				title: 'TITLE - #10 - linkedIn',
+				desc: 'DESC- #10 - linkedIn'
+			},
+			twitter: {
+				title: 'TITLE - #10 - twitter',
+				desc: 'DESC- #10 - twitter'
+			},
+			facebook: {
+				title: 'TITLE - #10 - facebook',
+				desc: 'DESC- #10 - facebook'
+			},
+			google: {
+				title: 'TITLE - #10 - google',
+				desc: 'DESC- #10 - google'
+			},
+			bitly: 'bit.ly/xxxxx'
 		}
 	},
 	activeChap: 0,
@@ -235,6 +405,10 @@ hpit.core = (function(){
 
 		// Initialize event handler for video play button
 		playVideoInit();
+
+		// Initialize addthis widget
+		addThisInit();
+		addthis.init();
 
 		// Initialize event handler for social links
 		socialLinksInit();
@@ -832,6 +1006,34 @@ hpit.core = (function(){
 
 			//console.log('$toTrack: ', $toTrack);
 		});
+	}
+
+	// addThis widget init
+	function addThisInit(){
+		/*
+		var addthis_share = {
+			templates: {
+            	twitter: 'check out {{url}} (from @example_dot_com)'
+            }
+		}
+		*/
+
+		$('.social.hidden-xs').each(function (index) {
+			var targ = $(this);
+			var ind = index+1;
+			var url = hpit.config.groups['insight'+ind].bitly;
+			
+			var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="'+url+'">';
+				temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'"></a>';
+				temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" addthis:description="'+hpit.config.groups['insight'+ind].twitter.desc+'"></a>';
+				temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'"></a>';
+				temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'"></a>';
+				temp += '</div>';
+			targ.html(temp);
+
+			addthis.toolbox(targ);
+		});
+		
 	}
 
 	// video player
