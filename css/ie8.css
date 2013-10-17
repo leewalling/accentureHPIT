@@ -30,6 +30,7 @@
 .ie8 .col-xs-12 {
 	width: 50% !important;
 	margin-left: 50% !important;
+	float: right;
 }
 .ie8 .hero .video-wrapper {
 	background-position: top center;

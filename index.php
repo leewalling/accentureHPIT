@@ -3,6 +3,11 @@
 	<head>
 		<title>accenture hpit</title>
 		<meta name="viewport" content="width=device-width, target-densityDpi=high-dpi, initial-scale=1, minimum-scale=0.666667, maximum-scale=1">
+		<!-- Facebook Open Graph tags -->
+		<meta property="og:title" content="Business IT Strategy for the Savvy CIO | Accenture High Performance IT Survey 2013" />
+		<meta property="og:url" content="http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx" />
+		<meta property="og:description" content="Read the highlights from Accenture's fourth High Performance IT research which covers the evolution of IT as CIOs move from the server room to the board room to help set the strategic digital agenda and overall business IT strategy." />
+		<meta property="og:image" content="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/fbog.png" />
 		<!-- Bootstrap -->
       <!-- test -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
@@ -130,10 +135,19 @@
 				<h4 class="visible-xs">01</h4>
 				<h3>Your new boss? <br />Your customer.</h3>
 				<div class="social hidden-xs">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
+				<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="THE TITLE" addthis:description="THE DESCRIPTION" addthis:url="THE URL">
+						<a class="addthis_button_linkedin"></a>
+						<a class="addthis_button_twitter"></a>
+						<a class="addthis_button_facebook"></a>
+						<a class="addthis_button_google_plusone_share"></a>
+					</div>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#username=SRaycroft"></script>
+				<!-- AddThis Button END -->
+					<!--<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
 					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="facebook"></a>
 					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="linkedin"></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="linkedin"></a>-->
 				</div>
 				<div class="toggler visible-xs"><span></span></div>
 			</div>
