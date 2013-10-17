@@ -197,6 +197,7 @@ img {
 }
 #controls .control-info {
 	background-color: rgba(255, 255, 255, 0.4);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff'); /* for IE */
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
 	color: #000000;
@@ -207,7 +208,7 @@ img {
 	height: auto;
 	left: -185px;
 	line-height: 21px;
-	margin-top: -21px;
+	margin-top: -41px;
 	padding: 10px;
 	position: absolute;
 	text-align: left;

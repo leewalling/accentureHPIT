@@ -72,7 +72,7 @@
 			<a href="#" class="arrows prev noClick" rel="articles"></a>
 			<a href="#" class="txt" id="toggleMenu" rel="articles">Menu</a>
 			<a href="#" class="arrows nxt" rel="articles"></a>
-			<span class="control-info">Get the TOP #10 CIO Action Items</span>
+			<span class="control-info">See the TOP #10 CIO Action Items Below</span>
 		</div>
 		<!-- end controls -->
 		<!-- sidemenu -->
