@@ -1543,6 +1543,9 @@ only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) a
 only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape), 
 only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape), 
 only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape) {
+	#diagnostics {
+		background-color: silver;
+	}
 	.container > .navbar-header,
 	.container > .navbar-collapse {
 		margin: 0;
@@ -1834,6 +1837,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 
 /* galaxy nexus */
 @media only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape) {
+	#diagnostics {
+		background-color: blue;
+	}
 	/*
 	.navbar-default,
 	.navbar-default * {
@@ -2467,6 +2473,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
  
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	#diagnostics {
+		background-color: brown;
+	}
 	.hero {
 		height: 570px;
 	}
@@ -2511,6 +2520,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
  
 /* ipad (portrait) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	#diagnostics {
+		background-color: magenta;
+	}
 	.insight .insightTitle {
 		left: 180px;
 		width: 25%;
@@ -2573,6 +2585,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung S3 - landscape */
 @media only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px) and (orientation : landscape) {
+	#diagnostics {
+		background-color: black;
+	}
 	
 }
 /*********************************  end responsive  **************************************/
