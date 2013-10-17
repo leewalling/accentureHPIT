@@ -1403,8 +1403,9 @@ img {
 	width: 100%;
 	max-width: 100%;
 }
-.stay-connected-master {
-	display:none;
+.stay-connected-master,
+.ms-WPHeader {
+	display: none !important;
 }
 
 /******************************  end Sharepoint overrides  ******************************/
@@ -1856,6 +1857,13 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		background-color: red;
 	}
 	*/
+}
+
+/* galaxy tablet */
+@media only screen and (max-device-width : 1280px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : portrait) {
+	#diagnostics {
+		background-color: green;
+	}
 }
 
 /* less than 640px wide */
