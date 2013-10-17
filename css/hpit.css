@@ -1859,12 +1859,19 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	*/
 }
 
-/* galaxy tablet */
-@media only screen and (max-device-width : 1280px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : portrait) {
+/* galaxy tablet - landscape */
+@media (max-device-width: 1280px) and (orientation: landscape) {
+	#diagnostics {
+		background-color: orange;
+	}
+}
+
+/* galaxy tablet - portrait */
+@media (max-device-width: 800px) and (orientation: portrait) {
 	#diagnostics {
 		background-color: green;
 	}
-}
+} 
 
 /* less than 640px wide */
 @media only screen and (max-width : 640px) {
