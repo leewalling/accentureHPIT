@@ -1461,7 +1461,6 @@ function delvePlayerCallback(playerId, eventName, data) {
     }
 
     //console.log('curr id: ', id);
-    
     switch (eventName) {
         case 'onPlayerLoad':
             doOnPlayerLoad(data);
@@ -1582,10 +1581,10 @@ function doonPlayheadUpdate(data) {
     }
 }
 
-function doOnMediaComplete() {
-    //console.log('video end');
-    resetVideoStates();
-//hpit.config.activeChap = 0;
+function doOnMediaComplete(data) {
+   trackDelvePlayer("complete", "limelight_player_239897", data.title);
+   resetVideoStates();
+   //hpit.config.activeChap = 0;
 }
 
 function resetVideoStates() {
