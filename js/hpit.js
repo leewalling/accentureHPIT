@@ -262,7 +262,7 @@ hpit.core = (function(){
 			omniTrack({
 				eventLink: $(this).attr('href'),
 				eventName: 'Contact US – Top Nav',
-				eventType: 'Internal Lead Gen'
+				eventType: 'linkanalysis'
 			});
 		});
 
@@ -271,7 +271,7 @@ hpit.core = (function(){
 			omniTrack({
 				eventLink: $(this).attr('href'),
 				eventName: 'Learn More - ' + $(this).text(),
-				eventType: 'Internal Text Link'
+				eventType: 'linkanalysis'
 			});
 		});
 
@@ -484,7 +484,7 @@ hpit.core = (function(){
                   trackPageViewDelay = setTimeout(function() {
                      //console.log("Page View: " + menuItem);
                      omniTrackPageView(menuItem);
-                  }, 2000);
+                  }, 4000);
                }
 
 					hpit.config.currInsight = menuItem;
@@ -667,6 +667,7 @@ hpit.core = (function(){
 							}
 						}							
 					);
+               FlashLinkAnalysis($(this).attr('href'), "Menu Up", "linkanalysis");
 				}
 			} else {
 				//console.log('cur: ', $cur);
@@ -695,7 +696,7 @@ hpit.core = (function(){
 							}
 						}							
 					);
-
+               FlashLinkAnalysis($(this).attr('href'), "Menu Down", "linkanalysis");
 				} else {
 					//console.log('nothing there');
 					return false;
@@ -849,7 +850,7 @@ hpit.core = (function(){
 					vidContent += '<param name="wmode" value="transparent"/>';
 					vidContent += '<param name="allowScriptAccess" value="always"/>';
 					vidContent += '<param name="allowFullScreen" value="true"/>';
-					vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=c315bfc4a8c345af807b2887698549f6"/>';
+					vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=c315bfc4a8c345af807b2887698549f6&amp;autoplay=true"/>';
 					vidContent += '</object>';
 
 				$('#ll-overlay #ll-player').html(vidContent);
@@ -947,6 +948,8 @@ hpit.core = (function(){
 
 			target.append(vidContent);
 			LimelightPlayerUtil.initEmbed(vidID);
+
+         FlashLinkAnalysis($(this).attr('href'), "Insight" + insightID + " Video Play", "linkanalysis");
 		});
 	}
 
@@ -1084,8 +1087,13 @@ hpit.core = (function(){
 		//console.log('function omniTrackPageView: ', num);
 		var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
 		//console.log('newPageName: ', newPageName);
-		//triggerOmniturePageView(newPageName);
-	}
+		if (location.hostname.indexOf("accenture.com") > -1) {
+         triggerOmniturePageView(newPageName, "event29,event20,event55");
+	   }
+      else {
+         console.log("Omniture Page View: " + newPageName);
+      }
+   }
 
 	/* omniture tracking function */
 	function omniTrack(obj){
