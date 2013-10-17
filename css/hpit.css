@@ -1875,7 +1875,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 }
 
 /* galaxy tablet - landscape */
-@media (device-width: 683px) and (device-height: 334px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1.5) {
+@media (orientation: landscape) and (-webkit-device-pixel-ratio: 1.5) {
 	#diagnostics {
 		background-color: purple;
 	}
@@ -1885,7 +1885,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 }
 
 /* galaxy tablet - portrait */
-@media (max-device-width: 800px) and (orientation: portrait) {
+@media (orientation: portrait) and (-webkit-device-pixel-ratio: 1.5) {
 	#diagnostics {
 		background-color: green;
 	}
