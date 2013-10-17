@@ -1198,6 +1198,7 @@ img {
   	font-size:13px;
   	/*font-weight: bold;*/
   	overflow: hidden;
+  	text-align: center;
 }
 /*
 .navbar-default .navbar-nav > li > a:focus {
@@ -1214,10 +1215,11 @@ img {
   	width: 20px;
   	height: 22px;
   	line-height: 22px;
-  	float: left;
+  	/*float: left;*/
   	margin-right: 10px;
   	background-image:url("../images/icons.png");
 	background-repeat: no-repeat;
+	vertical-align: top;
 }
 .navbar-nav .share .icn {
   	background-position: 0 0;
@@ -1272,7 +1274,7 @@ img {
 .container > .navbar-collapse {
 	margin: 0;
 	padding: 0;
-	border-bottom: 1px solid blue;
+	border-bottom: 1px solid yellow;
 }
 .onMobile .container > .navbar-collapse {
 	display: none !important;
@@ -2467,7 +2469,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 	.container > .navbar-collapse {
 		float: right;
-		width: 65% !important;
+		width: 60% !important;
 	}
 	.navbar-nav {
 		float: right;
