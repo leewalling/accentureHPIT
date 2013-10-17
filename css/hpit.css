@@ -1313,6 +1313,9 @@ img {
 .onMobile .navbar-toggle:focus {
 	background-color: transparent;
 }
+.navbar-toggle {
+	border-color: transparent !important;
+}
 .social > a {
   	display: inline-block;
   	float: right;
