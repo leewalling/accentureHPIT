@@ -46,7 +46,7 @@ html, body {
 #diagnostics {
 	display:none;
 	padding:10px;
-	background:red;
+	background: aqua;
 	color:white;
 	position:fixed;
 	top:0;
