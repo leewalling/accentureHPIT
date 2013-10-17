@@ -1272,7 +1272,7 @@ img {
 .container > .navbar-collapse {
 	margin: 0;
 	padding: 0;
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid blue;
 }
 .onMobile .container > .navbar-collapse {
 	display: none !important;
@@ -2467,7 +2467,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 	.container > .navbar-collapse {
 		float: right;
-		width: 50% !important;
+		width: 65% !important;
 	}
 	.navbar-nav {
 		float: right;
