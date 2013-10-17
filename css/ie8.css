@@ -33,7 +33,7 @@
 	float: right;
 }
 .ie8 .hero .video-wrapper {
-	background-position: top center;
+	background-position: -500px 0;
 }
 .ie8 .whiteAngle {
 	width: 50%;
