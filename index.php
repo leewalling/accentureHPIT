@@ -58,7 +58,7 @@
 				<a href="#"><span class="icn"></span>share</a>
 				<div class="social inHeader"></div>
 			</li>
-			<li class="download"><a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf"><span class="icn"></span>download study</a></li>
+			<li class="download"><a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank"><span class="icn"></span>download study</a></li>
 		  </ul>
 		</div>
 	  </div>
@@ -156,7 +156,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-1.png" /></span><span class="txt"><strong>Building relationships. </strong>Both marketing and sales get a boost by giving potential customers what they want and listening to what current customers have to say.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -200,7 +200,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-2.png" /></span><span class="txt"><strong>Enhancing their reputations. </strong>High-performing IT leaders who regularly apply business metrics tend to stay in their positions longer, which means they demonstrate success&mdash;and raise their profiles among their peers&mdash;over the long term.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -244,7 +244,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-3.png" /></span><span class="txt"><strong>Adopting early. </strong>They're not waiting for technologies to mature before they act.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -288,7 +288,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-4.png" /></span><span class="txt"><strong>Weaving together cloud capabilities. </strong>They're blending public and private cloud elements together in ways that always keep business value top of mind.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -332,7 +332,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-5.png" /></span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will really revolutionize their business.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -376,7 +376,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-6.png" /></span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Today's fickle customers can often service their own needs better than if they wait for responses to their service requests.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -420,7 +420,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-7.png" /></span><span class="txt"><strong>Finding their focus. </strong>They're working to locate "insight gaps"&mdash;that is, blind spots that can obscure their business strategies.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -464,7 +464,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-8.png" /></span><span class="txt"><strong>Moving beyond the monolith. </strong>They're working incrementally and making changes "in flight" rather than committing time and resources to large-scale rollouts that can put operations on hold.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -508,7 +508,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-9.png" /></span><span class="txt"><strong>Becoming comfortable with fluidity. </strong>Full-time staffers are not the only answer, especially since much of today's talent not only accepts but expects constant change.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -552,7 +552,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-10.png" /></span><span class="txt"><strong>Attributing business value to security. </strong>They're actively tracking actual outcomes of incidents and breaches and measuring the impact on the overall business.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
