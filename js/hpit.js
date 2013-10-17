@@ -850,7 +850,7 @@ hpit.core = (function(){
 					vidContent += '<param name="wmode" value="transparent"/>';
 					vidContent += '<param name="allowScriptAccess" value="always"/>';
 					vidContent += '<param name="allowFullScreen" value="true"/>';
-					vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=c315bfc4a8c345af807b2887698549f6"/>';
+					vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=c315bfc4a8c345af807b2887698549f6&amp;autoplay=true"/>';
 					vidContent += '</object>';
 
 				$('#ll-overlay #ll-player').html(vidContent);
