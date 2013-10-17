@@ -541,7 +541,14 @@ hpit.core = (function(){
 		var delay = 500;
 		
 		if(groupParam && groupParam.indexOf('insight') != -1){
-			//console.log('deeplink: ', groupParam);
+		   try {
+            window.s.pageName = window.s.pageName + "#" + groupParam; 	   
+         }
+         catch(e) {
+            //s_code.js does not exist on the page
+         }
+         
+         //console.log('deeplink: ', groupParam);
 			var deeplink = groupParam.replace('insight','');
 			deeplink = parseInt(deeplink);
 			if(isNaN(deeplink)){
