@@ -97,202 +97,242 @@ hpit.config = {
         'insight1': {
             newHash: '#insight1',
             linkedIn: {
-                title: 'TITLE - #1 - linkedIn',
-                desc: 'DESC- #1 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIO know you can’t think like a database. You have to think like a customer. Read more and get osur full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Your new boss? Your customer.'
             },
             twitter: {
-                title: 'TITLE - #1 - twitter',
-                desc: 'DESC- #1 - twitter'
+                title: 'CIO Action Item #1: Your new boss? Your customer. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: '',
+                alt: 'Share via Twitter: Your new boss? Your customer.'
             },
             facebook: {
-                title: 'TITLE - #1 - facebook',
-                desc: 'DESC- #1 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs know you can’t think like a database. You have to think like a customer. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Your new boss? Your customer.'
             },
             google: {
-                title: 'TITLE - #1 - google',
-                desc: 'DESC- #1 - google'
+                title: 'Your new boss? Your customer | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know you can’t think like a database. You have to think like a customer. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Your new boss? Your customer.'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/H5XBOD'
         },
         'insight2': {
             newHash: '#insight2',
             linkedIn: {
-                title: 'TITLE - #2 - linkedIn',
-                desc: 'DESC- #2 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs know IT doesn’t exist in a vacuum. If something impacts the business, it impacts IT, and vice versa.  Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Context is king'
             },
             twitter: {
-                title: 'TITLE - #2 - twitter',
-                desc: 'DESC- #2 - twitter'
+                title: 'CIO Action Item #2: Context is king. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: '',
+                alt: 'Share via Twitter: Context is king'
             },
             facebook: {
-                title: 'TITLE - #2 - facebook',
-                desc: 'DESC- #2 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs know IT doesn’t exist in a vacuum. If something impacts the business, it impacts IT, and vice versa.  Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Context is king'
             },
             google: {
-                title: 'TITLE - #2 - google',
-                desc: 'DESC- #2 - google'
+                title: 'Context is king | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know IT doesn’t exist in a vacuum. If something impacts the business, it impacts IT, and vice versa.  Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Context is king'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/1bZhANm'
         },
         'insight3': {
             newHash: '#insight3',
             linkedIn: {
-                title: 'TITLE - #3 - linkedIn',
-                desc: 'DESC- #3 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs know business strategy is now totally consolidated with IT strategy. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Business strategy and IT now work as one'
             },
             twitter: {
-                title: 'TITLE - #3 - twitter',
-                desc: 'DESC- #3 - twitter'
+                title: 'CIO Action Item #3: Biz strategy and IT now work as one. Get the top 10 insights from the Accenture High Performance IT Survey:',
+            	desc: '',
+                alt: 'Share via Twitter: Business strategy and IT now work as one'
             },
             facebook: {
-                title: 'TITLE - #3 - facebook',
-                desc: 'DESC- #3 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs know business strategy is now totally consolidated with IT strategy. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Business strategy and IT now work as one'
             },
             google: {
-                title: 'TITLE - #3 - google',
-                desc: 'DESC- #3 - google'
+                title: 'Business strategy and IT now work as one | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know business strategy is now totally consolidated with IT strategy. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Business strategy and IT now work as one'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/16doQCH'
         },
         'insight4': {
             newHash: '#insight4',
             linkedIn: {
-                title: 'TITLE - #4 - linkedIn',
-                desc: 'DESC- #4 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs are master orchestrators of managing new and existing IT, leading the way in a new hybrid world. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Bringing harmony to hybrid IT'
             },
             twitter: {
-                title: 'TITLE - #4 - twitter',
-                desc: 'DESC- #4 - twitter'
+                title: 'CIO Action Item #4: Bringing harmony to hybrid IT. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: '',
+                alt: 'Share via Twitter: Bringing harmony to hybrid IT'
             },
             facebook: {
-                title: 'TITLE - #4 - facebook',
-                desc: 'DESC- #4 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs are master orchestrators of managing new and existing IT, leading the way in a new hybrid world. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Bringing harmony to hybrid IT'
             },
             google: {
-                title: 'TITLE - #4 - google',
-                desc: 'DESC- #4 - google'
+                title: 'Business strategy and IT now work as one | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs are master orchestrators of managing new and existing IT, leading the way in a new hybrid world. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Bringing harmony to hybrid IT'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/1aRnUkU'
         },
         'insight5': {
             newHash: '#insight5',
             linkedIn: {
-                title: 'TITLE - #5 - linkedIn',
-                desc: 'DESC- #5 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs have made the leap to digital because every business in now a digital business. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Fearlessly digital'
             },
             twitter: {
-                title: 'TITLE - #5 - twitter',
-                desc: 'DESC- #5 - twitter'
+                title: 'CIO Action Item #5: Fearlessly digital. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: '',
+                alt: 'Share via Twitter: Fearlessly digital'
             },
             facebook: {
-                title: 'TITLE - #5 - facebook',
-                desc: 'DESC- #5 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs have made the leap to digital because every business in now a digital business. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Fearlessly digital'
             },
             google: {
-                title: 'TITLE - #5 - google',
-                desc: 'DESC- #5 - google'
+                title: 'Fearlessly digital | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs have made the leap to digital because every business in now a digital business. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Fearlessly digital'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/19U3Qlu'
         },
         'insight6': {
             newHash: '#insight6',
             linkedIn: {
-                title: 'TITLE - #6 - linkedIn',
-                desc: 'DESC- #6 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs know that being truly digital means that many more customers, suppliers and employees can answer their own questions—so you don’t have to. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: The power of self-service'
             },
             twitter: {
-                title: 'TITLE - #6 - twitter',
-                desc: 'DESC- #6 - twitter'
+                title: 'CIO Action Item #6: The power of self-service. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: '',
+                alt: 'Share via Twitter: The power of self-service'
             },
             facebook: {
-                title: 'TITLE - #6 - facebook',
-                desc: 'DESC- #6 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs know that being truly digital means that many more customers, suppliers and employees can answer their own questions—so you don’t have to. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: The power of self-service'
             },
             google: {
-                title: 'TITLE - #6 - google',
-                desc: 'DESC- #6 - google'
+                title: 'Fearlessly digital | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know that being truly digital means that many more customers, suppliers and employees can answer their own questions—so you don’t have to. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: The power of self-service'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/H5hLs5'
         },
         'insight7': {
             newHash: '#insight7',
             linkedIn: {
-                title: 'TITLE - #7 - linkedIn',
-                desc: 'DESC- #7 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs know that creating actionable insights out of the data—wherever it comes from—is what “Big Data” is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Unearthing data gems'
             },
             twitter: {
-                title: 'TITLE - #7 - twitter',
-                desc: 'DESC- #7 - twitter'
+                title: 'CIO Action Item #7: Unearthing data gems. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: '',
+                alt: 'Share via Twitter: Unearthing data gems'
             },
             facebook: {
-                title: 'TITLE - #7 - facebook',
-                desc: 'DESC- #7 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs know that creating actionable insights out of the data—wherever it comes from—is what “Big Data” is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Unearthing data gems'
             },
             google: {
-                title: 'TITLE - #7 - google',
-                desc: 'DESC- #7 - google'
+                title: 'Unearthing data gems | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know that creating actionable insights out of the data—wherever it comes from—is what “Big Data” is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Unearthing data gems'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/174NBSq'
         },
         'insight8': {
             newHash: '#insight8',
             linkedIn: {
-                title: 'TITLE - #8 - linkedIn',
-                desc: 'DESC- #8 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs know that if you’re not making change happen on the run, then instead of being agile, you could be increasingly vulnerable. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Agility and speed. The new normal'
             },
             twitter: {
-                title: 'TITLE - #8 - twitter',
-                desc: 'DESC- #8 - twitter'
+                title: 'CIO Action Item #8: Agility and speed are table stakes. Get the top 10 insights from the Accenture High Performance IT Survey',
+                desc: '',
+                alt: 'Share via Twitter: Agility and speed. The new normal'
             },
             facebook: {
-                title: 'TITLE - #8 - facebook',
-                desc: 'DESC- #8 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs know that if you’re not making change happen on the run, then instead of being agile, you could be increasingly vulnerable. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Agility and speed. The new normal'
             },
             google: {
-                title: 'TITLE - #8 - google',
-                desc: 'DESC- #8 - google'
+                title: 'Agility and speed are becoming table stakes | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know that if you’re not making change happen on the run, then instead of being agile, you could be increasingly vulnerable. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Agility and speed. The new normal'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/1aRo8s9'
         },
         'insight9': {
             newHash: '#insight9',
             linkedIn: {
-                title: 'TITLE - #9 - linkedIn',
-                desc: 'DESC- #9 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs know that talent will drive future success. Figuring out where your opportunities are—and finding the right people to work on them—will pay off. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Plug-and-play talent'
             },
             twitter: {
-                title: 'TITLE - #9 - twitter',
-                desc: 'DESC- #9 - twitter'
+                title: 'CIO Action Item #9: Plug-and-play talent. Get the top 10 insights from the Accenture High Performance IT Survey:',
+                desc: '',
+                alt: 'Share via Twitter: Plug-and-play talent'
             },
             facebook: {
-                title: 'TITLE - #9 - facebook',
-                desc: 'DESC- #9 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs know that talent will drive future success. Figuring out where your opportunities are—and finding the right people to work on them—will pay off. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Plug-and-play talent'
             },
             google: {
-                title: 'TITLE - #9 - google',
-                desc: 'DESC- #9 - google'
+                title: 'Plug-and-play talent | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know that talent will drive future success. Figuring out where your opportunities are—and finding the right people to work on them—will pay off. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Plug-and-play talent'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/19U3YkI'
         },
         'insight10': {
             newHash: '#insight10',
             linkedIn: {
-                title: 'TITLE - #10 - linkedIn',
-                desc: 'DESC- #10 - linkedIn'
+                title: 'Accenture - High Performance IT',
+                desc: 'High performing CIOs know risk management and IT security must be in the same room and on the same page. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via LinkedIn: Uniting business risk and IT security'
             },
             twitter: {
-                title: 'TITLE - #10 - twitter',
-                desc: 'DESC- #10 - twitter'
+                title: 'CIO Action Item #10: Uniting biz risk and IT security. Get the top 10 insights from the Accenture High Performance IT Survey',
+                desc: '',
+                alt: 'Share via Twitter: Uniting business risk and IT security'
             },
             facebook: {
-                title: 'TITLE - #10 - facebook',
-                desc: 'DESC- #10 - facebook'
+                title: 'High Performance IT - Accenture',
+                desc: 'High performing CIOs know risk management and IT security must be in the same room and on the same page. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Facebook: Uniting business risk and IT security'
             },
             google: {
-                title: 'TITLE - #10 - google',
-                desc: 'DESC- #10 - google'
+                title: 'Uniting business risk and IT security | Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know risk management and IT security must be in the same room and on the same page. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                alt: 'Share via Google+: Uniting business risk and IT security'
             },
-            bitly: 'bit.ly/xxxxx'
+            bitly: 'http://bit.ly/1aRoaAm'
         }
     },
     activeChap: 0,
@@ -1037,10 +1077,10 @@ hpit.core = (function() {
             var url = hpit.config.groups['insight'+ind].bitly;
             
             var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="'+url+'">';
-                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'"></a>';
-                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" addthis:description="'+hpit.config.groups['insight'+ind].twitter.desc+'"></a>';
-                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'"></a>';
-                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'"></a>';
+                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'" title="'+hpit.config.groups['insight'+ind].linkedIn.alt+'"></a>';
+                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" title="'+hpit.config.groups['insight'+ind].twitter.alt+'"></a>';
+                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'" title="'+hpit.config.groups['insight'+ind].facebook.alt+'"></a>';
+                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'" title="'+hpit.config.groups['insight'+ind].google.alt+'"></a>';
                 temp += '</div>';
             targ.html(temp);
 
@@ -1307,7 +1347,9 @@ hpit.core = (function() {
     
     function omniTrackPageView(num) {
         //console.log('function omniTrackPageView: ', num);
-		CleanUpLtVars();
+		if (location.hostname.indexOf("accenture.com") > -1) {
+            CleanUpLtVars();
+        }
         var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
         //console.log('newPageName: ', newPageName);
         if (location.hostname.indexOf("accenture.com") > -1) {
