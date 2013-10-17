@@ -951,6 +951,7 @@ hpit.core = (function() {
             /*$cont.slideUp(500, function(){
 					$trgt.removeClass('open');
 				});*/
+               FlashLinkAnalysis('home:insight', "mobile:close", "linkanalysis");
             } else {
                 $cont.hide(0, function() {
                     $trgt.addClass('open');
@@ -958,6 +959,7 @@ hpit.core = (function() {
             /*$cont.slideDown(500, function(){
 					$trgt.addClass('open');
 				});*/
+               FlashLinkAnalysis('home:insight', "mobile:open", "linkanalysis");
             }
         });
     }
@@ -1320,6 +1322,7 @@ hpit.core = (function() {
         //});
         $('.navbar-toggle').on('click', function(e) {
             e.preventDefault();
+            FlashLinkAnalysis("mobile", "menu-toggle", "linkanalysis");
         });
         //$('.navbar-toggle')
         //.attr('data-toggle','collapse')
