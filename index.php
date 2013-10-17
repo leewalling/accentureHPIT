@@ -56,12 +56,7 @@
 			<li class="contact"><a href="http://www.accenture.com/Microsites/high-performance-it/registration/Pages/contact-us.aspx"><span class="icn"></span>contact</a></li>
 			<li class="share">
 				<a href="#"><span class="icn"></span>share</a>
-				<div class="social">
-					<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx" title="Accenture - High Performance IT" target="_blank" class="google"></a>
-					<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx" title="Accenture - High Performance IT" target="_blank" class="facebook"></a>
-					<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx" title="Accenture - High Performance IT" target="_blank" class="twitter"></a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx" title="Accenture - High Performance IT" target="_blank" class="linkedin"></a>
-				</div>
+				<div class="social inHeader"></div>
 			</li>
 			<li class="download"><a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf"><span class="icn"></span>get the study</a></li>
 		  </ul>
@@ -163,12 +158,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight1" title="Your new boss? Your customer." target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -212,12 +202,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight2" title="Context is king" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -261,12 +246,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight3" title="Business strategy and IT now work as one" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -310,12 +290,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight4" title="Bringing harmony to hybrid IT" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -359,12 +334,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight5" title="Fearlessly digital" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -408,12 +378,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight6" title="The power of self-service" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -457,12 +422,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight7" title="Unearthing data gems" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -506,12 +466,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight8" title="Speed plus agility equals adaptability" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -555,12 +510,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight9" title="Plug-and-play talent" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
@@ -604,12 +554,7 @@
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" rel="articles"><span class="icn"></span>get the study</a>
 						</div>
-						<div class="social visible-xs">
-							<a href="https://plus.google.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="google"></a>
-							<a href="http://www.facebook.com/share.php?u=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="facebook"></a>
-							<a href="http://twitter.com/share?url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="twitter"></a>
-							<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx?group=insight10" title="Uniting business risk and IT security" target="_blank" class="linkedin"></a>
-						</div>
+						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>

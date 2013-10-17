@@ -1071,7 +1071,44 @@ hpit.core = (function() {
         }
         */
 
+        // for header social sharing
+        $('.social.inHeader').each(function (index) {
+        	//console.log($(this));
+        	var targ = $(this);
+            var ind = index+1;
+            var url = 'http://bit.ly/1gNZdKR'; // bit.ly for home page
+            
+            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style" addthis:url="'+url+'" addthis:title="title goes here..." addthis:description="description goes here...">';
+                temp += '<a class="addthis_button_linkedin" title="Share via LinkedIn: Accenture High Performance IT Research 2013"></a>';
+                temp += '<a class="addthis_button_twitter" title="Share via Twitter: Accenture High Performance IT Research 2013"></a>';
+                temp += '<a class="addthis_button_facebook" title="Share via Facebook: Accenture High Performance IT Research 2013"></a>';
+                temp += '<a class="addthis_button_google_plusone_share" title="Share via Google+: Accenture High Performance IT Research 2013"></a>';
+                temp += '</div>';
+            targ.html(temp);
+
+            addthis.toolbox(targ);
+        });
+
+        // for desktop insight level sharing
         $('.social.hidden-xs').each(function (index) {
+            var targ = $(this);
+            var ind = index+1;
+            var url = hpit.config.groups['insight'+ind].bitly;
+            
+            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="'+url+'">';
+                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'" title="'+hpit.config.groups['insight'+ind].linkedIn.alt+'"></a>';
+                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" title="'+hpit.config.groups['insight'+ind].twitter.alt+'"></a>';
+                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'" title="'+hpit.config.groups['insight'+ind].facebook.alt+'"></a>';
+                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'" title="'+hpit.config.groups['insight'+ind].google.alt+'"></a>';
+                temp += '</div>';
+            targ.html(temp);
+
+            addthis.toolbox(targ);
+        });
+
+        
+ 		// for mobile insight level sharing
+        $('.social.visible-xs').each(function (index) {
             var targ = $(this);
             var ind = index+1;
             var url = hpit.config.groups['insight'+ind].bitly;

@@ -1779,6 +1779,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.insight .content .right-col > div.social {
 		padding: 5px 9px 8px 25px;
 		text-align: right;
+		overflow: hidden;
+	}
+	.insight .content .right-col > div.social > .addthis_toolbox {
+		float: right;
 	}
 	.insight .content .right-col > div.heading {
 		padding: 30px 50px 25px 25px;
