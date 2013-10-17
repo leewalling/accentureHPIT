@@ -383,6 +383,7 @@ hpit.core = (function() {
     //var $iPad = true;
     var chapterClicked;
     var trackPageViewDelay;
+    var haveDeepLink = false;
 
     //	Initialize
     function init() {
@@ -703,7 +704,11 @@ hpit.core = (function() {
 					      clearInterval(trackPageViewDelay);
                      trackPageViewDelay = setTimeout(function() {
                         //console.log("Page View: " + menuItem);
-                        omniTrackPageView(menuItem);
+                        if (!haveDeepLink) {
+                           omniTrackPageView(menuItem);
+                        } else {
+                           haveDeepLink = false;
+                        }
                      }, 4000);
                 }
                 
@@ -763,12 +768,13 @@ hpit.core = (function() {
         
         if (groupParam && groupParam.indexOf('insight') != -1) {
             try {
-                window.s.pageName = window.s.pageName + "#" + groupParam;
+               window.s.pageName = window.s.pageName + "#" + groupParam;
             } 
             catch (e) {
-            //s_code.js does not exist on the page
+               //s_code.js does not exist on the page
             }
-
+   
+            haveDeepLink = true;
             //console.log('deeplink: ', groupParam);
             var deeplink = groupParam.replace('insight', '');
             deeplink = parseInt(deeplink);
