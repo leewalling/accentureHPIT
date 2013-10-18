@@ -2532,6 +2532,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		border-bottom: none;
 	}
 
+	/*
 	.onMobile .marker,
 	.onMobile .insightTitle .social  {
 		display: block !important;
@@ -2545,6 +2546,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.onMobile .insight .container.content {
 		display: block !important;
 	}
+	*/
 }
  
 /* ipad (portrait) */
@@ -2552,40 +2554,50 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	#diagnostics {
 		background-color: magenta;
 	}
-	.insight .insightTitle h3 {
+	.insight .insightTitle h3,
+	.onMobile .insight .insightTitle h3 {
 		background: magenta;
 	}
-	.insight .insightTitle {
+	.insight .insightTitle,
+	.onMobile .insightTitle {
 		left: 180px;
 		width: 25%;
 	}
-	.insight .insightTitle h3 {
+	.insight .insightTitle h3,
+	.onMobile .insightTitle h3 {
 		font-size: 36px;
 		line-height: 42px;
 	}
-	.hero {
+	.hero,
+	.onMobile .hero {
 		height: 500px;
 	}
-	.hero .video-wrapper {
+	.hero .video-wrapper,
+	.onMobile .video-wrapper {
 		height: 500px;
 		background-size: auto 100%;
 	}
-	.hero video {
+	.hero video,
+	.onMobile video {
 		height: 100%;
 		width: auto;
 	}
-	.hero.left > div.inner {
+	.hero.left > div.inner,
+	.onMobile .hero.left > div.inner {
 		padding-right: 100px;
 	}
-	.hero.left > div.inner p {
+	.hero.left > div.inner p,
+	.onMobile .hero.left > div.inner p {
 		width: 80%;
 	}
-	.hero.left > div.inner h1 {
+	.hero.left > div.inner h1,
+	.onMobile .hero.left > div.inner h1 {
 		margin: 10px 0;
 		width: 85%;
 		font-size: 40px;
 	}
-	.hero.left > div.inner h3 {
+	.hero.left > div.inner h3,
+	.onMobile .hero.left > div.inner h3 {
 		margin: 0;
 		width: 85%;
 	}
