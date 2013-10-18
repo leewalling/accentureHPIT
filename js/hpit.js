@@ -242,7 +242,7 @@ hpit.config = {
             newHash: '#insight7',
             linkedIn: {
                 title: 'Accenture - High Performance IT',
-                desc: 'High performing CIOs know that creating actionable insights out of the data-wherever it comes from-is what "Big Data" is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know that creating actionable insights out of the data-wherever it comes from-is what \'Big Data\' is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
                 alt: 'Share via LinkedIn: Unearthing data gems'
             },
             twitter: {
@@ -252,12 +252,12 @@ hpit.config = {
             },
             facebook: {
                 title: 'High Performance IT - Accenture',
-                desc: 'High performing CIOs know that creating actionable insights out of the data-wherever it comes from-is what "Big Data" is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know that creating actionable insights out of the data-wherever it comes from-is what \'Big Data\' is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
                 alt: 'Share via Facebook: Unearthing data gems'
             },
             google: {
                 title: 'Unearthing data gems | Accenture High Performance IT Survey 2013',
-                desc: 'High performing CIOs know that creating actionable insights out of the data-wherever it comes from-is what "Big Data" is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know that creating actionable insights out of the data-wherever it comes from-is what \'Big Data\' is all about. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
                 alt: 'Share via Google+: Unearthing data gems'
             },
             bitly: 'http://bit.ly/174NBSq'
