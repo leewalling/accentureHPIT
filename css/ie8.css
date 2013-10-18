@@ -37,10 +37,10 @@
 }
 .ie8 .whiteAngle {
 	width: 50%;
-	height: 1200px;
+	height: 800px;
 	position:absolute;
 	background-color: transparent !important;
-	top: 600px;
+	top: 480px;
 	right: 0px;
 	z-index: 1;
 	display: inline-block;
