@@ -1134,157 +1134,156 @@ hpit.core = (function() {
     }
 
     function initDelvePlayer() {
-      console.log("Initializing the delve player");
+    	console.log("Initializing the delve player");
 
-      //var activeChap = 0;
+    	//var activeChap = 0;
 
-window.delvePlayerCallback = function delvePlayerCallback(playerId, eventName, data) {
-    if (playerId) {
-        var id = playerId;
-    } else {
-        var id = "limelight_player_239897";
-    }
-    if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
-        //console.log('eventName: ', eventName);
-        DelvePlayer.registerPlayer(id);
-    }
+		window.delvePlayerCallback = function delvePlayerCallback(playerId, eventName, data) {
+		    if (playerId) {
+		        var id = playerId;
+		    } else {
+		        var id = "limelight_player_239897";
+		    }
+		    if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
+		        //console.log('eventName: ', eventName);
+		        DelvePlayer.registerPlayer(id);
+		    }
 
-    //console.log('curr id: ', id);
-    switch (eventName) {
-        case 'onPlayerLoad':
-            doOnPlayerLoad(data);
-            break;
-        case 'onError':
-            doOnError(data);
-            break;
-        
-        case 'onPlayStateChanged':
-            doOnPlayStateChanged(data);
-            break;
-        
-        case 'onPlayheadUpdate':
-            doonPlayheadUpdate(data);
-            break;
-        
-        case 'onMediaComplete':
-            doOnMediaComplete(data);
-            break;
+		    //console.log('curr id: ', id);
+		    switch (eventName) {
+		        case 'onPlayerLoad':
+		            doOnPlayerLoad(data);
+		            break;
+		        case 'onError':
+		            doOnError(data);
+		            break;
+		        
+		        case 'onPlayStateChanged':
+		            doOnPlayStateChanged(data);
+		            break;
+		        
+		        case 'onPlayheadUpdate':
+		            doonPlayheadUpdate(data);
+		            break;
+		        
+		        case 'onMediaComplete':
+		            doOnMediaComplete(data);
+		            break;
 
-    /*case 'onMediaLoad':
-			doOnMediaLoad(data);
-			break;
-		*/
-    }
-}
+		    /*case 'onMediaLoad':
+					doOnMediaLoad(data);
+					break;
+				*/
+		    }
+		}
+	}
 
-function doOnPlayerLoad(data) {
-    //console.log('player loaded (doOnPlayerLoad)', data);
-    setTimeout(function() {
-        DelvePlayer.doPlay()
-    }, 1000);
-}
+	function doOnPlayerLoad(data) {
+	    //console.log('player loaded (doOnPlayerLoad)', data);
+	    setTimeout(function() {
+	        DelvePlayer.doPlay()
+	    }, 1000);
+	}
 
-function doOnError(data) {
-//console.log('player error: ', data);
-}
+	function doOnError(data) {
+	//console.log('player error: ', data);
+	}
 
-function doOnMediaLoad(data) {
-//console.log('Media Loaded: ', data);
-}
+	function doOnMediaLoad(data) {
+	//console.log('Media Loaded: ', data);
+	}
 
-function doOnPlayStateChanged(data) {
-    //console.log('player state: ', data);
-    if (data.isPlaying) {
-        var videoTitle = DelvePlayer.doGetCurrentMedia().title;
-        FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis")
-    }
-}
+	function doOnPlayStateChanged(data) {
+	    //console.log('player state: ', data);
+	    if (data.isPlaying) {
+	        var videoTitle = DelvePlayer.doGetCurrentMedia().title;
+	        FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis")
+	    }
+	}
 
-function doonPlayheadUpdate(data) {
-    //var currChap = 0;
-    var currPos = data.positionInMilliseconds;
-    //console.log('Playhead update: ', data.positionInMilliseconds +'/'+ data.durationInMilliseconds);
-    
-    switch (true) {
-        case (currPos > 0 && currPos < hpit.config.chapters[2].position):
-            hpit.config.currChap = 1;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[2].position && currPos < hpit.config.chapters[3].position):
-            hpit.config.currChap = 2;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[3].position && currPos < hpit.config.chapters[4].position):
-            hpit.config.currChap = 3;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[4].position && currPos < hpit.config.chapters[5].position):
-            hpit.config.currChap = 4;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[5].position && currPos < hpit.config.chapters[6].position):
-            hpit.config.currChap = 5;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[6].position && currPos < hpit.config.chapters[7].position):
-            hpit.config.currChap = 6;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[7].position && currPos < hpit.config.chapters[8].position):
-            hpit.config.currChap = 7;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[8].position && currPos < hpit.config.chapters[9].position):
-            hpit.config.currChap = 8;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[9].position && currPos < hpit.config.chapters[10].position):
-            hpit.config.currChap = 9;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-        case (currPos > hpit.config.chapters[10].position):
-            hpit.config.currChap = 10;
-            trackDelvePlayer("start", "limelight_player_239897", currPos);
-            break;
-    }
-    //console.log('active: '+ hpit.config.activeChap +' | curr: ' + hpit.config.currChap);
-    //hpit.config.activeChap
-    
-    if (hpit.config.currChap != hpit.config.activeChap) {
-        hpit.config.activeChap = hpit.config.currChap;
-        //console.log('justClicked: ', hpit.config.justClicked);
-        //console.log('Switching to chapter: ', hpit.config.activeChap);
-        
-        if (!hpit.config.justClicked) {
-        //console.log('track chapter rollover here!');
-        }
-        
-        $('#ll-overlay .chapters .topRow a')
-        .removeClass('active')
-        .eq(hpit.config.activeChap - 1)
-        .addClass('active');
-        
-        $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[hpit.config.activeChap].title).fadeIn(500).delay(4000).fadeOut(500);
-    } else {
-    //console.log('currChap: ', hpit.config.currChap);
-    }
-}
+	function doonPlayheadUpdate(data) {
+	    //var currChap = 0;
+	    var currPos = data.positionInMilliseconds;
+	    //console.log('Playhead update: ', data.positionInMilliseconds +'/'+ data.durationInMilliseconds);
+	    
+	    switch (true) {
+	        case (currPos > 0 && currPos < hpit.config.chapters[2].position):
+	            hpit.config.currChap = 1;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[2].position && currPos < hpit.config.chapters[3].position):
+	            hpit.config.currChap = 2;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[3].position && currPos < hpit.config.chapters[4].position):
+	            hpit.config.currChap = 3;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[4].position && currPos < hpit.config.chapters[5].position):
+	            hpit.config.currChap = 4;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[5].position && currPos < hpit.config.chapters[6].position):
+	            hpit.config.currChap = 5;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[6].position && currPos < hpit.config.chapters[7].position):
+	            hpit.config.currChap = 6;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[7].position && currPos < hpit.config.chapters[8].position):
+	            hpit.config.currChap = 7;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[8].position && currPos < hpit.config.chapters[9].position):
+	            hpit.config.currChap = 8;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[9].position && currPos < hpit.config.chapters[10].position):
+	            hpit.config.currChap = 9;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	        case (currPos > hpit.config.chapters[10].position):
+	            hpit.config.currChap = 10;
+	            trackDelvePlayer("start", "limelight_player_239897", currPos);
+	            break;
+	    }
+	    //console.log('active: '+ hpit.config.activeChap +' | curr: ' + hpit.config.currChap);
+	    //hpit.config.activeChap
+	    
+	    if (hpit.config.currChap != hpit.config.activeChap) {
+	        hpit.config.activeChap = hpit.config.currChap;
+	        //console.log('justClicked: ', hpit.config.justClicked);
+	        //console.log('Switching to chapter: ', hpit.config.activeChap);
+	        
+	        if (!hpit.config.justClicked) {
+	        //console.log('track chapter rollover here!');
+	        }
+	        
+	        $('#ll-overlay .chapters .topRow a')
+	        .removeClass('active')
+	        .eq(hpit.config.activeChap - 1)
+	        .addClass('active');
+	        
+	        $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[hpit.config.activeChap].title).fadeIn(500).delay(4000).fadeOut(500);
+	    } else {
+	    //console.log('currChap: ', hpit.config.currChap);
+	    }
+	}
 
-function doOnMediaComplete(data) {
-   console.log("video complete");
-   trackDelvePlayer("complete", "limelight_player_239897", data.title);
-   resetVideoStates();
-   //hpit.config.activeChap = 0;
-}
+	function doOnMediaComplete(data) {
+	   console.log("video complete");
+	   trackDelvePlayer("complete", "limelight_player_239897", data.title);
+	   resetVideoStates();
+	   //hpit.config.activeChap = 0;
+	}
 
-function resetVideoStates() {
-    //console.log('resetVideoStates');
-    $('#ll-overlay .chapters .topRow a').removeClass('active');
-    hpit.config.activeChap = 0;
-    hpit.config.currChap = 0;
-}
-
-    }
+	function resetVideoStates() {
+	    //console.log('resetVideoStates');
+	    $('#ll-overlay .chapters .topRow a').removeClass('active');
+	    hpit.config.activeChap = 0;
+	    hpit.config.currChap = 0;
+	}
 
     // video player
     function playVideoInit() {
@@ -1402,7 +1401,7 @@ function resetVideoStates() {
             vidContent += '<param name="wmode" value="transparent"/>';
             vidContent += '<param name="allowScriptAccess" value="always"/>';
             vidContent += '<param name="allowFullScreen" value="true"/>';
-            vidContent += '<param name="flashVars" value="mediaId=' + mediaId + '&amp;playerForm=Player&amp;autoplay=true"/>';
+            vidContent += '<param name="flashVars" value="mediaId=' + mediaId + '&amp;playerForm=HoverPlayer&amp;autoplay=true"/>';
             vidContent += '</object></div>';
             
             target.append(vidContent);

@@ -2285,6 +2285,34 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 }
 
+/* between 768px & 1000px wide */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.hero > div.inner {
+		padding-right: 30% !important;
+	}
+	.hero > div.inner h3 {
+		font-size: 18px;
+		width: 90%;
+	}
+	.hero.left > div.inner h1 {
+		font-size: 32px;
+		width: 90%;
+	}
+	.hero.left > div.inner p {
+		font-size: 18px;
+		line-height: 1.3em;
+		width: 98%;
+	}
+	.insight .insightTitle {
+		width: 26%;
+		font-size: 
+	}
+	.insight .insightTitle h3 {
+		font-size: 36px;
+		line-height: 1.1em;
+	}
+}
+
 /* ipad (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 	html, body {
