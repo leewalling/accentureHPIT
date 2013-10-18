@@ -1855,6 +1855,15 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		margin: 0;
 		width: 100%;
 	}
+	#footer a {
+		color: yellow !important;
+		
+	}
+	#footer a:hover,
+	#footer a:focus {
+		color: red !important;
+		
+	}
 	#ll-overlay .inner {
 		height: 100%;
 		width: 90%;
@@ -2303,11 +2312,6 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	#footer .about h6 {
 		font-size: 16px !important;
 		line-height: 20px;
-	}
-	#footer a:hover,
-	#footer a:focus {
-		color: green !important;
-		
 	}
 	.navbar > .container {
 		border-bottom: 2px solid #363636 !important;
