@@ -2491,18 +2491,6 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	#diagnostics {
 		background-color: yellow;
 	}
-	.onMobile .marker  {
-		display: block !important;
-	}
-	.onMobile .insight .insightTitle h3 {
-		background: red;
-	}
-	.onMobile .insight .insightTitle h4 {
-		display: none !important;
-	}
-	.onMobile .insight .container.content {
-		display: block !important;
-	}
 	.hero {
 		height: 570px;
 	}
@@ -2542,6 +2530,20 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 	.container > .navbar-header {
 		border-bottom: none;
+	}
+
+	.onMobile .marker,
+	.onMobile .insightTitle .social  {
+		display: block !important;
+	}
+	.onMobile .insight .insightTitle h3 {
+		background: red;
+	}
+	.onMobile .insight .insightTitle h4 {
+		display: none !important;
+	}
+	.onMobile .insight .container.content {
+		display: block !important;
 	}
 }
  
@@ -2622,4 +2624,25 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		background: black;
 	}	
 }
+
+/* Samsung GALAXY Tab 10.1 - Landscape */
+@media (max-device-width: 1280px) and (orientation: landscape) {
+	#diagnostics {
+		background-color: #00ff00;
+	}
+	.insight .insightTitle h3 {
+		background-color: #00ff00;
+	}
+}
+
+/* Samsung GALAXY Tab 10.1 - Portrait */
+@media (max-device-width: 800px) and (orientation: portrait) {
+	#diagnostics {
+		background-color: #0ffff0;
+	}
+	.insight .insightTitle h3 {
+		background-color: #0ffff0;
+	}
+}
+
 /*********************************  end responsive  **************************************/
