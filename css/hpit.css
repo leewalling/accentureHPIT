@@ -2640,47 +2640,57 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 /* Samsung GALAXY Tab 10.1 - Landscape */
 @media (max-device-width: 1280px) and (orientation: landscape) {
 	#diagnostics {
-		background-color: purple;
+		background-color: pink;
 	}
-	.hero {
+	.onMobile .hero {
 		height: 570px;
 	}
-	.hero .video-wrapper {
+	.onMobile .hero .video-wrapper {
 		height: 570px;
 	}
-	.hero.left > div.inner p {
+	.onMobile .hero.left > div.inner p {
 		width: 60%;
 	}
-	.hero.left > div.inner h1 {
+	.onMobile .hero.left > div.inner h1 {
 		width: 75%;
 	}
-	.hero.left > div.inner h3 {
+	.onMobile .hero.left > div.inner h3 {
 		width: 72%;
 	}
-	.container > .navbar-collapse {
+	.onMobile .container > .navbar-collapse {
 		float: right;
 		width: 60% !important;
 	}
-	.navbar-nav {
+	.onMobile .navbar-nav {
 		float: right;
 		width: 100% !important;
 		display: inline-block;
 		overflow: hidden;
 	}
-	.navbar-nav > li {
+	.onMobile .navbar-nav > li {
 		width: auto;
 		margin:0;
 	}
-	.navbar-nav > li.share {
+	.onMobile .navbar-nav > li.share {
 		width: 33%;
 	}
-	.navbar-default .navbar-nav > li > a {
+	.onMobile .navbar-default .navbar-nav > li > a {
 		white-space: nowrap;
 		line-height: 28px;
 		font-weight: normal;
 	}
-	.container > .navbar-header {
+	.onMobile .container > .navbar-header {
 		border-bottom: none;
+	}
+	.onMobile.exception .visible-xs {
+	 	display: block !important;
+	}
+	.onMobile.exception .hidden-xs {
+	 	display: none !important;
+	}
+	.onMobile.exception #accMarkMob {
+		min-height: 0px;
+		margin-top: -340px;
 	}
 }
 
