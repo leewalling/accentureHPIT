@@ -46,7 +46,7 @@ html, body {
 #diagnostics {
 	display:none;
 	padding:10px;
-	background: aqua;
+	background: red;
 	color:white;
 	position:fixed;
 	top:0;
@@ -1545,9 +1545,11 @@ only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) a
 only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) and (orientation : portrait), 
 only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape), 
 only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape), 
-only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape) {
+only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape),
+only screen and (max-device-width: 1280px) and (orientation: landscape) {
+	
 	#diagnostics {
-		background-color: silver;
+		background-color: gold;
 	}
 	.insight .insightTitle h3 {
 		background: silver;
@@ -1876,22 +1878,12 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 
 /* galaxy tablet - landscape */
 @media (orientation: landscape) and (-webkit-device-pixel-ratio: 1.5) {
-	#diagnostics {
-		background-color: purple;
-	}
-	.insight .insightTitle h3 {
-		background: purple;
-	}
+	
 }
 
 /* galaxy tablet - portrait */
 @media (orientation: portrait) and (-webkit-device-pixel-ratio: 1.5) {
-	#diagnostics {
-		background-color: green;
-	}
-	.insight .insightTitle h3 {
-		background: green;
-	}
+	
 } 
 
 /* less than 640px wide */
@@ -2489,7 +2481,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	#diagnostics {
-		background-color: yellow;
+		background-color: lime;
 	}
 	.hero {
 		height: 570px;
@@ -2639,8 +2631,25 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung GALAXY Tab 10.1 - Landscape */
 @media (max-device-width: 1280px) and (orientation: landscape) {
+	/*
 	#diagnostics {
 		background-color: pink;
+	}
+	.insight .content {
+		display: block !important;
+		position:relative;
+		margin:0 auto;
+		margin-top: 125px;
+		max-width:1000px;
+		width:75% !important;
+		overflow:visible;
+		color:#000;
+	}
+	.insight .content .right-col {
+		background-color:#fff;
+		padding: 0;
+		width:50% !important;
+		margin-left:50% !important;
 	}
 	.onMobile .hero {
 		height: 570px;
@@ -2656,6 +2665,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	}
 	.onMobile .hero.left > div.inner h3 {
 		width: 72%;
+	}	
+	.onMobile .hero > div.inner .playVid {
+		bottom: -150px;
 	}
 	.onMobile .container > .navbar-collapse {
 		float: right;
@@ -2692,6 +2704,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		min-height: 0px;
 		margin-top: -340px;
 	}
+	*/
 }
 
 /* Samsung GALAXY Tab 10.1 - Portrait */
