@@ -1134,7 +1134,8 @@ img {
 	width: 100%;
 	
 }
-#footer .about a:hover/*, #footer .about a:focus*/ {
+#footer .about a:hover,
+#footer .about a:focus {
 	color: #868383 !important;
 	
 }
@@ -1156,7 +1157,8 @@ img {
 #footer .legal a.last {
 	margin-right: 0;
 }
-#footer .legal a:hover/*, #footer .legal a:focus*/ {
+#footer .legal a:hover,
+#footer .legal a:focus {
 	color: rgba(255, 255, 255, .31) !important;
 	
 }
@@ -2301,6 +2303,11 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	#footer .about h6 {
 		font-size: 16px !important;
 		line-height: 20px;
+	}
+	#footer .about a:focus,
+	#footer .legal a:focus {
+		color: red !important;
+		
 	}
 	.navbar > .container {
 		border-bottom: 2px solid #363636 !important;
