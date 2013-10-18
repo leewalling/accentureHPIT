@@ -46,12 +46,15 @@ html, body {
 #diagnostics {
 	display:none;
 	padding:10px;
-	background:red;
+	background: aqua;
 	color:white;
 	position:fixed;
 	top:0;
 	left:0;
 	z-index:9999;
+}
+.insight .insightTitle h3 {
+	background: aqua;
 }
 ol.normal {
 	list-style-type: decimal;
@@ -1543,6 +1546,12 @@ only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) a
 only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape), 
 only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape), 
 only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape) {
+	#diagnostics {
+		background-color: silver;
+	}
+	.insight .insightTitle h3 {
+		background: silver;
+	}
 	.container > .navbar-header,
 	.container > .navbar-collapse {
 		margin: 0;
@@ -1834,6 +1843,12 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 
 /* galaxy nexus */
 @media only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape) {
+	#diagnostics {
+		background-color: blue;
+	}
+	.insight .insightTitle h3 {
+		background: blue;
+	}
 	/*
 	.navbar-default,
 	.navbar-default * {
@@ -1859,12 +1874,25 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	*/
 }
 
-/* galaxy tablet */
-@media only screen and (max-device-width : 1280px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : portrait) {
+/* galaxy tablet - landscape */
+@media (orientation: landscape) and (-webkit-device-pixel-ratio: 1.5) {
+	#diagnostics {
+		background-color: purple;
+	}
+	.insight .insightTitle h3 {
+		background: purple;
+	}
+}
+
+/* galaxy tablet - portrait */
+@media (orientation: portrait) and (-webkit-device-pixel-ratio: 1.5) {
 	#diagnostics {
 		background-color: green;
 	}
-}
+	.insight .insightTitle h3 {
+		background: green;
+	}
+} 
 
 /* less than 640px wide */
 @media only screen and (max-width : 640px) {
@@ -2460,6 +2488,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
  
 /* ipad (landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	#diagnostics {
+		background-color: yellow;
+	}
 	.hero {
 		height: 570px;
 	}
@@ -2500,41 +2531,73 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.container > .navbar-header {
 		border-bottom: none;
 	}
+
+	/*
+	.onMobile .marker,
+	.onMobile .insightTitle .social  {
+		display: block !important;
+	}
+	.onMobile .insight .insightTitle h3 {
+		background: red;
+	}
+	.onMobile .insight .insightTitle h4 {
+		display: none !important;
+	}
+	.onMobile .insight .container.content {
+		display: block !important;
+	}
+	*/
 }
  
 /* ipad (portrait) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-	.insight .insightTitle {
+	#diagnostics {
+		background-color: magenta;
+	}
+	.insight .insightTitle h3,
+	.onMobile .insight .insightTitle h3 {
+		background: magenta;
+	}
+	.insight .insightTitle,
+	.onMobile .insightTitle {
 		left: 180px;
 		width: 25%;
 	}
-	.insight .insightTitle h3 {
+	.insight .insightTitle h3,
+	.onMobile .insightTitle h3 {
 		font-size: 36px;
 		line-height: 42px;
 	}
-	.hero {
+	.hero,
+	.onMobile .hero {
 		height: 500px;
 	}
-	.hero .video-wrapper {
+	.hero .video-wrapper,
+	.onMobile .video-wrapper {
 		height: 500px;
 		background-size: auto 100%;
 	}
-	.hero video {
+	.hero video,
+	.onMobile video {
 		height: 100%;
 		width: auto;
 	}
-	.hero.left > div.inner {
+	.hero.left > div.inner,
+	.onMobile .hero.left > div.inner {
 		padding-right: 100px;
 	}
-	.hero.left > div.inner p {
+	.hero.left > div.inner p,
+	.onMobile .hero.left > div.inner p {
 		width: 80%;
 	}
-	.hero.left > div.inner h1 {
+	.hero.left > div.inner h1,
+	.onMobile .hero.left > div.inner h1 {
 		margin: 10px 0;
 		width: 85%;
 		font-size: 40px;
 	}
-	.hero.left > div.inner h3 {
+	.hero.left > div.inner h3,
+	.onMobile .hero.left > div.inner h3 {
 		margin: 0;
 		width: 85%;
 	}
@@ -2566,6 +2629,74 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung S3 - landscape */
 @media only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) and (max-device-width : 720px) and (orientation : landscape) {
-	
+	#diagnostics {
+		background-color: black;
+	}
+	.insight .insightTitle h3 {
+		background: black;
+	}	
 }
+
+/* Samsung GALAXY Tab 10.1 - Landscape */
+@media (max-device-width: 1280px) and (orientation: landscape) {
+	#diagnostics {
+		background-color: pink;
+	}
+	.onMobile .hero {
+		height: 570px;
+	}
+	.onMobile .hero .video-wrapper {
+		height: 570px;
+	}
+	.onMobile .hero.left > div.inner p {
+		width: 60%;
+	}
+	.onMobile .hero.left > div.inner h1 {
+		width: 75%;
+	}
+	.onMobile .hero.left > div.inner h3 {
+		width: 72%;
+	}
+	.onMobile .container > .navbar-collapse {
+		float: right;
+		width: 60% !important;
+	}
+	.onMobile .navbar-nav {
+		float: right;
+		width: 100% !important;
+		display: inline-block;
+		overflow: hidden;
+	}
+	.onMobile .navbar-nav > li {
+		width: auto;
+		margin:0;
+	}
+	.onMobile .navbar-nav > li.share {
+		width: 33%;
+	}
+	.onMobile .navbar-default .navbar-nav > li > a {
+		white-space: nowrap;
+		line-height: 28px;
+		font-weight: normal;
+	}
+	.onMobile .container > .navbar-header {
+		border-bottom: none;
+	}
+	.onMobile.exception .visible-xs {
+	 	display: block !important;
+	}
+	.onMobile.exception .hidden-xs {
+	 	display: none !important;
+	}
+	.onMobile.exception #accMarkMob {
+		min-height: 0px;
+		margin-top: -340px;
+	}
+}
+
+/* Samsung GALAXY Tab 10.1 - Portrait */
+@media (max-device-width: 800px) and (orientation: portrait) {
+	/**/
+}
+
 /*********************************  end responsive  **************************************/

@@ -565,7 +565,7 @@ hpit.core = (function() {
             
             if (onMobile()) {
                 if (!onIpad() && $(window).width() > 767) {
-                    //alert('exception!');
+                    alert('exception!');
                     $('html').addClass('exception');
                 };
                 $('html').removeClass('desktop').addClass('onMobile');
