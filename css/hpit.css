@@ -1136,7 +1136,7 @@ img {
 }
 #footer .about a:hover,
 #footer .about a:focus {
-	color: #fff !important;
+	color: #868383 !important;
 	
 }
 #footer .legal {
@@ -1159,7 +1159,7 @@ img {
 }
 #footer .legal a:hover,
 #footer .legal a:focus {
-	color: #fff !important;
+	color: rgba(255, 255, 255, .31) !important;
 	
 }
 #footer .legal .copyright {
@@ -2303,6 +2303,12 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	#footer .about h6 {
 		font-size: 16px !important;
 		line-height: 20px;
+	}
+	.onIpad #footer .about a,
+	.onIpad #footer .legal a,
+	.onIpad #footer .about a:focus,
+	.onIpad #footer .legal a:focus {
+		color: red !important;
 	}
 	.navbar > .container {
 		border-bottom: 2px solid #363636 !important;
