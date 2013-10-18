@@ -151,8 +151,8 @@ img {
 #controls {
 	position: fixed;
 	background-color:#000;
-	padding:15px;
-	width: 45px;
+	padding:15px 7px;
+	width: 64px;
 	height: 150px;
 	margin-top: -75px;
 	top: 50%;
@@ -194,11 +194,20 @@ img {
 }
 #controls .txt {
 	line-height: 22px;
-	margin:19px 0;
+	margin: 19px 0;
 	text-align: center;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: normal;
 	text-transform: uppercase;
+	width: 100%;
+	background-color: #fff !important;
+	color: #000 !important;
+}
+#controls .txt > img {
+	float: none;
+	vertical-align: top;
+	margin-top: 7px;
+	margin-right: 4px;
 }
 #controls .control-info {
 	background-color: rgba(255, 255, 255, 0.4);

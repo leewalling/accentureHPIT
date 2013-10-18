@@ -70,7 +70,7 @@
 		<!-- controls -->
 		<div id="controls" class="hidden-xs">
 			<a href="#" class="arrows prev noClick" rel="articles"></a>
-			<a href="#" class="txt" id="toggleMenu" rel="articles">Menu</a>
+			<a href="#" class="txt" id="toggleMenu" rel="articles" title="Show menu"><img src="images/bg-menu.png" title="Show menu" />Menu</a>
 			<a href="#" class="arrows nxt" rel="articles"></a>
 			<span class="control-info">See the TOP #10 CIO Action Items Below</span>
 		</div>
