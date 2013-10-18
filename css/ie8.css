@@ -147,3 +147,13 @@
 .insight[data-insight="10"] .content .right-col > div .tr > span.num {
 	background-color :transparent !important;
 }
+.ie8 .navbar-default .navbar-nav > li > a > .icn {
+  	vertical-align: middle;
+}
+.ie8 .navbar-nav > li .social {
+  	width: auto;
+}
+.ie8 #controls .txt > img {
+	vertical-align: middle;
+	margin-top: 0px;
+}

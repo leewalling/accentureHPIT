@@ -639,9 +639,9 @@ img {
 .bgImages .bgImg img {
 	/*transition: all 0.5s ease-in-out 0s;*/
 	margin:0 0 0 0;
-	width: 100%;
-	height: auto;
-	/*width: auto;
+	width: auto;
+	height: 100%;
+	/*width: 100%;
 	max-width: 5000px;
 	height: 1450px;*/
 }
@@ -1333,16 +1333,26 @@ img {
 .navbar-toggle {
 	border-color: transparent !important;
 }
-.social > a {
+.social.inHeader > .addthis_toolbox {
+  	height: 25px;
+}
+.social > .addthis_toolbox > a {
   	display: inline-block;
-  	float: right;
-  	margin-right: 5px;
-  	margin-bottom: 1px;
+  	float: left;
+  	margin: 0 3px 0 0;
+  	padding: 0;
 	overflow: hidden;
 	width: 25px;
 	height: 25px;
-  	background-image:url("../images/icons-social.png");
-	background-repeat: no-repeat;
+  	/*background-image:url("../images/icons-social.png");
+	background-repeat: no-repeat;*/
+}
+.social > .addthis_toolbox > a > img {
+  	display: inline-block;
+  	float: left;
+	overflow: hidden;
+	width: 25px;
+	height: 25px;
 }
 .social .linkedin {
   	background-position: 0 0;
@@ -1556,8 +1566,7 @@ only screen and (-webkit-device-pixel-ratio: 2) and (min-device-width : 360px) a
 only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 720px) and (orientation : portrait), 
 only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width : 1280px) and (orientation : landscape), 
 only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape), 
-only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape),
-only screen and (max-device-width: 1280px) and (orientation: landscape) {
+only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5) and (orientation : landscape) {
 	
 	/*
 	#diagnostics {

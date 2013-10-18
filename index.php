@@ -11,7 +11,23 @@
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!--link href="css/reset.css" rel="stylesheet" media="screen"-->
-		<link href="css/hpit.css" rel="stylesheet" media="screen" />
+		<!--link href="css/hpit.css" rel="stylesheet" media="screen" /-->
+		<script type="text/javascript">
+		var ranNumVar = new Date().getTime();
+		var $ = document;
+		var cssId = 'hpitCSS';
+		if (!$.getElementById(cssId)) {
+		    var head  = $.getElementsByTagName('head')[0];
+		    var link  = $.createElement('link');
+		    link.id   = cssId;
+		    link.rel  = 'stylesheet';
+		    link.type = 'text/css';
+		    link.href = 'css/hpit.css?v=' + ranNumVar;
+		    link.media = 'screen';
+		    head.appendChild(link);
+		}
+		</script>
+
 		<!--[if lt IE 9]>
 			<link href="css/ie8.css" rel="stylesheet" media="screen" />
 		<![endif]-->
