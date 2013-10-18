@@ -268,7 +268,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">If you're not already in the cloud, you probably can't orchestrate truly effective responses to all the noise from today's global economy.</span>
+						<span class="quote">High performers are master orchestrators of managing new and existing IT.  They are leading the way in the new hybrid world.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -279,12 +279,12 @@
 						</div>
 						<div class="no-border">
 						<span class="heading">What you should know</span>
-						<span>High performers are freeing up data and putting the power in users' hands by moving to the cloud.</span>
+						<span>High performers are replacing their legacy architectures by moving more components to the cloud.</span>
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_4.png" alt="Moving data to the cloud can improve performance" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-4.png" /></span><span class="txt"><strong>Getting the outcomes they want. </strong>Almost half are seeing measurable improvements in agility, and 69% say their architecture transformations has led to cost reductions.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-4.png" /></span><span class="txt"><strong>Getting the outcomes they want. </strong>Almost half are seeing measurable improvements in agility, and 69% say their architecture transformations have led to cost reductions.</span></span>
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-4.png" /></span><span class="txt"><strong>Weaving together cloud capabilities. </strong>They're blending public and private cloud elements together in ways that always keep business value top of mind.</span></span>
 						</div>
 						<div class="no-border download-link">
@@ -312,7 +312,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">If you haven't yet made the digital leap, the time has come. Every business is now a digital business.</span>
+						<span class="quote">The time has come to make the leap to digital. Every business is now a digital business.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -328,8 +328,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_5.png" alt="Experimenting and learning digital is important to high performing CIOs" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-5.png" /></span><span class="txt"><strong>Rolling out digital across their business. </strong>The knowledge they've gleaned from real-world results gives them critical insights into how digital technologies can support other parts of their business.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-5.png" /></span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will really revolutionize their business.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-5.png" /></span><span class="txt"><strong>Rolling out digital across their business. </strong>Rolling out digital across their business. The knowledge they've gleaned from early experiences with digital gives them critical insights into how digital technologies can support other parts of their business.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-5.png" /></span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will revolutionize their business.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -371,9 +371,9 @@
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_6.png" alt="High performers are leading the way in leveraging agile and iterative methodologies" /></span></div>
 						<div class="no-border">
-						<span class="heading">High performers are also...</span>
+						<span class="heading">High performers are...</span>
 						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-6.png" /></span><span class="txt"><strong>Embracing B.Y.O.D. </strong>"Bring Your Own Device" is a creed that adds creativity as well as productivity.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-6.png" /></span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Today's fickle customers can often service their own needs better than if they wait for responses to their service requests.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-6.png" /></span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Rather than wait for responses to service requests today's fickle customers can often service their own needs better.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -400,7 +400,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">It's not about 'Big Data' or new ways to capture data. It's about getting actionable insights out of the data&mdash;wherever it comes from.</span>
+						<span class="quote">Creating actionable insights out of the data-wherever it comes from&mdash;is what "Big Data" is all about.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -415,7 +415,7 @@
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_7.png" alt="Organizations who embed real-time analytics-based decision-making tools into business processes have the competitive advantage" /></span></div>
 						<div class="no-border">
-						<span class="heading">High performers are also...</span>
+						<span class="heading">High performers are...</span>
 						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-7.png" /></span><span class="txt"><strong>Becoming sophisticated data sources. </strong>They're investing in analytics to get better at capturing data and extracting valuable insights from it.</span></span>
 						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-7.png" /></span><span class="txt"><strong>Finding their focus. </strong>They're working to locate "insight gaps"&mdash;that is, blind spots that can obscure their business strategies.</span></span>
 						</div>
@@ -444,11 +444,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">If you're not making change happen on the run, then instead of being truly agile, you're just increasingly vulnerable.</span>
+						<span class="quote">If you're not making change happen on the run, then instead of being agile, you could be increasingly vulnerable.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Volatility in markets, partner engagements and even business models can create new opportunities&mdash;as long as your organization is nimble enough to turn the situation to your advantage.</span>
+						<span>Volatility in markets, partner engagements and business models can create new opportunities&mdash;as long as your organization is nimble enough to respond.</span>
 						<div class="the-video">
 							<a href="#insight8" rel="articles"><img src="images/video-medium.jpg" /><span><img src="images/ie8-bg-circle-arrow-8.png" /></span></a>
 						</div>
@@ -488,11 +488,11 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">Talent is going to drive your future success. You need to figure out where your opportunities are&mdash;and find the right people to capitalize on them.</span>
+						<span class="quote">Talent will drive future success. Figuring out where your opportunities are-and finding the right people to work on them-will pay off.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
-						<span>Innovation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look both inside and outside of their companies to fill needs and plug knowledge gaps.</span>
+						<span>Innovation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look inside and outside of their companies to fill needs and plug knowledge gaps.</span>
 						<div class="the-video">
 							<a href="#insight9" rel="articles"><img src="images/video-medium.jpg" /><span><img src="images/ie8-bg-circle-arrow-9.png" /></span></a>
 						</div>
@@ -504,8 +504,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_9.png" alt="High performance CIOs invest in new skills and talents through hiring innovative partners" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-9.png" /></span><span class="txt"><strong>Emphasizing communication skills. </strong>Today's collaborative workforce requires team members who can understand business needs, relate to colleagues regardless of department, and adapt to changing technologies.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-9.png" /></span><span class="txt"><strong>Becoming comfortable with fluidity. </strong>Full-time staffers are not the only answer, especially since much of today's talent not only accepts but expects constant change.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-9.png" /></span><span class="txt"><strong>Emphasizing communication skills. </strong>Today's collaborative workforce requires team members who can understand business needs, relate to colleagues in other departments, and adapt to changing technologies.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-9.png" /></span><span class="txt"><strong>Becoming comfortable with fluidity. </strong>Full-time staffers are not the only answer since much of today's talent not only accepts but expects constant change.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -532,7 +532,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">You can't have one team looking at risk management and another at IT security. They have to be in the same room, on the same page.</span>
+						<span class="quote">Risk management and IT security must be in the same room and on the same page.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -543,7 +543,7 @@
 						</div>
 						<div class="no-border">
 						<span class="heading">What you should know</span>
-						<span>High performers are growing their security and risk management functions.</span>
+						<span>High performers are growing their security and risk management functions by including IT, intellectual property, product innovation and business process in their scope.</span>
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_10.png" alt="High performers have expanded the scope of their security and risk management functions" /></span></div>
 						<div class="no-border">
