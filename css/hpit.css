@@ -2642,6 +2642,22 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	#diagnostics {
 		background-color: pink;
 	}
+	.insight .content {
+		display: block !important;
+		position:relative;
+		margin:0 auto;
+		margin-top: 125px;
+		max-width:1000px;
+		width:75% !important;
+		overflow:visible;
+		color:#000;
+	}
+	.insight .content .right-col {
+		background-color:#fff;
+		padding: 0;
+		width:50% !important;
+		margin-left:50% !important;
+	}
 	.onMobile .hero {
 		height: 570px;
 	}
@@ -2656,6 +2672,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	}
 	.onMobile .hero.left > div.inner h3 {
 		width: 72%;
+	}	
+	.onMobile .hero > div.inner .playVid {
+		bottom: -150px;
 	}
 	.onMobile .container > .navbar-collapse {
 		float: right;
