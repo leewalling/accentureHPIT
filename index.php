@@ -147,7 +147,7 @@
 						</div>
 						<div class="no-border">
 						<span class="heading">What you should know</span>
-						<span>High performers’ top three business objectives relate to improving the customer’s experience.</span>
+						<span>High performers' top three business objectives relate to improving the customer's experience.</span>
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_1.png" alt="How IT can improve the customer experience" /></span></div>
 						<div class="no-border">
