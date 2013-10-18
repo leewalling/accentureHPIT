@@ -1134,8 +1134,7 @@ img {
 	width: 100%;
 	
 }
-#footer .about a:hover,
-#footer .about a:focus {
+#footer .about a:hover/*, #footer .about a:focus*/ {
 	color: #868383 !important;
 	
 }
@@ -1157,8 +1156,7 @@ img {
 #footer .legal a.last {
 	margin-right: 0;
 }
-#footer .legal a:hover,
-#footer .legal a:focus {
+#footer .legal a:hover/*, #footer .legal a:focus*/ {
 	color: rgba(255, 255, 255, .31) !important;
 	
 }
