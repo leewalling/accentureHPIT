@@ -368,7 +368,7 @@ hpit.config = {
         },
         '8': {
             title: 'Chapter 8: Evaluating the findings',
-            position: 305000
+            position: 354000
         }
     }
 };
