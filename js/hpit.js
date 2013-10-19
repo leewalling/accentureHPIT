@@ -503,20 +503,21 @@ hpit.core = (function() {
         var $bgImgImg	= $('.bgImg img');
         var $smUlLi 	= $('#sideMenu ul li');
 		var $hero		= $('.hero');
+		var $win		= $(window);
 
         // Attach functionality to the native scroll function
-        $(window).scroll(function(event) {
+        $win.scroll(function(event) {
+        	
         	// if the hero video exists remove it upon initial window scroll
             if ($theVid.length) {
                 $vidWr.html('');
             } else {
-            	console.log('no vid');
-            	//$vidWr.html('no video!');
+            	//console.log('no video');
             }
             
             if (!onMobile() && !onIpad()) {
                 // determine if we need to lock the background images in place
-                if ($(window).scrollTop() > $ins.eq(0).offset().top - 1) { //$hero.outerHeight(true)
+                if ($win.scrollTop() > $ins.eq(0).offset().top - 1) { //$hero.outerHeight(true)
                     if (!$bgImg.hasClass('fixed')) {
                         $bgImg.addClass('fixed');
                     }
@@ -531,7 +532,7 @@ hpit.core = (function() {
                         setCookie('hasUsedControls', true);
                     }
                 } else {
-                    var toGo = $ins.eq(0).offset().top - $(window).scrollTop();
+                    var toGo = $ins.eq(0).offset().top - $win.scrollTop();
                     if (toGo > -1 && toGo < 226) {
                         //console.log('toGo: ', toGo);
                         if ($bl.hasClass('fixed')) {
@@ -553,22 +554,23 @@ hpit.core = (function() {
                         $bl.removeClass('fixed').removeAttr('style');
                     }
                     $foot.removeClass('fixed');
-                    $('#sideMenu ul li').removeClass('hilited');
+                    $smUlLi.removeClass('hilited');
                     $bgImgImg.removeClass('activate');
-                    var $newT = $(window).scrollTop() / 3.5;
+                    
                     if (!onIpad() && !isIE8) {
+                        var $newT = $win.scrollTop() / 3.5;
                         $hero.css({'top': -$newT});
                     }
                 }
             }
         });
         
-        $(window).resize(function() {
+        $win.resize(function() {
             updateDimensions();
             updateSidemenu();
             
             if (onMobile()) {
-                if (!onIpad() && $(window).width() > 767) {
+                if (!onIpad() && $win.width() > 767) {
                     //alert('exception!');
                     $('html').addClass('exception');
                 };
@@ -584,12 +586,11 @@ hpit.core = (function() {
             }
         });
         
-        $(window).on('orientationchange', function(event) {
-        //alert('orientation - changed');
-        //location.reload();
+        $win.on('orientationchange', function(event) {
+        	//location.reload();
         });
         
-        $(window).resize();
+        $win.resize();
 
         // Initialize event handler for insight togglers
         togglerInit();
