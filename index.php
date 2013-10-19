@@ -74,7 +74,7 @@
 				<a href="#"><span class="icn"></span>share</a>
 				<div class="social inHeader"></div>
 			</li>
-			<li class="download"><a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank"><span class="icn"></span>download study</a></li>
+			<li class="download"><a href="/Microsites/high-performance-it/Documents/media/HPIT_Survey_10_16_13_r11.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a></li>
 		  </ul>
 		</div>
 	  </div>

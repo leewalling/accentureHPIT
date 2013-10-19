@@ -904,7 +904,7 @@ hpit.core = (function() {
                         }
                     }
                     );
-					      FlashLinkAnalysis('home:insight' + $cur, "scroll" + newNum, "linkanalysis");
+                    FlashLinkAnalysis($(this).attr('href'), "Menu Up:Insight" + newNum, "linkanalysis");
                 }
             } else {
                 //console.log('cur: ', $cur);
@@ -933,7 +933,7 @@ hpit.core = (function() {
                         }
                     }
                     );
-                    FlashLinkAnalysis($(this).attr('href'), "Menu Down", "linkanalysis");
+                    FlashLinkAnalysis($(this).attr('href'), "Menu Down:Insight" + newNum, "linkanalysis");
                 } else {
                     //console.log('nothing there');
                     return false;
@@ -1134,7 +1134,7 @@ hpit.core = (function() {
     }
 
     function initDelvePlayer() {
-    	console.log("Initializing the delve player");
+    	//console.log("Initializing the delve player");
 
     	//var activeChap = 0;
 
@@ -1461,11 +1461,15 @@ hpit.core = (function() {
             if ($target.hasClass("opened")) {
                 $target.animate({"right": "-275px"}, "normal");
                 $target.removeClass("opened");
-                FlashLinkAnalysis($(this).attr('href'), "menu-closed", "linkanalysis");
+                if (($this).hasClass("closeX")) {   
+                  FlashLinkAnalysis($(this).attr('href'), "menu-closed", "linkanalysis");
+                }
             } else {
                 $target.animate({"right": "0px"}, "normal");
                 $target.addClass("opened");
-                FlashLinkAnalysis($(this).attr('href'), "menu-opened", "linkanalysis");
+                if (($this).attr("id") == "toggleMenu") {
+                  FlashLinkAnalysis($(this).attr('href'), "menu-opened", "linkanalysis");
+                }
             }
         });
     }
