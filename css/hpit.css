@@ -2584,7 +2584,8 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.insight .content {
 		width:75%;
 		max-width:75%;
-		background-color: green;
+		background-color: yellow;
+		margin: 0 auto;
 	}
 
 	/*
