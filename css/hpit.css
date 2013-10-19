@@ -815,8 +815,8 @@ img {
 	width:75%;
 	overflow:visible;
 	color:#000;
-	/*background-color: blue;
-	background-color:#fff;*/
+	background-color: blue;
+	/*background-color:#fff;*/
 }
 .insight .content .left-col {
 	color:#fff;
@@ -2347,7 +2347,8 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.container > .navbar-collapse {
 		float: right;
 	}
-	/*#controls,*/
+	/**/
+	#controls,
 	.whiteAngle,
 	.blackAngle,
 	.bgImages {
@@ -2579,6 +2580,11 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 	.container > .navbar-header {
 		border-bottom: none;
+	}	
+	.insight .content {
+		width:75%;
+		max-width:75%;
+		background-color: green;
 	}
 
 	/*

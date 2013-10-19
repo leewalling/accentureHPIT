@@ -475,7 +475,7 @@ hpit.core = (function() {
         footerLock($('#footer'));
         
         $('.insight').each(function(index) {
-            if (!onMobile()) { // && !onIpad()
+            if (!onMobile() && !onIpad()) {
                 paneLock($(this), index);
             }
         });
