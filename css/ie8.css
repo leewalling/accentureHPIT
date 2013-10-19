@@ -32,6 +32,12 @@
 	margin-left: 50% !important;
 	float: right;
 }
+.ie8 .container.main {
+	padding: 0;
+}
+.ie8 .hero {
+	position: relative;
+}
 .ie8 .hero .video-wrapper {
 	background-position: top center;
 }

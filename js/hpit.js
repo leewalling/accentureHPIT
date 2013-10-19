@@ -387,7 +387,19 @@ hpit.core = (function() {
 
     //	Initialize
     function init() {
-        
+
+    	//alert(onProduction());
+
+        // needed for fixing back button position
+        if($(window).scrollTop() > 0){
+        	//console.log('not at the top');
+        	setTimeout(function(){
+	        	window.scrollTo(0, 0);
+	        }, 100);
+        } else {
+        	//console.log('already at the top');
+        }
+
         if (isIE8) {
             //console.log('IS ie8');
             $('html').addClass('ie8');
@@ -472,7 +484,9 @@ hpit.core = (function() {
 
         // track download link click
         $('.download a,.download-link a').on('click', function(e) {
-            FlashLinkAnalysis($(this).attr('href'), "download study - insight " + hpit.config.currInsight, "linkanalysis")
+        	if (onProduction()) {
+	            FlashLinkAnalysis($(this).attr('href'), "download study - insight " + hpit.config.currInsight, "linkanalysis")
+	        }
         });
 
 		/*SGS: removed this because the default code is sending link analyis data 
@@ -551,8 +565,9 @@ hpit.core = (function() {
                     $('#footer').removeClass('fixed');
                     $('#sideMenu ul li').removeClass('hilited');
                     $('.bgImg img').removeClass('activate');
-                    var $newT = $(window).scrollTop() / 3.5;
-                    if (!onIpad()) {
+                    
+                    if (!onIpad() && !isIE8) {
+                        var $newT = $(window).scrollTop() / 3.5;
                         $('.hero').css({'top': -$newT});
                     }
                 }
@@ -598,6 +613,10 @@ hpit.core = (function() {
     
     function onIpad() {
         return ($iPad);
+    }
+    
+    function onProduction() {
+        return (location.hostname.indexOf("accenture.com") > -1);
     }
     
     function footerLock(element) {
@@ -730,12 +749,14 @@ hpit.core = (function() {
                 $('.bgImg').css({"opacity": 0});
                 $('.bgImg[data-insight="' + menuItem + '"]').css({"opacity": 1});
                 $('.bgImg[data-insight="' + nextImgNum + '"]').css({"opacity": 1});
-                
-                var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
-                if (!hpit.config.footerInView) {
-                    $('.bgImages .bgImg img').css({"margin-top": 0});
-                    $('.bgImages .bgImg img.activate').css({"margin-top": -diffToMove});
-                }
+
+                if (!isIE8) {
+	                var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
+	                if (!hpit.config.footerInView) {
+	                    $('.bgImages .bgImg img').css({"margin-top": 0});
+	                    $('.bgImages .bgImg img.activate').css({"margin-top": -diffToMove});
+	                }
+	            }
             } 
             // out of the viewport
             else {
@@ -887,24 +908,25 @@ hpit.core = (function() {
                     }
 					
                     $(window).scrollTo(
-                    newHash, 
-                    hpit.config.duration[hpit.config.desktopORtouch], 
-                    {
-                        easing: hpit.config.easing,
-                        onAfter: function() {
-                            hpit.config.currInsight = newNum;
-                            //console.log('currInsight change 3');
-                            hpit.config.state = newNum;
-                            hpit.config.currPageView = newNum;
-                            $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
-                            //console.log('config onAfter: ', hpit.config);
-                            if (newNum < 1) {
-                                $th.addClass('noClick');
-                            }
-                        }
-                    }
-                    );
-					      FlashLinkAnalysis('home:insight' + $cur, "scroll" + newNum, "linkanalysis");
+	                    newHash, 
+	                    hpit.config.duration[hpit.config.desktopORtouch], 
+	                    {
+	                        easing: hpit.config.easing,
+	                        onAfter: function() {
+	                            hpit.config.currInsight = newNum;
+	                            //console.log('currInsight change 3');
+	                            hpit.config.state = newNum;
+	                            hpit.config.currPageView = newNum;
+	                            $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
+	                            //console.log('config onAfter: ', hpit.config);
+	                            if (newNum < 1) {
+	                                $th.addClass('noClick');
+	                            }
+	                        }
+	                    });
+	                    if (onProduction()) {
+				            FlashLinkAnalysis('home:insight' + $cur, "scroll" + newNum, "linkanalysis");
+				        }
                 }
             } else {
                 //console.log('cur: ', $cur);
@@ -916,24 +938,25 @@ hpit.core = (function() {
                     newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     
                     $(window).scrollTo(
-                    newHash, 
-                    hpit.config.duration[hpit.config.desktopORtouch], 
-                    {
-                        easing: hpit.config.easing,
-                        onAfter: function() {
-                            hpit.config.currInsight = newNum;
-                            //console.log('currInsight change 4');
-                            hpit.config.state = newNum;
-                            hpit.config.currPageView = newNum;
-                            $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
-                            //console.log('config onAfter: ', hpit.config);
-                            if (newNum > $('.insight').length - 1) {
-                                $th.addClass('noClick');
-                            }
-                        }
-                    }
-                    );
-                    FlashLinkAnalysis($(this).attr('href'), "Menu Down", "linkanalysis");
+	                    newHash, 
+	                    hpit.config.duration[hpit.config.desktopORtouch], 
+	                    {
+	                        easing: hpit.config.easing,
+	                        onAfter: function() {
+	                            hpit.config.currInsight = newNum;
+	                            //console.log('currInsight change 4');
+	                            hpit.config.state = newNum;
+	                            hpit.config.currPageView = newNum;
+	                            $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
+	                            //console.log('config onAfter: ', hpit.config);
+	                            if (newNum > $('.insight').length - 1) {
+	                                $th.addClass('noClick');
+	                            }
+	                        }
+	                    });
+                    	if (onProduction()) {
+				            FlashLinkAnalysis($(this).attr('href'), "Menu Down", "linkanalysis");
+				        }
                 } else {
                     //console.log('nothing there');
                     return false;
@@ -957,18 +980,22 @@ hpit.core = (function() {
                 $cont.show(0, function() {
                     $trgt.removeClass('open');
                 });
-            /*$cont.slideUp(500, function(){
+            	/*$cont.slideUp(500, function(){
 					$trgt.removeClass('open');
 				});*/
-               FlashLinkAnalysis('home:insight', "mobile:close", "linkanalysis");
+        		if (onProduction()) {
+					FlashLinkAnalysis('home:insight', "mobile:close", "linkanalysis");
+				}
             } else {
                 $cont.hide(0, function() {
                     $trgt.addClass('open');
                 });
-            /*$cont.slideDown(500, function(){
+            	/*$cont.slideDown(500, function(){
 					$trgt.addClass('open');
 				});*/
-               FlashLinkAnalysis('home:insight', "mobile:open", "linkanalysis");
+        		if (onProduction()) {
+					FlashLinkAnalysis('home:insight', "mobile:open", "linkanalysis");
+				}
             }
         });
     }
@@ -1197,7 +1224,9 @@ hpit.core = (function() {
 	    //console.log('player state: ', data);
 	    if (data.isPlaying) {
 	        var videoTitle = DelvePlayer.doGetCurrentMedia().title;
-	        FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis")
+	        if (onProduction()) {
+				FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis")
+			}
 	    }
 	}
 
@@ -1357,11 +1386,13 @@ hpit.core = (function() {
             hpit.config.justClicked = true;
             var cNum = $(this).text();
             var skipTo = hpit.config.chapters[cNum].position / 1000;
-            FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
+            if (onProduction()) {
+				FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
+			}
             try {
                 DelvePlayer.doSeekToSecond(skipTo);
             } catch (err) {
-            //console.log('DelvePlayer error: ', err);
+            	//console.log('DelvePlayer error: ', err);
             }
             
             chapterClicked = setTimeout(function() {
@@ -1407,7 +1438,9 @@ hpit.core = (function() {
             target.append(vidContent);
             LimelightPlayerUtil.initEmbed(vidID);
             
-            FlashLinkAnalysis($(this).attr('href'), "Insight" + insightID + " Video Play", "linkanalysis");
+            if (onProduction()) {
+				FlashLinkAnalysis($(this).attr('href'), "Insight" + insightID + " Video Play", "linkanalysis");
+			}
         });
     }
     
@@ -1461,11 +1494,15 @@ hpit.core = (function() {
             if ($target.hasClass("opened")) {
                 $target.animate({"right": "-275px"}, "normal");
                 $target.removeClass("opened");
-                FlashLinkAnalysis($(this).attr('href'), "menu-closed", "linkanalysis");
+                if (onProduction()) {
+					FlashLinkAnalysis($(this).attr('href'), "menu-closed", "linkanalysis");
+				}
             } else {
                 $target.animate({"right": "0px"}, "normal");
                 $target.addClass("opened");
-                FlashLinkAnalysis($(this).attr('href'), "menu-opened", "linkanalysis");
+                if (onProduction()) {
+					FlashLinkAnalysis($(this).attr('href'), "menu-opened", "linkanalysis");
+				}
             }
         });
     }
@@ -1485,7 +1522,9 @@ hpit.core = (function() {
         //});
         $('.navbar-toggle').on('click', function(e) {
             e.preventDefault();
-            FlashLinkAnalysis("mobile", "menu-toggle", "linkanalysis");
+            if (onProduction()) {
+				FlashLinkAnalysis("mobile", "menu-toggle", "linkanalysis");
+			}
         });
         //$('.navbar-toggle')
         //.attr('data-toggle','collapse')
@@ -1544,12 +1583,12 @@ hpit.core = (function() {
     
     function omniTrackPageView(num) {
         //console.log('function omniTrackPageView: ', num);
-		if (location.hostname.indexOf("accenture.com") > -1) {
+		if (onProduction()) {
             CleanUpLtVars();
         }
         var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
         //console.log('newPageName: ', newPageName);
-        if (location.hostname.indexOf("accenture.com") > -1) {
+        if (onProduction()) {
             triggerOmniturePageView(newPageName, "event29,event20,event55");
         } 
         else {
@@ -1561,17 +1600,13 @@ hpit.core = (function() {
     function omniTrack(obj) {
         //console.log('Object: ', obj);
         
-        try {
-            FlashLinkAnalysis(obj.eventLink, obj.eventName, obj.eventType);
-        /*
-			//console.log('******************* CLICK TRACK *******************');
-			//console.log('URL: ', obj.eventLink);
-			//console.log('Name: ', obj.eventName);
-			//console.log('Type: ', obj.eventType);
-			*/
-        } catch (err) {
-        //console.log('Tracking error: ', err);
-        }
+		if (onProduction()) {
+			try {
+	            FlashLinkAnalysis(obj.eventLink, obj.eventName, obj.eventType);
+	        } catch (err) {
+	        	//console.log('Tracking error: ', err);
+	        }
+		}
     }
     
     function isTouchDevice() {
