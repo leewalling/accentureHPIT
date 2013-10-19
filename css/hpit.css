@@ -2582,8 +2582,6 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		border-bottom: none;
 	}	
 	.insight {
-		background-color: lime;
-		background-image: none !important;
 		padding-top: 0 !important;
 	}
 	.insight .insightTitle {
@@ -2594,20 +2592,11 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		max-width: 75%;
 		margin: 0 auto !important;
 		margin-top: 0 !important;
-		background-color: green;
-	}
-	.insight .content .row {
-		background-color: beige;
-		margin-top: 0 !important;
 	}
 	.insight .content .right-col {
 		padding: 0 !important;
 		margin-top: 0 !important;
-		background-color: blue;
 		float: right;
-	}
-	.insight .content .right-col > div {
-		background-color: pink;		
 	}
 	.insight .content .right-col > div.heading {
 		margin: 0 !important;
