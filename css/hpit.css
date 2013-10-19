@@ -2367,6 +2367,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		z-index: 5;
 		padding: 7% 0 125px;
 		width: 70%;
+		padding-right: 200px !important;
 	}
 	.hero > div.inner h1 {
 		font-size: 48px;
