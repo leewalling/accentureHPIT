@@ -475,7 +475,7 @@ hpit.core = (function() {
         footerLock($('#footer'));
         
         $('.insight').each(function(index) {
-            if (!onMobile() && !onIpad()) {
+            if (!onMobile()) { // && !onIpad()
                 paneLock($(this), index);
             }
         });
@@ -805,20 +805,19 @@ hpit.core = (function() {
                 
                 setTimeout(function() {
                     $(window).scrollTo(
-                    newHash, 
-                    {
-                        duration: 1, //hpit.config.duration[hpit.config.desktopORtouch],
-                        easing: hpit.config.easing,
-                        onAfter: function() {
-                            hpit.config.locked = false;
-                        //console.log('deeplinking DONE!');
-                        //setTimeout(function(){
-                        //updateArrows(4);
-                        //hpit.config.locked = false;
-                        //}, 100);
-                        }
-                    }
-                    );
+	                    newHash, 
+	                    {
+	                        duration: 1, //hpit.config.duration[hpit.config.desktopORtouch],
+	                        easing: hpit.config.easing,
+	                        onAfter: function() {
+	                            hpit.config.locked = false;
+	                        //console.log('deeplinking DONE!');
+	                        //setTimeout(function(){
+	                        //updateArrows(4);
+	                        //hpit.config.locked = false;
+	                        //}, 100);
+	                        }
+	                    });
                 }, delay);
             
             } else {
@@ -841,31 +840,30 @@ hpit.core = (function() {
             $('.arrows').removeClass('noClick');
             
             $(window).scrollTo(
-            newHash, 
-            {
-                duration: hpit.config.duration[hpit.config.desktopORtouch],
-                easing: hpit.config.easing,
-                onAfter: function() {
-                    hpit.config.locked = false;
-                    if (hpit.config.desktopORtouch == 'desktop') {
-                        if ($(window).scrollTop() < $('.insight').eq(0).offset().top) {
-                            //console.log('win scroll: ', $(window).scrollTop());
-                            //console.log('insight 1 top: ', $('.insight').eq(0).offset().top);
-                            hpit.config.currInsight = 0;
-                            //console.log('currInsight change 2');
-                            hpit.config.state = 0;
-                            hpit.config.currPageView = 0;
-                            setTimeout(function() {
-                                updateArrows(3)
-                            }, 100);
-                        } else {
-                        //console.log('NOT TOP');
-                        //console.log('currInsight: ', hpit.config.currInsight);
-                        }
-                    }
-                }
-            }
-            );
+	            newHash, 
+	            {
+	                duration: hpit.config.duration[hpit.config.desktopORtouch],
+	                easing: hpit.config.easing,
+	                onAfter: function() {
+	                    hpit.config.locked = false;
+	                    if (hpit.config.desktopORtouch == 'desktop') {
+	                        if ($(window).scrollTop() < $('.insight').eq(0).offset().top) {
+	                            //console.log('win scroll: ', $(window).scrollTop());
+	                            //console.log('insight 1 top: ', $('.insight').eq(0).offset().top);
+	                            hpit.config.currInsight = 0;
+	                            //console.log('currInsight change 2');
+	                            hpit.config.state = 0;
+	                            hpit.config.currPageView = 0;
+	                            setTimeout(function() {
+	                                updateArrows(3)
+	                            }, 100);
+	                        } else {
+	                        //console.log('NOT TOP');
+	                        //console.log('currInsight: ', hpit.config.currInsight);
+	                        }
+	                    }
+	                }
+	            });
         });
     
     }

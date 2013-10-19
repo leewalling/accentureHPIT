@@ -163,3 +163,8 @@
 	vertical-align: middle;
 	margin-top: 0px;
 }
+.ie8 #controls .control-info {
+	/*background-image: url("../images/transpBlue50.png");*/
+	left: -200px;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff');
+}

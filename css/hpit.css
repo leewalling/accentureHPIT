@@ -211,7 +211,7 @@ img {
 }
 #controls .control-info {
 	background-color: rgba(255, 255, 255, 0.4);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff'); /* for IE */
+	/* filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff');*/ /* for IE */
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
 	color: #000000;
