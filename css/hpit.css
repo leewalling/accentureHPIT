@@ -2347,7 +2347,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.container > .navbar-collapse {
 		float: right;
 	}
-	#controls,
+	/*#controls,*/
 	.whiteAngle,
 	.blackAngle,
 	.bgImages {
