@@ -2582,8 +2582,13 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		border-bottom: none;
 	}	
 	.insight {
-		background-color: red;
-	}	
+		background-color: lime;
+		background-image: none !important;
+		padding-top: 0 !important;
+	}
+	.insight .insightTitle {
+		color: #fff;
+	}
 	.insight .content {
 		width: 75%;
 		max-width: 75%;
@@ -2594,7 +2599,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		background-color: orange;
 	}
 	.insight .content .right-col {
-		padding: 0;
+		padding: 0 !important;
 		margin-top: 0 !important;
 		background-color: blue;
 	}
