@@ -595,7 +595,7 @@ img {
 }
 .bgImages {
 	width:100%;
-	min-height: 1680px;
+	min-height: 1920px;
 	position:absolute;
 	top: 459px;
 	left: 0px;
@@ -2582,13 +2582,25 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		border-bottom: none;
 	}	
 	.insight .content {
-		width:75%;
-		max-width:75%;
-		background-color: yellow;
+		width: 75%;
+		max-width: 75%;
+		background-color: red;
 		margin: 0 auto;
+		margin-top: 125px;
+	}
+	.insight .content .right-col {
+		background-color: yellow;
+		padding: 0;
+		margin: 0;
 	}
 
 	/*
+	.insight .content .right-col > div {
+		padding:25px 20px 20px 20px;
+		margin:0 0 0 0;
+		border-bottom: 1px solid #e2e2e2;
+		overflow: hidden;
+	}
 	.onMobile .marker,
 	.onMobile .insightTitle .social  {
 		display: block !important;
