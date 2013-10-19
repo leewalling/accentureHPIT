@@ -2589,18 +2589,14 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		margin-top: 125px;
 	}
 	.insight .content .right-col {
-		background-color: yellow;
+		background-color: pink;
 		padding: 0;
-		margin: 0;
+	}
+	.insight .content .right-col > div {
+		margin:0 0 0 0;
 	}
 
 	/*
-	.insight .content .right-col > div {
-		padding:25px 20px 20px 20px;
-		margin:0 0 0 0;
-		border-bottom: 1px solid #e2e2e2;
-		overflow: hidden;
-	}
 	.onMobile .marker,
 	.onMobile .insightTitle .social  {
 		display: block !important;
