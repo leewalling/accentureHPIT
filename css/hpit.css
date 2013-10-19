@@ -2604,9 +2604,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		padding: 0 !important;
 		margin-top: 0 !important;
 		background-color: blue;
+		float: right;
 	}
 	.insight .content .right-col > div {
-		background-color: yellow;		
+		background-color: pink;		
 	}
 	.insight .content .right-col > div.heading {
 		margin: 0 !important;
