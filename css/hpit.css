@@ -1356,14 +1356,14 @@ img {
 }
 .onMobile .social > .addthis_toolbox,
 .onIpad .social > .addthis_toolbox {
-  	height: 35px;
+  	height: 30px;
 }
 .onMobile .social > .addthis_toolbox > a,
 .onMobile .social > .addthis_toolbox > a > img,
 .onIpad .social > .addthis_toolbox > a,
 .onIpad .social > .addthis_toolbox > a > img {
-  	width: 35px;
-	height: 35px;
+  	width: 30px;
+	height: 30px;
 }
 .onMobile .social > .addthis_toolbox > a,
 .onIpad .social > .addthis_toolbox > a {
@@ -1630,7 +1630,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 	.navbar-nav > li .social {
 		padding: 20px 0;
-		right: 22%;
+		right: 12%;
 		width: auto;
 	}
 	.navbar-default .navbar-nav > li > a > .icn {
