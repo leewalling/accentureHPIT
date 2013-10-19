@@ -2583,15 +2583,17 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}	
 	.insight {
 		padding-top: 0 !important;
+		padding-bottom: 75px !important;
 	}
 	.insight .insightTitle {
 		color: #fff;
+		position: absolute;
 	}
 	.insight .content {
 		width: 75%;
 		max-width: 75%;
 		margin: 0 auto !important;
-		margin-top: 0 !important;
+		margin-top: 125px !important;
 	}
 	.insight .content .right-col {
 		padding: 0 !important;
