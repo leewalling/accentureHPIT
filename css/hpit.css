@@ -1354,11 +1354,14 @@ img {
 	width: 25px;
 	height: 25px;
 }
-.onMobile .social > .addthis_toolbox {
+.onMobile .social > .addthis_toolbox,
+.onIpad .social > .addthis_toolbox {
   	height: 35px;
 }
 .onMobile .social > .addthis_toolbox > a,
-.onMobile .social > .addthis_toolbox > a > img {
+.onMobile .social > .addthis_toolbox > a > img,
+.onIpad .social > .addthis_toolbox > a,
+.onIpad .social > .addthis_toolbox > a > img {
   	width: 35px;
 	height: 35px;
 }
