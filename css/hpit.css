@@ -2584,12 +2584,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.insight .content {
 		width: 75%;
 		max-width: 75%;
-		background-color: red;
 		margin: 0 auto;
-		margin-top: 125px;
 	}
 	.insight .content .right-col {
-		background-color: pink;
 		padding: 0;
 	}
 	.insight .content .right-col > div {
