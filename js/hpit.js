@@ -98,7 +98,7 @@ hpit.config = {
             newHash: '#insight1',
             linkedIn: {
                 title: 'Accenture - High Performance IT',
-                desc: 'High performing CIO know you can\'t think like a database. You have to think like a customer. Read more and get osur full list of top 10 insights from the Accenture High Performance IT Survey 2013',
+                desc: 'High performing CIOs know you can\'t think like a database. You have to think like a customer. Read more and get our full list of top 10 insights from the Accenture High Performance IT Survey 2013',
                 alt: 'Share via LinkedIn: Your new boss? Your customer.'
             },
             twitter: {
@@ -487,86 +487,77 @@ hpit.core = (function() {
 			}
             
         });
-
-		/*SGS: removed this because the default code is sending link analyis data 
-		through the page view image request of the target page */
-        // track contact link click
-        /*$('.contact a').on('click', function(e) {
-            omniTrack({
-                eventLink: $(this).attr('href'),
-                eventName: 'Contact US – Top Nav',
-                eventType: 'linkanalysis'
-            });
-        });*/
-
-		/*SGS: removed this because the default code is sending link analyis data 
-		through the page view image request of the target page */
-        // track footer - "learn more" section link clicks
-        /*$('#footer .about a').on('click', function(e) {		
-			omniTrack({
-                eventLink: $(this).attr('href'),
-                eventName: 'Learn More - ' + $(this).text(),
-                eventType: 'linkanalysis'
-            });
-        });*/
         
         $('.bgImg').css({"opacity": 0});
         $('.bgImg[data-insight="1"]').css({"opacity": 1});
         $('.bgImg[data-insight="2"]').css({"opacity": 1});
 
+    	var $ins 		= $('.insight');
+    	var $theVid 	= $('#theVideo');
+		var $vidWr 		= $('#hero .video-wrapper');
+    	var $bgImg 		= $('.bgImages');
+        var $wh 		= $('.whiteAngle');
+        var $bl 		= $('.blackAngle');
+        var $conInf 	= $('#controls .control-info');
+        var $foot 		= $('#footer');
+        var $bgImgImg	= $('.bgImg img');
+        var $smUlLi 	= $('#sideMenu ul li');
+		var $hero		= $('.hero');
+
         // Attach functionality to the native scroll function
         $(window).scroll(function(event) {
-            //console.log('insight 1 top: ', $('.insight').eq(0).offset().top);
-
-            // if the hero video exists remove it upon initial window scroll
-            if ($('#theVideo').length) {
-                $('.video-wrapper').html('');
+        	// if the hero video exists remove it upon initial window scroll
+            if ($theVid.length) {
+                $vidWr.html('');
+            } else {
+            	console.log('no vid');
+            	//$vidWr.html('no video!');
             }
             
             if (!onMobile() && !onIpad()) {
                 // determine if we need to lock the background images in place
-                if ($(window).scrollTop() > $('.insight').eq(0).offset().top - 1) { //$('.hero').outerHeight(true)
-                    if (!$('.bgImages').hasClass('fixed')) {
-                        $('.bgImages').addClass('fixed');
+                if ($(window).scrollTop() > $ins.eq(0).offset().top - 1) { //$hero.outerHeight(true)
+                    if (!$bgImg.hasClass('fixed')) {
+                        $bgImg.addClass('fixed');
                     }
-                    if (!$('.whiteAngle').hasClass('fixed')) {
-                        $('.whiteAngle').addClass('fixed');
+                    if (!$wh.hasClass('fixed')) {
+                        $wh.addClass('fixed');
                     }
-                    if (!$('.blackAngle').hasClass('fixed')) {
-                        $('.blackAngle').addClass('fixed');
+                    if (!$bl.hasClass('fixed')) {
+                        $bl.addClass('fixed');
                     }
-                    if ($('#controls .control-info').is(':visible')) {
-                        $('#controls .control-info').fadeOut();
+                    if ($conInf.is(':visible')) {
+                        $conInf.fadeOut();
                         setCookie('hasUsedControls', true);
                     }
                 } else {
-                    var toGo = $('.insight').eq(0).offset().top - $(window).scrollTop();
+                    var toGo = $ins.eq(0).offset().top - $(window).scrollTop();
                     if (toGo > -1 && toGo < 226) {
                         //console.log('toGo: ', toGo);
-                        if ($('.blackAngle').hasClass('fixed')) {
-                            $('.blackAngle').removeClass('fixed');
+                        if ($bl.hasClass('fixed')) {
+                            $bl.removeClass('fixed');
                         }
-                        $('.blackAngle').css({'bottom': -toGo});
+                        $bl.css({'bottom': -toGo});
                     } else {
                         //console.log('toGo ELSE: ', toGo);
-                        $('.blackAngle').removeClass('fixed').removeAttr('style');
+                        $bl.removeClass('fixed').removeAttr('style');
                     }
                     
-                    if ($('.bgImages').hasClass('fixed')) {
-                        $('.bgImages').removeClass('fixed');
+                    if ($bgImg.hasClass('fixed')) {
+                        $bgImg.removeClass('fixed');
                     }
-                    if ($('.whiteAngle').hasClass('fixed')) {
-                        $('.whiteAngle').removeClass('fixed');
+                    if ($wh.hasClass('fixed')) {
+                        $wh.removeClass('fixed');
                     }
-                    if ($('.blackAngle').hasClass('fixed')) {
-                        $('.blackAngle').removeClass('fixed').removeAttr('style');
+                    if ($bl.hasClass('fixed')) {
+                        $bl.removeClass('fixed').removeAttr('style');
                     }
-                    $('#footer').removeClass('fixed');
+                    $foot.removeClass('fixed');
                     $('#sideMenu ul li').removeClass('hilited');
-                    $('.bgImg img').removeClass('activate');
+                    $bgImgImg.removeClass('activate');
                     var $newT = $(window).scrollTop() / 3.5;
                     if (!onIpad() && !isIE8) {
-                        $('.hero').css({'top': -$newT});
+                        $hero.css({'top': -$newT});
                     }
                 }
             }
@@ -934,7 +925,6 @@ hpit.core = (function() {
                 if ($cur < $('.insight').length) {
                     newNum = ($cur + 1);
                     //console.log('newNum: ' + newNum);
-                    //SGS: omniTrackPageView(newNum);
                     newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     
                     $(window).scrollTo(
