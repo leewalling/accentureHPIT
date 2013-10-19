@@ -1354,6 +1354,18 @@ img {
 	width: 25px;
 	height: 25px;
 }
+.onMobile .social.inHeader > .addthis_toolbox {
+  	height: 35px;
+}
+.onMobile .social > .addthis_toolbox > a,
+.onMobile .social > .addthis_toolbox > a > img {
+  	width: 35px;
+	height: 35px;
+}
+.onMobile .social.inHeader > .addthis_toolbox > a,
+.onIpad .social.inHeader > .addthis_toolbox > a {
+  	margin: 0 7px 0 0;
+}
 .social .linkedin {
   	background-position: 0 0;
 }
@@ -2367,7 +2379,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		z-index: 5;
 		padding: 7% 0 125px;
 		width: 70%;
-		padding-right: 200px !important;
+		padding-right: 100px !important;
 	}
 	.hero > div.inner h1 {
 		font-size: 48px;
