@@ -2718,7 +2718,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
 	  	padding-left: 12px;
 	  	padding-right: 0;
-	  	background-color: red;
 	}
 }
 
@@ -2730,6 +2729,7 @@ and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
 	  	padding-left: 30px;
+	  	padding-right: 0;
 	}
 }
 
