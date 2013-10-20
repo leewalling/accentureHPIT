@@ -481,10 +481,8 @@ hpit.core = (function() {
         
         footerLock($('#footer'));
         
-        if (!hpit.config.isIE && !onMobile() && !onIpad()) {
-           $('.insight').each(function(index) {
-               paneLock($(this), index);
-           });
+        if (!onMobile() && !onIpad()) {
+            paneLock();
         }
 
         // track download link click
@@ -664,12 +662,8 @@ hpit.core = (function() {
         });
     }
     
-    function paneLock(element, index) {
-        //console.log('paneLock: ', element);
-        //$win.scroll($.throttle(250, function(event) {code goes here...}));
-        $(window).scroll(function() {
-
-            //console.log('scrolling')
+    function paneLockTest(element, index) {
+            //console.log('scrolling' + index);
             
             var currEle = element;
             var currFixedEle = element.find('.marker');
@@ -801,11 +795,18 @@ hpit.core = (function() {
             else {
                 currEle.removeClass('current');
             }
-        
-        });
-    
     }
-    ; //End Function
+
+    function paneLock() {
+        //console.log('paneLock: ', element);
+        //$win.scroll($.throttle(250, function(event) {code goes here...}));
+        $(window).scroll(function() {
+            $('.insight').each(function(index) {
+               paneLockTest($(this), index);
+           });
+        });
+    }
+    //End Function
 
     // show/hide controls message
     function cntrlMessInit() {
