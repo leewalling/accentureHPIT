@@ -1691,16 +1691,18 @@ hpit.core = (function() {
         //console.log('updateArrows - ELSE');
         }
     }
-    
+       
     function omniTrackPageView(num) {
         //console.log('function omniTrackPageView: ', num);
-		if (onProduction()) {
+        if (onProduction()) {
             CleanUpLtVars();
         }
-        var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
+		if (num=="home"){
+        var newPageName = 'acn:microsites:high-performance-it:home';}
+		else {var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;}
         //console.log('newPageName: ', newPageName);
         if (onProduction()) {
-            triggerOmniturePageView(newPageName, "event29,event20,event55");
+            triggerOmniturePageView(newPageName, "event29,event20,event68");
         } 
         else {
             console.log("Omniture Page View: " + newPageName);
