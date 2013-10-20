@@ -2526,6 +2526,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.hero > div.inner .playVid {
 		bottom: 0 !important;
 	}
+	.insight .content .right-col > div {
+		font-size: 22px;
+		line-height: 26px;
+	}
 	.insight .content .right-col > div.with-video > span {
 		float: left;
 		width: 100%;
