@@ -2815,7 +2815,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 /*and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332)*/
 @media only screen and (device-width: 600px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait), only screen and (device-width: 960px) and (device-height: 552px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape)  {
 	#diagnostics {
-		background: lime;
+		background: blue !important;
 	}
 }
 
