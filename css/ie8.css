@@ -102,17 +102,17 @@
 	width: 100%;
 	height: 100%;
 }
-.insight[data-insight="1"] .content .right-col > div .tr > span.num,
-.insight[data-insight="2"] .content .right-col > div .tr > span.num,
-.insight[data-insight="3"] .content .right-col > div .tr > span.num,
-.insight[data-insight="4"] .content .right-col > div .tr > span.num,
-.insight[data-insight="5"] .content .right-col > div .tr > span.num,
-.insight[data-insight="6"] .content .right-col > div .tr > span.num,
-.insight[data-insight="7"] .content .right-col > div .tr > span.num,
-.insight[data-insight="8"] .content .right-col > div .tr > span.num,
-.insight[data-insight="9"] .content .right-col > div .tr > span.num,
-.insight[data-insight="10"] .content .right-col > div .tr > span.num {
-	background-color :transparent !important;
+.ie8 .insight[data-insight="1"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="2"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="3"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="4"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="5"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="6"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="7"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="8"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="9"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="10"] .content .right-col > div .tr > span.num {
+	background-color: transparent !important;
 }
 .ie8 .navbar-default .navbar-nav > li > a > .icn {
   	vertical-align: middle;
