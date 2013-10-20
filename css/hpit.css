@@ -2811,4 +2811,12 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	/**/
 }
 
+/* Nexus 7 */
+/*and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332)*/
+@media only screen and (device-width: 601px) and (device-height: 906px)  {
+	#diagnostics {
+		background: lime;
+	}
+}
+
 /*********************************  end responsive  **************************************/

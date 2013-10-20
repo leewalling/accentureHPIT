@@ -506,7 +506,7 @@ hpit.core = (function() {
 		var $win		= $(window);
 
         // Attach functionality to the native scroll function
-        $win.scroll(function(event) {
+        $win.scroll($.throttle(250, function(event) {
         	
         	// if the hero video exists remove it upon initial window scroll
             if ($theVid.length) {
@@ -563,7 +563,66 @@ hpit.core = (function() {
                     }
                 }
             }
-        });
+        }));
+
+        /*$win.scroll(function(event) {
+        	
+        	// if the hero video exists remove it upon initial window scroll
+            if ($theVid.length) {
+                $vidWr.html('');
+            } else {
+            	//console.log('no video');
+            }
+            
+            if (!onMobile() && !onIpad()) {
+                // determine if we need to lock the background images in place
+                if ($win.scrollTop() > $ins.eq(0).offset().top - 1) { //$hero.outerHeight(true)
+                    if (!$bgImg.hasClass('fixed')) {
+                        $bgImg.addClass('fixed');
+                    }
+                    if (!$wh.hasClass('fixed')) {
+                        $wh.addClass('fixed');
+                    }
+                    if (!$bl.hasClass('fixed')) {
+                        $bl.addClass('fixed');
+                    }
+                    if ($conInf.is(':visible')) {
+                        $conInf.fadeOut();
+                        setCookie('hasUsedControls', true);
+                    }
+                } else {
+                    var toGo = $ins.eq(0).offset().top - $win.scrollTop();
+                    if (toGo > -1 && toGo < 226) {
+                        //console.log('toGo: ', toGo);
+                        if ($bl.hasClass('fixed')) {
+                            $bl.removeClass('fixed');
+                        }
+                        $bl.css({'bottom': -toGo});
+                    } else {
+                        //console.log('toGo ELSE: ', toGo);
+                        $bl.removeClass('fixed').removeAttr('style');
+                    }
+                    
+                    if ($bgImg.hasClass('fixed')) {
+                        $bgImg.removeClass('fixed');
+                    }
+                    if ($wh.hasClass('fixed')) {
+                        $wh.removeClass('fixed');
+                    }
+                    if ($bl.hasClass('fixed')) {
+                        $bl.removeClass('fixed').removeAttr('style');
+                    }
+                    $foot.removeClass('fixed');
+                    $smUlLi.removeClass('hilited');
+                    $bgImgImg.removeClass('activate');
+                    
+                    if (!onIpad() && !isIE8) {
+                        var $newT = $win.scrollTop() / 3.5;
+                        $hero.css({'top': -$newT});
+                    }
+                }
+            }
+        });*/
         
         $win.resize(function() {
             updateDimensions();
@@ -610,8 +669,7 @@ hpit.core = (function() {
     }
     
     function footerLock(element) {
-        $(window)
-        .bind('scroll', function() {
+        $(window).scroll($.throttle(250, function() {
             var currEle = element;
             var footerH = currEle.height();
 
@@ -633,16 +691,17 @@ hpit.core = (function() {
             } else {
                 hpit.config.footerInView = false;
             }
-        });
+        }));
     }
+
+    //var $win = $(window);
     
     function paneLock(element, index) {
         //console.log('paneLock: ', element);
         
-        $(window)
-        .bind('scroll', function() {
+        $(window).scroll($.throttle(250, function() {
 
-            //console.log('currInsight: ', hpit.config.currInsight);
+            //console.log('scrolling')
             
             var currEle = element;
             var currFixedEle = element.find('.marker');
@@ -753,7 +812,10 @@ hpit.core = (function() {
                 currEle.removeClass('current');
             }
         
-        });
+        }));
+		
+		//$(window).scroll( $.throttle( 250, function(){} ) );
+        //$(window).scroll(function(){console.log('scrolling')});
     
     }
     ; //End Function
