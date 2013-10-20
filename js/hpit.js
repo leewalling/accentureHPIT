@@ -391,9 +391,9 @@ hpit.core = (function() {
         // needed for fixing back button position
         if($(window).scrollTop() > 0){
         	//console.log('not at the top');
-        	//setTimeout(function(){
-	        	//window.scrollTo(0, 0);
-	        //}, 100);
+        	setTimeout(function(){
+	        	window.scrollTo(0, 0);
+	        }, 100);
         } else {
         	//console.log('already at the top');
         }
@@ -499,28 +499,6 @@ hpit.core = (function() {
 				FlashDownload($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis")
 			}
         });
-
-        /*SGS: removed this because the default code is sending link analyis data 
-        through the page view image request of the target page */
-        // track contact link click
-        /*$('.contact a').on('click', function(e) {
-            omniTrack({
-                eventLink: $(this).attr('href'),
-                eventName: 'Contact US – Top Nav',
-                eventType: 'linkanalysis'
-            });
-        });*/
-
-        /*SGS: removed this because the default code is sending link analyis data 
-        through the page view image request of the target page */
-        // track footer - "learn more" section link clicks
-        /*$('#footer .about a').on('click', function(e) {       
-            omniTrack({
-                eventLink: $(this).attr('href'),
-                eventName: 'Learn More - ' + $(this).text(),
-                eventType: 'linkanalysis'
-            });
-        });*/
         
         $('.bgImg').css({"opacity": 0});
         $('.bgImg[data-insight="1"]').css({"opacity": 1});
@@ -538,10 +516,21 @@ hpit.core = (function() {
         var $smUlLi 	= $('#sideMenu ul li');
 		var $hero		= $('.hero');
 		var $win		= $(window);
+		var $hasFired	= 0;
+		var $cntrlMess 	= getCookie('hasUsedControls');
 
         // Attach functionality to the native scroll function
         //$win.scroll($.throttle(250, function(event) {code goes here...}));
         $win.scroll(function(event) {
+
+        	// fade out the control message upon initial scroll
+        	if($hasFired == 0){
+        		//console.log('fire here!');
+        		if ($cntrlMess == undefined || $cntrlMess == null || $cntrlMess == '') {
+		            $conInf.fadeOut(2000);
+		        }
+        		$hasFired = 1;
+        	}
         	
         	// if the hero video exists remove it upon initial window scroll
             if ($theVid.length) {
@@ -562,10 +551,10 @@ hpit.core = (function() {
                     if (!$bl.hasClass('fixed')) {
                         $bl.addClass('fixed');
                     }
-                    if ($conInf.is(':visible')) {
+                    /*if ($conInf.is(':visible')) {
                         $conInf.fadeOut();
                         setCookie('hasUsedControls', true);
-                    }
+                    }*/
                 } else {
                     var toGo = $ins.eq(0).offset().top - $win.scrollTop();
                     if (toGo > -1 && toGo < 226) {
