@@ -1347,9 +1347,6 @@ img {
   	/*background-image:url("../images/icons-social.png");
 	background-repeat: no-repeat;*/
 }
-.social > .addthis_toolbox > a:last-child {
-	margin-right: 0 !important;
-}
 .social > .addthis_toolbox > a > img {
   	display: inline-block;
   	float: left;
@@ -1371,6 +1368,10 @@ img {
 .onMobile .social > .addthis_toolbox > a,
 .onIpad .social > .addthis_toolbox > a {
   	margin: 0 7px 0 0;
+}
+.social > .addthis_toolbox > a:last-child,
+.onIpad .social > .addthis_toolbox > a:last-child {
+	margin-right: 0 !important;
 }
 .social .linkedin {
   	background-position: 0 0;
