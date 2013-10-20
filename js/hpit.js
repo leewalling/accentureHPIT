@@ -397,6 +397,9 @@ hpit.core = (function() {
         } else {
         	//console.log('already at the top');
         }
+	
+		/* SGS */
+		overridePageView = true;
         
         if (isIE8) {
             //console.log('IS ie8');
@@ -481,12 +484,43 @@ hpit.core = (function() {
         });
 
         // track download link click
-        $('.download a,.download-link a').on('click', function(e) {
-        	if (onProduction()) {
-				FlashLinkAnalysis($(this).attr('href'), "download study - insight " + hpit.config.currInsight, "linkanalysis")
+        $('.download a').on('click', function(e) {
+            //FlashLinkAnalysis($(this).attr('href'), "download study:topnav", "linkanalysis") 
+			/* SGS: To trigger as download instead of normal link analysis data */ 
+			if (onProduction()) {
+				FlashDownload($(this).attr('href'), "download study:topnav", "linkanalysis")
 			}
-            
         });
+		
+		$('.download-link a').on('click', function(e) {
+            //FlashLinkAnalysis($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis")
+			/* SGS: To trigger as download instead of normal link analysis data */ 
+			if (onProduction()) {
+				FlashDownload($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis")
+			}
+        });
+
+        /*SGS: removed this because the default code is sending link analyis data 
+        through the page view image request of the target page */
+        // track contact link click
+        /*$('.contact a').on('click', function(e) {
+            omniTrack({
+                eventLink: $(this).attr('href'),
+                eventName: 'Contact US – Top Nav',
+                eventType: 'linkanalysis'
+            });
+        });*/
+
+        /*SGS: removed this because the default code is sending link analyis data 
+        through the page view image request of the target page */
+        // track footer - "learn more" section link clicks
+        /*$('#footer .about a').on('click', function(e) {       
+            omniTrack({
+                eventLink: $(this).attr('href'),
+                eventName: 'Learn More - ' + $(this).text(),
+                eventType: 'linkanalysis'
+            });
+        });*/
         
         $('.bgImg').css({"opacity": 0});
         $('.bgImg[data-insight="1"]').css({"opacity": 1});
@@ -506,7 +540,8 @@ hpit.core = (function() {
 		var $win		= $(window);
 
         // Attach functionality to the native scroll function
-        $win.scroll($.throttle(250, function(event) {
+        //$win.scroll($.throttle(250, function(event) {code goes here...}));
+        $win.scroll(function(event) {
         	
         	// if the hero video exists remove it upon initial window scroll
             if ($theVid.length) {
@@ -563,66 +598,7 @@ hpit.core = (function() {
                     }
                 }
             }
-        }));
-
-        /*$win.scroll(function(event) {
-        	
-        	// if the hero video exists remove it upon initial window scroll
-            if ($theVid.length) {
-                $vidWr.html('');
-            } else {
-            	//console.log('no video');
-            }
-            
-            if (!onMobile() && !onIpad()) {
-                // determine if we need to lock the background images in place
-                if ($win.scrollTop() > $ins.eq(0).offset().top - 1) { //$hero.outerHeight(true)
-                    if (!$bgImg.hasClass('fixed')) {
-                        $bgImg.addClass('fixed');
-                    }
-                    if (!$wh.hasClass('fixed')) {
-                        $wh.addClass('fixed');
-                    }
-                    if (!$bl.hasClass('fixed')) {
-                        $bl.addClass('fixed');
-                    }
-                    if ($conInf.is(':visible')) {
-                        $conInf.fadeOut();
-                        setCookie('hasUsedControls', true);
-                    }
-                } else {
-                    var toGo = $ins.eq(0).offset().top - $win.scrollTop();
-                    if (toGo > -1 && toGo < 226) {
-                        //console.log('toGo: ', toGo);
-                        if ($bl.hasClass('fixed')) {
-                            $bl.removeClass('fixed');
-                        }
-                        $bl.css({'bottom': -toGo});
-                    } else {
-                        //console.log('toGo ELSE: ', toGo);
-                        $bl.removeClass('fixed').removeAttr('style');
-                    }
-                    
-                    if ($bgImg.hasClass('fixed')) {
-                        $bgImg.removeClass('fixed');
-                    }
-                    if ($wh.hasClass('fixed')) {
-                        $wh.removeClass('fixed');
-                    }
-                    if ($bl.hasClass('fixed')) {
-                        $bl.removeClass('fixed').removeAttr('style');
-                    }
-                    $foot.removeClass('fixed');
-                    $smUlLi.removeClass('hilited');
-                    $bgImgImg.removeClass('activate');
-                    
-                    if (!onIpad() && !isIE8) {
-                        var $newT = $win.scrollTop() / 3.5;
-                        $hero.css({'top': -$newT});
-                    }
-                }
-            }
-        });*/
+        });
         
         $win.resize(function() {
             updateDimensions();
@@ -669,7 +645,8 @@ hpit.core = (function() {
     }
     
     function footerLock(element) {
-        $(window).scroll($.throttle(250, function() {
+        //$win.scroll($.throttle(250, function(event) {code goes here...}));
+        $(window).scroll(function() {
             var currEle = element;
             var footerH = currEle.height();
 
@@ -691,15 +668,13 @@ hpit.core = (function() {
             } else {
                 hpit.config.footerInView = false;
             }
-        }));
+        });
     }
-
-    //var $win = $(window);
     
     function paneLock(element, index) {
         //console.log('paneLock: ', element);
-        
-        $(window).scroll($.throttle(250, function() {
+        //$win.scroll($.throttle(250, function(event) {code goes here...}));
+        $(window).scroll(function() {
 
             //console.log('scrolling')
             
@@ -771,7 +746,7 @@ hpit.core = (function() {
                 $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited');
                 $('.bgImg[data-insight="' + menuItem + '"] img').addClass('activate');
                 
-                if (!hpit.config.locked && (hpit.config.currPageView != menuItem)) {
+                if (!hpit.config.locked && (hpit.config.currPageView >= menuItem)) {	/* SGS: changed to >= */ 
 					      clearInterval(trackPageViewDelay);
                      trackPageViewDelay = setTimeout(function() {
                         //console.log("Page View: " + menuItem);
@@ -812,10 +787,7 @@ hpit.core = (function() {
                 currEle.removeClass('current');
             }
         
-        }));
-		
-		//$(window).scroll( $.throttle( 250, function(){} ) );
-        //$(window).scroll(function(){console.log('scrolling')});
+        });
     
     }
     ; //End Function
@@ -939,6 +911,9 @@ hpit.core = (function() {
             var $th = $(this);
             var newNum;
             var newHash;
+			/* SGS */ 
+			var groupParam = $.getUrlVar('group');
+			var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
             
             $('.arrows').removeClass('noClick');
             
@@ -973,12 +948,14 @@ hpit.core = (function() {
                                 $th.addClass('noClick');
                             }
                         }
-                    }
-                    );
+                    });
                     if (onProduction()) {
-						FlashLinkAnalysis($(this).attr('href'), "Menu Up:Insight" + newNum, "linkanalysis");
-					}
-                    
+                        //hpit.config.locked = true;
+                        //FlashLinkAnalysis($(this).attr('href'), "Menu Up:insight" + newNum, "linkanalysis");
+                        //omniTrackPageView(newNum);
+                        /* SGS */
+                        FlashLinkAnalysis(targetPage, "Menu Up:insight" + newNum, "linkanalysis");
+                    }
                 }
             } else {
                 //console.log('cur: ', $cur);
@@ -986,6 +963,7 @@ hpit.core = (function() {
                 if ($cur < $('.insight').length) {
                     newNum = ($cur + 1);
                     //console.log('newNum: ' + newNum);
+                    //SGS: omniTrackPageView(newNum);
                     newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     
                     $(window).scrollTo(
@@ -1004,12 +982,13 @@ hpit.core = (function() {
                                 $th.addClass('noClick');
                             }
                         }
-                    }
-                    );
+                    });
                     if (onProduction()) {
-						FlashLinkAnalysis($(this).attr('href'), "Menu Down:Insight" + newNum, "linkanalysis");
-					}
-                    
+                        //FlashLinkAnalysis($(this).attr('href'), "Menu Down:insight" + newNum, "linkanalysis");
+                        /* SGS */
+                        FlashLinkAnalysis(targetPage, "Menu Down:insight" + newNum, "linkanalysis");
+                        //omniTrackPageView(newNum);
+                    }
                 } else {
                     //console.log('nothing there');
                     return false;
@@ -1033,13 +1012,12 @@ hpit.core = (function() {
                 $cont.show(0, function() {
                     $trgt.removeClass('open');
                 });
-            /*$cont.slideUp(500, function(){
+            	/*$cont.slideUp(500, function(){
 					$trgt.removeClass('open');
 				});*/
         		if (onProduction()) {
 					FlashLinkAnalysis('home:insight', "mobile:close", "linkanalysis");
 				}
-                
             } else {
                 $cont.hide(0, function() {
                     $trgt.addClass('open');
@@ -1050,7 +1028,6 @@ hpit.core = (function() {
         		if (onProduction()) {
 					FlashLinkAnalysis('home:insight', "mobile:open", "linkanalysis");
 				}
-                
             }
         });
     }
@@ -1272,8 +1249,20 @@ hpit.core = (function() {
 	}
 
 	function doOnMediaLoad(data) {
-	//console.log('Media Loaded: ', data);
-	}
+		var mTitle = "";
+		if (typeof this[playerId] !== 'undefined') {
+			mTitle = this[playerId].doGetCurrentMedia().title + ".mp4";
+		} else if (typeof DelvePlayer[playerId] !== 'undefined') {
+			mTitle = DelvePlayer[playerId].doGetCurrentMedia().title + ".mp4";
+		} else if (typeof document[playerId] !== 'undefined' && typeof document[playerId] !== 'function') {
+			mTitle = document[playerId].doGetCurrentMedia().title + ".mp4";
+		} else {
+			mTitle = playerId;
+		}
+		_delvePlayerMedia[playerId] = {mediaTitle: mTitle};
+		
+		//console.log('Media Loaded: ', data);
+    }
 
 	function doOnPlayStateChanged(data) {
 	    //console.log('player state: ', data);
@@ -1282,7 +1271,6 @@ hpit.core = (function() {
 	        if (onProduction()) {
 				FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis");
 			}
-	        
 	    }
 	}
 
@@ -1292,47 +1280,71 @@ hpit.core = (function() {
 	    //console.log('Playhead update: ', data.positionInMilliseconds +'/'+ data.durationInMilliseconds);
 	    
 	    switch (true) {
-	        case (currPos > 0 && currPos < hpit.config.chapters[2].position):
-	            hpit.config.currChap = 1;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[2].position && currPos < hpit.config.chapters[3].position):
-	            hpit.config.currChap = 2;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[3].position && currPos < hpit.config.chapters[4].position):
-	            hpit.config.currChap = 3;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[4].position && currPos < hpit.config.chapters[5].position):
-	            hpit.config.currChap = 4;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[5].position && currPos < hpit.config.chapters[6].position):
-	            hpit.config.currChap = 5;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[6].position && currPos < hpit.config.chapters[7].position):
-	            hpit.config.currChap = 6;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[7].position && currPos < hpit.config.chapters[8].position):
-	            hpit.config.currChap = 7;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[8].position && currPos < hpit.config.chapters[9].position):
-	            hpit.config.currChap = 8;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[9].position && currPos < hpit.config.chapters[10].position):
-	            hpit.config.currChap = 9;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	        case (currPos > hpit.config.chapters[10].position):
-	            hpit.config.currChap = 10;
-	            trackDelvePlayer("start", "limelight_player_239897", currPos);
-	            break;
-	    }
+            case (currPos == hpit.config.chapters[1].position):
+                hpit.config.currChap = 1;
+                trackSegmentDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+			case (currPos > (hpit.config.chapters[2].position - 300) && currPos < (hpit.config.chapters[2].position) ):
+				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);			
+				break;
+            case (currPos <= (hpit.config.chapters[2].position + 300) && currPos >= (hpit.config.chapters[2].position)):
+                hpit.config.currChap = 2;
+                trackSegmentDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+			case (currPos >= (hpit.config.chapters[3].position - 300) && currPos < (hpit.config.chapters[3].position) ):
+				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);
+				break;
+            case (currPos <= (hpit.config.chapters[3].position + 300) && currPos >= (hpit.config.chapters[3].position )):
+                hpit.config.currChap = 3;
+                trackSegmentDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+            case (currPos >= (hpit.config.chapters[4].position - 300) && currPos <(hpit.config.chapters[4].position) ):
+				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);
+				break;
+            case (currPos <= (hpit.config.chapters[4].position + 300) && currPos >= (hpit.config.chapters[4].position )):
+                hpit.config.currChap = 4;
+                trackSegmentDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+			case (currPos >= (hpit.config.chapters[5].position - 300) && currPos < (hpit.config.chapters[5].position) ):
+				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);
+				break;
+            case (currPos <= (hpit.config.chapters[5].position + 300) && currPos >= (hpit.config.chapters[5].position )):
+                hpit.config.currChap = 5;
+                trackSegmentDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+			case (currPos >= (hpit.config.chapters[6].position - 300) && currPos < (hpit.config.chapters[6].position) ):
+				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);
+				break;
+            case (currPos <= (hpit.config.chapters[6].position + 300) && currPos >= (hpit.config.chapters[6].position )):
+                hpit.config.currChap = 6;
+                trackSegmentDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+            case (currPos >= (hpit.config.chapters[7].position - 300) && currPos < (hpit.config.chapters[7].position) ):
+				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);
+				break;
+            case (currPos <= (hpit.config.chapters[7].position + 300) && currPos >= (hpit.config.chapters[7].position )):
+                hpit.config.currChap = 7;
+                trackSegmentDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+            case (currPos >= (hpit.config.chapters[8].position - 300) && currPos < (hpit.config.chapters[8].position) ):
+				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);
+				break;
+            case (currPos <= (hpit.config.chapters[8].position + 300) && currPos >= (hpit.config.chapters[8].position )):
+                hpit.config.currChap = 8;
+                trackSegmentDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+			case ( currPos > (hpit.config.chapters[8].position + 50000) ):
+				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);
+				break;
+            /*case (currPos > hpit.config.chapters[9].position && currPos < hpit.config.chapters[10].position):
+                hpit.config.currChap = 9;
+                trackDelvePlayer("start", "limelight_player_239897", currPos);
+                break;
+            case (currPos > hpit.config.chapters[10].position):
+                hpit.config.currChap = 10;
+                trackDelvePlayer("start", "limelight_player_239897", currPos);
+                break;*/
+        }
 	    //console.log('active: '+ hpit.config.activeChap +' | curr: ' + hpit.config.currChap);
 	    //hpit.config.activeChap
 	    
@@ -1368,6 +1380,44 @@ hpit.core = (function() {
 	    $('#ll-overlay .chapters .topRow a').removeClass('active');
 	    hpit.config.activeChap = 0;
 	    hpit.config.currChap = 0;
+	}
+	
+	function trackSegmentDelvePlayer(milestone, playerId, _timePositionSeconds) {
+		switch (milestone) {
+			case 'start':
+				var eventsValue = "event51=" + Math.floor(_timePositionSeconds);
+				eventsValue = "event6,event54," + eventsValue;
+				if (_timePositionSeconds <= 100) {
+				eventsValue = "event52," + eventsValue;
+				var e51 = "event6,event54,event51,event52";
+				}
+				else {var e51 = "event6,event54,event51";}		
+				var e49 = "1:M:0-25";
+				break;
+			case 'complete':
+				var eventsValue = "event51=" + Math.floor(_timePositionSeconds);
+				eventsValue = "event53,event70," + eventsValue;
+				if (_timePositionSeconds > 354000) {
+				eventsValue = "event54," + eventsValue;
+				var e51 = "event53,event70,event51,event54";
+				}
+				else {var e51 = "event53,event70,event51";}		
+				var e49 = "2:M:75-100";
+				break;
+		}
+		window.s.linkTrackVars = window.s.apl(window.s.linkTrackVars, "eVar16", ",", 1);
+		window.s.linkTrackVars = window.s.apl(window.s.linkTrackVars, "eVar49", ",", 1);
+		window.s.linkTrackVars = window.s.apl(window.s.linkTrackVars, "eVar33", ",", 1);
+		window.s.linkTrackVars = window.s.apl(window.s.linkTrackVars, "events", ",", 1);
+		window.s.linkTrackEvents = e51;
+		window.s.events = eventsValue;
+		window.s.eVar49 = e49;
+		window.s.eVar33 = "video";
+		window.s.eVar16 = _delvePlayerMedia[playerId].mediaTitle;		//SGS 
+		SetPageConversionVariable("media");
+		LowerCaseVars();
+		window.s.tl(this, 'o', 'delveMedia');
+		clearVideoVarsEvents();
 	}
 
     // video player
@@ -1556,8 +1606,7 @@ hpit.core = (function() {
                 if (th.hasClass("closeX")) {
                 	if (onProduction()) {
 						FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
-					}   
-                	
+					}
                 }
             } else {
                 $target.animate({"right": "0px"}, "normal");
@@ -1566,7 +1615,6 @@ hpit.core = (function() {
                 	if (onProduction()) {
 						FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
 					}
-                	
                 }
             }
         });
@@ -1590,7 +1638,6 @@ hpit.core = (function() {
             if (onProduction()) {
 				FlashLinkAnalysis("mobile", "menu-toggle", "linkanalysis");
 			}
-            
         });
         //$('.navbar-toggle')
         //.attr('data-toggle','collapse')
