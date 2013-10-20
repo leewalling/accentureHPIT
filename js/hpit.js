@@ -476,13 +476,15 @@ hpit.core = (function() {
         var validHashValue = false;
         
         footerLock($('#footer'));
-        
+         
+         /* 
         $('.insight').each(function(index) {
             if (!onMobile() && !onIpad()) {
                 paneLock($(this), index);
             }
         });
-
+         */   
+      
         // track download link click
         $('.download a').on('click', function(e) {
             //FlashLinkAnalysis($(this).attr('href'), "download study:topnav", "linkanalysis") 
