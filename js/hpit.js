@@ -713,7 +713,7 @@ hpit.core = (function() {
                 var scH = parseInt(hpit.config.scrH);
                 var $per = diff / scH;
                 
-                //if we are not on ie then lets change opacity on scroll
+                //XXX if we are not on ie then lets change opacity on scroll
                 if (!hpit.config.isIE) {
                    if (diff >= -1 && diff < scH + 1) {
                         $('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
@@ -727,12 +727,16 @@ hpit.core = (function() {
                   // if we are on ie and we've reached the top of the scroll then switch images, we aren't changing opacity on scroll
                   if ($per >= 1) {
                      if (diff >= -1 && diff < scH + 1) {
-                        if ($('.bgImg[data-insight="' + index + '"]').css("opacity") == 1)
+                        if ($('.bgImg[data-insight="' + index + '"]').css("opacity") == 1) {
+                           $('.bgImg[data-insight="' + index + '"]').css({"zoom": 1});
                            $('.bgImg[data-insight="' + index + '"]').css({"opacity": 0});
+                        }
                      } 
                      else {
-                        if ($('.insight .insightTitle').css("opacity") == 0)
+                        if ($('.insight .insightTitle').css("opacity") == 0) {
+                           $('.insight .insightTitle').css({"zoom": 1});
                            $('.insight .insightTitle').css({"opacity": 1});
+                        }
                      }
                   }
                 } 
