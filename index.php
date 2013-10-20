@@ -158,7 +158,7 @@
 						<span class="heading">Why it's important</span>
 						<span>High performers have moved beyond internally focused objectives like cost and productivity. The new bulls-eye is the customer experience.</span>
 						<div class="the-video">
-							<a href="#insight1" rel="articles"><img src="images/video-THUMBS-1.jpg" /><span><img src="images/ie8-bg-circle-arrow-1.png" /></span></a>
+							<a href="#insight1" rel="articles"><img src="images/video-THUMBS-1.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-1" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -168,8 +168,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_1.png" alt="How IT can improve the customer experience" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers business objectives</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-1.png" /></span><span class="txt"><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogues with key customers.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-1.png" /></span><span class="txt"><strong>Building relationships. </strong>Both marketing and sales get a boost by giving potential customers what they want and listening to what current customers have to say.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-1" /><![endif]--></span><span class="txt"><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogues with key customers.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-1" /><![endif]--></span><span class="txt"><strong>Building relationships. </strong>Both marketing and sales get a boost by giving potential customers what they want and listening to what current customers have to say.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -202,7 +202,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Global competition means that exploring business scenarios&mdash;economic, geopolitical, social and more&mdash;is absolutely crucial to IT planning.</span>
 						<div class="the-video">
-							<a href="#insight2" rel="articles"><img src="images/video-THUMBS-2.jpg" /><span><img src="images/ie8-bg-circle-arrow-2.png" /></span></a>
+							<a href="#insight2" rel="articles"><img src="images/video-THUMBS-2.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-2" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -212,8 +212,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_2.png" alt="CIOs investment strategy for delivering strategic capabilities" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-2.png" /></span><span class="txt"><strong>Measuring their investment using business metrics. </strong>They expect to see those measures improving in the next year.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-2.png" /></span><span class="txt"><strong>Enhancing their reputations. </strong>High-performing IT leaders who regularly apply business metrics tend to stay in their positions longer, which means they demonstrate success&mdash;and raise their profiles among their peers&mdash;over the long term.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-2" /><![endif]--></span><span class="txt"><strong>Measuring their investment using business metrics. </strong>They expect to see those measures improving in the next year.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-2" /><![endif]--></span><span class="txt"><strong>Enhancing their reputations. </strong>High-performing IT leaders who regularly apply business metrics tend to stay in their positions longer, which means they demonstrate success&mdash;and raise their profiles among their peers&mdash;over the long term.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -246,7 +246,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Many CIOs are still troubleshooting and fixing problems instead of finding and acting on ways to create value. High performers seek out and invest in new ways that IT can deliver on business strategy and create new opportunities.</span>
 						<div class="the-video">
-							<a href="#insight3" rel="articles"><img src="images/video-THUMBS-3.jpg" /><span><img src="images/ie8-bg-circle-arrow-3.png" /></span></a>
+							<a href="#insight3" rel="articles"><img src="images/video-THUMBS-3.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-3" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -256,8 +256,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_3.png" alt="Investigating global competition should inform the IT planning process" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-3.png" /></span><span class="txt"><strong>Tackling new projects. </strong>They allocate 7% more of their IT budgets to new projects than other organizations do.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-3.png" /></span><span class="txt"><strong>Adopting early. </strong>They're not waiting for technologies to mature before they act.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-3" /><![endif]--></span><span class="txt"><strong>Tackling new projects. </strong>They allocate 7% more of their IT budgets to new projects than other organizations do.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-3" /><![endif]--></span><span class="txt"><strong>Adopting early. </strong>They're not waiting for technologies to mature before they act.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -290,7 +290,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Legacy systems drag down performance and tie up valuable resources. Simpler, streamlined application portfolios are weightless by comparison, and let companies move fast and flex easily.</span>
 						<div class="the-video">
-							<a href="#insight4" rel="articles"><img src="images/video-THUMBS-4.jpg" /><span><img src="images/ie8-bg-circle-arrow-4.png" /></span></a>
+							<a href="#insight4" rel="articles"><img src="images/video-THUMBS-4.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-4" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -300,8 +300,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_4.png" alt="Moving data to the cloud can improve performance" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-4.png" /></span><span class="txt"><strong>Getting the outcomes they want. </strong>Almost half are seeing measurable improvements in agility, and 69% say their architecture transformations have led to cost reductions.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-4.png" /></span><span class="txt"><strong>Weaving together cloud capabilities. </strong>They're blending public and private cloud elements together in ways that always keep business value top of mind.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-4" /><![endif]--></span><span class="txt"><strong>Getting the outcomes they want. </strong>Almost half are seeing measurable improvements in agility, and 69% say their architecture transformations have led to cost reductions.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-4" /><![endif]--></span><span class="txt"><strong>Weaving together cloud capabilities. </strong>They're blending public and private cloud elements together in ways that always keep business value top of mind.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -334,7 +334,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Digital is about much more than smart devices. It's driving how products are designed and produced, how transactions are created and managed,  how collaboration happens, and how relationships are formed.</span>
 						<div class="the-video">
-							<a href="#insight5" rel="articles"><img src="images/video-THUMBS-5.jpg" /><span><img src="images/ie8-bg-circle-arrow-5.png" /></span></a>
+							<a href="#insight5" rel="articles"><img src="images/video-THUMBS-5.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-5" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -344,8 +344,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_5.png" alt="Experimenting and learning digital is important to high performing CIOs" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-5.png" /></span><span class="txt"><strong>Rolling out digital across their business. </strong>Rolling out digital across their business. The knowledge they've gleaned from early experiences with digital gives them critical insights into how digital technologies can support other parts of their business.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-5.png" /></span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will revolutionize their business.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-5" /><![endif]--></span><span class="txt"><strong>Rolling out digital across their business. </strong>Rolling out digital across their business. The knowledge they've gleaned from early experiences with digital gives them critical insights into how digital technologies can support other parts of their business.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-5" /><![endif]--></span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will revolutionize their business.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -378,7 +378,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Breaking down barriers to self-service means that employees, suppliers, and even customers can help drive innovation, generate insights and probe new markets. They're no longer just "service tickets."</span>
 						<div class="the-video">
-							<a href="#insight6" rel="articles"><img src="images/video-THUMBS-6.jpg" /><span><img src="images/ie8-bg-circle-arrow-6.png" /></span></a>
+							<a href="#insight6" rel="articles"><img src="images/video-THUMBS-6.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-6" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -388,8 +388,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_6.png" alt="High performers are leading the way in leveraging agile and iterative methodologies" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-6.png" /></span><span class="txt"><strong>Embracing B.Y.O.D. </strong>"Bring Your Own Device" is a creed that adds creativity as well as productivity.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-6.png" /></span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Rather than wait for responses to service requests today's fickle customers can often service their own needs better.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-6" /><![endif]--></span><span class="txt"><strong>Embracing B.Y.O.D. </strong>"Bring Your Own Device" is a creed that adds creativity as well as productivity.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-6" /><![endif]--></span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Rather than wait for responses to service requests today's fickle customers can often service their own needs better.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -422,7 +422,7 @@
 						<span class="heading">Why it's important</span>
 						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that generate actionable outcomes&mdash;and competitive advantage.</span>
 						<div class="the-video">
-							<a href="#insight7" rel="articles"><img src="images/video-THUMBS-7.jpg" /><span><img src="images/ie8-bg-circle-arrow-7.png" /></span></a>
+							<a href="#insight7" rel="articles"><img src="images/video-THUMBS-7.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-7" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -432,8 +432,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_7.png" alt="Organizations who embed real-time analytics-based decision-making tools into business processes have the competitive advantage" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-7.png" /></span><span class="txt"><strong>Becoming sophisticated data sources. </strong>They're investing in analytics to get better at capturing data and extracting valuable insights from it.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-7.png" /></span><span class="txt"><strong>Finding their focus. </strong>They're working to locate "insight gaps"&mdash;that is, blind spots that can obscure their business strategies.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-7" /><![endif]--></span><span class="txt"><strong>Becoming sophisticated data sources. </strong>They're investing in analytics to get better at capturing data and extracting valuable insights from it.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-7" /><![endif]--></span><span class="txt"><strong>Finding their focus. </strong>They're working to locate "insight gaps"&mdash;that is, blind spots that can obscure their business strategies.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -466,7 +466,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Volatility in markets, partner engagements and business models can create new opportunities&mdash;as long as your organization is nimble enough to respond.</span>
 						<div class="the-video">
-							<a href="#insight8" rel="articles"><img src="images/video-THUMBS-8.jpg" /><span><img src="images/ie8-bg-circle-arrow-8.png" /></span></a>
+							<a href="#insight8" rel="articles"><img src="images/video-THUMBS-8.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-8" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -476,8 +476,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_8.png" alt="Customer, supplier and employee interactions are increasingly self-service for high performers" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-8.png" /></span><span class="txt"><strong>Trimming their application portfolios. </strong>Streamlining applications means many more staff are freed up to work on strategic imperatives.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-8.png" /></span><span class="txt"><strong>Moving beyond the monolith. </strong>They're working incrementally and making changes "in flight" rather than committing time and resources to large-scale rollouts that can put operations on hold.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-8" /><![endif]--></span><span class="txt"><strong>Trimming their application portfolios. </strong>Streamlining applications means many more staff are freed up to work on strategic imperatives.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-8" /><![endif]--></span><span class="txt"><strong>Moving beyond the monolith. </strong>They're working incrementally and making changes "in flight" rather than committing time and resources to large-scale rollouts that can put operations on hold.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -510,7 +510,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Innovation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look inside and outside of their companies to fill needs and plug knowledge gaps.</span>
 						<div class="the-video">
-							<a href="#insight9" rel="articles"><img src="images/video-THUMBS-9.jpg" /><span><img src="images/ie8-bg-circle-arrow-9.png" /></span></a>
+							<a href="#insight9" rel="articles"><img src="images/video-THUMBS-9.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-9" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -520,8 +520,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_9.png" alt="High performance CIOs invest in new skills and talents through hiring innovative partners" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-9.png" /></span><span class="txt"><strong>Emphasizing communication skills. </strong>Today's collaborative workforce requires team members who can understand business needs, relate to colleagues in other departments, and adapt to changing technologies.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-9.png" /></span><span class="txt"><strong>Becoming comfortable with fluidity. </strong>Full-time staffers are not the only answer since much of today's talent not only accepts but expects constant change.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-9" /><![endif]--></span><span class="txt"><strong>Emphasizing communication skills. </strong>Today's collaborative workforce requires team members who can understand business needs, relate to colleagues in other departments, and adapt to changing technologies.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-9" /><![endif]--></span><span class="txt"><strong>Becoming comfortable with fluidity. </strong>Full-time staffers are not the only answer since much of today's talent not only accepts but expects constant change.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
@@ -554,7 +554,7 @@
 						<span class="heading">Why it's important</span>
 						<span>More and more organizations are finding their risk profiles defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities. It's essential to protect the digital assets within.</span>
 						<div class="the-video">
-							<a href="#insight10" rel="articles"><img src="images/video-THUMBS-10.jpg" /><span><img src="images/ie8-bg-circle-arrow-10.png" /></span></a>
+							<a href="#insight10" rel="articles"><img src="images/video-THUMBS-10.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-10" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -564,8 +564,8 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_10.png" alt="High performers have expanded the scope of their security and risk management functions" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><img src="images/ie8-bg-circle-10.png" /></span><span class="txt"><strong>Moving to active defense.  </strong>It's not yet happening on a broad scale, but high performers are making the right moves to stay a step or three ahead of attackers.</span></span>
-						<span class="tr last"><span class="num"><span class="txt">2</span><img src="images/ie8-bg-circle-10.png" /></span><span class="txt"><strong>Attributing business value to security. </strong>They're actively tracking actual outcomes of incidents and breaches and measuring the impact on the overall business.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-10" /><![endif]--></span><span class="txt"><strong>Moving to active defense.  </strong>It's not yet happening on a broad scale, but high performers are making the right moves to stay a step or three ahead of attackers.</span></span>
+						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-10" /><![endif]--></span><span class="txt"><strong>Attributing business value to security. </strong>They're actively tracking actual outcomes of incidents and breaches and measuring the impact on the overall business.</span></span>
 						</div>
 						<div class="no-border download-link">
 							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>

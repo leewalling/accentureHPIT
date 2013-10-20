@@ -72,45 +72,6 @@
 .ie8 .insight .content {
 	margin-top: 0px;
 }
-.ie8 .insight .marker {
-	top: 0px !important;
-	width:150px;
-	height:202px;
-	line-height:202px;
-	background-color: transparent !important;
-	background-repeat: no-repeat;
-	background-position: top right;
-}
-.ie8 .insight[data-insight="1"] .marker {
-	background-image:url("../images/ie8-bg-marker1.png");
-}
-.ie8 .insight[data-insight="2"] .marker {
-	background-image:url("../images/ie8-bg-marker2.png");
-}
-.ie8 .insight[data-insight="3"] .marker {
-	background-image:url("../images/ie8-bg-marker3.png");
-}
-.ie8 .insight[data-insight="4"] .marker {
-	background-image:url("../images/ie8-bg-marker4.png");
-}
-.ie8 .insight[data-insight="5"] .marker {
-	background-image:url("../images/ie8-bg-marker5.png");
-}
-.ie8 .insight[data-insight="6"] .marker {
-	background-image:url("../images/ie8-bg-marker6.png");
-}
-.ie8 .insight[data-insight="7"] .marker {
-	background-image:url("../images/ie8-bg-marker7.png");
-}
-.ie8 .insight[data-insight="8"] .marker {
-	background-image:url("../images/ie8-bg-marker8.png");
-}
-.ie8 .insight[data-insight="9"] .marker {
-	background-image:url("../images/ie8-bg-marker9.png");
-}
-.ie8 .insight[data-insight="10"] .marker {
-	background-image:url("../images/ie8-bg-marker10.png");
-}
 .ie8 .insight .content .right-col > div.with-video .the-video > a > span {
 	background-color: transparent !important;
 	background-image: none;
@@ -167,4 +128,68 @@
 	/*background-image: url("../images/transpBlue50.png");*/
 	left: -200px;
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff');
+}
+
+/* SPRITESHEET */
+.ie8sprite {
+    background: url("../images/ie8sprites.png") no-repeat top left;
+}
+.ie8-bg-circle-1{ background-position: 0 0; width: 46px; height: 46px; } 
+.ie8-bg-circle-10{ background-position: 0 -51px; width: 46px; height: 46px; } 
+.ie8-bg-circle-2{ background-position: 0 -102px; width: 46px; height: 46px; } 
+.ie8-bg-circle-3{ background-position: 0 -153px; width: 46px; height: 46px; } 
+.ie8-bg-circle-4{ background-position: 0 -204px; width: 46px; height: 46px; } 
+.ie8-bg-circle-5{ background-position: 0 -255px; width: 46px; height: 46px; } 
+.ie8-bg-circle-6{ background-position: 0 -306px; width: 46px; height: 46px; } 
+.ie8-bg-circle-7{ background-position: 0 -357px; width: 46px; height: 46px; } 
+.ie8-bg-circle-8{ background-position: 0 -408px; width: 46px; height: 46px; } 
+.ie8-bg-circle-9{ background-position: 0 -459px; width: 46px; height: 46px; } 
+.ie8-bg-circle-arrow-1{ background-position: 0 -510px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-10{ background-position: 0 -549px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-2{ background-position: 0 -588px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-3{ background-position: 0 -627px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-4{ background-position: 0 -666px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-5{ background-position: 0 -705px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-6{ background-position: 0 -744px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-7{ background-position: 0 -783px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-8{ background-position: 0 -822px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-9{ background-position: 0 -861px; width: 34px; height: 34px; } 
+
+.ie8 .insight .marker {
+	top: 0px !important;
+	width:150px;
+	height:202px;
+	line-height:202px;
+	background-color: transparent !important;
+	background: url("../images/ie8sprites.png") no-repeat top left;
+}
+.ie8 .insight[data-insight="1"] .marker {
+	background-position: 0 -900px;
+}
+.ie8 .insight[data-insight="2"] .marker {
+	background-position: 0 -1314px;
+}
+.ie8 .insight[data-insight="3"] .marker {
+	background-position: 0 -1521px;
+}
+.ie8 .insight[data-insight="4"] .marker {
+	background-position: 0 -1728px;
+}
+.ie8 .insight[data-insight="5"] .marker {
+	background-position: 0 -1935px;
+}
+.ie8 .insight[data-insight="6"] .marker {
+	background-position: -155px 0;
+}
+.ie8 .insight[data-insight="7"] .marker {
+	background-position: -155px -207px;
+}
+.ie8 .insight[data-insight="8"] .marker {
+	background-position: -155px -414px;
+}
+.ie8 .insight[data-insight="9"] .marker {
+	background-position: -155px -621px;
+}
+.ie8 .insight[data-insight="10"] .marker {
+	background-position: 0 -1107px;
 }
