@@ -1369,6 +1369,10 @@ img {
 .onIpad .social > .addthis_toolbox > a {
   	margin: 0 7px 0 0;
 }
+.onMobile .social > .addthis_toolbox > a:last-child,
+.onIpad .social > .addthis_toolbox > a:last-child {
+  	margin-right: 0 !important;
+}
 .social > .addthis_toolbox > a:last-child,
 .onIpad .social > .addthis_toolbox > a:last-child {
 	margin-right: 0 !important;
@@ -2717,8 +2721,8 @@ and (max-device-width : 1024px)
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
-	  	padding-left: 12px;
-	  	padding-right: 0;
+	  	padding-left: 12px !important;
+	  	padding-right: 0 !important;
 	}
 }
 
@@ -2729,8 +2733,8 @@ and (max-device-width : 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
-	  	padding-left: 30px;
-	  	padding-right: 0;
+	  	padding-left: 0 !important;
+	  	padding-right: 0 !important;
 	}
 }
 
