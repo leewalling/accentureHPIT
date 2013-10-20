@@ -708,12 +708,14 @@ hpit.core = (function() {
                 
                 var scH = parseInt(hpit.config.scrH);
                 var $per = diff / scH;
+                /*
                 if (diff >= -1 && diff < scH + 1) {
                     $('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
                 //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
                 } else {
                     $('.insight .insightTitle').css({"opacity": 1});
                 }
+                */
             }
 
             // is the element in the viewport?
