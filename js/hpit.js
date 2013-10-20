@@ -476,13 +476,15 @@ hpit.core = (function() {
         var validHashValue = false;
         
         footerLock($('#footer'));
-        
+         
+         /* 
         $('.insight').each(function(index) {
             if (!onMobile() && !onIpad()) {
                 paneLock($(this), index);
             }
         });
-
+         */   
+      
         // track download link click
         $('.download a').on('click', function(e) {
             //FlashLinkAnalysis($(this).attr('href'), "download study:topnav", "linkanalysis") 
@@ -708,12 +710,14 @@ hpit.core = (function() {
                 
                 var scH = parseInt(hpit.config.scrH);
                 var $per = diff / scH;
+                /*
                 if (diff >= -1 && diff < scH + 1) {
                     $('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
                 //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
                 } else {
                     $('.insight .insightTitle').css({"opacity": 1});
                 }
+                */
             }
 
             // is the element in the viewport?
