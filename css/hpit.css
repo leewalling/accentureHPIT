@@ -2710,6 +2710,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.onMobile .hero.left > div.inner h3 {
 		margin: 0;
 		width: 85%;
+	}	
+	.insight .content .right-col > div {
+		font-size: 18px;
+		line-height: 22px;
 	}
 }
 
