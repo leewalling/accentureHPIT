@@ -2647,6 +2647,20 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		background: silver;
 	}
 	*/
+	.onIpad .navbar-nav > li .social {
+	  	padding: 19px 8px;
+	}
+	.onIpad .social > .addthis_toolbox {
+	  	height: 23px;
+	}
+	.onIpad .social > .addthis_toolbox > a,
+	.onIpad .social > .addthis_toolbox > a > img {
+	  	width: 23px;
+		height: 23px;
+	}
+	.container > .navbar-collapse {
+		width: 80% !important;
+	}
 	.insight .insightTitle,
 	.onMobile .insightTitle {
 		left: 180px;
