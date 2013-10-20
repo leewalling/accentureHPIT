@@ -1347,6 +1347,9 @@ img {
   	/*background-image:url("../images/icons-social.png");
 	background-repeat: no-repeat;*/
 }
+.social > .addthis_toolbox > a:last-child {
+	margin-right: 0 !important;
+}
 .social > .addthis_toolbox > a > img {
   	display: inline-block;
   	float: left;
@@ -2714,10 +2717,8 @@ and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
 	  	padding-left: 12px;
-	  	background-color: pink;
-	}
-	.social.inHeader > .addthis_toolbox > a:last-child {
-		margin-right: 0;
+	  	padding-right: 0;
+	  	background-color: red;
 	}
 }
 
@@ -2728,8 +2729,7 @@ and (max-device-width : 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
-	  	padding-left: 25px;
-	  	background-color: blue;
+	  	padding-left: 30px;
 	}
 }
 
