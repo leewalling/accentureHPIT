@@ -2718,7 +2718,8 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
 	  	padding-left: 0 !important;
 	  	padding-right: 0 !important;
-	  	background-color: pink;
+	  	width: 84%;
+	  	right: 8%;
 	}
 }
 
@@ -2731,7 +2732,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
 	  	padding-left: 0 !important;
 	  	padding-right: 0 !important;
-	  	background-color: beige;
 	  	width: 73%;
 	  	right: 12%;
 	}
