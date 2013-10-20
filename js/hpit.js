@@ -45,6 +45,7 @@ hpit.config = {
     desktopORtouch: 'desktop',
     footerInView: false,
     isIE7: false,
+    isIE: false,
     easing: 'easeOutExpo',
     duration: {
         backToTop: 2000,
@@ -470,21 +471,22 @@ hpit.core = (function() {
         // Initialize event handler for social links
         socialLinksInit();
 
+        //check if the user is on IE
+        hpit.config.isIE = navigator.userAgent.toLowerCase().indexOf("msie") != -1;
+
         // check if the user is on IE7
         hpit.config.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
         
         var validHashValue = false;
         
         footerLock($('#footer'));
-         
-         /* 
-        $('.insight').each(function(index) {
-            if (!onMobile() && !onIpad()) {
-                paneLock($(this), index);
-            }
-        });
-         */   
-      
+        
+        if (!hpit.config.isIE && !onMobile() && !onIpad()) {
+           $('.insight').each(function(index) {
+               paneLock($(this), index);
+           });
+        }
+
         // track download link click
         $('.download a').on('click', function(e) {
             //FlashLinkAnalysis($(this).attr('href'), "download study:topnav", "linkanalysis") 
@@ -710,14 +712,30 @@ hpit.core = (function() {
                 
                 var scH = parseInt(hpit.config.scrH);
                 var $per = diff / scH;
-                /*
-                if (diff >= -1 && diff < scH + 1) {
-                    $('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
-                //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
-                } else {
-                    $('.insight .insightTitle').css({"opacity": 1});
+                
+                //if we are not on ie then lets change opacity on scroll
+                if (!hpit.config.isIE) {
+                   if (diff >= -1 && diff < scH + 1) {
+                        $('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
+                       //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
+                   } 
+                   else {
+                       $('.insight .insightTitle').css({"opacity": 1});
+                   }
                 }
-                */
+                else {
+                  // if we are on ie and we've reached the top of the scroll then switch images, we aren't changing opacity on scroll
+                  if ($per >= 1) {
+                     if (diff >= -1 && diff < scH + 1) {
+                        if ($('.bgImg[data-insight="' + index + '"]').css("opacity") == 1)
+                           $('.bgImg[data-insight="' + index + '"]').css({"opacity": 0});
+                     } 
+                     else {
+                        if ($('.insight .insightTitle').css("opacity") == 0)
+                           $('.insight .insightTitle').css({"opacity": 1});
+                     }
+                  }
+                } 
             }
 
             // is the element in the viewport?
