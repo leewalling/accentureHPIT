@@ -2714,7 +2714,10 @@ and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
 	  	padding-left: 12px;
-	  	background-color: green;
+	  	background-color: pink;
+	}
+	.social.inHeader > .addthis_toolbox > a:last-child {
+		margin-right: 0;
 	}
 }
 
@@ -2725,8 +2728,8 @@ and (max-device-width : 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 1)  {
 	.onIpad .navbar-nav > li .social.inHeader {
-	  	padding-left: 20px;
-	  	background-color: red;
+	  	padding-left: 25px;
+	  	background-color: blue;
 	}
 }
 
