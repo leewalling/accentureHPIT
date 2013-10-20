@@ -797,12 +797,17 @@ hpit.core = (function() {
             }
     }
 
+    function hello(element, index) {
+    
+    }
+
     function paneLock() {
         //console.log('paneLock: ', element);
         //$win.scroll($.throttle(250, function(event) {code goes here...}));
         $(window).scroll(function() {
             $('.insight').each(function(index) {
-               paneLockTest($(this), index);
+               hello($(this), index);           
+               //paneLockTest($(this), index);
            });
         });
     }
