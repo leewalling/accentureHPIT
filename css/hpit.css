@@ -2341,8 +2341,14 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		font-size: 16px !important;
 		line-height: 20px;
 	}
+	#footer {
+		background-color: #000;
+		background-image: none;
+		padding: 25px;
+	}
 	#footer > div {
-		width: 500px;
+		margin: 0;
+		width: 100%;
 	}
 	#footer .about,
 	#footer .legal,
