@@ -391,9 +391,9 @@ hpit.core = (function() {
         // needed for fixing back button position
         if($(window).scrollTop() > 0){
         	//console.log('not at the top');
-        	setTimeout(function(){
-	        	window.scrollTo(0, 0);
-	        }, 100);
+        	//setTimeout(function(){
+	        	//window.scrollTo(0, 0);
+	        //}, 100);
         } else {
         	//console.log('already at the top');
         }
