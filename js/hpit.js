@@ -661,158 +661,135 @@ hpit.core = (function() {
             }
         });
     }
-    
-    function paneLockTest(element, index) {
-            //console.log('scrolling' + index);
-            
-            var currEle = element;
-            var currFixedEle = element.find('.marker');
-            var bgPxToMove = 25;
-            
-            if (currFixedEle.length <= 0) {
-                return false;
-            }
-
-            // Viewport
-            var vpStart = currEle.offset().top - 1; // - 62
-            var vpEnd = vpStart + currEle.height();
-            
-            var currEleEnd = currEle.height();
-            var currEleHgt = currEle.height();
-
-            // scroll offset
-            var winOffset = $(window).scrollTop();
-            //console.log('winOffset:',winOffset);
-            
-            if (index === parseInt(hpit.config.currInsight)) { // && vpStart > winOffset
-                var currEleTitle = $('.insight[data-insight="' + index + '"] .insightTitle');
-                if (currEleTitle.hasClass('lockedBottom')) {
-                    currEleTitle.removeClass('lockedBottom');
-                }
-                var titleEnd = parseInt(currEleTitle.css('top')) + currEleTitle.height() + 75;
-                
-                var diff = vpStart - winOffset;
-                //console.log('diff:', diff);
-                
-                if (diff < titleEnd) {
-                    if (!currEleTitle.hasClass('lockedBottom')) {
-                        currEleTitle.addClass('lockedBottom');
-                    }
-                } /* else {
-						if(currEleTitle.hasClass('lockedBottom')){
-							currEleTitle.removeClass('lockedBottom');
-						}
-					}*/
-                
-                var scH = parseInt(hpit.config.scrH);
-                var $per = diff / scH;
-                
-                //XXX if we are not on ie then lets change opacity on scroll
-                if (!hpit.config.isIE) {
-                   if (diff >= -1 && diff < scH + 1) {
-                        $('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
-                       //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
-                   } 
-                   else {
-                       $('.insight .insightTitle').css({"opacity": 1});
-                   }
-                }
-                else {
-                  // if we are on ie and we've reached the top of the scroll then switch images, we aren't changing opacity on scroll
-                  if ($per >= 1) {
-                     if (diff >= -1 && diff < scH + 1) {
-                        if ($('.bgImg[data-insight="' + index + '"]').css("opacity") == 1) {
-                           $('.bgImg[data-insight="' + index + '"]').css({"zoom": 1});
-                           $('.bgImg[data-insight="' + index + '"]').css({"opacity": 0});
-                        }
-                     } 
-                     else {
-                        if ($('.insight .insightTitle').css("opacity") == 0) {
-                           $('.insight .insightTitle').css({"zoom": 1});
-                           $('.insight .insightTitle').css({"opacity": 1});
-                        }
-                     }
-                  }
-                } 
-            }
-
-            // is the element in the viewport?
-            if (winOffset >= vpStart && winOffset < vpEnd) {
-                $('.insight.current').removeClass('current');
-                $('#sideMenu ul li.hilited').removeClass('hilited');
-                $('.bgImg img.activate').removeClass('activate');
-                //$('.bgImages img').css({"margin-top" : 0});
-                
-                currEle.addClass('current');
-
-                //console.log('data: ', $('.insight.current').data('insight'));
-                
-                var menuItem = parseInt($('.insight.current').data('insight'));
-                //$('.insight.current').find('.marker > div > span').text()
-                menuItem = parseInt(menuItem);
-                //console.log('data: ', menuItem);
-                
-                $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited');
-                $('.bgImg[data-insight="' + menuItem + '"] img').addClass('activate');
-                
-                if (!hpit.config.locked && (hpit.config.currPageView >= menuItem)) {	/* SGS: changed to >= */ 
-					      clearInterval(trackPageViewDelay);
-                     trackPageViewDelay = setTimeout(function() {
-                        //console.log("Page View: " + menuItem);
-                        if (!haveDeepLink) {
-                           omniTrackPageView(menuItem);
-                        } else {
-                           haveDeepLink = false;
-                        }
-                     }, 4000);
-                }
-                
-                hpit.config.currInsight = menuItem;
-                //console.log('currInsight change 1');
-                //console.log('currInsight: ', hpit.config.currInsight);
-                hpit.config.state = menuItem;
-                hpit.config.currPageView = menuItem;
-                if (!hpit.config.locked) {
-                    updateArrows(1);
-                }
-                //updateArrows();
-                
-                var prevImgNum = parseInt(menuItem) - 1;
-                var nextImgNum = parseInt(menuItem) + 1;
-                $('.bgImg').css({"opacity": 0});
-                $('.bgImg[data-insight="' + menuItem + '"]').css({"opacity": 1});
-                $('.bgImg[data-insight="' + nextImgNum + '"]').css({"opacity": 1});
-
-                if (!isIE8) {
-	                var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
-	                if (!hpit.config.footerInView) {
-	                    $('.bgImages .bgImg img').css({"margin-top": 0});
-	                    $('.bgImages .bgImg img.activate').css({"margin-top": -diffToMove});
-	                }
-	            }
-            } 
-            // out of the viewport
-            else {
-                currEle.removeClass('current');
-            }
-    }
-
-    function hello(element, index) {
-    
-    }
-
+   
     function paneLock() {
-        //console.log('paneLock: ', element);
-        //$win.scroll($.throttle(250, function(event) {code goes here...}));
         $(window).scroll(function() {
+            var winOffset = $(window).scrollTop();
+            
             $('.insight').each(function(index) {
-               hello($(this), index);           
-               //paneLockTest($(this), index);
+               paneLockUpdate($(this), index, winOffset);
            });
         });
     }
     //End Function
 
+    var currFixedEle = [];
+    var currEleTitle = [];
+      
+    function paneLockUpdate(element, index, winOffset) {
+         var currEle = element;
+         currFixedEle[index] = (currFixedEle[index]) ? currFixedEle[index] : element.find('.marker');
+         var bgPxToMove = 25;
+         
+         if (currFixedEle[index].length <= 0) {
+             return false;
+         }
+
+         // Viewport
+         var vpStart = currEle.offset().top - 1; // - 62
+         var vpEnd = vpStart + currEle.height();
+         
+         var currEleEnd = currEle.height();
+         var currEleHgt = currEle.height();
+
+         // scroll offset
+         //var winOffset = $(window).scrollTop();
+         //console.log('winOffset:',winOffset);
+         
+         if (index === parseInt(hpit.config.currInsight)) { // && vpStart > winOffset
+             currEleTitle[index] = (currEleTitle[index]) ? currEleTitle[index] : $('.insight[data-insight="' + index + '"] .insightTitle');
+             if (currEleTitle[index].hasClass('lockedBottom')) {
+                 currEleTitle[index].removeClass('lockedBottom');
+             }
+             var titleEnd = parseInt(currEleTitle[index].css('top')) + currEleTitle[index].height() + 75;
+             
+             var diff = vpStart - winOffset;
+             //console.log('diff:', diff);
+             
+             if (diff < titleEnd) {
+                 if (!currEleTitle[index].hasClass('lockedBottom')) {
+                     currEleTitle[index].addClass('lockedBottom');
+                 }
+             } /* else {
+               if(currEleTitle.hasClass('lockedBottom')){
+                  currEleTitle.removeClass('lockedBottom');
+               }
+            }*/
+             
+             var scH = parseInt(hpit.config.scrH);
+             var $per = diff / scH;
+             
+                if (diff >= -1 && diff < scH + 1) {
+                     $('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
+                    //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
+                } 
+                else {
+                    $('.insight .insightTitle').css({"opacity": 1});
+                }
+         }
+
+         // is the element in the viewport?
+         if (winOffset >= vpStart && winOffset < vpEnd) {
+             $('.insight.current').removeClass('current');
+             $('#sideMenu ul li.hilited').removeClass('hilited');
+             $('.bgImg img.activate').removeClass('activate');
+             //$('.bgImages img').css({"margin-top" : 0});
+             
+             currEle.addClass('current');
+
+             //console.log('data: ', $('.insight.current').data('insight'));
+             
+             var menuItem = parseInt($('.insight.current').data('insight'));
+             //$('.insight.current').find('.marker > div > span').text()
+             menuItem = parseInt(menuItem);
+             //console.log('data: ', menuItem);
+             
+             $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited');
+             $('.bgImg[data-insight="' + menuItem + '"] img').addClass('activate');
+             
+             if (!hpit.config.locked && (hpit.config.currPageView >= menuItem)) {	/* SGS: changed to >= */ 
+                  clearInterval(trackPageViewDelay);
+                  trackPageViewDelay = setTimeout(function() {
+                     //console.log("Page View: " + menuItem);
+                     if (!haveDeepLink) {
+                        omniTrackPageView(menuItem);
+                     } else {
+                        haveDeepLink = false;
+                     }
+                  }, 4000);
+             }
+             
+             hpit.config.currInsight = menuItem;
+             //console.log('currInsight change 1');
+             //console.log('currInsight: ', hpit.config.currInsight);
+          hpit.config.state = menuItem;
+          hpit.config.currPageView = menuItem;
+          if (!hpit.config.locked) {
+              updateArrows(1);
+          }
+          //updateArrows();
+          
+          var prevImgNum = parseInt(menuItem) - 1;
+          var nextImgNum = parseInt(menuItem) + 1;
+          $('.bgImg').css({"opacity": 0});
+          $('.bgImg[data-insight="' + menuItem + '"]').css({"opacity": 1});
+          $('.bgImg[data-insight="' + nextImgNum + '"]').css({"opacity": 1});
+
+          if (!isIE8) {
+             var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
+             if (!hpit.config.footerInView) {
+                 $('.bgImages .bgImg img').css({"margin-top": 0});
+                 $('.bgImages .bgImg img.activate').css({"margin-top": -diffToMove});
+             }
+         }
+      } 
+      // out of the viewport
+      else {
+          currEle.removeClass('current');
+      }
+    }
+    //End Function
+    
     // show/hide controls message
     function cntrlMessInit() {
         var cntrlMess = getCookie('hasUsedControls');
