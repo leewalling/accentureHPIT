@@ -1901,14 +1901,8 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.onMobile .insight .insightTitle {
 		width: 100% !important;
 	}
-	.hero > div.inner {
-		background-color: beige;
-	}
 	.onMobile .hero > div.inner {
 		padding: 5% !important;
-	}
-	.onMobile .hero > div.inner > * {
-		border-top: 1px solid red !important;
 	}
 }
 
