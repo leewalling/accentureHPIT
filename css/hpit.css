@@ -1885,7 +1885,6 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		background-color: #000;
 		background-image: none;
 		padding: 25px;
-		background-color: purple !important;
 	}
 	#footer > div {
 		margin: 0;
@@ -1899,6 +1898,21 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		/*height: 50%;*/
 		width: 100%;
 	}
+
+	/* testing */
+	#footer {
+		
+	}
+	.insight .insightTitle {
+		background-color: pink !important;
+	}
+	.insight .insightTitle > h3 {
+		background-color: orange !important;
+	}
+	.insight .insightTitle > h4 {
+		background-color: red !important;
+	}
+	/* testing */
 }
 
 /* galaxy nexus */
