@@ -1143,10 +1143,10 @@ hpit.core = (function() {
             var descrip = 'Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future.';
 
             var temp  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style" addthis:url="'+url+'" addthis:title="'+ttl+'" addthis:description="'+descrip+'">';
-                temp += '<a class="addthis_button_linkedin" title="Share via LinkedIn: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-linkedin.png" /></a>';
-                temp += '<a class="addthis_button_twitter" title="Share via Twitter: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-twitter.png" /></a>';
-                temp += '<a class="addthis_button_facebook" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-facebook.png" /></a>';
-                temp += '<a class="addthis_button_google_plusone_share" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-google.png" /></a>';
+                temp += '<a class="addthis_button_linkedin" title="Share via LinkedIn: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_twitter" title="Share via Twitter: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_facebook" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
+                temp += '<a class="addthis_button_google_plusone_share" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
             targ.html(temp);
 
@@ -1160,10 +1160,10 @@ hpit.core = (function() {
             var url = hpit.config.groups['insight'+ind].bitly;
             
             var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="'+url+'">';
-                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'" title="'+hpit.config.groups['insight'+ind].linkedIn.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-linkedin.png" /></a>';
-                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" title="'+hpit.config.groups['insight'+ind].twitter.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-twitter.png" /></a>';
-                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'" title="'+hpit.config.groups['insight'+ind].facebook.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-facebook.png" /></a>';
-                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'" title="'+hpit.config.groups['insight'+ind].google.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-google.png" /></a>';
+                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'" title="'+hpit.config.groups['insight'+ind].linkedIn.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" title="'+hpit.config.groups['insight'+ind].twitter.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'" title="'+hpit.config.groups['insight'+ind].facebook.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'" title="'+hpit.config.groups['insight'+ind].google.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
             targ.html(temp);
 
@@ -1178,10 +1178,10 @@ hpit.core = (function() {
             var url = hpit.config.groups['insight'+ind].bitly;
             
             var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="'+url+'">';
-                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'" title="'+hpit.config.groups['insight'+ind].linkedIn.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-linkedin.png" /></a>';
-                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" title="'+hpit.config.groups['insight'+ind].twitter.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-twitter.png" /></a>';
-                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'" title="'+hpit.config.groups['insight'+ind].facebook.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-facebook.png" /></a>';
-                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'" title="'+hpit.config.groups['insight'+ind].google.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/icons-google.png" /></a>';
+                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'" title="'+hpit.config.groups['insight'+ind].linkedIn.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" title="'+hpit.config.groups['insight'+ind].twitter.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'" title="'+hpit.config.groups['insight'+ind].facebook.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'" title="'+hpit.config.groups['insight'+ind].google.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
             targ.html(temp);
 

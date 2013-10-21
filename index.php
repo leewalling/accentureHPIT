@@ -69,12 +69,12 @@
 		</div>
 		<div class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-right">
-			<li class="contact"><a href="http://www.accenture.com/Microsites/high-performance-it/registration/Pages/contact-us.aspx"><span class="icn"></span>contact</a></li>
+			<li class="contact"><a href="http://www.accenture.com/Microsites/high-performance-it/registration/Pages/contact-us.aspx"><span class="icn sprites"></span>contact</a></li>
 			<li class="share">
-				<a href="#"><span class="icn"></span>share</a>
+				<a href="#"><span class="icn sprites"></span>share</a>
 				<div class="social inHeader"></div>
 			</li>
-			<li class="download"><a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a></li>
+			<li class="download"><a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a></li>
 		  </ul>
 		</div>
 	  </div>
@@ -85,16 +85,16 @@
 	<div class="container main" id="theTop">
 		<!-- controls -->
 		<div id="controls" class="hidden-xs">
-			<a href="#" class="arrows prev noClick" rel="articles"></a>
-			<a href="#" class="txt" id="toggleMenu" rel="articles" title="Show menu"><img src="images/bg-menu.png" title="Show menu" />Menu</a>
-			<a href="#" class="arrows nxt" rel="articles"></a>
+			<a href="#" class="arrows sprites prev noClick" rel="articles"></a>
+			<a href="#" class="txt" id="toggleMenu" rel="articles" title="Show menu"><img src="images/trans.png" class="sprites bg-menu" title="Show menu" />Menu</a>
+			<a href="#" class="arrows sprites nxt" rel="articles"></a>
 			<span class="control-info">See the TOP #10 CIO Action Items Below</span>
 		</div>
 		<!-- end controls -->
 		<!-- sidemenu -->
 		<div id="sideMenu" class="hidden-xs">
 			<ul>
-				<li><a href="#theTop" class="btt" ref="backtotop-click"><em>Back To Top</em></a></li>
+				<li><a href="#theTop" class="btt" ref="backtotop-click"><em class="sprites">Back To Top</em></a></li>
 				<li class="state" data-insight-nav="1"><a href="#insight1"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
 				<li class="state" data-insight-nav="2"><a href="#insight2"><span>02</span> <span>Context is king</span></a></li>
 				<li class="state" data-insight-nav="3"><a href="#insight3"><span>03</span> <span>Business strategy and IT now work as one</span></a></li>
@@ -106,7 +106,7 @@
 				<li class="state" data-insight-nav="9"><a href="#insight9"><span>09</span> <span>Plug-and-play talent</span></a></li>
 				<li class="state" data-insight-nav="10"><a href="#insight10"><span>10</span> <span>Uniting business risk and IT security</span></a></li>
 			</ul>
-			<a href="#" class="closeX" rel="articles">&nbsp;</a>
+			<a href="#" class="closeX sprites" rel="articles">&nbsp;</a>
 		</div>
 		<!-- end sidemenu -->
 		<!-- hero area -->
@@ -115,7 +115,7 @@
 				<h3>Accenture High Performance IT Research 2013</h3>
 				<h1>High Performers in IT:<br />Defined by Digital</h1>
 				<p>Sitting at the intersection of business and technology, high performing CIOs are now a force in the boardroom&mdash;and driving the digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view.</p>
-				<a href="#hero-video" class="playVid" rel="articles"></a>
+				<a href="#hero-video" class="playVid sprites" rel="articles"></a>
 			</div>
 			<span class="video-wrapper"></span>
 			<div id="accMarkMob"><img src="images/accenture-mark-mobile2.png" width="100%" height="auto" /></div>
@@ -126,7 +126,7 @@
 				<h3>Accenture High Performance IT Research 2013</h3>
 				<h1>High Performers in IT:<br />Defined by Digital</h1>
 				<p>Sitting at the intersection of business and technology, high performing CIOs are now a force in the boardroom&mdash;and driving the digital agenda. <strong>Accenture CTO <nobr>Paul Daugherty</nobr></strong> shares his point of view.</p>
-				<a href="#hero-video" class="playVid" rel="articles"></a>
+				<a href="#hero-video" class="playVid sprites" rel="articles"></a>
 			</div>
 		</div>
 		<!-- end hero area -->
@@ -145,7 +145,7 @@
 				<h4 class="visible-xs">01</h4>
 				<h3>Your new boss? <br />Your customer.</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -158,7 +158,7 @@
 						<span class="heading">Why it's important</span>
 						<span>High performers have moved beyond internally focused objectives like cost and productivity. The new bulls-eye is the customer experience.</span>
 						<div class="the-video">
-							<a href="#insight1" rel="articles"><img src="images/video-THUMBS-1.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-1" /><![endif]--></span></a>
+							<a href="#insight1" rel="articles"><img src="images/video-THUMBS-1.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-1" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -172,7 +172,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-1" /><![endif]--></span><span class="txt"><strong>Building relationships. </strong>Both marketing and sales get a boost by giving potential customers what they want and listening to what current customers have to say.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -189,7 +189,7 @@
 				<h4 class="visible-xs">02</h4>
 				<h3>Context is king</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -202,7 +202,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Global competition means that exploring business scenarios&mdash;economic, geopolitical, social and more&mdash;is absolutely crucial to IT planning.</span>
 						<div class="the-video">
-							<a href="#insight2" rel="articles"><img src="images/video-THUMBS-2.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-2" /><![endif]--></span></a>
+							<a href="#insight2" rel="articles"><img src="images/video-THUMBS-2.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-2" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -216,7 +216,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-2" /><![endif]--></span><span class="txt"><strong>Enhancing their reputations. </strong>High-performing IT leaders who regularly apply business metrics tend to stay in their positions longer, which means they demonstrate success&mdash;and raise their profiles among their peers&mdash;over the long term.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -233,7 +233,7 @@
 				<h4 class="visible-xs">03</h4>
 				<h3>Business strategy and IT now work as one</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -246,7 +246,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Many CIOs are still troubleshooting and fixing problems instead of finding and acting on ways to create value. High performers seek out and invest in new ways that IT can deliver on business strategy and create new opportunities.</span>
 						<div class="the-video">
-							<a href="#insight3" rel="articles"><img src="images/video-THUMBS-3.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-3" /><![endif]--></span></a>
+							<a href="#insight3" rel="articles"><img src="images/video-THUMBS-3.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-3" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -260,7 +260,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-3" /><![endif]--></span><span class="txt"><strong>Adopting early. </strong>They're not waiting for technologies to mature before they act.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -277,7 +277,7 @@
 				<h4 class="visible-xs">04</h4>
 				<h3>Bringing harmony to hybrid IT</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -290,7 +290,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Legacy systems drag down performance and tie up valuable resources. Simpler, streamlined application portfolios are weightless by comparison, and let companies move fast and flex easily.</span>
 						<div class="the-video">
-							<a href="#insight4" rel="articles"><img src="images/video-THUMBS-4.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-4" /><![endif]--></span></a>
+							<a href="#insight4" rel="articles"><img src="images/video-THUMBS-4.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-4" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -304,7 +304,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-4" /><![endif]--></span><span class="txt"><strong>Weaving together cloud capabilities. </strong>They're blending public and private cloud elements together in ways that always keep business value top of mind.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -321,7 +321,7 @@
 				<h4 class="visible-xs">05</h4>
 				<h3>Fearlessly digital</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -334,7 +334,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Digital is about much more than smart devices. It's driving how products are designed and produced, how transactions are created and managed,  how collaboration happens, and how relationships are formed.</span>
 						<div class="the-video">
-							<a href="#insight5" rel="articles"><img src="images/video-THUMBS-5.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-5" /><![endif]--></span></a>
+							<a href="#insight5" rel="articles"><img src="images/video-THUMBS-5.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-5" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -348,7 +348,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-5" /><![endif]--></span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will revolutionize their business.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -365,7 +365,7 @@
 				<h4 class="visible-xs">06</h4>
 				<h3>The power of self-service</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -378,7 +378,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Breaking down barriers to self-service means that employees, suppliers, and even customers can help drive innovation, generate insights and probe new markets. They're no longer just "service tickets."</span>
 						<div class="the-video">
-							<a href="#insight6" rel="articles"><img src="images/video-THUMBS-6.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-6" /><![endif]--></span></a>
+							<a href="#insight6" rel="articles"><img src="images/video-THUMBS-6.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-6" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -392,7 +392,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-6" /><![endif]--></span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Rather than wait for responses to service requests today's fickle customers can often service their own needs better.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -409,7 +409,7 @@
 				<h4 class="visible-xs">07</h4>
 				<h3>Unearthing data gems</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -422,7 +422,7 @@
 						<span class="heading">Why it's important</span>
 						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that generate actionable outcomes&mdash;and competitive advantage.</span>
 						<div class="the-video">
-							<a href="#insight7" rel="articles"><img src="images/video-THUMBS-7.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-7" /><![endif]--></span></a>
+							<a href="#insight7" rel="articles"><img src="images/video-THUMBS-7.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-7" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -436,7 +436,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-7" /><![endif]--></span><span class="txt"><strong>Finding their focus. </strong>They're working to locate "insight gaps"&mdash;that is, blind spots that can obscure their business strategies.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -453,7 +453,7 @@
 				<h4 class="visible-xs">08</h4>
 				<h3>Agility and speed.<br/>The new normal</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -466,7 +466,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Volatility in markets, partner engagements and business models can create new opportunities&mdash;as long as your organization is nimble enough to respond.</span>
 						<div class="the-video">
-							<a href="#insight8" rel="articles"><img src="images/video-THUMBS-8.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-8" /><![endif]--></span></a>
+							<a href="#insight8" rel="articles"><img src="images/video-THUMBS-8.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-8" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -480,7 +480,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-8" /><![endif]--></span><span class="txt"><strong>Moving beyond the monolith. </strong>They're working incrementally and making changes "in flight" rather than committing time and resources to large-scale rollouts that can put operations on hold.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -497,7 +497,7 @@
 				<h4 class="visible-xs">09</h4>
 				<h3>Plug-and-play talent</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -510,7 +510,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Innovation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look inside and outside of their companies to fill needs and plug knowledge gaps.</span>
 						<div class="the-video">
-							<a href="#insight9" rel="articles"><img src="images/video-THUMBS-9.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-9" /><![endif]--></span></a>
+							<a href="#insight9" rel="articles"><img src="images/video-THUMBS-9.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-9" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -524,7 +524,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-9" /><![endif]--></span><span class="txt"><strong>Becoming comfortable with fluidity. </strong>Full-time staffers are not the only answer since much of today's talent not only accepts but expects constant change.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
@@ -541,7 +541,7 @@
 				<h4 class="visible-xs">10</h4>
 				<h3>Uniting business risk and IT security</h3>
 				<div class="social hidden-xs"></div>
-				<div class="toggler visible-xs"><span></span></div>
+				<div class="toggler visible-xs"><span class="sprites"></span></div>
 			</div>
 			<div class="container content">
 				<div class="row">
@@ -554,7 +554,7 @@
 						<span class="heading">Why it's important</span>
 						<span>More and more organizations are finding their risk profiles defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities. It's essential to protect the digital assets within.</span>
 						<div class="the-video">
-							<a href="#insight10" rel="articles"><img src="images/video-THUMBS-10.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-10" /><![endif]--></span></a>
+							<a href="#insight10" rel="articles"><img src="images/video-THUMBS-10.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-10" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -568,7 +568,7 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-10" /><![endif]--></span><span class="txt"><strong>Attributing business value to security. </strong>They're actively tracking actual outcomes of incidents and breaches and measuring the impact on the overall business.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/13-3635_HPIT_Survey_v3_spreadView.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>

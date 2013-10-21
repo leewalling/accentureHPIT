@@ -77,6 +77,15 @@ img {
     vertical-align: middle;
 }
 
+/* SPRITESHEET */
+.sprites {
+    background: url("../images/sprites.png") no-repeat top left;
+    background-image: url("../images/sprites.png") !important;
+}
+.bg-menu{ background-position: 0 -317px; width: 8px; height: 7px; }
+.xxx{ background-position: 0 0; width: 46px; height: 46px; } 
+/* END SPRITESHEET */
+
 .container {
 	max-width:100%;
 	padding:0;
@@ -172,8 +181,8 @@ img {
 	width: 45px;
 }
 #controls .arrows {
+	width: 45px;
 	height: 45px;
-	background-image:url("../images/arrows.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -282,16 +291,15 @@ img {
 	padding-right:22px;
 	line-height: 26px;
 	height: 26px;
-	background-image:url("../images/caret.png");
 	background-repeat: no-repeat;
-	background-position: top right;
+	background-position: 80px -417px;
 }
 #sideMenu ul li a.btt:hover {
 	background-color:transparent;
 	color: #fff !important;
 }
 #sideMenu ul li a.btt:hover em {
-	background-image:url("../images/caret-hover.png");
+	background-position: 80px -386px;
 }
 #sideMenu ul li a > span {
 	display:table-cell;
@@ -338,8 +346,6 @@ img {
 #sideMenu.height-md ul li a {
 	padding:10px 15px 10px 11px;
 }
-
-
 .closeX {
 	display: inline-block;
 	overflow: hidden;
@@ -349,12 +355,11 @@ img {
 	top:21px;
 	right:15px;
 	z-index: 201;
-	background-image:url("../images/x.png");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 0 -953px;
 }
 .closeX:hover {
-	background-position: 0 -13px;
+	background-position: 0 -966px;
 }
 .height-xxs .closeX {
 	top: 11px;
@@ -371,7 +376,6 @@ img {
 .height-lg .closeX {
 	top: 22px;
 }
-
 #accMark {
 	top: 342px;
 	left: 0;
@@ -515,17 +519,19 @@ img {
 	width: 57px;
 	height: 57px;
 	/*margin-top: 15px;*/
-	background-image:url("../images/play.png");
+	/*background-image:url("../images/play.png");*/
 	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: 100%;
+	background-position: 0 -834px;
+	/*background-position: 0 0;*/
+	/*background-size: 100%;*/
 	bottom: 0;
 	left: 50%;
 	margin-left: -28.5px;
 	position: absolute;
 }
 .hero > div.inner .playVid:hover {
-	background-position: 0 -57px;
+	/*background-position: 0 -57px;*/
+	background-position: 0 -891px;
 }
 .hero .CTA {
 	bottom: 58px;
@@ -770,12 +776,11 @@ img {
 	width: 26px;
 	height: 26px;
 	line-height: 26px;
-	background-image:url("../images/bg-toggler.png");
 	background-repeat: no-repeat;
-  	background-position: 0 0;
+  	background-position: 0 -329px;
 }
 .insight.open .insightTitle .toggler span {	
-  	background-position: 0 -26px;
+  	background-position: 0 -355px;
 }
 
 .insight .insightTitle.lockedBottom {
@@ -857,9 +862,8 @@ img {
   	line-height: 22px;
   	float: left;
   	margin-right: 7px;
-  	background-image:url("../images/icons.png");
 	background-repeat: no-repeat;
-	background-position: 0 -22px;
+	background-position: 0 -590px;
 }
 .insight .content .right-col > div.with-video {
 	text-align: right;
@@ -916,9 +920,8 @@ img {
 	-webkit-border-radius: 17px;
 	border-radius: 17px;
 	overflow: hidden;
-	background-image:url("../images/bg-arrow.png");
 	background-repeat: no-repeat;
-	background-position: 12px 10px;
+	background-position: 12px -170px;
 }
 .insight .content .right-col > div.with-video .the-video > a > span img {
 	display: none;
@@ -1231,18 +1234,19 @@ img {
   	line-height: 22px;
   	/*float: left;*/
   	margin-right: 10px;
-  	background-image:url("../images/icons.png");
+  	background-image:url("../images/sprites.png");
 	background-repeat: no-repeat;
 	vertical-align: top;
+	/*background-position: 0 -568px;*/
 }
 .navbar-nav .share .icn {
-  	background-position: 0 0;
+  	background-position: 0 -568px;
 }
 .navbar-nav .download .icn {
-  	background-position: 0 -22px;
+  	background-position: 0 -590px;
 }
 .navbar-nav .contact .icn {
-  	background-position: 0 -44px;
+  	background-position: 0 -612px;
 }
 .navbar-nav {
   	overflow: visible;
@@ -1368,6 +1372,18 @@ img {
 .onMobile .social > .addthis_toolbox > a,
 .onIpad .social > .addthis_toolbox > a {
   	margin: 0 7px 0 0;
+}
+.addthis_button_linkedin > img {
+  	background-position: 0 -508px;
+}
+.addthis_button_twitter > img {
+  	background-position: 0 -538px;
+}
+.addthis_button_facebook > img {
+  	background-position: 0 -448px;
+}
+.addthis_button_google_plusone_share > img {
+  	background-position: 0 -478px;
 }
 .addthis_button_google_plusone_share {
   	margin-right: 0 !important;
@@ -1678,9 +1694,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		height: 95px;
 		margin-left: -47.5px;
 		background-image:url("../images/play-lg.png");
+		background-position: 0 -639px;
 	}
 	.hero > div.inner .playVid:hover {
-		background-position: 0 -95px;
+		background-position: 0 -734px;
 	}
 	#accMarkMob {
 		position: relative;	
@@ -1830,9 +1847,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		-webkit-border-radius: 50% 50% 50% 50%;
 		border-radius: 50% 50% 50% 50%;
 		overflow: hidden;
-		background-image:url("../images/bg-arrow-med-full.png");
+		background-image:url("../images/bg-arrow-med-full.png") !important;
 		background-repeat: no-repeat;
-		background-position: 50% 50%;
+		background-position: 50% 50% !important;
 		background-size: 100% auto;
 	}
 	.insight .content .right-col > div.social {
@@ -2014,6 +2031,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.hero > div.inner h3 {
 		font-size: 18px;
 	}
+	
 	.hero > div.inner .playVid {
 		top: auto;
 		bottom: -150px;
@@ -2021,9 +2039,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		height: 57px;
 		margin-left: -28.5px;
 		background-image:url("../images/play.png");
+		background-position: 0 -834px;
 	}
 	.hero > div.inner .playVid:hover {
-		background-position: 0 -57px;
+		background-position: 0 -891px;
 	}
 	.hero > div.inner h1 {
 		width: 100%;
@@ -2191,7 +2210,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		width: 15px;
 		height: 15px;
 		line-height: 15px;
-		background-image:url("../images/bg-toggler.png");
+		background-image:url("../images/bg-toggler.png") !important;
 		background-repeat: no-repeat;
 	  	background-position: 0 0;
 	  	background-size: 100% auto;
@@ -2407,10 +2426,11 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		width: 95px;
 		height: 95px;
 		margin-left: -47.5px;
-		background-image:url("../images/play-lg.png");
+		background-image:url("../images/play-lg.png");	
+		background-position: 0 -639px;
 	}
 	.hero > div.inner .playVid:hover {
-		background-position: 0 -95px;
+		background-position: 0 -734px;
 	}
 	#accMark {
 		top: 250px;
