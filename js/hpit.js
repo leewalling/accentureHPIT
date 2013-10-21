@@ -459,7 +459,7 @@ hpit.core = (function() {
         toggleMenuInit();
 
         //Initialize the Limelight Video Player Callback
-        initDelvePlayer();
+        //initDelvePlayer();
 
         // Initialize event handler for video play button
         playVideoInit();
