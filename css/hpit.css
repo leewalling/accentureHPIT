@@ -1904,16 +1904,16 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		
 	}
 	.insight .insightTitle {
-		background-color: blue !important;
+		background-color: pink !important;
 	}
 	.insight .insightTitle > h3 {
-		background-color: green !important;
+		background-color: red !important;
 	}
 	.insight .insightTitle > h4 {
-		background-color: yellow !important;
+		background-color: orange !important;
 	}
 	.insight .insightTitle {
-		position: relative !important;
+		width: 200% !important;
 	}
 	/* testing */
 }
