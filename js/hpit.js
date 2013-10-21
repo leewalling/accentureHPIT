@@ -683,15 +683,12 @@ hpit.core = (function() {
     }
     //End Function
 
-    var currFixedEle = [];
-    var currEleTitle = [];
-      
     function paneLockUpdate(element, index, winOffset) {
          var currEle = element;
-         currFixedEle[index] = (currFixedEle[index]) ? currFixedEle[index] : element.find('.marker');
+         var currFixedEle = element.find('.marker');
          var bgPxToMove = 25;
          
-         if (currFixedEle[index].length <= 0) {
+         if (currFixedEle.length <= 0) {
              return false;
          }
 
@@ -707,18 +704,18 @@ hpit.core = (function() {
          //console.log('winOffset:',winOffset);
          
          if (index === parseInt(hpit.config.currInsight)) { // && vpStart > winOffset
-             currEleTitle[index] = (currEleTitle[index]) ? currEleTitle[index] : $('.insight[data-insight="' + index + '"] .insightTitle');
-             if (currEleTitle[index].hasClass('lockedBottom')) {
-                 currEleTitle[index].removeClass('lockedBottom');
+             var currEleTitle = $$('.insight[data-insight="' + index + '"] .insightTitle');
+             if (currEleTitle.hasClass('lockedBottom')) {
+                 currEleTitle.removeClass('lockedBottom');
              }
-             var titleEnd = parseInt(currEleTitle[index].css('top')) + currEleTitle[index].height() + 75;
+             var titleEnd = parseInt(currEleTitle.css('top')) + currEleTitle.height() + 75;
              
              var diff = vpStart - winOffset;
              //console.log('diff:', diff);
              
              if (diff < titleEnd) {
-                 if (!currEleTitle[index].hasClass('lockedBottom')) {
-                     currEleTitle[index].addClass('lockedBottom');
+                 if (!currEleTitle.hasClass('lockedBottom')) {
+                     currEleTitle.addClass('lockedBottom');
                  }
              } /* else {
                if(currEleTitle.hasClass('lockedBottom')){
@@ -730,19 +727,19 @@ hpit.core = (function() {
              var $per = diff / scH;
              
                 if (diff >= -1 && diff < scH + 1) {
-                     $('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
+                     $$('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
                     //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
                 } 
                 else {
-                    $('.insight .insightTitle').css({"opacity": 1});
+                    $$('.insight .insightTitle').css({"opacity": 1});
                 }
          }
 
          // is the element in the viewport?
          if (winOffset >= vpStart && winOffset < vpEnd) {
-             $('.insight.current').removeClass('current');
-             $('#sideMenu ul li.hilited').removeClass('hilited');
-             $('.bgImg img.activate').removeClass('activate');
+             $$('.insight.current').removeClass('current');
+             $$('#sideMenu ul li.hilited').removeClass('hilited');
+             $$('.bgImg img.activate').removeClass('activate');
              //$('.bgImages img').css({"margin-top" : 0});
              
              currEle.addClass('current');
@@ -754,8 +751,8 @@ hpit.core = (function() {
              menuItem = parseInt(menuItem);
              //console.log('data: ', menuItem);
              
-             $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited');
-             $('.bgImg[data-insight="' + menuItem + '"] img').addClass('activate');
+             $$('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited');
+             $$('.bgImg[data-insight="' + menuItem + '"] img').addClass('activate');
              
              if (!hpit.config.locked && (hpit.config.currPageView != menuItem)) { 
                   clearInterval(trackPageViewDelay);
@@ -781,15 +778,15 @@ hpit.core = (function() {
           
           var prevImgNum = parseInt(menuItem) - 1;
           var nextImgNum = parseInt(menuItem) + 1;
-          $('.bgImg').css({"opacity": 0});
-          $('.bgImg[data-insight="' + menuItem + '"]').css({"opacity": 1});
-          $('.bgImg[data-insight="' + nextImgNum + '"]').css({"opacity": 1});
+          $$('.bgImg').css({"opacity": 0});
+          $$('.bgImg[data-insight="' + menuItem + '"]').css({"opacity": 1});
+          $$('.bgImg[data-insight="' + nextImgNum + '"]').css({"opacity": 1});
 
           if (!isIE8) {
              var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
              if (!hpit.config.footerInView) {
-                 $('.bgImages .bgImg img').css({"margin-top": 0});
-                 $('.bgImages .bgImg img.activate').css({"margin-top": -diffToMove});
+                 $$('.bgImages .bgImg img').css({"margin-top": 0});
+                 $$('.bgImages .bgImg img.activate').css({"margin-top": -diffToMove});
              }
          }
       } 
