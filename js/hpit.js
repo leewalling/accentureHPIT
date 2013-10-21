@@ -485,6 +485,10 @@ hpit.core = (function() {
         if (!onMobile() && !onIpad()) {
             paneLock();
         }
+        
+        if (onMobile()) {
+            arrangeTopNav();
+        }
 
         // track download link click
         $('.download a').on('click', function(e) {
@@ -675,6 +679,16 @@ hpit.core = (function() {
                 hpit.config.footerInView = false;
             }
         });
+    }
+   
+    function arrangeTopNav() {
+        //alert('will arrange');
+        var $par = $('.navbar-nav');
+        var $child1 = $par.find('li').first();
+        var $child2 = $par.find('li').last();
+        //console.log($child1);
+        //console.log($child2);
+        $par.append($child1).prepend($child2);
     }
    
     function paneLock() {

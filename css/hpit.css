@@ -1993,11 +1993,27 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		width: 88%;
 	}
 	.navbar-default .navbar-nav > li > a > .icn {
-		display:none;
+		/*display:none;*/
 	}	
 	#accMarkMob {
 		min-height: 0px;
 		margin-top: -400px;
+	}
+	.container > .navbar-collapse .navbar-nav {
+		display: block !important;
+	}
+	.navbar-nav > li {
+		display: inline-block !important;
+		min-width: 0;
+		width: 100% !important;
+		border: none;
+		border-bottom: 1px solid #363636 !important;
+	}
+	.navbar-nav > li.download {
+		width: 100% !important;
+	}
+	.onMobile .container > .navbar-collapse {
+		border-bottom: 1px solid #363636 !important
 	}
 }
 
