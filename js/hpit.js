@@ -943,7 +943,8 @@ hpit.core = (function() {
                 if ($th.hasClass("noClick")) {
                     //
                     return false;
-                } else {
+                }
+                else {
                     if ($cur > 1) {
                         newNum = ($cur - 1);
                         //console.log('newNum: ' + newNum);
@@ -1024,7 +1025,42 @@ hpit.core = (function() {
                 }
             }
         });
-    
+
+ 		/*
+ 		$('#controlsTablet .arrows').on('click', function(e) {
+ 			//console.log('arrow click');
+ 			e.preventDefault();
+            var $cur = parseInt(hpit.config.currInsight);
+            var $th = $(this);
+            var newNum = 0;
+            var newHash;
+            
+            $('#controlsTablet .arrows').removeClass('noClick');
+            if ($th.hasClass("prev")) {
+            	console.log('prev click');
+            	if ($th.hasClass("noClick")) {
+                    return false;
+                } else {
+                	if ($cur > 1) {
+                        newNum = ($cur - 1);
+                        //newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
+                    } else {
+                        newNum = 0;
+                        newHash = '#theTop';
+                    }
+                }
+            } else {
+            	if ($cur < $('.insight').length) {
+                    newNum = ($cur + 1);
+                    //newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
+                } else {
+                    console.log('nothing there');
+                    return false;
+                }
+            }
+            console.log('newNum: ' + newNum);
+ 		});
+ 		*/
     }
 
     // insight toggler

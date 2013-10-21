@@ -194,6 +194,9 @@ img {
 .onIpad #controlsTablet {
 	display: inline-block !important;
 }
+.onIpad #controls {
+	display: none !important;
+}
 #controls a,
 #controlsTablet a {
 	display: inline-block;
@@ -209,7 +212,7 @@ img {
 	background-position: 0 0;
 }
 #controls .arrows:hover,
-#controlsTablet .arrows:hover {
+#controlsTablet .arrows:focus {
 	background-position: 0 -45px;
 }
 #controls .nxt,
@@ -217,7 +220,7 @@ img {
 	background-position: -45px 0;	
 }
 #controls .nxt:hover,
-#controlsTablet .nxt:hover {
+#controlsTablet .nxt:focus {
 	background-position: -45px -45px;	
 }
 #controls .noClick,
