@@ -1898,24 +1898,18 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		/*height: 50%;*/
 		width: 100%;
 	}
-
-	/* testing */
-	#footer {
-		
-	}
-	.insight .insightTitle {
-		background-color: pink !important;
-	}
-	.insight .insightTitle > h3 {
-		background-color: orange !important;
-	}
-	.insight .insightTitle > h4 {
-		background-color: magenta !important;
-	}
 	.onMobile .insight .insightTitle {
 		width: 100% !important;
 	}
-	/* testing */
+	.hero > div.inner {
+		background-color: beige;
+	}
+	.onMobile .hero > div.inner {
+		padding: 5% !important;
+	}
+	.onMobile .hero > div.inner > * {
+		border-top: 1px solid red !important;
+	}
 }
 
 /* galaxy nexus */
