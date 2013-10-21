@@ -1504,12 +1504,12 @@ hpit.core = (function() {
             }
             $('html').addClass('noScroll');
             $('#ll-overlay').fadeIn(500, function() {
-                var vidContent = '<object type="application/x-shockwave-flash" id="limelight_player_239897" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
+                var vidContent = '<object type="application/x-shockwave-flash" id="limelight_player_98812" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
                 vidContent += '<param name="movie" value="//assets.delvenetworks.com/player/loader.swf"/>';
                 vidContent += '<param name="wmode" value="transparent"/>';
                 vidContent += '<param name="allowScriptAccess" value="always"/>';
                 vidContent += '<param name="allowFullScreen" value="true"/>';
-                vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;channelId=c315bfc4a8c345af807b2887698549f6&amp;autoplay=true"/>';
+                vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;mediaId=e86824f76d844d0ea0f46cd3df780c3f&amp;autoplay=true"/>';
                 vidContent += '</object>';
                 
                 $('#ll-overlay #ll-player').html(vidContent);
