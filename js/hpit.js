@@ -893,7 +893,7 @@ hpit.core = (function() {
             var newHash = $th.attr('href');
             
             $('#toggleMenu').trigger("click");
-            $('.arrows').removeClass('noClick');
+            $('#controls .arrows').removeClass('noClick');
             
             $(window).scrollTo(
 	            newHash, 
@@ -927,7 +927,7 @@ hpit.core = (function() {
     //hpit.config.currInsight
     function arrowsInit() {
         
-        $('.arrows').on('click', function(e) {
+        $('#controls .arrows').on('click', function(e) {
             e.preventDefault();
             var $cur = parseInt(hpit.config.currInsight);
             var $th = $(this);
@@ -937,7 +937,7 @@ hpit.core = (function() {
 			var groupParam = $.getUrlVar('group');
 			var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
             
-            $('.arrows').removeClass('noClick');
+            $('#controls .arrows').removeClass('noClick');
             
             if ($th.hasClass("prev")) {
                 if ($th.hasClass("noClick")) {
@@ -1718,11 +1718,11 @@ hpit.core = (function() {
     }
     
     function updateArrows(from) {
-        $('.arrows').removeClass('noClick');
+        $('#controls .arrows').removeClass('noClick');
         //console.log('from: ', from);
         //console.log('hpit.config: ', hpit.config);
         if (hpit.config.state > 0 && hpit.config.state < $('.insight').length) {
-        //$('.arrows').removeClass('noClick');
+        //$('#controls .arrows').removeClass('noClick');
         //console.log('updateArrows - IF');
         } else if (hpit.config.state === $('.insight').length) {
             $('.nxt').addClass('noClick');

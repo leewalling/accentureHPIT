@@ -174,34 +174,61 @@ img {
 	-moz-box-sizing:content-box;
 	box-sizing:content-box;
 }
-#controls a {
+#controlsTablet {
+	display: none !important;
+	position: fixed;
+	background-color:#000;
+	padding:15px 7px;
+	width: 64px;
+	height: 90px;
+	margin-top: -75px;
+	top: 50%;
+	right: 0;
+	overflow: visible;
+	z-index: 1002;
+	text-align: center;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+.onIpad #controlsTablet {
+	display: inline-block !important;
+}
+#controls a,
+#controlsTablet a {
 	display: inline-block;
 	text-decoration: none;
 	color: #fff !important;
 	width: 45px;
 }
-#controls .arrows {
+#controls .arrows,
+#controlsTablet .arrows {
 	width: 45px;
 	height: 45px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-#controls .arrows:hover {
+#controls .arrows:hover,
+#controlsTablet .arrows:hover {
 	background-position: 0 -45px;
 }
-#controls .nxt {
+#controls .nxt,
+#controlsTablet .nxt {
 	background-position: -45px 0;	
 }
-#controls .nxt:hover {
+#controls .nxt:hover,
+#controlsTablet .nxt:hover {
 	background-position: -45px -45px;	
 }
-#controls .noClick {
+#controls .noClick,
+#controlsTablet .noClick {
 	cursor: default;
 	pointer-events: none;
 	opacity:0.25;
 	filter:alpha(opacity=25);
 }
-#controls .txt {
+#controls .txt,
+#controlsTablet .txt {
 	line-height: 22px;
 	margin: 19px 0;
 	text-align: center;
@@ -212,13 +239,15 @@ img {
 	background-color: #fff !important;
 	color: #000 !important;
 }
-#controls .txt > img {
+#controls .txt > img ,
+#controlsTablet .txt > img {
 	float: none;
 	vertical-align: top;
 	margin-top: 7px;
 	margin-right: 4px;
 }
-#controls .control-info {
+#controls .control-info,
+#controlsTablet .control-info {
 	background-color: rgba(255, 255, 255, 0.4);
 	/* filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff');*/ /* for IE */
 	-webkit-border-radius: 15px;
@@ -2457,7 +2486,6 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.container > .navbar-collapse {
 		float: right;
 	}
-	/**/
 	#controls,
 	.whiteAngle,
 	.blackAngle,

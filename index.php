@@ -90,6 +90,10 @@
 			<a href="#" class="arrows sprites nxt" rel="articles"></a>
 			<span class="control-info">See the TOP #10 CIO Action Items Below</span>
 		</div>
+		<div id="controlsTablet" class="hidden-xs">
+			<a href="#" class="arrows sprites prev noClick" rel="articles"></a>
+			<a href="#" class="arrows sprites nxt" rel="articles"></a>
+		</div>
 		<!-- end controls -->
 		<!-- sidemenu -->
 		<div id="sideMenu" class="hidden-xs">
