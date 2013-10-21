@@ -1996,9 +1996,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.navbar-default .navbar-nav > li > a {
 		font-size: 18px;
 	}
-	.navbar-nav > li .social {
-		right: 15%;
-		padding: 22px 0;
+	.social.inHeader {
+		margin: 0 5% !important;
+		width: 90% !important;
 	}
 	.hero {
 		/*min-height: 797px;*/
