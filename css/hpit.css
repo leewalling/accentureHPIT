@@ -1345,9 +1345,9 @@ img {
   	height: 25px;
 }
 .social.inHeader {
-  	width: 80% !important;
+  	width: 86% !important;
   	text-align: center !important;
-  	margin: 0 10% !important;
+  	margin: 0 7% !important;
   	/*background-color: green !important;*/
 }
 .social > .addthis_toolbox > a {
