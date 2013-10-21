@@ -2699,7 +2699,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		margin:0;
 	}
 	.exception .navbar-nav > li {
-		width: 29% !important;
+		/*width: 29% !important;*/
 	}
 	.navbar-nav > li.share {
 		width: 33%;
