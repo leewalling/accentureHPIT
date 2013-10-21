@@ -1333,6 +1333,7 @@ img {
 	-moz-box-sizing:content-box;
 	box-sizing:content-box;
 	display: inline-block !important;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 .onMobile .navbar-toggle:hover,
 .onMobile .navbar-toggle:focus {
