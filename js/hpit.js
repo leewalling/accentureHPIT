@@ -633,8 +633,8 @@ hpit.core = (function() {
     }
     
     function onMobile() {
-        //return (($(window).width() < 768) || $Android || $iOS && !$iPad);
-    	return true;
+        return (($(window).width() < 768) || $Android || $iOS && !$iPad);
+    	//return true;
     }
     
     function onIpad() {
@@ -704,7 +704,7 @@ hpit.core = (function() {
          //console.log('winOffset:',winOffset);
          
          if (index === parseInt(hpit.config.currInsight)) { // && vpStart > winOffset
-             var currEleTitle = $$('.insight[data-insight="' + index + '"] .insightTitle');
+             var currEleTitle = $$('.insight[data-insight="' + index + '"] .insightTitle', 'context-get', '.container.main');
              if (currEleTitle.hasClass('lockedBottom')) {
                  currEleTitle.removeClass('lockedBottom');
              }
@@ -727,19 +727,19 @@ hpit.core = (function() {
              var $per = diff / scH;
              
                 if (diff >= -1 && diff < scH + 1) {
-                     $$('.bgImg[data-insight="' + index + '"]').css({"opacity": $per});
+                     $$('.bgImg[data-insight="' + index + '"]', 'context-get', '.container.main').css({"opacity": $per});
                     //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
                 } 
                 else {
-                    $$('.insight .insightTitle').css({"opacity": 1});
+                    $$('.insight .insightTitle', 'context-get', '.container.main').css({"opacity": 1});
                 }
          }
 
          // is the element in the viewport?
          if (winOffset >= vpStart && winOffset < vpEnd) {
-             $$('.insight.current').removeClass('current');
-             $$('#sideMenu ul li.hilited').removeClass('hilited');
-             $$('.bgImg img.activate').removeClass('activate');
+             $$('.insight.current', 'context-get', '.container.main').removeClass('current');
+             $$('#sideMenu ul li.hilited', 'context-get', '.container.main').removeClass('hilited');
+             $$('.bgImg img.activate', 'context-get', '.container.main').removeClass('activate');
              //$('.bgImages img').css({"margin-top" : 0});
              
              currEle.addClass('current');
@@ -751,8 +751,8 @@ hpit.core = (function() {
              menuItem = parseInt(menuItem);
              //console.log('data: ', menuItem);
              
-             $$('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited');
-             $$('.bgImg[data-insight="' + menuItem + '"] img').addClass('activate');
+             $$('#sideMenu ul li[data-insight-nav="' + menuItem + '"]', 'context-get', '.container.main').addClass('hilited');
+             $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
              
              if (!hpit.config.locked && (hpit.config.currPageView != menuItem)) { 
                   clearInterval(trackPageViewDelay);
@@ -778,15 +778,15 @@ hpit.core = (function() {
           
           var prevImgNum = parseInt(menuItem) - 1;
           var nextImgNum = parseInt(menuItem) + 1;
-          $$('.bgImg').css({"opacity": 0});
-          $$('.bgImg[data-insight="' + menuItem + '"]').css({"opacity": 1});
-          $$('.bgImg[data-insight="' + nextImgNum + '"]').css({"opacity": 1});
+          $$('.bgImg', 'context-get', '.container.main').css({"opacity": 0});
+          $$('.bgImg[data-insight="' + menuItem + '"]', 'context-get', '.container.main').css({"opacity": 1});
+          $$('.bgImg[data-insight="' + nextImgNum + '"]', 'context-get', '.container.main').css({"opacity": 1});
 
           if (!isIE8) {
              var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
              if (!hpit.config.footerInView) {
-                 $$('.bgImages .bgImg img').css({"margin-top": 0});
-                 $$('.bgImages .bgImg img.activate').css({"margin-top": -diffToMove});
+                 $$('.bgImages .bgImg img', 'context-get', '.container.main').css({"margin-top": 0});
+                 $$('.bgImages .bgImg img.activate', 'context-get', '.container.main').css({"margin-top": -diffToMove});
              }
          }
       } 
