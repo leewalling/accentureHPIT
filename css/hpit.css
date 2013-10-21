@@ -1885,6 +1885,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		background-color: #000;
 		background-image: none;
 		padding: 25px;
+		background-color: purple !important;
 	}
 	#footer > div {
 		margin: 0;
@@ -2426,7 +2427,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		width: 95px;
 		height: 95px;
 		margin-left: -47.5px;
-		background-image:url("../images/play-lg.png");	
+		background-image:url("../images/play-lg.png");
 		background-position: 0 -639px;
 	}
 	.hero > div.inner .playVid:hover {
