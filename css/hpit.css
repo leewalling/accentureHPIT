@@ -2810,7 +2810,6 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		/*background-color: purple !important;*/
 	}
 	.onMobile .social.inHeader {
-		display: block;
 		right: 50%;
 		width: auto;
 		margin-right: -25%;
@@ -2823,9 +2822,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		/*background-color: purple !important;*/
 	}
 	.onMobile .social.inHeader {
-		/*background-color: green !important;*/
-		display: block;
-		right: 5%;
+		/*background-color: green !important;
+		display: block;*/
+		right: 4%;
 		width: 90%;
 		margin-right: 0;
 	}
