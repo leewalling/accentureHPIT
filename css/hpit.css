@@ -1341,7 +1341,7 @@ img {
   	height: 25px;
 }
 .onMobile .social.inHeader {
-  	background-color: red !important;
+  	/*background-color: red !important;*/
 }
 .social > .addthis_toolbox > a {
   	display: inline-block;
@@ -2807,10 +2807,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 /* mobile - landscape */
 @media only screen and (orientation : landscape) {
 	.onMobile .navbar-nav > li.share {
-		background-color: purple !important;
+		/*background-color: purple !important;*/
 	}
 	.onMobile .social.inHeader {
-		display: block;
 		right: 50%;
 		width: auto;
 		margin-right: -25%;
@@ -2820,12 +2819,12 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 /* mobile - Portrait */
 @media only screen and (orientation : portrait) {
 	.onMobile .navbar-nav > li.share {
-		background-color: purple !important;
+		/*background-color: purple !important;*/
 	}
 	.onMobile .social.inHeader {
-		background-color: green !important;
-		display: block;
-		right: 5%;
+		/*background-color: green !important;
+		display: block;*/
+		right: 4%;
 		width: 90%;
 		margin-right: 0;
 	}
