@@ -1969,7 +1969,27 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 /* galaxy tablet - portrait */
 @media (orientation: portrait) and (-webkit-device-pixel-ratio: 1.5) {
 	
-} 
+}
+
+/* less than 960px wide */
+@media only screen and (max-width : 960px) {
+	.onMobile .container > .navbar-collapse .navbar-nav {
+		display: block !important;
+	}
+	.onMobile .navbar-nav > li {
+		display: inline-block !important;
+		min-width: 0;
+		width: 100% !important;
+		border: none;
+		border-bottom: 1px solid #363636 !important;
+	}
+	.onMobile .navbar-nav > li.download {
+		width: 100% !important;
+	}
+	.onMobile .onMobile .container > .navbar-collapse {
+		border-bottom: 1px solid #363636 !important
+	}
+}
 
 /* less than 640px wide */
 @media only screen and (max-width : 640px) {
