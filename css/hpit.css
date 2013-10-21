@@ -1253,7 +1253,7 @@ img {
 }
 .navbar-nav > li {
   	position: relative;
-  	min-width:138px;
+  	min-width:170px;
   	overflow: visible;
   	border-left:1px solid #363636;
   	float: right;
@@ -1266,6 +1266,7 @@ img {
 }
 .navbar-nav > li .social {
   	display: none;
+  	/*display: block;*/
 	overflow: hidden;
   	background: transparent;
   	padding: 18px 11px;
@@ -1275,12 +1276,15 @@ img {
   	cursor: pointer;
   	color:#fff;
 	top:0;
-	right:0;
+	left: 0;
 	z-index: 201;
-	text-align: right;
+	height: 70px;
 }
 .navbar-nav > li:hover {
   	background: #363636;
+}
+.navbar-nav > li.share {
+	overflow: hidden;
 }
 .navbar-nav > li.share:hover > a {
 	visibility: hidden;
@@ -1340,8 +1344,11 @@ img {
 .social.inHeader > .addthis_toolbox {
   	height: 25px;
 }
-.onMobile .social.inHeader {
-  	/*background-color: red !important;*/
+.social.inHeader {
+  	width: 80% !important;
+  	text-align: center !important;
+  	margin: 0 10% !important;
+  	/*background-color: green !important;*/
 }
 .social > .addthis_toolbox > a {
   	display: inline-block;
@@ -1364,6 +1371,8 @@ img {
 .onMobile .social > .addthis_toolbox,
 .onIpad .social > .addthis_toolbox {
   	height: 30px;
+  	/*background-color: lime !important;*/
+  	display: inline-block;
 }
 .onMobile .social > .addthis_toolbox > a,
 .onMobile .social > .addthis_toolbox > a > img,
@@ -1374,22 +1383,25 @@ img {
 }
 .onMobile .social > .addthis_toolbox > a,
 .onIpad .social > .addthis_toolbox > a {
-  	margin: 0 7px 0 0;
+  	margin: 0 4px;
 }
 .addthis_button_linkedin > img {
-  	background-position: 0 -508px;
+  	background-position: -65px -498px;
 }
 .addthis_button_twitter > img {
-  	background-position: 0 -538px;
+  	background-position: -65px -533px;
 }
 .addthis_button_facebook > img {
-  	background-position: 0 -448px;
+  	background-position: -65px -428px;
 }
 .addthis_button_google_plusone_share > img {
-  	background-position: 0 -478px;
+  	background-position: -65px -463px;1267
 }
 .addthis_button_google_plusone_share {
-  	margin-right: 0 !important;
+  	margin-right: 0 !important;1267
+}
+.addthis_button_linkedin {
+  	margin-left: 0 !important;
 }
 .social .linkedin {
   	background-position: 0 0;
@@ -1649,11 +1661,12 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		line-height: 26px;
 		padding: 20px 10px;
 		display: inline-block;
+		white-space: nowrap;
 	}
 	.navbar-nav > li .social {
 		padding: 20px 0;
-		right: 12%;
-		width: auto;
+		/*right: 12%;
+		width: auto;*/
 	}
 	.navbar-default .navbar-nav > li > a > .icn {
 		margin-top: 3px;
@@ -1969,7 +1982,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		font-size: 28px;
 		width: 88%;
 	}
-	
+	.navbar-default .navbar-nav > li > a > .icn {
+		display:none;
+	}	
 	#accMarkMob {
 		min-height: 0px;
 		margin-top: -400px;
@@ -2105,9 +2120,6 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.navbar-default .navbar-nav > li > a {
 		font-size: 14px;
 		padding: 15px 12px;
-	}
-	.navbar-default .navbar-nav > li > a > .icn {
-		display:none;
 	}
 	.navbar-nav > li .social {
 		right: 2%;
@@ -2823,10 +2835,10 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	}
 	.onMobile .social.inHeader {
 		/*background-color: green !important;
-		display: block;*/
+		display: block;
 		right: 4%;
 		width: 90%;
-		margin-right: 0;
+		margin-right: 0;*/
 	}
 }
 
