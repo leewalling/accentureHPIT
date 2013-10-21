@@ -2553,6 +2553,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 	.insight .content {
 		margin-top: 125px;
+	}	
+	.exception .insight .content {
+		margin:-3px 0 0 0 !important;
 	}
 	.insight .insightTitle {
 		left: 190px;
