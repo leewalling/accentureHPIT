@@ -2646,6 +2646,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		float: right;
 		width: 60% !important;
 	}
+	.exception .container > .navbar-collapse {
+		width: 100% !important;
+	}
 	.navbar-nav {
 		float: right;
 		width: 100% !important;
@@ -2655,6 +2658,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.navbar-nav > li {
 		width: auto;
 		margin:0;
+	}
+	.exception .navbar-nav > li {
+		width: 29% !important;
 	}
 	.navbar-nav > li.share {
 		width: 33%;
@@ -2744,6 +2750,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 	.container > .navbar-collapse {
 		width: 80% !important;
+	}
+	.exception .container > .navbar-collapse {
+		width: 100% !important;
 	}
 	.insight .insightTitle,
 	.onMobile .insightTitle {
