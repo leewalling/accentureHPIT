@@ -1340,6 +1340,9 @@ img {
 .social.inHeader > .addthis_toolbox {
   	height: 25px;
 }
+.onMobile .social.inHeader {
+  	background-color: red !important;
+}
 .social > .addthis_toolbox > a {
   	display: inline-block;
   	float: left;
@@ -2798,6 +2801,28 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	.hero .video-wrapper {
 		/*height: 400px;*/
 		background-size: auto 100% !important;
+	}
+}
+
+/* mobile - landscape */
+@media only screen and (orientation : landscape) {
+	.onMobile .social.inHeader {
+		background-color: red !important;
+		display: block;
+		right: 50%;
+		width: auto;
+		margin-right: -30%;
+	}
+}
+
+/* mobile - Portrait */
+@media only screen and (orientation : ortrait) {
+	.onMobile .social.inHeader {
+		background-color: green !important;
+		display: block;
+		right: 50%;
+		width: auto;
+		margin-right: -30%;
 	}
 }
 
