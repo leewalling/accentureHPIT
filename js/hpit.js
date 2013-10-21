@@ -382,6 +382,7 @@ hpit.core = (function() {
     var $iOS = /iphone|ipod|ios/i.test($userAgent);
     var $iPad = /ipad/i.test($userAgent);
     //var $iPad = true;
+    var $Nexus = /nexus/i.test($userAgent);
     var chapterClicked;
     var trackPageViewDelay;
     var haveDeepLink = false;
@@ -432,7 +433,7 @@ hpit.core = (function() {
         //console.log('NO preload');
         }
         
-        $('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile:' + onMobile() + '</div>' + '<div>onIpad:' + onIpad() + '</div>');
+        $('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile: ' + onMobile() + '</div>' + '<div>onIpad: ' + onIpad() + '</div>' + '<div>onNexus: ' + onNexus() + '</div>');
 
         // add favicon
         //addFavicon();
@@ -639,6 +640,10 @@ hpit.core = (function() {
     
     function onIpad() {
         return ($iPad);
+    }
+    
+    function onNexus() {
+        return ($Nexus);
     }
     
     function onProduction() {
