@@ -680,14 +680,12 @@ hpit.core = (function() {
             }
         });
     }
-   
-    function arrangeTopNav() {
-        //alert('will arrange');
+
+    // method to re-arrange the top nav items - only called on mobile
+	function arrangeTopNav() {
         var $par = $('.navbar-nav');
         var $child1 = $par.find('li').first();
         var $child2 = $par.find('li').last();
-        //console.log($child1);
-        //console.log($child2);
         $par.append($child1).prepend($child2);
     }
    
@@ -955,13 +953,16 @@ hpit.core = (function() {
                         newHash = '#theTop';
                     //return false;
                     }
+
+                    //$.scrollTo(“#object”, 800, {axis: ‘y’});
 					
                     $(window).scrollTo(
                     newHash, 
-                    hpit.config.duration[hpit.config.desktopORtouch], 
+                    hpit.config.duration[hpit.config.desktopORtouch],
+                    {axis: 'y'},
                     {
                         easing: hpit.config.easing,
-                        onAfter: function() {
+                        h: function() {
                             hpit.config.currInsight = newNum;
                             //console.log('currInsight change 3');
                             hpit.config.state = newNum;
