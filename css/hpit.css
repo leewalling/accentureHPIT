@@ -1554,6 +1554,9 @@ img {
 	padding: 0px 0px 0px 0px;
 }
 
+.onMobile #ll-overlay .inner {
+	margin-top: -200px;	
+}
 .onMobile #ll-overlay .chapters {
 	display: none !important;
 }
