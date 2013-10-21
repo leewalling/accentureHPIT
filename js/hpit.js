@@ -1553,6 +1553,7 @@ hpit.core = (function() {
         // video chapters
         $('.chapters a')
 	        .on('click touchstart', function(e) {
+	        	console.log('e: ', e);
 	            e.preventDefault();
 	            clearTimeout(chapterClicked);
 	            hpit.config.justClicked = true;
@@ -1573,17 +1574,17 @@ hpit.core = (function() {
 	            //console.log('justClicked cleared');
 	            }, 4000);
 
-	            console.log('touchstart');
+	            //console.log('touchstart');
 	        })
-	        .on('mouseenter mousedown', function(e) {
+	        .on('mouseenter', function(e) {
 	            var thisNum = $(this).text();
-	            console.log('mousedown');
+	            //console.log('mousedown');
 	            //console.log('thisNum: ', thisNum);
 	            $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
 	        })
-	        .on('mouseleave mouseup', function(e) {
+	        .on('mouseleave', function(e) {
 	            $('#ll-overlay .chapters .contentRow').hide().text('');
-	            console.log('mouseup');
+	            //console.log('mouseup');
 	        	//console.log('clear description');
 	        });
         
