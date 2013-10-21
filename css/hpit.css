@@ -107,7 +107,8 @@ img {
 	padding-top:0;
 }
 .onMobile .hero {
-	position: relative;
+	position: relative !important;
+	height: auto !important;
 	min-height: 0px !important;
 	background-color: #000;
 }
