@@ -1552,36 +1552,38 @@ hpit.core = (function() {
 
         // video chapters
         $('.chapters a')
-        .on('click', function(e) {
-            e.preventDefault();
-            clearTimeout(chapterClicked);
-            hpit.config.justClicked = true;
-            var cNum = $(this).text();
-            var skipTo = hpit.config.chapters[cNum].position / 1000;
-            if (onProduction()) {
-				FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
-			}
-            
-            try {
-                DelvePlayer.doSeekToSecond(skipTo);
-            } catch (err) {
-            	//console.log('DelvePlayer error: ', err);
-            }
-            
-            chapterClicked = setTimeout(function() {
-                hpit.config.justClicked = false;
-            //console.log('justClicked cleared');
-            }, 4000);
-        })
-        .on('mouseenter', function(e) {
-            var thisNum = $(this).text();
-            //console.log('thisNum: ', thisNum);
-            $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
-        })
-        .on('mouseleave', function(e) {
-            $('#ll-overlay .chapters .contentRow').hide().text('');
-        //console.log('clear description');
-        });
+	        .on('click touch', function(e) {
+	            e.preventDefault();
+	            clearTimeout(chapterClicked);
+	            hpit.config.justClicked = true;
+	            var cNum = $(this).text();
+	            var skipTo = hpit.config.chapters[cNum].position / 1000;
+	            if (onProduction()) {
+					FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
+				}
+	            
+	            try {
+	                DelvePlayer.doSeekToSecond(skipTo);
+	            } catch (err) {
+	            	//console.log('DelvePlayer error: ', err);
+	            }
+	            
+	            chapterClicked = setTimeout(function() {
+	                hpit.config.justClicked = false;
+	            //console.log('justClicked cleared');
+	            }, 4000);
+
+	            console.log('hi LEE!');
+	        })
+	        .on('mouseenter', function(e) {
+	            var thisNum = $(this).text();
+	            //console.log('thisNum: ', thisNum);
+	            $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
+	        })
+	        .on('mouseleave', function(e) {
+	            $('#ll-overlay .chapters .contentRow').hide().text('');
+	        //console.log('clear description');
+	        });
         
         $('.the-video a').on('click', function(e) {
             e.preventDefault();
