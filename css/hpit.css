@@ -83,7 +83,6 @@ img {
     background-image: url("../images/sprites.png") !important;
 }
 .bg-menu{ background-position: 0 -317px; width: 8px; height: 7px; }
-.xxx{ background-position: 0 0; width: 46px; height: 46px; } 
 /* END SPRITESHEET */
 
 .container {
@@ -682,6 +681,8 @@ img {
 .onMobile .insight {
 	min-height: 0;
 	background-color: #fff;
+	background-image: none !important;
+	padding: 0 !important;
 }
 .onMobile .insight .content .right-col {
 	/*background-color: magenta;*/
@@ -1921,6 +1922,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 	.onMobile .insight .insightTitle {
 		width: 100% !important;
+		position: relative !important;
 	}
 	.onMobile .hero > div.inner {
 		padding: 5% !important;
@@ -2462,7 +2464,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		top: 250px;
 	}
 
-	.insight {
+	.onIpad .insight {
 		/*background-color: blue !important;*/
 		min-height: 1600px !important;
 		background-position: top left;
@@ -2578,6 +2580,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.hero > div.inner .playVid {
 		bottom: 0 !important;
 	}
+	.exception .hero > div.inner .playVid {
+		bottom: -200px !important;
+	}
 	.insight .content .right-col > div {
 		font-size: 22px;
 		line-height: 26px;
@@ -2618,6 +2623,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	*/
 	.hero {
 		height: 570px;
+	}
+	.exception .hero {
+		height: auto !importanta;
 	}
 	.hero .video-wrapper {
 		height: 570px;
@@ -2663,6 +2671,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.insight .insightTitle {
 		color: #fff;
 		position: absolute;
+	}
+	.exception .insight .insightTitle {
+		color: #000 !important;
+		position: relative !important;
 	}
 	.insight .content {
 		width: 75%;
@@ -2830,6 +2842,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		right: 50%;
 		width: auto;
 		margin-right: -25%;
+	}
+	.exception {
+
 	}
 }
 
