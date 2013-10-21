@@ -2807,22 +2807,21 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 /* mobile - landscape */
 @media only screen and (orientation : landscape) {
 	.onMobile .social.inHeader {
-		background-color: red !important;
 		display: block;
 		right: 50%;
 		width: auto;
-		margin-right: -30%;
+		margin-right: -25%;
 	}
 }
 
 /* mobile - Portrait */
-@media only screen and (orientation : ortrait) {
+@media only screen and (orientation : portrait) {
 	.onMobile .social.inHeader {
 		background-color: green !important;
 		display: block;
 		right: 50%;
 		width: auto;
-		margin-right: -30%;
+		margin-right: -25%;
 	}
 }
 
