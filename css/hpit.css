@@ -3043,6 +3043,16 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 		overflow: hidden;
 		width: 100%;
 	}
+	.galaxyTab.onMobile .navbar-nav > li {
+	  	width: auto;
+	  	margin: 0;
+	}
+	.galaxyTab.onMobile .navbar-nav > li.share {
+	  	width: 33%;
+	}
+	.galaxyTab.onMobile .navbar-nav > li.download {
+	  	width: 38%;
+	}
 	.galaxyTab.exception .hero.visible-xs {
 	 	display: none !important;
 	}
