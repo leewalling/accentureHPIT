@@ -3075,73 +3075,81 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		background-position: top left;
 		background-size: auto 100%;
 		border: none;
+		background-color: transparent !important;
 	}
-
+	.exception.onMobile .insight .marker,
+	.exception.onMobile .insight .insightTitle .social {
+		display: inline-block !important;
+	}
+	.exception.onMobile .insight .insightTitle h4,
+	.exception.onMobile .insight .insightTitle .toggler {
+		display: none !important;
+	}
 	.exception.onMobile .insight[data-insight="10"] {
-		background-image:url("../images/bg-ipad-10.jpg");
+		background-image:url("../images/bg-ipad-10.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="9"] {
-		background-image:url("../images/bg-ipad-09.jpg");
+		background-image:url("../images/bg-ipad-09.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="8"] {
-		background-image:url("../images/bg-ipad-08.jpg");
+		background-image:url("../images/bg-ipad-08.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="7"] {
-		background-image:url("../images/bg-ipad-07.jpg");
+		background-image:url("../images/bg-ipad-07.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="6"] {
-		background-image:url("../images/bg-ipad-06.jpg");
+		background-image:url("../images/bg-ipad-06.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="5"] {
-		background-image:url("../images/bg-ipad-05.jpg");
+		background-image:url("../images/bg-ipad-05.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="4"] {
-		background-image:url("../images/bg-ipad-04.jpg");
+		background-image:url("../images/bg-ipad-04.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="3"] {
-		background-image:url("../images/bg-ipad-03.jpg");
+		background-image:url("../images/bg-ipad-03.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="2"] {
-		background-image:url("../images/bg-ipad-02.jpg");
+		background-image:url("../images/bg-ipad-02.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight[data-insight="1"] {
-		background-image:url("../images/bg-ipad-01.jpg");
+		background-image:url("../images/bg-ipad-01.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center !important;
