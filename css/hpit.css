@@ -3030,12 +3030,18 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 		border-bottom: none;
 	}
 	.galaxyTab.onMobile .navbar-toggle {
-		display: none;
+		display: none !important;
 	}
 	.galaxyTab.onMobile .container > .navbar-collapse {
 		float: right;
 		width: 60% !important;
 		display: block !important;
+	}
+	.galaxyTab.onMobile .container > .navbar-collapse .navbar-nav {
+		display: table;
+		margin: 0;
+		overflow: hidden;
+		width: 100%;
 	}
 	.galaxyTab.exception .hero.visible-xs {
 	 	display: none !important;
