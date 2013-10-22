@@ -2992,6 +2992,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung GALAXY Tab 10.1 - Landscape */
 @media (max-device-width: 1280px) and (orientation: landscape) {
+	#diagnostics {
+		background-color: orange;
+	}
 	/*
 	#diagnostics {
 		background-color: pink;
@@ -3070,6 +3073,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung GALAXY Tab 10.1 - Portrait */
 @media (max-device-width: 800px) and (orientation: portrait) {
+	#diagnostics {
+		background-color: lime;
+	}
 	.exception.onMobile .hero > div.inner {
 		padding: 5% !important;
 	}
@@ -3079,6 +3085,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		background-size: auto 100%;
 		border: none;
 		background-color: transparent !important;
+		padding-bottom: 75px !important;
 	}
 	.exception.onMobile .insight .marker,
 	.exception.onMobile .insight .insightTitle .social {
@@ -3160,13 +3167,20 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	}
 	.exception.onMobile .insight .container.content {
 		display: inline-block !important;
-		position:relative;
-		margin:0 auto;
-		margin-top: 125px;
-		max-width:1000px;
-		width:75%;
-		overflow:visible;
-		color:#000;
+		position: relative !important;
+		margin: 125px auto 0 auto !important;
+		max-width: 600px !important;
+		width: 75% !important;
+		overflow: visible !important;
+		color: #000 !important;
+	}
+	.exception.onMobile .insight .content .right-col {
+		float: none !important;
+		width: 50% !important;
+		background: #fff !important;
+	}
+	.exception.onMobile .col-lg-offset-6 {
+		margin-left: 50% !important;
 	}
 }
 
