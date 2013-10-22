@@ -487,7 +487,7 @@ hpit.core = (function() {
             paneLock();
         }
         
-        if (onMobile()) {
+        if (onMobile() && !onGalaxyTab()) {
             arrangeTopNav();
         }
 

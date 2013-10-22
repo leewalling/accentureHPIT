@@ -3025,11 +3025,11 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	.galaxyTab.onMobile #diagnostics {
 		background-color: lime;
 	}
-	.galaxyTab.onMobile .onMobile .container > .navbar-header {
+	.galaxyTab.onMobile .container > .navbar-header {
 		float: left;
 		border-bottom: none;
 	}
-	.galaxyTab.onMobile .onMobile .navbar-toggle {
+	.galaxyTab.onMobile .navbar-toggle {
 		display: none;
 	}
 	.galaxyTab.onMobile .container > .navbar-collapse {
