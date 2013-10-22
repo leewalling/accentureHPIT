@@ -3000,6 +3000,13 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	.galaxyTab.onMobile .hero > div.inner {
 		padding: 40px 100px 160px 185px !important;
 	}
+	.galaxyTab.exception .hero {
+		height: 570px !important;
+	}
+	.galaxyTab.exception .hero .video-wrapper {
+		position: absolute;
+		height: 570px !important;
+	}
 }
 
 /* Samsung GALAXY Tab 10.1 - Portrait */
@@ -3023,6 +3030,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	.galaxyTab.exception .hero .video-wrapper {
 		position: absolute;
 		height: 500px !important;
+		background-size: 100% auto;
 	}
 	.galaxyTab.onMobile .hero > div.inner {
 		padding: 40px 100px 160px 185px !important;
@@ -3036,8 +3044,15 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	.galaxyTab.exception .hero.left > div.inner h3 {
 		width: 72%;
 	}
-	.galaxyTab.onMobile .hero > div.inner {
-		padding: 5%;
+	.galaxyTab.exception .hero > div.inner .playVid {
+		width: 95px;
+		height: 95px;
+		margin-left: -47.5px;
+		background-image:url("../images/play-lg.png");
+		background-position: 0 -639px;
+	}
+	.galaxyTab.exception .hero > div.inner .playVid:hover {
+		background-position: 0 -734px;
 	}
 	.galaxyTab.onMobile .insight {
 		min-height: auto !important;
