@@ -103,7 +103,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Your new boss? Your customer.'
             },
             twitter: {
-                title: 'CIO Action Item #1: Your new boss? Your customer. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                title: 'CIO Action Item #1: Your new boss? Your customer. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: Your new boss? Your customer.'
             },
@@ -127,7 +127,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Context is king'
             },
             twitter: {
-                title: 'CIO Action Item #2: Context is king. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                title: 'CIO Action Item #2: Context is king. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: Context is king'
             },
@@ -151,7 +151,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Business strategy and IT now work as one'
             },
             twitter: {
-                title: 'CIO Action Item #3: Biz strategy and IT now work as one. Get the top 10 insights from the Accenture High Performance IT Survey:',
+                title: 'CIO Action Item #3: Biz strategy and IT now work as one. For more, read Accenture\'s 2013 High Performance IT Research',
             	desc: '',
                 alt: 'Share via Twitter: Business strategy and IT now work as one'
             },
@@ -175,7 +175,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Bringing harmony to hybrid IT'
             },
             twitter: {
-                title: 'CIO Action Item #4: Bringing harmony to hybrid IT. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                title: 'CIO Action Item #4: Bringing harmony to hybrid IT. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: Bringing harmony to hybrid IT'
             },
@@ -199,7 +199,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Fearlessly digital'
             },
             twitter: {
-                title: 'CIO Action Item #5: Fearlessly digital. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                title: 'CIO Action Item #5: Fearlessly digital. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: Fearlessly digital'
             },
@@ -223,7 +223,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: The power of self-service'
             },
             twitter: {
-                title: 'CIO Action Item #6: The power of self-service. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                title: 'CIO Action Item #6: The power of self-service. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: The power of self-service'
             },
@@ -247,7 +247,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Unearthing data gems'
             },
             twitter: {
-                title: 'CIO Action Item #7: Unearthing data gems. Get the top 10 insights from the Accenture High Performance IT Survey 2013',
+                title: 'CIO Action Item #7: Unearthing data gems. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: Unearthing data gems'
             },
@@ -271,7 +271,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Agility and speed. The new normal'
             },
             twitter: {
-                title: 'CIO Action Item #8: Agility and speed are table stakes. Get the top 10 insights from the Accenture High Performance IT Survey',
+                title: 'CIO Action Item #8: Agility and speed are table stakes. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: Agility and speed. The new normal'
             },
@@ -295,7 +295,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Plug-and-play talent'
             },
             twitter: {
-                title: 'CIO Action Item #9: Plug-and-play talent. Get the top 10 insights from the Accenture High Performance IT Survey:',
+                title: 'CIO Action Item #9: Plug-and-play talent. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: Plug-and-play talent'
             },
@@ -319,7 +319,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Uniting business risk and IT security'
             },
             twitter: {
-                title: 'CIO Action Item #10: Uniting biz risk and IT security. Get the top 10 insights from the Accenture High Performance IT Survey',
+                title: 'CIO Action Item #10: Uniting biz risk and IT security. For more, read Accenture\'s 2013 High Performance IT Research',
                 desc: '',
                 alt: 'Share via Twitter: Uniting business risk and IT security'
             },
@@ -1553,7 +1553,6 @@ hpit.core = (function() {
         // video chapters
         $('.chapters a')
 	        .on('click touchstart', function(e) {
-	        	console.log('e: ', e.type);
 	            e.preventDefault();
 	            clearTimeout(chapterClicked);
 	            hpit.config.justClicked = true;
@@ -1577,12 +1576,10 @@ hpit.core = (function() {
 	            //console.log('touchstart');
 	        })
 	        .on('mouseenter touchstart', function(e) {
-	        	console.log('e: ', e.type);
 	            var thisNum = $(this).text();
 	            $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
 	        })
 	        .on('mouseleave touchend', function(e) {
-	        	console.log('e: ', e.type);
 	            $('#ll-overlay .chapters .contentRow').hide().text('');
 	        });
         
