@@ -3037,6 +3037,16 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 		width: 60% !important;
 		display: block !important;
 	}
+	.galaxyTab.onMobile .container {
+		border-bottom: 2px solid #363636 !important;
+	}
+	.galaxyTab.onMobile .container > .navbar-header,
+	.galaxyTab.onMobile .container > .navbar-collapse {
+		border-bottom: none;
+	}
+	.galaxyTab.onMobile .container {
+		border-bottom: 2px solid #363636 !important;
+	}
 	.galaxyTab.onMobile .container > .navbar-collapse .navbar-nav {
 		display: table;
 		margin: 0;
