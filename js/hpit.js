@@ -495,6 +495,7 @@ hpit.core = (function() {
             //FlashLinkAnalysis($(this).attr('href'), "download study:topnav", "linkanalysis") 
 			/* SGS: To trigger as download instead of normal link analysis data */ 
 			if (onProduction()) {
+            CleanUpLtVars();
 				FlashDownload($(this).attr('href'), "download study:topnav", "linkanalysis")
 			}
         });
@@ -508,10 +509,12 @@ hpit.core = (function() {
             //alert('$trgt: ', $trgt);
             if (onProduction()) {
 				   if ($trgt.hasClass('open')) {
+                  CleanUpLtVars();
 					   FlashDownload($(this).attr('href'), "download study:insight" +  $.trim($title.text()).replace('\n', ''), "linkanalysis");
 				   }
 				   else
                {
+                  CleanUpLtVars();
                   FlashDownload($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis");
                }
             }
@@ -996,10 +999,13 @@ hpit.core = (function() {
                         /* SGS */
                         
 						if (newNum == 0) {
+                     CleanUpLtVars();
 							FlashLinkAnalysis(targetPage, "Menu Up:home", "linkanalysis");
 							omniTrackPageView("home");
 						}
-						else {FlashLinkAnalysis(targetPage, "Menu Up:insight" + newNum, "linkanalysis");}
+						else {
+                        CleanUpLtVars();
+                        FlashLinkAnalysis(targetPage, "Menu Up:insight" + newNum, "linkanalysis");}
                     }                }
             } else {
                 //console.log('cur: ', $cur);
@@ -1030,6 +1036,7 @@ hpit.core = (function() {
                     if (onProduction()) {
                         //FlashLinkAnalysis($(this).attr('href'), "Menu Down:insight" + newNum, "linkanalysis");
                         /* SGS */
+                        CleanUpLtVars();
                         FlashLinkAnalysis(targetPage, "Menu Down:insight" + newNum, "linkanalysis");
                         //omniTrackPageView(newNum);
                     }
@@ -1095,6 +1102,7 @@ hpit.core = (function() {
 					$trgt.removeClass('open');
 				   });*/
         		   if (onProduction()) {
+                  CleanUpLtVars();
 					   FlashLinkAnalysis('home:insight', "mobile:close:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
 				   }
             } 
@@ -1106,6 +1114,7 @@ hpit.core = (function() {
 					$trgt.addClass('open');
 				   });*/
         		   if (onProduction()) {
+                  CleanUpLtVars();
 					   FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
 				   }
             }
@@ -1349,7 +1358,8 @@ hpit.core = (function() {
 	    if (data.isPlaying) {
 	        var videoTitle = DelvePlayer.doGetCurrentMedia().title;
 	        if (onProduction()) {
-				FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis");
+				   CleanUpLtVars();
+               FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis");
 			}
 	    }
 	}
@@ -1529,12 +1539,6 @@ hpit.core = (function() {
                 $('#ll-overlay #ll-player').html(vidContent);
                 LimelightPlayerUtil.initEmbed('limelight_player_239897');
             });
-            
-            omniTrack({
-                eventLink: $(this).attr('href'),
-                eventName: $(this).attr('href').replace('#', ''),
-                eventType: 'hero video play'
-            });
         });
 
         // close button
@@ -1573,7 +1577,8 @@ hpit.core = (function() {
 	            var cNum = $(this).text();
 	            var skipTo = hpit.config.chapters[cNum].position / 1000;
 	            if (onProduction()) {
-					FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
+					   CleanUpLtVars();
+                  FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
 				}
 	            
 	            try {
@@ -1680,7 +1685,8 @@ hpit.core = (function() {
                 $target.removeClass("opened");
                 if (th.hasClass("closeX")) {
                 	if (onProduction()) {
-						FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
+                     CleanUpLtVars();
+						   FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
 					}
                 }
             } else {
@@ -1688,7 +1694,8 @@ hpit.core = (function() {
                 $target.addClass("opened");
                 if (th.attr("id") == "toggleMenu") {
                 	if (onProduction()) {
-						FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
+						   CleanUpLtVars();
+                     FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
 					}
                 }
             }
@@ -1712,15 +1719,18 @@ hpit.core = (function() {
         $('.navbar-toggle').on('click', function(e) {
             e.preventDefault();
             if (onProduction()) {
-				if ($(this).hasClass("navbar-toggle collapsed")) {					
+				if ($(this).hasClass("navbar-toggle collapsed")) {		
+               CleanUpLtVars();
 					FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
 					}
-				else if (initClick){ 
+				else if (initClick){
+               CleanUpLtVars();
 					FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
 					initClick = false;
 					}
-				else { FlashLinkAnalysis("mobile", "menu-toggle-off", "linkanalysis");}
-                
+				else {
+               CleanUpLtVars();
+               FlashLinkAnalysis("mobile", "menu-toggle-off", "linkanalysis");}
             }
         });
         //$('.navbar-toggle')
@@ -1801,6 +1811,7 @@ hpit.core = (function() {
 
 		if (onProduction()) {
 			try {
+               CleanUpLtVars();
 	            FlashLinkAnalysis(obj.eventLink, obj.eventName, obj.eventType);
 	        } catch (err) {
 	        	//console.log('Tracking error: ', err);
