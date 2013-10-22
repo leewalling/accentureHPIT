@@ -2032,7 +2032,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.onMobile .navbar-nav > li {
 		display: inline-block !important;
 		min-width: 0;
-		width: 100% !important;
+		width: 100%;
 		border: none;
 		border-bottom: 1px solid #363636 !important;
 	}
@@ -3042,7 +3042,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	}
 	.galaxyTab.onMobile .container > .navbar-header,
 	.galaxyTab.onMobile .container > .navbar-collapse {
-		border-bottom: none;
+		border-bottom: none!important;
 	}
 	.galaxyTab.onMobile .container {
 		border-bottom: 2px solid #363636 !important;
