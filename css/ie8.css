@@ -32,14 +32,24 @@
 	margin-left: 50% !important;
 	float: right;
 }
+.ie8 .bgImages,
+.ie8 .whiteAngle,
+.ie8 .blackAngle {
+	display: none !important;
+}
 .ie8 .container.main {
 	padding: 0;
 }
 .ie8 .hero {
 	position: relative;
+	height: 700px;
 }
 .ie8 .hero .video-wrapper {
 	background-position: top center;
+	background-size: auto 100%;
+}
+.ie8 #accMark {
+	z-index: 3;
 }
 .ie8 .whiteAngle {
 	width: 100%;
@@ -139,6 +149,15 @@
 	left: -200px;
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff');
 }
+.ie8 #footer {
+	background-color: #000;
+	background-image: none;
+	padding: 25px;
+}
+.ie8 #footer > div {
+	margin: 0;
+	width: 100%;
+}
 
 /* SPRITESHEET */
 .ie8sprite {
@@ -166,12 +185,19 @@
 .ie8-bg-circle-arrow-9{ background-position: 0 -861px; width: 34px; height: 34px; } 
 
 .ie8 .insight .marker {
-	top: 0px !important;
 	width:150px;
 	height:202px;
 	line-height:202px;
 	background-color: transparent !important;
 	background: url("../images/ie8sprites.png") no-repeat top left;
+}
+.ie8 .insight .marker,
+.ie8 .insight.current .marker,
+.ie8 .insight .insightTitle,
+.ie8 .insight.current .insightTitle {
+	position: absolute !important;
+	top: 125px !important;
+	/*background-color: lime !important;*/
 }
 .ie8 .insight[data-insight="1"] .marker {
 	background-position: 0 -900px;
@@ -202,4 +228,87 @@
 }
 .ie8 .insight[data-insight="10"] .marker {
 	background-position: 0 -1107px;
+}
+/* SPRITESHEET */
+
+.ie8 .insight .content .right-col > div.with-video .the-video > a > span.sprites {
+	background-image:none !important;
+}
+
+.ie8 .insight {
+	min-height: auto !important;
+	background-position: top left;
+	background-size: 100% auto;
+	border: none;
+}
+
+.ie8 .insight[data-insight="10"] {
+	background-image:url("../images/bg-ipad-10.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="9"] {
+	background-image:url("../images/bg-ipad-09.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="8"] {
+	background-image:url("../images/bg-ipad-08.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="7"] {
+	background-image:url("../images/bg-ipad-07.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="6"] {
+	background-image:url("../images/bg-ipad-06.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="5"] {
+	background-image:url("../images/bg-ipad-05.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="4"] {
+	background-image:url("../images/bg-ipad-04.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="3"] {
+	background-image:url("../images/bg-ipad-03.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="2"] {
+	background-image:url("../images/bg-ipad-02.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="1"] {
+	background-image:url("../images/bg-ipad-01.jpg");
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center !important;
+  	background-size: auto 100%;*/
 }

@@ -416,7 +416,7 @@ hpit.core = (function() {
             $('#diagnostics').show();
         }
         
-        if (!onMobile() && !onIpad()) {
+        if (!onMobile() && !onIpad() && !isIE8) {
             //console.log('preloading!');
             preload([
                 'images/01.png', 
@@ -741,15 +741,11 @@ hpit.core = (function() {
              var diff = vpStart - winOffset;
              //console.log('diff:', diff);
              
-             if (diff < titleEnd) {
+             if (!isIE8 && (diff < titleEnd)) {
                  if (!currEleTitle.hasClass('lockedBottom')) {
                      currEleTitle.addClass('lockedBottom');
                  }
-             } /* else {
-               if(currEleTitle.hasClass('lockedBottom')){
-                  currEleTitle.removeClass('lockedBottom');
-               }
-            }*/
+             }
              
              var scH = parseInt(hpit.config.scrH);
              var $per = diff / scH;
