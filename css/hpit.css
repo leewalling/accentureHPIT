@@ -3070,6 +3070,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung GALAXY Tab 10.1 - Portrait */
 @media (max-device-width: 800px) and (orientation: portrait) {
+	.exception.onMobile .hero > div.inner {
+		padding: 5% !important;
+	}
 	.exception.onMobile .insight {
 		min-height: 1600px !important;
 		background-position: top left;
@@ -3154,6 +3157,16 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		background-repeat: no-repeat;
 	  	/*background-position: top center !important;
 	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight .container.content {
+		display: inline-block !important;
+		position:relative;
+		margin:0 auto;
+		margin-top: 125px;
+		max-width:1000px;
+		width:75%;
+		overflow:visible;
+		color:#000;
 	}
 }
 
