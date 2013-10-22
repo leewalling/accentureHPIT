@@ -1724,7 +1724,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		white-space: nowrap;
 	}
 	.navbar-nav > li .social {
-		padding: 20px 0;
+		padding: 18px 0;
 		/*right: 12%;
 		width: auto;*/
 	}
@@ -2088,6 +2088,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.onMobile .container > .navbar-collapse {
 		border-bottom: 1px solid #363636 !important
 	}
+	.navbar-nav > li .social {
+		padding: 13px 0;
+	}
 }
 
 /* less than 540px wide */
@@ -2138,7 +2141,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		font-size: 16px;
 	}
 	.navbar-nav > li .social {
-		right: 11%;
+		/*right: 11%;*/
 	}
 	.hero {
 		/*min-height: 636px;*/
@@ -2221,8 +2224,8 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		padding: 15px 12px;
 	}
 	.navbar-nav > li .social {
-		right: 2%;
-		padding: 17px 0;
+		/*right: 2%;
+		padding: 17px 0;*/
 	}
 	.social > a {
 		width: 18px;
@@ -2378,8 +2381,8 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 		padding:15px 5px;
 	}
 	.navbar-nav > li .social {
-		right: 4%;
-		padding: 20px 0;
+		/*right: 4%;
+		padding: 20px 0;*/
 	}
 	.social > a {
 		width: 18px;
@@ -2627,7 +2630,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	  	background-size: auto 100%;*/
 	}
 	.insight[data-insight="1"] {
-		background-image:url("../images/bg-ipad-01.jpg"); /*bg-ipad-01.jpg*/
+		background-image:url("../images/bg-ipad-01.jpg");
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center !important;
