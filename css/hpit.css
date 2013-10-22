@@ -3013,6 +3013,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	.galaxyTab.exception .hero .video-wrapper {
 		position: absolute;
 		height: 570px !important;
+		background-size: 100% auto;
 	}
 }
 
@@ -3056,6 +3057,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	.galaxyTab.onMobile .navbar-nav > li {
 	  	width: auto !important;
 	  	margin: 0;
+	  	border-left:1px solid #363636;
 	}
 	.galaxyTab.onMobile .navbar-nav > li.share {
 	  	width: 35% !important;
@@ -3077,7 +3079,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	.galaxyTab.exception .hero .video-wrapper {
 		position: absolute;
 		height: 500px;
-		background-size: 100% auto;
+		background-size: auto 100%;
 		background-position: 50% 0px;
 	}
 	.galaxyTab.onMobile .hero > div.inner {
@@ -3098,7 +3100,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 		margin-left: -47.5px;
 		background-image:url("../images/play-lg.png");
 		background-position: 0 -639px;
-		bottom:0 !important;
+		bottom: 20px !important;
 	}
 	.galaxyTab.exception .hero > div.inner .playVid:hover {
 		background-position: 0 -734px;
