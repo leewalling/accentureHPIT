@@ -1504,7 +1504,7 @@ hpit.core = (function() {
             }
             $('html').addClass('noScroll');
             $('#ll-overlay').fadeIn(500, function() {
-                var vidContent = '<object type="application/x-shockwave-flash" id="limelight_player_98812" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
+                var vidContent = '<object type="application/x-shockwave-flash" id="limelight_player_239897" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
                 vidContent += '<param name="movie" value="//assets.delvenetworks.com/player/loader.swf"/>';
                 vidContent += '<param name="wmode" value="transparent"/>';
                 vidContent += '<param name="allowScriptAccess" value="always"/>';
