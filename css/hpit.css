@@ -2992,10 +2992,10 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung GALAXY Tab 10.1 - Landscape */
 @media (max-device-width: 1280px) and (orientation: landscape) {
+	/*
 	.galaxyTab #diagnostics {
 		background-color: purple;
 	}
-	/*
 	.insight .content {
 		display: block !important;
 		position:relative;
@@ -3069,14 +3069,18 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 }
 
 /* Samsung GALAXY Tab 10.1 - Portrait */
-@media only screen and (max-device-width: 800px) and (orientation: portrait) {
-	.exception.onMobile #diagnostics {
+@media only screen and (max-device-width: 800px) and (orientation: portrait),
+only screen and (max-device-width: 1280px) and (orientation: landscape) {
+	#diagnostics {
+		background-color: blue;
+	}
+	.galaxyTab.onMobile #diagnostics {
 		background-color: lime;
 	}
-	.exception.onMobile .hero > div.inner {
+	.galaxyTab.onMobile .hero > div.inner {
 		padding: 5% !important;
 	}
-	.exception.onMobile .insight {
+	.galaxyTab.onMobile .insight {
 		min-height: 1600px !important;
 		background-position: top left;
 		background-size: auto 100%;
@@ -3084,85 +3088,85 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		background-color: transparent !important;
 		padding-bottom: 75px !important;
 	}
-	.exception.onMobile .insight .marker,
-	.exception.onMobile .insight .insightTitle .social {
+	.galaxyTab.onMobile .insight .marker,
+	.galaxyTab.onMobile .insight .insightTitle .social {
 		display: inline-block !important;
 	}
-	.exception.onMobile .insight .insightTitle h4,
-	.exception.onMobile .insight .insightTitle .toggler {
+	.galaxyTab.onMobile .insight .insightTitle h4,
+	.galaxyTab.onMobile .insight .insightTitle .toggler {
 		display: none !important;
 	}
-	.exception.onMobile .insight[data-insight="10"] {
+	.galaxyTab.onMobile .insight[data-insight="10"] {
 		background-image:url("../images/bg-ipad-10.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="9"] {
+	.galaxyTab.onMobile .insight[data-insight="9"] {
 		background-image:url("../images/bg-ipad-09.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="8"] {
+	.galaxyTab.onMobile .insight[data-insight="8"] {
 		background-image:url("../images/bg-ipad-08.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="7"] {
+	.galaxyTab.onMobile .insight[data-insight="7"] {
 		background-image:url("../images/bg-ipad-07.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="6"] {
+	.galaxyTab.onMobile .insight[data-insight="6"] {
 		background-image:url("../images/bg-ipad-06.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="5"] {
+	.galaxyTab.onMobile .insight[data-insight="5"] {
 		background-image:url("../images/bg-ipad-05.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="4"] {
+	.galaxyTab.onMobile .insight[data-insight="4"] {
 		background-image:url("../images/bg-ipad-04.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="3"] {
+	.galaxyTab.onMobile .insight[data-insight="3"] {
 		background-image:url("../images/bg-ipad-03.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="2"] {
+	.galaxyTab.onMobile .insight[data-insight="2"] {
 		background-image:url("../images/bg-ipad-02.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight[data-insight="1"] {
+	.galaxyTab.onMobile .insight[data-insight="1"] {
 		background-image:url("../images/bg-ipad-01.jpg") !important;
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center !important;
 	  	background-size: auto 100%;*/
 	}
-	.exception.onMobile .insight .container.content {
+	.galaxyTab.onMobile .insight .container.content {
 		display: block !important;
 		position: relative !important;
 		margin: 0 auto;
@@ -3172,15 +3176,15 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 		overflow: visible !important;
 		color: #000 !important;
 	}
-	.exception.onMobile .insight .content .right-col {
+	.galaxyTab.onMobile .insight .content .right-col {
 		float: none !important;
 		width: 50% !important;
 		background: #fff !important;
 	}
-	.exception.onMobile .col-lg-offset-6 {
+	.galaxyTab.onMobile .col-lg-offset-6 {
 		margin-left: 50% !important;
 	}
-	.exception.onMobile .insight .content .right-col .social {
+	.galaxyTab.onMobile .insight .content .right-col .social {
 		display: none !important;
 	}
 }
