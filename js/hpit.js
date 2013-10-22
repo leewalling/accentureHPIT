@@ -769,7 +769,7 @@ hpit.core = (function() {
          // is the element in the viewport?
          if (winOffset >= vpStart && winOffset < vpEnd) {
              $$('.insight.current', 'context-get', '.container.main').removeClass('current');
-             $$('#sideMenu ul li.hilited', 'context-get', '.container.main').removeClass('hilited');
+             $('#sideMenu ul li.hilited').removeClass('hilited'); //XXX no cache
              $$('.bgImg img.activate', 'context-get', '.container.main').removeClass('activate');
              //$('.bgImages img').css({"margin-top" : 0});
              
@@ -782,7 +782,7 @@ hpit.core = (function() {
              menuItem = parseInt(menuItem);
              //console.log('data: ', menuItem);
              
-             $$('#sideMenu ul li[data-insight-nav="' + menuItem + '"]', 'context-get', '.container.main').addClass('hilited');
+             $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
              $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
              
              if (!hpit.config.locked && (hpit.config.currPageView != menuItem)) { 
