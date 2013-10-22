@@ -2032,7 +2032,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.onMobile .navbar-nav > li {
 		display: inline-block !important;
 		min-width: 0;
-		width: 100%;
+		width: 100% !important;
 		border: none;
 		border-bottom: 1px solid #363636 !important;
 	}
@@ -3034,7 +3034,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	}
 	.galaxyTab.onMobile .container > .navbar-collapse {
 		float: right;
-		width: 60% !important;
+		width: 70% !important;
 		display: block !important;
 	}
 	.galaxyTab.onMobile .container {
@@ -3054,15 +3054,17 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 		width: 100%;
 	}
 	.galaxyTab.onMobile .navbar-nav > li {
-	  	width: auto;
+	  	width: auto !important;
 	  	margin: 0;
 	}
+	/*
 	.galaxyTab.onMobile .navbar-nav > li.share {
 	  	width: 33%;
 	}
 	.galaxyTab.onMobile .navbar-nav > li.download {
 	  	width: 38%;
 	}
+	*/
 	.galaxyTab.exception .hero.visible-xs {
 	 	display: none !important;
 	}
