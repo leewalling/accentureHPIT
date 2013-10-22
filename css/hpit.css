@@ -2992,9 +2992,6 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung GALAXY Tab 10.1 - Landscape */
 @media (max-device-width: 1280px) and (orientation: landscape) {
-	#diagnostics {
-		background-color: orange;
-	}
 	/*
 	#diagnostics {
 		background-color: pink;
@@ -3072,8 +3069,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 }
 
 /* Samsung GALAXY Tab 10.1 - Portrait */
-@media (max-device-width: 800px) and (orientation: portrait) {
-	#diagnostics {
+@media only screen and (max-device-width: 800px) and (orientation: portrait), 
+only screen and (max-device-width: 1280px) and (orientation: landscape) {
+	.exception.onMobile #diagnostics {
 		background-color: lime;
 	}
 	.exception.onMobile .hero > div.inner {
@@ -3166,9 +3164,10 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	  	background-size: auto 100%;*/
 	}
 	.exception.onMobile .insight .container.content {
-		display: inline-block !important;
+		display: block !important;
 		position: relative !important;
-		margin: 125px auto 0 auto !important;
+		margin: 0 auto;
+		margin-top: 125px;
 		max-width: 600px !important;
 		width: 75% !important;
 		overflow: visible !important;
@@ -3181,6 +3180,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	}
 	.exception.onMobile .col-lg-offset-6 {
 		margin-left: 50% !important;
+	}
+	.exception.onMobile .insight .content .right-col .social {
+		display: none !important;
 	}
 }
 
