@@ -3070,7 +3070,83 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung GALAXY Tab 10.1 - Portrait */
 @media (max-device-width: 800px) and (orientation: portrait) {
-	/**/
+	.exception.onMobile .insight {
+		min-height: 1600px !important;
+		background-position: top left;
+		background-size: auto 100%;
+		border: none;
+	}
+
+	.exception.onMobile .insight[data-insight="10"] {
+		background-image:url("../images/bg-ipad-10.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="9"] {
+		background-image:url("../images/bg-ipad-09.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="8"] {
+		background-image:url("../images/bg-ipad-08.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="7"] {
+		background-image:url("../images/bg-ipad-07.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="6"] {
+		background-image:url("../images/bg-ipad-06.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="5"] {
+		background-image:url("../images/bg-ipad-05.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="4"] {
+		background-image:url("../images/bg-ipad-04.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="3"] {
+		background-image:url("../images/bg-ipad-03.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="2"] {
+		background-image:url("../images/bg-ipad-02.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center;
+	  	background-size: auto 100%;*/
+	}
+	.exception.onMobile .insight[data-insight="1"] {
+		background-image:url("../images/bg-ipad-01.jpg");
+		background-attachment: scroll !important;
+		background-repeat: no-repeat;
+	  	/*background-position: top center !important;
+	  	background-size: auto 100%;*/
+	}
 }
 
 /* Nexus 7 */
