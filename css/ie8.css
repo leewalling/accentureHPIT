@@ -238,12 +238,17 @@
 .ie8 .insight {
 	min-height: auto !important;
 	background-position: top left;
-	background-size: 100% auto;
+	/*background-size: 100% auto;*/
 	border: none;
+	background-color: #000;
+	background-size: cover;
 }
 
 .ie8 .insight[data-insight="10"] {
 	background-image:url("../images/bg-ipad-10.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-10.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -251,6 +256,9 @@
 }
 .ie8 .insight[data-insight="9"] {
 	background-image:url("../images/bg-ipad-09.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-09.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -258,6 +266,9 @@
 }
 .ie8 .insight[data-insight="8"] {
 	background-image:url("../images/bg-ipad-08.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-08.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -265,6 +276,9 @@
 }
 .ie8 .insight[data-insight="7"] {
 	background-image:url("../images/bg-ipad-07.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-07.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -272,6 +286,9 @@
 }
 .ie8 .insight[data-insight="6"] {
 	background-image:url("../images/bg-ipad-06.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-06.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -279,6 +296,9 @@
 }
 .ie8 .insight[data-insight="5"] {
 	background-image:url("../images/bg-ipad-05.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-05.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -286,6 +306,9 @@
 }
 .ie8 .insight[data-insight="4"] {
 	background-image:url("../images/bg-ipad-04.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-04.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -293,6 +316,9 @@
 }
 .ie8 .insight[data-insight="3"] {
 	background-image:url("../images/bg-ipad-03.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-03.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -300,6 +326,9 @@
 }
 .ie8 .insight[data-insight="2"] {
 	background-image:url("../images/bg-ipad-02.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-02.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center;
@@ -307,6 +336,9 @@
 }
 .ie8 .insight[data-insight="1"] {
 	background-image:url("../images/bg-ipad-01.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-01.jpg',
+	sizingMethod='scale');
 	background-attachment: scroll !important;
 	background-repeat: no-repeat;
   	/*background-position: top center !important;
