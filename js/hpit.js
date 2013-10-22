@@ -345,7 +345,7 @@ hpit.config = {
         },
         '2': {
             title: 'Chapter 2: What\'s on Paul\'s mind',
-            position: 31000
+            position: 33000
         },
         '3': {
             title: 'Chapter 3: Distinguishing high performing CIOs',

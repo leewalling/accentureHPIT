@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html class="" lang="en" xmlns="http://www.w3.org/1999/html">
+<!--[if lt IE 9 ]><html class="ie8" lang="en" xmlns="http://www.w3.org/1999/html"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html class="" lang="en" xmlns="http://www.w3.org/1999/html"><!--<![endif]-->
+
 	<head>
 		<title>accenture hpit</title>
 		<meta name="viewport" content="width=device-width, target-densityDpi=high-dpi, initial-scale=1, minimum-scale=0.666667, maximum-scale=1">
