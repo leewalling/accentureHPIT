@@ -243,6 +243,10 @@
 	background-color: #000;
 	background-size: cover;
 }
+.ie8 .insight[data-insight="1"] .insightTitle h3,
+.ie8 .insight[data-insight="8"] .insightTitle h3 {
+	color: #000;
+}
 
 .ie8 .insight[data-insight="10"] {
 	background-image:url("../images/bg-ipad-10.jpg");
