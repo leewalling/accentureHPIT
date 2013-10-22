@@ -2559,8 +2559,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	}
 
 	.onIpad .insight {
-		/*background-color: blue !important;*/
-		min-height: 1600px !important;
+		/*background-color: blue !important;
+		min-height: 1600px !important;*/
+		min-height: auto !important;
 		background-position: top left;
 		background-size: auto 100%;
 		border: none;
@@ -3000,12 +3001,19 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	.galaxyTab.onMobile .hero > div.inner {
 		padding: 40px 100px 160px 185px !important;
 	}
+	.galaxyTab.exception .hero.left > div.inner p {
+		width: 60%;
+	}
+	.galaxyTab.exception .hero.left > div.inner h1 {
+		width: 75%;
+	}
 	.galaxyTab.exception .hero {
 		height: 570px !important;
 	}
 	.galaxyTab.exception .hero .video-wrapper {
 		position: absolute;
 		height: 570px !important;
+		background-size: 100% auto;
 	}
 }
 
@@ -3025,21 +3033,22 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	 	display: block !important;
 	}
 	.galaxyTab.exception .hero {
-		height: 570px !important;
+		height: 500px;
 	}
 	.galaxyTab.exception .hero .video-wrapper {
 		position: absolute;
-		height: 570px !important;
-		background-size: 100% auto;
+		height: 500px;
+		background-size: auto 100%;
+		background-position: 50% 0px;
 	}
 	.galaxyTab.onMobile .hero > div.inner {
 		padding: 40px 100px 160px 185px !important;
 	}
 	.galaxyTab.exception .hero.left > div.inner p {
-		width: 60%;
+		width: 70%;
 	}
 	.galaxyTab.exception .hero.left > div.inner h1 {
-		width: 75%;
+		width: 85%;
 	}
 	.galaxyTab.exception .hero.left > div.inner h3 {
 		width: 72%;
@@ -3050,6 +3059,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 		margin-left: -47.5px;
 		background-image:url("../images/play-lg.png");
 		background-position: 0 -639px;
+		bottom:0 !important;
 	}
 	.galaxyTab.exception .hero > div.inner .playVid:hover {
 		background-position: 0 -734px;
@@ -3154,8 +3164,8 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	.galaxyTab.onMobile .insight .container.content {
 		display: block !important;
 		position: relative !important;
-		margin: 0 auto;
-		margin-top: 125px;
+		margin: 0 auto !important;
+		margin-top: 125px !important;
 		width: 75% !important;
 		overflow: visible !important;
 		color: #000 !important;
