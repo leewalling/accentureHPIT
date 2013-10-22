@@ -175,7 +175,7 @@
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_1.png" alt="How IT can improve the customer experience" /></span></div>
 						<div class="no-border">
-						<span class="heading">High performers business objectives</span>
+						<span class="heading">High performers are also...</span>
 						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-1" /><![endif]--></span><span class="txt"><strong>Getting social. </strong>Social channels open up collaboration and create personal dialogues with key customers.</span></span>
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-1" /><![endif]--></span><span class="txt"><strong>Building relationships. </strong>Both marketing and sales get a boost by giving potential customers what they want and listening to what current customers have to say.</span></span>
 						</div>
@@ -395,7 +395,7 @@
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_6.png" alt="High performers are leading the way in leveraging agile and iterative methodologies" /></span></div>
 						<div class="no-border">
-						<span class="heading">High performers are...</span>
+						<span class="heading">High performers are also...</span>
 						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-6" /><![endif]--></span><span class="txt"><strong>Embracing B.Y.O.D. </strong>"Bring Your Own Device" is a creed that adds creativity as well as productivity.</span></span>
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-6" /><![endif]--></span><span class="txt"><strong>Aiming for dynamic self-service. </strong>Rather than wait for responses to service requests today's fickle customers can often service their own needs better.</span></span>
 						</div>
@@ -439,7 +439,7 @@
 						</div>
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_7.png" alt="Organizations who embed real-time analytics-based decision-making tools into business processes have the competitive advantage" /></span></div>
 						<div class="no-border">
-						<span class="heading">High performers are...</span>
+						<span class="heading">High performers are also...</span>
 						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-7" /><![endif]--></span><span class="txt"><strong>Becoming sophisticated data sources. </strong>They're investing in analytics to get better at capturing data and extracting valuable insights from it.</span></span>
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-7" /><![endif]--></span><span class="txt"><strong>Finding their focus. </strong>They're working to locate "insight gaps"&mdash;that is, blind spots that can obscure their business strategies.</span></span>
 						</div>
