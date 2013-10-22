@@ -3034,7 +3034,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	}
 	.galaxyTab.onMobile .container > .navbar-collapse {
 		float: right;
-		width: 70% !important;
+		width: 75% !important;
 		display: block !important;
 	}
 	.galaxyTab.onMobile .container {
@@ -3057,10 +3057,10 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	  	width: auto !important;
 	  	margin: 0;
 	}
-	/*
 	.galaxyTab.onMobile .navbar-nav > li.share {
-	  	width: 33%;
+	  	width: 35% !important;
 	}
+	/*
 	.galaxyTab.onMobile .navbar-nav > li.download {
 	  	width: 38%;
 	}
