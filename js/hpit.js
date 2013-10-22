@@ -383,6 +383,7 @@ hpit.core = (function() {
     var $iPad = /ipad/i.test($userAgent);
     //var $iPad = true;
     var $Nexus = /nexus/i.test($userAgent);
+    var $GalaxyTab = /sch-i905/i.test($userAgent);
     var chapterClicked;
     var trackPageViewDelay;
     var haveDeepLink = false;
@@ -617,6 +618,9 @@ hpit.core = (function() {
                 if (!onIpad() && $win.width() > 767) {
                     //alert('exception!');
                     $('html').addClass('exception');
+                    if(onGalaxyTab()){
+                    	$('html').addClass('galaxyTab');
+                    }
                 };
                 $('html').removeClass('desktop').addClass('onMobile');
             } else {
@@ -651,6 +655,10 @@ hpit.core = (function() {
     
     function onNexus() {
         return ($Nexus);
+    }
+    
+    function onGalaxyTab() {
+        return ($GalaxyTab);
     }
     
     function onProduction() {

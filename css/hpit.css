@@ -2992,10 +2992,10 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 /* Samsung GALAXY Tab 10.1 - Landscape */
 @media (max-device-width: 1280px) and (orientation: landscape) {
-	/*
-	#diagnostics {
-		background-color: pink;
+	.galaxyTab #diagnostics {
+		background-color: purple;
 	}
+	/*
 	.insight .content {
 		display: block !important;
 		position:relative;
@@ -3069,8 +3069,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 }
 
 /* Samsung GALAXY Tab 10.1 - Portrait */
-@media only screen and (max-device-width: 800px) and (orientation: portrait), 
-only screen and (max-device-width: 1280px) and (orientation: landscape) {
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
 	.exception.onMobile #diagnostics {
 		background-color: lime;
 	}
