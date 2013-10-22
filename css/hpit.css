@@ -3025,11 +3025,11 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	 	display: block !important;
 	}
 	.galaxyTab.exception .hero {
-		height: 500px !important;
+		height: 570px !important;
 	}
 	.galaxyTab.exception .hero .video-wrapper {
 		position: absolute;
-		height: 500px !important;
+		height: 570px !important;
 		background-size: 100% auto;
 	}
 	.galaxyTab.onMobile .hero > div.inner {
@@ -3062,6 +3062,14 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 		background-color: transparent !important;
 		padding-bottom: 75px !important;
 	}
+	.galaxyTab.onMobile .insight .marker {
+		top: 135px !important;
+	}
+	.galaxyTab.onMobile #accMark {
+		display: inline-block !important;
+		top: 200px;
+		z-index: 3;
+	}
 	.galaxyTab.onMobile .insight .marker,
 	.galaxyTab.onMobile .insight .insightTitle .social {
 		display: inline-block !important;
@@ -3071,7 +3079,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 		display: none !important;
 	}
 	.galaxyTab.onMobile .insight .insightTitle {
-		color: #000 !important;
+		/*color: #000 !important;*/
 	}
 	.galaxyTab.onMobile .insight[data-insight="10"] {
 		background-image:url("../images/bg-ipad-10.jpg") !important;
