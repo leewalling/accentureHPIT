@@ -3018,7 +3018,14 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
 	 	display: block !important;
 	}
 	.galaxyTab.exception .hero {
-		height: 570px;
+		height: 500px !important;
+	}
+	.galaxyTab.exception .hero .video-wrapper {
+		position: absolute;
+		height: 500px !important;
+	}
+	.galaxyTab.onMobile .hero > div.inner {
+		padding: 40px 100px 160px 185px !important;
 	}
 	.galaxyTab.exception .hero.left > div.inner p {
 		width: 60%;
