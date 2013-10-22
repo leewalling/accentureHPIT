@@ -323,15 +323,18 @@ img {
 	padding-right:22px;
 	line-height: 26px;
 	height: 26px;
+	background-image:url("../images/caret.png"); 
 	background-repeat: no-repeat;
-	background-position: 80px -417px;
+	background-position: top right;
+	/*background-position: 80px -417px;*/
 }
 #sideMenu ul li a.btt:hover {
 	background-color:transparent;
 	color: #fff !important;
 }
 #sideMenu ul li a.btt:hover em {
-	background-position: 80px -386px;
+	background-image:url("../images/caret-hover.png");
+	/*background-position: 80px -386px;*/
 }
 #sideMenu ul li a > span {
 	display:table-cell;

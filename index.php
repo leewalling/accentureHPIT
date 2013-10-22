@@ -100,7 +100,7 @@
 		<!-- sidemenu -->
 		<div id="sideMenu" class="hidden-xs">
 			<ul>
-				<li><a href="#theTop" class="btt" ref="backtotop-click"><em class="sprites">Back To Top</em></a></li>
+				<li><a href="#theTop" class="btt" ref="backtotop-click"><em>Back To Top</em></a></li>
 				<li class="state" data-insight-nav="1"><a href="#insight1"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
 				<li class="state" data-insight-nav="2"><a href="#insight2"><span>02</span> <span>Context is king</span></a></li>
 				<li class="state" data-insight-nav="3"><a href="#insight3"><span>03</span> <span>Business strategy and IT now work as one</span></a></li>

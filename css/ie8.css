@@ -203,9 +203,3 @@
 .ie8 .insight[data-insight="10"] .marker {
 	background-position: 0 -1107px;
 }
-#sideMenu ul li a.btt em {
-	background-position: 88px -419px;
-}
-#sideMenu ul li a.btt:hover em {
-	background-position: 88px -388px;
-}
