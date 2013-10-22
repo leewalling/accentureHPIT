@@ -247,7 +247,6 @@
 .ie8 .insight[data-insight="8"] .insightTitle h3 {
 	color: #000;
 }
-
 .ie8 .insight[data-insight="10"] {
 	background-image:url("../images/bg-ipad-10.jpg");
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
