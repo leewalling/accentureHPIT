@@ -742,7 +742,20 @@ hpit.core = (function() {
              
              var scH = parseInt(hpit.config.scrH);
              var $per = diff / scH;
-             
+                
+             if (hpit.config.isIE) {
+               if (diff >= -1 && diff < scH + 1 && $per >= 1) {
+                    if ($$('.bgImg[data-insight="' + index + '"]', 'context-get', '.container.main') != 0) {
+                       $$('.bgImg[data-insight="' + index + '"]', 'context-get', '.container.main').css({"opacity": 0});
+                    }
+                } 
+                else {
+                    if ($$('.insight .insightTitle', 'context-get', '.container.main') != 1) {
+                       $$('.insight .insightTitle', 'context-get', '.container.main').css({"opacity": 1});
+                    }
+                }       
+             }
+             else {
                 if (diff >= -1 && diff < scH + 1) {
                      $$('.bgImg[data-insight="' + index + '"]', 'context-get', '.container.main').css({"opacity": $per});
                     //$('.insight[data-insight="'+index+'"] .insightTitle').css({"opacity" : $per});
@@ -750,6 +763,7 @@ hpit.core = (function() {
                 else {
                     $$('.insight .insightTitle', 'context-get', '.container.main').css({"opacity": 1});
                 }
+             }
          }
 
          // is the element in the viewport?
@@ -1610,11 +1624,6 @@ hpit.core = (function() {
             
             target.append(vidContent);
             LimelightPlayerUtil.initEmbed(vidID);
-            
-            if (onProduction()) {
-				FlashLinkAnalysis($(this).attr('href'), "Insight" + insightID + " Video Play", "linkanalysis");
-			}
-            
         });
     }
     
