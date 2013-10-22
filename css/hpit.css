@@ -1407,6 +1407,11 @@ img {
 	width: 25px;
 	height: 25px;
 }
+.insightTitle .social > .addthis_toolbox > a,
+.insightTitle .social > .addthis_toolbox > a > img {
+  	width: 30px;
+	height: 30px;
+}
 .onMobile .social > .addthis_toolbox,
 .onIpad .social > .addthis_toolbox {
   	height: 30px;
@@ -1434,10 +1439,23 @@ img {
   	background-position: -65px -428px;
 }
 .addthis_button_google_plusone_share > img {
-  	background-position: -65px -463px;1267
+  	background-position: -65px -463px;
+}
+
+.desktop .social.inHeader .addthis_button_linkedin > img {
+  	background-position: 0px -508px;
+}
+.desktop .social.inHeader .addthis_button_twitter > img {
+  	background-position: 0px -538px;
+}
+.desktop .social.inHeader .addthis_button_facebook > img {
+  	background-position: 0px -448px;
+}
+.desktop .social.inHeader .addthis_button_google_plusone_share > img {
+  	background-position: 0px -478px;
 }
 .addthis_button_google_plusone_share {
-  	margin-right: 0 !important;1267
+  	margin-right: 0 !important;
 }
 .addthis_button_linkedin {
   	margin-left: 0 !important;
@@ -2609,7 +2627,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	  	background-size: auto 100%;*/
 	}
 	.insight[data-insight="1"] {
-		background-image:url("../images/INSIGHT_01_BKRD_2.jpg"); /*bg-ipad-01.jpg*/
+		background-image:url("../images/bg-ipad-01.jpg"); /*bg-ipad-01.jpg*/
 		background-attachment: scroll !important;
 		background-repeat: no-repeat;
 	  	/*background-position: top center !important;
