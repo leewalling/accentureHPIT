@@ -10,6 +10,23 @@
 		<meta property="og:url" content="http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx" />
 		<meta property="og:description" content="Read the highlights from Accenture's fourth High Performance IT research which covers the evolution of IT as CIOs move from the server room to the board room to help set the strategic digital agenda and overall business IT strategy." />
 		<meta property="og:image" content="/Microsites/high-performance-it/PublishingImages/fbog.png" />
+
+<link rel="Stylesheet" type="text/css" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Masterpage_Style.css"></link>
+<link rel="Stylesheet" type="text/css" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Texts_Style.css"></link>
+<link rel="Stylesheet" type="text/css" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Components_Style.css"></link>
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Style_IE6.css"></link>
+<![endif]-->
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Style_IE7.css"></link>
+<![endif]-->
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Style_IE8.css"></link>
+<![endif]-->
+<!--[if IE 9]>
+<link type="text/css" rel="stylesheet" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Style_IE9.css"></link>
+<![endif]-->		
+
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!--link href="css/reset.css" rel="stylesheet" media="screen"-->
