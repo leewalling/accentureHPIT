@@ -879,9 +879,14 @@ hpit.core = (function() {
 	                        onAfter: function() {
 	                            hpit.config.locked = false;
 	                            if(onMobile()){
-	                            	console.log('deeplinking DONE!');
-	                            	console.log('window scrollTop: ', $(window).scrollTop());
-	                            	console.log('html offset: ', $('html').offset().top);
+	                            	var currTop = $(window).scrollTop();
+	                            	var navH = $('.navbar').outerHeight(true);
+
+	                            	// scroll thw window to real deeplink position
+	                            	window.scrollTo(0,currTop-navH);
+
+	                            	// toggle the insight open
+	                            	$('.insight[data-insight="'+deeplink+'"] .toggler').trigger("click");
 	                            }	                        	
 	                        //setTimeout(function(){
 	                        //updateArrows(4);
