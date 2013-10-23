@@ -10,23 +10,6 @@
 		<meta property="og:url" content="http://www.accenture.com/Microsites/high-performance-it/Pages/home.aspx" />
 		<meta property="og:description" content="Read the highlights from Accenture's fourth High Performance IT research which covers the evolution of IT as CIOs move from the server room to the board room to help set the strategic digital agenda and overall business IT strategy." />
 		<meta property="og:image" content="/Microsites/high-performance-it/PublishingImages/fbog.png" />
-
-<link rel="Stylesheet" type="text/css" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Masterpage_Style.css"></link>
-<link rel="Stylesheet" type="text/css" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Texts_Style.css"></link>
-<link rel="Stylesheet" type="text/css" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Components_Style.css"></link>
-<!--[if IE 6]>
-<link type="text/css" rel="stylesheet" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Style_IE6.css"></link>
-<![endif]-->
-<!--[if IE 7]>
-<link type="text/css" rel="stylesheet" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Style_IE7.css"></link>
-<![endif]-->
-<!--[if IE 8]>
-<link type="text/css" rel="stylesheet" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Style_IE8.css"></link>
-<![endif]-->
-<!--[if IE 9]>
-<link type="text/css" rel="stylesheet" href="http://www.accenture.com/Style Library/Accenture/Core Styles/Style_IE9.css"></link>
-<![endif]-->		
-
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!--link href="css/reset.css" rel="stylesheet" media="screen"-->
@@ -183,7 +166,7 @@
 						<span class="heading">Why it's important</span>
 						<span>High performers have moved beyond internally focused objectives like cost and productivity. The new bulls-eye is the customer experience.</span>
 						<div class="the-video">
-							<a href="#insight1"><img src="images/video-THUMBS-1.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-1" /><![endif]--></span></a>
+							<a href="#insight1"><img src="images/video-THUMBS-1.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-1" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -227,7 +210,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Global competition means that exploring business scenarios&mdash;economic, geopolitical, social and more&mdash;is absolutely crucial to IT planning.</span>
 						<div class="the-video">
-							<a href="#insight2"><img src="images/video-THUMBS-2.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-2" /><![endif]--></span></a>
+							<a href="#insight2"><img src="images/video-THUMBS-2.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-2" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -271,7 +254,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Many CIOs are still troubleshooting and fixing problems instead of finding and acting on ways to create value. High performers seek out and invest in new ways that IT can deliver on business strategy and create new opportunities.</span>
 						<div class="the-video">
-							<a href="#insight3"><img src="images/video-THUMBS-3.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-3" /><![endif]--></span></a>
+							<a href="#insight3"><img src="images/video-THUMBS-3.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-3" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -315,7 +298,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Legacy systems drag down performance and tie up valuable resources. Simpler, streamlined application portfolios are weightless by comparison, and let companies move fast and flex easily.</span>
 						<div class="the-video">
-							<a href="#insight4"><img src="images/video-THUMBS-4.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-4" /><![endif]--></span></a>
+							<a href="#insight4"><img src="images/video-THUMBS-4.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-4" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -359,7 +342,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Digital is about much more than smart devices. It's driving how products are designed and produced, how transactions are created and managed,  how collaboration happens, and how relationships are formed.</span>
 						<div class="the-video">
-							<a href="#insight5"><img src="images/video-THUMBS-5.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-5" /><![endif]--></span></a>
+							<a href="#insight5"><img src="images/video-THUMBS-5.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-5" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -403,7 +386,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Breaking down barriers to self-service means that employees, suppliers, and even customers can help drive innovation, generate insights and probe new markets. They're no longer just "service tickets."</span>
 						<div class="the-video">
-							<a href="#insight6"><img src="images/video-THUMBS-6.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-6" /><![endif]--></span></a>
+							<a href="#insight6"><img src="images/video-THUMBS-6.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-6" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -447,7 +430,7 @@
 						<span class="heading">Why it's important</span>
 						<span>CIOs are buried in data. The real struggle? Finding the nuggets to shape into valuable insights that generate actionable outcomes&mdash;and competitive advantage.</span>
 						<div class="the-video">
-							<a href="#insight7"><img src="images/video-THUMBS-7.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-7" /><![endif]--></span></a>
+							<a href="#insight7"><img src="images/video-THUMBS-7.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-7" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -491,7 +474,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Volatility in markets, partner engagements and business models can create new opportunities&mdash;as long as your organization is nimble enough to respond.</span>
 						<div class="the-video">
-							<a href="#insight8"><img src="images/video-THUMBS-8.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-8" /><![endif]--></span></a>
+							<a href="#insight8"><img src="images/video-THUMBS-8.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-8" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -535,7 +518,7 @@
 						<span class="heading">Why it's important</span>
 						<span>Innovation is key to developing new platforms and processes, so today's CIOs constantly need new skills and talent. High performers look inside and outside of their companies to fill needs and plug knowledge gaps.</span>
 						<div class="the-video">
-							<a href="#insight9"><img src="images/video-THUMBS-9.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-9" /><![endif]--></span></a>
+							<a href="#insight9"><img src="images/video-THUMBS-9.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-9" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
@@ -579,7 +562,7 @@
 						<span class="heading">Why it's important</span>
 						<span>More and more organizations are finding their risk profiles defined by their investments in digital technologies. Intellectual property, product innovation and processes are now strategic business priorities. It's essential to protect the digital assets within.</span>
 						<div class="the-video">
-							<a href="#insight10"><img src="images/video-THUMBS-10.jpg" /><span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-10" /><![endif]--></span></a>
+							<a href="#insight10"><img src="images/video-THUMBS-10.jpg" /><span class="sprites"><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-arrow-10" /><![endif]--></span></a>
 						</div>
 						</div>
 						<div class="no-border">
