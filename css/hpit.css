@@ -1284,11 +1284,12 @@ img {
 }
 .navbar-nav > li {
   	position: relative;
-  	min-width:170px;
+  	min-width: 170px;
   	overflow: visible;
-  	border-left:1px solid #363636;
+  	border-left: 1px solid #363636;
   	float: right;
   	background: #000;
+  	text-align: center;
 	-webkit-transition: background-color 300ms ease 0s;
 	-moz-transition: background-color 300ms ease 0s;
 	-o-transition: background-color 300ms ease 0s;
