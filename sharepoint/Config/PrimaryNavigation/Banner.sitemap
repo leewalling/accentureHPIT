@@ -1,0 +1,10 @@
+﻿<siteMap enableLocalization="true">
+  <siteMapNode title="Accenture.com" url="/banner">
+    <siteMapNode section="ACN" title="Accenture" alt="Accenture" imgpath ="/PublishingImages/BannerTop.png">
+      <siteMapNode title="Accenture" href="http://www.accenture.com" alt="Accenture" shape="RECT" coords="32,0,150,52" />
+    </siteMapNode>
+    <siteMapNode section="HPB" title="High Performance. Delivered." alt="High Performance. Delivered."  imgpath="/PublishingImages/BannerBottom.png">
+      <siteMapNode title="High Performance. Delivered." href="http://www.accenture.com" alt="High Performance. Delivered." shape="RECT" coords="32,0,150,20" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

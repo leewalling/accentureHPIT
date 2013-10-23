@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap>
+  <siteMapNode
+        Title=""
+        Description="Facebook Description"
+        ImageClass="SC_facebook_link"
+        ImageLink="http://www.facebook.com/accenture"
+        Tooltip="Accenture on Facebook"
+        Target="_blank"
+        />
+
+  <siteMapNode
+        Title=""
+        Description="Twitter Description"
+        ImageClass="SC_twitter_link"
+        ImageLink="http://twitter.com/accenture"
+        Tooltip="Twitter"
+        Target="_blank"
+        />
+
+  <siteMapNode
+        Title="Podcasts"
+        Description="Podcasts Description"
+        ImageClass="SC_podcasts_link"
+        ImageLink="http://www.accenture.com/Global/Research_and_Insights/RSS_and_Podcasts/Podcasts.htm"
+        Tooltip="Podcasts"
+        Target="_blank"
+        />
+
+  <siteMapNode
+        Title="Newsletters"
+        Description="Newsletter Description"
+        ImageClass="SC_newsletters_link"
+        ImageLink="https://www.accenture.com/Accenture/Registration/EAN.aspx"
+        Tooltip="Accenture Newsletters"
+        Target="_blank"
+        />
+
+  <siteMapNode
+        Title=""
+        Description="LinkedIn Description"
+        ImageClass="SC_linkedin_link"
+        ImageLink="http://www.linkedin.com/companies/accenture?trk=co_search_results&amp;=.cps_1268665331437_1"
+        Tooltip="LinkedIn"
+        Target="_blank"
+        />
+
+  <siteMapNode
+        Title=""
+        Description="YouTube Description"
+        ImageClass="SC_youtube_link"
+        ImageLink="http://www.youtube.com/accenture"
+        Tooltip="YouTube"
+        Target="_blank"
+        />
+  
+  <siteMapNode
+        Title="RSS"
+        Description="RSS Feeds Description"
+        ImageClass="SC_rss_link"
+        ImageLink="/neutral/rss"
+        Tooltip="RSS Feeds"
+        Target="_blank"
+        />
+
+  <siteMapNode
+        Title="Blogs"
+        Description="Blogs Description"
+        ImageClass="SC_blogs_link"
+        ImageLink="/neutral/blogs"
+        Tooltip="Blogs"
+        Target="_blank"
+        />
+
+  <siteMapNode
+        Title="Videos"
+        Description="Description for Video"
+        ImageClass="SC_videos_link"
+        ImageLink="http://www.accenture.com/Global/Research_and_Insights/RSS_and_Podcasts/Podcasts.htm"
+        Tooltip="Videos"
+        Target="_blank"
+        />
+  
+  <siteMapNode
+        Title="Xing"
+        Description="Description for Xing"
+        ImageClass="SC_xing_link"
+        ImageLink="https://www.xing.com/companies/accenture/articles"
+        Tooltip="Xing"
+        Target="_blank"
+        />
+
+  <siteMapNode
+        Title=""
+        Description="Description for Google+"
+        ImageClass="SC_google_link"
+        ImageLink=""
+        Tooltip="Google+"
+        Target="_blank"
+        />
+  
+</siteMap>

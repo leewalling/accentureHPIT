@@ -1,0 +1,7 @@
+﻿<siteMap enableLocalization="true">
+  <siteMapNode title="Accenture.com" url="/banner">
+    <siteMapNode section="ACN" title="Accenture" alt="Accenture" imgpath ="/PublishingImages/BannerTop.png">
+      <siteMapNode title="Accenture" href="http://www.accenture.com" alt="Accenture" shape="RECT" coords="32,0,150,52" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,350 @@
+/******************************  IE8 styles  *************************************/
+.ie8 #ll-overlay {
+	background-color: #000 !important;
+	filter: alpha(opacity=100) !important;
+}
+.ie8 #ll-overlay .closeVid {
+	background: none;
+	background-color: transparent !important;
+}
+.ie8 #ll-overlay .closeVid img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+}
+.ie8 #ll-overlay .closeVid:hover img {
+	margin-top: -32px;
+}
+.ie8 .navbar-collapse.collapse {
+	display: block !important;
+	float: right !important;
+	border: none !important; 
+}
+.ie8 .navbar-toggle {
+	display: none !important;
+}
+.ie8 .navbar-header {
+	float: left !important;
+}
+.ie8 .col-xs-12 {
+	width: 50% !important;
+	margin-left: 50% !important;
+	float: right;
+}
+.ie8 .bgImages,
+.ie8 .whiteAngle,
+.ie8 .blackAngle {
+	display: none !important;
+}
+.ie8 .container.main {
+	padding: 0;
+	background-color: #000;
+}
+.ie8 .hero {
+	position: relative;
+	height: 700px;
+}
+.ie8 .hero .video-wrapper {
+	background-position: top center;
+	background-size: auto 100%;
+}
+.ie8 #accMark {
+	z-index: 3;
+}
+.ie8 .whiteAngle {
+	width: 100%;
+	height: 800px;
+	position:absolute;
+	background-color: transparent !important;
+	top: 520px;
+	right: 0px;
+	z-index: 1;
+	display: inline-block;
+	overflow: visible;
+	pointer-events: none;
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-white-angle.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+.ie8 .hero > div.inner {
+	padding-right:0;
+	padding-left:0;
+	margin-left: 185px;
+	width: 50%;
+}
+.ie8 .hero > div.inner .playVid {
+	z-index: 100;
+	left: 75%;
+}
+.ie8 .insight {
+	padding-top: 125px;
+}
+.ie8 .insight .content {
+	margin-top: 0px;
+}
+.ie8 .insight .content .right-col > div.with-video .the-video > a > span {
+	background-color: transparent !important;
+	background-image: none;
+}
+.ie8 .insight .content .right-col > div.with-video .the-video > a > span img {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.ie8 .insight .content .right-col > div .tr > span.txt {
+	float: left;
+	text-align: left;
+	width: 80%;
+}
+.ie8 .insight .content .right-col > div .tr > span.txt strong {
+	display: block;
+	width: 100%;
+	float: none;
+}
+.ie8 .insight .content .right-col > div .tr > span.num .txt {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 46px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+}
+.ie8 .insight .content .right-col > div .tr > span.num img {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.ie8 .insight[data-insight="1"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="2"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="3"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="4"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="5"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="6"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="7"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="8"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="9"] .content .right-col > div .tr > span.num,
+.ie8 .insight[data-insight="10"] .content .right-col > div .tr > span.num {
+	background-color: transparent !important;
+}
+.ie8 .navbar-default .navbar-nav > li > a > .icn {
+  	vertical-align: middle;
+}
+.ie8 .navbar-nav > li .social {
+  	width: auto;
+}
+.ie8 #controls .txt > img {
+	vertical-align: middle;
+	margin-top: 0px;
+}
+.ie8 #controls .control-info {
+	/*background-image: url("/Microsites/high-performance-it/PublishingImages/transpBlue50.png");*/
+	left: -200px;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff');
+}
+.ie8 #footer {
+	background-color: #000;
+	background-image: none;
+	padding: 25px;
+}
+.ie8 #footer > div {
+	margin: 0;
+	width: 100%;
+}
+
+/* SPRITESHEET */
+.ie8sprite {
+    background: url("/Microsites/high-performance-it/PublishingImages/ie8sprites.png") no-repeat top left;
+}
+.ie8-bg-circle-1{ background-position: 0 0; width: 46px; height: 46px; } 
+.ie8-bg-circle-10{ background-position: 0 -51px; width: 46px; height: 46px; } 
+.ie8-bg-circle-2{ background-position: 0 -102px; width: 46px; height: 46px; } 
+.ie8-bg-circle-3{ background-position: 0 -153px; width: 46px; height: 46px; } 
+.ie8-bg-circle-4{ background-position: 0 -204px; width: 46px; height: 46px; } 
+.ie8-bg-circle-5{ background-position: 0 -255px; width: 46px; height: 46px; } 
+.ie8-bg-circle-6{ background-position: 0 -306px; width: 46px; height: 46px; } 
+.ie8-bg-circle-7{ background-position: 0 -357px; width: 46px; height: 46px; } 
+.ie8-bg-circle-8{ background-position: 0 -408px; width: 46px; height: 46px; } 
+.ie8-bg-circle-9{ background-position: 0 -459px; width: 46px; height: 46px; } 
+.ie8-bg-circle-arrow-1{ background-position: 0 -510px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-10{ background-position: 0 -549px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-2{ background-position: 0 -588px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-3{ background-position: 0 -627px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-4{ background-position: 0 -666px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-5{ background-position: 0 -705px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-6{ background-position: 0 -744px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-7{ background-position: 0 -783px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-8{ background-position: 0 -822px; width: 34px; height: 34px; } 
+.ie8-bg-circle-arrow-9{ background-position: 0 -861px; width: 34px; height: 34px; } 
+
+.ie8 .insight .marker {
+	width:150px;
+	height:202px;
+	line-height:202px;
+	background-color: transparent !important;
+	background: url("/Microsites/high-performance-it/PublishingImages/ie8sprites.png") no-repeat top left;
+}
+.ie8 .insight .marker,
+.ie8 .insight.current .marker,
+.ie8 .insight .insightTitle,
+.ie8 .insight.current .insightTitle {
+	position: absolute !important;
+	top: 125px !important;
+	/*background-color: lime !important;*/
+}
+.ie8 .insight[data-insight="1"] .marker {
+	background-position: 0 -900px;
+}
+.ie8 .insight[data-insight="2"] .marker {
+	background-position: 0 -1314px;
+}
+.ie8 .insight[data-insight="3"] .marker {
+	background-position: 0 -1521px;
+}
+.ie8 .insight[data-insight="4"] .marker {
+	background-position: 0 -1728px;
+}
+.ie8 .insight[data-insight="5"] .marker {
+	background-position: 0 -1935px;
+}
+.ie8 .insight[data-insight="6"] .marker {
+	background-position: -155px 0;
+}
+.ie8 .insight[data-insight="7"] .marker {
+	background-position: -155px -207px;
+}
+.ie8 .insight[data-insight="8"] .marker {
+	background-position: -155px -414px;
+}
+.ie8 .insight[data-insight="9"] .marker {
+	background-position: -155px -621px;
+}
+.ie8 .insight[data-insight="10"] .marker {
+	background-position: 0 -1107px;
+}
+/* SPRITESHEET */
+
+.ie8 .insight .content .right-col > div.with-video .the-video > a > span.sprites {
+	background-image:none !important;
+}
+
+.ie8 .insight {
+	min-height: auto !important;
+	background-position: top left;
+	/*background-size: 100% auto;*/
+	border: none;
+	background-color: #000;
+	background-size: cover;
+}
+.ie8 .insight[data-insight="1"] .insightTitle h3,
+.ie8 .insight[data-insight="8"] .insightTitle h3 {
+	color: #000;
+}
+.ie8 .insight[data-insight="10"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-10.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-10.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="9"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-09.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-09.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="8"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-08.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-08.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="7"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-07.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-07.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="6"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-06.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-06.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="5"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-05.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-05.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="4"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-04.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-04.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="3"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-03.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-03.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="2"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-02.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-02.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center;
+  	background-size: auto 100%;*/
+}
+.ie8 .insight[data-insight="1"] {
+	background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-01.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../images/bg-ipad-01.jpg',
+	sizingMethod='scale');
+	background-attachment: scroll !important;
+	background-repeat: no-repeat;
+  	/*background-position: top center !important;
+  	background-size: auto 100%;*/
+}
