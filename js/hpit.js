@@ -874,6 +874,7 @@ hpit.core = (function() {
                     $(window).scrollTo(
 	                    newHash, 
 	                    {
+	                        axis: 'y',
 	                        duration: hpit.config.duration[hpit.config.desktopORtouch],
 	                        easing: hpit.config.easing,
 	                        onAfter: function() {
