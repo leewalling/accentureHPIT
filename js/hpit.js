@@ -127,7 +127,7 @@ hpit.config = {
                 alt: 'Share via LinkedIn: Context is king'
             },
             twitter: {
-                title: 'Twitter	CIO Action Item #2: Context is king. View Accenture\'s High Performance IT Research ',
+                title: 'CIO Action Item #2: Context is king. View Accenture\'s High Performance IT Research ',
                 desc: '',
                 alt: 'Share via Twitter: Context is king'
             },
