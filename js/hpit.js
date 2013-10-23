@@ -880,7 +880,8 @@ hpit.core = (function() {
 	                            hpit.config.locked = false;
 	                            if(onMobile()){
 	                            	console.log('deeplinking DONE!');
-	                            	console.log('window offet top: ', $(window).offset().top);
+	                            	console.log('window scrollTop: ', $(window).scrollTop());
+	                            	console.log('html offset: ', $('html').offset().top);
 	                            }	                        	
 	                        //setTimeout(function(){
 	                        //updateArrows(4);
