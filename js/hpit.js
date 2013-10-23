@@ -712,6 +712,8 @@ hpit.core = (function() {
             var winOffset = $(window).scrollTop();
             
             if (winOffset == 0) {
+               hpit.config.state = 0;
+               updateArrows();
                omniTrackPageView('home');
             }
  
