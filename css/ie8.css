@@ -39,6 +39,7 @@
 }
 .ie8 .container.main {
 	padding: 0;
+	background-color: #000;
 }
 .ie8 .hero {
 	position: relative;
