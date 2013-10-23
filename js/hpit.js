@@ -243,7 +243,7 @@ hpit.config = {
             newHash: '#insight7',
             linkedIn: {
                 title: 'Accenture - High Performance IT',
-                desc: 'High performing CIOs know what "Big Data" is all about—creating actionable insights out of data, wherever it comes from. For more, view Accenture\'s High Performance IT Research',
+                desc: 'High performing CIOs know what \'Big Data\' is all about—creating actionable insights out of data, wherever it comes from. For more, view Accenture\'s High Performance IT Research',
                 alt: 'Share via LinkedIn: Unearthing data gems'
             },
             twitter: {
