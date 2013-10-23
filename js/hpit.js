@@ -23,6 +23,7 @@ function setCookie(cname, cvalue) {
 }
 
 function preload(arrayOfImages) {
+    //console.log('preload');
     $(arrayOfImages).each(function(index) {
         var num = parseInt(index) + 1;
         $('<img/>')[0].src = this;
@@ -408,8 +409,6 @@ hpit.core = (function() {
 		if('ontouchstart' in window || 'onmsgesturechange' in window){
 			hpit.config.desktopORtouch = 'touch';
 		}
-
-		console.log('on: ', hpit.config.desktopORtouch);
         
         if (isIE8) {
             //console.log('IS ie8');
@@ -422,6 +421,9 @@ hpit.core = (function() {
         if (debug == 'true') {
             $('#diagnostics').show();
         }
+
+        // Initialize event handler for deeplinks - need to load before preloading images
+        deeplinkInit();
         
         if (!onMobile() && !onIpad() && !isIE8) {
             //console.log('preloading!');
@@ -445,9 +447,6 @@ hpit.core = (function() {
 
         // add favicon
         //addFavicon();
-
-        // Initialize event handler for deeplinks
-        deeplinkInit();
 
         // Initialize event handler for sideMenu links
         sideMenuInit();
@@ -856,6 +855,7 @@ hpit.core = (function() {
 
     // deeplinking
     function deeplinkInit() {
+        //console.log('deeplinkInit');
         var groupParam = $.getUrlVar('group');
         var delay = 500; // changed from 500 to 250 to test ipad deeplinking delay issue
         
