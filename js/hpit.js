@@ -403,12 +403,19 @@ hpit.core = (function() {
 	
 		/* SGS */
 		overridePageView = true;
+
+		// test if user is on touch device
+		if('ontouchstart' in window || 'onmsgesturechange' in window){
+			hpit.config.desktopORtouch = 'touch';
+		}
+
+		console.log('on: ', hpit.config.desktopORtouch);
         
         if (isIE8) {
             //console.log('IS ie8');
             $('html').addClass('ie8');
         } else {
-        //console.log('NOT ie8');
+        	//console.log('NOT ie8');
         }
         
         var debug = $.getUrlVar('debug');
@@ -845,7 +852,7 @@ hpit.core = (function() {
     // deeplinking
     function deeplinkInit() {
         var groupParam = $.getUrlVar('group');
-        var delay = 500;
+        var delay = 500; // changed from 500 to 250 to test ipad deeplinking delay issue
         
         if (groupParam && groupParam.indexOf('insight') != -1) {
             try {
@@ -875,7 +882,7 @@ hpit.core = (function() {
 	                    newHash, 
 	                    {
 	                        axis: 'y',
-	                        duration: hpit.config.duration[hpit.config.desktopORtouch],
+	                        duration: 1, //duration: hpit.config.duration[hpit.config.desktopORtouch],
 	                        easing: hpit.config.easing,
 	                        onAfter: function() {
 	                            hpit.config.locked = false;
@@ -897,10 +904,10 @@ hpit.core = (function() {
 	                        //}, 100);
 	                        }
 	                    });
-                }, delay);
+                }, 350);
             
             } else {
-            //console.log('NOT IN RANGE!!!!');
+            	//console.log('NOT IN RANGE!!!!');
             }
         
         } else {
@@ -1829,7 +1836,7 @@ hpit.core = (function() {
     }
     
     function touchOrientationChange() {
-    //
+    	//
     }
     
     return {
