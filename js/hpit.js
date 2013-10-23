@@ -874,7 +874,10 @@ hpit.core = (function() {
 	                        easing: hpit.config.easing,
 	                        onAfter: function() {
 	                            hpit.config.locked = false;
-	                        //console.log('deeplinking DONE!');
+	                            if(onMobile()){
+	                            	console.log('deeplinking DONE!');
+	                            	console.log('$win top: ', $win.offset().top);
+	                            }	                        	
 	                        //setTimeout(function(){
 	                        //updateArrows(4);
 	                        //hpit.config.locked = false;
