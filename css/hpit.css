@@ -1566,7 +1566,6 @@ img {
 	top: 50%;
 	margin-top: -225px;
 }
-
 #ll-overlay .closeVid {
 	line-height: 30px;
 	display: inline-block;
@@ -1580,6 +1579,9 @@ img {
 	background-position: 0 0;
 	z-index: 9999;
 	overflow: hidden;
+}
+.onMobile #ll-overlay .closeVid {
+	top: 0px !important;
 }
 #ll-overlay .closeVid:hover {
 	background-position: 0 -30px;
