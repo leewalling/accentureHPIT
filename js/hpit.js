@@ -704,6 +704,10 @@ hpit.core = (function() {
         $(window).scroll(function() {
             var winOffset = $(window).scrollTop();
             
+            if (winOffset == 0) {
+               omniTrackPageView('home');
+            }
+ 
             $('.insight').each(function(index) {
                paneLockUpdate($(this), index, winOffset);
            });
@@ -778,8 +782,8 @@ hpit.core = (function() {
              $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
              $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
              
-             if (!hpit.config.locked && (hpit.config.currPageView != menuItem)) { 
-                  clearInterval(trackPageViewDelay);
+             if (!hpit.config.locked && (hpit.config.currPageView != menuItem) && winOffset != 0) { 
+                  clearTimeout(trackPageViewDelay);
                   trackPageViewDelay = setTimeout(function() {
                      //console.log("Page View: " + menuItem);
                      if (!haveDeepLink) {
@@ -895,7 +899,7 @@ hpit.core = (function() {
     function sideMenuInit() {
         $('#sideMenu ul li a').on('click', function(e) {
             e.preventDefault();
-            hpit.config.locked = true;
+            //hpit.config.locked = true; //XXX commented out per accenture's feedback
             var $th = $(this);
             var newHash = $th.attr('href');
             
@@ -991,7 +995,6 @@ hpit.core = (function() {
 						if (newNum == 0) {
                      CleanUpLtVars();
 							FlashLinkAnalysis(targetPage, "Menu Up:home", "linkanalysis");
-							omniTrackPageView("home");
 						}
 						else {
                         CleanUpLtVars();
