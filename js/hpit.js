@@ -874,10 +874,12 @@ hpit.core = (function() {
                     $(window).scrollTo(
 	                    newHash, 
 	                    {
-	                        duration: 1, //hpit.config.duration[hpit.config.desktopORtouch],
+	                        duration: hpit.config.duration[hpit.config.desktopORtouch],
 	                        easing: hpit.config.easing,
 	                        onAfter: function() {
 	                            hpit.config.locked = false;
+	                            
+								// correcting position for mobile devices
 	                            if(onMobile()){
 	                            	var currTop = $(window).scrollTop();
 	                            	var navH = $('.navbar').outerHeight(true);
