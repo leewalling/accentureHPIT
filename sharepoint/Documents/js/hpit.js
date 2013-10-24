@@ -23,6 +23,7 @@ function setCookie(cname, cvalue) {
 }
 
 function preload(arrayOfImages) {
+    //console.log('preload');
     $(arrayOfImages).each(function(index) {
         var num = parseInt(index) + 1;
         $('<img/>')[0].src = this;
@@ -243,7 +244,7 @@ hpit.config = {
             newHash: '#insight7',
             linkedIn: {
                 title: 'Accenture - High Performance IT',
-                desc: 'High performing CIOs know what "Big Data" is all about—creating actionable insights out of data, wherever it comes from. For more, view Accenture\'s High Performance IT Research',
+                desc: 'High performing CIOs know what \'Big Data\' is all about—creating actionable insights out of data, wherever it comes from. For more, view Accenture\'s High Performance IT Research',
                 alt: 'Share via LinkedIn: Unearthing data gems'
             },
             twitter: {
@@ -408,8 +409,6 @@ hpit.core = (function() {
         if('ontouchstart' in window || 'onmsgesturechange' in window){
             hpit.config.desktopORtouch = 'touch';
         }
-
-        console.log('on: ', hpit.config.desktopORtouch);
         
         if (isIE8) {
             //console.log('IS ie8');
@@ -422,6 +421,9 @@ hpit.core = (function() {
         if (debug == 'true') {
             $('#diagnostics').show();
         }
+
+        // Initialize event handler for deeplinks - need to load before preloading images
+        deeplinkInit();
         
         if (!onMobile() && !onIpad() && !isIE8) {
             //console.log('preloading!');
@@ -445,9 +447,6 @@ hpit.core = (function() {
 
         // add favicon
         //addFavicon();
-
-        // Initialize event handler for deeplinks
-        deeplinkInit();
 
         // Initialize event handler for sideMenu links
         sideMenuInit();
@@ -856,6 +855,7 @@ hpit.core = (function() {
 
     // deeplinking
     function deeplinkInit() {
+        //console.log('deeplinkInit');
         var groupParam = $.getUrlVar('group');
         var delay = 500; // changed from 500 to 250 to test ipad deeplinking delay issue
         
@@ -1233,13 +1233,6 @@ hpit.core = (function() {
 
     // addThis widget init
     function addThisInit(){
-        /*
-        var addthis_share = {
-            templates: {
-                twitter: 'check out {{url}} (from @example_dot_com)'
-            }
-        }
-        */
 
         // for header social sharing
         $('.social.inHeader').each(function (index) {
@@ -1252,7 +1245,7 @@ hpit.core = (function() {
 
             var temp  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style" addthis:url="'+url+'" addthis:title="'+ttl+'" addthis:description="'+descrip+'">';
                 temp += '<a class="addthis_button_linkedin" title="Share via LinkedIn: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_twitter" title="Share via Twitter: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_twitter" addthis:title="Drive your organization into the digital future with Accenture\'s High Performance IT Research." title="Share via Twitter: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '<a class="addthis_button_facebook" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
                 temp += '<a class="addthis_button_google_plusone_share" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
