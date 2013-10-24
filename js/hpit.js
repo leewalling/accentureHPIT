@@ -35,6 +35,7 @@ var hpit = window.hpit || {};
 
 // initial config
 hpit.config = {
+    isTopPageView: false;
     currPageView: 0,
     currInsight: 0,
     state: 0,
@@ -710,13 +711,17 @@ hpit.core = (function() {
         $(window).scroll(function() {
             var winOffset = $(window).scrollTop();
             
-            if (winOffset == 1) {
+            /*if (winOffset == 1) {
                omniTrackPageView('home');
-            }
+            }*/
 
-            if (winOffset <= 1) {
+            if (winOffset <= 1 && !isTopPageView) {
+               omniTrackPageView('home');
+               isTopPageView = true;
                hpit.config.state = 0;
                updateArrows();
+            }else{
+                isTopPageView = false;
             }
  
             $('.insight').each(function(index) {
@@ -793,7 +798,7 @@ hpit.core = (function() {
              $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
              $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
              
-             if (!hpit.config.locked && (hpit.config.currPageView != menuItem) && winOffset != 1) { 
+             if (!hpit.config.locked && (hpit.config.currPageView != menuItem) && !isTopPageView) { 
                   clearTimeout(trackPageViewDelay);
                   trackPageViewDelay = setTimeout(function() {
                      //console.log("Page View: " + menuItem);
@@ -875,12 +880,8 @@ hpit.core = (function() {
                 //console.log('deeplink - NAN');
             } 
             else if ( deeplink > 0 && deeplink < $('.insight').length + 1 ) {
-                /*if(deeplink > 5){
-					delay = 1200;
-				}*/
-                //console.log('valid deeplink: ', groupParam);
+
                 var newHash = hpit.config.groups[groupParam].newHash;
-                //console.log('newHash: ', newHash);
                 hpit.config.locked = true;
                 
                 setTimeout(function() {
@@ -888,7 +889,7 @@ hpit.core = (function() {
 	                    newHash, 
 	                    {
 	                        axis: 'y',
-	                        duration: 1, //duration: hpit.config.duration[hpit.config.desktopORtouch],
+	                        duration: 0.1,
 	                        onAfter: function() {
 
 	                            hpit.config.locked = false;
@@ -909,7 +910,7 @@ hpit.core = (function() {
 
 	                        }
 	                    });
-                }, 350);
+                }, 10);
             
             } 
             else {
