@@ -507,23 +507,23 @@ hpit.core = (function() {
 			}
         });
 		
-		   $('.download-link a').on('click', function(e) {
+		$('.download-link a').on('click', function(e) {
             //FlashLinkAnalysis($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis")
             /* SGS: To trigger as download instead of normal link analysis data */ 
 			
             var $trgt = $(this).parent().parent().parent().parent().parent()
-			   var $title = $trgt.find(".insightTitle");
+            var $title = $trgt.find(".insightTitle");
+             
             //alert('$trgt: ', $trgt);
             if (onProduction()) {
-				   if ($trgt.hasClass('open')) {
-                  CleanUpLtVars();
-					   FlashDownload($(this).attr('href'), "download study:insight" +  $.trim($title.text()).replace('\n', ''), "linkanalysis");
-				   }
-				   else
-               {
-                  CleanUpLtVars();
-                  FlashDownload($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis");
-               }
+                if ($trgt.hasClass('open')) {
+                    CleanUpLtVars();
+                    FlashDownload($(this).attr('href'), "download study:insight" +  $.trim($title.text()).replace('\n', ''), "linkanalysis");
+                }
+                else {
+                    CleanUpLtVars();
+                    FlashDownload($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis");
+                }
             }
         });
         
@@ -871,9 +871,10 @@ hpit.core = (function() {
             //console.log('deeplink: ', groupParam);
             var deeplink = groupParam.replace('insight', '');
             deeplink = parseInt(deeplink);
-            if (isNaN(deeplink)) {
-            //console.log('deeplink - NAN');
-            } else if (deeplink > 0 && deeplink < $('.insight').length + 1) {
+            if ( isNaN(deeplink) ) {
+                //console.log('deeplink - NAN');
+            } 
+            else if ( deeplink > 0 && deeplink < $('.insight').length + 1 ) {
                 /*if(deeplink > 5){
 					delay = 1200;
 				}*/
@@ -890,6 +891,7 @@ hpit.core = (function() {
 	                        duration: 1, //duration: hpit.config.duration[hpit.config.desktopORtouch],
 	                        easing: hpit.config.easing,
 	                        onAfter: function() {
+
 	                            hpit.config.locked = false;
 	                            
 								// correcting position for mobile devices
@@ -902,21 +904,20 @@ hpit.core = (function() {
 
 	                            	// toggle the insight open
 	                            	$('.insight[data-insight="'+deeplink+'"] .toggler').trigger("click");
-	                            }	                        	
-	                        //setTimeout(function(){
-	                        //updateArrows(4);
-	                        //hpit.config.locked = false;
-	                        //}, 100);
+	                            }	               
+
 	                        }
 	                    });
                 }, 350);
             
-            } else {
+            } 
+            else {
             	//console.log('NOT IN RANGE!!!!');
             }
         
-        } else {
-        //console.log('invalid group: ', groupParam);
+        } 
+        else {
+            //console.log('invalid group: ', groupParam);
         }
     }
     // sidemenu init
