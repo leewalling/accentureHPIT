@@ -889,13 +889,13 @@ hpit.core = (function() {
 	                    {
 	                        axis: 'y',
 	                        duration: 1, //duration: hpit.config.duration[hpit.config.desktopORtouch],
-	                        easing: hpit.config.easing,
 	                        onAfter: function() {
 
 	                            hpit.config.locked = false;
 	                            
 								// correcting position for mobile devices
 	                            if(onMobile()){
+
 	                            	var currTop = $(window).scrollTop();
 	                            	var navH = $('.navbar').outerHeight(true);
 
@@ -903,8 +903,9 @@ hpit.core = (function() {
 	                            	window.scrollTo(0,currTop-navH);
 
 	                            	// toggle the insight open
-	                            	$('.insight[data-insight="'+deeplink+'"] .toggler').trigger("click");
-	                            }	               
+	                                $('.insight[data-insight="'+deeplink+'"] .toggler').trigger("click");
+	                            
+                                }	               
 
 	                        }
 	                    });
