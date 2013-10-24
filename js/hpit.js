@@ -865,12 +865,13 @@ hpit.core = (function() {
         var delay = 500; // changed from 500 to 250 to test ipad deeplinking delay issue
         
         if (groupParam && groupParam.indexOf('insight') != -1) {
-            try {
+            /*SGS 10/24: Removed this as the pageName override logic is already implemented in the HTML */
+            /*try {
                window.s.pageName = window.s.pageName + "#" + groupParam;
             } 
             catch (e) {
                //s_code.js does not exist on the page
-            }
+            }*/
    
             haveDeepLink = true;
             //console.log('deeplink: ', groupParam);
@@ -902,9 +903,15 @@ hpit.core = (function() {
 
 	                            	// scroll thw window to real deeplink position
 	                            	window.scrollTo(0,currTop-navH);
+                                    
+                                    // SGS 10/24: Added a class for flagging the click event was just forced */
+                                    $('.insight[data-insight="'+deeplink+'"] .toggler').addClass("forcedClick");
 
 	                            	// toggle the insight open
 	                                $('.insight[data-insight="'+deeplink+'"] .toggler').trigger("click");
+
+                                    // SGS 10/24: Removed the added class */
+                                    $('.insight[data-insight="'+deeplink+'"] .toggler').removeClass("forcedClick");
 	                            
                                 }	               
 
@@ -1133,7 +1140,11 @@ hpit.core = (function() {
             	/*$cont.slideDown(500, function(){
 					$trgt.addClass('open');
 				   });*/
-        		   if (onProduction()) {
+
+                /* SGS 10/24 */
+                var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
+
+        		   if (onProduction() && !wasForcedClick) {
                   CleanUpLtVars();
 					   FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
 				   }
