@@ -35,7 +35,7 @@ var hpit = window.hpit || {};
 
 // initial config
 hpit.config = {
-    isTopPageView: false;
+    isTopPageView: false,
     currPageView: 0,
     currInsight: 0,
     state: 0,
