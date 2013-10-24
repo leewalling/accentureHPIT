@@ -1,5 +1,11 @@
  /*		Accenture High Performance IT		*/
+<<<<<<< HEAD
+
+console.log('deployed...'); 
+
+=======
  
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
 if (typeof console == "undefined") {
     window.console = {
         log: function() {}
@@ -23,19 +29,30 @@ function setCookie(cname, cvalue) {
 }
 
 function preload(arrayOfImages) {
+<<<<<<< HEAD
+
+=======
     //console.log('preload');
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
     $(arrayOfImages).each(function(index) {
         var num = parseInt(index) + 1;
         $('<img/>')[0].src = this;
         $('.bgImages').append('<div class="bgImg" data-insight="' + num + '"><img src="' + this + '" /></div>');
     });
+<<<<<<< HEAD
+
+=======
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
 }
 
 var hpit = window.hpit || {};
 
 // initial config
 hpit.config = {
+<<<<<<< HEAD
+=======
     isTopPageView: false,
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
     currPageView: 0,
     currInsight: 0,
     state: 0,
@@ -425,9 +442,15 @@ hpit.core = (function() {
 
         // Initialize event handler for deeplinks - need to load before preloading images
         deeplinkInit();
+<<<<<<< HEAD
+/*
+        if (!onMobile() && !onIpad() && !isIE8) {
+            console.log('preloading!');
+=======
         
         if (!onMobile() && !onIpad() && !isIE8) {
             //console.log('preloading!');
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
             preload([
                 'images/01.png', 
                 'images/02.png', 
@@ -440,11 +463,20 @@ hpit.core = (function() {
                 'images/09.png', 
                 'images/10.png'
             ]);
+<<<<<<< HEAD
+        } 
+        else {
+            console.log('NO preload');
+        }
+     */   
+      //  $('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile: ' + onMobile() + '</div>' + '<div>onIpad: ' + onIpad() + '</div>' + '<div>onNexus: ' + onNexus() + '</div>');
+=======
         } else {
         //console.log('NO preload');
         }
         
         $('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile: ' + onMobile() + '</div>' + '<div>onIpad: ' + onIpad() + '</div>' + '<div>onNexus: ' + onNexus() + '</div>');
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
 
         // add favicon
         //addFavicon();
@@ -508,11 +540,29 @@ hpit.core = (function() {
 			}
         });
 		
+<<<<<<< HEAD
+		   $('.download-link a').on('click', function(e) {
+=======
 		$('.download-link a').on('click', function(e) {
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
             //FlashLinkAnalysis($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis")
             /* SGS: To trigger as download instead of normal link analysis data */ 
 			
             var $trgt = $(this).parent().parent().parent().parent().parent()
+<<<<<<< HEAD
+			   var $title = $trgt.find(".insightTitle");
+            //alert('$trgt: ', $trgt);
+            if (onProduction()) {
+				   if ($trgt.hasClass('open')) {
+                  CleanUpLtVars();
+					   FlashDownload($(this).attr('href'), "download study:insight" +  $.trim($title.text()).replace('\n', ''), "linkanalysis");
+				   }
+				   else
+               {
+                  CleanUpLtVars();
+                  FlashDownload($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis");
+               }
+=======
             var $title = $trgt.find(".insightTitle");
              
             //alert('$trgt: ', $trgt);
@@ -525,6 +575,7 @@ hpit.core = (function() {
                     CleanUpLtVars();
                     FlashDownload($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis");
                 }
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
             }
         });
         
@@ -711,6 +762,15 @@ hpit.core = (function() {
         $(window).scroll(function() {
             var winOffset = $(window).scrollTop();
             
+<<<<<<< HEAD
+            if (winOffset == 1) {
+               omniTrackPageView('home');
+            }
+
+            if (winOffset <= 1) {
+               hpit.config.state = 0;
+               updateArrows();
+=======
             /*if (winOffset == 1) {
                omniTrackPageView('home');
             }*/
@@ -722,6 +782,7 @@ hpit.core = (function() {
                updateArrows();
             }else{
                 isTopPageView = false;
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
             }
  
             $('.insight').each(function(index) {
@@ -798,7 +859,11 @@ hpit.core = (function() {
              $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
              $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
              
+<<<<<<< HEAD
+             if (!hpit.config.locked && (hpit.config.currPageView != menuItem) && winOffset != 1) { 
+=======
              if (!hpit.config.locked && (hpit.config.currPageView != menuItem) && !isTopPageView) { 
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
                   clearTimeout(trackPageViewDelay);
                   trackPageViewDelay = setTimeout(function() {
                      //console.log("Page View: " + menuItem);
@@ -849,13 +914,42 @@ hpit.core = (function() {
         }
     }
 
+<<<<<<< HEAD
+    function addFavicon() {
+
+=======
     // Favicon
     function addFavicon() {
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
         var link = document.createElement('link');
         link.type = 'image/x-icon';
         link.rel = 'shortcut icon';
         link.href = 'http://www.accenture.com/Microsites/high-performance-it/PublishingImages/favicon.ico';
         document.getElementsByTagName('head')[0].appendChild(link);
+<<<<<<< HEAD
+
+    }
+
+    function deeplinkInit() {
+      
+        var groupParam = $.getUrlVar('group');
+        
+        if (groupParam && groupParam.indexOf('insight') != -1) {
+   
+            var haveDeepLink = true;
+            var deeplink = parseInt( groupParam.replace('insight', '') );
+
+            if ( deeplink > 0 && deeplink < $('.insight').length + 1 ) {
+
+                var insightIdFromGroupParam = hpit.config.groups[groupParam].newHash;
+                
+                hpit.config.locked = true;
+                
+                //setTimeout(function() {
+                    $(window).scrollTo( insightIdFromGroupParam, {
+	                        axis: 'y',
+	                        duration: 'fast',
+=======
     }
 
     // deeplinking
@@ -891,18 +985,45 @@ hpit.core = (function() {
 	                    {
 	                        axis: 'y',
 	                        duration: 0.1,
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
 	                        onAfter: function() {
 
 	                            hpit.config.locked = false;
 	                            
 								// correcting position for mobile devices
+<<<<<<< HEAD
+	                            if( onMobile() ) {
+=======
 	                            if(onMobile()){
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
 
 	                            	var currTop = $(window).scrollTop();
 	                            	var navH = $('.navbar').outerHeight(true);
 
 	                            	// scroll thw window to real deeplink position
 	                            	window.scrollTo(0,currTop-navH);
+<<<<<<< HEAD
+
+                                    /* SGS 10/24: Add a class for flagging that the click event was just forced. */
+                                    $('.insight[data-insight="'+deeplink+'"] .toggler').addClass("forcedClick");
+
+	                            	// toggle the insight open
+	                            	$('.insight[data-insight="'+deeplink+'"] .toggler').trigger("click");
+
+                                    /* SGS 10/24: Removed the added class. */
+                                    $('.insight[data-insight="'+deeplink+'"] .toggler').removeClass("forcedClick");
+
+	                            }	                        	
+	 
+	                        }
+	                    });
+               // }, 10);
+            
+            } 
+        } 
+    }
+
+=======
                                     
                                     // SGS 10/24: Added a class for flagging the click event was just forced */
                                     $('.insight[data-insight="'+deeplink+'"] .toggler').addClass("forcedClick");
@@ -930,6 +1051,7 @@ hpit.core = (function() {
         }
     }
     // sidemenu init
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
     function sideMenuInit() {
         $('#sideMenu ul li a').on('click', function(e) {
             e.preventDefault();
@@ -987,16 +1109,30 @@ hpit.core = (function() {
             if ($th.hasClass("prev")) {
                 if ($th.hasClass("noClick")) {
                     //
+<<<<<<< HEAD
+                    console.log("do we need this to happen even when click?");
+=======
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
                     return false;
                 }
                 else {
                     if ($cur > 1) {
                         newNum = ($cur - 1);
+<<<<<<< HEAD
+                        console.log('NEXT newNum: ' + newNum);
+                        newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
+                    } else {
+                        //newNum = 0;
+                        newNum = ($cur - 1);
+                        newHash = '#theTop';
+                        console.log("inside else click " + newN);
+=======
                         //console.log('newNum: ' + newNum);
                         newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     } else {
                         newNum = 0;
                         newHash = '#theTop';
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
                     //return false;
                     }
 
@@ -1039,7 +1175,11 @@ hpit.core = (function() {
                 //console.log('#total: ', $('.insight').length);
                 if ($cur < $('.insight').length) {
                     newNum = ($cur + 1);
+<<<<<<< HEAD
+                    console.log('PREVIOUS newNum: ' + newNum + " cur less than length  " + $cur);
+=======
                     //console.log('newNum: ' + newNum);
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
                     //SGS: omniTrackPageView(newNum);
                     newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     
@@ -1069,6 +1209,10 @@ hpit.core = (function() {
                     }
                 } else {
                     //console.log('nothing there');
+<<<<<<< HEAD
+                    console.log('PREVIOUS newNum: ' + newNum + " cur is greater than length " + $cur);
+=======
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
                     return false;
                 }
             }
@@ -1140,11 +1284,19 @@ hpit.core = (function() {
             	/*$cont.slideDown(500, function(){
 					$trgt.addClass('open');
 				   });*/
+<<<<<<< HEAD
+        		
+                /* SGS 10?24 */
+                var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
+
+                if (onProduction() && !wasForcedClick) {
+=======
 
                 /* SGS 10/24 */
                 var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
 
         		   if (onProduction() && !wasForcedClick) {
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
                   CleanUpLtVars();
 					   FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
 				   }
@@ -1533,6 +1685,326 @@ hpit.core = (function() {
 		window.s.tl(this, 'o', 'delveMedia');
 		clearVideoVarsEvents();
 	}
+<<<<<<< HEAD
+
+    // video player
+    function playVideoInit() {
+        $('.hero .playVid').on('click', function(e) {
+            e.preventDefault();
+            
+            $('.the-video.active').each(function(index) {
+                $(this).find('.vidWrapper').remove().end().removeClass('active');
+            });
+            
+            if (!onMobile() && !onIpad() && !isIE8) {
+                if ($('#hero video').length) {
+                    $("#hero video")[0].pause();
+                } else {
+                //console.log('NO VIDEO');
+                }
+            }
+            $('html').addClass('noScroll');
+            $('#ll-overlay').fadeIn(500, function() {
+                var vidContent = '<object type="application/x-shockwave-flash" id="limelight_player_239897" name="limelight_player_239897" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
+                vidContent += '<param name="movie" value="//assets.delvenetworks.com/player/loader.swf"/>';
+                vidContent += '<param name="wmode" value="transparent"/>';
+                vidContent += '<param name="allowScriptAccess" value="always"/>';
+                vidContent += '<param name="allowFullScreen" value="true"/>';
+                vidContent += '<param name="flashVars" value="playerForm=HoverPlayer&amp;mediaId=e86824f76d844d0ea0f46cd3df780c3f&amp;autoplay=true"/>';
+                vidContent += '</object>';
+                
+                $('#ll-overlay #ll-player').html(vidContent);
+                LimelightPlayerUtil.initEmbed('limelight_player_239897');
+            });
+        });
+
+        // close button
+        $('.closeVid').on('click', function(e) {
+            e.preventDefault();
+            
+            try {
+                DelvePlayer.doPause();
+            } catch (err) {
+            //console.log('DelvePlayer error: ', err);
+            }
+            
+            resetVideoStates();
+            $('html').removeClass('noScroll');
+            
+            $('#ll-overlay')
+            .find('#ll-player').html('')
+            .end()
+            .fadeOut(500, function() {
+                if (!onMobile() && !onIpad() && !isIE8) {
+                    if ($('#hero video').length) {
+                        $(".hero video")[0].play();
+                    } else {
+                    //console.log('NO VIDEO');
+                    }
+                }
+            });
+        });
+
+        // video chapters
+        $('.chapters a')
+	        .on('click touchstart', function(e) {
+	            e.preventDefault();
+	            clearTimeout(chapterClicked);
+	            hpit.config.justClicked = true;
+	            var cNum = $(this).text();
+	            var skipTo = hpit.config.chapters[cNum].position / 1000;
+	            if (onProduction()) {
+					   CleanUpLtVars();
+                  FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
+				}
+	            
+	            try {
+	                DelvePlayer.doSeekToSecond(skipTo);
+	            } catch (err) {
+	            	//console.log('DelvePlayer error: ', err);
+	            }
+	            
+	            chapterClicked = setTimeout(function() {
+	                hpit.config.justClicked = false;
+	            //console.log('justClicked cleared');
+	            }, 4000);
+
+	            //console.log('touchstart');
+	        })
+	        .on('mouseenter touchstart', function(e) {
+	            var thisNum = $(this).text();
+	            $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
+	        })
+	        .on('mouseleave touchend', function(e) {
+	            $('#ll-overlay .chapters .contentRow').hide().text('');
+	        });
+        
+        $('.the-video a').on('click', function(e) {
+            e.preventDefault();
+            
+            $('.the-video.active').each(function(index) {
+                $(this).find('.vidWrapper').remove().end().removeClass('active');
+            });
+            
+            var target = $(this).parent();
+            target.addClass('active');
+            //var origContent = target.html();
+            
+            var insightID = $(this).attr('href').replace('#', '');
+            var vidID = 'limelight_player_' + hpit.config.limelightVideos[insightID].uid;
+            //var chID = hpit.config.limelightVideos[insightID].channelId
+            var mediaId = hpit.config.limelightVideos[insightID].mediaId;
+            
+            var vidContent = '<div class="vidWrapper">'; //<script src="//assets.delvenetworks.com/player/embed.js"></script>
+            vidContent += '<object type="application/x-shockwave-flash" id="' + vidID + '" name="' + vidID + '" class="LimelightEmbeddedPlayerFlash" width="100%" height="100%" data="//assets.delvenetworks.com/player/loader.swf">';
+            vidContent += '<param name="movie" value="//assets.delvenetworks.com/player/loader.swf"/>';
+            vidContent += '<param name="wmode" value="transparent"/>';
+            vidContent += '<param name="allowScriptAccess" value="always"/>';
+            vidContent += '<param name="allowFullScreen" value="true"/>';
+            vidContent += '<param name="flashVars" value="mediaId=' + mediaId + '&amp;playerForm=HoverPlayer&amp;autoplay=true"/>';
+            vidContent += '</object></div>';
+            
+            target.append(vidContent);
+            LimelightPlayerUtil.initEmbed(vidID);
+        });
+    }
+    
+    function updateSidemenu() {
+        //console.log('scrH:', hpit.config.scrH);
+        
+        var scrH = parseInt(hpit.config.scrH);
+        var availH = scrH - 62;
+        var menuH = $('#sideMenu > ul').outerHeight();
+        
+        var $target = $('#sideMenu');
+        $target.css({"height": hpit.config.scrH - 62});
+        
+        
+        
+        var $diff = menuH - availH;
+        //console.log('$diff:', $diff);
+        $target.removeClass('height-xxs height-xs height-sm height-md height-lg');
+        
+        if ($diff > 0) {
+            if ($diff > 300) {
+                $('#sideMenu').addClass('height-xxs');
+            } else if ($diff > 200) {
+                $('#sideMenu').addClass('height-xs');
+            } else if ($diff > 100) {
+                $('#sideMenu').addClass('height-sm');
+            } else if ($diff > 50) {
+                $('#sideMenu').addClass('height-md');
+            } else {
+                $('#sideMenu').addClass('height-lg');
+            }
+        }
+    }
+
+    // sidemenu toggle method
+    function toggleMenuInit() {
+        //updateSidemenu();
+        var $target = $('#sideMenu');
+        
+        $('#controls a').on('click', function(e) {
+            e.preventDefault();
+            if ($('#controls .control-info').is(':visible')) {
+                $('#controls .control-info').fadeOut();
+                setCookie('hasUsedControls', true);
+            }
+        });
+        
+        $('#toggleMenu,#sideMenu .closeX').on('click', function(e) {
+            e.preventDefault();
+            var th = $(this);
+            
+            if ($target.hasClass("opened")) {
+                $target.animate({"right": "-275px"}, "normal");
+                $target.removeClass("opened");
+                if (th.hasClass("closeX")) {
+                	if (onProduction()) {
+                     CleanUpLtVars();
+						   FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
+					}
+                }
+            } else {
+                $target.animate({"right": "0px"}, "normal");
+                $target.addClass("opened");
+                if (th.attr("id") == "toggleMenu") {
+                	if (onProduction()) {
+						   CleanUpLtVars();
+                     FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
+					}
+                }
+            }
+        });
+    }
+    
+    function injectStuff() {
+        //$('.insight').each(function (index) {
+        //$(this).attr('data-insight', index+1);            
+        //});
+        $('li.state').each(function(index) {
+            //$(this).attr('data-insight-nav', index+1);
+            $(this).on('click', function(e) {
+                hpit.config.state = parseInt($(this).attr('data-insight-nav'));
+            })
+        });
+        //$('.bgImg').each(function (index) {
+        //$(this).attr('data-insight', index+1);            
+        //});
+		var initClick = true;
+        $('.navbar-toggle').on('click', function(e) {
+            e.preventDefault();
+            if (onProduction()) {
+				if ($(this).hasClass("navbar-toggle collapsed")) {		
+               CleanUpLtVars();
+					FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
+					}
+				else if (initClick){
+               CleanUpLtVars();
+					FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
+					initClick = false;
+					}
+				else {
+               CleanUpLtVars();
+               FlashLinkAnalysis("mobile", "menu-toggle-off", "linkanalysis");}
+            }
+        });
+        //$('.navbar-toggle')
+        //.attr('data-toggle','collapse')
+        //.attr('data-target','.navbar-collapse');
+        
+        if (!onMobile() && !onIpad() && !isIE8) {
+            initVideo();
+        }
+    }
+    
+    function initVideo() {
+        //poster="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg"
+        $('#hero .video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.mp4" type="video/mp4" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.ogg" type="video/ogg" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.webm" type="video/webm" /><img src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
+        
+        var video = document.getElementById('theVideo');
+        if (video.addEventListener) {
+            video.addEventListener('ended', function() {
+                $('.video-wrapper').html('');
+            });
+        //console.log('addEventListener - IF');
+        } else if (video.attachEvent) {
+            video.attachEvent('ended', function() {
+                $('.video-wrapper').html('');
+            });
+            $('html').addClass('ie8');
+            $('head').append('<link href="/Microsites/high-performance-it/Documents/css/ie8.css" rel="stylesheet" media="screen" />');
+        //console.log('addEventListener - ELSE IF');
+        } else {
+            video.addEventListener('ended', function() {
+                $('.video-wrapper').html('');
+            });
+        //console.log('addEventListener - ELSE');
+        }
+    }
+    
+    function updateDimensions() {
+        hpit.config.scrW = $(window).width();
+        hpit.config.scrH = $(window).height();
+    }
+    
+    function updateArrows(from) {
+        $('#controls .arrows').removeClass('noClick');
+        //console.log('from: ', from);
+        //console.log('hpit.config: ', hpit.config);
+        if (hpit.config.state > 0 && hpit.config.state < $('.insight').length) {
+        //$('#controls .arrows').removeClass('noClick');
+        //console.log('updateArrows - IF');
+        } else if (hpit.config.state === $('.insight').length) {
+            $('.nxt').addClass('noClick');
+        //console.log('updateArrows - ELSE IF');
+        } else {
+            $('.prev').addClass('noClick');
+        //console.log('updateArrows - ELSE');
+        }
+    }
+       
+    function omniTrackPageView(num) {
+        //console.log('function omniTrackPageView: ', num);
+        if (onProduction()) {
+            CleanUpLtVars();
+        }
+		if (num=="home"){
+        var newPageName = 'acn:microsites:high-performance-it:home';}
+		else {var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;}
+        //console.log('newPageName: ', newPageName);
+        if (onProduction()) {
+            triggerOmniturePageView(newPageName, "event29,event20,event68");
+        } 
+        else {
+            console.log("Omniture Page View: " + newPageName);
+        }
+    }
+
+    /* omniture tracking function */
+    function omniTrack(obj) {
+        //console.log('Object: ', obj);
+
+		if (onProduction()) {
+			try {
+               CleanUpLtVars();
+	            FlashLinkAnalysis(obj.eventLink, obj.eventName, obj.eventType);
+	        } catch (err) {
+	        	//console.log('Tracking error: ', err);
+	        }
+		}
+    }
+    
+    function isTouchDevice() {
+        return hpit.config.desktopORtouch == 'touch';
+    }
+    
+    return {
+        init: init
+    }
+}());
+=======
 
     // video player
     function playVideoInit() {
@@ -1860,6 +2332,7 @@ $(window).on('orientationchange', function() {
 // Functionality to execute upon an orientation change (touch devices only)
 // hpit.core.touchOrientationChange();
 });
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
 
 // jQuery extensions
 $.extend({
@@ -1879,7 +2352,11 @@ $.extend({
     }
 });
 
+<<<<<<< HEAD
+$(window).load(function() {
+=======
 $(document).ready(function() {
+>>>>>>> 243a74da5ae8451ee2a4f884e1790c9a21512fbf
     // Initialize
     hpit.core.init();
 });
