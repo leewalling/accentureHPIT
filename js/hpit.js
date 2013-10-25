@@ -48,7 +48,7 @@ hpit.config = {
     footerInView: false,
     isIE7: false,
     isIE: false,
-    easing: 'easeOutExpo',
+    easing: 'easeOutQuart', //easeOutExpo'
     duration: {
         backToTop: 2000,
         desktop: 1500,
@@ -955,6 +955,7 @@ hpit.core = (function() {
             e.preventDefault();
             var $cur = parseInt(hpit.config.currInsight);
             var $th = $(this);
+
             var newNum;
             var newHash;
 
@@ -963,17 +964,16 @@ hpit.core = (function() {
 			var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
             
             $('#controls .arrows').removeClass('noClick');
-            
+
             if ( $th.hasClass("prev") ) {
 
-                if ($th.hasClass("noClick")) {
+                if ( $th.hasClass("noClick") ) {
                     return false;
                 }
                 else {
 
-                    if ($cur > 1) {
+                    if ( $cur > 1 ) {
                         newNum = ($cur - 1);
-                        //console.log('newNum: ' + newNum);
                         newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     } 
                     else {
@@ -981,6 +981,8 @@ hpit.core = (function() {
                         newHash = '#theTop';
                     }
 					
+                    //hpit.config.currInsight = newNum;
+
                     $(window).scrollTo(
                         newHash, 
                         hpit.config.duration[hpit.config.desktopORtouch],
@@ -989,9 +991,9 @@ hpit.core = (function() {
                         },
                         {
                             easing: hpit.config.easing,
-                            h: function() {
+                            duration: 100,
+                            onAfter: function() {
 
-                                hpit.config.currInsight = newNum;
                                 hpit.config.state = newNum;
                                 $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
 
@@ -1001,9 +1003,9 @@ hpit.core = (function() {
                             }
                     });
 
-                    if (onProduction()) {
+                    if ( onProduction() ) {
 
-						if (newNum == 0) {
+						if ( newNum == 0 ) {
                             CleanUpLtVars();
 							FlashLinkAnalysis(targetPage, "Menu Up:home", "linkanalysis");
 						}
@@ -1017,14 +1019,9 @@ hpit.core = (function() {
             } 
             else {
 
-                //console.log('cur: ', $cur);
-                //console.log('#total: ', $('.insight').length);
-
                 if ( $cur < $('.insight').length ) {
 
-                    newNum = ($cur + 1);
-                    //console.log('newNum: ' + newNum);
-                    //SGS: omniTrackPageView(newNum);
+                    newNum = $cur + 1;
                     newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     
                     $(window).scrollTo(
@@ -1032,32 +1029,30 @@ hpit.core = (function() {
                         hpit.config.duration[hpit.config.desktopORtouch], 
                         {
                             easing: hpit.config.easing,
+                            duration: 100,
                             onAfter: function() {
-                                hpit.config.currInsight = newNum;
-                                //console.log('currInsight change 4');
+
                                 hpit.config.state = newNum;
-                                //hpit.config.currPageView = newNum; //
                                 $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
-                                //console.log('config onAfter: ', hpit.config);
+
                                 if (newNum > $('.insight').length - 1) {
                                     $th.addClass('noClick');
                                 }
                             }
                     });
 
-                    if (onProduction()) {
-                        //FlashLinkAnalysis($(this).attr('href'), "Menu Down:insight" + newNum, "linkanalysis");
+                    if ( onProduction() ) {
                         /* SGS */
                         CleanUpLtVars();
                         FlashLinkAnalysis(targetPage, "Menu Down:insight" + newNum, "linkanalysis");
-                        //omniTrackPageView(newNum);
                     }
 
-                } else {
-                    //console.log('nothing there');
+                } 
+                else {
                     return false;
                 }
             }
+            hpit.config.currInsight = newNum;
         });
 
  		/*
