@@ -709,6 +709,7 @@ hpit.core = (function() {
 
                 isTopPageView = true;
                 hpit.config.state = 0;
+                hpit.config.currPageView = 0;
                 
                 updateArrows();
             }
