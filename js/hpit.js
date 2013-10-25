@@ -693,7 +693,7 @@ hpit.core = (function() {
    
     function paneLock() {
 
-         $('#controls .arrows').removeClass('noClick');
+        $('#controls .arrows').removeClass('noClick');
 
         $(window).scroll(function() {
 
@@ -842,6 +842,8 @@ hpit.core = (function() {
 
     function checkAndHandleDeepLink() {
 
+        console.info('hello');
+
         var groupParamValue = $.getUrlVar('group');
         
         if ( groupParamValue && groupParamValue.indexOf('insight') != -1 ) {
@@ -885,7 +887,7 @@ hpit.core = (function() {
                 }
                 else {
 
-                    $('body').animate({
+                    $('body, html').animate({
                             scrollTop: selectedInsight.offset().top
                         },
                         {
