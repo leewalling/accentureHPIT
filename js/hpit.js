@@ -851,22 +851,47 @@ hpit.core = (function() {
 
                 var specifiedInsightDeepLink = hpit.config.groups[ 'insight' + specifiedInsightNumber ].newHash;
                 var selectedInsight = $( specifiedInsightDeepLink );
-                var animationDurationInMilliseconds = 1000;
+                var animationDurationInMilliseconds = 2000;
 
                 hpit.config.locked = true;
+
+                if ( onMobile() ) {
+
+                    setTimeout( function() {
+
+                        // SGS 10/24: Added a class for flagging the click event was just forced 
+                        $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').addClass("forcedClick");
+
+                        // toggle the insight open
+                        $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').trigger("click");
+
+                        // SGS 10/24: Removed the added class 
+                        $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').removeClass("forcedClick");
+
+                        $('body').animate({
+                                scrollTop: selectedInsight.offset().top - $('.navbar').outerHeight( true )
+                            },
+                            {
+                                duration: animationDurationInMilliseconds,                        
+                                complete: function() {
+                                    hpit.config.locked = false;
+                                }
+                            }
+                        );
+
+                    }, 750);
+                    
+                }
+                else {
+
+                    $('body').animate({
+                            scrollTop: selectedInsight.offset().top
+                        },
+                        {
+                            duration: animationDurationInMilliseconds
+                    });
                 
-                $('html,body').animate({
-                          scrollTop: selectedInsight.offset().top
-                        }, animationDurationInMilliseconds );
-
-                // SGS 10/24: Added a class for flagging the click event was just forced */
-                $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').addClass("forcedClick");
-
-                // toggle the insight open
-                $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').trigger("click");
-
-                // SGS 10/24: Removed the added class */
-                $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').removeClass("forcedClick");
+                }
 
             } 
         
