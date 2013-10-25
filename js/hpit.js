@@ -1,5 +1,3 @@
- /*		Accenture High Performance IT		*/
- 
 if (typeof console == "undefined") {
     window.console = {
         log: function() {}
@@ -23,7 +21,6 @@ function setCookie(cname, cvalue) {
 }
 
 function preload(arrayOfImages) {
-    //console.log('preload');
     $(arrayOfImages).each(function(index) {
         var num = parseInt(index) + 1;
         $('<img/>')[0].src = this;
@@ -376,50 +373,44 @@ hpit.config = {
     }
 };
 
-/*		HPIT core class		*/
 hpit.core = (function() {
     
     var $userAgent = navigator.userAgent.toLowerCase();
     var $Android = /android/i.test($userAgent);
     var $iOS = /iphone|ipod|ios/i.test($userAgent);
     var $iPad = /ipad/i.test($userAgent);
-    //var $iPad = true;
     var $Nexus = /nexus/i.test($userAgent);
     var $GalaxyTab = /sch-i905/i.test($userAgent);
-    var chapterClicked;
-    var trackPageViewDelay;
+
+    var chapterClicked, trackPageViewDelay;
+
     var haveDeepLink = false;
     var waitBeforeCallingAnalyticsCall = 4000;
 
     function init() {
 
-        // needed for fixing back button position
-        if($(window).scrollTop() > 0){
-
-        	setTimeout(function(){
-	        	window.scrollTo(0, 0);
-	        }, 100);
-
-        }
-	
-		/* SGS */
-		overridePageView = true;
-
-		// test if user is on touch device
-		if('ontouchstart' in window || 'onmsgesturechange' in window){
-			hpit.config.desktopORtouch = 'touch';
-		}
-        
-        if (isIE8) {
-            $('html').addClass('ie8');
-        }
-        
         var debug = $.getUrlVar('debug');
         if (debug == 'true') {
             $('#diagnostics').show();
         }
 
-        deeplinkInit();
+        // needed for fixing back button position
+        if( $(window).scrollTop() > 0 ){
+        	setTimeout(function() {
+	        	window.scrollTo(0, 0);
+	        }, 100);
+        }
+	
+		/* SGS */
+		overridePageView = true;
+
+		hpit.config.desktopORtouch = ( 'ontouchstart' in window || 'onmsgesturechange' in window ) ? 'touch' : 'desktop';
+        
+        if ( isIE8 ) {
+            $('html').addClass('ie8');
+        }
+        
+        checkAndHandleDeepLink();
         
         if (!onMobile() && !onIpad() && !isIE8) {
 
@@ -493,34 +484,29 @@ hpit.core = (function() {
         
         footerLock($('#footer'));
         
-        if (!onMobile() && !onIpad()) {
+        if ( !onMobile() && !onIpad() ) {
             paneLock();
         }
         
-        if (onMobile() && !onGalaxyTab()) {
+        if ( onMobile() && !onGalaxyTab() ) {
             arrangeTopNav();
         }
 
-        // track download link click
         $('.download a').on('click', function(e) {
-            //FlashLinkAnalysis($(this).attr('href'), "download study:topnav", "linkanalysis") 
-			/* SGS: To trigger as download instead of normal link analysis data */ 
-			if ( onProduction() ) {
 
+			if ( onProduction() ) {
                 CleanUpLtVars();
 				FlashDownload($(this).attr('href'), "download study:topnav", "linkanalysis");
-
 			}
+
         });
 		
 		$('.download-link a').on('click', function(e) {
-            //FlashLinkAnalysis($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis")
-            /* SGS: To trigger as download instead of normal link analysis data */ 
 			
             var $trgt = $(this).parent().parent().parent().parent().parent()
             var $title = $trgt.find(".insightTitle");
              
-            if (onProduction()) {
+            if ( onProduction() ) {
                 if ( $trgt.hasClass('open') ) {
                     CleanUpLtVars();
                     FlashDownload($(this).attr('href'), "download study:insight" +  $.trim($title.text()).replace('\n', ''), "linkanalysis");
@@ -530,6 +516,7 @@ hpit.core = (function() {
                     FlashDownload($(this).attr('href'), "download study:insight" + hpit.config.currInsight, "linkanalysis");
                 }
             }
+
         });
         
         $('.bgImg').css({"opacity": 0});
@@ -551,25 +538,20 @@ hpit.core = (function() {
 		var $hasFired	= 0;
 		var $cntrlMess 	= getCookie('hasUsedControls');
 
-        // Attach functionality to the native scroll function
-        //$win.scroll($.throttle(250, function(event) {code goes here...}));
         $win.scroll(function(event) {
 
         	// fade out the control message upon initial scroll
-        	if($hasFired == 0){
-        		//console.log('fire here!');
-        		if ($cntrlMess == undefined || $cntrlMess == null || $cntrlMess == '') {
+        	if ( $hasFired == 0 ) {
+        		if ( $cntrlMess == undefined || $cntrlMess == null || $cntrlMess == '' ) {
 		            $conInf.fadeOut(2000);
 		        }
         		$hasFired = 1;
         	}
         	
         	// if the hero video exists remove it upon initial window scroll
-            if ($theVid.length) {
+            if ( $theVid.length ) {
                 $vidWr.html('');
-            } else {
-            	//console.log('no video');
-            }
+            } 
             
             if (!onMobile() && !onIpad()) {
                 // determine if we need to lock the background images in place
@@ -589,8 +571,8 @@ hpit.core = (function() {
                 else {
 
                     var toGo = $ins.eq(0).offset().top - $win.scrollTop();
-                    if (toGo > -1 && toGo < 226) {
-                        if ($bl.hasClass('fixed')) {
+                    if ( toGo > -1 && toGo < 226 ) {
+                        if ( $bl.hasClass('fixed') ) {
                             $bl.removeClass('fixed');
                         }
                         $bl.css({'bottom': -toGo});
@@ -599,15 +581,15 @@ hpit.core = (function() {
                         $bl.removeClass('fixed').removeAttr('style');
                     }
                     
-                    if ($bgImg.hasClass('fixed')) {
+                    if ( $bgImg.hasClass('fixed') ) {
                         $bgImg.removeClass('fixed');
                     }
 
-                    if ($wh.hasClass('fixed')) {
+                    if ( $wh.hasClass('fixed') ) {
                         $wh.removeClass('fixed');
                     }
 
-                    if ($bl.hasClass('fixed')) {
+                    if ( $bl.hasClass('fixed') ) {
                         $bl.removeClass('fixed').removeAttr('style');
                     }
 
@@ -615,7 +597,7 @@ hpit.core = (function() {
                     $smUlLi.removeClass('hilited');
                     $bgImgImg.removeClass('activate');
                     
-                    if (!onIpad() && !isIE8) {
+                    if ( !onIpad() && !isIE8 ) {
                         var $newT = $win.scrollTop() / 3.5;
                         $hero.css({'top': -$newT});
                     }
@@ -628,39 +610,34 @@ hpit.core = (function() {
             updateDimensions();
             updateSidemenu();
             
-            if (onMobile()) {
-                if (!onIpad() && $win.width() > 767) {
-                    //alert('exception!');
+            if ( onMobile() ) {
+                if ( !onIpad() && $win.width() > 767 ) {
                     $('html').addClass('exception');
-                    if(onGalaxyTab()){
+                    if( onGalaxyTab() ){
                     	$('html').addClass('galaxyTab');
                     }
                 };
                 $('html').removeClass('desktop').addClass('onMobile');
-            } else {
+            } 
+            else {
                 $('html').removeClass('onMobile exception').addClass('desktop');
             }
             
-            if (onIpad()) {
+            if ( onIpad() ) {
                 $('html').addClass('onIpad');
-            } else {
+            } 
+            else {
                 $('html').removeClass('onIpad');
             }
         });
         
-        $win.on('orientationchange', function(event) {
-        	//location.reload();
-        });
-        
         $win.resize();
 
-        // Initialize event handler for insight togglers
         togglerInit();
     }
     
     function onMobile() {
         return (($(window).width() < 768) || $Android || $iOS && !$iPad);
-    	//return true;
     }
     
     function onIpad() {
@@ -680,7 +657,7 @@ hpit.core = (function() {
     }
     
     function footerLock(element) {
-        //$win/.scroll($.throttle(250, function(event) {code goes here...}));
+
         $(window).scroll(function() {
             var currEle = element;
             var footerH = currEle.height();
@@ -694,7 +671,7 @@ hpit.core = (function() {
             var winOffset = $(window).scrollTop();
 
             // is the element in the viewport?
-            if (winOffset >= (vpStart - scH)) {
+            if ( winOffset >= (vpStart - scH) ) {
                 hpit.config.footerInView = true;
                 var diff = vpEnd - scH;
                 var scrollDiff = -(winOffset - diff);
@@ -716,6 +693,9 @@ hpit.core = (function() {
     }
    
     function paneLock() {
+
+         $('#controls .arrows').removeClass('noClick');
+
         $(window).scroll(function() {
 
             var winOffset = $(window).scrollTop();
@@ -723,14 +703,15 @@ hpit.core = (function() {
             if ( winOffset <= 1 && ( typeof isTopPageView != 'undefined' && !isTopPageView ) ) {
                
                 clearTimeout(trackPageViewDelay);
+
                 trackPageViewDelay = setTimeout(function() {
                     omniTrackPageView('home');
                 }, waitBeforeCallingAnalyticsCall );
 
-
-               isTopPageView = true;
-               hpit.config.state = 0;
-               updateArrows();
+                isTopPageView = true;
+                hpit.config.state = 0;
+                
+                updateArrows();
             }
             else {
                 isTopPageView = false;
@@ -746,50 +727,51 @@ hpit.core = (function() {
 
     function paneLockUpdate(element, index, winOffset) {
 
-         var currEle = element;
-         var currFixedEle = element.find('.marker');
-         var bgPxToMove = 25;
+        var currEle = element;
+        var currFixedEle = element.find('.marker');
+        var bgPxToMove = 25;
          
-         if (currFixedEle.length <= 0) {
-             return false;
-         }
+        if ( currFixedEle.length <= 0 ) {
+            return false;
+        }
 
-         var vpStart = currEle.offset().top - 1; // - 62
-         var vpEnd = vpStart + currEle.height();
-         var currEleEnd = currEle.height();
-         var currEleHgt = currEle.height();
+        var vpStart = currEle.offset().top - 1; // - 62
+        var vpEnd = vpStart + currEle.height();
+        var currEleEnd = currEle.height();
+        var currEleHgt = currEle.height();
          
-         if ( index === parseInt(hpit.config.currInsight) ) { // && vpStart > winOffset
+        if ( index === parseInt(hpit.config.currInsight) ) { // && vpStart > winOffset
              
-             var currEleTitle = $$('.insight[data-insight="' + index + '"] .insightTitle', 'context-get', '.container.main');
-             if (currEleTitle.hasClass('lockedBottom')) {
-                 currEleTitle.removeClass('lockedBottom');
-             }
-             var titleEnd = parseInt(currEleTitle.css('top')) + currEleTitle.height() + 75;
-             var diff = vpStart - winOffset;
+            var currEleTitle = $$('.insight[data-insight="' + index + '"] .insightTitle', 'context-get', '.container.main');
+            if ( currEleTitle.hasClass('lockedBottom') ) {
+                currEleTitle.removeClass('lockedBottom');
+            }
+            var titleEnd = parseInt(currEleTitle.css('top')) + currEleTitle.height() + 75;
+            var diff = vpStart - winOffset;
              
-             if (!isIE8 && (diff < titleEnd)) {
-                 if (!currEleTitle.hasClass('lockedBottom')) {
-                     currEleTitle.addClass('lockedBottom');
-                 }
-             }
-             
-             var scH = parseInt(hpit.config.scrH);
-             var $per = diff / scH;
-                
-                if (diff >= -1 && diff < scH + 1) {
-                     $$('.bgImg[data-insight="' + index + '"]', 'context-get', '.container.main').css({"opacity": $per});
-                } 
-                else {
-                    $$('.insight .insightTitle', 'context-get', '.container.main').css({"opacity": 1});
+            if ( !isIE8 && (diff < titleEnd) ) {
+                if (!currEleTitle.hasClass('lockedBottom')) {
+                    currEleTitle.addClass('lockedBottom');
                 }
+            }
+             
+            var scH = parseInt(hpit.config.scrH);
+            var $per = diff / scH;
+                
+            if ( diff >= -1 && diff < scH + 1 ) {
+                 $$('.bgImg[data-insight="' + index + '"]', 'context-get', '.container.main').css({"opacity": $per});
+            } 
+            else {
+                $$('.insight .insightTitle', 'context-get', '.container.main').css({"opacity": 1});
+            }
+
          }
 
          // is the element in the viewport?
-         if (winOffset >= vpStart && winOffset < vpEnd) {
+         if ( winOffset >= vpStart && winOffset < vpEnd ) {
 
             $$('.insight.current', 'context-get', '.container.main').removeClass('current');
-            $('#sideMenu ul li.hilited').removeClass('hilited'); //XXX no cache
+            $('#sideMenu ul li.hilited').removeClass('hilited'); 
             $$('.bgImg img.activate', 'context-get', '.container.main').removeClass('activate');
              
             currEle.addClass('current');
@@ -823,16 +805,15 @@ hpit.core = (function() {
                 updateArrows(1);
             }
 
-            //updateArrows();
             var prevImgNum = parseInt(menuItem) - 1;
             var nextImgNum = parseInt(menuItem) + 1;
             $$('.bgImg', 'context-get', '.container.main').css({"opacity": 0});
             $$('.bgImg[data-insight="' + menuItem + '"]', 'context-get', '.container.main').css({"opacity": 1});
             $$('.bgImg[data-insight="' + nextImgNum + '"]', 'context-get', '.container.main').css({"opacity": 1});
 
-            if (!isIE8) {
+            if ( !isIE8 ) {
                 var diffToMove = (1 - ((vpEnd - winOffset) / currEleHgt)) * bgPxToMove;
-                if (!hpit.config.footerInView) {
+                if ( !hpit.config.footerInView ) {
                     $$('.bgImages .bgImg img', 'context-get', '.container.main').css({"margin-top": 0});
                     $$('.bgImages .bgImg img.activate', 'context-get', '.container.main').css({"margin-top": -diffToMove});
                 }
@@ -846,7 +827,7 @@ hpit.core = (function() {
     
     function cntrlMessInit() {
         var cntrlMess = getCookie('hasUsedControls');
-        if (cntrlMess == undefined || cntrlMess == null || cntrlMess == '') {
+        if ( cntrlMess == undefined || cntrlMess == null || cntrlMess == '' ) {
             $('#controls .control-info').fadeIn();
         }
     }
@@ -859,27 +840,35 @@ hpit.core = (function() {
         document.getElementsByTagName('head')[0].appendChild(link);
     }
 
-    function deeplinkInit() {
+    function checkAndHandleDeepLink() {
 
-        var groupParam = $.getUrlVar('group');
-        var delayBeforeScrollinMilliseconds = 250;
+        var groupParamValue = $.getUrlVar('group');
         
-        if (groupParam && groupParam.indexOf('insight') != -1) {
+        if ( groupParamValue && groupParamValue.indexOf('insight') != -1 ) {
 
-            var haveDeepLink = true;
-            var deeplink = parseInt( groupParam.replace('insight', '') );
+            var specifiedInsightNumber = parseInt( groupParamValue.replace('insight', '') );
 
-            if ( deeplink > 0 && deeplink < $('.insight').length + 1 ) {
+            if ( specifiedInsightNumber > 0 && specifiedInsightNumber < $('.insight').length + 1 ) {
 
-                var insightIdFromGroupParam = hpit.config.groups[ 'insight' + deeplink ].newHash;
+                var specifiedInsightDeepLink = hpit.config.groups[ 'insight' + specifiedInsightNumber ].newHash;
+                var selectedInsight = $( specifiedInsightDeepLink );
+                var animationDurationInMilliseconds = 1000;
+
                 hpit.config.locked = true;
-
-                var target = $( insightIdFromGroupParam );
-
+                
                 $('html,body').animate({
-                          scrollTop: target.offset().top
-                        }, 1000);
-    
+                          scrollTop: selectedInsight.offset().top
+                        }, animationDurationInMilliseconds );
+
+                // SGS 10/24: Added a class for flagging the click event was just forced */
+                $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').addClass("forcedClick");
+
+                // toggle the insight open
+                $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').trigger("click");
+
+                // SGS 10/24: Removed the added class */
+                $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').removeClass("forcedClick");
+
             } 
         
         } 
@@ -887,42 +876,41 @@ hpit.core = (function() {
     }
 
     function sideMenuInit() {
+
         $('#sideMenu ul li a').on('click', function(e) {
+
             e.preventDefault();
-            //hpit.config.locked = true; //XXX commented out per accenture's feedback
             var $th = $(this);
-            var newHash = $th.attr('href');
+            var selectedInsightId = $th.attr('href');
             
             $('#toggleMenu').trigger("click");
             $('#controls .arrows').removeClass('noClick');
             
-            $(window).scrollTo(
-	            newHash, 
-	            {
+            $(window).scrollTo( selectedInsightId, {
 	                duration: hpit.config.duration[hpit.config.desktopORtouch],
 	                easing: hpit.config.easing,
 	                onAfter: function() {
 	                    hpit.config.locked = false;
-	                    if (hpit.config.desktopORtouch == 'desktop') {
-	                        if ($(window).scrollTop() < $('.insight').eq(0).offset().top) {
-	                            //console.log('win scroll: ', $(window).scrollTop());
-	                            //console.log('insight 1 top: ', $('.insight').eq(0).offset().top);
+	                    if ( hpit.config.desktopORtouch == 'desktop' ) {
+	                        if ( $(window).scrollTop() < $('.insight').eq(0).offset().top ) {
+
 	                            hpit.config.currInsight = 0;
-	                            //console.log('currInsight change 2');
 	                            hpit.config.state = 0;
 	                            hpit.config.currPageView = 0;
+
 	                            setTimeout(function() {
-	                                updateArrows(3)
+	                                updateArrows(3);
 	                            }, 100);
+
 	                        } 
 	                    }
 	                }
-	            });
+	       });
+
         });
     
     }
 
-    //hpit.config.currInsight
     function arrowsInit() {
         
         $('#controls .arrows').on('click', function(e) {
@@ -932,7 +920,6 @@ hpit.core = (function() {
             var $th = $(this);
 
             var newNum;
-            var newHash;
 
 			/* SGS */ 
 			groupParam = $.getUrlVar('group');
@@ -942,6 +929,8 @@ hpit.core = (function() {
 
             if ( $th.hasClass("prev") ) {
 
+                var previousInsight;
+
                 if ( $th.hasClass("noClick") ) {
                     return false;
                 }
@@ -949,17 +938,15 @@ hpit.core = (function() {
 
                     if ( $cur > 1 ) {
                         newNum = ($cur - 1);
-                        newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
+                        previousInsight = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     } 
                     else {
                         newNum = 0;
-                        newHash = '#theTop';
+                        previousInsight = '#theTop';
                     }
-					
-                    //hpit.config.currInsight = newNum;
 
                     $(window).scrollTo(
-                        newHash, 
+                        previousInsight, 
                         hpit.config.duration[hpit.config.desktopORtouch],
                         { 
                             axis: 'y' 
@@ -997,10 +984,10 @@ hpit.core = (function() {
                 if ( $cur < $('.insight').length ) {
 
                     newNum = $cur + 1;
-                    newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
+                    var nextInsight = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     
                     $(window).scrollTo(
-                        newHash, 
+                        nextInsight, 
                         hpit.config.duration[hpit.config.desktopORtouch], 
                         {
                             easing: hpit.config.easing,
@@ -1030,77 +1017,40 @@ hpit.core = (function() {
             hpit.config.currInsight = newNum;
         });
 
- 		/*
- 		$('#controlsTablet .arrows').on('click', function(e) {
- 			//console.log('arrow click');
- 			e.preventDefault();
-            var $cur = parseInt(hpit.config.currInsight);
-            var $th = $(this);
-            var newNum = 0;
-            var newHash;
-            
-            $('#controlsTablet .arrows').removeClass('noClick');
-            if ($th.hasClass("prev")) {
-            	console.log('prev click');
-            	if ($th.hasClass("noClick")) {
-                    return false;
-                } else {
-                	if ($cur > 1) {
-                        newNum = ($cur - 1);
-                        //newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
-                    } else {
-                        newNum = 0;
-                        newHash = '#theTop';
-                    }
-                }
-            } else {
-            	if ($cur < $('.insight').length) {
-                    newNum = ($cur + 1);
-                    //newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
-                } else {
-                    console.log('nothing there');
-                    return false;
-                }
-            }
-            console.log('newNum: ' + newNum);
- 		});
- 		*/
     }
 
     // insight toggler
     function togglerInit() {
         
         $('.onMobile .insight .insightTitle').on('click', function(e) {
+            
             e.preventDefault();
             var $th = $(this);
-            //console.log('$th: ', $th);
             var $trgt = $th.parent();
-            //alert('$trgt: ', $trgt);
             var $cont = $trgt.find('.container.content');
-            if ($trgt.hasClass('open')) {
+            
+            if ( $trgt.hasClass('open') ) {
+                
                 $cont.show(0, function() {
                     $trgt.removeClass('open');
                 });
-            	/*$cont.slideUp(500, function(){
-					$trgt.removeClass('open');
-				   });*/
-        		   if (onProduction()) {
-                  CleanUpLtVars();
-					   FlashLinkAnalysis('home:insight', "mobile:close:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
-				   }
+
+                removeClass('open');
+        		   
+                if ( onProduction() ) {
+                    CleanUpLtVars();
+					FlashLinkAnalysis('home:insight', "mobile:close:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
+				}
             } 
             else {
                 $cont.hide(0, function() {
                     $trgt.addClass('open');
                 });
-            	/*$cont.slideDown(500, function(){
-					$trgt.addClass('open');
-				   });*/
 
                 /* SGS 10/24 */
                 var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
 
-                if (onProduction() && !wasForcedClick) {
+                if ( onProduction() && !wasForcedClick ) {
                     CleanUpLtVars();
 				    FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
 			     }
@@ -1110,19 +1060,22 @@ hpit.core = (function() {
 
     // social links
     function socialLinksInit() {
-        
-        $('.social > a').on('click', function(e) {
+    
+    console.info('social events check');
+
+        $('.socialButton').on('click', function(e) {
+
             e.preventDefault();
             var $th = $(this);
-            
+
             var inTopNav = false;
-            if ($th.parent().parent().hasClass('share')) {
+            if ($th.hasClass('inHead')) {
                 inTopNav = true;
             }
             
             var $cl = $th.attr('class');
-            var $link = $th.attr('href');
-            var $linkUrl = $link.split('?')[1];
+            var $linkUrl = $th.attr('href');
+
             var $title = $th.attr('title');
             var $shareUrl = '';
             var $shareTitle = encodeURIComponent($title);
@@ -1130,53 +1083,54 @@ hpit.core = (function() {
             var $toTrack;
             var $trackName;
             
-            switch ($cl) {
-                case 'google':
-                    $trackName = 'Google+';
-                    $linkUrl = $linkUrl.replace("url=", "");
-                    $shareUrl = encodeURIComponent($linkUrl);
-                    var $goto = 'https://plus.google.com/share?url=' + $shareUrl;
-                    var $params = 'width=660,height=400,scrollbars=no;resizable=no';
-                    break;
-                case 'facebook':
-                    // http://www.facebook.com/sharer.php?s=100&p[title]=titleheresexily&p[url]=http://www.mysexyurl.com&p[summary]=mysexysummaryhere&p[images][0]=http://www.urltoyoursexyimage.com
-                    $trackName = 'Facebook';
-                    $linkUrl = $linkUrl.replace("u=", "");
-                    $shareUrl = encodeURIComponent($linkUrl);
-                    var $goto = 'http://www.facebook.com/share.php?u=' + $shareUrl;
-                    var $params = 'width=660,height=400,scrollbars=no;resizable=no';
-                    break;
-                case 'twitter':
-                    $trackName = 'Twitter';
-                    $linkUrl = $linkUrl.replace("url=", "");
-                    $shareUrl = encodeURIComponent($linkUrl);
-                    var $goto = 'http://twitter.com/share?url=' + $shareUrl + 
-                    '&text=Descriptive text goes here...';
-                    var $params = 'width=660,height=400,scrollbars=no;resizable=no';
-                    break;
-                case 'linkedin':
-                    $trackName = 'LinkedIn';
-                    $linkUrl = $linkUrl.replace("mini=true&url=", "");
-                    $shareUrl = encodeURIComponent($linkUrl);
-                    var $shareSummary = 'test summary - linkedin';
-                    var $shareSource = 'test source - linkedin';
-                    var $goto = 'http://www.linkedin.com/shareArticle?mini=true' + 
-                    '&url=' + $shareUrl + 
-                    '&title=' + $shareTitle; // +
-                    //'&summary=' + $shareSummary +
-                    //'&source=' + $shareSource;
-                    $params = 'width=660,height=400,scrollbars=no;resizable=no';
-                    break;
+            console.info('index google :' + $cl.indexOf('google') );
+            
+            if( $cl.indexOf('google') >-1 ) {
+                $trackName = 'Google+';
+                $linkUrl = $linkUrl.replace("url=", "");
+                $shareUrl = encodeURIComponent($linkUrl);
+                var $goto = 'https://plus.google.com/share?url=' + $shareUrl;
+                var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+            }
+            else if ( $cl.indexOf('facebook') > -1 ) {
+                $trackName = 'Facebook';
+                $linkUrl = $linkUrl.replace("url=", "");
+                $shareUrl = encodeURIComponent($linkUrl);
+                var $goto = 'http://www.facebook.com/share.php?u=' + $shareUrl;
+                var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+            }
+            else if ( $cl.indexOf('twitter') >-1 ) {
+                $trackName = 'Twitter';
+                $linkUrl = $linkUrl.replace("url=", "");
+                $shareUrl = encodeURIComponent($linkUrl);
+                var $goto = 'http://twitter.com/share?url=' + $shareUrl + 
+                '&text=' + $shareTitle;
+                var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+            }
+            else if ( $cl.indexOf('linkedin') >-1 ) {
+                $trackName = 'LinkedIn';
+                $linkUrl = $linkUrl.replace("url=", "");
+                $shareUrl = encodeURIComponent($linkUrl);
+                var $shareSummary = 'Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future.';
+                var $shareSource = 'accenture.com - linkedin';
+                var $goto = 'http://www.linkedin.com/shareArticle?mini=true' + 
+                '&url=' + $shareUrl + 
+                '&title=' + $shareTitle; // +
+                //'&summary=' + $shareSummary +
+                //'&source=' + $shareSource;
+                $params = 'width=660,height=400,scrollbars=no;resizable=no';
             }
 
-            /*console.log('$goto: ', $goto);
+/*
+            console.log('$goto: ', $goto);
 			console.log('$winName: ', $winName);
 			console.log('$params: ', $params);
-			console.log('window: ', window);*/
-            
+			console.log('window: ', window);
+ */           
             try {
                 window.open($goto, $winName, $params);
-            } catch (err) {
+            } 
+            catch (err) {
                 console.log('error: ', err);
             }
 
@@ -1188,8 +1142,9 @@ hpit.core = (function() {
                     eventName: 'Share - Top Nav',
                     eventType: 'Social'
                 });
-            } else {
-                $toTrack = $linkUrl + '?' + $link.split('?')[2];
+            } 
+            else {
+                $toTrack = $linkUrl + '?' + $th.attr('href').split('?')[2];
                 omniTrack({
                     eventLink: $toTrack,
                     eventName: 'Share - ' + $trackName,
@@ -1206,7 +1161,7 @@ hpit.core = (function() {
 
         // for header social sharing
         $('.social.inHeader').each(function (index) {
-        	//console.log($(this));
+       
         	var targ = $(this);
             var ind = index+1;
             var url = 'http://bit.ly/1gNZdKR'; // bit.ly for home page
@@ -1214,14 +1169,15 @@ hpit.core = (function() {
             var descrip = 'Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future.';
 
             var temp  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style" addthis:url="'+url+'" addthis:title="'+ttl+'" addthis:description="'+descrip+'">';
-                temp += '<a class="addthis_button_linkedin" title="Share via LinkedIn: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_twitter" addthis:title="Drive your organization into the digital future with Accenture\'s High Performance IT Research." title="Share via Twitter: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_facebook" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
-                temp += '<a class="addthis_button_google_plusone_share" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_linkedin socialButton linkedin inHead" href="url=' + url + '" title="Share via LinkedIn: Accenture High Performance IT Research"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_twitter socialButton twitter inHead" href="url=' + url + '" title="Drive your organization into the digital future with Accenture\'s High Performance IT Research." title="Share via Twitter: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_facebook socialButton facebook inHead" href="url=' + url + '" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
+                temp += '<a class="addthis_button_google_plusone_share socialButton google inHead" href="url=' + url + '" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
             targ.html(temp);
 
             addthis.toolbox(targ);
+            console.info('social in');
         });
 
         // for desktop insight level sharing
@@ -1753,18 +1709,15 @@ hpit.core = (function() {
     }
     
     function updateArrows(from) {
+
         $('#controls .arrows').removeClass('noClick');
-        //console.log('from: ', from);
-        //console.log('hpit.config: ', hpit.config);
-        if (hpit.config.state > 0 && hpit.config.state < $('.insight').length) {
-        //$('#controls .arrows').removeClass('noClick');
-        //console.log('updateArrows - IF');
-        } else if (hpit.config.state === $('.insight').length) {
+        if ( hpit.config.state > 0 && hpit.config.state < $('.insight').length ) {
+        } 
+        else if ( hpit.config.state === $('.insight').length ) {
             $('.nxt').addClass('noClick');
-        //console.log('updateArrows - ELSE IF');
-        } else {
+        } 
+        else {
             $('.prev').addClass('noClick');
-        //console.log('updateArrows - ELSE');
         }
     }
        
