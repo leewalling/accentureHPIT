@@ -2637,6 +2637,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.insight .insightTitle {
 		top: 125px;
 	}
+	
+	.insight[data-insight="1"] .insightTitle h3,
+	.insight[data-insight="8"] .insightTitle h3 { color:#000000;}
+	
 	.insight .marker {
 		top: 135px;
 	}

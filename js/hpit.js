@@ -389,6 +389,7 @@ hpit.core = (function() {
     var chapterClicked;
     var trackPageViewDelay;
     var haveDeepLink = false;
+    var waitBeforeCallingAnalyticsCall = 4000;
 
     function init() {
 
@@ -420,23 +421,37 @@ hpit.core = (function() {
 
         deeplinkInit();
         
-        /*
         if (!onMobile() && !onIpad() && !isIE8) {
 
-            preload([
-                'images/01.png', 
-                'images/02.png', 
-                'images/03.png', 
-                'images/04.png', 
-                'images/05.png', 
-                'images/06.png', 
-                'images/07.png', 
-                'images/08.png', 
-                'images/09.png', 
-                'images/10.png'
-            ]);
+            if ( onProduction() ) {
+                preload([
+                    '/Microsites/high-performance-it/PublishingImages/01.png', 
+                    '/Microsites/high-performance-it/PublishingImages/02.png', 
+                    '/Microsites/high-performance-it/PublishingImages/03.png', 
+                    '/Microsites/high-performance-it/PublishingImages/04.png', 
+                    '/Microsites/high-performance-it/PublishingImages/05.png', 
+                    '/Microsites/high-performance-it/PublishingImages/06.png', 
+                    '/Microsites/high-performance-it/PublishingImages/07.png', 
+                    '/Microsites/high-performance-it/PublishingImages/08.png', 
+                    '/Microsites/high-performance-it/PublishingImages/09.png', 
+                    '/Microsites/high-performance-it/PublishingImages/10.png'
+                ]);
+            }
+            else {
+               preload([
+                    'images/01.png', 
+                    'images/02.png', 
+                    'images/03.png', 
+                    'images/04.png', 
+                    'images/05.png', 
+                    'images/06.png', 
+                    'images/07.png', 
+                    'images/08.png', 
+                    'images/09.png', 
+                    'images/10.png'
+                ]); 
+            }
         }
-        */
         
         //$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile: ' + onMobile() + '</div>' + '<div>onIpad: ' + onIpad() + '</div>' + '<div>onNexus: ' + onNexus() + '</div>');
 
@@ -704,8 +719,14 @@ hpit.core = (function() {
 
             var winOffset = $(window).scrollTop();
 
-            if ( winOffset <= 1 && !isTopPageView ) {
-               omniTrackPageView('home');
+            if ( winOffset <= 1 && ( typeof isTopPageView != 'undefined' && !isTopPageView ) ) {
+               
+                clearTimeout(trackPageViewDelay);
+                trackPageViewDelay = setTimeout(function() {
+                    omniTrackPageView('home');
+                }, waitBeforeCallingAnalyticsCall );
+
+
                isTopPageView = true;
                hpit.config.state = 0;
                updateArrows();
@@ -773,24 +794,23 @@ hpit.core = (function() {
             currEle.addClass('current');
              
             var menuItem = parseInt( $('.insight.current', '.container.main').data('insight') );
-            menuItem = parseInt( menuItem );
 
             $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
             $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
              
             if ( !hpit.config.locked && (hpit.config.currPageView != menuItem) && !isTopPageView ) { 
-                
+            
                 clearTimeout(trackPageViewDelay);
                 trackPageViewDelay = setTimeout(function() {
 
                     if ( !haveDeepLink ) {
-                            omniTrackPageView(menuItem);
+                        omniTrackPageView( menuItem );
                     } 
                     else {
                         haveDeepLink = false;
                     }
 
-                }, 4000);
+                }, waitBeforeCallingAnalyticsCall);
 
             }
              
@@ -841,7 +861,7 @@ hpit.core = (function() {
     function deeplinkInit() {
 
         var groupParam = $.getUrlVar('group');
-        var delayBeforeScrollinMilliseconds = 350;
+        var delayBeforeScrollinMilliseconds = 250;
         
         if (groupParam && groupParam.indexOf('insight') != -1) {
 
@@ -931,93 +951,100 @@ hpit.core = (function() {
     function arrowsInit() {
         
         $('#controls .arrows').on('click', function(e) {
+
             e.preventDefault();
             var $cur = parseInt(hpit.config.currInsight);
             var $th = $(this);
             var newNum;
             var newHash;
+
 			/* SGS */ 
-			var groupParam = $.getUrlVar('group');
+			groupParam = $.getUrlVar('group');
 			var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
             
             $('#controls .arrows').removeClass('noClick');
             
-            if ($th.hasClass("prev")) {
+            if ( $th.hasClass("prev") ) {
+
                 if ($th.hasClass("noClick")) {
-                    //
                     return false;
                 }
                 else {
+
                     if ($cur > 1) {
                         newNum = ($cur - 1);
                         //console.log('newNum: ' + newNum);
                         newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
-                    } else {
+                    } 
+                    else {
                         newNum = 0;
                         newHash = '#theTop';
-                    //return false;
                     }
-
-                    //$.scrollTo(“#object”, 800, {axis: ‘y’});
 					
                     $(window).scrollTo(
-                    newHash, 
-                    hpit.config.duration[hpit.config.desktopORtouch],
-                    {axis: 'y'},
-                    {
-                        easing: hpit.config.easing,
-                        h: function() {
-                            hpit.config.currInsight = newNum;
-                            //console.log('currInsight change 3');
-                            hpit.config.state = newNum;
-                            //hpit.config.currPageView = newNum;
-                            $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
-                            //console.log('config onAfter: ', hpit.config);
-                            if (newNum < 1) {
-                                $th.addClass('noClick');
+                        newHash, 
+                        hpit.config.duration[hpit.config.desktopORtouch],
+                        { 
+                            axis: 'y' 
+                        },
+                        {
+                            easing: hpit.config.easing,
+                            h: function() {
+
+                                hpit.config.currInsight = newNum;
+                                hpit.config.state = newNum;
+                                $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
+
+                                if (newNum < 1) {
+                                    $th.addClass('noClick');
+                                }
                             }
-                        }
                     });
+
                     if (onProduction()) {
-                        //hpit.config.locked = true;
-                        //FlashLinkAnalysis($(this).attr('href'), "Menu Up:insight" + newNum, "linkanalysis");
-                        //omniTrackPageView(newNum);
-                        /* SGS */
-                        
+
 						if (newNum == 0) {
-                     CleanUpLtVars();
+                            CleanUpLtVars();
 							FlashLinkAnalysis(targetPage, "Menu Up:home", "linkanalysis");
 						}
 						else {
-                        CleanUpLtVars();
-                        FlashLinkAnalysis(targetPage, "Menu Up:insight" + newNum, "linkanalysis");}
-                    }                }
-            } else {
+                            CleanUpLtVars();
+                            FlashLinkAnalysis(targetPage, "Menu Up:insight" + newNum, "linkanalysis");
+                        }
+
+                    }   
+                }
+            } 
+            else {
+
                 //console.log('cur: ', $cur);
                 //console.log('#total: ', $('.insight').length);
-                if ($cur < $('.insight').length) {
+
+                if ( $cur < $('.insight').length ) {
+
                     newNum = ($cur + 1);
                     //console.log('newNum: ' + newNum);
                     //SGS: omniTrackPageView(newNum);
                     newHash = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
                     
                     $(window).scrollTo(
-                    newHash, 
-                    hpit.config.duration[hpit.config.desktopORtouch], 
-                    {
-                        easing: hpit.config.easing,
-                        onAfter: function() {
-                            hpit.config.currInsight = newNum;
-                            //console.log('currInsight change 4');
-                            hpit.config.state = newNum;
-                            //hpit.config.currPageView = newNum; //
-                            $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
-                            //console.log('config onAfter: ', hpit.config);
-                            if (newNum > $('.insight').length - 1) {
-                                $th.addClass('noClick');
+                        newHash, 
+                        hpit.config.duration[hpit.config.desktopORtouch], 
+                        {
+                            easing: hpit.config.easing,
+                            onAfter: function() {
+                                hpit.config.currInsight = newNum;
+                                //console.log('currInsight change 4');
+                                hpit.config.state = newNum;
+                                //hpit.config.currPageView = newNum; //
+                                $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
+                                //console.log('config onAfter: ', hpit.config);
+                                if (newNum > $('.insight').length - 1) {
+                                    $th.addClass('noClick');
+                                }
                             }
-                        }
                     });
+
                     if (onProduction()) {
                         //FlashLinkAnalysis($(this).attr('href'), "Menu Down:insight" + newNum, "linkanalysis");
                         /* SGS */
@@ -1025,6 +1052,7 @@ hpit.core = (function() {
                         FlashLinkAnalysis(targetPage, "Menu Down:insight" + newNum, "linkanalysis");
                         //omniTrackPageView(newNum);
                     }
+
                 } else {
                     //console.log('nothing there');
                     return false;
@@ -1102,10 +1130,10 @@ hpit.core = (function() {
                 /* SGS 10/24 */
                 var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
 
-        		   if (onProduction() && !wasForcedClick) {
-                  CleanUpLtVars();
-					   FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
-				   }
+                if (onProduction() && !wasForcedClick) {
+                    CleanUpLtVars();
+				    FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
+			     }
             }
         });
     }
@@ -1772,19 +1800,24 @@ hpit.core = (function() {
        
     function omniTrackPageView(num) {
         //console.log('function omniTrackPageView: ', num);
-        if (onProduction()) {
+        if ( onProduction() ) {
             CleanUpLtVars();
         }
-		if (num=="home"){
-        var newPageName = 'acn:microsites:high-performance-it:home';}
-		else {var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;}
-        //console.log('newPageName: ', newPageName);
-        if (onProduction()) {
+
+		if ( num == "home" ) {
+            var newPageName = 'acn:microsites:high-performance-it:home';
+        }
+        else {
+            var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
+        }
+
+        if ( onProduction() ) {
             triggerOmniturePageView(newPageName, "event29,event20,event68");
         } 
         else {
             console.log("Omniture Page View: " + newPageName);
         }
+
     }
 
     /* omniture tracking function */
