@@ -469,7 +469,6 @@ hpit.core = (function() {
 
         // Initialize addthis widget
         addThisInit();
-        addthis.init();
 
         // Initialize event handler for social links
         socialLinksInit();
@@ -553,7 +552,7 @@ hpit.core = (function() {
                 $vidWr.html('');
             } 
             
-            if (!onMobile() && !onIpad()) {
+            if ( !onMobile() && !onIpad() ) {
                 // determine if we need to lock the background images in place
                 if ( $win.scrollTop() > $ins.eq(0).offset().top - 1 ) { 
 
@@ -1060,8 +1059,6 @@ hpit.core = (function() {
 
     // social links
     function socialLinksInit() {
-    
-    console.info('social events check');
 
         $('.socialButton').on('click', function(e) {
 
@@ -1074,34 +1071,29 @@ hpit.core = (function() {
             }
             
             var $cl = $th.attr('class');
-            var $linkUrl = $th.attr('href');
-
+            var $linkUrl = $th.attr('url');
             var $title = $th.attr('title');
+
             var $shareUrl = '';
             var $shareTitle = encodeURIComponent($title);
             var $winName = $cl + 'Window';
             var $toTrack;
             var $trackName;
-            
-            console.info('index google :' + $cl.indexOf('google') );
-            
+
             if( $cl.indexOf('google') >-1 ) {
                 $trackName = 'Google+';
-                $linkUrl = $linkUrl.replace("url=", "");
                 $shareUrl = encodeURIComponent($linkUrl);
                 var $goto = 'https://plus.google.com/share?url=' + $shareUrl;
                 var $params = 'width=660,height=400,scrollbars=no;resizable=no';
             }
             else if ( $cl.indexOf('facebook') > -1 ) {
                 $trackName = 'Facebook';
-                $linkUrl = $linkUrl.replace("url=", "");
                 $shareUrl = encodeURIComponent($linkUrl);
                 var $goto = 'http://www.facebook.com/share.php?u=' + $shareUrl;
                 var $params = 'width=660,height=400,scrollbars=no;resizable=no';
             }
             else if ( $cl.indexOf('twitter') >-1 ) {
                 $trackName = 'Twitter';
-                $linkUrl = $linkUrl.replace("url=", "");
                 $shareUrl = encodeURIComponent($linkUrl);
                 var $goto = 'http://twitter.com/share?url=' + $shareUrl + 
                 '&text=' + $shareTitle;
@@ -1109,9 +1101,8 @@ hpit.core = (function() {
             }
             else if ( $cl.indexOf('linkedin') >-1 ) {
                 $trackName = 'LinkedIn';
-                $linkUrl = $linkUrl.replace("url=", "");
                 $shareUrl = encodeURIComponent($linkUrl);
-                var $shareSummary = 'Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future.';
+                var $shareSummary = $title;
                 var $shareSource = 'accenture.com - linkedin';
                 var $goto = 'http://www.linkedin.com/shareArticle?mini=true' + 
                 '&url=' + $shareUrl + 
@@ -1121,14 +1112,11 @@ hpit.core = (function() {
                 $params = 'width=660,height=400,scrollbars=no;resizable=no';
             }
 
-/*
-            console.log('$goto: ', $goto);
-			console.log('$winName: ', $winName);
-			console.log('$params: ', $params);
-			console.log('window: ', window);
- */           
             try {
-                window.open($goto, $winName, $params);
+
+                if ( hpit.config.desktopORtouch == 'desktop' ) {
+                    window.open($goto, $winName, $params);
+                } 
             } 
             catch (err) {
                 console.log('error: ', err);
@@ -1136,104 +1124,93 @@ hpit.core = (function() {
 
             // tracking social clicks
             if (inTopNav) {
-                $toTrack = $linkUrl;
                 omniTrack({
-                    eventLink: $toTrack,
+                    eventLink: $linkUrl,
                     eventName: 'Share - Top Nav',
                     eventType: 'Social'
                 });
             } 
             else {
-                $toTrack = $linkUrl + '?' + $th.attr('href').split('?')[2];
                 omniTrack({
-                    eventLink: $toTrack,
+                    eventLink: $linkUrl,
                     eventName: 'Share - ' + $trackName,
                     eventType: 'Social'
                 });
             }
 
-        //console.log('$toTrack: ', $toTrack);
         });
     }
 
     // addThis widget init
     function addThisInit(){
 
-        // for header social sharing
         $('.social.inHeader').each(function (index) {
        
         	var targ = $(this);
             var ind = index+1;
             var url = 'http://bit.ly/1gNZdKR'; // bit.ly for home page
-            var ttl = 'High Performance IT Research: Defined by Digital - Accenture';
-            var descrip = 'Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future.';
 
-            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style" addthis:url="'+url+'" addthis:title="'+ttl+'" addthis:description="'+descrip+'">';
-                temp += '<a class="addthis_button_linkedin socialButton linkedin inHead" href="url=' + url + '" title="Share via LinkedIn: Accenture High Performance IT Research"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_twitter socialButton twitter inHead" href="url=' + url + '" title="Drive your organization into the digital future with Accenture\'s High Performance IT Research." title="Share via Twitter: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_facebook socialButton facebook inHead" href="url=' + url + '" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
-                temp += '<a class="addthis_button_google_plusone_share socialButton google inHead" href="url=' + url + '" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style">';
+                temp += '<a class="addthis_button_linkedin socialButton linkedin inHead" url="' + url + '" addthis:url="' + url + '" title="High Performance IT Research: Defined by Digital - Accenture" addthis:title="High Performance IT Research: Defined by Digital - Accenture" addthis:description="Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future."><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_twitter socialButton twitter inHead" url="' + url + '#.UmbhQ44lyeh.twitter" addthis:url="' + url + '#.UmbhQ44lyeh.twitter" addthis:title="Drive your organization into the digital future with Accenture\'s High Performance IT Research." title="Drive your organization into the digital future with Accenture\'s High Performance IT Research."><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_facebook socialButton facebook inHead" url="' + url + '" addthis:url="' + url + '" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
+                temp += '<a class="addthis_button_google_plusone_share socialButton google inHead" url="' + url + '" addthis:url="' + url + '" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
             targ.html(temp);
-
             addthis.toolbox(targ);
-            console.info('social in');
         });
 
         // for desktop insight level sharing
         $('.social.hidden-xs').each(function (index) {
             var targ = $(this);
             var ind = index+1;
-            var url = hpit.config.groups['insight'+ind].bitly;
-            
-            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="'+url+'">';
-                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'" title="'+hpit.config.groups['insight'+ind].linkedIn.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" title="'+hpit.config.groups['insight'+ind].twitter.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'" title="'+hpit.config.groups['insight'+ind].facebook.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'" title="'+hpit.config.groups['insight'+ind].google.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+            var selectedInsight = hpit.config.groups['insight'+ind];
+            var url = selectedInsight.bitly;
+
+            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style">';
+                temp += '<a class="addthis_button_linkedin socialButton linkedIn" addthis:url="' + url + '" addthis:title="' + selectedInsight.linkedIn.title + '" url="' + url + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_twitter socialButton twitter" addthis:url="' + url + '" addthis:title="' + selectedInsight.twitter.title + '" url="' + url + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_facebook socialButton facebook" addthis:url="' + url + '" addthis:title="' + selectedInsight.facebook.title + '" url="' + url + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_google_plusone_share socialButton google" addthis:url="' + url + '" addthis:title="' + selectedInsight.google.title + '" url="' + url + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
             targ.html(temp);
-
             addthis.toolbox(targ);
         });
 
-        
  		// for mobile insight level sharing
         $('.social.visible-xs').each(function (index) {
             var targ = $(this);
             var ind = index+1;
-            var url = hpit.config.groups['insight'+ind].bitly;
+            var selectedInsight = hpit.config.groups['insight'+ind];
+            var url = selectedInsight.bitly;
             
-            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="'+url+'">';
-                temp += '<a class="addthis_button_linkedin" addthis:title="'+hpit.config.groups['insight'+ind].linkedIn.title+'" addthis:description="'+hpit.config.groups['insight'+ind].linkedIn.desc+'" title="'+hpit.config.groups['insight'+ind].linkedIn.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_twitter" addthis:title="'+hpit.config.groups['insight'+ind].twitter.title+'" title="'+hpit.config.groups['insight'+ind].twitter.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_facebook" addthis:title="'+hpit.config.groups['insight'+ind].facebook.title+'" addthis:description="'+hpit.config.groups['insight'+ind].facebook.desc+'" title="'+hpit.config.groups['insight'+ind].facebook.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_google_plusone_share" addthis:title="'+hpit.config.groups['insight'+ind].google.title+'" addthis:description="'+hpit.config.groups['insight'+ind].google.desc+'" title="'+hpit.config.groups['insight'+ind].google.alt+'"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style">';
+                temp += '<a class="addthis_button_linkedin socialButton linkedin" addthis:url="' + url + '" addthis:title="' + selectedInsight.linkedIn.title + '""  url="' + url + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_twitter socialButton twitter" addthis:url="' + url + '" addthis:title="' + selectedInsight.twitter.title + '" url="' + url + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_facebook socialButton facebook" addthis:url="' + url + '" addthis:title="' + selectedInsight.facebook.title + '" url="' + url + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a class="addthis_button_google_plusone_share socialButton google" addthis:url="' + url + '" addthis:title="' + selectedInsight.google.title + '" url="' + url + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
             targ.html(temp);
-
             addthis.toolbox(targ);
         });
+
+        addthis.init();
         
     }
 
     function initDelvePlayer() {
-    	//console.log("Initializing the delve player");
-
-    	//var activeChap = 0;
 
 		window.delvePlayerCallback = function delvePlayerCallback(playerId, eventName, data) {
-		    if (playerId) {
+		    if ( playerId ) {
 		        var id = playerId;
-		    } else {
+		    } 
+            else {
 		        var id = "limelight_player_239897";
 		    }
-		    if (eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0)) {
-		        //console.log('eventName: ', eventName);
+		    if ( eventName == 'onPlayerLoad' && (DelvePlayer.getPlayers() == null || DelvePlayer.getPlayers().length == 0) ) {
 		        DelvePlayer.registerPlayer(id);
 		    }
 
-		    //console.log('curr id: ', id);
 		    switch (eventName) {
 		        case 'onPlayerLoad':
 		            doOnPlayerLoad(data);
@@ -1254,10 +1231,6 @@ hpit.core = (function() {
 		            doOnMediaComplete(data);
 		            break;
 
-		    /*case 'onMediaLoad':
-					doOnMediaLoad(data);
-					break;
-				*/
 		    }
 		}
 	}
@@ -1722,7 +1695,7 @@ hpit.core = (function() {
     }
        
     function omniTrackPageView(num) {
-        //console.log('function omniTrackPageView: ', num);
+        
         if ( onProduction() ) {
             CleanUpLtVars();
         }
@@ -1745,16 +1718,19 @@ hpit.core = (function() {
 
     /* omniture tracking function */
     function omniTrack(obj) {
-        //console.log('Object: ', obj);
 
-		if (onProduction()) {
+		if ( onProduction() ) {
 			try {
-               CleanUpLtVars();
+                CleanUpLtVars();
 	            FlashLinkAnalysis(obj.eventLink, obj.eventName, obj.eventType);
-	        } catch (err) {
+	        } 
+            catch (err) {
 	        	//console.log('Tracking error: ', err);
 	        }
 		}
+        else {
+            console.info( 'OmniTrack Fire: eventLink=' + obj.eventLink + ' eventName=' + obj.eventName + ' eventType=' + obj.eventType );
+        }
     }
     
     function isTouchDevice() {
