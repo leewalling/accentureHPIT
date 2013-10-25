@@ -700,7 +700,8 @@ hpit.core = (function() {
                 var scrollDiff = -(winOffset - diff);
                 var margOffset = scrollDiff - footerH;
                 $$('.bgImages .bgImg img.activate').css({"margin-top": margOffset / 2});
-            } else {
+            } 
+            else {
                 hpit.config.footerInView = false;
             }
         });
@@ -870,41 +871,15 @@ hpit.core = (function() {
 
             if ( deeplink > 0 && deeplink < $('.insight').length + 1 ) {
 
-                var insightIdFromGroupParam = hpit.config.groups[groupParam].newHash;
+                var insightIdFromGroupParam = hpit.config.groups[ 'insight' + deeplink ].newHash;
                 hpit.config.locked = true;
-                
-                setTimeout(function() {
-                    $(window).scrollTo( insightIdFromGroupParam, {
-                            axis: 'y',
-                            duration: 'fast',
-                            onAfter: function() {
 
-                                hpit.config.locked = false;
-                                
-    							// correcting position for mobile devices
-                                if( onMobile() ){
+                var target = $( insightIdFromGroupParam );
 
-                                	var currTop = $(window).scrollTop();
-                                	var navH = $('.navbar').outerHeight(true);
-
-                                	// scroll thw window to real deeplink position
-                                	window.scrollTo(0,currTop-navH);
-                                    
-                                    // SGS 10/24: Added a class for flagging the click event was just forced */
-                                    $('.insight[data-insight="'+deeplink+'"] .toggler').addClass("forcedClick");
-
-                                	// toggle the insight open
-                                    $('.insight[data-insight="'+deeplink+'"] .toggler').trigger("click");
-
-                                    // SGS 10/24: Removed the added class */
-                                    $('.insight[data-insight="'+deeplink+'"] .toggler').removeClass("forcedClick");
-                                
-                                }	               
-
-                            }
-                        });
-                }, delayBeforeScrollinMilliseconds );
-            
+                $('html,body').animate({
+                          scrollTop: target.offset().top
+                        }, 1000);
+    
             } 
         
         } 
