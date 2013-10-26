@@ -30,7 +30,6 @@ function preload(arrayOfImages) {
 
 var hpit = window.hpit || {};
 
-// initial config
 hpit.config = {
     isTopPageView: false,
     currPageView: 0,
@@ -401,9 +400,9 @@ hpit.core = (function() {
 	        }, 100);
         }
 	
-		/* SGS */
+/* ANALYTICS DISABLED
 		overridePageView = true;
-
+*/
 		hpit.config.desktopORtouch = ( 'ontouchstart' in window || 'onmsgesturechange' in window ) ? 'touch' : 'desktop';
         
         if ( isIE8 ) {
@@ -467,12 +466,6 @@ hpit.core = (function() {
         // Initialize event handler for video play button
         playVideoInit();
 
-        // Initialize addthis widget
-        addThisInit();
-
-        // Initialize event handler for social links
-        socialLinksInit();
-
         //check if the user is on IE
         hpit.config.isIE = navigator.userAgent.toLowerCase().indexOf("msie") != -1;
 
@@ -491,6 +484,7 @@ hpit.core = (function() {
             arrangeTopNav();
         }
 
+/* ANALYTICS DISABLED
         $('.download a').on('click', function(e) {
 
 			if ( onProduction() ) {
@@ -499,7 +493,7 @@ hpit.core = (function() {
 			}
 
         });
-		
+
 		$('.download-link a').on('click', function(e) {
 			
             var $trgt = $(this).parent().parent().parent().parent().parent()
@@ -517,7 +511,8 @@ hpit.core = (function() {
             }
 
         });
-        
+*/
+
         $('.bgImg').css({"opacity": 0});
         $('.bgImg[data-insight="1"]').css({"opacity": 1});
         $('.bgImg[data-insight="2"]').css({"opacity": 1});
@@ -633,6 +628,8 @@ hpit.core = (function() {
         $win.resize();
 
         togglerInit();
+
+        addThisInit();
     }
     
     function onMobile() {
@@ -701,17 +698,20 @@ hpit.core = (function() {
 
             if ( winOffset <= 1 && ( typeof isTopPageView != 'undefined' && !isTopPageView ) ) {
                
+/* ANALYTICS DISABLED
                 clearTimeout(trackPageViewDelay);
 
                 trackPageViewDelay = setTimeout(function() {
                     omniTrackPageView('home');
                 }, waitBeforeCallingAnalyticsCall );
+*/
 
                 isTopPageView = true;
                 hpit.config.state = 0;
                 hpit.config.currPageView = 0;
                 
                 updateArrows();
+
             }
             else {
                 isTopPageView = false;
@@ -723,7 +723,6 @@ hpit.core = (function() {
 
         });
     }
-    //End Function
 
     function paneLockUpdate(element, index, winOffset) {
 
@@ -780,9 +779,10 @@ hpit.core = (function() {
 
             $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
             $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
-             
+ 
+  /* ANALYTICS DISABLED               
             if ( !hpit.config.locked && (hpit.config.currPageView != menuItem) && !isTopPageView ) { 
-            
+ 
                 clearTimeout(trackPageViewDelay);
                 trackPageViewDelay = setTimeout(function() {
 
@@ -796,7 +796,8 @@ hpit.core = (function() {
                 }, waitBeforeCallingAnalyticsCall);
 
             }
-             
+*/ 
+
             hpit.config.currInsight = menuItem;
             hpit.config.state = menuItem;
             hpit.config.currPageView = menuItem;
@@ -841,8 +842,6 @@ hpit.core = (function() {
     }
 
     function checkAndHandleDeepLink() {
-
-        console.info('hello');
 
         var groupParamValue = $.getUrlVar('group');
         
@@ -992,6 +991,7 @@ hpit.core = (function() {
                             }
                     });
 
+/* ANALYTICS DISABLED
                     if ( onProduction() ) {
 
 						if ( newNum == 0 ) {
@@ -1004,6 +1004,7 @@ hpit.core = (function() {
                         }
 
                     }   
+*/
                 }
             } 
             else {
@@ -1030,11 +1031,13 @@ hpit.core = (function() {
                             }
                     });
 
+/* ANALYTICS DISABLED
                     if ( onProduction() ) {
-                        /* SGS */
+                        /* SGS
                         CleanUpLtVars();
                         FlashLinkAnalysis(targetPage, "Menu Down:insight" + newNum, "linkanalysis");
                     }
+*/
 
                 } 
                 else {
@@ -1074,23 +1077,26 @@ hpit.core = (function() {
                     $trgt.addClass('open');
                 });
 
-                /* SGS 10/24 */
+/*
+                /* SGS 10/24
                 var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
 
                 if ( onProduction() && !wasForcedClick ) {
                     CleanUpLtVars();
 				    FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
 			     }
+*/
+
             }
         });
     }
 
-    // social links
-    function socialLinksInit() {
+    function bindClicktoSocialLinks() {
 
         $('.socialButton').on('click', function(e) {
 
             e.preventDefault();
+
             var $th = $(this);
 
             var inTopNav = false;
@@ -1104,7 +1110,6 @@ hpit.core = (function() {
 
             var $shareUrl = '';
             var $shareTitle = encodeURIComponent($title);
-            var $winName = $cl + 'Window';
             var $toTrack;
             var $trackName;
 
@@ -1112,20 +1117,20 @@ hpit.core = (function() {
                 $trackName = 'Google+';
                 $shareUrl = encodeURIComponent($linkUrl);
                 var $goto = 'https://plus.google.com/share?url=' + $shareUrl;
-                var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+                var $params = 'width=660,height=400,scrollbars=no;resizable=yes';
             }
             else if ( $cl.indexOf('facebook') > -1 ) {
                 $trackName = 'Facebook';
                 $shareUrl = encodeURIComponent($linkUrl);
                 var $goto = 'http://www.facebook.com/share.php?u=' + $shareUrl;
-                var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+                var $params = 'width=660,height=400,scrollbars=no;resizable=yes';
             }
             else if ( $cl.indexOf('twitter') >-1 ) {
                 $trackName = 'Twitter';
                 $shareUrl = encodeURIComponent($linkUrl);
                 var $goto = 'http://twitter.com/share?url=' + $shareUrl + 
                 '&text=' + $shareTitle;
-                var $params = 'width=660,height=400,scrollbars=no;resizable=no';
+                var $params = 'width=660,height=400,scrollbars=no;resizable=yes';
             }
             else if ( $cl.indexOf('linkedin') >-1 ) {
                 $trackName = 'LinkedIn';
@@ -1134,22 +1139,22 @@ hpit.core = (function() {
                 var $shareSource = 'accenture.com - linkedin';
                 var $goto = 'http://www.linkedin.com/shareArticle?mini=true' + 
                 '&url=' + $shareUrl + 
-                '&title=' + $shareTitle; // +
-                //'&summary=' + $shareSummary +
-                //'&source=' + $shareSource;
-                $params = 'width=660,height=400,scrollbars=no;resizable=no';
+                '&title=' + $shareTitle; 
+                $params = 'width=660,height=400,scrollbars=no;resizable=yes';
             }
 
             try {
 
                 if ( hpit.config.desktopORtouch == 'desktop' ) {
-                    window.open($goto, $winName, $params);
-                } 
+                    window.open($goto, '', $params);
+                }
+
             } 
             catch (err) {
                 console.log('error: ', err);
             }
 
+/* ANALYTICS DISABLED
             // tracking social clicks
             if (inTopNav) {
                 omniTrack({
@@ -1165,6 +1170,7 @@ hpit.core = (function() {
                     eventType: 'Social'
                 });
             }
+*/
 
         });
     }
@@ -1184,12 +1190,15 @@ hpit.core = (function() {
                 temp += '<a class="addthis_button_facebook socialButton facebook inHead" url="' + url + '" addthis:url="' + url + '" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
                 temp += '<a class="addthis_button_google_plusone_share socialButton google inHead" url="' + url + '" addthis:url="' + url + '" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
+            
             targ.html(temp);
             addthis.toolbox(targ);
+
         });
 
         // for desktop insight level sharing
         $('.social.hidden-xs').each(function (index) {
+
             var targ = $(this);
             var ind = index+1;
             var selectedInsight = hpit.config.groups['insight'+ind];
@@ -1201,28 +1210,38 @@ hpit.core = (function() {
                 temp += '<a class="addthis_button_facebook socialButton facebook" addthis:url="' + url + '" addthis:title="' + selectedInsight.facebook.title + '" url="' + url + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '<a class="addthis_button_google_plusone_share socialButton google" addthis:url="' + url + '" addthis:title="' + selectedInsight.google.title + '" url="' + url + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
+
             targ.html(temp);
             addthis.toolbox(targ);
+
         });
 
  		// for mobile insight level sharing
         $('.social.visible-xs').each(function (index) {
+
             var targ = $(this);
             var ind = index+1;
             var selectedInsight = hpit.config.groups['insight'+ind];
             var url = selectedInsight.bitly;
             
-            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style">';
-                temp += '<a class="addthis_button_linkedin socialButton linkedin" addthis:url="' + url + '" addthis:title="' + selectedInsight.linkedIn.title + '""  url="' + url + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_twitter socialButton twitter" addthis:url="' + url + '" addthis:title="' + selectedInsight.twitter.title + '" url="' + url + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_facebook socialButton facebook" addthis:url="' + url + '" addthis:title="' + selectedInsight.facebook.title + '" url="' + url + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_google_plusone_share socialButton google" addthis:url="' + url + '" addthis:title="' + selectedInsight.google.title + '" url="' + url + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="' + url + '">';
+                temp += '<a href="#" class="addthis_button_linkedin socialButton linkedin" addthis:title="' + selectedInsight.linkedIn.title + '""  url="' + url + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a href="#" class="addthis_button_twitter socialButton twitter" addthis:title="' + selectedInsight.twitter.title + '" url="' + url + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a href="#" class="addthis_button_facebook socialButton facebook" addthis:title="' + selectedInsight.facebook.title + '" url="' + url + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                temp += '<a href="#" class="addthis_button_google_plusone_share socialButton google" addthis:title="' + selectedInsight.google.title + '" url="' + url + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 temp += '</div>';
+            
             targ.html(temp);
+
             addthis.toolbox(targ);
+
+
+
         });
 
         addthis.init();
+        bindClicktoSocialLinks();
+        
         
     }
 
@@ -1291,20 +1310,20 @@ hpit.core = (function() {
     }
 
 	function doOnPlayStateChanged(data) {
-	    //console.log('player state: ', data);
+/* ANALYTICS DISABLED
 	    if (data.isPlaying) {
 	        var videoTitle = DelvePlayer.doGetCurrentMedia().title;
 	        if (onProduction()) {
-				   CleanUpLtVars();
-               FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis");
+                CleanUpLtVars();
+                FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis");
 			}
 	    }
+*/
 	}
 
 	function doonPlayheadUpdate(data) {
-	    //var currChap = 0;
+
 	    var currPos = data.positionInMilliseconds;
-	    //console.log('Playhead update: ', data.positionInMilliseconds +'/'+ data.durationInMilliseconds);
 	    
 	    switch (true) {
             case (currPos == hpit.config.chapters[1].position):
@@ -1363,53 +1382,34 @@ hpit.core = (function() {
 			case ( currPos > (hpit.config.chapters[8].position + 50000) ):
 				trackSegmentDelvePlayer("complete", "limelight_player_239897", currPos);
 				break;
-            /*case (currPos > hpit.config.chapters[9].position && currPos < hpit.config.chapters[10].position):
-                hpit.config.currChap = 9;
-                trackDelvePlayer("start", "limelight_player_239897", currPos);
-                break;
-            case (currPos > hpit.config.chapters[10].position):
-                hpit.config.currChap = 10;
-                trackDelvePlayer("start", "limelight_player_239897", currPos);
-                break;*/
+
         }
-	    //console.log('active: '+ hpit.config.activeChap +' | curr: ' + hpit.config.currChap);
-	    //hpit.config.activeChap
 	    
 	    if (hpit.config.currChap != hpit.config.activeChap) {
-	        hpit.config.activeChap = hpit.config.currChap;
-	        //console.log('justClicked: ', hpit.config.justClicked);
-	        //console.log('Switching to chapter: ', hpit.config.activeChap);
-	        
-	        if (!hpit.config.justClicked) {
-	        //console.log('track chapter rollover here!');
-	        }
-	        
+            hpit.config.activeChap = hpit.config.currChap;	        
 	        $('#ll-overlay .chapters .topRow a')
 	        .removeClass('active')
 	        .eq(hpit.config.activeChap - 1)
 	        .addClass('active');
 	        
 	        $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[hpit.config.activeChap].title).fadeIn(500).delay(4000).fadeOut(500);
-	    } else {
-	    //console.log('currChap: ', hpit.config.currChap);
-	    }
+	    } 
+
 	}
 
 	function doOnMediaComplete(data) {
-	   console.log("video complete");
-	   trackDelvePlayer("complete", "limelight_player_239897", data.title);
-	   resetVideoStates();
-	   //hpit.config.activeChap = 0;
+        trackDelvePlayer("complete", "limelight_player_239897", data.title);
+        resetVideoStates();
 	}
 
 	function resetVideoStates() {
-	    //console.log('resetVideoStates');
 	    $('#ll-overlay .chapters .topRow a').removeClass('active');
 	    hpit.config.activeChap = 0;
 	    hpit.config.currChap = 0;
 	}
 	
 	function trackSegmentDelvePlayer(milestone, playerId, _timePositionSeconds) {
+/* ANALYTICS DISABLED
 		switch (milestone) {
 			case 'start':
 				var eventsValue = "event51=" + Math.floor(_timePositionSeconds);
@@ -1445,9 +1445,9 @@ hpit.core = (function() {
 		LowerCaseVars();
 		window.s.tl(this, 'o', 'delveMedia');
 		clearVideoVarsEvents();
+*/
 	}
 
-    // video player
     function playVideoInit() {
         $('.hero .playVid').on('click', function(e) {
             e.preventDefault();
@@ -1459,9 +1459,7 @@ hpit.core = (function() {
             if (!onMobile() && !onIpad() && !isIE8) {
                 if ($('#hero video').length) {
                     $("#hero video")[0].pause();
-                } else {
-                //console.log('NO VIDEO');
-                }
+                } 
             }
             $('html').addClass('noScroll');
             $('#ll-overlay').fadeIn(500, function() {
@@ -1484,8 +1482,9 @@ hpit.core = (function() {
             
             try {
                 DelvePlayer.doPause();
-            } catch (err) {
-            //console.log('DelvePlayer error: ', err);
+            } 
+            catch (err) {
+
             }
             
             resetVideoStates();
@@ -1498,9 +1497,7 @@ hpit.core = (function() {
                 if (!onMobile() && !onIpad() && !isIE8) {
                     if ($('#hero video').length) {
                         $(".hero video")[0].play();
-                    } else {
-                    //console.log('NO VIDEO');
-                    }
+                    } 
                 }
             });
         });
@@ -1513,31 +1510,31 @@ hpit.core = (function() {
 	            hpit.config.justClicked = true;
 	            var cNum = $(this).text();
 	            var skipTo = hpit.config.chapters[cNum].position / 1000;
+/* ANALYTICS DISABLED
 	            if (onProduction()) {
-					   CleanUpLtVars();
-                  FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
+                    CleanUpLtVars();
+                    FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
 				}
-	            
+*/	            
 	            try {
 	                DelvePlayer.doSeekToSecond(skipTo);
-	            } catch (err) {
-	            	//console.log('DelvePlayer error: ', err);
+	            } 
+                catch (err) {
+
 	            }
 	            
 	            chapterClicked = setTimeout(function() {
 	                hpit.config.justClicked = false;
-	            //console.log('justClicked cleared');
 	            }, 4000);
 
-	            //console.log('touchstart');
-	        })
-	        .on('mouseenter touchstart', function(e) {
-	            var thisNum = $(this).text();
-	            $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
-	        })
-	        .on('mouseleave touchend', function(e) {
-	            $('#ll-overlay .chapters .contentRow').hide().text('');
-	        });
+	           })
+	           .on('mouseenter touchstart', function(e) {
+                    var thisNum = $(this).text();
+                    $('#ll-overlay .chapters .contentRow').text(hpit.config.chapters[thisNum].title).show();
+	           })
+	           .on('mouseleave touchend', function(e) {
+                    $('#ll-overlay .chapters .contentRow').hide().text('');
+        });
         
         $('.the-video a').on('click', function(e) {
             e.preventDefault();
@@ -1548,11 +1545,9 @@ hpit.core = (function() {
             
             var target = $(this).parent();
             target.addClass('active');
-            //var origContent = target.html();
             
             var insightID = $(this).attr('href').replace('#', '');
             var vidID = 'limelight_player_' + hpit.config.limelightVideos[insightID].uid;
-            //var chID = hpit.config.limelightVideos[insightID].channelId
             var mediaId = hpit.config.limelightVideos[insightID].mediaId;
             
             var vidContent = '<div class="vidWrapper">'; //<script src="//assets.delvenetworks.com/player/embed.js"></script>
@@ -1570,7 +1565,6 @@ hpit.core = (function() {
     }
     
     function updateSidemenu() {
-        //console.log('scrH:', hpit.config.scrH);
         
         var scrH = parseInt(hpit.config.scrH);
         var availH = scrH - 62;
@@ -1578,11 +1572,9 @@ hpit.core = (function() {
         
         var $target = $('#sideMenu');
         $target.css({"height": hpit.config.scrH - 62});
-        
-        
-        
+    
         var $diff = menuH - availH;
-        //console.log('$diff:', $diff);
+
         $target.removeClass('height-xxs height-xs height-sm height-md height-lg');
         
         if ($diff > 0) {
@@ -1600,9 +1592,8 @@ hpit.core = (function() {
         }
     }
 
-    // sidemenu toggle method
     function toggleMenuInit() {
-        //updateSidemenu();
+
         var $target = $('#sideMenu');
         
         $('#controls a').on('click', function(e) {
@@ -1621,86 +1612,92 @@ hpit.core = (function() {
                 $target.animate({"right": "-275px"}, "normal");
                 $target.removeClass("opened");
                 if (th.hasClass("closeX")) {
-                	if (onProduction()) {
-                     CleanUpLtVars();
-						   FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
+/* ANALYTICS DISABLED                    
+                	if ( onProduction() ) {
+                        CleanUpLtVars();
+                        FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
 					}
+*/
                 }
-            } else {
+            } 
+            else {
                 $target.animate({"right": "0px"}, "normal");
                 $target.addClass("opened");
                 if (th.attr("id") == "toggleMenu") {
-                	if (onProduction()) {
-						   CleanUpLtVars();
-                     FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
+/* ANALYTICS DISABLED
+                	if ( onProduction() ) {
+                        CleanUpLtVars();
+                        FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
 					}
+*/
                 }
             }
         });
     }
     
     function injectStuff() {
-        //$('.insight').each(function (index) {
-        //$(this).attr('data-insight', index+1);            
-        //});
+
         $('li.state').each(function(index) {
-            //$(this).attr('data-insight-nav', index+1);
             $(this).on('click', function(e) {
                 hpit.config.state = parseInt($(this).attr('data-insight-nav'));
             })
         });
-        //$('.bgImg').each(function (index) {
-        //$(this).attr('data-insight', index+1);            
-        //});
+
 		var initClick = true;
         $('.navbar-toggle').on('click', function(e) {
             e.preventDefault();
-            if (onProduction()) {
-				if ($(this).hasClass("navbar-toggle collapsed")) {		
-               CleanUpLtVars();
+
+/* ANALYTICS DISABLED
+            if ( onProduction() ) {
+
+                CleanUpLtVars();
+
+				if ( $(this).hasClass("navbar-toggle collapsed") ) {		
 					FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
-					}
-				else if (initClick){
-               CleanUpLtVars();
+                }
+				else if ( initClick ) {
 					FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
 					initClick = false;
-					}
+				}
 				else {
-               CleanUpLtVars();
-               FlashLinkAnalysis("mobile", "menu-toggle-off", "linkanalysis");}
+                    FlashLinkAnalysis("mobile", "menu-toggle-off", "linkanalysis");
+                }
             }
+*/
         });
-        //$('.navbar-toggle')
-        //.attr('data-toggle','collapse')
-        //.attr('data-target','.navbar-collapse');
         
-        if (!onMobile() && !onIpad() && !isIE8) {
+        if ( !onMobile() && !onIpad() && !isIE8 ) {
             initVideo();
         }
     }
     
     function initVideo() {
-        //poster="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg"
+
         $('#hero .video-wrapper').html('<video id="theVideo" width="100%" height="auto" preload="auto" autoplay><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.mp4" type="video/mp4" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.ogg" type="video/ogg" /><source src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/0471_Accenture HPIT_100413_Loop_FinalRev_23sec.webm" type="video/webm" /><img src="http://www.accenture.com/microsites/high-performance-it/PublishingImages/video-still.jpg" /></video>');
         
         var video = document.getElementById('theVideo');
-        if (video.addEventListener) {
+        if ( video.addEventListener ) {
+
             video.addEventListener('ended', function() {
                 $('.video-wrapper').html('');
             });
-        //console.log('addEventListener - IF');
-        } else if (video.attachEvent) {
+
+        } 
+        else if ( video.attachEvent ) {
+
             video.attachEvent('ended', function() {
                 $('.video-wrapper').html('');
             });
             $('html').addClass('ie8');
             $('head').append('<link href="/Microsites/high-performance-it/Documents/css/ie8.css" rel="stylesheet" media="screen" />');
-        //console.log('addEventListener - ELSE IF');
-        } else {
+
+        } 
+        else {
+
             video.addEventListener('ended', function() {
                 $('.video-wrapper').html('');
             });
-        //console.log('addEventListener - ELSE');
+
         }
     }
     
@@ -1713,17 +1710,22 @@ hpit.core = (function() {
 
         $('#controls .arrows').removeClass('noClick');
         if ( hpit.config.state > 0 && hpit.config.state < $('.insight').length ) {
+        
         } 
         else if ( hpit.config.state === $('.insight').length ) {
+
             $('.nxt').addClass('noClick');
+
         } 
         else {
+
             $('.prev').addClass('noClick');
+
         }
     }
        
     function omniTrackPageView(num) {
-        
+/* ANALYTICS DISABLED
         if ( onProduction() ) {
             CleanUpLtVars();
         }
@@ -1741,12 +1743,12 @@ hpit.core = (function() {
         else {
             console.log("Omniture Page View: " + newPageName);
         }
-
+*/
     }
 
-    /* omniture tracking function */
-    function omniTrack(obj) {
 
+    function omniTrack(obj) {
+/* ANALYTICS DISABLED
 		if ( onProduction() ) {
 			try {
                 CleanUpLtVars();
@@ -1756,9 +1758,7 @@ hpit.core = (function() {
 	        	//console.log('Tracking error: ', err);
 	        }
 		}
-        else {
-            console.info( 'OmniTrack Fire: eventLink=' + obj.eventLink + ' eventName=' + obj.eventName + ' eventType=' + obj.eventType );
-        }
+*/
     }
     
     function isTouchDevice() {
@@ -1769,7 +1769,6 @@ hpit.core = (function() {
         init: init
     }
 }());
-
 
 // jQuery extensions
 $.extend({
@@ -1790,6 +1789,5 @@ $.extend({
 });
 
 $(window).load(function() {
-    // Initialize
     hpit.core.init();
 });
