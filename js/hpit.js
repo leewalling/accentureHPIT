@@ -629,7 +629,7 @@ hpit.core = (function() {
 
         togglerInit();
 
-        addThisInit();
+        renderSocialShareButtonsOnPage();
     }
     
     function onMobile() {
@@ -1175,8 +1175,7 @@ hpit.core = (function() {
         });
     }
 
-    // addThis widget init
-    function addThisInit(){
+    function renderSocialShareButtonsOnPage(){
 
         $('.social.inHeader').each(function (index) {
        
