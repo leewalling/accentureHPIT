@@ -1177,70 +1177,57 @@ hpit.core = (function() {
 
     function renderSocialShareButtonsOnPage(){
 
+
+
         $('.social.inHeader').each(function (index) {
        
-        	var targ = $(this);
+        	var headerSocialBar = $(this);
             var ind = index+1;
-            var url = 'http://bit.ly/1gNZdKR'; // bit.ly for home page
+            var linkToShare = 'http://bit.ly/1gNZdKR';
 
-            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style">';
-                temp += '<a class="addthis_button_linkedin socialButton linkedin inHead" url="' + url + '" addthis:url="' + url + '" title="High Performance IT Research: Defined by Digital - Accenture" addthis:title="High Performance IT Research: Defined by Digital - Accenture" addthis:description="Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future."><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_twitter socialButton twitter inHead" url="' + url + '#.UmbhQ44lyeh.twitter" addthis:url="' + url + '#.UmbhQ44lyeh.twitter" addthis:title="Drive your organization into the digital future with Accenture\'s High Performance IT Research." title="Drive your organization into the digital future with Accenture\'s High Performance IT Research."><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_facebook socialButton facebook inHead" url="' + url + '" addthis:url="' + url + '" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
-                temp += '<a class="addthis_button_google_plusone_share socialButton google inHead" url="' + url + '" addthis:url="' + url + '" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '</div>';
+            var addthisSocialButtons  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style" addthis:url="' + linkToShare + '">';
+                addthisSocialButtons += '<a class="addthis_button_linkedin socialButton linkedin inHead" url="' + linkToShare + '" title="High Performance IT Research: Defined by Digital - Accenture" addthis:title="High Performance IT Research: Defined by Digital - Accenture" addthis:description="Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future."><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                addthisSocialButtons += '<a class="addthis_button_twitter socialButton twitter inHead" url="' + linkToShare + '#.UmbhQ44lyeh.twitter" addthis:url="' + linkToShare + '#.UmbhQ44lyeh.twitter" addthis:title="Drive your organization into the digital future with Accenture\'s High Performance IT Research." title="Drive your organization into the digital future with Accenture\'s High Performance IT Research."><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                addthisSocialButtons += '<a class="addthis_button_facebook socialButton facebook inHead" url="' + linkToShare + '" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
+                addthisSocialButtons += '<a class="addthis_button_google_plusone_share socialButton google inHead" url="' + linkToShare + '" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                addthisSocialButtons += '</div>';
             
-            targ.html(temp);
-            addthis.toolbox(targ);
+            headerSocialBar.html( addthisSocialButtons );
+
+            addthis.toolbox( headerSocialBar );
 
         });
 
-        // for desktop insight level sharing
-        $('.social.hidden-xs').each(function (index) {
+        var renderSocialButtonsForClass = function( className ) {
 
-            var targ = $(this);
-            var ind = index+1;
-            var selectedInsight = hpit.config.groups['insight'+ind];
-            var url = selectedInsight.bitly;
+            $( className ).each(function (index) {
 
-            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style">';
-                temp += '<a class="addthis_button_linkedin socialButton linkedIn" addthis:url="' + url + '" addthis:title="' + selectedInsight.linkedIn.title + '" url="' + url + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_twitter socialButton twitter" addthis:url="' + url + '" addthis:title="' + selectedInsight.twitter.title + '" url="' + url + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_facebook socialButton facebook" addthis:url="' + url + '" addthis:title="' + selectedInsight.facebook.title + '" url="' + url + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a class="addthis_button_google_plusone_share socialButton google" addthis:url="' + url + '" addthis:title="' + selectedInsight.google.title + '" url="' + url + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '</div>';
+                var targetSocialDiv = $(this);
+                var ind = index+1;
+                var selectedInsight = hpit.config.groups['insight'+ind];
+                var linkToShare = selectedInsight.bitly;
 
-            targ.html(temp);
-            addthis.toolbox(targ);
+                var addthisSocialButtons  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="' + linkToShare + '">';
+                    addthisSocialButtons += '<a class="addthis_button_linkedin socialButton linkedIn" addthis:title="' + selectedInsight.linkedIn.title + '" url="' + linkToShare + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                    addthisSocialButtons += '<a class="addthis_button_twitter socialButton twitter" addthis:title="' + selectedInsight.twitter.title + '" url="' + linkToShare + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                    addthisSocialButtons += '<a class="addthis_button_facebook socialButton facebook" addthis:title="' + selectedInsight.facebook.title + '" url="' + linkToShare + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                    addthisSocialButtons += '<a class="addthis_button_google_plusone_share socialButton google" addthis:title="' + selectedInsight.google.title + '" url="' + linkToShare + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                    addthisSocialButtons += '</div>';
 
-        });
+                targetSocialDiv.html( addthisSocialButtons );
 
- 		// for mobile insight level sharing
-        $('.social.visible-xs').each(function (index) {
+                addthis.toolbox( targetSocialDiv );
 
-            var targ = $(this);
-            var ind = index+1;
-            var selectedInsight = hpit.config.groups['insight'+ind];
-            var url = selectedInsight.bitly;
-            
-            var temp  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="' + url + '">';
-                temp += '<a href="#" class="addthis_button_linkedin socialButton linkedin" addthis:title="' + selectedInsight.linkedIn.title + '""  url="' + url + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a href="#" class="addthis_button_twitter socialButton twitter" addthis:title="' + selectedInsight.twitter.title + '" url="' + url + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a href="#" class="addthis_button_facebook socialButton facebook" addthis:title="' + selectedInsight.facebook.title + '" url="' + url + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '<a href="#" class="addthis_button_google_plusone_share socialButton google" addthis:title="' + selectedInsight.google.title + '" url="' + url + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                temp += '</div>';
-            
-            targ.html(temp);
+            });
 
-            addthis.toolbox(targ);
+        };
 
-
-
-        });
+        renderSocialButtonsForClass('.social.hidden-xs');
+        renderSocialButtonsForClass('.social.visible-xs');
 
         addthis.init();
+
         bindClicktoSocialLinks();
-        
         
     }
 
