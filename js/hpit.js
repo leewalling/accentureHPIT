@@ -775,7 +775,7 @@ hpit.core = (function() {
             $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
             $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
  
-  /* ANALYTICS DISABLED               
+/* ANALYTICS DISABLED               
             if ( !hpit.config.locked && (hpit.config.currPageView != menuItem) && !isTopPageView ) { 
  
                 clearTimeout(trackPageViewDelay);
@@ -1045,8 +1045,8 @@ hpit.core = (function() {
             var addthisSocialButtons  = '<div class="addthis_toolbox addthis_default_style addthis_16x16_style" addthis:url="' + linkToShare + '">';
                 addthisSocialButtons += '<a class="addthis_button_linkedin socialButton linkedin inHead" url="' + linkToShare + '" title="High Performance IT Research: Defined by Digital - Accenture" addthis:title="High Performance IT Research: Defined by Digital - Accenture" addthis:description="Accenture\'s fourth High Performance IT research report identifies 10 key findings to help IT leaders drive their organizations into the digital future."><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 addthisSocialButtons += '<a class="addthis_button_twitter socialButton twitter inHead" url="' + linkToShare + '#.UmbhQ44lyeh.twitter" addthis:url="' + linkToShare + '#.UmbhQ44lyeh.twitter" addthis:title="Drive your organization into the digital future with Accenture\'s High Performance IT Research." title="Drive your organization into the digital future with Accenture\'s High Performance IT Research."><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                addthisSocialButtons += '<a class="addthis_button_facebook socialButton facebook inHead" url="' + linkToShare + '" title="Share via Facebook: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
-                addthisSocialButtons += '<a class="addthis_button_google_plusone_share socialButton google inHead" url="' + linkToShare + '" title="Share via Google+: Accenture High Performance IT Research 2013"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                addthisSocialButtons += '<a class="addthis_button_facebook socialButton facebook inHead" url="' + linkToShare + '" title="Share via Facebook: Accenture High Performance IT Research"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png"  class="sprites"/></a>';
+                addthisSocialButtons += '<a class="addthis_button_google_plusone_share socialButton google inHead" url="' + linkToShare + '" title="Share via Google+: Accenture High Performance IT Research"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
                 addthisSocialButtons += '</div>';
             
             headerSocialBar.html( addthisSocialButtons );
