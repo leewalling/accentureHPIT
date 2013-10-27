@@ -1177,8 +1177,6 @@ hpit.core = (function() {
 
     function renderSocialShareButtonsOnPage(){
 
-
-
         $('.social.inHeader').each(function (index) {
        
         	var headerSocialBar = $(this);
@@ -1194,8 +1192,6 @@ hpit.core = (function() {
             
             headerSocialBar.html( addthisSocialButtons );
 
-            addthis.toolbox( headerSocialBar );
-
         });
 
         var renderSocialButtonsForClass = function( className ) {
@@ -1205,18 +1201,15 @@ hpit.core = (function() {
                 var targetSocialDiv = $(this);
                 var ind = index+1;
                 var selectedInsight = hpit.config.groups['insight'+ind];
-                var linkToShare = selectedInsight.bitly;
 
-                var addthisSocialButtons  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="' + linkToShare + '">';
-                    addthisSocialButtons += '<a class="addthis_button_linkedin socialButton linkedIn" addthis:title="' + selectedInsight.linkedIn.title + '" url="' + linkToShare + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                    addthisSocialButtons += '<a class="addthis_button_twitter socialButton twitter" addthis:title="' + selectedInsight.twitter.title + '" url="' + linkToShare + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                    addthisSocialButtons += '<a class="addthis_button_facebook socialButton facebook" addthis:title="' + selectedInsight.facebook.title + '" url="' + linkToShare + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
-                    addthisSocialButtons += '<a class="addthis_button_google_plusone_share socialButton google" addthis:title="' + selectedInsight.google.title + '" url="' + linkToShare + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" /></a>';
+                var addthisSocialButtons  = '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="' + selectedInsight.bitly + '">';
+                    addthisSocialButtons += '<a class="addthis_button_linkedin socialButton linkedIn" addthis:title="' + selectedInsight.linkedIn.title + '" url="' + selectedInsight.bitly + '" title="' + selectedInsight.linkedIn.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" alt="' + selectedInsight.linkedIn.alt + '" /></a>';
+                    addthisSocialButtons += '<a class="addthis_button_twitter socialButton twitter" addthis:title="' + selectedInsight.twitter.title + '" url="' + selectedInsight.bitly + '" title="' + selectedInsight.twitter.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" alt="' + selectedInsight.twitter.alt + '" /></a>';
+                    addthisSocialButtons += '<a class="addthis_button_facebook socialButton facebook" addthis:title="' + selectedInsight.facebook.title + '" url="' + selectedInsight.bitly + '" title="' + selectedInsight.facebook.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" alt="' + selectedInsight.facebook.alt + '" /></a>';
+                    addthisSocialButtons += '<a class="addthis_button_google_plusone_share socialButton google" addthis:title="' + selectedInsight.google.title + '" url="' + selectedInsight.bitly + '" title="' + selectedInsight.google.title + '"><img src="http://www.accenture.com/Microsites/high-performance-it/PublishingImages/trans.png" class="sprites" alt="' + selectedInsight.google.alt + '" /></a>';
                     addthisSocialButtons += '</div>';
 
                 targetSocialDiv.html( addthisSocialButtons );
-
-                addthis.toolbox( targetSocialDiv );
 
             });
 
@@ -1225,9 +1218,7 @@ hpit.core = (function() {
         renderSocialButtonsForClass('.social.hidden-xs');
         renderSocialButtonsForClass('.social.visible-xs');
 
-        addthis.init();
-
-        bindClicktoSocialLinks();
+        addthis.toolbox('.addthis_toolbox');
         
     }
 
