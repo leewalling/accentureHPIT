@@ -1623,9 +1623,11 @@ hpit.core = (function() {
         
         if ( hpit.config.state == 0 ) {
             $('.prev').addClass('noClick');
+            $('.next').removeClass('noClick');
         }
         
         if ( hpit.config.state == $('.insight').length ) {
+            $('.prev').removeClass('noClick');
             $('.nxt').addClass('noClick');
         }
 
