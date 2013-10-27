@@ -443,8 +443,6 @@ hpit.core = (function() {
             }
         }
         
-        //$('#diagnostics').html('<div>' + $userAgent + '</div>' + '<div>w: ' + $(window).width() + '</div>' + '<div>h: ' + $(window).height() + '</div>' + '<div>onMobile: ' + onMobile() + '</div>' + '<div>onIpad: ' + onIpad() + '</div>' + '<div>onNexus: ' + onNexus() + '</div>');
-
         // Initialize event handler for sideMenu links
         sideMenuInit();
 
@@ -649,7 +647,7 @@ hpit.core = (function() {
     }
     
     function onProduction() {
-        return (location.hostname.indexOf("accenture.com") > -1);
+        return ( location.hostname.indexOf('accenture.com') > -1 );
     }
     
     function footerLock(element) {
