@@ -688,8 +688,6 @@ hpit.core = (function() {
    
     function paneLock() {
 
-        $('#controls .arrows').removeClass('noClick');
-
         $(window).scroll(function() {
 
             var winOffset = $(window).scrollTop();
@@ -801,7 +799,7 @@ hpit.core = (function() {
             hpit.config.currPageView = menuItem;
             
             if ( !hpit.config.locked ) {
-                updateArrows(1);
+                updateArrows();
             }
 
             var prevImgNum = parseInt(menuItem) - 1;
@@ -897,6 +895,8 @@ hpit.core = (function() {
 
     function sideMenuInit() {
 
+
+
         $('#sideMenu ul li a').on('click', function(e) {
 
             e.preventDefault();
@@ -904,7 +904,7 @@ hpit.core = (function() {
             var selectedInsightId = $th.attr('href');
             
             $('#toggleMenu').trigger("click");
-            $('#controls .arrows').removeClass('noClick');
+           // $('#controls .arrows').removeClass('noClick');
             
             $(window).scrollTo( selectedInsightId, {
 	                duration: hpit.config.duration[hpit.config.desktopORtouch],
@@ -919,7 +919,7 @@ hpit.core = (function() {
 	                            hpit.config.currPageView = 0;
 
 	                            setTimeout(function() {
-	                                updateArrows(3);
+	                                updateArrows();
 	                            }, 100);
 
 	                        } 
@@ -933,6 +933,10 @@ hpit.core = (function() {
 
     function arrowsInit() {
         
+        setTimeout(function() {
+            updateArrows();
+        }, 100);
+
         $('#controls .arrows').on('click', function(e) {
 
             e.preventDefault();
@@ -941,7 +945,7 @@ hpit.core = (function() {
 
             var newNum;
             
-            $('#controls .arrows').removeClass('noClick');
+            //$('#controls .arrows').removeClass('noClick');
 
             if ( $th.hasClass("prev") ) {
 
@@ -1615,22 +1619,20 @@ hpit.core = (function() {
         hpit.config.scrH = $(window).height();
     }
     
-    function updateArrows(from) {
-
-        $('#controls .arrows').removeClass('noClick');
-        if ( hpit.config.state > 0 && hpit.config.state < $('.insight').length ) {
+    function updateArrows() {
         
-        } 
-        else if ( hpit.config.state === $('.insight').length ) {
-
-            $('.nxt').addClass('noClick');
-
-        } 
-        else {
-
+        if ( hpit.config.state == 0 ) {
             $('.prev').addClass('noClick');
-
         }
+        
+        if ( hpit.config.state == $('.insight').length ) {
+            $('.nxt').addClass('noClick');
+        }
+
+        if ( hpit.config.state > 0 && hpit.config.state < $('.insight').length ) {
+            $('#controls .arrows').removeClass('noClick');
+        }
+
     }
        
     function omniTrackPageView(num) {
