@@ -1620,7 +1620,6 @@ hpit.core = (function() {
     }
     
     function updateArrows() {
- console.log('state of config ' + hpit.config.state);
 
         if ( hpit.config.state == 0 ) {
             $('.prev').addClass('noClick');
