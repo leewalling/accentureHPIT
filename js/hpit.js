@@ -455,8 +455,7 @@ hpit.core = (function() {
         // Initialize controls message
         cntrlMessInit();
 
-        // Initialize event handler for control arrows
-        arrowsInit();
+        renderUpDownArrows();
 
         // Initialize event handler for menu toggle
         toggleMenuInit();
@@ -895,43 +894,45 @@ hpit.core = (function() {
 
     function sideMenuInit() {
 
-
-
         $('#sideMenu ul li a').on('click', function(e) {
 
             e.preventDefault();
+
             var $th = $(this);
             var selectedInsightId = $th.attr('href');
-            
+            var animationDurationInMilliseconds = 2000;
+
             $('#toggleMenu').trigger("click");
-           // $('#controls .arrows').removeClass('noClick');
-            
-            $(window).scrollTo( selectedInsightId, {
-	                duration: hpit.config.duration[hpit.config.desktopORtouch],
-	                easing: hpit.config.easing,
-	                onAfter: function() {
-	                    hpit.config.locked = false;
-	                    if ( hpit.config.desktopORtouch == 'desktop' ) {
-	                        if ( $(window).scrollTop() < $('.insight').eq(0).offset().top ) {
+ 
+            $('body, html').animate({
+                    scrollTop: $( selectedInsightId ).offset().top
+                }, {
+                    duration: animationDurationInMilliseconds,
+                    complete: function() {
+                        
+                        hpit.config.locked = false;
 
-	                            hpit.config.currInsight = 0;
-	                            hpit.config.state = 0;
-	                            hpit.config.currPageView = 0;
+                        if ( hpit.config.desktopORtouch == 'desktop' ) {
 
-	                            setTimeout(function() {
-	                                updateArrows();
-	                            }, 100);
+                            if ( $(window).scrollTop() < $('.insight').eq(0).offset().top ) {
 
-	                        } 
-	                    }
-	                }
-	       });
+                                hpit.config.currInsight = 0;
+                                hpit.config.state = 0;
+                                hpit.config.currPageView = 0;
+
+                                updateArrows();
+
+                            } 
+                        }
+
+                    }
+            });
 
         });
     
     }
 
-    function arrowsInit() {
+    function renderUpDownArrows() {
         
         setTimeout(function() {
             updateArrows();
@@ -942,107 +943,29 @@ hpit.core = (function() {
             e.preventDefault();
             var $cur = parseInt(hpit.config.currInsight);
             var $th = $(this);
+            var animationDurationInMilliseconds = 750;
 
-            var newNum;
-            
-            //$('#controls .arrows').removeClass('noClick');
+                var scrollToInsightNumber = ( $th.hasClass('prev') ) ? hpit.config.state - 1 : hpit.config.state + 1;
 
-            if ( $th.hasClass("prev") ) {
+                if ( scrollToInsightNumber >= 0 && scrollToInsightNumber <= $('.insight').length ) {
 
-                var previousInsight;
+                    var targetDivToScroll = ( scrollToInsightNumber == 0 ) ? $('#theTop') : $('#insight' + scrollToInsightNumber);
 
-                if ( $th.hasClass("noClick") ) {
-                    return false;
-                }
-                else {
-
-                    if ( $cur > 1 ) {
-                        newNum = ($cur - 1);
-                        previousInsight = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
-                    } 
-                    else {
-                        newNum = 0;
-                        previousInsight = '#theTop';
-                    }
-
-                    $(window).scrollTo(
-                        previousInsight, 
-                        hpit.config.duration[hpit.config.desktopORtouch],
-                        { 
-                            axis: 'y' 
-                        },
-                        {
-                            easing: hpit.config.easing,
-                            duration: 100,
-                            onAfter: function() {
-
-                                hpit.config.state = newNum;
-                                $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
-
-                                if (newNum < 1) {
-                                    $th.addClass('noClick');
-                                }
-                            }
-                    });
-
-/* ANALYTICS DISABLED
-                    if ( onProduction() ) {
-
-                        /* SGS 
-                        groupParam = $.getUrlVar('group');
-                        var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
-
-						if ( newNum == 0 ) {
-                            CleanUpLtVars();
-							FlashLinkAnalysis(targetPage, "Menu Up:home", "linkanalysis");
-						}
-						else {
-                            CleanUpLtVars();
-                            FlashLinkAnalysis(targetPage, "Menu Up:insight" + newNum, "linkanalysis");
-                        }
-
-                    }   
-*/
-                }
-            } 
-            else {
-
-                if ( $cur < $('.insight').length ) {
-
-                    newNum = $cur + 1;
-                    var nextInsight = $('#sideMenu ul li[data-insight-nav="' + newNum + '"] > a').attr('href');
+                    $('body, html').animate({
+                            scrollTop: targetDivToScroll.offset().top
+                        }, {
+                            duration: animationDurationInMilliseconds,
+                            complete: function() {
                     
-                    $(window).scrollTo(
-                        nextInsight, 
-                        hpit.config.duration[hpit.config.desktopORtouch], 
-                        {
-                            easing: hpit.config.easing,
-                            duration: 100,
-                            onAfter: function() {
+                                hpit.config.state = scrollToInsightNumber;
+                                $('.bgImg[data-insight="' + scrollToInsightNumber + '"]').css({"opacity": 1});
+                                hpit.config.currInsight = scrollToInsightNumber;
 
-                                hpit.config.state = newNum;
-                                $('.bgImg[data-insight="' + newNum + '"]').css({"opacity": 1});
-
-                                if (newNum > $('.insight').length - 1) {
-                                    $th.addClass('noClick');
-                                }
                             }
                     });
 
-/* ANALYTICS DISABLED
-                    if ( onProduction() ) {
-                        /* SGS
-                        CleanUpLtVars();
-                        FlashLinkAnalysis(targetPage, "Menu Down:insight" + newNum, "linkanalysis");
-                    }
-*/
-
-                } 
-                else {
-                    return false;
                 }
-            }
-            hpit.config.currInsight = newNum;
+            
         });
 
     }
@@ -1196,14 +1119,15 @@ hpit.core = (function() {
 	}
 
 	function doOnPlayerLoad(data) {
-	    //console.log('player loaded (doOnPlayerLoad)', data);
+
 	    setTimeout(function() {
 	        DelvePlayer.doPlay()
 	    }, 1000);
+
 	}
 
 	function doOnError(data) {
-	//console.log('player error: ', data);
+
 	}
 
 	function doOnMediaLoad(data) {
@@ -1218,8 +1142,6 @@ hpit.core = (function() {
 			mTitle = playerId;
 		}
 		_delvePlayerMedia[playerId] = {mediaTitle: mTitle};
-		
-		//console.log('Media Loaded: ', data);
     }
 
 	function doOnPlayStateChanged(data) {
