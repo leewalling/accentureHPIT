@@ -1377,12 +1377,12 @@ img {
 }
 .social.inHeader > .addthis_toolbox {
   	height: 25px;
+  	margin-left: 5px;
 }
 .social.inHeader {
   	width: 86% !important;
   	text-align: center !important;
   	margin: 0 7% !important;
-  	/*background-color: green !important;*/
 }
 .social > .addthis_toolbox > a {
   	display: inline-block;

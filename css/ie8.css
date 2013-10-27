@@ -27,6 +27,11 @@
 .ie8 .navbar-header {
 	float: left !important;
 }
+.social.inHeader > .addthis_toolbox {
+	/*background-color: green !important;*/
+  	max-width: 130px;
+}
+
 .ie8 .col-xs-12 {
 	width: 50% !important;
 	margin-left: 50% !important;
