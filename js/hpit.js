@@ -863,23 +863,17 @@ hpit.core = (function() {
 
                         // SGS 10/24: Added a class for flagging the click event was just forced 
                         $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').addClass("forcedClick");
-
-                        // toggle the insight open
                         $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').trigger("click");
-
-                        // SGS 10/24: Removed the added class 
                         $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').removeClass("forcedClick");
 
                         $('body').animate({
                                 scrollTop: selectedInsight.offset().top - $('.navbar').outerHeight( true )
-                            },
-                            {
+                            }, {
                                 duration: animationDurationInMilliseconds,                        
                                 complete: function() {
                                     hpit.config.locked = false;
                                 }
-                            }
-                        );
+                        });
 
                     }, 750);
                     
@@ -888,9 +882,11 @@ hpit.core = (function() {
 
                     $('body, html').animate({
                             scrollTop: selectedInsight.offset().top
-                        },
-                        {
-                            duration: animationDurationInMilliseconds
+                        }, {
+                            duration: animationDurationInMilliseconds,
+                            complete: function() {
+                                hpit.config.locked = false;
+                            }
                     });
                 
                 }
@@ -946,10 +942,6 @@ hpit.core = (function() {
             var $th = $(this);
 
             var newNum;
-
-			/* SGS */ 
-			groupParam = $.getUrlVar('group');
-			var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
             
             $('#controls .arrows').removeClass('noClick');
 
@@ -993,6 +985,10 @@ hpit.core = (function() {
 
 /* ANALYTICS DISABLED
                     if ( onProduction() ) {
+
+                        /* SGS 
+                        groupParam = $.getUrlVar('group');
+                        var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
 
 						if ( newNum == 0 ) {
                             CleanUpLtVars();
@@ -1077,7 +1073,7 @@ hpit.core = (function() {
                     $trgt.addClass('open');
                 });
 
-/*
+/* ANALYTICS DISABLED
                 /* SGS 10/24
                 var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
 
@@ -1093,68 +1089,7 @@ hpit.core = (function() {
 
     function bindClicktoSocialLinks() {
 
-        $('.socialButton').on('click', function(e) {
-
-            e.preventDefault();
-
-            var $th = $(this);
-
-            var inTopNav = false;
-            if ($th.hasClass('inHead')) {
-                inTopNav = true;
-            }
-            
-            var $cl = $th.attr('class');
-            var $linkUrl = $th.attr('url');
-            var $title = $th.attr('title');
-
-            var $shareUrl = '';
-            var $shareTitle = encodeURIComponent($title);
-            var $toTrack;
-            var $trackName;
-
-            if( $cl.indexOf('google') >-1 ) {
-                $trackName = 'Google+';
-                $shareUrl = encodeURIComponent($linkUrl);
-                var $goto = 'https://plus.google.com/share?url=' + $shareUrl;
-                var $params = 'width=660,height=400,scrollbars=no;resizable=yes';
-            }
-            else if ( $cl.indexOf('facebook') > -1 ) {
-                $trackName = 'Facebook';
-                $shareUrl = encodeURIComponent($linkUrl);
-                var $goto = 'http://www.facebook.com/share.php?u=' + $shareUrl;
-                var $params = 'width=660,height=400,scrollbars=no;resizable=yes';
-            }
-            else if ( $cl.indexOf('twitter') >-1 ) {
-                $trackName = 'Twitter';
-                $shareUrl = encodeURIComponent($linkUrl);
-                var $goto = 'http://twitter.com/share?url=' + $shareUrl + 
-                '&text=' + $shareTitle;
-                var $params = 'width=660,height=400,scrollbars=no;resizable=yes';
-            }
-            else if ( $cl.indexOf('linkedin') >-1 ) {
-                $trackName = 'LinkedIn';
-                $shareUrl = encodeURIComponent($linkUrl);
-                var $shareSummary = $title;
-                var $shareSource = 'accenture.com - linkedin';
-                var $goto = 'http://www.linkedin.com/shareArticle?mini=true' + 
-                '&url=' + $shareUrl + 
-                '&title=' + $shareTitle; 
-                $params = 'width=660,height=400,scrollbars=no;resizable=yes';
-            }
-
-            try {
-
-                if ( hpit.config.desktopORtouch == 'desktop' ) {
-                    window.open($goto, '', $params);
-                }
-
-            } 
-            catch (err) {
-                console.log('error: ', err);
-            }
-
-/* ANALYTICS DISABLED
+/* ANALYTICS DISABLED - Tracked when clicking add this...
             // tracking social clicks
             if (inTopNav) {
                 omniTrack({
@@ -1172,7 +1107,6 @@ hpit.core = (function() {
             }
 */
 
-        });
     }
 
     function renderSocialShareButtonsOnPage(){
