@@ -945,27 +945,42 @@ hpit.core = (function() {
             var $cur = parseInt(hpit.config.currInsight);
             var $th = $(this);
             var animationDurationInMilliseconds = 750;
+            var scrollDirection = ( $th.hasClass('prev') ) ? 'Up' : 'Down';
+            var scrollToInsightNumber = ( scrollDirection == 'Up' ) ? hpit.config.state - 1 : hpit.config.state + 1;
 
-                var scrollToInsightNumber = ( $th.hasClass('prev') ) ? hpit.config.state - 1 : hpit.config.state + 1;
+            // ACN ANALYTICS -- START --
+            if ( onProduction() ) {
 
-                if ( scrollToInsightNumber >= 0 && scrollToInsightNumber <= $('.insight').length ) {
+                var groupParam = $.getUrlVar('group');
+                var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
+                
+                CleanUpLtVars();
+                FlashLinkAnalysis(targetPage, 'Menu ' + scrollDirection + ':insight' + scrollToInsightNumber, 'linkanalysis');
 
-                    var targetDivToScroll = ( scrollToInsightNumber == 0 ) ? $('#theTop') : $('#insight' + scrollToInsightNumber);
+            }
+            else {
+                console.log('FlashLinkAnalysis - Menu ' + scrollDirection + ':insight' + scrollToInsightNumber );
+            }
+            // ACN ANALYTICS -- END --
 
-                    $('body, html').animate({
-                            scrollTop: targetDivToScroll.offset().top
-                        }, {
-                            duration: animationDurationInMilliseconds,
-                            complete: function() {
-                    
-                                hpit.config.state = scrollToInsightNumber;
-                                $('.bgImg[data-insight="' + scrollToInsightNumber + '"]').css({"opacity": 1});
-                                hpit.config.currInsight = scrollToInsightNumber;
+            if ( scrollToInsightNumber >= 0 && scrollToInsightNumber <= $('.insight').length ) {
 
-                            }
-                    });
+                var targetDivToScroll = ( scrollToInsightNumber == 0 ) ? $('#theTop') : $('#insight' + scrollToInsightNumber);
 
-                }
+                $('body, html').animate({
+                        scrollTop: targetDivToScroll.offset().top
+                    }, {
+                        duration: animationDurationInMilliseconds,
+                        complete: function() {
+                
+                            hpit.config.state = scrollToInsightNumber;
+                            $('.bgImg[data-insight="' + scrollToInsightNumber + '"]').css({"opacity": 1});
+                            hpit.config.currInsight = scrollToInsightNumber;
+
+                        }
+                });
+
+            }
             
         });
 
@@ -1012,25 +1027,43 @@ hpit.core = (function() {
         });
     }
 
-    function bindClicktoSocialLinks() {
+    function socialButtonAnalytics() {
 
-/* ANALYTICS DISABLED - Tracked when clicking add this...
-            // tracking social clicks
-            if (inTopNav) {
-                omniTrack({
-                    eventLink: $linkUrl,
-                    eventName: 'Share - Top Nav',
-                    eventType: 'Social'
-                });
-            } 
-            else {
-                omniTrack({
-                    eventLink: $linkUrl,
-                    eventName: 'Share - ' + $trackName,
-                    eventType: 'Social'
-                });
-            }
-*/
+        $('.socialButton').on('click', function(e) {
+
+            e.preventDefault();
+
+            var selectedSocialNetwork = function( className ) {
+                
+                if ( className.indexOf('linkedIn') > -1 ) {
+                    return 'LinkedIn';
+                }
+                else if ( className.indexOf('twitter') > -1 ) {
+                    return 'Twitter';
+                }
+                else if ( className.indexOf('facebook') > -1 ) {
+                    return 'Facebook';
+                }
+                else if ( className.indexOf('google') > -1 ) {
+                    return 'Google+';
+                }
+
+            };
+
+            var $clickedSocialButton = $(this);
+
+            var eventName = ( $clickedSocialButton.hasClass('inHead') ) ? 'Share - Top Nav' : 'Share - ' + selectedSocialNetwork( $clickedSocialButton.attr('class') );
+            var eventLink = $clickedSocialButton.attr('url');
+
+            // ACN ANALYTICS -- START --
+            omniTrack({
+                eventLink: eventLink,
+                eventName: eventName,
+                eventType: 'Social'
+            });
+            // ACN ANALYTICS -- END --
+
+        });
 
     }
 
@@ -1078,6 +1111,8 @@ hpit.core = (function() {
         renderSocialButtonsForClass('.social.visible-xs');
 
         addthis.toolbox('.addthis_toolbox');
+
+        socialButtonAnalytics();
         
     }
 
