@@ -400,9 +400,10 @@ hpit.core = (function() {
 	        }, 100);
         }
 	
-/* ANALYTICS DISABLED
+        // ACC ANALYTICS
 		overridePageView = true;
-*/
+        // END
+
 		hpit.config.desktopORtouch = ( 'ontouchstart' in window || 'onmsgesturechange' in window ) ? 'touch' : 'desktop';
         
         if ( isIE8 ) {
@@ -481,7 +482,7 @@ hpit.core = (function() {
             arrangeTopNav();
         }
 
-/* ANALYTICS DISABLED
+        // ACC ANALYTICS
         $('.download a').on('click', function(e) {
 
 			if ( onProduction() ) {
@@ -508,7 +509,7 @@ hpit.core = (function() {
             }
 
         });
-*/
+        // END
 
         $('.bgImg').css({"opacity": 0});
         $('.bgImg[data-insight="1"]').css({"opacity": 1});
@@ -693,13 +694,13 @@ hpit.core = (function() {
 
             if ( winOffset <= 1 && ( typeof isTopPageView != 'undefined' && !isTopPageView ) ) {
                
-/* ANALYTICS DISABLED
+                // ACN ANALYTICS -- START --
                 clearTimeout(trackPageViewDelay);
 
                 trackPageViewDelay = setTimeout(function() {
                     omniTrackPageView('home');
                 }, waitBeforeCallingAnalyticsCall );
-*/
+                // ACN ANALYTICS -- END --
 
                 isTopPageView = true;
                 hpit.config.state = 0;
@@ -775,7 +776,7 @@ hpit.core = (function() {
             $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
             $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
  
-/* ANALYTICS DISABLED               
+            // ACN ANALYTICS -- START --         
             if ( !hpit.config.locked && (hpit.config.currPageView != menuItem) && !isTopPageView ) { 
  
                 clearTimeout(trackPageViewDelay);
@@ -791,7 +792,7 @@ hpit.core = (function() {
                 }, waitBeforeCallingAnalyticsCall);
 
             }
-*/ 
+            // ACN ANALYTICS -- END --
 
             hpit.config.currInsight = menuItem;
             hpit.config.state = menuItem;
@@ -998,15 +999,14 @@ hpit.core = (function() {
                     $trgt.addClass('open');
                 });
 
-/* ANALYTICS DISABLED
-                /* SGS 10/24
+                // ACN ANALYTICS -- START --
                 var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
 
                 if ( onProduction() && !wasForcedClick ) {
                     CleanUpLtVars();
 				    FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
 			     }
-*/
+                // ACN ANALYTICS -- END --
 
             }
         });
@@ -1145,15 +1145,19 @@ hpit.core = (function() {
     }
 
 	function doOnPlayStateChanged(data) {
-/* ANALYTICS DISABLED
-	    if (data.isPlaying) {
+
+        // ACN ANALYTICS -- START --
+	    if ( data.isPlaying ) {
+
 	        var videoTitle = DelvePlayer.doGetCurrentMedia().title;
-	        if (onProduction()) {
+	        if ( onProduction() ) {
                 CleanUpLtVars();
                 FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis");
 			}
+
 	    }
-*/
+        // ACN ANALYTICS -- END --
+
 	}
 
 	function doonPlayheadUpdate(data) {
@@ -1244,7 +1248,8 @@ hpit.core = (function() {
 	}
 	
 	function trackSegmentDelvePlayer(milestone, playerId, _timePositionSeconds) {
-/* ANALYTICS DISABLED
+
+        // ACN ANALYTICS -- START --
 		switch (milestone) {
 			case 'start':
 				var eventsValue = "event51=" + Math.floor(_timePositionSeconds);
@@ -1280,7 +1285,8 @@ hpit.core = (function() {
 		LowerCaseVars();
 		window.s.tl(this, 'o', 'delveMedia');
 		clearVideoVarsEvents();
-*/
+        // ACN ANALYTICS -- END --
+
 	}
 
     function playVideoInit() {
@@ -1345,12 +1351,14 @@ hpit.core = (function() {
 	            hpit.config.justClicked = true;
 	            var cNum = $(this).text();
 	            var skipTo = hpit.config.chapters[cNum].position / 1000;
-/* ANALYTICS DISABLED
+
+                // ACN ANALYTICS -- START --
 	            if (onProduction()) {
                     CleanUpLtVars();
                     FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
 				}
-*/	            
+                // ACN ANALYTICS -- END --
+
 	            try {
 	                DelvePlayer.doSeekToSecond(skipTo);
 	            } 
@@ -1443,28 +1451,33 @@ hpit.core = (function() {
             e.preventDefault();
             var th = $(this);
             
-            if ($target.hasClass("opened")) {
+            if ( $target.hasClass("opened") ) {
+
                 $target.animate({"right": "-275px"}, "normal");
                 $target.removeClass("opened");
                 if (th.hasClass("closeX")) {
-/* ANALYTICS DISABLED                    
-                	if ( onProduction() ) {
-                        CleanUpLtVars();
-                        FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
-					}
-*/
+
+                // ACN ANALYTICS -- START --                 
+            	if ( onProduction() ) {
+                    CleanUpLtVars();
+                    FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
+				}
+                // ACN ANALYTICS -- END --
+
                 }
             } 
             else {
                 $target.animate({"right": "0px"}, "normal");
                 $target.addClass("opened");
                 if (th.attr("id") == "toggleMenu") {
-/* ANALYTICS DISABLED
+
+                    // ACN ANALYTICS -- START --
                 	if ( onProduction() ) {
                         CleanUpLtVars();
                         FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
 					}
-*/
+                    // ACN ANALYTICS -- END --
+
                 }
             }
         });
@@ -1482,7 +1495,7 @@ hpit.core = (function() {
         $('.navbar-toggle').on('click', function(e) {
             e.preventDefault();
 
-/* ANALYTICS DISABLED
+            // ACN ANALYTICS -- START --
             if ( onProduction() ) {
 
                 CleanUpLtVars();
@@ -1497,8 +1510,10 @@ hpit.core = (function() {
 				else {
                     FlashLinkAnalysis("mobile", "menu-toggle-off", "linkanalysis");
                 }
+
             }
-*/
+            // ACN ANALYTICS -- END --
+
         });
         
         if ( !onMobile() && !onIpad() && !isIE8 ) {
@@ -1560,7 +1575,8 @@ hpit.core = (function() {
     }
        
     function omniTrackPageView(num) {
-/* ANALYTICS DISABLED
+
+        // ACN ANALYTICS -- START --
         if ( onProduction() ) {
             CleanUpLtVars();
         }
@@ -1578,12 +1594,14 @@ hpit.core = (function() {
         else {
             console.log("Omniture Page View: " + newPageName);
         }
-*/
+        // ACN ANALYTICS -- END --
+
     }
 
 
     function omniTrack(obj) {
-/* ANALYTICS DISABLED
+
+        // ACN ANALYTICS -- START --
 		if ( onProduction() ) {
 			try {
                 CleanUpLtVars();
@@ -1593,7 +1611,7 @@ hpit.core = (function() {
 	        	//console.log('Tracking error: ', err);
 	        }
 		}
-*/
+        // ACN ANALYTICS -- END --
     }
     
     function isTouchDevice() {
