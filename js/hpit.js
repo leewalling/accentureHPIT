@@ -388,21 +388,36 @@ hpit.core = (function() {
 
     function init() {
 
-        var debug = $.getUrlVar('debug');
-        if (debug == 'true') {
-            $('#diagnostics').show();
-        }
-
         // needed for fixing back button position
         if( $(window).scrollTop() > 0 ){
         	setTimeout(function() {
 	        	window.scrollTo(0, 0);
 	        }, 100);
         }
-	
-        // ACC ANALYTICS
+
+        // ACN ANALYTICS -- START --
+        if ( !onProduction() ) {
+
+            FlashLinkAnalysis = function() {
+                var analyticValues = Array.prototype.slice.call(arguments, 0);
+                console.log('FlashLinkAnalysis( "' + analyticValues.join('", "') + '" );');
+            };
+
+            CleanUpLtVars = function() {
+                console.log('CleanUpLtVars()');
+            };
+
+            triggerOmniturePageView = function() {
+                var analyticValues = Array.prototype.slice.call(arguments, 0);
+                console.log('triggerOmniturePageView( "' + analyticValues.join('", "') + '" );');
+            };
+
+        }
+        // ACN ANALYTICS -- END --
+
+        // ACN ANALYTICS -- START --
 		overridePageView = true;
-        // END
+        // ACN ANALYTICS -- END --
 
 		hpit.config.desktopORtouch = ( 'ontouchstart' in window || 'onmsgesturechange' in window ) ? 'touch' : 'desktop';
         
@@ -482,7 +497,7 @@ hpit.core = (function() {
             arrangeTopNav();
         }
 
-        // ACC ANALYTICS
+        // ACN ANALYTICS -- START --
         $('.download a').on('click', function(e) {
 
 			if ( onProduction() ) {
@@ -509,7 +524,7 @@ hpit.core = (function() {
             }
 
         });
-        // END
+        // ACN ANALYTICS -- END --
 
         $('.bgImg').css({"opacity": 0});
         $('.bgImg[data-insight="1"]').css({"opacity": 1});
@@ -852,12 +867,12 @@ hpit.core = (function() {
                 var animationDurationInMilliseconds = 2000;
 
                 hpit.config.locked = true;
+                haveDeepLink = true;
 
                 if ( onMobile() ) {
 
                     setTimeout( function() {
 
-                        // SGS 10/24: Added a class for flagging the click event was just forced 
                         $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').addClass("forcedClick");
                         $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').trigger("click");
                         $('.insight[data-insight="' + specifiedInsightNumber + '"] .toggler').removeClass("forcedClick");
@@ -949,18 +964,10 @@ hpit.core = (function() {
             var scrollToInsightNumber = ( scrollDirection == 'Up' ) ? hpit.config.state - 1 : hpit.config.state + 1;
 
             // ACN ANALYTICS -- START --
-            if ( onProduction() ) {
-
-                var groupParam = $.getUrlVar('group');
-                var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
-                
-                CleanUpLtVars();
-                FlashLinkAnalysis(targetPage, 'Menu ' + scrollDirection + ':insight' + scrollToInsightNumber, 'linkanalysis');
-
-            }
-            else {
-                console.log('FlashLinkAnalysis - Menu ' + scrollDirection + ':insight' + scrollToInsightNumber );
-            }
+            var groupParam = $.getUrlVar('group');
+            var targetPage = groupParam ? 'home.aspx#' + groupParam : 'home.aspx';
+            CleanUpLtVars();
+            FlashLinkAnalysis(targetPage, 'Menu ' + scrollDirection + ':insight' + scrollToInsightNumber, 'linkanalysis');
             // ACN ANALYTICS -- END --
 
             if ( scrollToInsightNumber >= 0 && scrollToInsightNumber <= $('.insight').length ) {
@@ -1004,10 +1011,11 @@ hpit.core = (function() {
 
                 removeClass('open');
         		   
-                if ( onProduction() ) {
-                    CleanUpLtVars();
-					FlashLinkAnalysis('home:insight', "mobile:close:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
-				}
+                // ACN ANALYTICS -- START --
+                CleanUpLtVars();
+				FlashLinkAnalysis('home:insight', "mobile:close:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
+                // ACN ANALYTICS -- END --
+
             } 
             else {
                 $cont.hide(0, function() {
@@ -1017,7 +1025,7 @@ hpit.core = (function() {
                 // ACN ANALYTICS -- START --
                 var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
 
-                if ( onProduction() && !wasForcedClick ) {
+                if ( !wasForcedClick ) {
                     CleanUpLtVars();
 				    FlashLinkAnalysis('home:insight', "mobile:open:" + $.trim($(this).text()).replace('\n', ''), "linkanalysis");
 			     }
@@ -1025,46 +1033,6 @@ hpit.core = (function() {
 
             }
         });
-    }
-
-    function socialButtonAnalytics() {
-
-        $('.socialButton').on('click', function(e) {
-
-            e.preventDefault();
-
-            var selectedSocialNetwork = function( className ) {
-                
-                if ( className.indexOf('linkedIn') > -1 ) {
-                    return 'LinkedIn';
-                }
-                else if ( className.indexOf('twitter') > -1 ) {
-                    return 'Twitter';
-                }
-                else if ( className.indexOf('facebook') > -1 ) {
-                    return 'Facebook';
-                }
-                else if ( className.indexOf('google') > -1 ) {
-                    return 'Google+';
-                }
-
-            };
-
-            var $clickedSocialButton = $(this);
-
-            var eventName = ( $clickedSocialButton.hasClass('inHead') ) ? 'Share - Top Nav' : 'Share - ' + selectedSocialNetwork( $clickedSocialButton.attr('class') );
-            var eventLink = $clickedSocialButton.attr('url');
-
-            // ACN ANALYTICS -- START --
-            omniTrack({
-                eventLink: eventLink,
-                eventName: eventName,
-                eventType: 'Social'
-            });
-            // ACN ANALYTICS -- END --
-
-        });
-
     }
 
     function renderSocialShareButtonsOnPage(){
@@ -1111,8 +1079,6 @@ hpit.core = (function() {
         renderSocialButtonsForClass('.social.visible-xs');
 
         addthis.toolbox('.addthis_toolbox');
-
-        socialButtonAnalytics();
         
     }
 
@@ -1183,13 +1149,8 @@ hpit.core = (function() {
 
         // ACN ANALYTICS -- START --
 	    if ( data.isPlaying ) {
-
-	        var videoTitle = DelvePlayer.doGetCurrentMedia().title;
-	        if ( onProduction() ) {
-                CleanUpLtVars();
-                FlashLinkAnalysis($(this).attr('href'), videoTitle, "linkanalysis");
-			}
-
+            CleanUpLtVars();
+            FlashLinkAnalysis( $(this).attr('href'), DelvePlayer.doGetCurrentMedia().title, "linkanalysis" );
 	    }
         // ACN ANALYTICS -- END --
 
@@ -1388,10 +1349,8 @@ hpit.core = (function() {
 	            var skipTo = hpit.config.chapters[cNum].position / 1000;
 
                 // ACN ANALYTICS -- START --
-	            if (onProduction()) {
-                    CleanUpLtVars();
-                    FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
-				}
+                CleanUpLtVars();
+                FlashLinkAnalysis($(this).attr('href'), "Video Chapter " + cNum, "linkanalysis");
                 // ACN ANALYTICS -- END --
 
 	            try {
@@ -1493,10 +1452,8 @@ hpit.core = (function() {
                 if (th.hasClass("closeX")) {
 
                 // ACN ANALYTICS -- START --                 
-            	if ( onProduction() ) {
-                    CleanUpLtVars();
-                    FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
-				}
+                CleanUpLtVars();
+                FlashLinkAnalysis(th.attr('href'), "menu-closed", "linkanalysis");
                 // ACN ANALYTICS -- END --
 
                 }
@@ -1507,10 +1464,8 @@ hpit.core = (function() {
                 if (th.attr("id") == "toggleMenu") {
 
                     // ACN ANALYTICS -- START --
-                	if ( onProduction() ) {
-                        CleanUpLtVars();
-                        FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
-					}
+                    CleanUpLtVars();
+                    FlashLinkAnalysis(th.attr('href'), "menu-opened", "linkanalysis");
                     // ACN ANALYTICS -- END --
 
                 }
@@ -1531,21 +1486,16 @@ hpit.core = (function() {
             e.preventDefault();
 
             // ACN ANALYTICS -- START --
-            if ( onProduction() ) {
-
-                CleanUpLtVars();
-
-				if ( $(this).hasClass("navbar-toggle collapsed") ) {		
-					FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
-                }
-				else if ( initClick ) {
-					FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
-					initClick = false;
-				}
-				else {
-                    FlashLinkAnalysis("mobile", "menu-toggle-off", "linkanalysis");
-                }
-
+            CleanUpLtVars();
+			if ( $(this).hasClass("navbar-toggle collapsed") ) {		
+				FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
+            }
+			else if ( initClick ) {
+				FlashLinkAnalysis("mobile", "menu-toggle-on", "linkanalysis");
+				initClick = false;
+			}
+			else {
+                FlashLinkAnalysis("mobile", "menu-toggle-off", "linkanalysis");
             }
             // ACN ANALYTICS -- END --
 
@@ -1612,9 +1562,7 @@ hpit.core = (function() {
     function omniTrackPageView(num) {
 
         // ACN ANALYTICS -- START --
-        if ( onProduction() ) {
-            CleanUpLtVars();
-        }
+        CleanUpLtVars();
 
 		if ( num == "home" ) {
             var newPageName = 'acn:microsites:high-performance-it:home';
@@ -1623,12 +1571,7 @@ hpit.core = (function() {
             var newPageName = 'acn:microsites:high-performance-it:home:insight' + num;
         }
 
-        if ( onProduction() ) {
-            triggerOmniturePageView(newPageName, "event29,event20,event68");
-        } 
-        else {
-            console.log("Omniture Page View: " + newPageName);
-        }
+        triggerOmniturePageView(newPageName, "event29,event20,event68");
         // ACN ANALYTICS -- END --
 
     }
@@ -1637,15 +1580,13 @@ hpit.core = (function() {
     function omniTrack(obj) {
 
         // ACN ANALYTICS -- START --
-		if ( onProduction() ) {
-			try {
-                CleanUpLtVars();
-	            FlashLinkAnalysis(obj.eventLink, obj.eventName, obj.eventType);
-	        } 
-            catch (err) {
-	        	//console.log('Tracking error: ', err);
-	        }
-		}
+		try {
+            CleanUpLtVars();
+            FlashLinkAnalysis(obj.eventLink, obj.eventName, obj.eventType);
+        } 
+        catch (err) {
+        	//console.log('Tracking error: ', err);
+        }
         // ACN ANALYTICS -- END --
     }
     
