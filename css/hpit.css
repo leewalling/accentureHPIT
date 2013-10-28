@@ -299,7 +299,7 @@ img {
 	vertical-align: middle;
 	float: left;
 	width: 99%;
-	line-height: 26px;
+	line-height: 20px;
 	color: #fff !important;
 	text-decoration: none;
 	overflow: hidden;
@@ -321,8 +321,8 @@ img {
 	font-style: normal;
 	display: inline-block;
 	padding-right:22px;
-	line-height: 26px;
-	height: 26px;
+	line-height: 20px;
+	height: 20px;
 	background-image:url("../images/caret.png"); 
 	background-repeat: no-repeat;
 	background-position: top right;
@@ -344,6 +344,7 @@ img {
 	font-size: 24px;
 	font-weight: bold;
 	padding-right:13px;
+	float: left;
 	/*background-color: green !important;*/
 }
 #sideMenu ul li a > span:last-child {
