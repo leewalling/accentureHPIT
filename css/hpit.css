@@ -295,10 +295,10 @@ img {
 }
 #sideMenu ul li a {
 	padding:15px 15px 15px 11px;
-	display:table-row;
+	display: inline-block;
 	vertical-align: middle;
 	float: left;
-	width: 100%;
+	width: 99%;
 	line-height: 26px;
 	color: #fff !important;
 	text-decoration: none;
@@ -319,7 +319,7 @@ img {
 }
 #sideMenu ul li a.btt em {
 	font-style: normal;
-	display:inline-block;
+	display: inline-block;
 	padding-right:22px;
 	line-height: 26px;
 	height: 26px;
@@ -337,17 +337,19 @@ img {
 	/*background-position: 80px -386px;*/
 }
 #sideMenu ul li a > span {
-	display:table-cell;
+	display: table-cell;
 	vertical-align: middle;
 }
 #sideMenu ul li a > span:first-child {
 	font-size: 24px;
 	font-weight: bold;
 	padding-right:13px;
+	/*background-color: green !important;*/
 }
 #sideMenu ul li a > span:last-child {
 	line-height: 1.25em;
 }
+
 #sideMenu ul li.hilited a/*,
 #sideMenu ul li a:hover,
 #sideMenu ul li a:focus*/ {

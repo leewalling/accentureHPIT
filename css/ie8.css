@@ -155,6 +155,22 @@
 	left: -200px;
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff');
 }
+
+#sideMenu ul li a > span {
+	display: inline-block;
+}
+
+#sideMenu ul li a > span.title {
+	width: 200px;
+	line-height: normal;
+	/*background-color: blue !important;*/
+}
+
+#sideMenu ul li a > span.number {
+	width: 30px;
+	/*background-color: yellow !important;*/
+}
+
 .ie8 #footer {
 	background-color: #000;
 	background-image: none;

@@ -103,16 +103,16 @@
 		<div id="sideMenu" class="hidden-xs">
 			<ul>
 				<li><a href="#theTop" class="btt" ref="backtotop-click"><em>Back To Top</em></a></li>
-				<li class="state" data-insight-nav="1"><a href="#insight1"><span>01</span> <span>Your new boss? Your customer.</span></a></li>
-				<li class="state" data-insight-nav="2"><a href="#insight2"><span>02</span> <span>Context is king</span></a></li>
-				<li class="state" data-insight-nav="3"><a href="#insight3"><span>03</span> <span>Business strategy and IT now work as one</span></a></li>
-				<li class="state" data-insight-nav="4"><a href="#insight4"><span>04</span> <span>Bringing harmony to hybrid IT</span></a></li>
-				<li class="state" data-insight-nav="5"><a href="#insight5"><span>05</span> <span>Fearlessly digital</span></a></li>
-				<li class="state" data-insight-nav="6"><a href="#insight6"><span>06</span> <span>The power of self-service</span></a></li>
-				<li class="state" data-insight-nav="7"><a href="#insight7"><span>07</span> <span>Unearthing data gems</span></a></li>
-				<li class="state" data-insight-nav="8"><a href="#insight8"><span>08</span> <span>Speed plus agility equals adaptability</span></a></li>
-				<li class="state" data-insight-nav="9"><a href="#insight9"><span>09</span> <span>Plug-and-play talent</span></a></li>
-				<li class="state" data-insight-nav="10"><a href="#insight10"><span>10</span> <span>Uniting business risk and IT security</span></a></li>
+				<li class="state" data-insight-nav="1"><a href="#insight1"><span class="number">01</span> <span class="title">Your new boss? Your customer.</span></a></li>
+				<li class="state" data-insight-nav="2"><a href="#insight2"><span class="number">02</span> <span class="title">Context is king</span></a></li>
+				<li class="state" data-insight-nav="3"><a href="#insight3"><span class="number">03</span> <span class="title">Business strategy and IT now work as one</span></a></li>
+				<li class="state" data-insight-nav="4"><a href="#insight4"><span class="number">04</span> <span class="title">Bringing harmony to hybrid IT</span></a></li>
+				<li class="state" data-insight-nav="5"><a href="#insight5"><span class="number">05</span> <span class="title">Fearlessly digital</span></a></li>
+				<li class="state" data-insight-nav="6"><a href="#insight6"><span class="number">06</span> <span class="title">The power of self-service</span></a></li>
+				<li class="state" data-insight-nav="7"><a href="#insight7"><span class="number">07</span> <span class="title">Unearthing data gems</span></a></li>
+				<li class="state" data-insight-nav="8"><a href="#insight8"><span class="number">08</span> <span class="title">Speed plus agility equals adaptability</span></a></li>
+				<li class="state" data-insight-nav="9"><a href="#insight9"><span class="number">09</span> <span class="title">Plug-and-play talent</span></a></li>
+				<li class="state" data-insight-nav="10"><a href="#insight10"><span class="number">10</span> <span class="title">Uniting business risk and IT security</span></a></li>
 			</ul>
 			<a href="#" class="closeX sprites" rel="articles">&nbsp;</a>
 		</div>
