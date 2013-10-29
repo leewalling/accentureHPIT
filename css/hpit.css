@@ -2782,6 +2782,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
 	.insight .insightTitle {
 		color: #fff;
 		position: absolute;
+		z-index: 2;
 	}
 	.exception .insight .insightTitle {
 		color: #000 !important;
