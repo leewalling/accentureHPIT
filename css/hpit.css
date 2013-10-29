@@ -299,7 +299,7 @@ img {
 	vertical-align: middle;
 	float: left;
 	width: 99%;
-	line-height: 20px;
+	line-height: 26px;
 	color: #fff !important;
 	text-decoration: none;
 	overflow: hidden;
@@ -321,8 +321,8 @@ img {
 	font-style: normal;
 	display: inline-block;
 	padding-right:22px;
-	line-height: 20px;
-	height: 20px;
+	line-height: 26px;
+	height: 26px;
 	background-image:url("../images/caret.png"); 
 	background-repeat: no-repeat;
 	background-position: top right;
@@ -692,14 +692,13 @@ img {
 
 .insight {
 	width:100%;
-	position:relative;
 	display: inline-block;
 	float: left;
 	padding-bottom: 75px;
 	min-height:1000px;
 	overflow:visible;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 	/*
 	background-color: #fff;
 	background-size:100% !important;
@@ -1489,7 +1488,7 @@ img {
 	position: fixed;
 	right: 0;
 	top: 0;
-	z-index: 10000;
+	z-index: 1;
 }
 .page .footer .breadcrumbs {
 	margin: 0;

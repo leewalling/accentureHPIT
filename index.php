@@ -14,7 +14,10 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!--link href="css/reset.css" rel="stylesheet" media="screen"-->
 		<!--link href="css/hpit.css" rel="stylesheet" media="screen" /-->
+		<link href="css/hpit.css?v=2.57" rel="stylesheet" media="screen">
+
 		<script type="text/javascript">
+		/*
 		var ranNumVar = new Date().getTime();
 		var $ = document;
 		var cssId = 'hpitCSS';
@@ -28,6 +31,7 @@
 		    link.media = 'screen';
 		    head.appendChild(link);
 		}
+		*/
 		</script>
 
 		<!--[if lt IE 9]>
@@ -146,6 +150,7 @@
 		<!-- end background images -->
 		<!-- insight #1 -->
 		<div class="insight" data-insight="1" id="insight1">
+			<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>01</span></div>
 			</div>
@@ -180,16 +185,18 @@
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-1" /><![endif]--></span><span class="txt"><strong>Building relationships. </strong>Both marketing and sales get a boost by giving potential customers what they want and listening to what current customers have to say.</span></span>
 						</div>
 						<div class="no-border download-link">
-							<a href="/Microsites/high-performance-it/Documents/media/Accenture-High-Performance-IT-Research.pdf" target="_blank" rel="articles"><span class="icn sprites"></span>download study</a>
+							<a href="/Microsites/high-performance-it/Documents/media/Accenture-High-Performance-IT-Research.pdf" target="_blank" rel="articles" style="z-index: 1"><span class="icn sprites"></span>download study</a>
 						</div>
 						<div class="social visible-xs"></div>
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #1 -->
 		<!-- insight #2 -->
 		<div class="insight" data-insight="2" id="insight2">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>02</span></div>
 			</div>
@@ -230,10 +237,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #2 -->
 		<!-- insight #3 -->
 		<div class="insight" data-insight="3" id="insight3">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>03</span></div>
 			</div>
@@ -274,10 +283,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #3 -->
 		<!-- insight #4 -->
 		<div class="insight" data-insight="4" id="insight4">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>04</span></div>
 			</div>
@@ -318,10 +329,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #4 -->
 		<!-- insight #5 -->
 		<div class="insight" data-insight="5" id="insight5">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>05</span></div>
 			</div>
@@ -362,10 +375,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #5 -->
 		<!-- insight #6 -->
 		<div class="insight" data-insight="6" id="insight6">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>06</span></div>
 			</div>
@@ -406,10 +421,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #6 -->
 		<!-- insight #7 -->
 		<div class="insight" data-insight="7" id="insight7">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>07</span></div>
 			</div>
@@ -450,10 +467,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #7 -->
 		<!-- insight #8 -->
 		<div class="insight" data-insight="8" id="insight8">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>08</span></div>
 			</div>
@@ -494,10 +513,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #8 -->
 		<!-- insight #9 -->
 		<div class="insight" data-insight="9" id="insight9">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>09</span></div>
 			</div>
@@ -538,10 +559,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 		<!-- end insight #9 -->
 		<!-- insight #10 -->
 		<div class="insight" data-insight="10" id="insight10">
+		<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>10</span></div>
 			</div>
@@ -581,6 +604,7 @@
 						<div class="social visible-xs"></div>
 					</div>
 				</div>
+			</div>
 			</div>
 		</div>
 		<!-- end insight #10 -->
