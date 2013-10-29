@@ -76,7 +76,9 @@ img {
     max-width: 100%;*/
     vertical-align: middle;
 }
-
+a{
+	cursor:pointer;
+}
 /* SPRITESHEET */
 .sprites {
     background: url("../images/sprites.png") no-repeat top left;
