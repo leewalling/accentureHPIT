@@ -316,6 +316,7 @@ img {
 #sideMenu ul li a.btt {
 	color:rgba(255,255,255,0.7);
 	width: auto;
+	cursor:pointer;
 }
 #sideMenu ul li a.btt em {
 	font-style: normal;
@@ -326,6 +327,7 @@ img {
 	background-image:url("../images/caret.png"); 
 	background-repeat: no-repeat;
 	background-position: top right;
+	cursor:pointer;
 	/*background-position: 80px -417px;*/
 }
 #sideMenu ul li a.btt:hover {
