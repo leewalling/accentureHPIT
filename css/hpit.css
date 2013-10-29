@@ -709,7 +709,7 @@ img {
 	background-attachment: scroll;
 	*/
 }
-.onMobile .insight.open {
+.onMobile .insight-wrapper.open {
 	background-color: #e5e5e5 !important;
 }
 .onMobile .insight {
