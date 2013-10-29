@@ -441,7 +441,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">Creating actionable insights out of the data-wherever it comes from&mdash;is what "Big Data" is all about.</span>
+						<span class="quote">Creating actionable insights out of the data&mdash;wherever it comes from&mdash;is what "Big Data" is all about.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
@@ -533,7 +533,7 @@
 					<div class="right-col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6">
 						<div class="heading">
 						<span class="heading">Strategy straight talk</span>
-						<span class="quote">Talent will drive future success. Figuring out where your opportunities are-and finding the right people to work on them-will pay off.</span>
+						<span class="quote">Talent will drive future success. Figuring out where your opportunities are&mdash;and finding the right people to work on them&mdash;will pay off.</span>
 						</div>
 						<div class="why-its-important with-video">
 						<span class="heading">Why it's important</span>
