@@ -241,9 +241,11 @@
 .ie8 .insight .insightTitle,
 .ie8 .insight.current .insightTitle {
 	position: absolute !important;
-	top: 125px !important;
+	margin-top: -100px;
+	/*top: 125px !important;*/
 	/*background-color: lime !important;*/
 }
+
 .ie8 .insight[data-insight="1"] .marker {
 	background-position: 0 -900px;
 }

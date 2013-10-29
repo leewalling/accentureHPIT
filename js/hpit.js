@@ -513,7 +513,7 @@ hpit.core = (function() {
             var $title = $trgt.find(".insightTitle");
              
             if ( onProduction() ) {
-                if ( $trgt.hasClass('open') ) {
+                if ( onMobile ) {
                     CleanUpLtVars();
                     FlashDownload($(this).attr('href'), "download study:insight" +  $.trim($title.text()).replace('\n', ''), "linkanalysis");
                 }

@@ -518,7 +518,7 @@
 		<!-- end insight #8 -->
 		<!-- insight #9 -->
 		<div class="insight" data-insight="9" id="insight9">
-		<div class="insight-wrapper">
+			<div class="insight-wrapper">
 			<div class="marker hidden-xs">
 				<div><span>09</span></div>
 			</div>
