@@ -230,7 +230,8 @@
 
 }
 .ie8 .insight .marker {
-	width:150px;
+	top:100px;
+    width:150px;
 	height:202px;
 	line-height:202px;
 	background-color: transparent !important;
