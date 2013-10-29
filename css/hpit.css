@@ -995,6 +995,10 @@ img {
 	border-radius: 23px;
 	position: relative;
 }
+.ie8 .insight .content .right-col > div .tr > span.num{
+	width: 50px;
+	height: 50px;
+}
 .insight .content .right-col > div .tr > span.num img {
 	display: none;
 }
