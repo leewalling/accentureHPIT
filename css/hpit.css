@@ -76,7 +76,9 @@ img {
     max-width: 100%;*/
     vertical-align: middle;
 }
-
+a{
+	cursor:pointer;
+}
 /* SPRITESHEET */
 .sprites {
     background: url("../images/sprites.png") no-repeat top left;
@@ -709,7 +711,7 @@ img {
 	background-attachment: scroll;
 	*/
 }
-.onMobile .insight.open {
+.onMobile .insight-wrapper.open {
 	background-color: #e5e5e5 !important;
 }
 .onMobile .insight {
@@ -994,6 +996,10 @@ img {
 	-webkit-border-radius: 23px;
 	border-radius: 23px;
 	position: relative;
+}
+.ie8 .insight .content .right-col > div .tr > span.num{
+	width: 50px;
+	height: 50px;
 }
 .insight .content .right-col > div .tr > span.num img {
 	display: none;
@@ -2978,7 +2984,7 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 
 	}
 	.onMobile #ll-overlay .closeVid {
-		top: 51px !important;
+		top: 71px !important;
 	}
 }
 
