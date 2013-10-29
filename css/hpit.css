@@ -2971,6 +2971,9 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 	.exception {
 
 	}
+	.onMobile #ll-overlay .closeVid {
+		top: 51px !important;
+	}
 }
 
 /* mobile - Portrait */

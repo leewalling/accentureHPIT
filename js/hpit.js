@@ -1009,7 +1009,7 @@ hpit.core = (function() {
                     $trgt.removeClass('open');
                 });
 
-                removeClass('open');
+                $trgt.removeClass('open');
         		   
                 // ACN ANALYTICS -- START --
                 CleanUpLtVars();
