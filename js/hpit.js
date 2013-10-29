@@ -1005,11 +1005,11 @@ hpit.core = (function() {
             
             if ( $trgt.hasClass('open') ) {
                 
-                $cont.show(0, function() {
+                $cont.hide(0, function() {
                     $trgt.removeClass('open');
                 });
 
-                removeClass('open');
+               $trgt.removeClass('open');
         		   
                 // ACN ANALYTICS -- START --
                 CleanUpLtVars();
@@ -1018,10 +1018,11 @@ hpit.core = (function() {
 
             } 
             else {
-                $cont.hide(0, function() {
+                $cont.show(0, function() {
                     $trgt.addClass('open');
                 });
-
+				
+			
                 // ACN ANALYTICS -- START --
                 var wasForcedClick = $(this).find('.toggler').hasClass('forcedClick');
 
