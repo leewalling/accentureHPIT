@@ -47,7 +47,7 @@
 	background-color: #000;
 }
 .ie8 .hero {
-	position: relative;
+	position: relative; height:768px;
 }
 .ie8 .hero .video-wrapper {
 	height:800px;
