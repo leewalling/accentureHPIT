@@ -562,7 +562,10 @@ hpit.core = (function() {
             
             if ( !onMobile() && !onIpad() ) {
                 // determine if we need to lock the background images in place
-                if ( $win.scrollTop() > $ins.eq(0).offset().top - 1 ) { 
+
+                if ( $win.scrollTop() > $vidWr.outerHeight() - 50 ) {
+                //if ( $win.scrollTop() > $bgImg.eq(0).offset().top + 125 ) {
+                //if ( $win.scrollTop() > $ins.eq(0).offset().top - 1 ) {
 
                     if (!$bgImg.hasClass('fixed')) {
                         $bgImg.addClass('fixed');
