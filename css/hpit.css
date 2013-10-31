@@ -2059,7 +2059,9 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
         border-bottom: 1px solid #363636 !important
     }
 
-    .hero{  height:600px;    }
+    .hero{      height:600px;   }
+
+    .whiteAngle{height:500px;   }
 }
 
 /* less than 640px wide */
@@ -2467,7 +2469,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
     }
 }
 
-/* between 768px & 1000px wide */
+/* between 768px & 1024px wide */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     .hero > div.inner {
         padding-right: 30% !important;
@@ -2487,7 +2489,6 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
     }
     .insight .insightTitle {
         width: 26%;
-        font-size:
     }
     .insight .insightTitle h3 {
         font-size: 36px;
