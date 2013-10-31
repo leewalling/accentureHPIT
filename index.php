@@ -365,7 +365,7 @@
 						<div class="bleed-edge"><span class="fpo"><img src="images/info_graphics_insight_5.png" alt="Experimenting and learning digital is important to high performing CIOs" /></span></div>
 						<div class="no-border">
 						<span class="heading">High performers are also...</span>
-						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-5" /><![endif]--></span><span class="txt"><strong>Rolling out digital across their business. </strong>Rolling out digital across their business. The knowledge they've gleaned from early experiences with digital gives them critical insights into how digital technologies can support other parts of their business.</span></span>
+						<span class="tr"><span class="num"><span class="txt">1</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-5" /><![endif]--></span><span class="txt"><strong>Rolling out digital across their business. </strong>The knowledge they've gleaned from early experiences with digital gives them critical insights into how digital technologies can support other parts of their business.</span></span>
 						<span class="tr last"><span class="num"><span class="txt">2</span><!--[if lt IE 9]><img src="images/trans.png" class="ie8sprite ie8-bg-circle-5" /><![endif]--></span><span class="txt"><strong>Embracing disruption. </strong>Leading their companies on truly innovative ventures helps them identify which technologies will revolutionize their business.</span></span>
 						</div>
 						<div class="no-border download-link">
