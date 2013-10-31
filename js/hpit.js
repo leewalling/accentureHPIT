@@ -373,7 +373,7 @@ hpit.config = {
 };
 
 hpit.core = (function() {
-    
+
     var $userAgent = navigator.userAgent.toLowerCase();
     var $Android = /android/i.test($userAgent);
     var $iOS = /iphone|ipod|ios/i.test($userAgent);
@@ -420,45 +420,45 @@ hpit.core = (function() {
         // ACN ANALYTICS -- END --
 
 		hpit.config.desktopORtouch = ( 'ontouchstart' in window || 'onmsgesturechange' in window ) ? 'touch' : 'desktop';
-        
+
         if ( isIE8 ) {
             $('html').addClass('ie8');
         }
-        
+
         checkAndHandleDeepLink();
-        
+
         if (!onMobile() && !onIpad() && !isIE8) {
 
             if ( onProduction() ) {
                 preload([
-                    '/Microsites/high-performance-it/PublishingImages/01.png', 
-                    '/Microsites/high-performance-it/PublishingImages/02.png', 
-                    '/Microsites/high-performance-it/PublishingImages/03.png', 
-                    '/Microsites/high-performance-it/PublishingImages/04.png', 
-                    '/Microsites/high-performance-it/PublishingImages/05.png', 
-                    '/Microsites/high-performance-it/PublishingImages/06.png', 
-                    '/Microsites/high-performance-it/PublishingImages/07.png', 
-                    '/Microsites/high-performance-it/PublishingImages/08.png', 
-                    '/Microsites/high-performance-it/PublishingImages/09.png', 
+                    '/Microsites/high-performance-it/PublishingImages/01.png',
+                    '/Microsites/high-performance-it/PublishingImages/02.png',
+                    '/Microsites/high-performance-it/PublishingImages/03.png',
+                    '/Microsites/high-performance-it/PublishingImages/04.png',
+                    '/Microsites/high-performance-it/PublishingImages/05.png',
+                    '/Microsites/high-performance-it/PublishingImages/06.png',
+                    '/Microsites/high-performance-it/PublishingImages/07.png',
+                    '/Microsites/high-performance-it/PublishingImages/08.png',
+                    '/Microsites/high-performance-it/PublishingImages/09.png',
                     '/Microsites/high-performance-it/PublishingImages/10.png'
                 ]);
             }
             else {
                preload([
-                    'images/01.png', 
-                    'images/02.png', 
-                    'images/03.png', 
-                    'images/04.png', 
-                    'images/05.png', 
-                    'images/06.png', 
-                    'images/07.png', 
-                    'images/08.png', 
-                    'images/09.png', 
+                    'images/01.png',
+                    'images/02.png',
+                    'images/03.png',
+                    'images/04.png',
+                    'images/05.png',
+                    'images/06.png',
+                    'images/07.png',
+                    'images/08.png',
+                    'images/09.png',
                     'images/10.png'
-                ]); 
+                ]);
             }
         }
-        
+
         // Initialize event handler for sideMenu links
         sideMenuInit();
 
@@ -484,15 +484,15 @@ hpit.core = (function() {
 
         // check if the user is on IE7
         hpit.config.isIE7 = navigator.userAgent.toLowerCase().indexOf("msie 7.") != -1;
-        
+
         var validHashValue = false;
-        
+
         footerLock($('#footer'));
-        
+
         if ( !onMobile() && !onIpad() ) {
             paneLock();
         }
-        
+
         if ( onMobile() && !onGalaxyTab() ) {
             arrangeTopNav();
         }
@@ -508,10 +508,10 @@ hpit.core = (function() {
         });
 
 		$('.download-link a').on('click', function(e) {
-			
+
             var $trgt = $(this).parent().parent().parent().parent().parent()
             var $title = $trgt.find(".insightTitle");
-             
+
             if ( onProduction() ) {
                 if ( onMobile ) {
                     CleanUpLtVars();
@@ -554,18 +554,16 @@ hpit.core = (function() {
 		        }
         		$hasFired = 1;
         	}
-        	
+
         	// if the hero video exists remove it upon initial window scroll
             if ( $theVid.length ) {
                 $vidWr.html('');
-            } 
-            
+            }
+
             if ( !onMobile() && !onIpad() ) {
                 // determine if we need to lock the background images in place
 
-                if ( $win.scrollTop() > $vidWr.outerHeight() - 50 ) {
-                //if ( $win.scrollTop() > $bgImg.eq(0).offset().top + 125 ) {
-                //if ( $win.scrollTop() > $ins.eq(0).offset().top - 1 ) {
+                if ( $win.scrollTop() > ( 294 + ($win.outerWidth() * 0.35 ) ) ) {
 
                     if (!$bgImg.hasClass('fixed')) {
                         $bgImg.addClass('fixed');
@@ -577,7 +575,7 @@ hpit.core = (function() {
                         $bl.addClass('fixed');
                     }
 
-                } 
+                }
                 else {
 
                     var toGo = $ins.eq(0).offset().top - $win.scrollTop();
@@ -586,11 +584,11 @@ hpit.core = (function() {
                             $bl.removeClass('fixed');
                         }
                         $bl.css({'bottom': -toGo});
-                    } 
+                    }
                     else {
                         $bl.removeClass('fixed').removeAttr('style');
                     }
-                    
+
                     if ( $bgImg.hasClass('fixed') ) {
                         $bgImg.removeClass('fixed');
                     }
@@ -606,7 +604,7 @@ hpit.core = (function() {
                     $foot.removeClass('fixed');
                     $smUlLi.removeClass('hilited');
                     $bgImgImg.removeClass('activate');
-                    
+
                     if ( !onIpad() && !isIE8 ) {
                         var $newT = $win.scrollTop() / 3.5;
                         $hero.css({'top': -$newT});
@@ -615,11 +613,11 @@ hpit.core = (function() {
                 }
             }
         });
-        
+
         $win.resize(function() {
             updateDimensions();
             updateSidemenu();
-            
+
             if ( onMobile() ) {
                 if ( !onIpad() && $win.width() > 767 ) {
                     $('html').addClass('exception');
@@ -628,46 +626,46 @@ hpit.core = (function() {
                     }
                 };
                 $('html').removeClass('desktop').addClass('onMobile');
-            } 
+            }
             else {
                 $('html').removeClass('onMobile exception').addClass('desktop');
             }
-            
+
             if ( onIpad() ) {
                 $('html').addClass('onIpad');
-            } 
+            }
             else {
                 $('html').removeClass('onIpad');
             }
         });
-        
+
         $win.resize();
 
         togglerInit();
 
         renderSocialShareButtonsOnPage();
     }
-    
+
     function onMobile() {
         return (($(window).width() < 768) || $Android || $iOS && !$iPad);
     }
-    
+
     function onIpad() {
         return ($iPad);
     }
-    
+
     function onNexus() {
         return ($Nexus);
     }
-    
+
     function onGalaxyTab() {
         return ($GalaxyTab);
     }
-    
+
     function onProduction() {
         return ( location.hostname.indexOf('accenture.com') > -1 );
     }
-    
+
     function footerLock(element) {
 
         $(window).scroll(function() {
@@ -689,7 +687,7 @@ hpit.core = (function() {
                 var scrollDiff = -(winOffset - diff);
                 var margOffset = scrollDiff - footerH;
                 $$('.bgImages .bgImg img.activate').css({"margin-top": margOffset / 2});
-            } 
+            }
             else {
                 hpit.config.footerInView = false;
             }
@@ -703,7 +701,7 @@ hpit.core = (function() {
         var $child2 = $par.find('li').last();
         $par.append($child1).prepend($child2);
     }
-   
+
     function paneLock() {
 
         $(window).scroll(function() {
@@ -711,7 +709,7 @@ hpit.core = (function() {
             var winOffset = $(window).scrollTop();
 
             if ( winOffset <= 1 && ( typeof isTopPageView != 'undefined' && !isTopPageView ) ) {
-               
+
                 // ACN ANALYTICS -- START --
                 clearTimeout(trackPageViewDelay);
 
@@ -723,14 +721,14 @@ hpit.core = (function() {
                 isTopPageView = true;
                 hpit.config.state = 0;
                 hpit.config.currPageView = 0;
-                
+
                 updateArrows();
 
             }
             else {
                 isTopPageView = false;
             }
- 
+
             $('.insight').each(function(index) {
                paneLockUpdate($(this), index, winOffset);
            });
@@ -743,7 +741,7 @@ hpit.core = (function() {
         var currEle = element;
         var currFixedEle = element.find('.marker');
         var bgPxToMove = 25;
-         
+
         if ( currFixedEle.length <= 0 ) {
             return false;
         }
@@ -752,28 +750,28 @@ hpit.core = (function() {
         var vpEnd = vpStart + currEle.height();
         var currEleEnd = currEle.height();
         var currEleHgt = currEle.height();
-         
+
         if ( index === parseInt(hpit.config.currInsight) ) { // && vpStart > winOffset
-             
+
             var currEleTitle = $$('.insight[data-insight="' + index + '"] .insightTitle', 'context-get', '.container.main');
             if ( currEleTitle.hasClass('lockedBottom') ) {
                 currEleTitle.removeClass('lockedBottom');
             }
             var titleEnd = parseInt(currEleTitle.css('top')) + currEleTitle.height() + 75;
             var diff = vpStart - winOffset;
-             
+
             if ( !isIE8 && (diff < titleEnd) ) {
                 if (!currEleTitle.hasClass('lockedBottom')) {
                     currEleTitle.addClass('lockedBottom');
                 }
             }
-             
+
             var scH = parseInt(hpit.config.scrH);
             var $per = diff / scH;
-                
+
             if ( diff >= -1 && diff < scH + 1 ) {
                  $$('.bgImg[data-insight="' + index + '"]', 'context-get', '.container.main').css({"opacity": $per});
-            } 
+            }
             else {
                 $$('.insight .insightTitle', 'context-get', '.container.main').css({"opacity": 1});
             }
@@ -784,25 +782,25 @@ hpit.core = (function() {
          if ( winOffset >= vpStart && winOffset < vpEnd ) {
 
             $$('.insight.current', 'context-get', '.container.main').removeClass('current');
-            $('#sideMenu ul li.hilited').removeClass('hilited'); 
+            $('#sideMenu ul li.hilited').removeClass('hilited');
             $$('.bgImg img.activate', 'context-get', '.container.main').removeClass('activate');
-             
+
             currEle.addClass('current');
-             
+
             var menuItem = parseInt( $('.insight.current', '.container.main').data('insight') );
 
             $('#sideMenu ul li[data-insight-nav="' + menuItem + '"]').addClass('hilited'); //XXX no cache
             $$('.bgImg[data-insight="' + menuItem + '"] img', 'context-get', '.container.main').addClass('activate');
- 
-            // ACN ANALYTICS -- START --         
-            if ( !hpit.config.locked && (hpit.config.currPageView != menuItem) && !isTopPageView ) { 
- 
+
+            // ACN ANALYTICS -- START --
+            if ( !hpit.config.locked && (hpit.config.currPageView != menuItem) && !isTopPageView ) {
+
                 clearTimeout(trackPageViewDelay);
                 trackPageViewDelay = setTimeout(function() {
 
                     if ( !haveDeepLink ) {
                         omniTrackPageView( menuItem );
-                    } 
+                    }
                     else {
                         haveDeepLink = false;
                     }
@@ -815,7 +813,7 @@ hpit.core = (function() {
             hpit.config.currInsight = menuItem;
             hpit.config.state = menuItem;
             hpit.config.currPageView = menuItem;
-            
+
             if ( !hpit.config.locked ) {
                 updateArrows();
             }

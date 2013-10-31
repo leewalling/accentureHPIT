@@ -441,7 +441,7 @@ a{
 .hero {
     background-color:#fff;
     color:#000;
-    height:798px;
+    height:900px;
     padding-top:0px;
     display: inline-block;
     overflow: visible;
@@ -2464,9 +2464,10 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
     .whiteAngle {
         top: 558px;
     }
+    /*
     .bgImages {
         top: 364px;
-    }
+    }*/
 }
 
 /* between 768px & 1024px wide */
