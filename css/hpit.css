@@ -81,8 +81,8 @@ a{
 }
 /* SPRITESHEET */
 .sprites {
-    background: url("../images/sprites.png") no-repeat top left;
-    background-image: url("../images/sprites.png") !important;
+    background: url("/Microsites/high-performance-it/PublishingImages/sprites.png") no-repeat top left;
+    background-image: url("/Microsites/high-performance-it/PublishingImages/sprites.png") !important;
 }
 .bg-menu{ background-position: 0 -317px; width: 8px; height: 7px; }
 /* END SPRITESHEET */
@@ -326,7 +326,7 @@ a{
     padding-right:22px;
     line-height: 26px;
     height: 26px;
-    background-image:url("../images/caret.png");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/caret.png");
     background-repeat: no-repeat;
     background-position: top right;
     cursor:pointer;
@@ -337,7 +337,7 @@ a{
     color: #fff !important;
 }
 #sideMenu ul li a.btt:hover em {
-    background-image:url("../images/caret-hover.png");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/caret-hover.png");
     /*background-position: 80px -386px;*/
 }
 #sideMenu ul li a > span {
@@ -433,7 +433,7 @@ a{
     height: 100%;
     max-width: 532px;
     max-height: 536px;*/
-    background-image:url("../images/accenture-mark.png");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/accenture-mark.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -462,7 +462,7 @@ a{
     position: absolute;
     /*float: left;*/
     overflow: hidden;
-    background-image: url("../images/video-still.jpg");
+    background-image: url("/Microsites/high-performance-it/PublishingImages/video-still.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% auto;
@@ -484,7 +484,7 @@ a{
 }
 .onMobile .hero .video-wrapper {
     position: relative;
-    background-image:url("../images/video-still.jpg");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/video-still.jpg");
     background-repeat: no-repeat;
     background-position: 70% 0px;
     background-size: auto 100%;
@@ -555,7 +555,7 @@ a{
     width: 57px;
     height: 57px;
     /*margin-top: 15px;*/
-    /*background-image:url("../images/play.png");*/
+    /*background-image:url("/Microsites/high-performance-it/PublishingImages/play.png");*/
     background-repeat: no-repeat;
     background-position: 0 -834px;
     /*background-position: 0 0;*/
@@ -628,7 +628,7 @@ a{
     overflow: hidden;
     pointer-events: none;
     background: transparent;
-    background-image:url("../images/bg-footer.png");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/bg-footer.png");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -940,7 +940,7 @@ a{
     width: 100%;
     height: auto;
     overflow: hidden;
-    /*background-image:url("../images/video-small.jpg");
+    /*background-image:url("/Microsites/high-performance-it/PublishingImages/video-small.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;*/
 }
@@ -1138,7 +1138,7 @@ a{
 .insight[data-insight="10"] .content .right-col > div .heading {color:#551155;}
 
 #footer {
-    background-image:url("../images/bg-footer.png");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/bg-footer.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     color: #FFFFFF;
@@ -1280,7 +1280,7 @@ a{
     line-height: 22px;
     /*float: left;*/
     margin-right: 10px;
-    background-image:url("../images/sprites.png");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/sprites.png");
     background-repeat: no-repeat;
     vertical-align: top;
     /*background-position: 0 -568px;*/
@@ -1371,7 +1371,7 @@ a{
     margin: 0;
     padding: 17px 20px 18px 20px;
     width: 29px;
-    background-image:url("../images/menu.png");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/menu.png");
     background-repeat: no-repeat;
     background-position: center;
     -webkit-border-radius: 0;
@@ -1411,7 +1411,7 @@ a{
     overflow: hidden;
     width: 25px;
     height: 25px;
-    /*background-image:url("../images/icons-social.png");
+    /*background-image:url("/Microsites/high-performance-it/PublishingImages/icons-social.png");
   background-repeat: no-repeat;*/
 }
 .social > .addthis_toolbox > a > img {
@@ -1588,7 +1588,7 @@ a{
     right: -15px;
     top: -15px;
     width: 30px;
-    background-image:url("../images/bg-close-video.png");
+    background-image:url("/Microsites/high-performance-it/PublishingImages/bg-close-video.png");
     background-size: 100% auto;
     background-position: 0 0;
     z-index: 9999;
@@ -1785,7 +1785,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
         width: 95px;
         height: 95px;
         margin-left: -47.5px;
-        background-image:url("../images/play-lg.png");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/play-lg.png");
         background-position: 0 -639px;
     }
     .hero > div.inner .playVid:hover {
@@ -1823,7 +1823,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
         width: 100%;
         height: auto;
         min-height: 780px;
-        background-image:url("../images/accenture-mark-mobile.png");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/accenture-mark-mobile.png");
         background-size: 100% auto;
     }*/
     .insight {
@@ -1924,7 +1924,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
         width: 100%;
         height: auto;
         overflow: hidden;
-        /*background-image:url("../images/video-small.jpg");
+        /*background-image:url("/Microsites/high-performance-it/PublishingImages/video-small.jpg");
         background-repeat: no-repeat;
         background-position: 0 0;*/
     }
@@ -1939,7 +1939,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
         -webkit-border-radius: 50% 50% 50% 50%;
         border-radius: 50% 50% 50% 50%;
         overflow: hidden;
-        background-image:url("../images/bg-arrow-med-full.png") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-arrow-med-full.png") !important;
         background-repeat: no-repeat;
         background-position: 50% 50% !important;
         background-size: 100% auto;
@@ -2184,7 +2184,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
         width: 57px;
         height: 57px;
         margin-left: -28.5px;
-        background-image:url("../images/play.png");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/play.png");
         background-position: 0 -834px;
     }
     .hero > div.inner .playVid:hover {
@@ -2353,7 +2353,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
         width: 15px;
         height: 15px;
         line-height: 15px;
-        background-image: url("../images/bg-toggler.png");
+        background-image: url("/Microsites/high-performance-it/PublishingImages/bg-toggler.png");
         background-repeat: no-repeat;*/
     /*background-position: 0 0;
     background-size: 100% auto;*/
@@ -2572,7 +2572,7 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
         width: 95px;
         height: 95px;
         margin-left: -47.5px;
-        background-image:url("../images/play-lg.png");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/play-lg.png");
         background-position: 0 -639px;
     }
     .hero > div.inner .playVid:hover {
@@ -2592,70 +2592,70 @@ only screen and (max-device-width : 1080px) and (-webkit-device-pixel-ratio: 1.5
     }
 
     .insight[data-insight="10"] {
-        background-image:url("../images/bg-ipad-10.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-10.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="9"] {
-        background-image:url("../images/bg-ipad-09.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-09.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="8"] {
-        background-image:url("../images/bg-ipad-08.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-08.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="7"] {
-        background-image:url("../images/bg-ipad-07.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-07.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="6"] {
-        background-image:url("../images/bg-ipad-06.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-06.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="5"] {
-        background-image:url("../images/bg-ipad-05.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-05.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="4"] {
-        background-image:url("../images/bg-ipad-04.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-04.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="3"] {
-        background-image:url("../images/bg-ipad-03.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-03.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="2"] {
-        background-image:url("../images/bg-ipad-02.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-02.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .insight[data-insight="1"] {
-        background-image:url("../images/bg-ipad-01.jpg");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-01.jpg");
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center !important;
@@ -3133,7 +3133,7 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
         width: 95px;
         height: 95px;
         margin-left: -47.5px;
-        background-image:url("../images/play-lg.png");
+        background-image:url("/Microsites/high-performance-it/PublishingImages/play-lg.png");
         background-position: 0 -639px;
         bottom: 20px !important;
     }
@@ -3168,70 +3168,70 @@ only screen and (max-device-width: 1280px) and (orientation: landscape) {
         /*color: #000 !important;*/
     }
     .galaxyTab.onMobile .insight[data-insight="10"] {
-        background-image:url("../images/bg-ipad-10.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-10.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="9"] {
-        background-image:url("../images/bg-ipad-09.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-09.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="8"] {
-        background-image:url("../images/bg-ipad-08.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-08.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="7"] {
-        background-image:url("../images/bg-ipad-07.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-07.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="6"] {
-        background-image:url("../images/bg-ipad-06.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-06.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="5"] {
-        background-image:url("../images/bg-ipad-05.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-05.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="4"] {
-        background-image:url("../images/bg-ipad-04.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-04.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="3"] {
-        background-image:url("../images/bg-ipad-03.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-03.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="2"] {
-        background-image:url("../images/bg-ipad-02.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-02.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center;
         background-size: auto 100%;*/
     }
     .galaxyTab.onMobile .insight[data-insight="1"] {
-        background-image:url("../images/bg-ipad-01.jpg") !important;
+        background-image:url("/Microsites/high-performance-it/PublishingImages/bg-ipad-01.jpg") !important;
         background-attachment: scroll !important;
         background-repeat: no-repeat;
         /*background-position: top center !important;
